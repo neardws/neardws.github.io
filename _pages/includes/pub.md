@@ -18,5 +18,5 @@
 - [Design and Implementation of a Fog Computing Based Collision Warning System in VANETs](https://ieeexplore.ieee.org/document/8805783), **Xincao Xu**, Kai Liu, Ke Xiao, Hualing Ren, Liang Feng and Chao Chen, IEEE International Symposium on Product Compliance Engineering-Asia (*IEEE ISPCE-CN’18*), Hong Kong/Shengzhen, December 5-7, 2018. (Best Paper Award)
 
 #### Chinese Papers
-- [基于势博弈的车载边缘计算信道分配方法](https://www.ejournal.org.cn/CN/10.12263/DZXB.20200994), **许新操**, 刘凯, 刘春晖, 蒋豪, 郭松涛, & 吴巍炜, 电子学报, 2021, 49(5), 851-860. [CCF A]
-- 车载雾计算环境中基于势博弈的分布式信道分配, **许新操**, 周易, 刘凯, 向朝参, 李艳涛, &郭松涛, 第十四届中国物联网学术会议(*CWSN’20*), 中国敦煌, 2020/9/18-9/21. (最佳论文候选)
+- [基于势博弈的车载边缘计算信道分配方法](https://www.ejournal.org.cn/CN/10.12263/DZXB.20200994), **许新操**, 刘凯, 刘春晖, 蒋豪, 郭松涛, 吴巍炜, 电子学报, 2021, 49(5), 851-860. [CCF A]
+- 车载雾计算环境中基于势博弈的分布式信道分配, **许新操**, 周易, 刘凯, 向朝参, 李艳涛, 郭松涛, 第十四届中国物联网学术会议(*CWSN’20*), 中国敦煌, 2020/9/18-9/21. (最佳论文候选)
