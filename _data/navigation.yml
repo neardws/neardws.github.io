@@ -9,14 +9,11 @@ main:
   - title: "Publications"
     url: "/#-publications"
 
-  - title: "Awards and Others"
-    url: "/#-awards-and-others"
+  - title: "Others"
+    url: "/#-others"
 
   - title: "Educations"
     url: "/#-educations"
-
-  - title: "Talks"
-    url: "/#-talks"
 
   - title: "CV"
     url: "/#-CV"
