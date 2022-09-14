@@ -15,5 +15,8 @@ main:
   - title: "Educations"
     url: "/#-educations"
 
+  - title: "Learning"
+    url: "/#-learning"
+
   - title: "CV"
     url: "https://github.com/neardws/neardws.github.io/blob/main/docs/cv.pdf"
