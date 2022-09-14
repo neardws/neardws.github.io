@@ -1,4 +1,4 @@
-# 🎒 Learning Package
+# 🎒 Learning
 
 #### Courses
 
