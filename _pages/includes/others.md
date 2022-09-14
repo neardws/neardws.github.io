@@ -14,7 +14,7 @@
 ## Demos
 
 - Non-Light-of-Sight Collision Warning Demo
-<video id="video" controls="" preload="none" poster="">
+<video id="video" width="75%" controls="" preload="none" poster="https://github.com/neardws/neardws.github.io/blob/main/images/collision_warning.png">
       <source id="mp4" src="https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/2022/09/20220914061800超视距碰撞预警应用场景889.mp4" type="video/mp4">
       <p>Your user agent does not support the HTML5 Video element.</p>
 </video>
