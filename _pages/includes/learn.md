@@ -1,6 +1,6 @@
-# 📖 Learning
+# 🎒 Learning
 
-### Courses
+#### Courses
 
 - Introduction to Algorithms by MIT [[Link]](https://www.bilibili.com/video/BV1fu41127MN)
 - Meachine Learning by Prof. Hung-yi Lee [[Link]](https://www.bilibili.com/video/BV1J94y1f7u5)
@@ -8,14 +8,14 @@
 - Deep Learning by Prof. Andrew Ng [[Link]](https://www.bilibili.com/video/BV12E411a7Xn)
 - Deep Reinforcement Learning by Dr. Shusen Wang [[Link]](https://www.bilibili.com/video/BV1rv41167yx)
 
-### Books
+#### Books
 
 - Meachine Learning by Prof. Zhi-Hua Zhou [[Chinese]](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/MLbook2016.htm)
 - Deep Learning by Dr. Ian Goodfellow, Prof. Yoshua Bengio, and Prof. Aaron Courville [[English]](https://www.deeplearningbook.org) [[Chinese]](https://github.com/exacity/deeplearningbook-chinese)
 - Machine Learning Yearning by Prof. Andrew Ng [[Chinese]](https://deeplearning-ai.github.io/machine-learning-yearning-cn/)
 - Dive into Deep Learning by Dr. Aston Zhang, Dr. Zachary C. Lipton, Dr. Mu Li, and Dr. Alexander I. Smola [[English]](https://d2l.ai) [[Chinese]](https://zh.d2l.ai)
 
-### Research
+#### Research
 
 - Google Scholar: Largest Search Engine for Academic Publishing [[Link]](https://scholar.google.com)
 - dblp: Computer Science Bibliography [[Link]](https://dblp.org)
@@ -24,7 +24,7 @@
 - Academic Accelerator: Wonderful Tool to Accelerate Your Scientific Research [[Link]](https://academic-accelerator.com)
 - Zotero: Personal Research Assistant [[Link]](https://www.zotero.org)
 
-### Coding
+#### Coding
 
 - Python Tutorial by Xuefeng Liao [[Chinese]](https://www.liaoxuefeng.com/wiki/1016959663602400)
 - Python Documentation [[English]](https://docs.python.org/3/) [[Chinese]](https://docs.python.org/zh-cn/3/)
