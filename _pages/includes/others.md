@@ -10,3 +10,11 @@
 
 - General Project of National Natural Science Foundation of China, Computing Model Deployment and Collaborative Cross Domain Optimization for Edge Intelligence of Internet of Vehicles, 62172064, 2022/01–2025/12 (Participation).
 - General Project of National Natural Science Foundation of China, Research on Architecture and Protocols for Large-scale Data Services in Converged Heterogeneous Internet of Vehicles, 61872049, 2019/01 – 2022/12 (Participation).
+
+## Demos
+
+- Non-Light-of-Sight Collision Warning Demo
+<video id="video" controls="" preload="none" poster="">
+      <source id="mp4" src="https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/2022/09/20220914061800超视距碰撞预警应用场景889.mp4" type="video/mp4">
+      <p>Your user agent does not support the HTML5 Video element.</p>
+</video>
