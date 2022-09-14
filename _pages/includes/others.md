@@ -2,9 +2,9 @@
 
 ## 📄 Patents
 
-- 一种针对软件定义车联网的控制平面视图构建方法, **许新操**, 刘凯, 李东, 发明专利 (2021105918221), to appear.
-- 一种基于边缘计算的盲区车辆碰撞预警方法, 刘凯, 张浪, **许新操**, 任华玲, 周易, 发明专利 (ZL201910418745.2), 2021.08.03.
-- 一种基于雾计算的信息采集、计算、传输架构, 任华玲, 刘凯, 陈梦良, 周易, **许新操**, 发明专利 (ZL201910146357.3), 2021.06.18.
+- A Control Plane View Construction Method for Software-Defined Vehicular Networks, **Xincao Xu**, Kai Liu, Dong Li, Chinese Invention Patent (2021105918221), to appear.
+- An Edge Computing Based Collision Warning Method for Vehicles in Blind Areas, Liu Kai, Zhang Lang, **Xincao Xu**, Ren Hualing, Zhou Yi, Chinese Invention Patent (ZL201910418745.2), 2021.
+- A Fog Computing-based Information Acquisition, Computing, and Transmission Architecture, Ren Hualing, Liu Kai, Chen Mengliang, Zhou Yi, **Xincao Xu**, Chinese Invention Patent (ZL201910146357.3), 2021.
 
 ## 🚧 Grants
 
