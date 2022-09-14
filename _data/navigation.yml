@@ -26,6 +26,4 @@ main:
 
 language:
   - title: "中文"
-    url: "/cn/"
-  - title: "English"
-    url: "/"
+    url: "https://me.neardws.com/zh/"
