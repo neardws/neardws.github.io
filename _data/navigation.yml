@@ -26,6 +26,6 @@ main:
 
 language:
   - title: "中文"
-    url: "/cn"
+    url: "/cn/"
   - title: "English"
     url: "/"
