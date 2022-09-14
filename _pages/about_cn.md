@@ -4,7 +4,7 @@ title: ""
 excerpt: ""
 author_profile: true
 redirect_from: 
-  - /cn/
+  - /cn
   - /cn.html
 ---
 
