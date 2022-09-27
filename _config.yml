@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Xincao Xu"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "Chongqing University"
+  bio              : "PhD Student in Computer Science"
   location         : "Chongqing, China"
   employer         :
   pubmed           : 
@@ -40,10 +40,10 @@ author:
   github           : "neardws"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "near.d.ws"
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : # e.g., "linkedin username"
+  linkedin         : "xuxincao"
   dblp             : "https://dblp.org/pid/245/5645.html"
   orcid            : "https://orcid.org/0000-0001-5057-5468"
   pinterest        :
