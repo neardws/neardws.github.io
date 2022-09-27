@@ -22,9 +22,9 @@
 **Xincao Xu**, Kai Liu, Penglin Dai, Feiyu Jin, Hualing Ren, Choujun
 Zhan, and Songtao Guo
 
-- We present a NOMA based architecture in VEC, where heterogeneous resources of edge nodes are cooperated for real-time task processing. 
-- We derive a V2I transmission model by considering both intra-edge and inter-edge interference and formulate a cooperative resource optimization (CRO) problem by jointly optimizing the task offloading and resource allocation, aiming at maximizing the service ratio.
-- We decompose the CRO into two subproblems: 1) task offloading, it is modeled as an EPG, and a MAD4PG is proposed to achieve the Nash equilibrium by adopting the potential function as reward function; and 2) resource allocation, it is modeled as convex optimization problems to allocate communication/computation resources, and an optimal mathematical solution is proposed based on a gradient-based iterative method and KKT condition.
+- We present a NOMA-based VEC architecture, where heterogeneous resources of edge nodes are cooperated for real-time task processing. 
+- We derive a V2I transmission model by considering both intra-edge and inter-edge interference and formulate a cooperative resource optimization (CRO) problem by jointly optimizing real-time task offloading and heterogeneous resource allocation, aiming at maximizing the service ratio.
+- We decompose the CRO into two subproblems, namely, task offloading and resource alloction. The first subproblem is modeled as an EPG with Nash equilibrium (NE) existence and converagence, and a multi-agent D4PG algorithm is proposed to achieve the NE by adopting the potential function as reward function. The second subproblem is divided into two independent convex optimization problems, and an optimal solution is proposed based on a gradient-based iterative method and KKT condition.
 - Submitted to **Journal of Systems Architecture** (under review)
 
 </div>
