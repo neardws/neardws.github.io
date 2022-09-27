@@ -22,6 +22,7 @@
 - Conference Partner: Information about Academic Conferences [[Link]](https://www.myhuiban.com)
 - LetPub: Information about SCI Journals [[Link]](http://www.letpub.com.cn/index.php?page=journalapp)
 - Academic Accelerator: Wonderful Tool to Accelerate Your Scientific Research [[Link]](https://academic-accelerator.com)
+- WikiCFP: A Wiki for Calls for Papers [[Link]](http://www.wikicfp.com/cfp/)
 - Zotero: Personal Research Assistant [[Link]](https://www.zotero.org)
 
 #### Coding
