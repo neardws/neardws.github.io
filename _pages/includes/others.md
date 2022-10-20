@@ -2,7 +2,7 @@
 
 ## 📄 Patents
 
-- A Control Plane View Construction Method for Software-Defined Vehicular Networks, **Xincao Xu**, Kai Liu, Dong Li, Chinese Invention Patent (2021105918221), to appear.
+- A Control Plane View Construction Method for Software-Defined Vehicular Networks, **Xincao Xu**, Kai Liu, Dong Li, Chinese Invention Patent (ZL202110591822.1), 2022.
 - An Edge Computing Based Collision Warning Method for Vehicles in Blind Areas, Liu Kai, Zhang Lang, **Xincao Xu**, Ren Hualing, Zhou Yi, Chinese Invention Patent (ZL201910418745.2), 2021.
 - A Fog Computing-based Information Acquisition, Computing, and Transmission Architecture, Ren Hualing, Liu Kai, Chen Mengliang, Zhou Yi, **Xincao Xu**, Chinese Invention Patent (ZL201910146357.3), 2021.
 
