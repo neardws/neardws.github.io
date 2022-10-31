@@ -1,9 +1,10 @@
 # 🕒 Research 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">DT-VEC</div><img src='images/DT_VEC.png' alt="DT-VEC" width="100%"></div></div> <div class='paper-box-image'><div><div class="badge">MAMO</div><img src='images/MAMO.png' alt="MAMO" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">DT-VEC</div><img src='images/DT_VEC.png' alt="DT-VEC" width="100%"></div></div>  <div></div> <div class='paper-box-image'><div><div class="badge">MAMO</div><img src='images/MAMO.png' alt="MAMO" width="100%"></div></div>
+
 <div class='paper-box-text' markdown="1">
 
-[Enabling Digital Twin in Vehicular Edge Computing: A Multi-Agent Multi-Objective Deep Reinforcement Learning Solution]()\\   
+[Enabling Digital Twin in Vehicular Edge Computing: A Multi-Agent Multi-Objective Deep Reinforcement Learning Solution]() \\   
 **Xincao Xu**, Kai Liu, Penglin Dai, and Biwen Chen
 
 - We present a DT-VEC architecture, where the heterogeneous information can be sensed by vehicles and uploaded to the edge node via vehicle-to-infrastructure (V2I) communications. The DT-VEC are modeled at the edge node, forming a logical view to reflect the physical vehicular environment. 
