@@ -1,7 +1,6 @@
 # 🕒 Research 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">DT-VEC</div><img src='images/DT_VEC.png' alt="DT-VEC" width="100%"></div></div></div>
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MAMO</div><img src='images/MAMO.png' alt="MAMO" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">DT-VEC</div><img src='images/DT_VEC.png' alt="DT-VEC" width="100%"></div></div> <div class='paper-box-image'><div><div class="badge">MAMO</div><img src='images/MAMO.png' alt="MAMO" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Enabling Digital Twin in Vehicular Edge Computing: A Multi-Agent Multi-Objective Deep Reinforcement Learning Solution]()\\   
