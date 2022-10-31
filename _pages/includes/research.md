@@ -1,6 +1,6 @@
 # 🕒 Research 
 
-<div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">DT-VEC</div><img src='images/DT_VEC.png' alt="DT-VEC" width="50%"><div class="badge">MAMO</div><img src='images/MAMO.png' alt="MAMO" width="50%"></div></div> </div>
+<div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">DT-VEC</div><img src='images/DT_VEC.png' alt="DT-VEC" width="45%"><div class="badge">MAMO</div><img src='images/MAMO.png' alt="MAMO" width="45%"></div></div> </div>
 
 <div class='paper-box-text' markdown="1">
 
