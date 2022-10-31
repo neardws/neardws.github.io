@@ -1,6 +1,6 @@
 # 🕒 Research 
 
-<div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">DT-VEC</div><img src='images/DT_VEC.png' alt="DT-VEC" width="100%"><div class="badge">MAMO</div><img src='images/MAMO.png' alt="MAMO" width="100%"></div></div>  </div></div>
+<div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">DT-VEC</div><img src='images/DT_VEC.png' alt="DT-VEC" width="50%"><div class="badge">MAMO</div><img src='images/MAMO.png' alt="MAMO" width="50%"></div></div> </div>
 
 <div class='paper-box-text' markdown="1">
 
@@ -13,7 +13,6 @@
 - We propose a multi-agent multi-objective (MAMO) deep reinforcement learning solution implemented distributedly in the vehicles and the edge nodes. Specifically, a dueling critic network is proposed to evaluate the advantage of action over the average of random actions. 
 - Submitted to **IEEE Transactions on Consumer Electronics** (under review)
 
-</div>
 </div>
 
 
