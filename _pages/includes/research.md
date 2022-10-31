@@ -1,5 +1,22 @@
 # 🕒 Research 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">VCPS</div><img src='images/DT_VEC.png' alt="DT-VEC" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Enabling Digital Twin in Vehicular Edge Computing: A Multi-Agent Multi-Objective Deep Reinforcement Learning Solution]()\\   
+**Xincao Xu**, Kai Liu, Penglin Dai, and Biwen Chen
+
+- This paper makes the first attempt to achieve the quality-cost tradeoff in DT-VEC. 
+- We present a DT-VEC architecture, where the heterogeneous information can be sensed by vehicles and uploaded to the edge node via vehicle-to-infrastructure (V2I) communications. The DT-VEC are modeled at the edge node, forming a logical view to reflect the physical vehicular environment. 
+- We model the DT-VEC by deriving an ISAC-assisted sensing model and a reliability-guaranteed uploading model. 
+- We formulate the bi-objective problem to maximize the system quality and minimize the system cost, simultaneously. In particular, we define the quality of DT-VEC by considering the timeliness and consistency, and define the cost of DT-VEC by considering the redundancy, sensing cost, and transmission cost. 
+- We propose a multi-agent multi-objective (MAMO) deep reinforcement learning solution implemented distributedly in the vehicles and the edge nodes. Specifically, a dueling critic network is proposed to evaluate the advantage of action over the average of random actions. 
+- Submitted to **IEEE Transactions on Consumer Electronics** (under review)
+
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">VCPS</div><img src='images/VCPS.png' alt="VCPS" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
