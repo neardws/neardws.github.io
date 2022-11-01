@@ -32,7 +32,9 @@
 </div>
 
 
-<div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">NOMA based VEC</div><img src='images/NOMA_based_VEC.png' alt="NOMA based VEC" width="100%"><div class="badge">GT-DRL</div><img src='images/GT_DRL.png' alt="GT-DRL" width="100%"></div></div>
+<div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">NOMA-based VEC</div><img src='images/NOMA_based_VEC.png' alt="NOMA-based VEC" width="100%"><div class="badge">GT-DRL</div><img src='images/GT_DRL.png' alt="GT-DRL" width="100%"></div></div>
+
+<div class='paper-box-text' markdown="1">
 
 [Joint Task Offloading and Resource Optimization in NOMA-based Vehicular Edge Computing: A Game-Theoretic DRL Approach](https://arxiv.org/abs/2209.12749)    
 **Xincao Xu**, Kai Liu, Penglin Dai, Feiyu Jin, Hualing Ren, Choujun Zhan, and Songtao Guo
