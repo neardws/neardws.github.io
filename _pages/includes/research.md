@@ -16,16 +16,16 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">VCPS</div><img src='images/VCPS.png' alt="VCPS" width="100%"></div></div>
+<div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">VCPS</div><img src='images/VCPS.png' alt="VCPS" width="100%"><div class="badge">System Model</div><img src='images/Sening_Model.png' alt="System Model" width="100%"></div></div>
+
 <div class='paper-box-text' markdown="1">
 
 [Cooperative Sensing and Heterogeneous Information Fusion in VCPS: A Multi-agent Deep Reinforcement Learning Approach](https://arxiv.org/abs/2209.12265)     
 **Xincao Xu**, Kai Liu, Penglin Dai, Ruitao Xie, and Jiangtao Luo
 
-- We present a VEC architecture, in which heterogeneous information can be cooperatively sensed and uploaded via V2I communications. Logical views can be constructed by fusing the heterogeneous information at edge nodes. 
-- We derive a cooperative sensing model based on the multi-class M/G/1 priority queue. On this basis, we define a noval metric AoV by modeling the timeliness, completeness, and consistency of the logical views.
-- We formulate the problem, which aims at maximizing the quality of VCPS. 
-- We propose a multiagent DRL solution, where a difference-reward-based credit assignment is designed to divide the system reward into the difference reward for vehicles, reflecting their individual contributions.
+- We present a cooperative sensing and heterogeneous information fusion architecture in VCPS via vehicular edge computing. The heterogeneous information can be sensed via either onboard sensors such as LIDAR, GPS, and cameras, or roadside infrastructures such as traffic lights. The sensed information is queued in vehicles for uploading via the V2I bandwidth, which is allocated by the corresponding edge node. Logical views can be constructed via the information fusion at edge nodes, and different views may be required to enable upper-layer applications.
+- We formulate the problem to maximize the quality of VCPS. Specifically, we derive a cooperative sensing model, in which the information queuing and data uploading are modeled based on the multi-class M/G/1 priority queue and the Shannon theory, respectively. Then, we derive a heterogeneous information fusion model by modeling the timeliness, completeness, and consistency of views. On this basis, a new metric called Age of View (AoV) is defined to quantitatively measure the quality of information fusion. Finally, we model the quality of VCPS and present the optimization objective, which is to maximize the VCPS quality.
+- We propose a multi-agent deep reinforcement learning solution. Specifically, the solution model is presented, in which vehicles act as independent agents with action space of determining the sensing frequencies and uploading priorities, and the edge action space is the V2I bandwidth allocation. The system state consists of vehicle sensed information, edge cached information, and view requirements. The system reward is defined as the achieved VCPS quality. In particular, the system reward is divided into the Difference Reward (DR) to capture vehicle individual contributions on view constructions by the DR-based credit assignment.
 - Submitted to **IEEE Transactions on Intelligent Transportation Systems** (under review)
 
 </div>
