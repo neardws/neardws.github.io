@@ -1,6 +1,8 @@
 
 # 💻 Publications
 
+**JCR**: [Journal Citation Reports by Thomson Reuters Com.](https://jcr.clarivate.com/jcr/home)\|**SCI**: [Journal Partition List by National Science Library，Chinese Academy of Sciences](https://www.fenqubiao.com)\|**CCF**: [Recommended Publications by China Computer Federation](https://www.ccf.org.cn/Academic_Evaluation/By_category/)
+
 #### Journal
 
 - **Xincao Xu**, Kai Liu, Penglin Dai, Feiyu Jin, Hualing Ren, Choujun Zhan, and Songtao Guo, [Joint Task Offloading and Resource Optimization in NOMA-Based Vehicular Edge Computing: A Game-Theoretic DRL Approach](https://arxiv.org/abs/2209.12749), *Journal of Systems Architecture*, to appear. IF: 5.836 (2021), 4.497 (5-year) [JCR Q1\|SCI Q2\|CCF B] [![](https://img.shields.io/badge/dynamic/json?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FNeardws%2Fneardws.github.io@google-scholar-stats%2Fgs_data.json&query=$['publications']['DK5avZUAAAAJ:Y5dfb0dijaUC']['num_citations']&labelColor=f6f6f6&color=9cf&style=flat&label=citations)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DK5avZUAAAAJ&citation_for_view=DK5avZUAAAAJ:Y5dfb0dijaUC) [![](https://img.shields.io/github/stars/neardws/Game-Theoretic-Deep-Reinforcement-Learning?style=social)](https://github.com/neardws/Game-Theoretic-Deep-Reinforcement-Learning)
