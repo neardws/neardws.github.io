@@ -5,7 +5,7 @@
 <div class='paper-box-text' markdown="1">
 
 [Enabling Digital Twin in Vehicular Edge Computing: A Multi-Agent Multi-Objective Deep Reinforcement Learning Solution](https://arxiv.org/abs/2210.17386)       
-**Xincao Xu**, Kai Liu, Penglin Dai, and Biwen Chen
+**Xincao Xu**, Kai Liu, Penglin Dai, and Biwen Chen<sup>**\***</sup>
 
 - We present a DT-VEC architecture, where the heterogeneous information can be sensed by vehicles and uploaded to the edge node via V2I communications. The DT-VEC are modeled at the edge node, forming a logical view to reflect the physical vehicular environment. 
 - We model the DT-VEC by deriving an ISAC-assisted sensing model and a reliability-guaranteed uploading model. 
@@ -21,7 +21,7 @@
 <div class='paper-box-text' markdown="1">
 
 [Cooperative Sensing and Heterogeneous Information Fusion in VCPS: A Multi-agent Deep Reinforcement Learning Approach](https://arxiv.org/abs/2209.12265)     
-**Xincao Xu**, Kai Liu, Penglin Dai, Ruitao Xie, and Jiangtao Luo
+**Xincao Xu**, Kai Liu<sup>**\***</sup>, Penglin Dai, Ruitao Xie, and Jiangtao Luo
 
 - We present a cooperative sensing and heterogeneous information fusion architecture in VCPS via vehicular edge computing. The heterogeneous information can be sensed via either onboard sensors such as LIDAR, GPS, and cameras, or roadside infrastructures such as traffic lights. The sensed information is queued in vehicles for uploading via the V2I bandwidth, which is allocated by the corresponding edge node. Logical views can be constructed via the information fusion at edge nodes, and different views may be required to enable upper-layer applications.
 - We formulate the problem to maximize the quality of VCPS. Specifically, we derive a cooperative sensing model, in which the information queuing and data uploading are modeled based on the multi-class M/G/1 priority queue and the Shannon theory, respectively. Then, we derive a heterogeneous information fusion model by modeling the timeliness, completeness, and consistency of views. On this basis, a new metric called Age of View (AoV) is defined to quantitatively measure the quality of information fusion. Finally, we model the quality of VCPS and present the optimization objective, which is to maximize the VCPS quality.
@@ -37,7 +37,7 @@
 <div class='paper-box-text' markdown="1">
 
 [Joint Task Offloading and Resource Optimization in NOMA-based Vehicular Edge Computing: A Game-Theoretic DRL Approach](https://arxiv.org/abs/2209.12749)    
-**Xincao Xu**, Kai Liu, Penglin Dai, Feiyu Jin, Hualing Ren, Choujun Zhan, and Songtao Guo
+**Xincao Xu**, Kai Liu<sup>**\***</sup>, Penglin Dai, Feiyu Jin, Hualing Ren, Choujun Zhan, and Songtao Guo
 
 - We present a NOMA-based VEC architecture, where the vehicles share the same frequency of bandwidth resources and communicate with the edge node with the allocated transmission power. The tasks arrive stochastically at vehicles and are heterogeneous regarding computation resource requirements and deadlines, which are uploaded by vehicles via V2I communications. Then, the edge nodes with heterogeneous computation capabilities, i.e., CPU clock speed, can either execute the tasks locally with allocated computation resources or offload the tasks to neighboring edge nodes through a wired network.
 - We propose a cooperative resources optimization (CRO) problem by jointly offloading tasks and allocating communication and computation resources to maximize the service ratio, which is the number of tasks serviced before the deadlines divided by the number of requested tasks. Specifically, a V2I transmission model considering both intra-edge and inter-edge interference and a task offloading model considering the heterogeneous resources and cooperation of edge nodes are theoretically modeled, respectively.
