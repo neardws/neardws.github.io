@@ -1,7 +1,7 @@
 # 💻 Publications
 
 **JCR**: [Journal Citation Reports by Clarivate Com.](https://jcr.clarivate.com/jcr/home)    
-**SCI**: [Journal Partition List by National Science Library，Chinese Academy of Sciences](https://www.fenqubiao.com)    
+**SCI**: [Journal Partition List by National Science Library, Chinese Academy of Sciences](https://www.fenqubiao.com)    
 **CCF**: [Recommended Publications by China Computer Federation](https://www.ccf.org.cn/Academic_Evaluation/By_category/)    
 **\***: Corresponding Author
 
