@@ -36,7 +36,7 @@
 
 <div class='paper-box-text' markdown="1">
 
-[Joint Task Offloading and Resource Optimization in NOMA-based Vehicular Edge Computing: A Game-Theoretic DRL Approach](https://arxiv.org/abs/2209.12749)    
+[Joint Task Offloading and Resource Optimization in NOMA-based Vehicular Edge Computing: A Game-Theoretic DRL Approach](https://www.sciencedirect.com/science/article/pii/S138376212200265X)    
 **Xincao Xu**, Kai Liu<sup>**\***</sup>, Penglin Dai, Feiyu Jin, Hualing Ren, Choujun Zhan, and Songtao Guo
 
 - We present a NOMA-based VEC architecture, where the vehicles share the same frequency of bandwidth resources and communicate with the edge node with the allocated transmission power. The tasks arrive stochastically at vehicles and are heterogeneous regarding computation resource requirements and deadlines, which are uploaded by vehicles via V2I communications. Then, the edge nodes with heterogeneous computation capabilities, i.e., CPU clock speed, can either execute the tasks locally with allocated computation resources or offload the tasks to neighboring edge nodes through a wired network.
