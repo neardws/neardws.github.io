@@ -1,4 +1,4 @@
-# 💻 Publications
+# 💻 Publication
 
 **JCR**: [Journal Citation Reports by Clarivate Com.](https://jcr.clarivate.com/jcr/home)    
 **SCI**: [Journal Partition List by National Science Library, Chinese Academy of Sciences](https://www.fenqubiao.com)    

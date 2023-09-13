@@ -9,14 +9,14 @@ main:
   - title: "Research"
     url: "/#-research"
 
-  - title: "Publications"
-    url: "/#-publications"
+  - title: "Publication"
+    url: "/#-publication"
 
   - title: "Others"
     url: "/#-others"
 
-  - title: "Educations"
-    url: "/#-educations"
+  - title: "Experience"
+    url: "/#-experience"
 
   - title: "Learning"
     url: "/#-learning"
