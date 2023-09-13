@@ -23,12 +23,12 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Xincao Xu"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "PhD Student in Computer Science"
-  location         : "Chongqing, China"
+  bio              : "Postdoctoral Research Fellow"
+  location         : "Shenzhen, China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=DK5avZUAAAAJ"
-  email            : "near@cqu.edu.cn"
+  email            : "xc.xu at uestc.edu.cn"
   researchgate     : "https://www.researchgate.net/profile/Xincao-Xu"
   uri              :
   bitbucket        :
