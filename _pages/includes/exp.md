@@ -2,11 +2,12 @@
 
 ## 💼 Work 
 
-- *2023.07 - 2025.06(now)*, Postdoctoral Research Fellow, Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China, Shenzhen, China.
+- *2023.07 - 2025.06(now)*, Postdoctoral Research Fellow, Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China, Shenzhen, China. (In cooperation with [Prof. Shaohua Wan](https://scholar.google.com/citations?user=IhjhNEEAAAAJ))
 
 ## 🎓 Education
 
-- *2017.09 - 2023.06*, Ph.D, Computer Science, College of Computer Science, Chongqing University, Chongqing, China. (Successive Master-Doctor Program)
+- *2019.09 - 2023.06*, Ph.D., Computer Science, College of Computer Science, Chongqing University, Chongqing, China. (Supervised by [Prof. Kai Liu](https://scholar.google.com/citations?user=6YkCbT8AAAAJ))
+- *2017.09 - 2019.06*, Master (Join the Successive Postgraduate-Doctor Program in 2019), Computer Science, College of Computer Science, Chongqing University, Chongqing, China.
 - *2013.09 - 2017.06*, Bachelor, Network Engineering, College of Computer and Control Engineering, North Univeristy of China, Taiyuan, China.
 
 ## 😎 Membership
