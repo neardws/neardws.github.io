@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Xincao Xu"
-description              : "Motto:  To see the world, to draw closer, to find each other and to feel. "
+description              : "Research Interests: IoVs, VEC, VCPS, DRL, etc."
 repository               : "neardws/neardws.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -28,7 +28,7 @@ author:
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=DK5avZUAAAAJ"
-  email            : "xc.xu at uestc.edu.cn"
+  email            : "xc.xu@uestc.edu.cn"
   researchgate     : "https://www.researchgate.net/profile/Xincao-Xu"
   uri              :
   bitbucket        :
