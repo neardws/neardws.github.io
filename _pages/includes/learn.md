@@ -2,11 +2,11 @@
 
 #### Courses
 
-- Introduction to Algorithms by MIT [[Link]](https://www.bilibili.com/video/BV1fu41127MN)
-- Meachine Learning by Prof. Hung-yi Lee [[Link]](https://www.bilibili.com/video/BV1J94y1f7u5)
-- Meachine Learning by Prof. Richard Xu [[Link]](https://space.bilibili.com/327617676/channel/seriesdetail?sid=1571821)
-- Deep Learning by Prof. Andrew Ng [[Link]](https://www.bilibili.com/video/BV12E411a7Xn)
-- Deep Reinforcement Learning by Dr. Shusen Wang [[Link]](https://www.bilibili.com/video/BV1rv41167yx)
+- Introduction to Algorithms by MIT [[bilibili]](https://www.bilibili.com/video/BV1fu41127MN) [[YouTube]](https://www.youtube.com/watch?v=ZA-tUyM_y7s&list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY&index=1)
+- Meachine Learning by Prof. Hung-yi Lee [[bilibili]](https://www.bilibili.com/video/BV1J94y1f7u5)
+- Meachine Learning by Prof. Richard Xu [[YouTube]](https://www.youtube.com/watch?v=Y87Ct23H3Kw&list=PLJV_el3uVTsNxV_IGauQZBHjBKZ26JHjd&index=1)
+- Deep Learning by Prof. Andrew Ng [[bilibili]](https://www.bilibili.com/video/BV12E411a7Xn) [[YouTube]](https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&index=1)
+- Deep Reinforcement Learning by Dr. Shusen Wang [[bilibili]](https://www.bilibili.com/video/BV1rv41167yx) [[YouTube]](https://www.youtube.com/watch?v=jNcMnwpPpfk&list=PLgtf4d9zHHO99JZTT-N5eUBXhW5sfOKhA&index=1)
 
 #### Books
 
