@@ -12,7 +12,7 @@
 
 ## 😎 Membership
 
-- *2023.07 - now*, Member, IEEE.
+- *2023.09 - now*, Member, IEEE.
 - *2020.11 - now*, Student Member, CCF.
 
 ## 👀 Reviewer
