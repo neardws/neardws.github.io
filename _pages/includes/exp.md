@@ -12,8 +12,9 @@
 
 ## 😎 Membership
 
-- *2023.09 - now*, Member, IEEE.
-- *2020.11 - now*, Student Member, CCF.
+- *2023.10 - now*, Member #3120145, ACM.
+- *2023.09 - now*, Member #99619216, IEEE.
+- *2020.11 - now*, Student Member #G0818G, CCF.
 
 ## 👀 Reviewer
 
