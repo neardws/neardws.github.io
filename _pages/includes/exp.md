@@ -35,5 +35,6 @@
 - IEEE Global Communications Conference (GLOBECOM'21,23)
 - International Conference on Algorithms and Architectures for Parallel Processing (ICA3PP'21)
 - China Conference on Internet of Things (Wireless Sensor Network) (CWSN'21)
+- IEEE International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom'20)
 - IEEE International Symposium
 on Product Compliance Engineering-Asia (ISPCE-CN'20)
