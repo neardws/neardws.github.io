@@ -4,14 +4,13 @@
 
 <div class='paper-box-text' markdown="1">
 
-[Enabling Digital Twin in Vehicular Edge Computing: A Multi-Agent Multi-Objective Deep Reinforcement Learning Solution](https://arxiv.org/abs/2210.17386)       
-**Xincao Xu**, Kai Liu, Penglin Dai, and Biwen Chen<sup>**\***</sup>
+[Cooperative Sensing and Uploading for Quality-Cost Tradeoff of Digital Twins in VEC](https://arxiv.org/abs/2210.17386)       
+Kai Liu<sup>**\***</sup>, **Xincao Xu**<sup>**\***</sup>, Penglin Dai, and Biwen Chen
 
-- We present a DT-VEC architecture, where the heterogeneous information can be sensed by vehicles and uploaded to the edge node via V2I communications. The DT-VEC are modeled at the edge node, forming a logical view to reflect the physical vehicular environment. 
-- We model the DT-VEC by deriving an ISAC-assisted sensing model and a reliability-guaranteed uploading model. 
-- We formulate the bi-objective problem to maximize the system quality and minimize the system cost, simultaneously. In particular, we define the quality of DT-VEC by considering the timeliness and consistency, and define the cost of DT-VEC by considering the redundancy, sensing cost, and transmission cost. 
-- We propose a multi-agent multi-objective (MAMO) deep reinforcement learning solution implemented distributedly in the vehicles and the edge nodes. Specifically, a dueling critic network is proposed to evaluate the advantage of action over the average of random actions. 
-- Submitted to **IEEE Transactions on Consumer Electronics** (under review)
+- We formulate a bi-objective problem for enabling DT-VEC, where a cooperative sensing model and a V2I uploading model are derived, and novel metrics for quantitatively evaluating system quality and cost are designed.
+- We propose a multi-agent multi-objective (MAMO) deep reinforcement learning model, which determines the sensing objects, sensing frequency, uploading priority, and transmission power of vehicles, as well as the V2I bandwidth allocation of edge nodes. The model includes distributed actors interacting with the environment and storing their interaction experiences in the replay buffer, a learner with a dueling critic network for evaluating actions of vehicles and edge nodes. 
+- We give comprehensive performance evaluation by implementing three representative algorithms, including random allocation (RA), distributed distributional deep deterministic policy gradient (D4PG) and multi-agent D4PG (MAD4PG), and the simulation results demonstrate that the proposed MAMO significantly outperforms existing solutions under different scenarios with respect to both maximizing system quality and saving system cost.
+- Accepted by **IEEE Transactions on Consumer Electronics** [JCR Q1\|SCI Q2]
 
 </div>
 </div>
