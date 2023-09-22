@@ -8,7 +8,6 @@ His research interests include:
 - Deep Reinforcement Learning: Multi-agent DRL, Hierarchical DRL, DRL + Other technologies, e.g., Game theory, Evaluation algorithm, etc.
 - Game Theory: Potential game, Matching, Auction, etc.
 
-<html>
 	<table style="margin-left: auto; margin-right: auto;">
 		<tr>
 			<td>
@@ -26,4 +25,3 @@ His research interests include:
 			</td>
 		</tr>
 	</table>
-</html>
