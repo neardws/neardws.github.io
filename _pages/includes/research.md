@@ -10,7 +10,7 @@ Kai Liu<sup>**\***</sup>, **Xincao Xu**<sup>**\***</sup>, Penglin Dai, and Biwen
 - We formulate a bi-objective problem for enabling Digital Twins in Vehicular Edge Computing (DT-VEC), where a cooperative sensing model and a V2I uploading model are derived, and novel metrics for quantitatively evaluating system quality and cost are designed.
 - We propose a multi-agent multi-objective (MAMO) deep reinforcement learning model, which determines the sensing objects, sensing frequency, uploading priority, and transmission power of vehicles, as well as the V2I bandwidth allocation of edge nodes. The model includes distributed actors interacting with the environment and storing their interaction experiences in the replay buffer, a learner with a dueling critic network for evaluating actions of vehicles and edge nodes. 
 - We give comprehensive performance evaluation by implementing three representative algorithms, including random allocation (RA), distributed distributional deep deterministic policy gradient (D4PG) and multi-agent D4PG (MAD4PG), and the simulation results demonstrate that the proposed MAMO significantly outperforms existing solutions under different scenarios with respect to both maximizing system quality and saving system cost.
-- Accepted by **IEEE Transactions on Consumer Electronics** [JCR Q1\|SCI Q2]
+- Accepted by **IEEE Transactions on Consumer Electronics** [JCR Q2\|SCI Q2]
 
 </div>
 </div>
