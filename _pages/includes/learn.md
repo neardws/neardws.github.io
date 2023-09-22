@@ -1,5 +1,9 @@
 # 🎒 Learning
 
+#### Shareable Material
+
+- Conference Proceedings and Journals Related to Internet of Vehicles by Xincao Xu [PDF]](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/Conference%20Proceedings%20and%20Journals%20Related%20to%20Internet%20of%20Vehicles.pdf)
+
 #### Courses
 
 - Introduction to Algorithms by MIT [[Bilibili]](https://www.bilibili.com/video/BV1fu41127MN) [[YouTube]](https://www.youtube.com/watch?v=ZA-tUyM_y7s&list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY)
@@ -30,10 +34,6 @@
 - Python Tutorial by Xuefeng Liao [[Chinese]](https://www.liaoxuefeng.com/wiki/1016959663602400)
 - Python Documentation [[English]](https://docs.python.org/3/) [[Chinese]](https://docs.python.org/zh-cn/3/)
 - Python for Beginners [[Chinese]](https://www.bilibili.com/video/BV1Fs411A7HZ)
-
-#### Shareable Materials
-
-- [Conference Proceedings and Journals Related to Internet of Vehicles by Xincao Xu](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/Conference%20Proceedings%20and%20Journals%20Related%20to%20Internet%20of%20Vehicles.pdf)
 
 © 2023-2025 Neardws.com 
 All Rights Reserved. ICP Number: [赣ICP
