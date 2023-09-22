@@ -2,7 +2,7 @@ I am currently a Postdoctoral Research Fellow in cooperation with [Prof. Shaohua
 
 My research interests include: 
 - AI for Driving: Heterogeneous information fusion, Multimodal deep learning, Cooperative sensing, Driving behavior control, etc.
-- Vehicular Networks: Coopertive transmission and computing, Integrated sensing and communications, Task offloading, Resource allocation, etc.
+- Vehicular Networks: Coopertive transmission and computing, Integrated sensing and communications, Resource allocation, etc.
 - Vehicular Cyber-Physical Systems: Sensing, Transmitting, Modeling, Controlling.
 - Edge Computing: Offloading the communication, computing, and caching abilities from the cloud to the network edge.
 - Deep Reinforcement Learning: Multi-agent DRL, Hierarchical DRL, DRL + Other technologies, e.g., Game theory, Evaluation algorithm, etc.
