@@ -10,8 +10,9 @@
 
 - General Project of National Natural Science Foundation of China, Computing Model Deployment and Collaborative Cross Domain Optimization for Edge Intelligence of Internet of Vehicles, 62172064, 2022/01–2025/12. (Participation)
 - General Project of National Natural Science Foundation of China, Research on High Performance Data Transmission and Reception Mechanism of Wireless Energy-capable Communication Network Based on Successive Interference Cancellation, 62072064, 2021/01-2024/12. (Participation)
+- General Project of National Natural Science Foundation of China, Research on Continuous Authentication Method and Key Technologies for Mobile Users Based on Behavioral Characteristics, 62072061, 2021/01-2024/12. (Participation)
+- General Project of National Natural Science Foundation of China, Research on Intelligent Multitask High-Performance Optimization Algorithms Based on Transfer Learning, 61876025, 2019/01–2022/12. (Participation)
 - General Project of National Natural Science Foundation of China, Research on Architecture and Protocols for Large-scale Data Services in Converged Heterogeneous Internet of Vehicles, 61872049, 2019/01–2022/12. (Participation)
-- General Project of National Natural Science Foundation of China, Research on Multi-Channel I2V/V2V Hybrid Communication and Temporal Information Service in Internet of Vehicles, 61572088, 2016/01–2019/12. (Participation)
 
 ## 📺 Demos
 
