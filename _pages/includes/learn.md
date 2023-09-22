@@ -2,7 +2,7 @@
 
 #### Shareable Material
 
-- Conference Proceedings and Journals Related to Internet of Vehicles by Xincao Xu [PDF]](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/Conference%20Proceedings%20and%20Journals%20Related%20to%20Internet%20of%20Vehicles.pdf)
+- Conference Proceedings and Journals Related to Internet of Vehicles [PDF](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/Conference%20Proceedings%20and%20Journals%20Related%20to%20Internet%20of%20Vehicles.pdf)
 
 #### Courses
 
