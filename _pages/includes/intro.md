@@ -22,7 +22,7 @@ His research interests include:
 				<a href="mailto:neard.ws@gmail.com">neard.ws@gmail.com</a>
 			</td>
 			<td>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2027.5867153416798!2d114.04785408720457!3d22.72274607249823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34038eb32c4355c1%3A0xd9850d5b145cf4f!2z6YqA5pif5pm655WM5LiJ5pyf!5e0!3m2!1szh-TW!2shk!4v1695397520415!5m2!1szh-TW!2shk" width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2027.5867153416798!2d114.04785408720457!3d22.72274607249823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34038eb32c4355c1%3A0xd9850d5b145cf4f!2z6YqA5pif5pm655WM5LiJ5pyf!5e0!3m2!1szh-TW!2shk!4v1695397520415!5m2!1szh-TW!2shk" width="450" height="200" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</td>
 		</tr>
 	</table>
