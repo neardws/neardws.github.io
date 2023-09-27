@@ -4,7 +4,7 @@
 
 <div class='paper-box-text' markdown="1">
 
-[Cooperative Sensing and Uploading for Quality-Cost Tradeoff of Digital Twins in VEC](https://arxiv.org/abs/2210.17386)       
+[Cooperative Sensing and Uploading for Quality-Cost Tradeoff of Digital Twins in VEC](https://ieeexplore.ieee.org/document/10261503)       
 Kai Liu<sup>**\***</sup>, **Xincao Xu**<sup>**\***</sup>, Penglin Dai, and Biwen Chen
 
 - We formulate a bi-objective problem for enabling Digital Twins in Vehicular Edge Computing (DT-VEC), where a cooperative sensing model and a V2I uploading model are derived, and novel metrics for quantitatively evaluating system quality and cost are designed.
