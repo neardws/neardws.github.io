@@ -37,7 +37,3 @@
 - Python Tutorial by Xuefeng Liao [[Chinese]](https://www.liaoxuefeng.com/wiki/1016959663602400)
 - Python Documentation [[English]](https://docs.python.org/3/) [[Chinese]](https://docs.python.org/zh-cn/3/)
 - Python for Beginners [[Chinese]](https://www.bilibili.com/video/BV1Fs411A7HZ)
-
-© 2023-2025 Neardws.com 
-All Rights Reserved. ICP Number: [赣ICP
-备20009812](https://beian.miit.gov.cn/)
