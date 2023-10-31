@@ -12,10 +12,10 @@
 
 ## 😎 Membership
 
-- *2023.09 - now*, Member #G0818M, China Computer Federation (CCF).
-- *2023.10 - now*, Member #3120145, Association for Computing Machinery (ACM).
-- *2023.09 - now*, Member #99619216, Institute of Electrical and Electronics Engineers (IEEE).
-- *2020.11 - 2023.08*, Student Member #G0818G, China Computer Federation (CCF).
+- *2023.09 - now*, Member #G0818M, China Computer Federation (CCF)
+- *2023.10 - now*, Member #3120145, Association for Computing Machinery (ACM)
+- *2023.09 - now*, Member #99619216, Institute of Electrical and Electronics Engineers (IEEE)
+- *2020.11 - 2023.08*, Student Member #G0818G, China Computer Federation (CCF)
 
 ## 👀 Reviewer
 
