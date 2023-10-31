@@ -1,4 +1,5 @@
 # 🔥 News
+- *2023.10*: One paper is accepted by IEEE ISPCE-AS 2023!
 - *2023.09*: 🎉🎉 One paper is accepted by IEEE TCE!
 - *2022.10*: 🎉🎉 One paper is accepted by JSA!
 - *2022.10*: My google scholar citations have reached 100!
