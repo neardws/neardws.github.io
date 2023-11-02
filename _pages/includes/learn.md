@@ -38,7 +38,11 @@
 - Python Documentation [[English]](https://docs.python.org/3/) [[Chinese]](https://docs.python.org/zh-cn/3/)
 - Python for Beginners [[Chinese]](https://www.bilibili.com/video/BV1Fs411A7HZ)   
 
-<a href="https://clustrmaps.com/site/1bx7j"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=aFmh3d7Xe0XBtDzpWJTkAIBPYWnWgzsZn29nw_9T_34&cl=ffffff" /></a>              
+<html>
+<body>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=a&t=tt&d=aFmh3d7Xe0XBtDzpWJTkAIBPYWnWgzsZn29nw_9T_34&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353'></script>
+</body>
+</html>    
 
 © 2023-2025 Neardws.com 
 All Rights Reserved. ICP Number: [赣ICP
