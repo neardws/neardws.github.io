@@ -45,7 +45,7 @@
 </div>
 <div style="clear: both; text-align: left;">
 <p>© 2023-2025 Neardws.com <br>
-    All Rights Reserved. ICP Number: <a href="https://beian.miit.gov.cn/">赣ICP备20009812</a></p>
+    All Rights Reserved. ICP Number: <a href="https://beian.miit.gov.cn/">赣ICP备20009812号-1</a></p>
 </div>
 </body>
 </html>    
