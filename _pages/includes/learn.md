@@ -39,8 +39,10 @@
 - Python for Beginners [[Chinese]](https://www.bilibili.com/video/BV1Fs411A7HZ)   
 
 <html>
-<body style="text-align: left;">
+<body>
+<div style='text-align:left;'>
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=600&t=tt&d=aFmh3d7Xe0XBtDzpWJTkAIBPYWnWgzsZn29nw_9T_34&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
+</div>
 </body>
 </html>    
 
