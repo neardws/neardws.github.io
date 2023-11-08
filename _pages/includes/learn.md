@@ -1,7 +1,11 @@
 # 🎒 Learning
 
 #### Shareable Materials
-
+<style>
+    a {
+        text-decoration: none;
+    }
+</style>
 - Conference Proceedings and Journals Related to Internet of Vehicles [[PDF]](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/Conference%20Proceedings%20and%20Journals%20Related%20to%20Internet%20of%20Vehicles.pdf)
 - Handbook for Research Beginner 01: Research Tools and Paper Reading (Chinese) [[PDF]](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/%E7%A7%91%E7%A0%94%E5%85%A5%E9%97%A801.pdf)
 - Handbook for Research Beginner 02: Paper Architecture and Writting (Chinese) [[PDF]](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/%E7%A7%91%E7%A0%94%E5%85%A5%E9%97%A802.pdf)
@@ -44,7 +48,7 @@
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=600&t=tt&d=aFmh3d7Xe0XBtDzpWJTkAIBPYWnWgzsZn29nw_9T_34&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
 </div>
 <div style="clear: both; text-align: left;">
-<p>© 2023-2025 Neardws.com All Rights Reserved. <img src="images/beian.png" alt="" width="23" height="23"/><a href="https://beian.mps.gov.cn/#/query/webSearch?code=44030002001279" rel="noreferrer" target="_blank" style="text-decoration: none;">粤公网安备44030002001279号</a> <a href="https://beian.miit.gov.cn/" style="text-decoration: none;">赣ICP备20009812号-1</a></p>
+<p>© 2023-2025 Neardws.com All Rights Reserved. <img src="images/beian.png" alt="" width="20" height="20"/><a href="https://beian.mps.gov.cn/#/query/webSearch?code=44030002001279" rel="noreferrer" target="_blank" style="text-decoration: none;">粤公网安备44030002001279号</a> <a href="https://beian.miit.gov.cn/" style="text-decoration: none;">赣ICP备20009812号-1</a></p>
 </div>
 </body>
 </html>    
