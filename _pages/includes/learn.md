@@ -38,13 +38,5 @@
 - Python Documentation [[English]](https://docs.python.org/3/) [[Chinese]](https://docs.python.org/zh-cn/3/)
 - Python for Beginners [[Chinese]](https://www.bilibili.com/video/BV1Fs411A7HZ)   
 
-<html>
-<body>
-<div style="float: left;">
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=600&t=tt&d=aFmh3d7Xe0XBtDzpWJTkAIBPYWnWgzsZn29nw_9T_34&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
-</div>
-<div style="clear: both; text-align: left;">
-<p>© 2023-2025 Neardws.com All Rights Reserved. <a href="https://beian.miit.gov.cn/" style="text-decoration: none;">赣ICP备20009812号-1</a> <img src="images/beian.png" alt="" width="20" height="22"/><a href="https://beian.mps.gov.cn/#/query/webSearch?code=44030002001279" rel="noreferrer" target="_blank" style="text-decoration: none;">粤公网安备44030002001279号</a> </p>
-</div>
-</body>
-</html>    
+
+© 2023-2025 Neardws.com All Rights Reserved. 
