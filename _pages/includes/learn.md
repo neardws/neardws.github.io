@@ -13,7 +13,7 @@
 - Meachine Learning by Prof. Hung-yi Lee [[Bilibili]](https://www.bilibili.com/video/BV1J94y1f7u5) [[YouTube]](https://www.youtube.com/watch?v=Y87Ct23H3Kw&list=PLJV_el3uVTsNxV_IGauQZBHjBKZ26JHjd)
 - Meachine Learning by Prof. Richard Xu [[Bilibili]](https://www.bilibili.com/video/BV1xW411N7f1/?spm_id_from=333.999.0.0&vd_source=c1ab668ffc70acf1658d1869973425ab) [[YouTube]](https://www.youtube.com/watch?v=COAlqcArijw&list=PLyAft-JyjIYoLYkte6lyluTXu3_J0lWJR)
 - Deep Learning by Prof. Andrew Ng [[Bilibili]](https://www.bilibili.com/video/BV12E411a7Xn) [[YouTube]](https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)
-- Deep Reinforcement Learning by Dr. Shusen Wang [[Bilibili]](https://www.bilibili.com/video/BV1rv41167yx) [[YouTube]](https://www.youtube.com/watch?v=jNcMnwpPpfk&list=PLgtf4d9zHHO99JZTT-N5eUBXhW5sfOKhA)
+- Deep Reinforcement Learning by Dr. Shusen Wang [[Bilibili]](https://www.bilibili.com/video/BV12o4y197US) [[YouTube]](https://www.youtube.com/watch?v=jNcMnwpPpfk&list=PLgtf4d9zHHO99JZTT-N5eUBXhW5sfOKhA)
 
 #### Books
 
