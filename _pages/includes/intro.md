@@ -15,8 +15,7 @@ His research interests include:
 				Office Address: <br>     
 				706, Building 3, YESUN Intelligent Community II, Guanlan Street, Longhua District, Shenzhen 518110, China. <br>     
 				Phone: <br> 
-				<a href="tel:+1-6015648240">+1-(601)-564-8240</a> <br>
-				<a href="tel:+86-13678430450">+86-136-7843-0450</a> <br>   
+				<a href="tel:+1-6015648240">+1-(601)-564-8240</a> <br>   
 				E-mail: <br>   
 				<a href="mailto:xc.xu@uestc.edu.cn">xc.xu@uestc.edu.cn</a> <br> 
 				<a href="mailto:neard.ws@gmail.com">neard.ws@gmail.com</a>

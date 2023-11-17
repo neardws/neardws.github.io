@@ -1,4 +1,5 @@
 # 🔥 News
+- *2023.11*: 🎉🎉 One general project of China Postdoctoral Science Foundation is granted!
 - *2023.10*: One paper is accepted by IEEE International Symposium on Product Compliance Engineering-Asia (*ISPCE-AS*) 2023!
 - *2023.09*: 🎉🎉 One paper is accepted by IEEE Transactions on Consumer Electronics (*TCE*)!
 - *2022.10*: 🎉🎉 One paper is accepted by Journal of Systems Architecture (*JSA*)!
