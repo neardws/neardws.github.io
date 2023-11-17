@@ -25,6 +25,7 @@
 - Journal of Systems Architecture (JSA)
 - Neural Computing and Applications (NCAA)
 - The Journal of Supercomputing (TJSC)
+- Journal of Computer Research and Development
 - Tien Tzu Hsueh Pao/Acta Electronica Sinica
 
 #### Conference
