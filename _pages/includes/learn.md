@@ -31,6 +31,7 @@
 - Academic Accelerator: Wonderful Tool to Accelerate Your Scientific Research [[Link]](https://academic-accelerator.com)
 - WikiCFP: A Wiki for Calls for Papers [[Link]](http://www.wikicfp.com/cfp/)
 - Zotero: Personal Research Assistant [[Link]](https://www.zotero.org)
+- IEEE Template Selector: Find the Right IEEE Article Template for Your Target Publication [[Link]](https://template-selector.ieee.org)
 
 #### Coding
 
