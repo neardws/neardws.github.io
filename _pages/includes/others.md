@@ -4,7 +4,7 @@
 
 #### Principal Investigator
 
-- General Project of China Postdoctoral Science Foundation, Modeling and Optimization of Vehicular Cyber-Physical System for Vehicular Edge Computing, to appear.
+- General Project of China Postdoctoral Science Foundation, Modeling and Optimization of Vehicular Cyber-Physical System for Vehicular Edge Computing, 2023M740515, 2023/11-2025/06.
 
 #### Participation
 
