@@ -1,5 +1,20 @@
 # 🕒 Research 
 
+<div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">VCPS</div><img src='images/VCPS.png' alt="VCPS" width="100%"><div class="badge">System Model</div><img src='images/Sensing_Model.png' alt="System Model" width="100%"></div></div>
+
+<div class='paper-box-text' markdown="1">
+
+[Cooperative Sensing and Heterogeneous Information Fusion in VCPS: A Multi-agent Deep Reinforcement Learning Approach](https://arxiv.org/abs/2209.12265)     
+**Xincao Xu**, Kai Liu<sup>**\***</sup>, Penglin Dai, Ruitao Xie, Jingjing Cao, and Jiangtao Luo
+
+- A novel problem is investigated to maximize the quality of VCPS by integrating the sensing, uploading, modeling and evaluation of heterogeneous information in VCPS. In particular, a cooperative sensing model is derived based on the multi-class M/G/1 priority queue and the Shannon theory. On this basis, a new metric called Age of View (AoV) is designed to quantitatively measure the quality of information fusion by evaluating the timeliness, completeness, and consistency of heterogeneous information in VCPS. To the best of our knowledge, this is the first work on quantitatively evaluating the quality of VCPS with the consideration of unique characteristics captured by the newly designed metic AoV.
+- A dedicated solution named multi-agent difference-reward based actor-critic with V2I bandwidth allocation (MDRAC-VBA) is proposed based on multi-agent actor-critic. Specifically, vehicles act as independent agents with action space of sensing frequencies and uploading priorities. The system state consists of vehicle sensed information, edge cached information, and view requirements. The system reward is defined as the achieved VCPS quality. Then, a difference reward (DR) based credit assignment scheme is designed to evaluate the contributions of individual vehicles on view construction by dividing the system reward into difference rewards, so as to enhance the evaluation accuracy in term of the action of each agent. Further, the solution manages to achieve smaller action space of each agent and speed up the convergency compared with conventional DRL algorithms. Meanwhile, a V2I bandwidth allocation (VBA) scheme is designed at the edge node based on vehicle trajectories and view requirements.
+- A comprehensive performance evaluation is conducted based on real-world vehicular trajectories. The proposed MDRAC-VBA algorithm and four competitive algorithms, including random allocation (RA), centralized deep deterministic policy gradient (C-DDPG), multi-agent actor-critic (MAC) and MAC with VBA scheme (MAC-VBA) are implemented. The simulation results demonstrated that MDRAC-VBA outperforms RA, C-DDPG, MAC, and MAC-VBA by around 61.8%, 23.8%, 22.0%, and 8.0%, respectively, in terms of maximizing the VCPS quality, and speeds up the convergence by around 6.8x, 1.4x and 1.3x compared with C-DDPG, MAC, and MAC-VBA, respectively.
+- Accepted by **IEEE Transactions on Intelligent Transportation Systems** [JCR Q1\|SCI Q1]
+
+</div>
+</div>
+
 <div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">DT-VEC</div><img src='images/DT_VEC.png' alt="DT-VEC" width="100%"><div class="badge">MAMO</div><img src='images/MAMO.png' alt="MAMO" width="100%"></div></div>
 
 <div class='paper-box-text' markdown="1">
@@ -14,22 +29,6 @@ Kai Liu<sup>**\***</sup>, **Xincao Xu**<sup>**\***</sup>, Penglin Dai, and Biwen
 
 </div>
 </div>
-
-<div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">VCPS</div><img src='images/VCPS.png' alt="VCPS" width="100%"><div class="badge">System Model</div><img src='images/Sensing_Model.png' alt="System Model" width="100%"></div></div>
-
-<div class='paper-box-text' markdown="1">
-
-[Cooperative Sensing and Heterogeneous Information Fusion in VCPS: A Multi-agent Deep Reinforcement Learning Approach](https://arxiv.org/abs/2209.12265)     
-**Xincao Xu**, Kai Liu<sup>**\***</sup>, Penglin Dai, Ruitao Xie, and Jiangtao Luo
-
-- We present a cooperative sensing and heterogeneous information fusion architecture in VCPS via vehicular edge computing. The heterogeneous information can be sensed via either onboard sensors such as LIDAR, GPS, and cameras, or roadside infrastructures such as traffic lights. The sensed information is queued in vehicles for uploading via the V2I bandwidth, which is allocated by the corresponding edge node. Logical views can be constructed via the information fusion at edge nodes, and different views may be required to enable upper-layer applications.
-- We formulate the problem to maximize the quality of VCPS. Specifically, we derive a cooperative sensing model, in which the information queuing and data uploading are modeled based on the multi-class M/G/1 priority queue and the Shannon theory, respectively. Then, we derive a heterogeneous information fusion model by modeling the timeliness, completeness, and consistency of views. On this basis, a new metric called Age of View (AoV) is defined to quantitatively measure the quality of information fusion. Finally, we model the quality of VCPS and present the optimization objective, which is to maximize the VCPS quality.
-- We propose a multi-agent deep reinforcement learning solution. Specifically, the solution model is presented, in which vehicles act as independent agents with action space of determining the sensing frequencies and uploading priorities, and the edge action space is the V2I bandwidth allocation. The system state consists of vehicle sensed information, edge cached information, and view requirements. The system reward is defined as the achieved VCPS quality. In particular, the system reward is divided into the Difference Reward (DR) to capture vehicle individual contributions on view constructions by the DR-based credit assignment.
-- Accepted by **IEEE Transactions on Intelligent Transportation Systems** [JCR Q1\|SCI Q1]
-
-</div>
-</div>
-
 
 <div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">NOMA-based VEC</div><img src='images/NOMA_based_VEC.png' alt="NOMA-based VEC" width="100%"><div class="badge">GT-DRL</div><img src='images/GT_DRL.png' alt="GT-DRL" width="100%"></div></div>
 
