@@ -35,9 +35,14 @@
 
 #### Call for Papers
 
-- IEEE ITSC 2024: 27th IEEE International Conference on Intelligent Transportation Systems, *Edmonton, Canada* 🇨🇦, Deadline: **April 15, 2024** [[Link]](https://ieee-itsc.org/2024/wp-content/uploads/sites/3/2023/09/CFP_IEEE_ITSC_2024.pdf)
-- NSDI 2025: 22nd USENIX Symposium on Networked Systems Design and Implementation, *Philadelphia, PA, USA* 🇺🇸, Deadline: Coming soon [[Link]](https://www.usenix.org/conferences/byname/178)
-- INFOCOM 2025: 20th IEEE International Conference on Computer Communications, *London, UK* 🇬🇧, Deadline: **July 31, 2024** [[Link]](https://ieee-infocom.org)
+- SIGCOMM 2024: 38th Annual Conference of the ACM Special Interest Group on Data Communication, *Sydney* 🇦🇺, Deadline: **Feb 2, 2024** [[Link]](https://www.sigcomm.org/sites/default/files/SIGCOMM_CFP_2024.html)
+- MobiCom 2024: 30th Annual International Conference On
+Mobile Computing And Networking, *Washington D.C* 🇺🇸, Deadline: **Aug 25, 2023/Mar 17, 2024(Estimated)**[[Link]](https://www.sigmobile.org/mobicom/2024/cfp.html)
+- IEEE ITSC 2024: 27th IEEE International Conference on Intelligent Transportation Systems, *Edmonton* 🇨🇦, Deadline: **Apr 15, 2024** [[Link]](https://ieee-itsc.org/2024/wp-content/uploads/sites/3/2023/09/CFP_IEEE_ITSC_2024.pdf)
+- NSDI 2025: 22nd USENIX Symposium on Networked Systems Design and Implementation, *Philadelphia* 🇺🇸, Deadline: **May 4/Sep 21, 2024 (Estimated)** [[Link]](https://www.usenix.org/conferences/byname/178)
+- INFOCOM 2025: 20th IEEE International Conference on Computer Communications, *London* 🇬🇧, Deadline: **Jul 31, 2024 (Estimated)** [[Link]](https://ieee-infocom.org)
+
+
 
 #### Coding
 
