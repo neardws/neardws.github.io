@@ -33,6 +33,10 @@
 - Zotero: Personal Research Assistant [[Link]](https://www.zotero.org)
 - IEEE Template Selector: Find the Right IEEE Article Template for Your Target Publication [[Link]](https://template-selector.ieee.org)
 
+#### Call for Papers
+
+- 27th IEEE International Conference on Intelligent Transportation Systems (*IEEE ITSC 2024*) Deadline: April 15, 2024 [[Link]](https://ieee-itsc.org/2024/wp-content/uploads/sites/3/2023/09/CFP_IEEE_ITSC_2024.pdf)
+
 #### Coding
 
 - Python Tutorial by Xuefeng Liao [[Chinese]](https://www.liaoxuefeng.com/wiki/1016959663602400)

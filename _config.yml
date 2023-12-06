@@ -23,9 +23,9 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Xincao Xu"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "Postdoctoral Research Fellow, UESTC"
+  bio              : "Postdoctoral Research Fellow"
   location         : "Shenzhen, China"
-  employer         :
+  employer         : "UESTC"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=DK5avZUAAAAJ"
   email            : "xc.xu@uestc.edu.cn"

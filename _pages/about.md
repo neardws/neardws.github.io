@@ -21,6 +21,6 @@ redirect_from:
 
 {% include_relative includes/exp.md %}
 
-{% include_relative includes/learn.md %}
+{% include_relative includes/resources.md %}
 
 
