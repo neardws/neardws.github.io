@@ -1,4 +1,4 @@
-# 🎒 Learning
+# 🎒 Resources
 
 #### Shareable Materials
 
@@ -35,7 +35,7 @@
 
 #### Call for Papers
 
-- 27th IEEE International Conference on Intelligent Transportation Systems (*IEEE ITSC 2024*) Deadline: April 15, 2024 [[Link]](https://ieee-itsc.org/2024/wp-content/uploads/sites/3/2023/09/CFP_IEEE_ITSC_2024.pdf)
+- 27th IEEE International Conference on Intelligent Transportation Systems (*IEEE ITSC 2024*) Deadline: **April 15, 2024** [[Link]](https://ieee-itsc.org/2024/wp-content/uploads/sites/3/2023/09/CFP_IEEE_ITSC_2024.pdf)
 
 #### Coding
 
