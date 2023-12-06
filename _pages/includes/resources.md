@@ -35,7 +35,9 @@
 
 #### Call for Papers
 
-- 27th IEEE International Conference on Intelligent Transportation Systems (*IEEE ITSC 2024*) Deadline: **April 15, 2024** [[Link]](https://ieee-itsc.org/2024/wp-content/uploads/sites/3/2023/09/CFP_IEEE_ITSC_2024.pdf)
+- IEEE ITSC 2024: 27th IEEE International Conference on Intelligent Transportation Systems, *Edmonton, Canada* 🇨🇦, Deadline: **April 15, 2024** [[Link]](https://ieee-itsc.org/2024/wp-content/uploads/sites/3/2023/09/CFP_IEEE_ITSC_2024.pdf)
+- NSDI 2025: 22nd USENIX Symposium on Networked Systems Design and Implementation, *Philadelphia, PA, USA* 🇺🇸, Deadline: Coming soon [[Link]](https://www.usenix.org/conferences/byname/178)
+- INFOCOM 2025: 20th IEEE International Conference on Computer Communications, *London, UK* 🇬🇧, Deadline: **July 31, 2024** [[Link]](https://ieee-infocom.org)
 
 #### Coding
 
