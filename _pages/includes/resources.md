@@ -43,6 +43,8 @@ Mobile Computing And Networking, *Washington D.C* 🇺🇸, Aug 25, 2023/Mar 17,
 - NSDI 2025: 22nd USENIX Symposium on Networked Systems Design and Implementation, *Philadelphia* 🇺🇸, May 4/Sep 21, 2024 (Estimated) [[Link]](https://www.usenix.org/conferences/byname/178)
 - VTC2024-Fall: 99th IEEE Vehicular Technology Conference, *Washington D.C* 🇺🇸, Jul 30, 2024 (Estimated) [[Link]](https://events.vtsociety.org/vtc2024-fall/authors/call-for-papers-2/)
 - INFOCOM 2025: 20th IEEE International Conference on Computer Communications, *London* 🇬🇧, Jul 31, 2024 (Estimated) [[Link]](https://ieee-infocom.org)
+- CCNC 2024: 21st CCF China National Computer Congress, *Hengdian* 🇨🇳, Oct 24, 2024 (Estimated) [[Link]](https://www.ccf.org.cn/Focus/2023-11-01/796767.shtml)
+- CWSN 2024: 18th CCF China Conference on Internet of Things (Wireless Sensor Network), *TBD* 🇨🇳, Oct 13, 2024 (Estimated) [[Link]](https://conf.ccf.org.cn/web/api/m1117874672189444096168656369095.action)
 
 #### Coding
 
