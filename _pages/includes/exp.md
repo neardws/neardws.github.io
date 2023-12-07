@@ -2,20 +2,20 @@
 
 ## 💼 Work 
 
-- *2023.07 - 2025.06(now)*, Postdoctoral Research Fellow, Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China, Shenzhen, China. (In cooperation with [Prof. Shaohua Wan](https://scholar.google.com/citations?user=IhjhNEEAAAAJ))
+- *Jul 2023 - Jun 2025 (now)*, Postdoctoral Research Fellow, Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China, Shenzhen, China. (In cooperation with [Prof. Shaohua Wan](https://scholar.google.com/citations?user=IhjhNEEAAAAJ))
 
 ## 🎓 Education
 
-- *2019.09 - 2023.06*, Ph.D., Computer Science, College of Computer Science, Chongqing University, Chongqing, China. (Supervised by [Prof. Kai Liu](https://scholar.google.com/citations?user=6YkCbT8AAAAJ))
-- *2017.09 - 2019.06*, Postgraduate student (Join the successive postgraduate-doctor program in 2019), Computer Science, College of Computer Science, Chongqing University, Chongqing, China.
-- *2013.09 - 2017.06*, Bachelor, Network Engineering, College of Computer and Control Engineering, North Univeristy of China, Taiyuan, China.
+- *Sep 2019 - Jun 2023*, Ph.D., Computer Science, College of Computer Science, Chongqing University, Chongqing, China. (Supervised by [Prof. Kai Liu](https://scholar.google.com/citations?user=6YkCbT8AAAAJ))
+- *Sep 2017 - Jun 2019*, Postgraduate student (Join the successive postgraduate-doctor program in 2019), Computer Science, College of Computer Science, Chongqing University, Chongqing, China.
+- *Sep 2013 - Jun 2017*, Bachelor, Network Engineering, College of Computer and Control Engineering, North Univeristy of China, Taiyuan, China.
 
 ## 😎 Membership
 
-- *2023.09 - now*, Member #G0818M, China Computer Federation (CCF)
-- *2023.10 - now*, Member #3120145, Association for Computing Machinery (ACM)
-- *2023.09 - now*, Member #99619216, Institute of Electrical and Electronics Engineers (IEEE)
-- *2020.11 - 2023.08*, Student Member #G0818G, China Computer Federation (CCF)
+- *Sep 2023 - now*, Member #G0818M, China Computer Federation (CCF)
+- *Oct 2023 - now*, Member #3120145, Association for Computing Machinery (ACM)
+- *Sep 2023 - now*, Member #99619216, Institute of Electrical and Electronics Engineers (IEEE)
+- *Nov 2020 - Aug 2023*, Student Member #G0818G, China Computer Federation (CCF)
 
 ## 👀 Reviewer
 
