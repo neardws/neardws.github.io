@@ -19,7 +19,7 @@
 
 - Meachine Learning by Prof. Zhi-Hua Zhou [[Chinese]](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/MLbook2016.htm)
 - Deep Learning by Dr. Ian Goodfellow, Prof. Yoshua Bengio, and Prof. Aaron Courville [[English]](https://www.deeplearningbook.org) [[Chinese]](https://github.com/exacity/deeplearningbook-chinese)
-- Machine Learning Yearning by Prof. Andrew Ng [[Chinese]](https://deeplearning-ai.github.io/machine-learning-yearning-cn/)
+- Machine Learning Yearning by Prof. Andrew Ng [[English]](https://www.mlyearning.org) [[Chinese]](https://deeplearning-ai.github.io/machine-learning-yearning-cn/) 
 - Dive into Deep Learning by Dr. Aston Zhang, Dr. Zachary C. Lipton, Dr. Mu Li, and Dr. Alexander I. Smola [[English]](https://d2l.ai) [[Chinese]](https://zh.d2l.ai)
 
 #### Research
