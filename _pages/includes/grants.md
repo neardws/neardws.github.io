@@ -5,7 +5,7 @@
 
 #### Principal Investigator
 
-- **CPSF**, General Project, "Modeling and Optimization of Vehicular Cyber-Physical System for Vehicular Edge Computing", 2023M740515, ¥80,000, Jan 2024 - Jun 2025.
+- **CPSF**, General Project, "Modeling and Optimization of Cyber-Physical System for Vehicular Edge Computing", 2023M740515, ¥80,000, Jan 2024 - Jun 2025.
 
 #### Participation
 
