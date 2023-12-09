@@ -24,6 +24,9 @@ main:
   - title: "Resources"
     url: "/#-resources"
 
+  - title: "CFP"
+    url: "/#-call-for-papers"
+
   - title: "CV"
     url: "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/cv.pdf"
 
