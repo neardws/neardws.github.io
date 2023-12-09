@@ -17,7 +17,7 @@
 | Jul 28, 2024<sup>**\***</sup> | **TURC'24**: 6th ACM Turing Award Celebration Conference | TBD 🇨🇳 | / | [Link](https://www.acmturc.com/2023/cn/index.html) |
 | Jul 30, 2024<sup>**\***</sup> | **VTC2024-Fall**: 100th IEEE Vehicular Technology Conference | Washington D.C. 🇺🇸 | / | [Link](https://events.vtsociety.org/vtc2024-fall/authors/call-for-papers-2/) |
 | Jul 31, 2024<sup>**\***</sup> | **INFOCOM'25**: 20th IEEE International Conference on Computer Communications | London 🇬🇧 | A | [Link](http://www.wikicfp.com/cfp/program?id=6046) |
-| Aug 25, 2023<br>/Mar 17, 2024<sup>**\***</sup> | **MobiCom'24**: 30th ACM International Conference On Mobile Computing And Networking | Washington D.C. 🇺🇸 | A | [CFP](https://www.sigmobile.org/mobicom/2024/cfp.html) |
+| Aug 25, 2023/<br>Mar 17, 2024<sup>**\***</sup> | **MobiCom'24**: 30th ACM International Conference On Mobile Computing And Networking | Washington D.C. 🇺🇸 | A | [CFP](https://www.sigmobile.org/mobicom/2024/cfp.html) |
 | Oct 24, 2024<sup>**\***</sup> | **CCNC'24**: 21st CCF China National Computer Congress | Hengdian 🇨🇳 | / | [Link](https://www.ccf.org.cn/Focus/2023-11-01/796767.shtml) |
 | Oct 13, 2024<sup>**\***</sup> | **CWSN'24**: 18th CCF China Conference on Internet of Things (Wireless Sensor Network) | TBD 🇨🇳 | / | [Link](https://conf.ccf.org.cn/web/api/m1117874672189444096168656369095.action) |
 | Nov 30, 2025<sup>**\***</sup> | **MobiSys'25**: 23rd ACM International Conference on Mobile Systems, Applications, and Services | TBD | B | [Link](http://www.wikicfp.com/cfp/program?id=2114) |
