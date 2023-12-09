@@ -35,18 +35,22 @@
 
 #### Call for Papers
 
-- VTC2024-Spring: 99th IEEE Vehicular Technology Conference, *Singapore* 🇸🇬, Dec 28, 2023 [[Link]](https://events.vtsociety.org/vtc2024-spring/authors/call-for-papers-2/)
-- SIGCOMM 2024: 38th Annual Conference of the ACM Special Interest Group on Data Communication, *Sydney* 🇦🇺, Feb 2, 2024 [[Link]](https://www.sigcomm.org/sites/default/files/SIGCOMM_CFP_2024.html)
-- MobiCom 2024: 30th Annual International Conference On
-Mobile Computing And Networking, *Washington D.C.* 🇺🇸, Aug 25, 2023/Mar 17, 2024 (Estimated) [[Link]](https://www.sigmobile.org/mobicom/2024/cfp.html)
-- IEEE ITSC 2024: 27th IEEE International Conference on Intelligent Transportation Systems, *Edmonton* 🇨🇦, Apr 15, 2024 [[Link]](https://ieee-itsc.org/2024/wp-content/uploads/sites/3/2023/09/CFP_IEEE_ITSC_2024.pdf)
-- NSDI 2025: 22nd USENIX Symposium on Networked Systems Design and Implementation, *Philadelphia* 🇺🇸, May 4/Sep 21, 2024 (Estimated) [[Link]](https://www.usenix.org/conferences/byname/178)
+- VTC2024-Spring: 99th IEEE Vehicular Technology Conference, *Singapore* 🇸🇬, **Dec 28, 2023** [[CFP]](https://events.vtsociety.org/vtc2024-spring/authors/call-for-papers-2/)
+- SIGCOMM 2024: 38th Annual Conference of the ACM Special Interest Group on Data Communication, *Sydney* 🇦🇺, **Feb 2, 2024** [[CFP]](https://www.sigcomm.org/sites/default/files/SIGCOMM_CFP_2024.html)
+- IWQoS 2024: 32nd IEEE/ACM International Symposium on Quality of Service, *TBD*, **Fed 12, 2024** (Estimated) [[Link]](http://www.wikicfp.com/cfp/program?id=1855)
+- MobiHoc 2024: 25th ACM International Symposium on Mobile Ad Hoc Networking and Computing, *TBD*, **Mar 10, 2024** (Estimated) [[Link]](https://www.sigmobile.org/mobihoc/2023/cfp.html)
+- MobiCom 2024: 30th ACM International Conference On Mobile Computing And Networking, *Washington D.C.* 🇺🇸, **Aug 25, 2023/Mar 17, 2024** (Estimated) [[CFP]](https://www.sigmobile.org/mobicom/2024/cfp.html)
+- SECOM 2024: 21st IEEE International Conference on Sensing, Communication, and Networking, *TBD*, **Mar 29, 2024** (Estimated) [[Link]](https://secon2023.ieee-secon.org)
+- IEEE ITSC 2024: 27th IEEE International Conference on Intelligent Transportation Systems, *Edmonton* 🇨🇦, **Apr 15, 2024** [[CFP]](https://ieee-itsc.org/2024/wp-content/uploads/sites/3/2023/09/CFP_IEEE_ITSC_2024.pdf)
+- NSDI 2025: 22nd USENIX Symposium on Networked Systems Design and Implementation, *Philadelphia* 🇺🇸, **May 4/Sep 21, 2024** (Estimated) [[Link]](http://www.wikicfp.com/cfp/program?id=2239)
+- CoNEXT 2024: 20th International Conference on emerging Networking EXperiments and Technologies, *Los Angeles* 🇺🇸, **Dec 4, 2023/Jun 27, 2024** [[CFP]](https://conferences.sigcomm.org/co-next/2024/#!/cfp)
+- SenSys 2024: 22nd ACM Conference on Embedded Networked Sensor Systems, *TBD*, **Jun 29, 2024** (Estimated) [[Link]](http://www.wikicfp.com/cfp/program?id=2631)
 - TURC 2024: 6th ACM Turing Award Celebration Conference, *TBD* 🇨🇳, Jul 28, 2024 (Estimated) [[Link]](https://www.acmturc.com/2023/cn/index.html)
-- VTC2024-Fall: 100th IEEE Vehicular Technology Conference, *Washington D.C.* 🇺🇸, Jul 30, 2024 (Estimated) [[Link]](https://events.vtsociety.org/vtc2024-fall/authors/call-for-papers-2/)
-- INFOCOM 2025: 20th IEEE International Conference on Computer Communications, *London* 🇬🇧, Jul 31, 2024 (Estimated) [[Link]](https://ieee-infocom.org)
-- CCNC 2024: 21st CCF China National Computer Congress, *Hengdian* 🇨🇳, Oct 24, 2024 (Estimated) [[Link]](https://www.ccf.org.cn/Focus/2023-11-01/796767.shtml)
-- CWSN 2024: 18th CCF China Conference on Internet of Things (Wireless Sensor Network), *TBD* 🇨🇳, Oct 13, 2024 (Estimated) [[Link]](https://conf.ccf.org.cn/web/api/m1117874672189444096168656369095.action)
-
+- VTC2024-Fall: 100th IEEE Vehicular Technology Conference, *Washington D.C.* 🇺🇸, **Jul 30, 2024** (Estimated) [[Link]](https://events.vtsociety.org/vtc2024-fall/authors/call-for-papers-2/)
+- INFOCOM 2025: 20th IEEE International Conference on Computer Communications, *London* 🇬🇧, **Jul 31, 2024** (Estimated) [[Link]](http://www.wikicfp.com/cfp/program?id=6046)
+- CCNC 2024: 21st CCF China National Computer Congress, *Hengdian* 🇨🇳, **Oct 24, 2024** (Estimated) [[Link]](https://www.ccf.org.cn/Focus/2023-11-01/796767.shtml)
+- CWSN 2024: 18th CCF China Conference on Internet of Things (Wireless Sensor Network), *TBD* 🇨🇳, **Oct 13, 2024** (Estimated) [[Link]](https://conf.ccf.org.cn/web/api/m1117874672189444096168656369095.action)
+- MobiSys 2025: 23th ACM International Conference on Mobile Systems, Applications, and Services, *TBD*, **Nov 30, 2025** (Estimated) [[Link]](http://www.wikicfp.com/cfp/program?id=2114)
 
 #### Coding
 
