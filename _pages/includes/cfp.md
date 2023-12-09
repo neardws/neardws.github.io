@@ -19,7 +19,7 @@
   </tr>
   <tr>
     <td><s>Dec 4, 2023</s><br>Jun 27, 2024</td>
-    <td><strong>CoNEXT'24</strong>: 20th International Conference on emerging Networking EXperiments and Technologies</td>
+    <td><strong>CoNEXT'24</strong>: 20th ACM International Conference on Emerging Networking Experiments and Technologies</td>
     <td>Los Angeles 🇺🇸</td>
     <td>B</td>
     <td><a href="https://conferences.sigcomm.org/co-next/2024/#!/cfp">CFP</a></td>
