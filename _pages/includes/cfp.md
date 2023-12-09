@@ -173,7 +173,7 @@
   </tr>
   <tr>
     <td><u>Sep 17, 2025</u></td>
-    <td><strong>DATE'25</strong>: 28th IEEE/ACM Design, Automation & Test in Europe Conference & Exhibition</td>
+    <td><strong>DATE'25</strong>: 28th IEEE/ACM Design, Automation \& Test in Europe Conference \& Exhibition</td>
     <td>TBD</td>
     <td>B</td>
     <td><a href="https://www.date-conference.com/call-for-papers">Link</a></td>
