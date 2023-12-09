@@ -4,9 +4,9 @@
 
 <table>
   <tr>
-    <th style="width: 100px;">Date</th>
+    <th style="width: 110px;">Date</th>
     <th>Conference Name</th>
-    <th>Location</th>
+    <th style="width: 140px;>Location</th>
     <th>CCF</th>
     <th>Link</th>
   </tr>
