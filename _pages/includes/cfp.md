@@ -1,4 +1,4 @@
-# 📝 Call for Papers
+# 📢 Call for Papers
 
 <u>Date</u>: Estimated Date
 
