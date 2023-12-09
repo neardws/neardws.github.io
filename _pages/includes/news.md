@@ -1,4 +1,4 @@
-## 🔥 News
+# 🔥 News
 
 ### November 2023
 - **Journal Acceptance** 📚: Thrilled to announce that one of our paper titled "Cooperative Sensing and Heterogeneous Information Fusion in VCPS: A Multi-agent Deep Reinforcement Learning Approach" has been accepted by the prestigious IEEE Transactions on Intelligent Transportation Systems (*T-ITS*)! 🎉🚀
