@@ -89,7 +89,7 @@
   </tr>
   <tr>
     <td><u>May 17, 2024</u></td>
-    <td><strong>NeurIPS'24</strong>: 38th Conference on Neural Information Processing Systems</td>
+    <td><strong>NeurIPS'24</strong>: 38th MIT Conference on Neural Information Processing Systems</td>
     <td>TBD</td>
     <td>A</td>
     <td><a href="http://www.wikicfp.com/cfp/program?id=2212">Link</a></td>
@@ -145,7 +145,7 @@
   </tr>
   <tr>
     <td>Aug 25, 2023<br><u>Mar 17, 2024</u></td>
-    <td><strong>MobiCom'24</strong>: 30th ACM International Conference On Mobile Computing And Networking</td>
+    <td><strong>MobiCom'24</strong>: 30th ACM International Conference on Mobile Computing and Networking</td>
     <td>Washington D.C. 🇺🇸</td>
     <td>A</td>
     <td><a href="https://www.sigmobile.org/mobicom/2024/cfp.html">CFP</a></td>
@@ -173,7 +173,7 @@
   </tr>
   <tr>
     <td><u>Sep 17, 2025</u></td>
-    <td><strong>DATE'25</strong>: 28th IEEE/ACM Design, Automation \& Test in Europe Conference \& Exhibition</td>
+    <td><strong>DATE'25</strong>: 28th IEEE/ACM Design, Automation & Test in Europe Conference & Exhibition</td>
     <td>TBD</td>
     <td>B</td>
     <td><a href="https://www.date-conference.com/call-for-papers">Link</a></td>
