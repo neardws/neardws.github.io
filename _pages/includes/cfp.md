@@ -4,7 +4,7 @@
 
 <table>
   <tr>
-    <th style="width: 110px;">Date</th>
+    <th style="width: 110px;">Deadline</th>
     <th>Conference Name</th>
     <th style="width: 160px;">Location</th>
     <th>CCF</th>
@@ -61,7 +61,7 @@
   </tr>
   <tr>
     <td>Apr 15, 2024</td>
-    <td><strong>IEEE ITSC'24</strong>: 27th IEEE International Conference on Intelligent Transportation Systems</td>
+    <td><strong>ITSC'24</strong>: 27th IEEE International Conference on Intelligent Transportation Systems</td>
     <td>Edmonton 🇨🇦</td>
     <td>/</td>
     <td><a href="https://ieee-itsc.org/2024/wp-content/uploads/sites/3/2023/09/CFP_IEEE_ITSC_2024.pdf">CFP</a></td>
