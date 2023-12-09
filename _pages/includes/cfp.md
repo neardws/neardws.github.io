@@ -109,6 +109,13 @@
     <td><a href="https://www.sigmobile.org/mobicom/2024/cfp.html">CFP</a></td>
   </tr>
   <tr>
+    <td><u>Oct 4, 2024</u></td>
+    <td><strong>ICC'25</strong>: 31st IEEE International Conference on Communications</td>
+    <td>Montreal QC 🇨🇦</td>
+    <td>C</td>
+    <td><a href="https://www.comsoc.org/conferences-events/ieee-international-conference-communications-2025">Link</a></td>
+  </tr>
+  <tr>
     <td><u>Oct 24, 2024</u></td>
     <td><strong>CCNC'24</strong>: 21st CCF China National Computer Congress</td>
     <td>Hengdian 🇨🇳</td>
