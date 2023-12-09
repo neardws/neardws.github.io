@@ -39,7 +39,7 @@
     <td><a href="http://www.wikicfp.com/cfp/program?id=1855">Link</a></td>
   </tr>
   <tr>
-    <td><u>Feb 15, 2024</u></td>
+    <td>Feb 15, 2024</td>
     <td><strong>PODC'24</strong>: 43rd ACM Symposium on Principles of Distributed Computing</td>
     <td>Nantes 🇫🇷</td>
     <td>B</td>
@@ -50,7 +50,7 @@
     <td><strong>MobiHoc'24</strong>: 25th ACM International Symposium on Mobile Ad Hoc Networking and Computing</td>
     <td>TBD</td>
     <td>B</td>
-    <td><a href="https://www.sigmobile.org/mobihoc/2023/cfp.html">CFP</a></td>
+    <td><a href="https://www.sigmobile.org/mobihoc/2023/cfp.html">Link</a></td>
   </tr>
   <tr>
     <td><u>Mar 29, 2024</u></td>
@@ -149,6 +149,13 @@
     <td>TBD 🇨🇳</td>
     <td>/</td>
     <td><a href="https://conf.ccf.org.cn/web/api/m1117874672189444096168656369095.action">Link</a></td>
+  </tr>
+  <tr>
+    <td><u>Sep 17, 2025</u></td>
+    <td><strong>DATE'25</strong>: 28th IEEE/ACM Design, Automation & Test in Europe Conference & Exhibition</td>
+    <td>TBD</td>
+    <td>B</td>
+    <td><a href="https://www.date-conference.com/call-for-papers">Link</a></td>
   </tr>
   <tr>
     <td><u>Nov 30, 2025</u></td>
