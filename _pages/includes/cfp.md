@@ -25,6 +25,13 @@
     <td><a href="https://conferences.sigcomm.org/co-next/2024/#!/cfp">CFP</a></td>
   </tr>
   <tr>
+    <td>Jan 19, 2024</td>
+    <td><strong>ICDCS'24</strong>: 44th IEEE International Conference on Distributed Computing Systems</td>
+    <td>Jersey City 🇺🇸</td>
+    <td>B</td>
+    <td><a href="https://icdcs2024.icdcs.org/call-for-papers/">CFP</a></td>
+  </tr>
+  <tr>
     <td>Feb 2, 2024</td>
     <td><strong>SIGCOMM'24</strong>: 38th Annual Conference of the ACM Special Interest Group on Data Communication</td>
     <td>Sydney 🇦🇺</td>
@@ -81,6 +88,13 @@
     <td><a href="http://www.wikicfp.com/cfp/program?id=2239">Link</a></td>
   </tr>
   <tr>
+    <td><u>May 17, 2024</u></td>
+    <td><strong>NeurIPS'24</strong>: 38th Conference on Neural Information Processing Systems</td>
+    <td>TBD</td>
+    <td>A</td>
+    <td><a href="http://www.wikicfp.com/cfp/program?id=2212">Link</a></td>
+  </tr>
+  <tr>
     <td><u>May 24, 2024</u><br><u>Oct 19, 2024</u></td>
     <td><strong>EuroSys'25</strong>: 20th ACM European Conference on Computer Systems</td>
     <td>TBD</td>
@@ -121,6 +135,13 @@
     <td>London 🇬🇧</td>
     <td>A</td>
     <td><a href="http://www.wikicfp.com/cfp/program?id=6046">Link</a></td>
+  </tr>
+  <tr>
+    <td><u>Aug 15, 2024</u></td>
+    <td><strong>AAAI'25</strong>: 39th AAAI Conference on Artificial Intelligence</td>
+    <td>TBD</td>
+    <td>A</td>
+    <td><a href="http://www.wikicfp.com/cfp/program?id=3">Link</a></td>
   </tr>
   <tr>
     <td>Aug 25, 2023<br><u>Mar 17, 2024</u></td>
