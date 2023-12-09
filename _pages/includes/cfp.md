@@ -73,6 +73,13 @@
     <td>A</td>
     <td><a href="http://www.wikicfp.com/cfp/program?id=2239">Link</a></td>
   </tr>
+  <tr>
+    <td><u>May 24, 2024</u><br><u>Oct 19, 2024</u></td>
+    <td><strong>EuroSys'25</strong>: 20th ACM European Conference on Computer Systems</td>
+    <td>TBD</td>
+    <td>A</td>
+    <td><a href="http://www.wikicfp.com/cfp/program?id=979">Link</a></td>
+  </tr>
    <tr>
     <td><u>Jun 29, 2024</u></td>
     <td><strong>SenSys'24</strong>: 22nd ACM Conference on Embedded Networked Sensor Systems</td>
