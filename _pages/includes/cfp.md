@@ -179,7 +179,7 @@
     <td><a href="https://www.date-conference.com/call-for-papers">Link</a></td>
   </tr>
   <tr>
-    <td><u>Nov 30, 2025</u></td>
+    <td>Nov 30, 2025<sup>**\***</sup></td>
     <td><strong>MobiSys'25</strong>: 23rd ACM International Conference on Mobile Systems, Applications, and Services</td>
     <td>TBD</td>
     <td>B</td>
