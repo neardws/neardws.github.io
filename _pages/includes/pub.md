@@ -7,7 +7,7 @@
 
 #### Preprint
 
-- **Xincao Xu**, Kai Liu<sup>**\***</sup>, Penglin Dai, Ruitao Xie, Jingjing Cao, and Jiangtao Luo, [Cooperative Sensing and Heterogeneous Information Fusion in VCPS: A Multi-agent Deep Reinforcement Learning Approach](https://arxiv.org/abs/2209.12265), arXiv preprint arXiv:2209.12265, January 2023.
+- **Xincao Xu**, Kai Liu<sup>*</sup>, Penglin Dai, Ruitao Xie, Jingjing Cao, and Jiangtao Luo, [Cooperative Sensing and Heterogeneous Information Fusion in VCPS: A Multi-agent Deep Reinforcement Learning Approach](https://arxiv.org/abs/2209.12265), arXiv preprint arXiv:2209.12265, January 2023.
 
 #### Journal
 
