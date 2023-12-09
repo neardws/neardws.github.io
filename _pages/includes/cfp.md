@@ -33,7 +33,7 @@
   </tr>
   <tr>
     <td>Feb 2, 2024</td>
-    <td><strong>SIGCOMM'24</strong>: 38th Annual Conference of the ACM Special Interest Group on Data Communication</td>
+    <td><strong>SIGCOMM'24</strong>: 38th ACM Conference of the Special Interest Group on Data Communication</td>
     <td>Sydney 🇦🇺</td>
     <td>A</td>
     <td><a href="https://www.sigcomm.org/sites/default/files/SIGCOMM_CFP_2024.html">CFP</a></td>
