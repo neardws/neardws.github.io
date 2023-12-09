@@ -4,9 +4,9 @@
 
 | Date | Conference Name | Location | CCF| Link |
 |------|-----------------|----------|------|------|
-| Dec 28, 2023  | **VTC2024-Spring**: 99th IEEE Vehicular Technology Conference | Singapore 🇸🇬 | / | [CFP](https://events.vtsociety.org/vtc2024-spring/authors/call-for-papers-2/) |
+| Dec 28, 2023 | **VTC2024-Spring**: 99th IEEE Vehicular Technology Conference | Singapore 🇸🇬 | / | [CFP](https://events.vtsociety.org/vtc2024-spring/authors/call-for-papers-2/) |
 | Dec 04, 2023 <br>Jun 27, 2024 | **CoNEXT'24**: 20th International Conference on emerging Networking EXperiments and Technologies | Los Angeles 🇺🇸 | B | [CFP](https://conferences.sigcomm.org/co-next/2024/#!/cfp) |
-| Feb 02, 2024  | **SIGCOMM'24**: 38th Annual Conference of the ACM Special Interest Group on Data Communication | Sydney 🇦🇺 | A | [CFP](https://www.sigcomm.org/sites/default/files/SIGCOMM_CFP_2024.html) |
+| Feb 02, 2024 | **SIGCOMM'24**: 38th Annual Conference of the ACM Special Interest Group on Data Communication | Sydney 🇦🇺 | A | [CFP](https://www.sigcomm.org/sites/default/files/SIGCOMM_CFP_2024.html) |
 | <u>Feb 12, 2024</u> | **IWQoS'24**: 32nd IEEE/ACM International Symposium on Quality of Service | TBD | B | [Link](http://www.wikicfp.com/cfp/program?id=1855) |
 | <u>Mar 10, 2024</u> | **MobiHoc'24**: 25th ACM International Symposium on Mobile Ad Hoc Networking and Computing | TBD | B | [CFP](https://www.sigmobile.org/mobihoc/2023/cfp.html) |
 | <u>Mar 29, 2024</u> | **SECOM'24**: 21st IEEE International Conference on Sensing, Communication, and Networking | TBD | B | [Link](https://secon2023.ieee-secon.org) |
