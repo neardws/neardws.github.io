@@ -18,9 +18,9 @@
 | <u>Jul 30, 2024</u> | **VTC2024-Fall**: 100th IEEE Vehicular Technology Conference | Washington D.C. 🇺🇸 | / | [Link](https://events.vtsociety.org/vtc2024-fall/authors/call-for-papers-2/) |
 | <u>Jul 31, 2024</u> | **INFOCOM'25**: 20th IEEE International Conference on Computer Communications | London 🇬🇧 | A | [Link](http://www.wikicfp.com/cfp/program?id=6046) |
 | Aug 25, 2023 <br><u>Mar 17, 2024</u> | **MobiCom'24**: 30th ACM International Conference On Mobile Computing And Networking | Washington D.C. 🇺🇸 | A | [CFP](https://www.sigmobile.org/mobicom/2024/cfp.html) |
-| <u>Oct 24, 2024</u>> | **CCNC'24**: 21st CCF China National Computer Congress | Hengdian 🇨🇳 | / | [Link](https://www.ccf.org.cn/Focus/2023-11-01/796767.shtml) |
-| <u>Oct 13, 2024</u>> | **CWSN'24**: 18th CCF China Conference on Internet of Things (Wireless Sensor Network) | TBD 🇨🇳 | / | [Link](https://conf.ccf.org.cn/web/api/m1117874672189444096168656369095.action) |
-| <u>Nov 30, 2025</u>> | **MobiSys'25**: 23rd ACM International Conference on Mobile Systems, Applications, and Services | TBD | B | [Link](http://www.wikicfp.com/cfp/program?id=2114) |
+| <u>Oct 24, 2024</u> | **CCNC'24**: 21st CCF China National Computer Congress | Hengdian 🇨🇳 | / | [Link](https://www.ccf.org.cn/Focus/2023-11-01/796767.shtml) |
+| <u>Oct 13, 2024</u> | **CWSN'24**: 18th CCF China Conference on Internet of Things (Wireless Sensor Network) | TBD 🇨🇳 | / | [Link](https://conf.ccf.org.cn/web/api/m1117874672189444096168656369095.action) |
+| <u>Nov 30, 2025</u> | **MobiSys'25**: 23rd ACM International Conference on Mobile Systems, Applications, and Services | TBD | B | [Link](http://www.wikicfp.com/cfp/program?id=2114) |
 
 
 <html>
