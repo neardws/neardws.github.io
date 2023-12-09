@@ -18,7 +18,7 @@
     <td><a href="https://events.vtsociety.org/vtc2024-spring/authors/call-for-papers-2/">CFP</a></td>
   </tr>
   <tr>
-    <td>Dec 4, 2023<br>Jun 27, 2024</td>
+    <td><s>Dec 4, 2023</s><br>Jun 27, 2024</td>
     <td><strong>CoNEXT'24</strong>: 20th International Conference on emerging Networking EXperiments and Technologies</td>
     <td>Los Angeles 🇺🇸</td>
     <td>B</td>
@@ -58,6 +58,13 @@
     <td>TBD</td>
     <td>B</td>
     <td><a href="https://www.sigmobile.org/mobihoc/2023/cfp.html">Link</a></td>
+  </tr>
+  <tr>
+    <td><s>Aug 25, 2023</s><br><u>Mar 17, 2024</u></td>
+    <td><strong>MobiCom'24</strong>: 30th ACM International Conference on Mobile Computing and Networking</td>
+    <td>Washington D.C. 🇺🇸</td>
+    <td>A</td>
+    <td><a href="https://www.sigmobile.org/mobicom/2024/cfp.html">CFP</a></td>
   </tr>
   <tr>
     <td><u>Mar 29, 2024</u></td>
@@ -142,13 +149,6 @@
     <td>TBD</td>
     <td>A</td>
     <td><a href="http://www.wikicfp.com/cfp/program?id=3">Link</a></td>
-  </tr>
-  <tr>
-    <td>Aug 25, 2023<br><u>Mar 17, 2024</u></td>
-    <td><strong>MobiCom'24</strong>: 30th ACM International Conference on Mobile Computing and Networking</td>
-    <td>Washington D.C. 🇺🇸</td>
-    <td>A</td>
-    <td><a href="https://www.sigmobile.org/mobicom/2024/cfp.html">CFP</a></td>
   </tr>
   <tr>
     <td><u>Oct 4, 2024</u></td>
