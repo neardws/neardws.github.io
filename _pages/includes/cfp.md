@@ -39,6 +39,13 @@
     <td><a href="http://www.wikicfp.com/cfp/program?id=1855">Link</a></td>
   </tr>
   <tr>
+    <td><u>Feb 15, 2024</u></td>
+    <td><strong>PODC'24</strong>: 43rd ACM Symposium on Principles of Distributed Computing</td>
+    <td>Nantes 🇫🇷</td>
+    <td>B</td>
+    <td><a href="https://www.podc.org/podc2024/call-for-papers/">CFP</a></td>
+  </tr>
+  <tr>
     <td><u>Mar 10, 2024</u></td>
     <td><strong>MobiHoc'24</strong>: 25th ACM International Symposium on Mobile Ad Hoc Networking and Computing</td>
     <td>TBD</td>
