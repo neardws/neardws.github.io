@@ -80,6 +80,13 @@
     <td>A</td>
     <td><a href="http://www.wikicfp.com/cfp/program?id=979">Link</a></td>
   </tr>
+  <tr>
+    <td><u>Jun 9, 2024</u></td>
+    <td><strong>SoCC'24</strong>: 15th ACM Symposium on Cloud Computing</td>
+    <td>TBD</td>
+    <td>B</td>
+    <td><a href="http://www.wikicfp.com/cfp/program?id=2720">Link</a></td>
+  </tr>
    <tr>
     <td><u>Jun 29, 2024</u></td>
     <td><strong>SenSys'24</strong>: 22nd ACM Conference on Embedded Networked Sensor Systems</td>
