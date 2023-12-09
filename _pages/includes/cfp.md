@@ -1,6 +1,6 @@
 # 📢 Call for Papers
 
-<u>Date</u>: Estimated Date
+**\***: Estimated Date
 
 <table>
   <tr>
@@ -39,7 +39,7 @@
     <td><a href="https://www.sigcomm.org/sites/default/files/SIGCOMM_CFP_2024.html">CFP</a></td>
   </tr>
   <tr>
-    <td><u>Feb 12, 2024</u></td>
+    <td>Feb 12, 2024<sup>*</sup></td>
     <td><strong>IWQoS'24</strong>: 32nd IEEE/ACM International Symposium on Quality of Service</td>
     <td>TBD</td>
     <td>B</td>
@@ -53,28 +53,28 @@
     <td><a href="https://www.podc.org/podc2024/call-for-papers/">CFP</a></td>
   </tr>
   <tr>
-    <td><u>Mar 10, 2024</u></td>
+    <td>Mar 10, 2024<sup>*</sup></td>
     <td><strong>MobiHoc'24</strong>: 25th ACM International Symposium on Mobile Ad Hoc Networking and Computing</td>
     <td>TBD</td>
     <td>B</td>
     <td><a href="https://www.sigmobile.org/mobihoc/2023/cfp.html">Link</a></td>
   </tr>
   <tr>
-    <td><s>Aug 25, 2023</s><br><u>Mar 17, 2024</u></td>
+    <td><s>Aug 25, 2023</s><br>Mar 17, 2024<sup>*</sup></td>
     <td><strong>MobiCom'24</strong>: 30th ACM International Conference on Mobile Computing and Networking</td>
     <td>Washington D.C. 🇺🇸</td>
     <td>A</td>
     <td><a href="https://www.sigmobile.org/mobicom/2024/cfp.html">CFP</a></td>
   </tr>
   <tr>
-    <td><u>Mar 29, 2024</u></td>
+    <td>Mar 29, 2024<sup>*</sup></td>
     <td><strong>SECOM'24</strong>: 21st IEEE International Conference on Sensing, Communication, and Networking</td>
     <td>TBD</td>
     <td>B</td>
     <td><a href="https://secon2023.ieee-secon.org">Link</a></td>
   </tr>
   <tr>
-    <td><u>Apr 5, 2024</u></td>
+    <td>Apr 5, 2024<sup>*</sup></td>
     <td><strong>GLOBECOM'24</strong>: 25th IEEE Global Communications Conference</td>
     <td>Cape Town 🇿🇦</td>
     <td>C</td>
@@ -88,91 +88,91 @@
     <td><a href="https://ieee-itsc.org/2024/wp-content/uploads/sites/3/2023/09/CFP_IEEE_ITSC_2024.pdf">CFP</a></td>
   </tr>
   <tr>
-    <td><u>May 4, 2024</u><br><u>Sep 21, 2024</u></td>
+    <td>May 4, 2024<sup>*</sup><br>Sep 21, 2024<sup>*</sup></td>
     <td><strong>NSDI'25</strong>: 22nd USENIX Symposium on Networked Systems Design and Implementation</td>
     <td>Philadelphia 🇺🇸</td>
     <td>A</td>
     <td><a href="http://www.wikicfp.com/cfp/program?id=2239">Link</a></td>
   </tr>
   <tr>
-    <td><u>May 17, 2024</u></td>
+    <td>May 17, 2024<sup>*</sup></td>
     <td><strong>NeurIPS'24</strong>: 38th MIT Conference on Neural Information Processing Systems</td>
     <td>TBD</td>
     <td>A</td>
     <td><a href="http://www.wikicfp.com/cfp/program?id=2212">Link</a></td>
   </tr>
   <tr>
-    <td><u>May 24, 2024</u><br><u>Oct 19, 2024</u></td>
+    <td>May 24, 2024<sup>*</sup><br>Oct 19, 2024<sup>*</sup></td>
     <td><strong>EuroSys'25</strong>: 20th ACM European Conference on Computer Systems</td>
     <td>TBD</td>
     <td>A</td>
     <td><a href="http://www.wikicfp.com/cfp/program?id=979">Link</a></td>
   </tr>
   <tr>
-    <td><u>Jun 9, 2024</u></td>
+    <td>Jun 9, 2024<sup>*</sup></td>
     <td><strong>SoCC'24</strong>: 15th ACM Symposium on Cloud Computing</td>
     <td>TBD</td>
     <td>B</td>
     <td><a href="http://www.wikicfp.com/cfp/program?id=2720">Link</a></td>
   </tr>
    <tr>
-    <td><u>Jun 29, 2024</u></td>
+    <td>Jun 29, 2024<sup>*</sup></td>
     <td><strong>SenSys'24</strong>: 22nd ACM Conference on Embedded Networked Sensor Systems</td>
     <td>TBD</td>
     <td>B</td>
     <td><a href="http://www.wikicfp.com/cfp/program?id=2631">Link</a></td>
   </tr>
   <tr>
-    <td><u>Jul 28, 2024</u></td>
+    <td>Jul 28, 2024<sup>*</sup></td>
     <td><strong>TURC'24</strong>: 6th ACM Turing Award Celebration Conference</td>
     <td>TBD 🇨🇳</td>
     <td>/</td>
     <td><a href="https://www.acmturc.com/2023/cn/index.html">Link</a></td>
   </tr>
   <tr>
-    <td><u>Jul 30, 2024</u></td>
+    <td><sup>*</sup>Jul 30, 2024<sup>*</sup></td>
     <td><strong>VTC2024-Fall</strong>: 100th IEEE Vehicular Technology Conference</td>
     <td>Washington D.C. 🇺🇸</td>
     <td>/</td>
     <td><a href="https://events.vtsociety.org/vtc2024-fall/authors/call-for-papers-2/">Link</a></td>
   </tr>
   <tr>
-    <td><u>Jul 31, 2024</u></td>
+    <td><sup>*</sup>Jul 31, 2024<sup>*</sup></td>
     <td><strong>INFOCOM'25</strong>: 20th IEEE International Conference on Computer Communications</td>
     <td>London 🇬🇧</td>
     <td>A</td>
     <td><a href="http://www.wikicfp.com/cfp/program?id=6046">Link</a></td>
   </tr>
   <tr>
-    <td><u>Aug 15, 2024</u></td>
+    <td>Aug 15, 2024<sup>*</sup></td>
     <td><strong>AAAI'25</strong>: 39th AAAI Conference on Artificial Intelligence</td>
     <td>TBD</td>
     <td>A</td>
     <td><a href="http://www.wikicfp.com/cfp/program?id=3">Link</a></td>
   </tr>
   <tr>
-    <td><u>Oct 4, 2024</u></td>
+    <td>Oct 4, 2024<sup>*</sup></td>
     <td><strong>ICC'25</strong>: 31st IEEE International Conference on Communications</td>
     <td>Montreal QC 🇨🇦</td>
     <td>C</td>
     <td><a href="https://www.comsoc.org/conferences-events/ieee-international-conference-communications-2025">Link</a></td>
   </tr>
   <tr>
-    <td><u>Oct 24, 2024</u></td>
+    <td>Oct 24, 2024<sup>*</sup></td>
     <td><strong>CCNC'24</strong>: 21st CCF China National Computer Congress</td>
     <td>Hengdian 🇨🇳</td>
     <td>/</td>
     <td><a href="https://www.ccf.org.cn/Focus/2023-11-01/796767.shtml">Link</a></td>
   </tr>
   <tr>
-    <td><u>Oct 13, 2024</u></td>
+    <td>Oct 13, 2024<sup>*</sup></td>
     <td><strong>CWSN'24</strong>: 18th CCF China Conference on Internet of Things (Wireless Sensor Network)</td>
     <td>TBD 🇨🇳</td>
     <td>/</td>
     <td><a href="https://conf.ccf.org.cn/web/api/m1117874672189444096168656369095.action">Link</a></td>
   </tr>
   <tr>
-    <td><u>Sep 17, 2025</u></td>
+    <td>Sep 17, 2025<sup>*</sup></td>
     <td><strong>DATE'25</strong>: 28th IEEE/ACM Design, Automation &amp; Test in Europe Conference &amp; Exhibition</td>
     <td>TBD</td>
     <td>B</td>
