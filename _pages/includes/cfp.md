@@ -130,14 +130,14 @@
     <td><a href="https://www.acmturc.com/2023/cn/index.html">Link</a></td>
   </tr>
   <tr>
-    <td><sup>*</sup>Jul 30, 2024<sup>*</sup></td>
+    <td>Jul 30, 2024<sup>*</sup></td>
     <td><strong>VTC2024-Fall</strong>: 100th IEEE Vehicular Technology Conference</td>
     <td>Washington D.C. 🇺🇸</td>
     <td>/</td>
     <td><a href="https://events.vtsociety.org/vtc2024-fall/authors/call-for-papers-2/">Link</a></td>
   </tr>
   <tr>
-    <td><sup>*</sup>Jul 31, 2024<sup>*</sup></td>
+    <td>Jul 31, 2024<sup>*</sup></td>
     <td><strong>INFOCOM'25</strong>: 20th IEEE International Conference on Computer Communications</td>
     <td>London 🇬🇧</td>
     <td>A</td>
