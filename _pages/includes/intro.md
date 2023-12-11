@@ -22,7 +22,8 @@ His research is primarily focused on several cutting-edge areas, including:
 				<a href="mailto:neard.ws@gmail.com">neard.ws@gmail.com</a>
 			</td>
 			<td>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d1840.0394389968312!2d114.04549969444281!3d22.72530941260613!3m2!1i1024!2i768!4f13.1!2m1!1z6ZO25pif5pm655WM5LqM5pyf!5e0!3m2!1sen!2suk!4v1695607371575!5m2!1sen!2suk" width="450" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe width="450" height="220" src="https://www.openstreetmap.org/export/embed.html?bbox=114.02656316757204%2C22.723049810086813%2C114.05134677886964%2C22.735963602484535&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=17/22.72951/114.03895">Show more</a></small>
+				<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d1840.0394389968312!2d114.04549969444281!3d22.72530941260613!3m2!1i1024!2i768!4f13.1!2m1!1z6ZO25pif5pm655WM5LqM5pyf!5e0!3m2!1sen!2suk!4v1695607371575!5m2!1sen!2suk" width="450" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
 			</td>
 		</tr>
 	</table>
