@@ -17,10 +17,10 @@
 
 #### Books
 
-- Meachine Learning by Prof. Zhi-Hua Zhou [![](https://img.shields.io/badge/Chinese-white)](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/MLbook2016.htm)
-- Deep Learning by Dr. Ian Goodfellow, Prof. Yoshua Bengio, and Prof. Aaron Courville [![](https://img.shields.io/badge/English-white)](https://www.deeplearningbook.org) [![](https://img.shields.io/badge/Chinese-white)](https://github.com/exacity/deeplearningbook-chinese)
-- Machine Learning Yearning by Prof. Andrew Ng [![](https://img.shields.io/badge/English-white)](https://www.mlyearning.org) [![](https://img.shields.io/badge/Chinese-white)](https://deeplearning-ai.github.io/machine-learning-yearning-cn/) 
-- Dive into Deep Learning by Dr. Aston Zhang, Dr. Zachary C. Lipton, Dr. Mu Li, and Dr. Alexander I. Smola [![](https://img.shields.io/badge/English-white)](https://d2l.ai) [![](https://img.shields.io/badge/Chinese-white)](https://zh.d2l.ai)
+- Meachine Learning by Prof. Zhi-Hua Zhou <a href="https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/MLbook2016.htm" class="no-underline">🇨🇳Chinese</a>
+- Deep Learning by Dr. Ian Goodfellow, Prof. Yoshua Bengio, and Prof. Aaron Courville <a href="https://www.deeplearningbook.org" class="no-underline">🇬🇧English</a> <a href="https://github.com/exacity/deeplearningbook-chinese" class="no-underline">🇨🇳Chinese</a>
+- Machine Learning Yearning by Prof. Andrew Ng <a href="https://www.mlyearning.org" class="no-underline">🇬🇧English</a> <a href="https://deeplearning-ai.github.io/machine-learning-yearning-cn/" class="no-underline">🇨🇳Chinese</a>
+- Dive into Deep Learning by Dr. Aston Zhang, Dr. Zachary C. Lipton, Dr. Mu Li, and Dr. Alexander I. Smola <a href="https://d2l.ai" class="no-underline">🇬🇧English</a> <a href="https://zh.d2l.ai" class="no-underline">🇨🇳Chinese</a>
 
 #### Research
 
@@ -35,6 +35,6 @@
 
 #### Coding
 
-- Python Tutorial by Xuefeng Liao [![](https://img.shields.io/badge/Chinese-white)](https://www.liaoxuefeng.com/wiki/1016959663602400)
-- Python Documentation [![](https://img.shields.io/badge/English-white)](https://docs.python.org/3/) [![](https://img.shields.io/badge/Chinese-white)](https://docs.python.org/zh-cn/3/)
-- Python for Beginners [![](https://img.shields.io/badge/Chinese-white)](https://www.bilibili.com/video/BV1Fs411A7HZ)   
+- Python Tutorial by Xuefeng Liao <a href="https://www.liaoxuefeng.com/wiki/1016959663602400" class="no-underline">🇨🇳Chinese</a>
+- Python Documentation <a href="https://docs.python.org/3/" class="no-underline">🇬🇧English</a> <a href="https://docs.python.org/zh-cn/3/" class="no-underline">🇨🇳Chinese</a>
+- Python for Beginners <a href="https://www.bilibili.com/video/BV1Fs411A7HZ" class="no-underline">🇨🇳Chinese</a>
