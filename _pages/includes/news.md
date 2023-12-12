@@ -12,7 +12,7 @@
 
 ### October 2022
 - **Journal Acceptance** : A paper titled "Joint Task Offloading and Resource Optimization in NOMA-Based Vehicular Edge Computing: A Game-Theoretic DRL Approach" has been accepted for publication in the Journal of Systems Architecture (*JSA*). 
-- **Citation Milestone** 🌟: Reached a significant milestone with 100 citations on [Google Scholar](https://scholar.google.com/citations?user=DK5avZUAAAAJ). A testament to the impact of our work in the scientific community. 
+- **Citation Milestone** 🌟: Reached a significant milestone with 100 citations on <a href="https://scholar.google.com/citations?user=DK5avZUAAAAJ" class="no-underline">Google Scholar</a>. A testament to the impact of our work in the scientific community. 
 
 ### September 2022
 - **Patent Approval** : Received official approval for an invention patent from the China National Intellectual Property Administration. A proud moment that highlights our innovative contributions. 
