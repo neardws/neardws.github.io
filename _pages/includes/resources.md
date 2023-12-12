@@ -17,10 +17,10 @@
 
 #### Books
 
-- Meachine Learning by Prof. Zhi-Hua Zhou [[Chinese]](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/MLbook2016.htm)
-- Deep Learning by Dr. Ian Goodfellow, Prof. Yoshua Bengio, and Prof. Aaron Courville [[English]](https://www.deeplearningbook.org) [[Chinese]](https://github.com/exacity/deeplearningbook-chinese)
-- Machine Learning Yearning by Prof. Andrew Ng [[English]](https://www.mlyearning.org) [[Chinese]](https://deeplearning-ai.github.io/machine-learning-yearning-cn/) 
-- Dive into Deep Learning by Dr. Aston Zhang, Dr. Zachary C. Lipton, Dr. Mu Li, and Dr. Alexander I. Smola [[English]](https://d2l.ai) [[Chinese]](https://zh.d2l.ai)
+- Meachine Learning by Prof. Zhi-Hua Zhou [![](https://img.shields.io/badge/Chinese-cd071e)](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/MLbook2016.htm)
+- Deep Learning by Dr. Ian Goodfellow, Prof. Yoshua Bengio, and Prof. Aaron Courville [![](https://img.shields.io/badge/English-281e5d)](https://www.deeplearningbook.org) [![](https://img.shields.io/badge/Chinese-cd071e)](https://github.com/exacity/deeplearningbook-chinese)
+- Machine Learning Yearning by Prof. Andrew Ng [![](https://img.shields.io/badge/English-281e5d)](https://www.mlyearning.org) [![](https://img.shields.io/badge/Chinese-cd071e)](https://deeplearning-ai.github.io/machine-learning-yearning-cn/) 
+- Dive into Deep Learning by Dr. Aston Zhang, Dr. Zachary C. Lipton, Dr. Mu Li, and Dr. Alexander I. Smola [![](https://img.shields.io/badge/English-281e5d)](https://d2l.ai) [![](https://img.shields.io/badge/Chinese-cd071e)](https://zh.d2l.ai)
 
 #### Research
 
@@ -35,6 +35,6 @@
 
 #### Coding
 
-- Python Tutorial by Xuefeng Liao [[Chinese]](https://www.liaoxuefeng.com/wiki/1016959663602400)
-- Python Documentation [[English]](https://docs.python.org/3/) [[Chinese]](https://docs.python.org/zh-cn/3/)
-- Python for Beginners [[Chinese]](https://www.bilibili.com/video/BV1Fs411A7HZ)   
+- Python Tutorial by Xuefeng Liao [![](https://img.shields.io/badge/Chinese-cd071e)](https://www.liaoxuefeng.com/wiki/1016959663602400)
+- Python Documentation [![](https://img.shields.io/badge/English-281e5d)](https://docs.python.org/3/) [![](https://img.shields.io/badge/Chinese-cd071e)](https://docs.python.org/zh-cn/3/)
+- Python for Beginners [![](https://img.shields.io/badge/Chinese-cd071e)](https://www.bilibili.com/video/BV1Fs411A7HZ)   
