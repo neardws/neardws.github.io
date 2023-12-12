@@ -24,14 +24,14 @@
 
 #### Research
 
-- Google Scholar: Largest Search Engine for Academic Publishing [[Link]](https://scholar.google.com)
-- dblp: Computer Science Bibliography [[Link]](https://dblp.org)
-- Conference Partner: Information about Academic Conferences [[Link]](https://www.myhuiban.com)
-- LetPub: Information about SCI Journals [[Link]](http://www.letpub.com.cn/index.php?page=journalapp)
-- Academic Accelerator: Wonderful Tool to Accelerate Your Scientific Research [[Link]](https://academic-accelerator.com)
-- WikiCFP: A Wiki for Calls for Papers [[Link]](http://www.wikicfp.com/cfp/)
-- Zotero: Personal Research Assistant [[Link]](https://www.zotero.org)
-- IEEE Template Selector: Find the Right IEEE Article Template for Your Target Publication [[Link]](https://template-selector.ieee.org)
+- <a href="https://scholar.google.com" class="no-underline">Google Scholar</a>: Largest Search Engine for Academic Publishing 
+- <a href="https://dblp.org" class="no-underline">dblp</a>: Computer Science Bibliography
+- <a href="https://www.myhuiban.com" class="no-underline">Conference Partner</a>Conference Partner: Information about Academic Conferences
+- <a href="http://www.letpub.com.cn/index.php?page=journalapp" class="no-underline">LetPub</a>: Information about SCI Journals
+- <a href="https://academic-accelerator.com" class="no-underline">Academic Accelerator</a>: Wonderful Tool to Accelerate Your Scientific Research
+- <a href="http://www.wikicfp.com/cfp/" class="no-underline">WikiCFP</a>: A Wiki for Calls for Papers
+- <a href="https://www.zotero.org" class="no-underline">Zotero</a>: Personal Research Assistant
+- <a href="https://template-selector.ieee.org" class="no-underline">IEEE Template Selector</a>: Find the Right IEEE Article Template for Your Target Publication
 
 #### Coding
 
