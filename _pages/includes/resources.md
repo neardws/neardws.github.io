@@ -2,7 +2,7 @@
 
 #### Shareable Materials
 
-- Conference Proceedings and Journals Related to Internet of Vehicles [![](https://img.shields.io/badge/-PDF-blue?logo=adobeacrobatreader&logoColor=white&labelColor=EC1C24&color=F5F5F5&style=flat)](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/Conference%20Proceedings%20and%20Journals%20Related%20to%20Internet%20of%20Vehicles.pdf)
+- Conference Proceedings and Journals Related to Internet of Vehicles [![](https://img.shields.io/badge/-PDF-blue?logo=adobeacrobatreader&logoColor=F5F5F5&labelColor=white&color=F5F5F5&style=flat)](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/Conference%20Proceedings%20and%20Journals%20Related%20to%20Internet%20of%20Vehicles.pdf)
 - Handbook for Research Beginner 01: Research Tools and Paper Reading (Chinese) [![](https://img.shields.io/badge/-PDF-blue?logo=microsoftpowerpoint&logoColor=B7472A&labelColor=white&color=F5F5F5&style=flat)](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/%E7%A7%91%E7%A0%94%E5%85%A5%E9%97%A801.pdf)
 - Handbook for Research Beginner 02: Paper Architecture and Writting (Chinese) [![](https://img.shields.io/badge/-PDF-blue?logo=microsoftpowerpoint&logoColor=B7472A&labelColor=white&color=F5F5F5&style=flat)](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/%E7%A7%91%E7%A0%94%E5%85%A5%E9%97%A802.pdf)
 - Handbook for Research Beginner 03: Patent Drafting  (Chinese) [![](https://img.shields.io/badge/-PDF-blue?logo=microsoftpowerpoint&logoColor=B7472A&labelColor=white&color=F5F5F5&style=flat)](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/%E7%A7%91%E7%A0%94%E5%85%A5%E9%97%A803.pdf)
@@ -17,10 +17,10 @@
 
 #### Books
 
-- Meachine Learning by Prof. Zhi-Hua Zhou [![](https://img.shields.io/badge/Chinese-cd071e)](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/MLbook2016.htm)
-- Deep Learning by Dr. Ian Goodfellow, Prof. Yoshua Bengio, and Prof. Aaron Courville [![](https://img.shields.io/badge/English-281e5d)](https://www.deeplearningbook.org) [![](https://img.shields.io/badge/Chinese-cd071e)](https://github.com/exacity/deeplearningbook-chinese)
-- Machine Learning Yearning by Prof. Andrew Ng [![](https://img.shields.io/badge/English-281e5d)](https://www.mlyearning.org) [![](https://img.shields.io/badge/Chinese-cd071e)](https://deeplearning-ai.github.io/machine-learning-yearning-cn/) 
-- Dive into Deep Learning by Dr. Aston Zhang, Dr. Zachary C. Lipton, Dr. Mu Li, and Dr. Alexander I. Smola [![](https://img.shields.io/badge/English-281e5d)](https://d2l.ai) [![](https://img.shields.io/badge/Chinese-cd071e)](https://zh.d2l.ai)
+- Meachine Learning by Prof. Zhi-Hua Zhou [![](https://img.shields.io/badge/Chinese-white)](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/MLbook2016.htm)
+- Deep Learning by Dr. Ian Goodfellow, Prof. Yoshua Bengio, and Prof. Aaron Courville [![](https://img.shields.io/badge/English-white)](https://www.deeplearningbook.org) [![](https://img.shields.io/badge/Chinese-white)](https://github.com/exacity/deeplearningbook-chinese)
+- Machine Learning Yearning by Prof. Andrew Ng [![](https://img.shields.io/badge/English-white)](https://www.mlyearning.org) [![](https://img.shields.io/badge/Chinese-white)](https://deeplearning-ai.github.io/machine-learning-yearning-cn/) 
+- Dive into Deep Learning by Dr. Aston Zhang, Dr. Zachary C. Lipton, Dr. Mu Li, and Dr. Alexander I. Smola [![](https://img.shields.io/badge/English-white)](https://d2l.ai) [![](https://img.shields.io/badge/Chinese-white)](https://zh.d2l.ai)
 
 #### Research
 
@@ -35,6 +35,6 @@
 
 #### Coding
 
-- Python Tutorial by Xuefeng Liao [![](https://img.shields.io/badge/Chinese-cd071e)](https://www.liaoxuefeng.com/wiki/1016959663602400)
-- Python Documentation [![](https://img.shields.io/badge/English-281e5d)](https://docs.python.org/3/) [![](https://img.shields.io/badge/Chinese-cd071e)](https://docs.python.org/zh-cn/3/)
-- Python for Beginners [![](https://img.shields.io/badge/Chinese-cd071e)](https://www.bilibili.com/video/BV1Fs411A7HZ)   
+- Python Tutorial by Xuefeng Liao [![](https://img.shields.io/badge/Chinese-white)](https://www.liaoxuefeng.com/wiki/1016959663602400)
+- Python Documentation [![](https://img.shields.io/badge/English-white)](https://docs.python.org/3/) [![](https://img.shields.io/badge/Chinese-white)](https://docs.python.org/zh-cn/3/)
+- Python for Beginners [![](https://img.shields.io/badge/Chinese-white)](https://www.bilibili.com/video/BV1Fs411A7HZ)   
