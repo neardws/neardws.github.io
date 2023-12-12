@@ -9,6 +9,7 @@ His research is primarily focused on several cutting-edge areas, including:
 - Game Theory, with a specific interest in potential games, matching, auctions, and related concepts.
 
 <html>
+<head>
 <style>
 /* 为带链接的文字定义样式 */
 a.no-underline {
@@ -20,6 +21,7 @@ a.no-underline:hover {
     text-decoration: underline; /* 鼠标悬停时显示下划线 */
 }
 </style>
+</head>
 	<table style="margin-left: auto; margin-right: auto;">
 		<tr>
 			<td>
