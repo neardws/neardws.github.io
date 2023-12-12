@@ -21,6 +21,7 @@
 
 #### Journal
 
+- IEEE Transactions on Intelligent Transportation Systems (T-ITS)
 - IEEE Transactions on Vehicular Technology (TVT)
 - Journal of Systems Architecture (JSA)
 - Neural Computing and Applications (NCAA)
