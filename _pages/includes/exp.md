@@ -32,7 +32,7 @@
 #### Conference
 
 - IEEE Vehicular Technology Conference (VTC-Fall'23)
-- International conference on Artificial Intelligence of Things and Systems (AIoTSys'23)
+- International Conference on Artificial Intelligence of Things and Systems (AIoTSys'23)
 - IEEE International Conference on Intelligent Transportation Systems (ITSC'22,23)
 - IEEE Global Communications Conference (GLOBECOM'21,23)
 - International Conference on Algorithms and Architectures for Parallel Processing (ICA3PP'21)
