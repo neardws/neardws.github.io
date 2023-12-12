@@ -9,11 +9,11 @@
 
 #### Courses
 
-- Introduction to Algorithms by MIT [[Bilibili]](https://www.bilibili.com/video/BV1fu41127MN) [[YouTube]](https://www.youtube.com/watch?v=ZA-tUyM_y7s&list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY)
-- Meachine Learning by Prof. Hung-yi Lee [[Bilibili]](https://www.bilibili.com/video/BV1J94y1f7u5) [[YouTube]](https://www.youtube.com/watch?v=Y87Ct23H3Kw&list=PLJV_el3uVTsNxV_IGauQZBHjBKZ26JHjd)
-- Meachine Learning by Prof. Richard Xu [[Bilibili]](https://www.bilibili.com/video/BV1xW411N7f1/?spm_id_from=333.999.0.0&vd_source=c1ab668ffc70acf1658d1869973425ab) [[YouTube]](https://www.youtube.com/watch?v=COAlqcArijw&list=PLyAft-JyjIYoLYkte6lyluTXu3_J0lWJR)
-- Deep Learning by Prof. Andrew Ng [[Bilibili]](https://www.bilibili.com/video/BV12E411a7Xn) [[YouTube]](https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)
-- Deep Reinforcement Learning by Dr. Shusen Wang [[Bilibili]](https://www.bilibili.com/video/BV12o4y197US) [[YouTube]](https://www.youtube.com/watch?v=jNcMnwpPpfk&list=PLgtf4d9zHHO99JZTT-N5eUBXhW5sfOKhA)
+- Introduction to Algorithms by MIT [![](https://img.shields.io/youtube/views/ZA-tUyM_y7s?style=social)](https://youtu.be/ZA-tUyM_y7s?si=kiC6GJP1so65_qXd) [![](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1fu41127MN)](https://www.bilibili.com/video/BV1fu41127MN)
+- Meachine Learning by Prof. Hung-yi Lee [![](https://img.shields.io/youtube/views/Y87Ct23H3Kw?style=social)](https://youtu.be/Y87Ct23H3Kw?si=BqvpADSwLBTE1wye) [![](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1J94y1f7u5)](https://www.bilibili.com/video/BV1J94y1f7u5)
+- Meachine Learning by Prof. Richard Xu [![](https://img.shields.io/youtube/views/COAlqcArijw?style=social)](https://youtu.be/COAlqcArijw?si=82kWIY6_otM2MAkX) [![](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1xW411N7f1)](https://www.bilibili.com/video/BV1xW411N7f1)
+- Deep Learning by Prof. Andrew Ng [![](https://img.shields.io/youtube/views/jGwO_UgTS7I?style=social)](https://youtu.be/jGwO_UgTS7I?si=csYfDjWpUzRV10Pb) [![](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV12E411a7Xn)](https://www.bilibili.com/video/BV12E411a7Xn)
+- Deep Reinforcement Learning by Dr. Shusen Wang [![](https://img.shields.io/youtube/views/jNcMnwpPpfk?style=social)](https://youtu.be/jNcMnwpPpfk?si=TTlCAahbHhY4v7KR) [![](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV12o4y197US)](https://www.bilibili.com/video/BV12o4y197US)
 
 #### Books
 
