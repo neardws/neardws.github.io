@@ -2,7 +2,7 @@
 
 **\***: Estimated Date
 
-<table>
+<table class="no-horizontal-lines">
   <tr>
     <th style="width: 110px;">Deadline</th>
     <th>Conference Name</th>

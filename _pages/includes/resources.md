@@ -17,7 +17,7 @@
 
 #### Books
 
-<table style="margin-left: auto; margin-right: auto;">
+<table class="no-horizontal-lines" style="margin-left: auto; margin-right: auto;">
 	<tr>
 		<td>
 			<img src='images/book_machine_learning.jpg' alt="Meachine Learning" width="150">
