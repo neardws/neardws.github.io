@@ -29,7 +29,7 @@
 			ISBN: 9787302423287<br>
 			<a href="https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/MLbook2016.htm" class="no-underline">🇨🇳Chinese</a>
 		</td>
-		<td style="width: 150px;"></td>
+		<td style="width: 200px;"></td>
 	</tr>
 	<tr>
 		<td class="tight-padding">
@@ -41,7 +41,7 @@
 			Free Ebook, 2018<br>
 			<a href="https://info.deeplearning.ai/machine-learning-yearning-book#" class="no-underline">🇬🇧English</a> | <a href="https://deeplearning-ai.github.io/machine-learning-yearning-cn/" class="no-underline">🇨🇳Chinese</a>
 		</td>
-		<td style="width: 150px;"></td>
+		<td style="width: 200px;"></td>
 	</tr>
 	<tr>
 		<td class="tight-padding">
@@ -54,7 +54,7 @@
 			ISBN: 9780262035613<br>
 			<a href="https://www.deeplearningbook.org" class="no-underline">🇬🇧English</a> | <a href="https://github.com/exacity/deeplearningbook-chinese" class="no-underline">🇨🇳Chinese</a>
 		</td>
-		<td style="width: 150px;"></td>
+		<td style="width: 200px;"></td>
 	</tr>
 	<tr>
 		<td class="tight-padding">
@@ -67,7 +67,7 @@
 			ISBN: 1009389432<br>
 			<a href="https://d2l.ai" class="no-underline">🇬🇧English</a> | <a href="https://zh.d2l.ai" class="no-underline">🇨🇳Chinese</a>
 		</td>
-		<td style="width: 150px;"></td>
+		<td style="width: 200px;"></td>
 	</tr>
 </table>
 
