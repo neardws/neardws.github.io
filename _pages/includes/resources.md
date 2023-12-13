@@ -20,7 +20,7 @@
 <table class="no-horizontal-lines" style="margin-left: auto; margin-right: auto;">
 	<tr>
 		<td style="padding-right: 1px;">
-			<img src='images/book_machine_learning.jpg' alt="Meachine Learning" width="100">
+			<img src='images/book_machine_learning.jpg' alt="Meachine Learning" width="130">
 		</td>
 		<td style="padding-left: 1px;">
 			Meachine Learning<br>
@@ -32,7 +32,7 @@
 	</tr>
 	<tr>
 		<td style="padding-right: 1px;">
-			<img src='images/book_machine_learning_yearning.jpg' alt="Machine Learning Yearning" width="100">
+			<img src='images/book_machine_learning_yearning.jpg' alt="Machine Learning Yearning" width="130">
 		</td>
 		<td style="padding-left: 1px;">
 			Machine Learning Yearning<br>
@@ -43,7 +43,7 @@
 	</tr>
 	<tr>
 		<td style="padding-right: 1px;">
-			<img src='images/book_deep_learning.jpg' alt="Deep Learning" width="100">
+			<img src='images/book_deep_learning.jpg' alt="Deep Learning" width="130">
 		</td>
 		<td style="padding-left: 1px;">
 			Deep Learning<br>
@@ -55,7 +55,7 @@
 	</tr>
 	<tr>
 		<td style="padding-right: 1px;">
-			<img src='images/book_dive_into_deep_learning.jpg' alt="Dive into Deep Learning" width="100">
+			<img src='images/book_dive_into_deep_learning.jpg' alt="Dive into Deep Learning" width="130">
 		</td>
 		<td style="padding-left: 1px;">
 			Dive into Deep Learning<br>
