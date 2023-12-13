@@ -31,7 +31,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td style="padding-right: 10px;">
+		<td style="padding-right: 20px;">
 			<img src='images/book_machine_learning_yearning.jpg' alt="Machine Learning Yearning" width="100">
 		</td>
 		<td>
@@ -42,7 +42,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td style="padding-right: 10px;">
+		<td style="padding-right: 50px;">
 			<img src='images/book_deep_learning.jpg' alt="Deep Learning" width="100">
 		</td>
 		<td>
@@ -54,7 +54,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td style="padding-right: 10px;">
+		<td style="padding-right: 30px;">
 			<img src='images/book_dive_into_deep_learning.jpg' alt="Dive into Deep Learning" width="100">
 		</td>
 		<td>
