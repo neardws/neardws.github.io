@@ -20,7 +20,7 @@
 <table class="no-horizontal-lines" style="margin-left: auto; margin-right: auto;">
 	<tr>
 		<td class="tight-padding">
-			<img src='images/book_machine_learning.jpg' alt="Meachine Learning" width="130">
+			<img src='images/book_machine_learning.jpg' alt="Meachine Learning" width="100">
 		</td>
 		<td class="tight-padding">
 			Meachine Learning<br>
@@ -29,10 +29,11 @@
 			ISBN: 9787302423287<br>
 			<a href="https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/MLbook2016.htm" class="no-underline">🇨🇳Chinese</a>
 		</td>
+		<td style="width: 150px;"></td>
 	</tr>
 	<tr>
 		<td class="tight-padding">
-			<img src='images/book_machine_learning_yearning.jpg' alt="Machine Learning Yearning" width="130">
+			<img src='images/book_machine_learning_yearning.jpg' alt="Machine Learning Yearning" width="100">
 		</td>
 		<td class="tight-padding">
 			Machine Learning Yearning<br>
@@ -40,10 +41,11 @@
 			Free Ebook, 2018<br>
 			<a href="https://info.deeplearning.ai/machine-learning-yearning-book#" class="no-underline">🇬🇧English</a> | <a href="https://deeplearning-ai.github.io/machine-learning-yearning-cn/" class="no-underline">🇨🇳Chinese</a>
 		</td>
+		<td style="width: 150px;"></td>
 	</tr>
 	<tr>
 		<td class="tight-padding">
-			<img src='images/book_deep_learning.jpg' alt="Deep Learning" width="130">
+			<img src='images/book_deep_learning.jpg' alt="Deep Learning" width="100">
 		</td>
 		<td class="tight-padding">
 			Deep Learning<br>
@@ -52,10 +54,11 @@
 			ISBN: 9780262035613<br>
 			<a href="https://www.deeplearningbook.org" class="no-underline">🇬🇧English</a> | <a href="https://github.com/exacity/deeplearningbook-chinese" class="no-underline">🇨🇳Chinese</a>
 		</td>
+		<td style="width: 150px;"></td>
 	</tr>
 	<tr>
 		<td class="tight-padding">
-			<img src='images/book_dive_into_deep_learning.jpg' alt="Dive into Deep Learning" width="130">
+			<img src='images/book_dive_into_deep_learning.jpg' alt="Dive into Deep Learning" width="100">
 		</td>
 		<td class="tight-padding">
 			Dive into Deep Learning<br>
@@ -64,6 +67,7 @@
 			ISBN: 1009389432<br>
 			<a href="https://d2l.ai" class="no-underline">🇬🇧English</a> | <a href="https://zh.d2l.ai" class="no-underline">🇨🇳Chinese</a>
 		</td>
+		<td style="width: 150px;"></td>
 	</tr>
 </table>
 
