@@ -17,12 +17,12 @@
 
 #### Books
 
-<table class="no-horizontal-lines" style="margin-left: auto; margin-right: auto; border-spacing: 0; padding: 0;">
+<table class="no-horizontal-lines" style="margin-left: auto; margin-right: auto;">
 	<tr>
-		<td style="padding-right: 1px;">
+		<td class="tight-padding">
 			<img src='images/book_machine_learning.jpg' alt="Meachine Learning" width="130">
 		</td>
-		<td style="padding-left: 1px;">
+		<td class="tight-padding">
 			Meachine Learning<br>
 			Zhi-Hua Zhou<br>
 			Tsinghua University Press, 2016<br>
@@ -31,10 +31,10 @@
 		</td>
 	</tr>
 	<tr>
-		<td style="padding-right: 1px;">
+		<td class="tight-padding">
 			<img src='images/book_machine_learning_yearning.jpg' alt="Machine Learning Yearning" width="130">
 		</td>
-		<td style="padding-left: 1px;">
+		<td class="tight-padding">
 			Machine Learning Yearning<br>
 			Andrew NG<br>
 			Free Ebook, 2018<br>
@@ -42,10 +42,10 @@
 		</td>
 	</tr>
 	<tr>
-		<td style="padding-right: 1px;">
+		<td class="tight-padding">
 			<img src='images/book_deep_learning.jpg' alt="Deep Learning" width="130">
 		</td>
-		<td style="padding-left: 1px;">
+		<td class="tight-padding">
 			Deep Learning<br>
 			Ian Goodfellow, Yoshua Bengio, and Aaron Courville<br>
 			MIT Press, 2016<br>
@@ -54,10 +54,10 @@
 		</td>
 	</tr>
 	<tr>
-		<td style="padding-right: 1px;">
+		<td class="tight-padding">
 			<img src='images/book_dive_into_deep_learning.jpg' alt="Dive into Deep Learning" width="130">
 		</td>
-		<td style="padding-left: 1px;">
+		<td class="tight-padding">
 			Dive into Deep Learning<br>
 			Aston Zhang, Zachary C. Lipton, Mu Li, and Alexander I. Smola<br>
 			Cambridge University Press, 2023<br>
