@@ -17,10 +17,47 @@
 
 #### Books
 
-- Meachine Learning by Prof. Zhi-Hua Zhou <a href="https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/MLbook2016.htm" class="no-underline">🇨🇳Chinese</a>
-- Deep Learning by Dr. Ian Goodfellow, Prof. Yoshua Bengio, and Prof. Aaron Courville <a href="https://www.deeplearningbook.org" class="no-underline">🇬🇧English</a> <a href="https://github.com/exacity/deeplearningbook-chinese" class="no-underline">🇨🇳Chinese</a>
-- Machine Learning Yearning by Prof. Andrew Ng <a href="https://www.mlyearning.org" class="no-underline">🇬🇧English</a> <a href="https://deeplearning-ai.github.io/machine-learning-yearning-cn/" class="no-underline">🇨🇳Chinese</a>
-- Dive into Deep Learning by Dr. Aston Zhang, Dr. Zachary C. Lipton, Dr. Mu Li, and Dr. Alexander I. Smola <a href="https://d2l.ai" class="no-underline">🇬🇧English</a> <a href="https://zh.d2l.ai" class="no-underline">🇨🇳Chinese</a>
+<table style="margin-left: auto; margin-right: auto;">
+	<tr>
+		<td>
+			<img src='images/book_machine_learning.jpg' alt="Meachine Learning" width="150">
+		</td>
+		<td>
+			Zhi-Hua Zhou, Meachine Learning, Tsinghua University Press, 2016.<br>
+			ISBN: 9787302423287<br>
+			<a href="https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/MLbook2016.htm" class="no-underline">🇨🇳Chinese</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src='images/book_machine_learning_yearning.jpg' alt="Machine Learning Yearning" width="150">
+		</td>
+		<td>
+			Andrew NG, Machine Learning Yearning, Free Ebook, 2018.<br>
+			<a href="https://info.deeplearning.ai/machine-learning-yearning-book#" class="no-underline">🇬🇧English</a> | <a href="https://deeplearning-ai.github.io/machine-learning-yearning-cn/" class="no-underline">🇨🇳Chinese</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src='images/book_deep_learning.jpg' alt="Deep Learning" width="150">
+		</td>
+		<td>
+			Ian Goodfellow, Yoshua Bengio, and Aaron Courville, Deep Learning, MIT Press, 2016.<br>
+			ISBN: 9780262035613<br>
+			<a href="https://www.deeplearningbook.org" class="no-underline">🇬🇧English</a> | <a href="https://github.com/exacity/deeplearningbook-chinese" class="no-underline">🇨🇳Chinese</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src='images/book_dive_into_deep_learning.jpg' alt="Dive into Deep Learning" width="150">
+		</td>
+		<td>
+			Aston Zhang, Zachary C. Lipton, Mu Li, and Alexander I. Smola, Dive into Deep Learning, Cambridge University Press, 2023.<br>
+			ISBN: 1009389432<br>
+			<a href="https://d2l.ai" class="no-underline">🇬🇧English</a> | <a href="https://zh.d2l.ai" class="no-underline">🇨🇳Chinese</a>
+		</td>
+	</tr>
+</table>
 
 #### Research
 
