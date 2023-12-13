@@ -22,7 +22,7 @@
 		<td style="padding-right: 10px;">
 			<img src='images/book_machine_learning.jpg' alt="Meachine Learning" width="100">
 		</td>
-		<td>
+		<td style="padding-left: 10px;">
 			Meachine Learning<br>
 			Zhi-Hua Zhou<br>
 			Tsinghua University Press, 2016<br>
