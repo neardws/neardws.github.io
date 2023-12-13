@@ -17,9 +17,9 @@
 
 #### Books
 
-<table class="no-horizontal-lines" style="margin-left: 0; margin-right: auto;">
+<table class="no-horizontal-lines" style="margin-left: auto; margin-right: auto;">
 	<tr>
-		<td>
+		<td style="padding-right: 10px;">
 			<img src='images/book_machine_learning.jpg' alt="Meachine Learning" width="100">
 		</td>
 		<td>
@@ -31,7 +31,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td>
+		<td style="padding-right: 10px;">
 			<img src='images/book_machine_learning_yearning.jpg' alt="Machine Learning Yearning" width="100">
 		</td>
 		<td>
@@ -42,7 +42,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td>
+		<td style="padding-right: 10px;">
 			<img src='images/book_deep_learning.jpg' alt="Deep Learning" width="100">
 		</td>
 		<td>
@@ -54,7 +54,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td>
+		<td style="padding-right: 10px;">
 			<img src='images/book_dive_into_deep_learning.jpg' alt="Dive into Deep Learning" width="100">
 		</td>
 		<td>
