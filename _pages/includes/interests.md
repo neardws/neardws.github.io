@@ -9,11 +9,11 @@ Here is my frequently played music collection.
 
 <table class="no-horizontal-lines">
   <tr>
-    <td><img src="images/7_workout.png" height="100" alt="7-Workout Week"></td>
-    <td><img src="images/cycling.png" height="100" alt="Cycling Workout Record"></td>
-    <td><img src="images/elliptical.png" height="100" alt="Elliptical Workout Record"></td>
-    <td><img src="images/running.png" height="100" alt="Running Workout Record"></td>
-    <td><img src="images/swimming.png" height="100" alt="Swimming Workout Record"></td>
+    <td style="width: 110px;"><img src="images/7_workout.png" alt="7-Workout Week"></td>
+    <td style="width: 110px;"><img src="images/cycling.png" alt="Cycling Workout Record"></td>
+    <td style="width: 110px;"><img src="images/elliptical.png" alt="Elliptical Workout Record"></td>
+    <td style="width: 110px;"><img src="images/running.png" alt="Running Workout Record"></td>
+    <td style="width: 110px;"><img src="images/swimming.png" alt="Swimming Workout Record"></td>
   </tr>
   <tr>
     <td>Achieved this award 50 times for completing at least 7 workouts of minimum 5 minutes each within a single week</td>
