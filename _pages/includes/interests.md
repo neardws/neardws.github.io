@@ -14,6 +14,7 @@ Here is my frequently played music collection.
     <td><img src="images/elliptical.png" alt="Elliptical Workout Record"></td>
     <td><img src="images/running.png" alt="Running Workout Record"></td>
     <td><img src="images/swimming.png" alt="Swimming Workout Record"></td>
+    <td><img src="images/weekly.png" alt="Fitness+ Weekly Workout Streak"></td>
     <td><img src="images/treadmill.png" alt="50 Fitness+ Treadmill Workouts"></td>
   </tr>
   <tr>
@@ -22,6 +23,7 @@ Here is my frequently played music collection.
     <td>Earned this award for the highest calorie burn (645 Calories) on the elliptical</td>
     <td>Granted this award for the most calories (579 Calories) burned during a run</td>
     <td>Awarded for the most calories (157 Calories) burned while swimming</td>
+    <td>Received this award for doing at least one Fitness+ workout for 4 weeks in a row</td>
     <td>Earned this award for the 50th Fitness+ Treadmill workout</td>
   </tr>
   <tr>
@@ -30,6 +32,7 @@ Here is my frequently played music collection.
     <td>January 21, 2023</td>
     <td>August 16, 2023</td>
     <td>June 13, 2023</td>
+    <td>August 15, 2023</td>
     <td>August 7, 2023</td>
   </tr>
 </table>
