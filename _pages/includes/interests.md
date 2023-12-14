@@ -2,17 +2,18 @@
 
 ## 🎵 Music
 
-<img src="https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/music.gif" width="251" height="34" alt="Songs" />
+My Frequently Played Music Collection     
+<img src="https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/music.gif" width="369" height="50" alt="Songs" />
 
 ## 🏃 Sports
 
 <table class="no-horizontal-lines">
   <tr>
-    <td><img src="images/7_workout.png" alt="7-Workout Week"></td>
-    <td><img src="images/cycling.png" alt="Cycling Workout Record"></td>
-    <td><img src="images/elliptical.png" alt="Elliptical Workout Record"></td>
-    <td><img src="images/running.png" alt="Running Workout Record"></td>
-    <td><img src="images/swimming.png" alt="Swimming Workout Record"></td>
+    <td><img src="images/7_workout.png" alt="7-Workout Week" width="200"></td>
+    <td><img src="images/cycling.png" alt="Cycling Workout Record" width="200"></td>
+    <td><img src="images/elliptical.png" alt="Elliptical Workout Record" width="200"></td>
+    <td><img src="images/running.png" alt="Running Workout Record" width="200"></td>
+    <td><img src="images/swimming.png" alt="Swimming Workout Record" width="200"></td>
   </tr>
   <tr>
     <td>Achieved this award 50 times for completing at least 7 workouts of minimum 5 minutes each within a single week</td>
