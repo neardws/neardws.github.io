@@ -21,14 +21,14 @@ I'm passionate about staying active and have earned several awards for my dedica
     <td><img src="images/swimming.png" alt="Swimming Workout Record"></td>
   </tr>
   <tr>
-    <td>Earned for consistent weekly workouts over a month</td>
-    <td>Achievement for hitting the daily Move goal 100 times</td>
-    <td>Marking 50 inspiring treadmill sessions</td>
-    <td>For accomplishing over 7 workouts weekly, 50 times</td>
-    <td>Top cycling session with a 525 calorie burn</td>
-    <td>Peak elliptical workout burning 645 calories</td>
-    <td>Running record with a 579 calorie burn</td>
-    <td>Swimming excellence, burning 157 calories</td>
+    <td>Four-week continuous Fitness+ workout streak award</td>
+    <td>Daily Move goal reached 100 times award</td>
+    <td>50th Fitness+ Treadmill workout accomplishment</td>
+    <td>50-time winner of the 7-workouts-per-week challenge</td>
+    <td>Top cycling calorie burner award (525 Calories)</td>
+    <td>Peak calorie burn on the elliptical award (645 Calories)</td>
+    <td>Maximum calories burned running award (579 Calories)</td>
+    <td>Highest calories burned swimming award (157 Calories)</td>
   </tr>
   <tr>
     <td>Aug 15, 2023</td>
