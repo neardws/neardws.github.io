@@ -2,13 +2,13 @@
 
 ## 🎵 Music
 
-- Discover his frequently enjoyed music collection.     
+- Step into his world of melodious favorites and discover a carefully curated music collection.     
 <img src="https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/music.gif" width="369" height="50" alt="Songs" />
-- <a herf="https://music.apple.com/us/playlist/replay-2023/pl.rp-6xxbi6BevJx4" class="no-underline">Replay 2023</a> by [![](https://img.shields.io/badge/-Apple_Music-blue?logo=applemusic&logoColor=white&labelColor=FA243C&color=FA243C&style=flat)](https://www.apple.com/apple-music/)
+- Explore his <a herf="https://music.apple.com/us/playlist/replay-2023/pl.rp-6xxbi6BevJx4" class="no-underline">Replay 2023</a> playlist, a journey through his most played tracks on [![](https://img.shields.io/badge/-Apple_Music-blue?logo=applemusic&logoColor=white&labelColor=FA243C&color=FA243C&style=flat)](https://www.apple.com/apple-music/)
 
 ## 🏃 Sports
 
-His passionate about staying active and have earned several awards. Here's a showcase of his <a herf="https://www.apple.com/apple-fitness-plus/" class="no-underline">Apple Fitness</a> achievements:
+Passionate about fitness, he has earned a series of accolades in his active lifestyle. Take a glimpse at his <a herf="https://www.apple.com/apple-fitness-plus/" class="no-underline">Apple Fitness</a> achievements:
 
 <table class="no-horizontal-lines">
   <tr>
@@ -47,16 +47,14 @@ His passionate about staying active and have earned several awards. Here's a sho
 
 His world of gaming spans across various consoles, offering endless adventures and excitement.      
 
-- ![](https://img.shields.io/badge/-Nintendo_Switch-blue?logo=nintendoswitch&logoColor=white&labelColor=E60012&color=E60012&style=flat) Friend Code: SW-2057-0942-7707
-- Favorites on Nintendo Switch
+- Connect with him on ![](https://img.shields.io/badge/-Nintendo_Switch-blue?logo=nintendoswitch&logoColor=white&labelColor=E60012&color=E60012&style=flat) by adding his Friend Code: SW-2057-0942-7707
   - The Legend of Zelda: Breath of the Wild
   - The Legend of Zelda: Tears of the Kingdom
   - Super Smash Bros.
   - Splatoon 3
   - Mario Kart 8 Deluxe
   - Animal Crossing: New Horizons
-- ![](https://img.shields.io/badge/-PlayStation-blue?logo=playstation&logoColor=white&labelColor=003791&color=003791&style=flat) PSN ID: near_dws
-- Top Picks on PlayStation
+- Join him on ![](https://img.shields.io/badge/-PlayStation-blue?logo=playstation&logoColor=white&labelColor=003791&color=003791&style=flat) by adding him PSN ID: near_dws
   - The Last of Us Part I
   - Final Fantasy VII Remake
   - Detroit: Become Human
