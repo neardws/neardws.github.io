@@ -2,10 +2,12 @@
 
 ## 🎵 Music
 
-Here is my frequently played music collection.     
+Discover my frequently enjoyed music collection.     
 <img src="https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/music.gif" width="369" height="50" alt="Songs" />
 
 ## 🏃 Sports
+
+I'm passionate about staying active and have earned several awards for my dedication. Here's a showcase of my Apple Fitness achievements:
 
 <table class="no-horizontal-lines">
   <tr>
@@ -19,14 +21,14 @@ Here is my frequently played music collection.
     <td><img src="images/swimming.png" alt="Swimming Workout Record"></td>
   </tr>
   <tr>
-    <td>Received this award for doing at least one Fitness+ workout for 4 weeks in a row</td>
-    <td>Achieved this award for reaching the daily Move goal 100 times</td>
-    <td>Earned this award for the 50th Fitness+ Treadmill workout</td>
-    <td>Achieved this award 50 times for completing at least 7 workouts of minimum 5 minutes each within a single week</td>
-    <td>Received this award for burning the most calories (525 Calories) during cycling</td>
-    <td>Earned this award for the highest calorie burn (645 Calories) on the elliptical</td>
-    <td>Granted this award for the most calories (579 Calories) burned during a run</td>
-    <td>Awarded for the most calories (157 Calories) burned while swimming</td>
+    <td>Earned for consistent weekly workouts over a month</td>
+    <td>Achievement for hitting the daily Move goal 100 times</td>
+    <td>Marking 50 inspiring treadmill sessions</td>
+    <td>For accomplishing over 7 workouts weekly, 50 times</td>
+    <td>Top cycling session with a 525 calorie burn</td>
+    <td>Peak elliptical workout burning 645 calories</td>
+    <td>Running record with a 579 calorie burn</td>
+    <td>Swimming excellence, burning 157 calories</td>
   </tr>
   <tr>
     <td>Aug 15, 2023</td>
@@ -42,16 +44,21 @@ Here is my frequently played music collection.
 
 ## 🎮 Gaming
 
-I enjoy engaging in a variety of console gaming experiences.      
+My world of gaming spans across various consoles, offering endless adventures and excitement.      
 
-- ![](https://img.shields.io/badge/-Switch-blue?logo=nintendoswitch&logoColor=white&labelColor=E60012&color=E60012&style=flat) Friend Code: SW-2057-0942-7707          
+#### Nintendo Switch  
+- ![](https://img.shields.io/badge/-Nintendo_Switch-blue?logo=nintendoswitch&logoColor=white&labelColor=E60012&color=E60012&style=flat) Friend Code: SW-2057-0942-7707
+- Favorites on Nintendo Switch
   - The Legend of Zelda: Breath of the Wild
   - The Legend of Zelda: Tears of the Kingdom
   - Super Smash Bros.
   - Splatoon 3
   - Mario Kart 8 Deluxe
   - Animal Crossing: New Horizons
+
+#### PlayStation 
 - ![](https://img.shields.io/badge/-PlayStation-blue?logo=playstation&logoColor=white&labelColor=003791&color=003791&style=flat) PSN ID: near_dws
+- Top Picks on PlayStation
   - The Last of Us Part I
   - Final Fantasy VII Remake
   - Detroit: Become Human
