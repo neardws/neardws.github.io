@@ -2,12 +2,13 @@
 
 ## 🎵 Music
 
-Discover my frequently enjoyed music collection.     
+- Discover his frequently enjoyed music collection.     
 <img src="https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/music.gif" width="369" height="50" alt="Songs" />
+- <a herf="https://music.apple.com/us/playlist/replay-2023/pl.rp-6xxbi6BevJx4" class="no-underline">Replay 2023</a> by <a herf="https://www.apple.com/apple-music/" class="no-underline">Apple Music</a>
 
 ## 🏃 Sports
 
-I'm passionate about staying active and have earned several awards for my dedication. Here's a showcase of my Apple Fitness achievements:
+His passionate about staying active and have earned several awards. Here's a showcase of his <a herf="https://www.apple.com/apple-fitness-plus/" class="no-underline">Apple Fitness</a> achievements:
 
 <table class="no-horizontal-lines">
   <tr>
@@ -44,7 +45,7 @@ I'm passionate about staying active and have earned several awards for my dedica
 
 ## 🎮 Gaming
 
-My world of gaming spans across various consoles, offering endless adventures and excitement.      
+His world of gaming spans across various consoles, offering endless adventures and excitement.      
 
 #### Nintendo Switch  
 - ![](https://img.shields.io/badge/-Nintendo_Switch-blue?logo=nintendoswitch&logoColor=white&labelColor=E60012&color=E60012&style=flat) Friend Code: SW-2057-0942-7707
