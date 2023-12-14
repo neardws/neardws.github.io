@@ -16,14 +16,14 @@
     <td><img src="images/album_bye_bye_that_is_all.png" alt="Bye Bye That's All"></td>
   </tr>
   <tr>
-    <td>The 400 Blows - Sigle</td>
-    <td>Aqua Hotel - Sigle </td>
-    <td>Summer Time - EP</td>
+    <td>The 400 Blows<br>Sigle</td>
+    <td>Aqua Hotel<br>Sigle </td>
+    <td>Summer Time<br>EP</td>
     <td>Bedazzling</td>
     <td>Real Love Is...</td>
     <td>David Tao</td>
     <td>Sense+</td>
-    <td>Bye Bye That's All</td>
+    <td>Bye Bye<br>That's All</td>
   </tr>
   <tr>
     <td>Roy Wang</td>
