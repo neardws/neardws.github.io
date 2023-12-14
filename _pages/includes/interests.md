@@ -9,11 +9,11 @@ Here is my frequently played music collection.
 
 <table class="no-horizontal-lines">
   <tr>
-    <td><img src="images/7_workout.png" alt="7-Workout Week" height="150"></td>
-    <td><img src="images/cycling.png" alt="Cycling Workout Record" height="150"></td>
-    <td><img src="images/elliptical.png" alt="Elliptical Workout Record" height="150"></td>
-    <td><img src="images/running.png" alt="Running Workout Record" height="150"></td>
-    <td><img src="images/swimming.png" alt="Swimming Workout Record" height="150"></td>
+    <td><img src="images/7_workout.png" alt="7-Workout Week" height="100"></td>
+    <td><img src="images/cycling.png" alt="Cycling Workout Record" height="100"></td>
+    <td><img src="images/elliptical.png" alt="Elliptical Workout Record" height="100"></td>
+    <td><img src="images/running.png" alt="Running Workout Record" height="100"></td>
+    <td><img src="images/swimming.png" alt="Swimming Workout Record" height="100"></td>
   </tr>
   <tr>
     <td>Achieved this award 50 times for completing at least 7 workouts of minimum 5 minutes each within a single week</td>
@@ -34,6 +34,7 @@ Here is my frequently played music collection.
 ## 🎮 Gaming
 
 I enjoy engaging in a variety of console gaming experiences.      
+
 
 
 <div style="float: left;">
