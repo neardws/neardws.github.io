@@ -6,13 +6,13 @@
 
 ## 🏃 Sports
 
-<table>
+<table class="no-horizontal-lines">
   <tr>
-    <td><img src="image/7_workout.png" alt="7-Workout Week"></td>
-    <td><img src="image/cycling.png" alt="Cycling Workout Record"></td>
-    <td><img src="image/elliptical.png" alt="Elliptical Workout Record"></td>
-    <td><img src="image/running.png" alt="Running Workout Record"></td>
-    <td><img src="image/swimming.png" alt="Swimming Workout Record"></td>
+    <td><img src="images/7_workout.png" alt="7-Workout Week"></td>
+    <td><img src="images/cycling.png" alt="Cycling Workout Record"></td>
+    <td><img src="images/elliptical.png" alt="Elliptical Workout Record"></td>
+    <td><img src="images/running.png" alt="Running Workout Record"></td>
+    <td><img src="images/swimming.png" alt="Swimming Workout Record"></td>
   </tr>
   <tr>
     <td>Achieved this award 50 times for completing at least 7 workouts of minimum 5 minutes each within a single week</td>
