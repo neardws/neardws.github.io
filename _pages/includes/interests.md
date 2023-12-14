@@ -48,24 +48,32 @@
     <td><img src="images/movie_mitty.png" alt="The Secret Life of Walter Mitty"></td>
     <td><img src="images/movie_romeo_juliet.png" alt="Romeo + Juliet"></td>
     <td><img src="images/movie_moulin_rouge.png" alt="Moulin Rouge!"></td>
+    <td><img src="images/movie_call_me_by_your_name.png" alt="Call Me by Your Name"></td>
+    <td><img src="images/movie_clockwork_orange.png" alt="A Clockwork Orange"></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>The Secret Life of Walter Mitty</td>
     <td>Romeo + Juliet</td>
     <td>Moulin Rouge!</td>
+    <td>Call Me by Your Name</td>
+    <td>A Clockwork Orange</td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>Ben Stiller</td>
     <td>Baz Luhrmann</td>
     <td>Baz Luhrmann</td>
+    <td>Luca Guadagnino</td>
+    <td>Stanley Kubrick</td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>2013</td>
     <td>1996</td>
     <td>2001</td>
+    <td>2017</td>
+    <td>1971</td>
     <td style="width: 250px;"></td>
   </tr>
 </table>
