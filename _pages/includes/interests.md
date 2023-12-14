@@ -47,7 +47,6 @@ His passionate about staying active and have earned several awards. Here's a sho
 
 His world of gaming spans across various consoles, offering endless adventures and excitement.      
 
-#### Nintendo Switch  
 - ![](https://img.shields.io/badge/-Nintendo_Switch-blue?logo=nintendoswitch&logoColor=white&labelColor=E60012&color=E60012&style=flat) Friend Code: SW-2057-0942-7707
 - Favorites on Nintendo Switch
   - The Legend of Zelda: Breath of the Wild
@@ -56,8 +55,6 @@ His world of gaming spans across various consoles, offering endless adventures a
   - Splatoon 3
   - Mario Kart 8 Deluxe
   - Animal Crossing: New Horizons
-
-#### PlayStation 
 - ![](https://img.shields.io/badge/-PlayStation-blue?logo=playstation&logoColor=white&labelColor=003791&color=003791&style=flat) PSN ID: near_dws
 - Top Picks on PlayStation
   - The Last of Us Part I
