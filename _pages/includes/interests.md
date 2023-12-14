@@ -2,6 +2,41 @@
 
 ## 🎵 Music
 
+- Favorite Albums
+
+<table class="no-horizontal-lines">
+  <tr>
+    <td><img src="images/album_the_400_blows.png" alt="The 400 Blows - Sigle"></td>
+    <td><img src="images/album_aqua_hotel.png" alt="Aqua Hotel - Sigle"></td>
+    <td><img src="images/album_summer_time.png" alt="Summer Time - EP"></td>
+    <td><img src="images/album_bedazzling.png" alt="Bedazzling"></td>
+    <td><img src="images/album_real_love.png" alt="Real Love Is..."></td>
+    <td><img src="images/album_david_tao.png" alt="David Tao"></td>
+    <td><img src="images/album_sense+.png" alt="Sense+"></td>
+    <td><img src="images/album_bye_bye_that_is_all.png" alt="Bye Bye That's All"></td>
+  </tr>
+  <tr>
+    <td>The 400 Blows - Sigle</td>
+    <td>Aqua Hotel - Sigle </td>
+    <td>Summer Time - EP</td>
+    <td>Bedazzling</td>
+    <td>Real Love Is...</td>
+    <td>David Tao</td>
+    <td>Sense+</td>
+    <td>Bye Bye That's All</td>
+  </tr>
+  <tr>
+    <td>Roy Wang</td>
+    <td>Roy Wang</td>
+    <td>Roy Wang</td>
+    <td>Roy Wang</td>
+    <td>The Chairs</td>
+    <td>David Tao</td>
+    <td>The Life Journey</td>
+    <td>Bad Sweetheart</td>
+  </tr>
+</table>
+
 - Step into his world of melodious favorites and discover a carefully curated music collection.     
 <img src="https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/music.gif" width="369" height="50" alt="Songs" />
 - Explore his <a herf="https://music.apple.com/us/playlist/replay-2023/pl.rp-6xxbi6BevJx4" class="no-underline">Replay 2023</a> playlist, a journey through his most played tracks on [![](https://img.shields.io/badge/-Apple_Music-blue?logo=applemusic&logoColor=white&labelColor=FA243C&color=FA243C&style=flat)](https://www.apple.com/apple-music/)
@@ -12,14 +47,14 @@ Passionate about fitness, he has earned a series of accolades in his active life
 
 <table class="no-horizontal-lines">
   <tr>
-    <td><img src="images/weekly.png" alt="Fitness+ Weekly Workout Streak"></td>
-    <td><img src="images/move.png" alt="100 Move Goals"></td>
-    <td><img src="images/treadmill.png" alt="50 Fitness+ Treadmill Workouts"></td>
-    <td><img src="images/7_workout.png" alt="7-Workout Week"></td>
-    <td><img src="images/cycling.png" alt="Cycling Workout Record"></td>
-    <td><img src="images/elliptical.png" alt="Elliptical Workout Record"></td>
-    <td><img src="images/running.png" alt="Running Workout Record"></td>
-    <td><img src="images/swimming.png" alt="Swimming Workout Record"></td>
+    <td><img src="images/sports_weekly.png" alt="Fitness+ Weekly Workout Streak"></td>
+    <td><img src="images/sports_move.png" alt="100 Move Goals"></td>
+    <td><img src="images/sports_treadmill.png" alt="50 Fitness+ Treadmill Workouts"></td>
+    <td><img src="images/sports_7_workout.png" alt="7-Workout Week"></td>
+    <td><img src="images/sports_cycling.png" alt="Cycling Workout Record"></td>
+    <td><img src="images/sports_elliptical.png" alt="Elliptical Workout Record"></td>
+    <td><img src="images/sports_running.png" alt="Running Workout Record"></td>
+    <td><img src="images/sports_swimming.png" alt="Swimming Workout Record"></td>
   </tr>
   <tr>
     <td>Four-week continuous Fitness+ workout streak award</td>
