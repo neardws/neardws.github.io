@@ -9,18 +9,20 @@ Here is my frequently played music collection.
 
 <table class="no-horizontal-lines">
   <tr>
-    <td style="width: 110px;"><img src="images/7_workout.png" alt="7-Workout Week"></td>
-    <td style="width: 110px;"><img src="images/cycling.png" alt="Cycling Workout Record"></td>
-    <td style="width: 110px;"><img src="images/elliptical.png" alt="Elliptical Workout Record"></td>
-    <td style="width: 110px;"><img src="images/running.png" alt="Running Workout Record"></td>
-    <td style="width: 110px;"><img src="images/swimming.png" alt="Swimming Workout Record"></td>
+    <td><img src="images/7_workout.png" alt="7-Workout Week"></td>
+    <td><img src="images/cycling.png" alt="Cycling Workout Record"></td>
+    <td><img src="images/elliptical.png" alt="Elliptical Workout Record"></td>
+    <td><img src="images/running.png" alt="Running Workout Record"></td>
+    <td><img src="images/swimming.png" alt="Swimming Workout Record"></td>
+    <td><img src="images/treadmill.png" alt="50 Fitness+ Treadmill Workouts"></td>
   </tr>
   <tr>
     <td>Achieved this award 50 times for completing at least 7 workouts of minimum 5 minutes each within a single week</td>
     <td>Received this award for burning the most calories (525 Calories) during cycling</td>
-    <td>Earned this accolade for the highest calorie burn (645 Calories) on the elliptical</td>
+    <td>Earned this award for the highest calorie burn (645 Calories) on the elliptical</td>
     <td>Granted this award for the most calories (579 Calories) burned during a run</td>
     <td>Awarded for the most calories (157 Calories) burned while swimming</td>
+    <td>Earned this award for the 50th Fitness+ Treadmill workout</td>
   </tr>
   <tr>
     <td>September 22, 2023</td>
@@ -28,6 +30,7 @@ Here is my frequently played music collection.
     <td>January 21, 2023</td>
     <td>August 16, 2023</td>
     <td>June 13, 2023</td>
+    <td>August 7, 2023</td>
   </tr>
 </table>
 
