@@ -119,14 +119,25 @@ Passionate about fitness, he has earned a series of accolades in his active life
 
 His world of gaming spans across various consoles, offering endless adventures and excitement.      
 
-- Connect with him on ![](https://img.shields.io/badge/-Nintendo_Switch-blue?logo=nintendoswitch&logoColor=white&labelColor=E60012&color=E60012&style=flat) by adding his Friend Code: SW-2057-0942-7707
+- Connect with him on [![](https://img.shields.io/badge/-Nintendo_Switch-blue?logo=nintendoswitch&logoColor=white&labelColor=E60012&color=E60012&style=flat)](https://www.nintendo.com/) by adding his Friend Code: SW-2057-0942-7707
   - The Legend of Zelda: Breath of the Wild
   - The Legend of Zelda: Tears of the Kingdom
   - Super Smash Bros.
   - Splatoon 3
   - Mario Kart 8 Deluxe
   - Animal Crossing: New Horizons
-- Join him on ![](https://img.shields.io/badge/-PlayStation-blue?logo=playstation&logoColor=white&labelColor=003791&color=003791&style=flat) by adding him PSN ID: near_dws
+- <a herf="https://year-in-review.nintendo.com/" class="no-underline">Nintendo Year in Review 2023</a>
+
+<table class="no-horizontal-lines">
+  <tr>
+    <td><img src="images/gaming_2023_Nintendo_Year_in_Review_1.jpg" alt="Nintendo Year in Review 2023"></td>
+    <td><img src="images/gaming_2023_Nintendo_Year_in_Review_2.jpg" alt="Nintendo Year in Review 2023"></td>
+    <td><img src="images/gaming_2023_Nintendo_Year_in_Review_2.jpg" alt="Nintendo Year in Review 2023"></td>
+    <td style="width: 450px;"></td>
+  </tr>
+</table>
+
+- Join him on [![](https://img.shields.io/badge/-PlayStation-blue?logo=playstation&logoColor=white&labelColor=003791&color=003791&style=flat)](https://www.playstation.com/) by adding him PSN ID: near_dws
   - The Last of Us Part I
   - Final Fantasy VII Remake
   - Detroit: Become Human
