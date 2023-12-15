@@ -133,7 +133,7 @@ His world of gaming spans across various consoles, offering endless adventures a
     <td><img src="images/gaming_2023_Nintendo_Year_in_Review_1.jpg" alt="Nintendo Year in Review 2023"></td>
     <td><img src="images/gaming_2023_Nintendo_Year_in_Review_2.jpg" alt="Nintendo Year in Review 2023"></td>
     <td><img src="images/gaming_2023_Nintendo_Year_in_Review_2.jpg" alt="Nintendo Year in Review 2023"></td>
-    <td style="width: 450px;"></td>
+    <td style="width: 350px;"></td>
   </tr>
 </table>
 
