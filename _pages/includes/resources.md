@@ -20,7 +20,7 @@
 <table class="no-horizontal-lines" style="margin-left: auto; margin-right: auto;">
 	<tr>
 		<td class="tight-padding">
-			<img src='images/book_machine_learning.jpg' alt="Meachine Learning" width="100">
+			<img src='images/book-machine-learning.webp' alt="Meachine Learning" width="100">
 		</td>
 		<td class="tight-padding">
 			Meachine Learning<br>
@@ -33,7 +33,7 @@
 	</tr>
 	<tr>
 		<td class="tight-padding">
-			<img src='images/book_machine_learning_yearning.jpg' alt="Machine Learning Yearning" width="100">
+			<img src='images/book-machine-learning-yearning.webp' alt="Machine Learning Yearning" width="100">
 		</td>
 		<td class="tight-padding">
 			Machine Learning Yearning<br>
@@ -45,7 +45,7 @@
 	</tr>
 	<tr>
 		<td class="tight-padding">
-			<img src='images/book_deep_learning.jpg' alt="Deep Learning" width="100">
+			<img src='images/book-deep-learning.webp' alt="Deep Learning" width="100">
 		</td>
 		<td class="tight-padding">
 			Deep Learning<br>

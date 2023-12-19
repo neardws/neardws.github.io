@@ -1,6 +1,6 @@
 # 🔬 Research 
 
-<div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">VCPS</div><img src='images/research_VCPS.png' alt="VCPS" width="100%"><div class="badge">System Model</div><img src='images/research_Sensing_Model.png' alt="System Model" width="100%"></div></div>
+<div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">VCPS</div><img src='images/research-vcps.webp' alt="VCPS" width="100%"><div class="badge">System Model</div><img src='images/research-sensing-model.webp' alt="System Model" width="100%"></div></div>
 
 <div class='paper-box-text' markdown="1">
 
@@ -15,7 +15,7 @@
 </div>
 </div>
 
-<div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">DT-VEC</div><img src='images/research_DT_VEC.png' alt="DT-VEC" width="100%"><div class="badge">MAMO</div><img src='images/research_MAMO.png' alt="MAMO" width="100%"></div></div>
+<div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">DT-VEC</div><img src='images/research-dt-vec.webp' alt="DT-VEC" width="100%"><div class="badge">MAMO</div><img src='images/research-mamo.webp' alt="MAMO" width="100%"></div></div>
 
 <div class='paper-box-text' markdown="1">
 
@@ -30,7 +30,7 @@ Kai Liu<sup>**\***</sup>, **Xincao Xu**<sup>**\***</sup>, Penglin Dai, and Biwen
 </div>
 </div>
 
-<div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">NOMA-based VEC</div><img src='images/research_NOMA_based_VEC.png' alt="NOMA-based VEC" width="100%"><div class="badge">GT-DRL</div><img src='images/research_GT_DRL.png' alt="GT-DRL" width="100%"></div></div>
+<div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">NOMA-based VEC</div><img src='images/research-noma-based-vec.webp' alt="NOMA-based VEC" width="100%"><div class="badge">GT-DRL</div><img src='images/research-gt-drl.webp' alt="GT-DRL" width="100%"></div></div>
 
 <div class='paper-box-text' markdown="1">
 

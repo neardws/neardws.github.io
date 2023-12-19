@@ -6,14 +6,14 @@
 
 <table class="no-horizontal-lines">
   <tr>
-    <td><img src="images/album_the_400_blows.png" alt="The 400 Blows"></td>
-    <td><img src="images/album_aqua_hotel.png" alt="Aqua Hotel"></td>
-    <td><img src="images/album_summer_time.png" alt="Summer Time"></td>
-    <td><img src="images/album_bedazzling.png" alt="Bedazzling"></td>
-    <td><img src="images/album_real_love.png" alt="Real Love Is..."></td>
-    <td><img src="images/album_david_tao.png" alt="David Tao"></td>
-    <td><img src="images/album_sense+.png" alt="Sense+"></td>
-    <td><img src="images/album_bye_bye_that_is_all.png" alt="Bye Bye That's All"></td>
+    <td><img src="images/album-the-400-blows.webp" alt="The 400 Blows"></td>
+    <td><img src="images/album-aqua-hotel.webp" alt="Aqua Hotel"></td>
+    <td><img src="images/album-summer-time.webp" alt="Summer Time"></td>
+    <td><img src="images/album-bedazzling.webp" alt="Bedazzling"></td>
+    <td><img src="images/album-real-love.webp" alt="Real Love Is..."></td>
+    <td><img src="images/album-david-tao.webp" alt="David Tao"></td>
+    <td><img src="images/album-sense.webp" alt="Sense+"></td>
+    <td><img src="images/album-bye-bye-that-is-all.webp" alt="Bye Bye That's All"></td>
   </tr>
   <tr>
     <td>The 400 Blows<br>Sigle</td>
@@ -45,11 +45,11 @@
 
 <table class="no-horizontal-lines">
   <tr>
-    <td><img src="images/movie_mitty.png" alt="The Secret Life of Walter Mitty"></td>
-    <td><img src="images/movie_romeo_juliet.png" alt="Romeo + Juliet"></td>
-    <td><img src="images/movie_moulin_rouge.png" alt="Moulin Rouge!"></td>
-    <td><img src="images/movie_call_me_by_your_name.png" alt="Call Me by Your Name"></td>
-    <td><img src="images/movie_clockwork_orange.png" alt="A Clockwork Orange"></td>
+    <td><img src="images/movie-mitty.webp" alt="The Secret Life of Walter Mitty"></td>
+    <td><img src="images/movie-romeo-juliet.webp" alt="Romeo + Juliet"></td>
+    <td><img src="images/movie-moulin-rouge.webp" alt="Moulin Rouge!"></td>
+    <td><img src="images/movie-call-me-by-your-name.webp" alt="Call Me by Your Name"></td>
+    <td><img src="images/movie-clockwork-orange.webp" alt="A Clockwork Orange"></td>
     <td style="width: 350px;"></td>
   </tr>
   <tr>
@@ -84,14 +84,14 @@ Passionate about fitness, he has earned a series of accolades in his active life
 
 <table class="no-horizontal-lines">
   <tr>
-    <td><img src="images/sports_weekly.png" alt="Fitness+ Weekly Workout Streak"></td>
-    <td><img src="images/sports_move.png" alt="100 Move Goals"></td>
-    <td><img src="images/sports_treadmill.png" alt="50 Fitness+ Treadmill Workouts"></td>
-    <td><img src="images/sports_7_workout.png" alt="7-Workout Week"></td>
-    <td><img src="images/sports_cycling.png" alt="Cycling Workout Record"></td>
-    <td><img src="images/sports_elliptical.png" alt="Elliptical Workout Record"></td>
-    <td><img src="images/sports_running.png" alt="Running Workout Record"></td>
-    <td><img src="images/sports_swimming.png" alt="Swimming Workout Record"></td>
+    <td><img src="images/sports-weekly.webp" alt="Fitness+ Weekly Workout Streak"></td>
+    <td><img src="images/sports-move.webp" alt="100 Move Goals"></td>
+    <td><img src="images/sports-treadmill.webp" alt="50 Fitness+ Treadmill Workouts"></td>
+    <td><img src="images/sports-7-workout.webp" alt="7-Workout Week"></td>
+    <td><img src="images/sports-cycling.webp" alt="Cycling Workout Record"></td>
+    <td><img src="images/sports-elliptical.webp" alt="Elliptical Workout Record"></td>
+    <td><img src="images/sports-running.webp" alt="Running Workout Record"></td>
+    <td><img src="images/sports-swimming.webp" alt="Swimming Workout Record"></td>
   </tr>
   <tr>
     <td>Four-week continuous Fitness+ workout streak award</td>
@@ -130,9 +130,9 @@ His world of gaming spans across various consoles, offering endless adventures a
 
 <table class="no-horizontal-lines">
   <tr>
-    <td><img src="images/gaming_2023_Nintendo_Year_in_Review_1.jpg" alt="Nintendo Year in Review 2023"></td>
-    <td><img src="images/gaming_2023_Nintendo_Year_in_Review_2.jpg" alt="Nintendo Year in Review 2023"></td>
-    <td><img src="images/gaming_2023_Nintendo_Year_in_Review_3.jpg" alt="Nintendo Year in Review 2023"></td>
+    <td><img src="images/gaming-2023-nintendo-year-in-review-1.webp" alt="Nintendo Year in Review 2023"></td>
+    <td><img src="images/gaming-2023-nintendo-year-in-review-2.webp" alt="Nintendo Year in Review 2023"></td>
+    <td><img src="images/gaming-2023-nintendo-year-in-review-3.webp" alt="Nintendo Year in Review 2023"></td>
     <td style="width: 350px;"></td>
   </tr>
 </table>
