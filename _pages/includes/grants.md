@@ -5,6 +5,7 @@
 
 #### Principal Investigator
 
+- **CPSF**, 2023 National Postdoctoral Research Fellowship Program (Tier C), "Research on Integrated Sensing and Communications based Vehicle-Infrastructure Cooperation System for Vehicular Digital Twin Networks", GZC20230384, CNY 240,000, Jan 2024 - Jun 2025. 
 - **CPSF**, General Project, "Modeling and Optimization of Cyber-Physical System for Vehicular Edge Computing", 2023M740515, CNY 80,000, Jan 2024 - Jun 2025.
 
 #### Participation
