@@ -4,7 +4,7 @@
 
 <div class='paper-box-text' markdown="1">
 
-<a href="https://arxiv.org/abs/2209.12265" class="no-underline">Cooperative Sensing and Heterogeneous Information Fusion in VCPS: A Multi-agent Deep Reinforcement Learning Approach</a>     
+<a href="https://ieeexplore.ieee.org/document/10367825" class="no-underline">Cooperative Sensing and Heterogeneous Information Fusion in VCPS: A Multi-agent Deep Reinforcement Learning Approach</a>     
 **Xincao Xu**, Kai Liu<sup>**\***</sup>, Penglin Dai, Ruitao Xie, Jingjing Cao, and Jiangtao Luo
 
 - A novel problem is investigated to maximize the quality of VCPS by integrating the sensing, uploading, modeling and evaluation of heterogeneous information in VCPS. In particular, a cooperative sensing model is derived based on the multi-class M/G/1 priority queue and the Shannon theory. On this basis, a new metric called Age of View (AoV) is designed to quantitatively measure the quality of information fusion by evaluating the timeliness, completeness, and consistency of heterogeneous information in VCPS. To the best of our knowledge, this is the first work on quantitatively evaluating the quality of VCPS with the consideration of unique characteristics captured by the newly designed metic AoV.
