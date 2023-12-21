@@ -1,11 +1,11 @@
 # 🔥 News
 
 ### December 2023
-- **Grant Award** 💰: Delighted to announce my selection for the prestigious 2023 National Postdoctoral Research Fellowship Program (Tier C). Celebrating this momentous occasion! 🌟🎉
+- **Grant Award** 💰: Delighted to announce my selection for the 2023 National Postdoctoral Research Fellowship Program (Tier C). Celebrating this momentous occasion! 🌟🎉
 
 ### November 2023
 - **Journal Acceptance** 📚: Thrilled to announce that one of our paper titled "Cooperative Sensing and Heterogeneous Information Fusion in VCPS: A Multi-agent Deep Reinforcement Learning Approach" has been accepted by the prestigious IEEE Transactions on Intelligent Transportation Systems (*T-ITS*)! 🎉🚀
-- **Grant Award** 💰: Successfully secured a general project grant from the China Postdoctoral Science Foundation. 
+- **Grant Award** 💰: Successfully secured the 74th general project grant from the China Postdoctoral Science Foundation. 
 
 ### October 2023
 - **Conference Acceptance** : One of our paper titled "Quality-Cost Trade-off on Constructing Logical Views for Vehicular Cyber-Physical Systems: A Deep Reinforcement Learning Approach" has been accepted for presentation at the 2023 IEEE International Symposium on Product Compliance Engineering-Asia (*ISPCE-AS*). 
