@@ -87,6 +87,7 @@
 - <a href="https://www.letpub.com.cn/index.php?page=grant" class="no-underline">LetPub</a>: Scientific Fund Results Inquiry System
 - <a href="https://github.com/Ruzim/NSFC-application-template-latex" class="no-underline">NSFC Proposal Template</a>: Unofficial LaTeX Format Template for National Natural Science Foundation of China Grant Applications
 - <a herf="https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/full-names-of-related-funds.pdf" class="no-underline">Full Names of Related Funds</a>: Chinese-English Comparison
+- <a herf="https://www.xoveexu.com/project/translation-of-funding-and-scholarship.html" class="no-underline">Funding, Award, and Scholarship Translation</a> summarized by Xovee Xu
 
 #### Coding
 
