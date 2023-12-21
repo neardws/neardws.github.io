@@ -7,7 +7,6 @@
 
 <!-- #### Preprint -->
 
-
 #### Journal
 
 - **Xincao Xu**, Kai Liu<sup>**\***</sup>, Penglin Dai, Ruitao Xie, Jingjing Cao, and Jiangtao Luo, <a href="https://ieeexplore.ieee.org/document/10367825" class="no-underline">Cooperative Sensing and Heterogeneous Information Fusion in VCPS: A Multi-agent Deep Reinforcement Learning Approach</a>, IEEE Transactions on Intelligent Transportation Systems (*T-ITS*), early access, doi: <a herf="https://doi.org/10.1109/TITS.2023.3340334" class="no-underline">10.1109/TITS.2023.3340334</a>. IF: 8.5 (2023), 9 (5-year) [JCR Q1\|SCI Q1\|CCF B] [![](https://img.shields.io/badge/-BibTeX-blue?labelColor=white&color=F5F5F5&logo=latex&logoColor=008080)](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xu2023cooperative.bib) [![](https://img.shields.io/badge/dynamic/json?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FNeardws%2Fneardws.github.io@google-scholar-stats%2Fgs_data.json&query=$['publications']['DK5avZUAAAAJ:eMMeJKvmdy0C']['num_citations']&labelColor=f6f6f6&color=9cf&style=flat&label=Citations)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DK5avZUAAAAJ&citation_for_view=DK5avZUAAAAJ:eMMeJKvmdy0C) [![](https://img.shields.io/github/stars/neardws/Multi-Agent-Deep-Reinforcement-Learning?style=social)](https://github.com/neardws/Multi-Agent-Deep-Reinforcement-Learning)
