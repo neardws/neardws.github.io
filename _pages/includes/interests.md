@@ -2,18 +2,22 @@
 
 ## 🎵 Music
 
+- Recently on Repeat
+
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/silver-hillside/1556615542?i=1556615826"></iframe>
+
 - Favorite Albums
 
 <table class="no-horizontal-lines">
   <tr>
-    <td><img src="images/album-the-400-blows.webp" alt="The 400 Blows"></td>
-    <td><img src="images/album-aqua-hotel.webp" alt="Aqua Hotel"></td>
-    <td><img src="images/album-summer-time.webp" alt="Summer Time"></td>
-    <td><img src="images/album-bedazzling.webp" alt="Bedazzling"></td>
-    <td><img src="images/album-real-love.webp" alt="Real Love Is..."></td>
-    <td><img src="images/album-david-tao.webp" alt="David Tao"></td>
-    <td><img src="images/album-sense.webp" alt="Sense+"></td>
-    <td><img src="images/album-bye-bye-that-is-all.webp" alt="Bye Bye That's All"></td>
+    <td><a href="https://music.apple.com/us/album/%E8%82%86%E7%99%BE%E6%93%8A-single/1524780292" class="no-underline"><img src="images/album-the-400-blows.webp" alt="The 400 Blows"></a></td>
+    <td><a href="https://music.apple.com/us/album/%E9%AD%9A%E7%BC%B8%E6%97%85%E9%A4%A8-single/1541075748" class="no-underline"><img src="images/album-aqua-hotel.webp" alt="Aqua Hotel"></a></td>
+    <td><a href="https://music.apple.com/us/album/%E5%A4%8F%E9%87%8E%E4%BA%86-ep/1584652713" class="no-underline"><img src="images/album-summer-time.webp" alt="Summer Time"></a></td>
+    <td><a href="https://music.apple.com/us/album/%E5%AE%A2%E5%8E%85%E7%8B%82%E6%AC%A2/1666164587" class="no-underline"><img src="images/album-bedazzling.webp" alt="Bedazzling"></a></td>
+    <td><a href="https://music.apple.com/us/album/real-love-is/1535521287" class="no-underline"><img src="images/album-real-love.webp" alt="Real Love Is..."></a></td>
+    <td><a href="https://music.apple.com/us/album/%E9%99%B6%E5%96%86%E5%90%8C%E5%90%8D%E5%B0%88%E8%BC%AF/1416149926" class="no-underline"><img src="images/album-david-tao.webp" alt="David Tao"></a></td>
+    <td><a href="https://music.apple.com/us/album/%E6%84%9F/1599406521" class="no-underline"><img src="images/album-sense.webp" alt="Sense+"></a></td>
+    <td><a href="https://music.apple.com/us/album/bye-bye-thats-all/1556615542" class="no-underline"><img src="images/album-bye-bye-that-is-all.webp" alt="Bye Bye That's All"></a></td>
   </tr>
   <tr>
     <td>The 400 Blows<br>Sigle</td>
@@ -45,11 +49,11 @@
 
 <table class="no-horizontal-lines">
   <tr>
-    <td><img src="images/movie-mitty.webp" alt="The Secret Life of Walter Mitty"></td>
-    <td><img src="images/movie-romeo-juliet.webp" alt="Romeo + Juliet"></td>
-    <td><img src="images/movie-moulin-rouge.webp" alt="Moulin Rouge!"></td>
-    <td><img src="images/movie-call-me-by-your-name.webp" alt="Call Me by Your Name"></td>
-    <td><img src="images/movie-clockwork-orange.webp" alt="A Clockwork Orange"></td>
+    <td><a href="https://www.imdb.com/title/tt0359950/" class="no-underline"><img src="images/movie-mitty.webp" alt="The Secret Life of Walter Mitty"></a></td>
+    <td><a href="https://www.imdb.com/title/tt0117509/" class="no-underline"><img src="images/movie-romeo-juliet.webp" alt="Romeo + Juliet"></a></td>
+    <td><a href="https://www.imdb.com/title/tt0203009/" class="no-underline"><img src="images/movie-moulin-rouge.webp" alt="Moulin Rouge!"></a></td>
+    <td><a href="https://www.imdb.com/title/tt5726616/" class="no-underline"><img src="images/movie-call-me-by-your-name.webp" alt="Call Me by Your Name"></a></td>
+    <td><a href="https://www.imdb.com/title/tt0066921/" class="no-underline"><img src="images/movie-clockwork-orange.webp" alt="A Clockwork Orange"></a></td>
     <td style="width: 350px;"></td>
   </tr>
   <tr>
