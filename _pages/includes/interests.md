@@ -39,7 +39,7 @@
 
 - Step into his world of melodious favorites and discover a carefully curated music collection.     
 <img src="https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/music.gif" width="369" height="50" alt="Songs" />
-- Explore his <a herf="https://music.apple.com/us/playlist/replay-2023/pl.rp-6xxbi6BevJx4" class="no-underline">Replay 2023</a> playlist, a journey through his most played tracks on [![](https://img.shields.io/badge/-Apple_Music-blue?logo=applemusic&logoColor=white&labelColor=FA243C&color=FA243C&style=flat)](https://www.apple.com/apple-music/)
+- Explore his <a href="https://music.apple.com/us/playlist/replay-2023/pl.rp-6xxbi6BevJx4" class="no-underline">Replay 2023</a> playlist, a journey through his most played tracks on [![](https://img.shields.io/badge/-Apple_Music-blue?logo=applemusic&logoColor=white&labelColor=FA243C&color=FA243C&style=flat)](https://www.apple.com/apple-music/)
 
 ## 🎬 Movies
 
@@ -80,7 +80,7 @@
 
 ## 🏃 Sports
 
-Passionate about fitness, he has earned a series of accolades in his active lifestyle. Take a glimpse at his <a herf="https://www.apple.com/apple-fitness-plus/" class="no-underline">Apple Fitness</a> achievements:
+Passionate about fitness, he has earned a series of accolades in his active lifestyle. Take a glimpse at his <a href="https://www.apple.com/apple-fitness-plus/" class="no-underline">Apple Fitness</a> achievements:
 
 <table class="no-horizontal-lines">
   <tr>
@@ -126,7 +126,7 @@ His world of gaming spans across various consoles, offering endless adventures a
   - Splatoon 3
   - Mario Kart 8 Deluxe
   - Animal Crossing: New Horizons
-- <a herf="https://year-in-review.nintendo.com/" class="no-underline">Nintendo Year in Review 2023</a>
+- <a href="https://year-in-review.nintendo.com/" class="no-underline">Nintendo Year in Review 2023</a>
 
 <table class="no-horizontal-lines">
   <tr>
@@ -158,87 +158,87 @@ His interest in digital gadgets extends to a wide range of applications and tool
   </tr>
   <tr>
     <td>💻 Laptop</td>
-    <td><a herf="https://support.apple.com/kb/SP854" class="no-underline">MacBook Pro 14-inch 2021 with Apple M1 Pro Chip and 16 GB Memory</a></td>
+    <td><a href="https://support.apple.com/kb/SP854" class="no-underline">MacBook Pro 14-inch 2021 with Apple M1 Pro Chip and 16 GB Memory</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🖥️ Display</td>
-    <td><a herf="http://www.richvision.com/product/rv100" class="no-underline">RichVision RV100 27-inch 5K</a></td>
+    <td><a href="http://www.richvision.com/product/rv100" class="no-underline">RichVision RV100 27-inch 5K</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📱 Phone</td>
-    <td><a herf="https://www.apple.com/iphone-13/specs/" class="no-underline">iPhone 13</a></td>
+    <td><a href="https://www.apple.com/iphone-13/specs/" class="no-underline">iPhone 13</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>⌚ Watch</td>
-    <td><a herf="https://support.apple.com/kb/SP808" class="no-underline">Apple Watch Series 5</a></td>
+    <td><a href="https://support.apple.com/kb/SP808" class="no-underline">Apple Watch Series 5</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📱 Tablet</td>
-    <td><a herf="https://support.apple.com/kb/SP828" class="no-underline">iPad Air 4</a></td>
+    <td><a href="https://support.apple.com/kb/SP828" class="no-underline">iPad Air 4</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎧 Headphones</td>
-    <td><a herf="https://www.akg.com/Headphones/Professional%20Headphones/K701.html" class="no-underline">AKG K701</a> | <a herf="https://electronics.sony.com/audio/headphones/headband/p/wh1000xm4-s" class="no-underline">Sony WH-1000XM4</a> | <a herf="https://www.audio-technica.com/ath-esw990h" class="no-underline">Audio Technica ESW990H</a></td>
+    <td><a href="https://www.akg.com/Headphones/Professional%20Headphones/K701.html" class="no-underline">AKG K701</a> | <a href="https://electronics.sony.com/audio/headphones/headband/p/wh1000xm4-s" class="no-underline">Sony WH-1000XM4</a> | <a href="https://www.audio-technica.com/ath-esw990h" class="no-underline">Audio Technica ESW990H</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎧 Earphone</td>
-    <td><a herf="https://support.apple.com/kb/SP880" class="no-underline">Apple AirPods Pro 2</a></td>
+    <td><a href="https://support.apple.com/kb/SP880" class="no-underline">Apple AirPods Pro 2</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎵 Audio DAC</td>
-    <td><a herf="https://www.fiio.com/q3" class="no-underline">FiiO Q3</a></td>
+    <td><a href="https://www.fiio.com/q3" class="no-underline">FiiO Q3</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📺 TV Terminal</td>
-    <td><a herf="https://www.apple.com/uk/apple-tv-4k/specs/" class="no-underline">Apple TV 4K with Wi‑Fi and Ethernet</a></td>
+    <td><a href="https://www.apple.com/uk/apple-tv-4k/specs/" class="no-underline">Apple TV 4K with Wi‑Fi and Ethernet</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎮 Game Consoles</td>
-    <td><a herf="https://www.nintendo.com/us/store/products/nintendo-switch-oled-model-neon-blue-neon-red-set/" class="no-underline">Nintendo Switch OLED</a> | <a herf="https://www.playstation.com/en-us/ps5" class="no-underline">Sony PlayStation 5</a></td>
+    <td><a href="https://www.nintendo.com/us/store/products/nintendo-switch-oled-model-neon-blue-neon-red-set/" class="no-underline">Nintendo Switch OLED</a> | <a href="https://www.playstation.com/en-us/ps5" class="no-underline">Sony PlayStation 5</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📷 Camera</td>
-    <td><a herf="https://www.sony.co.uk/electronics/cyber-shot-compact-cameras/dsc-rx100m5/specifications" class="no-underline">Sony DSC-RX100M5</a></td>
+    <td><a href="https://www.sony.co.uk/electronics/cyber-shot-compact-cameras/dsc-rx100m5/specifications" class="no-underline">Sony DSC-RX100M5</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>⌨️ Keyboard</td>
-    <td><a herf="https://www.keychron.com/products/keychron-k2-wireless-mechanical-keyboard" class="no-underline">Keychron K2</a></td>
+    <td><a href="https://www.keychron.com/products/keychron-k2-wireless-mechanical-keyboard" class="no-underline">Keychron K2</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🖱 Trackpad</td>
-    <td><a herf="https://support.apple.com/kb/SP729" class="no-underline">Apple Magic Trackpad</a></td>
+    <td><a href="https://support.apple.com/kb/SP729" class="no-underline">Apple Magic Trackpad</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🖱 Mouse</td>
-    <td><a herf="hhttps://origin2.logitech.com/en-za/product/mx-master-2s-business#specification-tabular" class="no-underline">Logitech MX Master 2S</a></td>
+    <td><a href="hhttps://origin2.logitech.com/en-za/product/mx-master-2s-business#specification-tabular" class="no-underline">Logitech MX Master 2S</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🖨️ Printer</td>
-    <td><a herf="https://www.spanningglobal.com/product/original-xiaomi-mijia-scan-copy-inkjet-printer-all-in-one-9500-pages-long-battery-life-printer/" class="no-underline">Mi Wireless All-in-One Inkjet Printer</a></td>
+    <td><a href="https://www.spanningglobal.com/product/original-xiaomi-mijia-scan-copy-inkjet-printer-all-in-one-9500-pages-long-battery-life-printer/" class="no-underline">Mi Wireless All-in-One Inkjet Printer</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>💡 Lamp</td>
-    <td><a herf="https://www.mi.com/uk/product/mi-computer-monitor-light-bar/" class="no-underline">Mi Computer Monitor Light Bar</a></td>
+    <td><a href="https://www.mi.com/uk/product/mi-computer-monitor-light-bar/" class="no-underline">Mi Computer Monitor Light Bar</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🛹 Skateboard</td>
-    <td><a herf="https://www.exwayboard.com" class="no-underline">Exway X1</a></td>
+    <td><a href="https://www.exwayboard.com" class="no-underline">Exway X1</a></td>
     <td style="width: 250px;"></td>
   </tr>
 </table>
@@ -253,112 +253,112 @@ His interest in digital gadgets extends to a wide range of applications and tool
   </tr>
   <tr>
     <td>💻 Operating System</td>
-    <td><a herf="https://www.apple.com/macos/sonoma/" class="no-underline">macOS Sonoma</a></td>
+    <td><a href="https://www.apple.com/macos/sonoma/" class="no-underline">macOS Sonoma</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📧 Email Client</td>
-    <td><a herf="https://canarymail.io" class="no-underline">Canary Mail</a></td>
+    <td><a href="https://canarymail.io" class="no-underline">Canary Mail</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td> ⌨️ Command Line Interface</td>
-    <td><a herf="https://www.warp.dev" class="no-underline">Warp</a></td>
+    <td><a href="https://www.warp.dev" class="no-underline">Warp</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🌐 Web Browser</td>
-    <td><a herf="https://www.apple.com/safari/" class="no-underline">Safari</a></td>
+    <td><a href="https://www.apple.com/safari/" class="no-underline">Safari</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>💬 Instant Messaging</td>
-    <td><a herf="https://telegram.org" class="no-underline">Telegram</a> | <a herf="https://www.wechat.com" class="no-underline">WeChat</a> | <a herf="https://support.apple.com/en-gb/HT206906" class="no-underline">iMessage</a></td>
+    <td><a href="https://telegram.org" class="no-underline">Telegram</a> | <a href="https://www.wechat.com" class="no-underline">WeChat</a> | <a href="https://support.apple.com/en-gb/HT206906" class="no-underline">iMessage</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎵 Music Player</td>
-    <td><a herf="https://www.apple.com/apple-music/" class="no-underline">Apple Music</a> | <a herf="https://www.spotify.com/" class="no-underline">Spotify</a></td>
+    <td><a href="https://www.apple.com/apple-music/" class="no-underline">Apple Music</a> | <a href="https://www.spotify.com/" class="no-underline">Spotify</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>👨‍💻 Coding Environment</td>
-    <td><a herf="https://code.visualstudio.com" class="no-underline">Visual Studio Code</a></td>
+    <td><a href="https://code.visualstudio.com" class="no-underline">Visual Studio Code</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📝 Text Editor</td>
-    <td><a herf="https://www.sublimetext.com" class="no-underline">Sublime Text</a></td>
+    <td><a href="https://www.sublimetext.com" class="no-underline">Sublime Text</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>⌨️ Input Method Editor</td>
-    <td><a herf="https://rime.im" class="no-underline">RIME Squirrel</a> | <a herf="https://support.apple.com/lv-lv/guide/mac-help/mh27474/mac" class="no-underline">ABC</a></td>
+    <td><a href="https://rime.im" class="no-underline">RIME Squirrel</a> | <a href="https://support.apple.com/lv-lv/guide/mac-help/mh27474/mac" class="no-underline">ABC</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📊 Productivity Suite</td>
-    <td><a herf="https://www.microsoft.com/microsoft-365" class="no-underline">Microsoft 365</a> | <a herf="https://www.apple.com/keynote/" class="no-underline">Keynote</a> | <a herf="https://www.notion.so" class="no-underline">Notion</a></td>
+    <td><a href="https://www.microsoft.com/microsoft-365" class="no-underline">Microsoft 365</a> | <a href="https://www.apple.com/keynote/" class="no-underline">Keynote</a> | <a href="https://www.notion.so" class="no-underline">Notion</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🔣 LaTex Editor</td>
-    <td><a herf="https://www.texifier.com" class="no-underline">Texifier</a> | <a herf="https://www.overleaf.com" class="no-underline">Overleaf</a></td>
+    <td><a href="https://www.texifier.com" class="no-underline">Texifier</a> | <a href="https://www.overleaf.com" class="no-underline">Overleaf</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📄 Reference Manager</td>
-    <td><a herf="https://www.zotero.org" class="no-underline">Zotero</a></td>
+    <td><a href="https://www.zotero.org" class="no-underline">Zotero</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🔍 PDF Reader</td>
-    <td><a herf="https://pdfexpert.com/" class="no-underline">PDF Expert</a> | <a herf="https://www.adobe.com/acrobat.html" class="no-underline">Adobe Acrobat</a></td>
+    <td><a href="https://pdfexpert.com/" class="no-underline">PDF Expert</a> | <a href="https://www.adobe.com/acrobat.html" class="no-underline">Adobe Acrobat</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎨 Graphic Design</td>
-    <td><a herf="https://www.edrawsoft.com/edraw-max/" class="no-underline">Wondershare EdrawMax</a> | <a herf="https://www.microsoft.com/microsoft-365/powerpoint" class="no-underline">Microsoft PowerPoint</a></td>
+    <td><a href="https://www.edrawsoft.com/edraw-max/" class="no-underline">Wondershare EdrawMax</a> | <a href="https://www.microsoft.com/microsoft-365/powerpoint" class="no-underline">Microsoft PowerPoint</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🗣️ Communication</td>
-    <td><a herf="https://voovmeeting.com" class="no-underline">VooV Meeting</a> | <a herf="https://zoom.us" class="no-underline">Zoom</a></td>
+    <td><a href="https://voovmeeting.com" class="no-underline">VooV Meeting</a> | <a href="https://zoom.us" class="no-underline">Zoom</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎬 Video Streaming</td>
-    <td><a herf="https://www.bilibili.com" class="no-underline">Bilibili</a> | <a herf="https://www.netflix.com/" class="no-underline">Netflix</a> | <a herf="https://www.youtube.com" class="no-underline">YouTube</a> | <a herf="https://www.apple.com/apple-tv-plus/" class="no-underline">Apple TV+</a> | <a herf="https://firecore.com/infuse" class="no-underline">Infuse</a></td>
+    <td><a href="https://www.bilibili.com" class="no-underline">Bilibili</a> | <a href="https://www.netflix.com/" class="no-underline">Netflix</a> | <a href="https://www.youtube.com" class="no-underline">YouTube</a> | <a href="https://www.apple.com/apple-tv-plus/" class="no-underline">Apple TV+</a> | <a href="https://firecore.com/infuse" class="no-underline">Infuse</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>☁️ Cloud Storage</td>
-    <td><a herf="https://www.icloud.com" class="no-underline">iCloud</a> | <a herf="https://www.aliyundrive.com/" class="no-underline">Aliyun Drive</a> | <a herf="https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage" class="no-underline">OneDrive</a></td>
+    <td><a href="https://www.icloud.com" class="no-underline">iCloud</a> | <a href="https://www.aliyundrive.com/" class="no-underline">Aliyun Drive</a> | <a href="https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage" class="no-underline">OneDrive</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📱 Social Media</td>
-    <td><a herf="https://twitter.com/" class="no-underline">X</a> | <a herf="https://www.instagram.com" class="no-underline">Instagram</a> | <a herf="https://www.linkedin.com" class="no-underline">LinkedIn</a></td>
+    <td><a href="https://twitter.com/" class="no-underline">X</a> | <a href="https://www.instagram.com" class="no-underline">Instagram</a> | <a href="https://www.linkedin.com" class="no-underline">LinkedIn</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🗨️ Forum</td>
-    <td><a herf="https://v2ex.com" class="no-underline">V2EX</a> | <a herf="https://www.reddit.com" class="no-underline">Reddit</a></td>
+    <td><a href="https://v2ex.com" class="no-underline">V2EX</a> | <a href="https://www.reddit.com" class="no-underline">Reddit</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>⌚ Fitness Tracking</td>
-    <td><a herf="https://www.apple.com/ios/health/" class="no-underline">Apple Health</a> | <a herf="https://www.apple.com/apple-fitness-plus/" class="no-underline">Apple Fitness+</a></td>
+    <td><a href="https://www.apple.com/ios/health/" class="no-underline">Apple Health</a> | <a href="https://www.apple.com/apple-fitness-plus/" class="no-underline">Apple Fitness+</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🔒 Security</td>
-    <td><a herf="https://apps.apple.com/gb/app/shadowrocket/id932747118" class="no-underline">Shadowrocket</a> | <a herf="https://nssurge.com" class="no-underline">Surge</a></td>
+    <td><a href="https://apps.apple.com/gb/app/shadowrocket/id932747118" class="no-underline">Shadowrocket</a> | <a href="https://nssurge.com" class="no-underline">Surge</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🤖 Automation</td>
-    <td><a herf="https://support.apple.com/guide/shortcuts/welcome/ios" class="no-underline">Apple Shortcuts</a></td>
+    <td><a href="https://support.apple.com/guide/shortcuts/welcome/ios" class="no-underline">Apple Shortcuts</a></td>
     <td style="width: 250px;"></td>
   </tr>
 </table>
