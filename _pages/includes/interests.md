@@ -158,87 +158,87 @@ His interest in digital gadgets extends to a wide range of applications and tool
   </tr>
   <tr>
     <td>💻 Laptop</td>
-    <td>MacBook Pro 14-inch 2021 with Apple M1 Pro Chip and 16 GB Memory</td>
+    <td><a herf="https://support.apple.com/kb/SP854" class="no-underline">MacBook Pro 14-inch 2021 with Apple M1 Pro Chip and 16 GB Memory</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🖥️ Display</td>
-    <td>RichVision RV100 27-inch 5K</td>
+    <td><a herf="http://www.richvision.com/product/rv100" class="no-underline">RichVision RV100 27-inch 5K</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📱 Phone</td>
-    <td>iPhone 13</td>
+    <td><a herf="https://www.apple.com/iphone-13/specs/" class="no-underline">iPhone 13</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>⌚ Watch</td>
-    <td>Apple Watch Series 5</td>
+    <td><a herf="https://support.apple.com/kb/SP808" class="no-underline">Apple Watch Series 5</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📱 Tablet</td>
-    <td>iPad Air 4</td>
+    <td><a herf="https://support.apple.com/kb/SP828" class="no-underline">iPad Air 4</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎧 Headphones</td>
-    <td>AKG K701 | Sony WH-1000XM4 | Audio Technica ESW990H</td>
+    <td><a herf="https://www.akg.com/Headphones/Professional%20Headphones/K701.html" class="no-underline">AKG K701</a> | <a herf="https://electronics.sony.com/audio/headphones/headband/p/wh1000xm4-s" class="no-underline">Sony WH-1000XM4</a> | <a herf="https://www.audio-technica.com/ath-esw990h" class="no-underline">Audio Technica ESW990H</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎧 Earphone</td>
-    <td>Apple AirPods Pro 2</td>
+    <td><a herf="https://support.apple.com/kb/SP880" class="no-underline">Apple AirPods Pro 2</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎵 Audio DAC</td>
-    <td>FiiO Q3</td>
+    <td><a herf="https://www.fiio.com/q3" class="no-underline">FiiO Q3</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📺 TV Terminal</td>
-    <td>Apple TV 4K with Wi‑Fi and Ethernet</td>
+    <td><a herf="https://www.apple.com/uk/apple-tv-4k/specs/" class="no-underline">Apple TV 4K with Wi‑Fi and Ethernet</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎮 Game Consoles</td>
-    <td>Nintendo Switch OLED | Sony PlayStation 5</td>
+    <td><a herf="https://www.nintendo.com/us/store/products/nintendo-switch-oled-model-neon-blue-neon-red-set/" class="no-underline">Nintendo Switch OLED</a> | <a herf="https://www.playstation.com/en-us/ps5" class="no-underline">Sony PlayStation 5</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📷 Camera</td>
-    <td>Sony DSC-RX100M5</td>
+    <td><a herf="https://www.sony.co.uk/electronics/cyber-shot-compact-cameras/dsc-rx100m5/specifications" class="no-underline">Sony DSC-RX100M5</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>⌨️ Keyboard</td>
-    <td>Keychron K2</td>
+    <td><a herf="https://www.keychron.com/products/keychron-k2-wireless-mechanical-keyboard" class="no-underline">Keychron K2</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🖱 Trackpad</td>
-    <td>Apple Magic Trackpad</td>
+    <td><a herf="https://support.apple.com/kb/SP729" class="no-underline">Apple Magic Trackpad</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🖱 Mouse</td>
-    <td>Logitech MX Master 2S</td>
+    <td><a herf="hhttps://origin2.logitech.com/en-za/product/mx-master-2s-business#specification-tabular" class="no-underline">Logitech MX Master 2S</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🖨️ Printer</td>
-    <td>Mi Wireless All-in-One Inkjet Printer</td>
+    <td><a herf="https://www.spanningglobal.com/product/original-xiaomi-mijia-scan-copy-inkjet-printer-all-in-one-9500-pages-long-battery-life-printer/" class="no-underline">Mi Wireless All-in-One Inkjet Printer</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>💡 Lamp</td>
-    <td>Mi Computer Monitor Light Bar</td>
+    <td><a herf="https://www.mi.com/uk/product/mi-computer-monitor-light-bar/" class="no-underline">Mi Computer Monitor Light Bar</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🛹 Skateboard</td>
-    <td>Exway X1</td>
+    <td><a herf="https://www.exwayboard.com" class="no-underline">Exway X1</a></td>
     <td style="width: 250px;"></td>
   </tr>
 </table>
