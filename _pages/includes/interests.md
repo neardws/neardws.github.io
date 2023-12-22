@@ -275,6 +275,7 @@ His interest in digital gadgets extends to a wide range of applications and tool
   <tr>
     <td>🔍 PDF Reader</td>
     <td>PDF Expert<br>Adobe Acrobat</td>
+  </tr>
   <tr>
     <td>🎨 Graphic Design</td>
     <td>Wondershare EdrawMax<br>Microsoft PowerPoint</td>
