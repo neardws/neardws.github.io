@@ -144,6 +144,27 @@ His world of gaming spans across various consoles, offering endless adventures a
   - Life is Strange 2
   - Life is Strange: True Colors
 
+## 📱 Technology
+
+He has a keen interest in digital gadgets.
+
+- 💻 Laptop: MacBook Pro 14-inch 2021 with Apple M1 Pro Chip and 16 GB Memory
+- 🖥️ Display: RV100 27-inch (5120 × 2880)
+- 📱 Phone: iPhone 13
+- ⌚ Watch: Apple Watch Series 5
+- 📱 Tablet: iPad Air 4
+- 🎧 Headphones: AKG K701\|Sony WH-1000XM4\|Audio Technica ESW990H
+- 🎧 Earphone: Apple AirPods Pro 2
+- 📺 TV Terminal: Apple TV 4K with Wi‑Fi and Ethernet
+- 🎮 Game Consoles: Nintendo Switch OLED\|Sony PlayStation 5
+- 📷 Camera: Sony DSC-RX100M5
+- ⌨️ Keyboard: Keychron K2
+- 🖱 Trackpad: Apple Magic Trackpad
+- 🖱 Mouse: Logitech MX Master 2S
+- 🖨️ Printer: Mi Wireless All-in-One Inkjet Printer
+- 💡 Lamp: Mi Computer Monitor Light Bar
+- 🛹 Skateboard: Original Exway X1
+
 <div style="float: left;">
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=600&t=tt&d=aFmh3d7Xe0XBtDzpWJTkAIBPYWnWgzsZn29nw_9T_34&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
 </div>
