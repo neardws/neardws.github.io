@@ -10,34 +10,34 @@
 
 <table class="no-horizontal-lines">
   <tr>
-    <td><a href="https://music.apple.com/us/album/%E8%82%86%E7%99%BE%E6%93%8A-single/1524780292" class="no-underline"><img src="images/album-the-400-blows.webp" alt="The 400 Blows"></a></td>
-    <td><a href="https://music.apple.com/us/album/%E9%AD%9A%E7%BC%B8%E6%97%85%E9%A4%A8-single/1541075748" class="no-underline"><img src="images/album-aqua-hotel.webp" alt="Aqua Hotel"></a></td>
-    <td><a href="https://music.apple.com/us/album/%E5%A4%8F%E9%87%8E%E4%BA%86-ep/1584652713" class="no-underline"><img src="images/album-summer-time.webp" alt="Summer Time"></a></td>
-    <td><a href="https://music.apple.com/us/album/%E5%AE%A2%E5%8E%85%E7%8B%82%E6%AC%A2/1666164587" class="no-underline"><img src="images/album-bedazzling.webp" alt="Bedazzling"></a></td>
-    <td><a href="https://music.apple.com/us/album/real-love-is/1535521287" class="no-underline"><img src="images/album-real-love.webp" alt="Real Love Is..."></a></td>
-    <td><a href="https://music.apple.com/us/album/%E9%99%B6%E5%96%86%E5%90%8C%E5%90%8D%E5%B0%88%E8%BC%AF/1416149926" class="no-underline"><img src="images/album-david-tao.webp" alt="David Tao"></a></td>
-    <td><a href="https://music.apple.com/us/album/%E6%84%9F/1599406521" class="no-underline"><img src="images/album-sense.webp" alt="Sense+"></a></td>
-    <td><a href="https://music.apple.com/us/album/bye-bye-thats-all/1556615542" class="no-underline"><img src="images/album-bye-bye-that-is-all.webp" alt="Bye Bye That's All"></a></td>
+    <td style="text-align: center;"><a href="https://music.apple.com/us/album/%E8%82%86%E7%99%BE%E6%93%8A-single/1524780292" class="no-underline"><img src="images/album-the-400-blows.webp" alt="The 400 Blows"></a></td>
+    <td style="text-align: center;"><a href="https://music.apple.com/us/album/%E9%AD%9A%E7%BC%B8%E6%97%85%E9%A4%A8-single/1541075748" class="no-underline"><img src="images/album-aqua-hotel.webp" alt="Aqua Hotel"></a></td>
+    <td style="text-align: center;"><a href="https://music.apple.com/us/album/%E5%A4%8F%E9%87%8E%E4%BA%86-ep/1584652713" class="no-underline"><img src="images/album-summer-time.webp" alt="Summer Time"></a></td>
+    <td style="text-align: center;"><a href="https://music.apple.com/us/album/%E5%AE%A2%E5%8E%85%E7%8B%82%E6%AC%A2/1666164587" class="no-underline"><img src="images/album-bedazzling.webp" alt="Bedazzling"></a></td>
+    <td style="text-align: center;"><a href="https://music.apple.com/us/album/real-love-is/1535521287" class="no-underline"><img src="images/album-real-love.webp" alt="Real Love Is..."></a></td>
+    <td style="text-align: center;"><a href="https://music.apple.com/us/album/%E9%99%B6%E5%96%86%E5%90%8C%E5%90%8D%E5%B0%88%E8%BC%AF/1416149926" class="no-underline"><img src="images/album-david-tao.webp" alt="David Tao"></a></td>
+    <td style="text-align: center;"><a href="https://music.apple.com/us/album/%E6%84%9F/1599406521" class="no-underline"><img src="images/album-sense.webp" alt="Sense+"></a></td>
+    <td style="text-align: center;"><a href="https://music.apple.com/us/album/bye-bye-thats-all/1556615542" class="no-underline"><img src="images/album-bye-bye-that-is-all.webp" alt="Bye Bye That's All"></a></td>
   </tr>
   <tr>
-    <td>The 400 Blows<br>Sigle</td>
-    <td>Aqua Hotel<br>Sigle </td>
-    <td>Summer Time<br>EP</td>
-    <td>Bedazzling</td>
-    <td>Real Love Is...</td>
-    <td>David Tao</td>
-    <td>Sense+</td>
-    <td>Bye Bye<br>That's All</td>
+    <td style="text-align: center;">The 400 Blows<br>Sigle</td>
+    <td style="text-align: center;">Aqua Hotel<br>Sigle </td>
+    <td style="text-align: center;">Summer Time<br>EP</td>
+    <td style="text-align: center;">Bedazzling</td>
+    <td style="text-align: center;">Real Love Is...</td>
+    <td style="text-align: center;">David Tao</td>
+    <td style="text-align: center;">Sense+</td>
+    <td style="text-align: center;">Bye Bye<br>That's All</td>
   </tr>
   <tr>
-    <td>Roy Wang</td>
-    <td>Roy Wang</td>
-    <td>Roy Wang</td>
-    <td>Roy Wang</td>
-    <td>The Chairs</td>
-    <td>David Tao</td>
-    <td>The Life Journey</td>
-    <td>Bad Sweetheart</td>
+    <td style="text-align: center;">Roy Wang</td>
+    <td style="text-align: center;">Roy Wang</td>
+    <td style="text-align: center;">Roy Wang</td>
+    <td style="text-align: center;">Roy Wang</td>
+    <td style="text-align: center;">The Chairs</td>
+    <td style="text-align: center;">David Tao</td>
+    <td style="text-align: center;">The Life Journey</td>
+    <td style="text-align: center;">Bad Sweetheart</td>
   </tr>
 </table>
 
@@ -49,36 +49,36 @@
 
 <table class="no-horizontal-lines">
   <tr>
-    <td><a href="https://www.imdb.com/title/tt0359950/" class="no-underline"><img src="images/movie-mitty.webp" alt="The Secret Life of Walter Mitty"></a></td>
-    <td><a href="https://www.imdb.com/title/tt0117509/" class="no-underline"><img src="images/movie-romeo-juliet.webp" alt="Romeo + Juliet"></a></td>
-    <td><a href="https://www.imdb.com/title/tt0203009/" class="no-underline"><img src="images/movie-moulin-rouge.webp" alt="Moulin Rouge!"></a></td>
-    <td><a href="https://www.imdb.com/title/tt5726616/" class="no-underline"><img src="images/movie-call-me-by-your-name.webp" alt="Call Me by Your Name"></a></td>
-    <td><a href="https://www.imdb.com/title/tt0066921/" class="no-underline"><img src="images/movie-clockwork-orange.webp" alt="A Clockwork Orange"></a></td>
-    <td style="width: 350px;"></td>
+    <td style="text-align: center;"><a href="https://www.imdb.com/title/tt0359950/" class="no-underline"><img src="images/movie-mitty.webp" alt="The Secret Life of Walter Mitty"></a></td>
+    <td style="text-align: center;"><a href="https://www.imdb.com/title/tt0117509/" class="no-underline"><img src="images/movie-romeo-juliet.webp" alt="Romeo + Juliet"></a></td>
+    <td style="text-align: center;"><a href="https://www.imdb.com/title/tt0203009/" class="no-underline"><img src="images/movie-moulin-rouge.webp" alt="Moulin Rouge!"></a></td>
+    <td style="text-align: center;"><a href="https://www.imdb.com/title/tt5726616/" class="no-underline"><img src="images/movie-call-me-by-your-name.webp" alt="Call Me by Your Name"></a></td>
+    <td style="text-align: center;"><a href="https://www.imdb.com/title/tt0066921/" class="no-underline"><img src="images/movie-clockwork-orange.webp" alt="A Clockwork Orange"></a></td>
+    <td style="text-align: center;" style="width: 350px;"></td>
   </tr>
   <tr>
-    <td>The Secret Life of Walter Mitty</td>
-    <td>Romeo + Juliet</td>
-    <td>Moulin Rouge!</td>
-    <td>Call Me by Your Name</td>
-    <td>A Clockwork Orange</td>
-    <td style="width: 350px;"></td>
+    <td style="text-align: center;">The Secret Life of Walter Mitty</td>
+    <td style="text-align: center;">Romeo + Juliet</td>
+    <td style="text-align: center;">Moulin Rouge!</td>
+    <td style="text-align: center;">Call Me by Your Name</td>
+    <td style="text-align: center;">A Clockwork Orange</td>
+    <td style="text-align: center;" style="width: 350px;"></td>
   </tr>
   <tr>
-    <td>Ben Stiller</td>
-    <td>Baz Luhrmann</td>
-    <td>Baz Luhrmann</td>
-    <td>Luca Guadagnino</td>
-    <td>Stanley Kubrick</td>
-    <td style="width: 350px;"></td>
+    <td style="text-align: center;">Ben Stiller</td>
+    <td style="text-align: center;">Baz Luhrmann</td>
+    <td style="text-align: center;">Baz Luhrmann</td>
+    <td style="text-align: center;">Luca Guadagnino</td>
+    <td style="text-align: center;">Stanley Kubrick</td>
+    <td style="text-align: center;" style="width: 350px;"></td>
   </tr>
   <tr>
-    <td>2013</td>
-    <td>1996</td>
-    <td>2001</td>
-    <td>2017</td>
-    <td>1971</td>
-    <td style="width: 350px;"></td>
+    <td style="text-align: center;">2013</td>
+    <td style="text-align: center;">1996</td>
+    <td style="text-align: center;">2001</td>
+    <td style="text-align: center;">2017</td>
+    <td style="text-align: center;">1971</td>
+    <td style="text-align: center;" style="width: 350px;"></td>
   </tr>
 </table>
 
@@ -88,34 +88,34 @@ Passionate about fitness, he has earned a series of accolades in his active life
 
 <table class="no-horizontal-lines">
   <tr>
-    <td><img src="images/sports-weekly.webp" alt="Fitness+ Weekly Workout Streak"></td>
-    <td><img src="images/sports-move.webp" alt="100 Move Goals"></td>
-    <td><img src="images/sports-treadmill.webp" alt="50 Fitness+ Treadmill Workouts"></td>
-    <td><img src="images/sports-7-workout.webp" alt="7-Workout Week"></td>
-    <td><img src="images/sports-cycling.webp" alt="Cycling Workout Record"></td>
-    <td><img src="images/sports-elliptical.webp" alt="Elliptical Workout Record"></td>
-    <td><img src="images/sports-running.webp" alt="Running Workout Record"></td>
-    <td><img src="images/sports-swimming.webp" alt="Swimming Workout Record"></td>
+    <td style="text-align: center;"><img src="images/sports-weekly.webp" alt="Fitness+ Weekly Workout Streak"></td>
+    <td style="text-align: center;"><img src="images/sports-move.webp" alt="100 Move Goals"></td>
+    <td style="text-align: center;"><img src="images/sports-treadmill.webp" alt="50 Fitness+ Treadmill Workouts"></td>
+    <td style="text-align: center;"><img src="images/sports-7-workout.webp" alt="7-Workout Week"></td>
+    <td style="text-align: center;"><img src="images/sports-cycling.webp" alt="Cycling Workout Record"></td>
+    <td style="text-align: center;"><img src="images/sports-elliptical.webp" alt="Elliptical Workout Record"></td>
+    <td style="text-align: center;"><img src="images/sports-running.webp" alt="Running Workout Record"></td>
+    <td style="text-align: center;"><img src="images/sports-swimming.webp" alt="Swimming Workout Record"></td>
   </tr>
   <tr>
-    <td>Four-week continuous Fitness+ workout streak award</td>
-    <td>Daily Move goal reached 100 times award</td>
-    <td>50th Fitness+ Treadmill workout accomplishment</td>
-    <td>50-time winner of the 7-workouts-per-week challenge</td>
-    <td>Top cycling calorie burner award (525 Calories)</td>
-    <td>Peak calorie burn on the elliptical award (645 Calories)</td>
-    <td>Maximum calories burned running award (579 Calories)</td>
-    <td>Highest calories burned swimming award (157 Calories)</td>
+    <td style="text-align: center;">Four-week continuous Fitness+ workout streak award</td>
+    <td style="text-align: center;">Daily Move goal reached 100 times award</td>
+    <td style="text-align: center;">50th Fitness+ Treadmill workout accomplishment</td>
+    <td style="text-align: center;">50-time winner of the 7-workouts-per-week challenge</td>
+    <td style="text-align: center;">Top cycling calorie burner award (525 Calories)</td>
+    <td style="text-align: center;">Peak calorie burn on the elliptical award (645 Calories)</td>
+    <td style="text-align: center;">Maximum calories burned running award (579 Calories)</td>
+    <td style="text-align: center;">Highest calories burned swimming award (157 Calories)</td>
   </tr>
   <tr>
-    <td>Aug 15, 2023</td>
-    <td>Nov 30, 2021</td>
-    <td>Aug 7, 2023</td>
-    <td>Sep 22, 2023</td>
-    <td>May 17, 2023</td>
-    <td>Jan 21, 2023</td>
-    <td>Aug 16, 2023</td>
-    <td>Jun 13, 2023</td>
+    <td style="text-align: center;">Aug 15, 2023</td>
+    <td style="text-align: center;">Nov 30, 2021</td>
+    <td style="text-align: center;">Aug 7, 2023</td>
+    <td style="text-align: center;">Sep 22, 2023</td>
+    <td style="text-align: center;">May 17, 2023</td>
+    <td style="text-align: center;">Jan 21, 2023</td>
+    <td style="text-align: center;">Aug 16, 2023</td>
+    <td style="text-align: center;">Jun 13, 2023</td>
   </tr>
 </table>
 
