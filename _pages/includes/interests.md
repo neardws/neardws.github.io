@@ -144,9 +144,9 @@ His world of gaming spans across various consoles, offering endless adventures a
   - Life is Strange 2
   - Life is Strange: True Colors
 
-## 📱 Technology
+## 📱 Tech
 
-He has a keen interest in digital gadgets and various applications.
+His interest in digital gadgets extends to a wide range of applications and tools.
 
 ### Hardware
 
