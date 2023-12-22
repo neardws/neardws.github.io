@@ -253,112 +253,112 @@ His interest in digital gadgets extends to a wide range of applications and tool
   </tr>
   <tr>
     <td>💻 Operating System</td>
-    <td>macOS Sonoma 14.2</td>
+    <td><a herf="https://www.apple.com/macos/sonoma/" class="no-underline">macOS Sonoma</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📧 Email Client</td>
-    <td>Canary Mail</td>
+    <td><a herf="https://canarymail.io" class="no-underline">Canary Mail</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td> ⌨️ Command Line Interface</td>
-    <td>Warp</td>
+    <td><a herf="https://www.warp.dev" class="no-underline">Warp</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🌐 Web Browser</td>
-    <td>Safari</td>
+    <td><a herf="https://www.apple.com/safari/" class="no-underline">Safari</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>💬 Instant Messaging</td>
-    <td>Telegram | WeChat | iMessage</td>
+    <td><a herf="https://telegram.org" class="no-underline">Telegram</a> | <a herf="https://www.wechat.com" class="no-underline">WeChat</a> | <a herf="https://support.apple.com/en-gb/HT206906" class="no-underline">iMessage</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎵 Music Player</td>
-    <td>Apple Music | Spotify</td>
+    <td><a herf="https://www.apple.com/apple-music/" class="no-underline">Apple Music</a> | <a herf="https://www.spotify.com/" class="no-underline">Spotify</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>👨‍💻 Coding Environment</td>
-    <td>Visual Studio Code</td>
+    <td><a herf="https://code.visualstudio.com" class="no-underline">Visual Studio Code</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📝 Text Editor</td>
-    <td>Sublime Text</td>
+    <td><a herf="https://www.sublimetext.com" class="no-underline">Sublime Text</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>⌨️ Input Method Editor</td>
-    <td>Squirrel - Simplified | ABC</td>
+    <td><a herf="https://rime.im" class="no-underline">RIME Squirrel</a> | <a herf="https://support.apple.com/lv-lv/guide/mac-help/mh27474/mac" class="no-underline">ABC</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📊 Productivity Suite</td>
-    <td>Microsoft 365 | Keynote | Notion</td>
+    <td><a herf="https://www.microsoft.com/microsoft-365" class="no-underline">Microsoft 365</a> | <a herf="https://www.apple.com/keynote/" class="no-underline">Keynote</a> | <a herf="https://www.notion.so" class="no-underline">Notion</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🔣 LaTex Editor</td>
-    <td>Texifier | Overleaf</td>
+    <td><a herf="https://www.texifier.com" class="no-underline">Texifier</a> | <a herf="https://www.overleaf.com" class="no-underline">Overleaf</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📄 Reference Manager</td>
-    <td>Zotero</td>
+    <td><a herf="https://www.zotero.org" class="no-underline">Zotero</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🔍 PDF Reader</td>
-    <td>PDF Expert | Adobe Acrobat</td>
+    <td><a herf="https://pdfexpert.com/" class="no-underline">PDF Expert</a> | <a herf="https://www.adobe.com/acrobat.html" class="no-underline">Adobe Acrobat</td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎨 Graphic Design</td>
-    <td>Wondershare EdrawMax | Microsoft PowerPoint</td>
+    <td><a herf="https://www.edrawsoft.com/edraw-max/" class="no-underline">Wondershare EdrawMax</a> | <a herf="https://www.microsoft.com/microsoft-365/powerpoint" class="no-underline">Microsoft PowerPoint</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🗣️ Communication</td>
-    <td>VooV Meeting | Zoom</td>
+    <td><a herf="https://voovmeeting.com" class="no-underline">VooV Meeting</a> | <a herf="https://zoom.us" class="no-underline">Zoom</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎬 Video Streaming</td>
-    <td>Bilibili | Netflix | YouTube | Apple TV+ | Infuse</td>
+    <td><a herf="https://www.bilibili.com" class="no-underline">Bilibili</a> | <a herf="https://www.netflix.com/" class="no-underline">Netflix</a> | <a herf="https://www.youtube.com" class="no-underline">YouTube</a> | <a herf="https://www.apple.com/apple-tv-plus/" class="no-underline">Apple TV+</a> | <a herf="https://firecore.com/infuse" class="no-underline">Infuse</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>☁️ Cloud Storage</td>
-    <td>iCloud | Aliyun Drive | OneDrive</td>
+    <td><a herf="https://www.icloud.com" class="no-underline">iCloud</a> | <a herf="https://www.aliyundrive.com/" class="no-underline">Aliyun Drive</a> | <a herf="https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage" class="no-underline">OneDrive</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📱 Social Media</td>
-    <td>Twitter | Instagram | LinkedIn</td>
+    <td><a herf="https://twitter.com/" class="no-underline">X</a> | <a herf="https://www.instagram.com" class="no-underline">Instagram</a> | <a herf="https://www.linkedin.com" class="no-underline">LinkedIn</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🗨️ Forum</td>
-    <td>V2EX | Reddit</td>
+    <td><a herf="https://v2ex.com" class="no-underline">V2EX</a> | <a herf="https://www.reddit.com" class="no-underline">Reddit</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>⌚ Fitness Tracking</td>
-    <td>Apple Health | Fitness</td>
+    <td><a herf="https://www.apple.com/ios/health/" class="no-underline">Apple Health</a> | <a herf="https://www.apple.com/apple-fitness-plus/" class="no-underline">Apple Fitness+</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🔒 Security</td>
-    <td>Shadowrocket | Surge</td>
+    <td><a herf="https://apps.apple.com/gb/app/shadowrocket/id932747118" class="no-underline">Shadowrocket</a> | <a herf="https://nssurge.com" class="no-underline">Surge</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🤖 Automation</td>
-    <td>Apple Shortcuts</td>
+    <td><a herf="https://support.apple.com/guide/shortcuts/welcome/ios" class="no-underline">Apple Shortcuts</a></td>
     <td style="width: 250px;"></td>
   </tr>
 </table>
