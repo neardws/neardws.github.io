@@ -252,7 +252,7 @@ His interest in digital gadgets extends to a wide range of applications and tool
 <table class="no-horizontal-lines">
   <tr>
     <th style="width: 150px;">Tool</th>
-    <th style="width: 300px;">Description</th>
+    <th style="width: 300px;">Using</th>
     <th style="width: 250px;"></th>
   </tr>
   <tr>
