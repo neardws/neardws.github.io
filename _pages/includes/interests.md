@@ -146,24 +146,172 @@ His world of gaming spans across various consoles, offering endless adventures a
 
 ## 📱 Technology
 
-He has a keen interest in digital gadgets.
+He has a keen interest in digital gadgets and various applications.
 
-- 💻 Laptop: MacBook Pro 14-inch 2021 with Apple M1 Pro Chip and 16 GB Memory
-- 🖥️ Display: RV100 27-inch (5120 × 2880)
-- 📱 Phone: iPhone 13
-- ⌚ Watch: Apple Watch Series 5
-- 📱 Tablet: iPad Air 4
-- 🎧 Headphones: AKG K701\|Sony WH-1000XM4\|Audio Technica ESW990H
-- 🎧 Earphone: Apple AirPods Pro 2
-- 📺 TV Terminal: Apple TV 4K with Wi‑Fi and Ethernet
-- 🎮 Game Consoles: Nintendo Switch OLED\|Sony PlayStation 5
-- 📷 Camera: Sony DSC-RX100M5
-- ⌨️ Keyboard: Keychron K2
-- 🖱 Trackpad: Apple Magic Trackpad
-- 🖱 Mouse: Logitech MX Master 2S
-- 🖨️ Printer: Mi Wireless All-in-One Inkjet Printer
-- 💡 Lamp: Mi Computer Monitor Light Bar
-- 🛹 Skateboard: Original Exway X1
+### Hardware
+
+<table class="no-horizontal-lines">
+  <tr>
+    <th>Devices</th>
+    <th>Using</th>
+  </tr>
+  <tr>
+    <td>💻 Laptop</td>
+    <td>MacBook Pro 14-inch 2021 with Apple M1 Pro Chip and 16 GB Memory</td>
+  </tr>
+  <tr>
+    <td>🖥️ Display</td>
+    <td>RichVision RV100 27-inch 5K</td>
+  </tr>
+  <tr>
+    <td>📱 Phone</td>
+    <td>iPhone 13</td>
+  </tr>
+  <tr>
+    <td>⌚ Watch</td>
+    <td>Apple Watch Series 5</td>
+  </tr>
+  <tr>
+    <td>📱 Tablet</td>
+    <td>iPad Air 4</td>
+  </tr>
+  <tr>
+    <td>🎧 Headphones</td>
+    <td>AKG K701<br>Sony WH-1000XM4<br>Audio Technica ESW990H</td>
+  </tr>
+  <tr>
+    <td>🎧 Earphone</td>
+    <td>Apple AirPods Pro 2</td>
+  </tr>
+  <tr>
+    <td>📺 TV Terminal</td>
+    <td>Apple TV 4K with Wi‑Fi and Ethernet</td>
+  </tr>
+  <tr>
+    <td>🎮 Game Consoles</td>
+    <td>Nintendo Switch OLED<br>Sony PlayStation 5</td>
+  </tr>
+  <tr>
+    <td>📷 Camera</td>
+    <td>Sony DSC-RX100M5</td>
+  </tr>
+  <tr>
+    <td>⌨️ Keyboard</td>
+    <td>Keychron K2</td>
+  </tr>
+  <tr>
+    <td>🖱 Trackpad</td>
+    <td>Apple Magic Trackpad</td>
+  </tr>
+  <tr>
+    <td>🖱 Mouse</td>
+    <td>Logitech MX Master 2S</td>
+  </tr>
+  <tr>
+    <td>🖨️ Printer</td>
+    <td>Mi Wireless All-in-One Inkjet Printer</td>
+  </tr>
+  <tr>
+    <td>💡 Lamp</td>
+    <td>Mi Computer Monitor Light Bar</td>
+  </tr>
+  <tr>
+    <td>🛹 Skateboard</td>
+    <td>Exway X1</td>
+  </tr>
+</table>
+
+### Software
+
+<table class="no-horizontal-lines">
+  <tr>
+    <th>🖥️ Tool</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>💻 Operating System</td>
+    <td>macOS Sonoma 14.2</td>
+  </tr>
+  <tr>
+    <td>📧 Email Client</td>
+    <td>Canary Mail</td>
+  </tr>
+  <tr>
+    <td> ⌨️ Command Line Interface</td>
+    <td>Warp</td>
+  </tr>
+  <tr>
+    <td>🌐 Web Browser</td>
+    <td>Safari</td>
+  </tr>
+  <tr>
+    <td>💬 Instant Messaging</td>
+    <td>Telegram<br>WeChat<br>iMessage</td>
+  </tr>
+  <tr>
+    <td>🎵 Music Player</td>
+    <td>Apple Music<br>Spotify</td>
+  </tr>
+  <tr>
+    <td>👨‍💻 Coding Environment</td>
+    <td>Visual Studio Code</td>
+  </tr>
+  <tr>
+    <td>📝 Text Editor</td>
+    <td>Sublime Text</td>
+  </tr>
+  <tr>
+    <td>📊 Productivity Suite</td>
+    <td>Microsoft 365<br>Keynote<br>Notion</td>
+  </tr>
+  <tr>
+    <td>🔣 LaTex Editor</td>
+    <td>Texifier<br>Overleaf</td>
+  </tr>
+  <tr>
+    <td>📄 Reference Manager</td>
+    <td>Zotero</td>
+  </tr>
+  <tr>
+    <td>🔍 PDF Reader</td>
+    <td>PDF Expert<br>Adobe Acrobat</td>
+  <tr>
+    <td>🎨 Graphic Design</td>
+    <td>Wondershare EdrawMax<br>Microsoft PowerPoint</td>
+  </tr>
+  <tr>
+    <td>🗣️ Communication</td>
+    <td>VooV Meeting<br>Zoom</td>
+  </tr>
+  <tr>
+    <td>🎬 Video Streaming</td>
+    <td>Bilibili<br>Netflix<br>YouTube<br>Apple TV+<br>Infuse</td>
+  </tr>
+  <tr>
+    <td>☁️ Cloud Storage</td>
+    <td>iCloud<br>Aliyun Drive<br>OneDrive</td>
+  </tr>
+  <tr>
+    <td>📱 Social Media</td>
+    <td>Twitter<br>Instagram<br>LinkedIn</td>
+  </tr>
+  <tr>
+    <td>🗨️ Forum</td>
+    <td>V2EX<br>Reddit</td>
+  </tr>
+  <tr>
+    <td>⌚ Fitness Tracking</td>
+    <td>Apple Health<br>Fitness</td>
+  </tr>
+  <tr>
+    <td>🔒 Security</td>
+    <td>Shadowrocket<br>Surge</td>
+  </tr>
+  <tr>
+    <td>🤖 Automation</td>
+    <td>Apple Shortcuts</td>
+  </tr>
+</table>
 
 <div style="float: left;">
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=600&t=tt&d=aFmh3d7Xe0XBtDzpWJTkAIBPYWnWgzsZn29nw_9T_34&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
