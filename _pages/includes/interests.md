@@ -152,89 +152,94 @@ His interest in digital gadgets extends to a wide range of applications and tool
 
 <table class="no-horizontal-lines">
   <tr>
-    <th style="width: 100px;">Devices</th>
-    <th style="width: 250px;">Using</th>
-    <th style="width: 350px;"></th>
+    <th style="width: 150px;">Devices</th>
+    <th style="width: 300px;">Using</th>
+    <th style="width: 250px;"></th>
   </tr>
   <tr>
     <td>💻 Laptop</td>
     <td>MacBook Pro 14-inch 2021 with Apple M1 Pro Chip and 16 GB Memory</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🖥️ Display</td>
     <td>RichVision RV100 27-inch 5K</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📱 Phone</td>
     <td>iPhone 13</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>⌚ Watch</td>
     <td>Apple Watch Series 5</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📱 Tablet</td>
     <td>iPad Air 4</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎧 Headphones</td>
     <td>AKG K701 | Sony WH-1000XM4 | Audio Technica ESW990H</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎧 Earphone</td>
     <td>Apple AirPods Pro 2</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
+  </tr>
+  <tr>
+    <td>🎵 Audio DAC</td>
+    <td>FiiO Q3</td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📺 TV Terminal</td>
     <td>Apple TV 4K with Wi‑Fi and Ethernet</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎮 Game Consoles</td>
     <td>Nintendo Switch OLED | Sony PlayStation 5</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📷 Camera</td>
     <td>Sony DSC-RX100M5</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>⌨️ Keyboard</td>
     <td>Keychron K2</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🖱 Trackpad</td>
     <td>Apple Magic Trackpad</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🖱 Mouse</td>
     <td>Logitech MX Master 2S</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🖨️ Printer</td>
     <td>Mi Wireless All-in-One Inkjet Printer</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>💡 Lamp</td>
     <td>Mi Computer Monitor Light Bar</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🛹 Skateboard</td>
     <td>Exway X1</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
 </table>
 
@@ -242,114 +247,119 @@ His interest in digital gadgets extends to a wide range of applications and tool
 
 <table class="no-horizontal-lines">
   <tr>
-    <th style="width: 100px;">Tool</th>
-    <th style="width: 250px;">Description</th>
-    <th style="width: 350px;"></th>
+    <th style="width: 150px;">Tool</th>
+    <th style="width: 300px;">Description</th>
+    <th style="width: 250px;"></th>
   </tr>
   <tr>
     <td>💻 Operating System</td>
     <td>macOS Sonoma 14.2</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📧 Email Client</td>
     <td>Canary Mail</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td> ⌨️ Command Line Interface</td>
     <td>Warp</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🌐 Web Browser</td>
     <td>Safari</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>💬 Instant Messaging</td>
     <td>Telegram | WeChat | iMessage</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎵 Music Player</td>
     <td>Apple Music | Spotify</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>👨‍💻 Coding Environment</td>
     <td>Visual Studio Code</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📝 Text Editor</td>
     <td>Sublime Text</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
+  </tr>
+  <tr>
+    <td>⌨️ Input Method Editor</td>
+    <td>Squirrel - Simplified | ABC</td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📊 Productivity Suite</td>
     <td>Microsoft 365 | Keynote | Notion</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🔣 LaTex Editor</td>
     <td>Texifier | Overleaf</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📄 Reference Manager</td>
     <td>Zotero</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🔍 PDF Reader</td>
     <td>PDF Expert | Adobe Acrobat</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎨 Graphic Design</td>
     <td>Wondershare EdrawMax | Microsoft PowerPoint</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🗣️ Communication</td>
     <td>VooV Meeting | Zoom</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🎬 Video Streaming</td>
     <td>Bilibili | Netflix | YouTube | Apple TV+ | Infuse</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>☁️ Cloud Storage</td>
     <td>iCloud | Aliyun Drive | OneDrive</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📱 Social Media</td>
     <td>Twitter | Instagram | LinkedIn</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🗨️ Forum</td>
     <td>V2EX | Reddit</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>⌚ Fitness Tracking</td>
     <td>Apple Health | Fitness</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🔒 Security</td>
     <td>Shadowrocket | Surge</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🤖 Automation</td>
     <td>Apple Shortcuts</td>
-    <td style="width: 350px;"></td>
+    <td style="width: 250px;"></td>
   </tr>
 </table>
 
