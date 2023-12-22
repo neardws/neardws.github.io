@@ -313,7 +313,7 @@ His interest in digital gadgets extends to a wide range of applications and tool
   </tr>
   <tr>
     <td>🔍 PDF Reader</td>
-    <td><a herf="https://pdfexpert.com/" class="no-underline">PDF Expert</a> | <a herf="https://www.adobe.com/acrobat.html" class="no-underline">Adobe Acrobat</td>
+    <td><a herf="https://pdfexpert.com/" class="no-underline">PDF Expert</a> | <a herf="https://www.adobe.com/acrobat.html" class="no-underline">Adobe Acrobat</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
