@@ -4,7 +4,7 @@
 
 - Recently on Repeat
 
-<iframe src="https://streetvoice.cn/music/embed/?id=605383" width="330" height="100" scrolling="no" frameborder="no" marginwidth="0" marginheight="0"></iframe>
+<iframe src="https://streetvoice.cn/music/embed/?id=605383&s=l" width="500" height="500" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>
 
 - Favorite Albums
 
