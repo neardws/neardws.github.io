@@ -39,6 +39,16 @@
     <td style="text-align: center;">The Life Journey</td>
     <td style="text-align: center;">Bad Sweetheart</td>
   </tr>
+  <tr>
+    <td style="text-align: center;">2020</td>
+    <td style="text-align: center;">2020</td>
+    <td style="text-align: center;">2021</td>
+    <td style="text-align: center;">2022</td>
+    <td style="text-align: center;">2020</td>
+    <td style="text-align: center;">1997</td>
+    <td style="text-align: center;">2018</td>
+    <td style="text-align: center;">2021</td>
+  </tr>
 </table>
 
 - Step into his world of melodious favorites and discover a carefully curated music collection.     
