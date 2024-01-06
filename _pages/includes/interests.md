@@ -53,7 +53,7 @@
 
 - Step into his world of melodious favorites and discover a carefully curated music collection.     
 <img src="https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/music.gif" width="369" height="50" alt="Songs" />
-- Explore his <a href="https://music.apple.com/us/playlist/replay-2023/pl.rp-6xxbi6BevJx4" class="no-underline">Replay 2023</a> playlist, a journey through his most played tracks on [![](https://img.shields.io/badge/-Apple_Music-blue?logo=applemusic&logoColor=white&labelColor=FA243C&color=FA243C&style=flat)](https://www.apple.com/apple-music/)
+- Explore his Replay 2023 playlist, a journey through his most played tracks on [![](https://img.shields.io/badge/-Apple_Music-blue?logo=applemusic&logoColor=white&labelColor=FA243C&color=FA243C&style=flat)](https://music.apple.com/us/playlist/replay-2023/pl.rp-6xxbi6BevJx4)
 
 ## 🎬 Movies
 
