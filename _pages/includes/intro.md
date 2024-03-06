@@ -35,7 +35,7 @@ His research is primarily focused on several cutting-edge areas, including:
 		<td>
 			Contact Information: <br> 
 			Office Address: <br>     
-			706, Building 3, YESUN Intelligent Community II, Guanlan Street, Longhua District, Shenzhen 518110, China. <br>     
+			809, Building 3, YESUN Intelligent Community II, Guanlan Street, Longhua District, Shenzhen 518110, China. <br>     
 			Phone: 
 			<a href="tel:+1-6015648240" class="no-underline">click to call</a> <br>   
 			E-mail:   
