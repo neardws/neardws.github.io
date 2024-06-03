@@ -182,12 +182,12 @@ His interest in digital gadgets extends to a wide range of applications and tool
   </tr>
   <tr>
     <td>📱 Phone</td>
-    <td><a href="https://www.apple.com/iphone-13/specs/" class="no-underline">iPhone 13</a></td>
+    <td><a href="https://www.apple.com/iphone-15-pro/specs/" class="no-underline">iPhone 15 Pro Max</a> | <a href="https://www.apple.com/iphone-13/specs/" class="no-underline">iPhone 13</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>⌚ Watch</td>
-    <td><a href="https://support.apple.com/kb/SP808" class="no-underline">Apple Watch Series 5</a></td>
+    <td><a href="https://support.apple.com/kb/SP808" class="no-underline">Apple Watch Series 5</a> | <a href="https://uk.coros.com/pace3#spec-detail" class="no-underline">COROS Pace 3</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
@@ -202,7 +202,7 @@ His interest in digital gadgets extends to a wide range of applications and tool
   </tr>
   <tr>
     <td>🎧 Earphone</td>
-    <td><a href="https://support.apple.com/kb/SP880" class="no-underline">Apple AirPods Pro 2</a></td>
+    <td><a href="https://support.apple.com/kb/SP880" class="no-underline">Apple AirPods Pro 2</a> | <a href="https://www.shokz.com.cn/OpenSwimPro" class="no-underline">SHOKZ OpenSwim Pro</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
@@ -222,7 +222,7 @@ His interest in digital gadgets extends to a wide range of applications and tool
   </tr>
   <tr>
     <td>📷 Camera</td>
-    <td><a href="https://www.sony.co.uk/electronics/cyber-shot-compact-cameras/dsc-rx100m5/specifications" class="no-underline">Sony DSC-RX100M5</a></td>
+    <td><a href="https://www.sony.co.uk/electronics/cyber-shot-compact-cameras/dsc-rx100m5/specifications" class="no-underline">Sony DSC-RX100M5</a> | <a href="https://www.dji.com/cn/osmo-action-3/specs" class="no-underline">DJI Osmo Action 3</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
