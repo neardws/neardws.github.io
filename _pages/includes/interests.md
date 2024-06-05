@@ -251,6 +251,11 @@ His interest in digital gadgets extends to a wide range of applications and tool
     <td style="width: 250px;"></td>
   </tr>
   <tr>
+    <td>🚴 Bicycle</td>
+    <td><a href="https://www.decathlon.com/products/triban-grvl120-gravel-bike" class="no-underline">Triban GRVL 120</a></td>
+    <td style="width: 250px;"></td>
+  </tr>
+  <tr>
     <td>🛹 Skateboard</td>
     <td><a href="https://www.exwayboard.com" class="no-underline">Exway X1</a></td>
     <td style="width: 250px;"></td>
