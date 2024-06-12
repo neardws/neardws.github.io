@@ -152,15 +152,9 @@
     <td>C</td>
   </tr>
   <tr>
-    <td>Oct 24, 2024<sup>*</sup></td>
-    <td><a href="https://www.ccf.org.cn/Focus/2023-11-01/796767.shtml" class="no-underline">CCNC'24</a>: 21st CCF China National Computer Congress</td>
-    <td>Hengdian 🇨🇳</td>
-    <td>/</td>
-  </tr>
-  <tr>
-    <td>Oct 13, 2024<sup>*</sup></td>
-    <td><a href="https://conf.ccf.org.cn/web/api/m1117874672189444096168656369095.action" class="no-underline">CWSN'24</a>: 18th CCF China Conference on Internet of Things (Wireless Sensor Network)</td>
-    <td>TBD 🇨🇳</td>
+    <td>Sep 20-23, 2024</td>
+    <td><a href="https://ccf.org.cn/CWSN2024" class="no-underline">CWSN'24</a>: 18th CCF China Conference on Internet of Things (Wireless Sensor Network)</td>
+    <td>Taiyuan 🇨🇳</td>
     <td>/</td>
   </tr>
   <tr>
@@ -168,6 +162,12 @@
     <td><a href="https://www.date-conference.com/call-for-papers" class="no-underline">DATE'25</a>: 28th IEEE/ACM Design, Automation &amp; Test in Europe Conference &amp; Exhibition</td>
     <td>TBD</td>
     <td>B</td>
+  </tr>
+  <tr>
+    <td>Oct 24-26, 2024</td>
+    <td><a href="https://ccf.org.cn/cncc2024" class="no-underline">CCNC'24</a>: 21st CCF China National Computer Congress</td>
+    <td>Hengdian 🇨🇳</td>
+    <td>/</td>
   </tr>
   <tr>
     <td>Nov 30, 2025<sup>*</sup></td>
