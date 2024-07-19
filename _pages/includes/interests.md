@@ -171,6 +171,11 @@ His interest in digital gadgets extends to a wide range of applications and tool
     <th style="width: 250px;"></th>
   </tr>
   <tr>
+    <td>ᯅ Spatial Computing</td>
+    <td><a href="https://www.apple.com/apple-vision-pro/specs/">Apple Vision Pro</a></td>
+    <td style="width: 250px;"></td>
+  </tr>
+  <tr>
     <td>💻 Laptop</td>
     <td><a href="https://support.apple.com/kb/SP854" class="no-underline">MacBook Pro 14-inch 2021 with Apple M1 Pro Chip and 16 GB Memory</a></td>
     <td style="width: 250px;"></td>
