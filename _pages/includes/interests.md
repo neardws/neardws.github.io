@@ -172,7 +172,7 @@ His interest in digital gadgets extends to a wide range of applications and tool
   </tr>
   <tr>
     <td>ᯅ Spatial Computing</td>
-    <td><a href="https://www.apple.com/apple-vision-pro/specs/">Apple Vision Pro</a></td>
+    <td><a href="https://www.apple.com/apple-vision-pro/specs/" class="no-underline">Apple Vision Pro</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
