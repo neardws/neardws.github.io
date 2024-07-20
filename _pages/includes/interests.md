@@ -232,12 +232,12 @@ His interest in digital gadgets extends to a wide range of applications and tool
   </tr>
   <tr>
     <td>⌨️ Keyboard</td>
-    <td><a href="https://www.keychron.com/products/keychron-k2-wireless-mechanical-keyboard" class="no-underline">Keychron K2</a></td>
+    <td><a href="https://www.keychron.com/products/keychron-k2-wireless-mechanical-keyboard" class="no-underline">Keychron K2</a> | <a href="https://www.apple.com/hk/shop/product/MK293ZA/A/magic-keyboard-with-touch-id-for-mac-models-with-apple-silicon-us-english" class="no-underline">Magic Keyboard with Touch ID</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>🖱 Trackpad</td>
-    <td><a href="https://support.apple.com/kb/SP729" class="no-underline">Apple Magic Trackpad</a></td>
+    <td><a href="https://support.apple.com/kb/SP729" class="no-underline">Magic Trackpad</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
