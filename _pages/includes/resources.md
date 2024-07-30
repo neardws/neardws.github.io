@@ -76,6 +76,7 @@
 - <a href="https://scholar.google.com" class="no-underline">Google Scholar</a>: Largest Search Engine for Academic Publishing 
 - <a href="https://dblp.org" class="no-underline">dblp</a>: Computer Science Bibliography
 - <a href="https://www.myhuiban.com" class="no-underline">Conference Partner</a>Conference Partner: Information about Academic Conferences
+- <a href="https://sites.cs.ucsb.edu/~almeroth/conf/stats/" class="no-underline">Networking Conferences Statistics</a>: Year-over-year Statistics for Networking Conferences
 - <a href="http://www.letpub.com.cn/index.php?page=journalapp" class="no-underline">LetPub</a>: Information about SCI Journals
 - <a href="https://academic-accelerator.com" class="no-underline">Academic Accelerator</a>: Wonderful Tool to Accelerate Your Scientific Research
 - <a href="http://www.wikicfp.com/cfp/" class="no-underline">WikiCFP</a>: A Wiki for Calls for Papers
