@@ -292,7 +292,7 @@ His interest in digital gadgets extends to a wide range of applications and tool
   </tr>
   <tr>
     <td> ⌨️ Command Line Interface</td>
-    <td><a href="https://www.warp.dev" class="no-underline">Warp</a></td>
+    <td><a href="https://app.warp.dev/referral/28JVZ3" class="no-underline">Warp</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
