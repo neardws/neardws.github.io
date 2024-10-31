@@ -201,6 +201,11 @@ His interest in digital gadgets extends to a wide range of applications and tool
     <td style="width: 250px;"></td>
   </tr>
   <tr>
+    <td>📖 E-Reader</td>
+    <td><a href="https://www.amazon.com/Kindle-Paperwhite-Signature-32-auto-adjusting/dp/B08N2ZL7PS#tech" class="no-underline">Kindle Paperwhite Signature Edition</a></td>
+    <td style="width: 250px;"></td>
+  </tr>
+  <tr>
     <td>🎧 Headphones</td>
     <td><a href="https://www.akg.com/Headphones/Professional%20Headphones/K701.html" class="no-underline">AKG K701</a> | <a href="https://electronics.sony.com/audio/headphones/headband/p/wh1000xm4-s" class="no-underline">Sony WH-1000XM4</a> | <a href="https://www.audio-technica.com/ath-esw990h" class="no-underline">Audio Technica ESW990H</a></td>
     <td style="width: 250px;"></td>
