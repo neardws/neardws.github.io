@@ -206,7 +206,7 @@ His interest in digital gadgets extends to a wide range of applications and tool
     <td style="width: 250px;"></td>
   </tr>
   <tr>
-    <td>🎧 Headphones</td>
+    <td>🎧 Headphone</td>
     <td><a href="https://www.akg.com/Headphones/Professional%20Headphones/K701.html" class="no-underline">AKG K701</a> | <a href="https://electronics.sony.com/audio/headphones/headband/p/wh1000xm4-s" class="no-underline">Sony WH-1000XM4</a> | <a href="https://www.audio-technica.com/ath-esw990h" class="no-underline">Audio Technica ESW990H</a></td>
     <td style="width: 250px;"></td>
   </tr>
@@ -216,17 +216,17 @@ His interest in digital gadgets extends to a wide range of applications and tool
     <td style="width: 250px;"></td>
   </tr>
   <tr>
-    <td>🎵 Audio DAC</td>
+    <td>🎵 DAC</td>
     <td><a href="https://www.fiio.com/q3" class="no-underline">FiiO Q3</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
-    <td>📺 TV Terminal</td>
+    <td>📺 Terminal</td>
     <td><a href="https://www.apple.com/uk/apple-tv-4k/specs/" class="no-underline">Apple TV 4K with Wi‑Fi and Ethernet</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
-    <td>🎮 Game Consoles</td>
+    <td>🎮 Console</td>
     <td><a href="https://www.steamdeck.com/en/tech/" class="no-underline">Steam Deck OLED</a> | <a href="https://www.nintendo.com/us/store/products/nintendo-switch-oled-model-neon-blue-neon-red-set/" class="no-underline">Nintendo Switch OLED</a> | <a href="https://www.playstation.com/en-us/ps5" class="no-underline">Sony PlayStation 5</a></td>
     <td style="width: 250px;"></td>
   </tr>
