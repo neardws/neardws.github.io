@@ -3,9 +3,9 @@
 #### Shareable Materials
 
 - Conference Proceedings and Journals Related to Internet of Vehicles [![](https://img.shields.io/badge/-PDF-blue?logo=adobeacrobatreader&logoColor=EC1C24&labelColor=white&color=F5F5F5&style=flat)](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/Conference%20Proceedings%20and%20Journals%20Related%20to%20Internet%20of%20Vehicles.pdf)
-- Handbook for Research Beginner 01: Research Tools and Paper Reading (in Chinese) [![](https://img.shields.io/badge/-PDF-blue?logo=microsoftpowerpoint&logoColor=B7472A&labelColor=white&color=F5F5F5&style=flat)](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/%E7%A7%91%E7%A0%94%E5%85%A5%E9%97%A801.pdf)
-- Handbook for Research Beginner 02: Paper Architecture and Writting (in Chinese) [![](https://img.shields.io/badge/-PDF-blue?logo=microsoftpowerpoint&logoColor=B7472A&labelColor=white&color=F5F5F5&style=flat)](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/%E7%A7%91%E7%A0%94%E5%85%A5%E9%97%A802.pdf)
-- Handbook for Research Beginner 03: Patent Drafting (in Chinese) [![](https://img.shields.io/badge/-PDF-blue?logo=microsoftpowerpoint&logoColor=B7472A&labelColor=white&color=F5F5F5&style=flat)](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/%E7%A7%91%E7%A0%94%E5%85%A5%E9%97%A803.pdf)
+- Handbook for Research Beginner 01: Research Tools and Paper Reading (in Chinese) [![](https://img.shields.io/badge/-PDF-blue?logo=adobeacrobatreader&logoColor=B7472A&labelColor=white&color=F5F5F5&style=flat)](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/%E7%A7%91%E7%A0%94%E5%85%A5%E9%97%A801.pdf)
+- Handbook for Research Beginner 02: Paper Architecture and Writting (in Chinese) [![](https://img.shields.io/badge/-PDF-blue?logo=adobeacrobatreader&logoColor=B7472A&labelColor=white&color=F5F5F5&style=flat)](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/%E7%A7%91%E7%A0%94%E5%85%A5%E9%97%A802.pdf)
+- Handbook for Research Beginner 03: Patent Drafting (in Chinese) [![](https://img.shields.io/badge/-PDF-blue?logo=adobeacrobatreader&logoColor=B7472A&labelColor=white&color=F5F5F5&style=flat)](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/%E7%A7%91%E7%A0%94%E5%85%A5%E9%97%A803.pdf)
 
 #### Courses
 
