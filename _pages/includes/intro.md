@@ -41,7 +41,7 @@ His research is primarily focused on several cutting-edge areas, including:
 			Phone: 
 			<a href="tel:+1-6015648240" class="no-underline">click to call</a> <br>   
 			E-mail:   
-			xc*DOT*xu*AT*uestc*DOT*edu*DOT*cn | neard*DOT*ws*AT* gmail*DOT*com 
+			<em>xc</em>DOT<em>xu</em>AT<em>uestc</em>DOT<em>edu</em>DOT<em>cn</em> | <em>neard</em>DOT<em>ws</em>AT<em>gmail</em>DOT<em>com</em> 
 		</td>
 		<td>
 			<iframe width="450" height="220" src="https://www.openstreetmap.org/export/embed.html?bbox=114.02656316757204%2C22.723049810086813%2C114.05134677886964%2C22.735963602484535&amp;layer=mapnik" style="border: 0"></iframe>
