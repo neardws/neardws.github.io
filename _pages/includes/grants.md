@@ -1,8 +1,8 @@
 # 🏆 Grants
 
-**NSFC**: <img src="images/grants_nsfc.webp" alt="NSFC"><a href="https://www.nsfc.gov.cn" class="no-underline">National Natural Science Foundation of China</a>  
-**GBABRF**: <img src="images/grants_gd.webp" alt="GBABRF"><a herf="https://pro.gdstc.gd.gov.cn/egrantweb/" class="no-underline">Guangdong Basic and Applied Basic Research Foundation</a>     
-**CPSF**: <img src="images/grants_cpsf.webp" alt="CSPF"><a href="https://www.chinapostdoctor.org.cn/bshjjh" class="no-underline">China Postdoctoral Science Foundation</a>
+**NSFC**: <img src="images/grants_nsfc.webp" alt="NSFC" style="height: 50%; width: auto;"><a href="https://www.nsfc.gov.cn" class="no-underline">National Natural Science Foundation of China</a>  
+**GBABRF**: <img src="images/grants_gd.webp" alt="GBABRF" style="height: 70%; width: auto;"><a herf="https://pro.gdstc.gd.gov.cn/egrantweb/" class="no-underline">Guangdong Basic and Applied Basic Research Foundation</a>     
+**CPSF**: <img src="images/grants_cpsf.webp" alt="CSPF" style="height: 80%; width: auto;"><a href="https://www.chinapostdoctor.org.cn/bshjjh" class="no-underline">China Postdoctoral Science Foundation</a>
 
 #### Principal Investigator
 
