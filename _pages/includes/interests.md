@@ -171,13 +171,13 @@ His interest in digital gadgets extends to a wide range of applications and tool
     <th style="width: 250px;"></th>
   </tr>
   <tr>
-    <td>ᯅ Spatial Computing</td>
+    <td>ᯅ XR</td>
     <td><a href="https://www.apple.com/apple-vision-pro/specs/" class="no-underline">Apple Vision Pro</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>💻 Laptop</td>
-    <td><a href="https://support.apple.com/kb/SP854" class="no-underline">MacBook Pro 14-inch 2021 with Apple M1 Pro Chip and 16 GB Memory</a></td>
+    <td><a href="https://support.apple.com/en-us/117736" class="no-underline">MacBook Pro 14-inch 2023 M3 Pro 18 GB</a> | <a href="https://support.apple.com/kb/SP854" class="no-underline">MacBook Pro 14-inch 2021 M1 Pro 16 GB</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
@@ -187,17 +187,17 @@ His interest in digital gadgets extends to a wide range of applications and tool
   </tr>
   <tr>
     <td>📱 Phone</td>
-    <td><a href="https://www.apple.com/iphone-15-pro/specs/" class="no-underline">iPhone 15 Pro Max</a> | <a href="https://www.apple.com/iphone-13/specs/" class="no-underline">iPhone 13</a></td>
+    <td><a href="https://www.apple.com/iphone-15-pro/specs/" class="no-underline">iPhone 15 Pro Max</a> </td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>⌚ Watch</td>
-    <td><a href="https://support.apple.com/kb/SP808" class="no-underline">Apple Watch Series 5</a> | <a href="https://uk.coros.com/pace3#spec-detail" class="no-underline">COROS Pace 3</a></td>
+    <td><a href="https://www.apple.com/apple-watch-ultra-2/specs/" class="no-underline">Apple Watch Ultra 2</a> | <a href="https://uk.coros.com/pace3#spec-detail" class="no-underline">COROS Pace 3</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
     <td>📱 Tablet</td>
-    <td><a href="https://www.apple.com/ipad-pro/specs/" class="no-underline">iPad Pro 13‑inch 256GB</a> | <a href="https://support.apple.com/kb/SP828" class="no-underline">iPad Air 4</a></td>
+    <td><a href="https://www.apple.com/ipad-pro/specs/" class="no-underline">iPad Pro 13‑inch 256GB</a> | <a href="https://www.apple.com/sg/ipad-mini/specs/" class="no-underline">iPad mini A17 Pro</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
@@ -207,7 +207,7 @@ His interest in digital gadgets extends to a wide range of applications and tool
   </tr>
   <tr>
     <td>🎧 Earphone</td>
-    <td><a href="https://support.apple.com/kb/SP880" class="no-underline">Apple AirPods Pro 2</a> | <a href="https://www.shokz.com.cn/OpenSwimPro" class="no-underline">SHOKZ OpenSwim Pro</a></td>
+    <td><a href="https://support.apple.com/kb/SP880" class="no-underline">Apple AirPods Pro 2</a> | <a href="https://www.apple.com/airpods-4/specs/" class="no-underline">Apple AirPods 4</a> | <a href="https://www.shokz.com.cn/OpenSwimPro" class="no-underline">SHOKZ OpenSwim Pro</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
@@ -222,11 +222,11 @@ His interest in digital gadgets extends to a wide range of applications and tool
   </tr>
   <tr>
     <td>🎮 Game Consoles</td>
-    <td><a href="https://www.steamdeck.com/en/tech/" class="no-underline">Steam Deck OLED 512G</a> | <a href="https://www.nintendo.com/us/store/products/nintendo-switch-oled-model-neon-blue-neon-red-set/" class="no-underline">Nintendo Switch OLED</a> | <a href="https://www.playstation.com/en-us/ps5" class="no-underline">Sony PlayStation 5</a></td>
+    <td><a href="https://www.steamdeck.com/en/tech/" class="no-underline">Steam Deck OLED</a> | <a href="https://www.nintendo.com/us/store/products/nintendo-switch-oled-model-neon-blue-neon-red-set/" class="no-underline">Nintendo Switch OLED</a> | <a href="https://www.playstation.com/en-us/ps5" class="no-underline">Sony PlayStation 5</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
-    <td>✈️ Unmanned Aerial Vehicle</td>
+    <td>✇ Drone</td>
     <td><a href="https://www.dji.com/cn/neo/specs" class="no-underline">DJI Neo</a></td>
     <td style="width: 250px;"></td>
   </tr>
