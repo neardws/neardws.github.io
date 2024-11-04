@@ -134,17 +134,17 @@ Passionate about fitness, he has earned a series of accolades in his active life
 <table class="no-horizontal-lines">
   <tr>
     <th style="width: 350px;">Event Name</th>
-    <th>Location</th>
-    <th>Date</th>
     <th>Net Time</th>
     <th>Average Pace</th>
+    <th>Location</th>
+    <th>Date</th>
   </tr>
   <tr>
     <td>Chongqing (Changjiahui) Half Marathon</td>
+    <td>03:05:06 (PB)</td>
+    <td>08'46'' (PB)</td>
     <td>Chongqing 🇨🇳</td>
     <td>Nov 3, 2024</td>
-    <td>03:05:06</td>
-    <td>08'46''</td>
   </tr>
 </table>
 
