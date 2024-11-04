@@ -133,7 +133,7 @@ Passionate about fitness, he has earned a series of accolades in his active life
 
 <table class="no-horizontal-lines">
   <tr>
-    <th style="width: 250px;">Event Name</th>
+    <th style="width: 350px;">Event Name</th>
     <th>Location</th>
     <th>Date</th>
     <th>Net Time</th>
