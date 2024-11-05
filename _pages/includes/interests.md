@@ -129,7 +129,7 @@ Passionate about fitness, he has earned a series of accolades in his active life
   </tr>
 </table>
 
-- Marathon
+- Events (**PB**: Personal Best)
 
 <table class="no-horizontal-lines">
   <tr>
