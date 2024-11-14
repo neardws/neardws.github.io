@@ -25,7 +25,7 @@
 - IEEE Transactions on Consumer Electronics (TCE)
 - IEEE Transactions on Vehicular Technology (TVT)
 - Journal of Systems Architecture (JSA)
-- Neural Computing and Applications (NCAA)
+- Neural Computing and Applications (NCA)
 - The Journal of Supercomputing (TJSC)
 - Journal of Computer Research and Development
 - Tien Tzu Hsueh Pao/Acta Electronica Sinica
