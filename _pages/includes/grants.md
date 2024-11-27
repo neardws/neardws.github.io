@@ -2,6 +2,7 @@
 
 <img src="images/grants_nsfc.webp" alt="NSFC"> **NSFC**: <a href="https://www.nsfc.gov.cn" class="no-underline">National Natural Science Foundation of China</a>  
 <img src="images/grants_gd.webp" alt="GBABRF"> **GBABRF**: <a href="https://pro.gdstc.gd.gov.cn/egrantweb/" class="no-underline">Guangdong Basic and Applied Basic Research Foundation</a>     
+<img src="images/grants_sz.webp" alt="SSTP"> **SSTP**: <a href="https://sticapply.sz.gov.cn/" class="no-underline">Shenzhen Science and Technology Program</a>     
 <img src="images/grants_cpsf.webp" alt="CSPF"> **CPSF**: <a href="https://www.chinapostdoctor.org.cn/bshjjh" class="no-underline">China Postdoctoral Science Foundation</a>
 
 #### Principal Investigator
