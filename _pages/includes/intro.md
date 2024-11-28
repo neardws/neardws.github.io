@@ -44,7 +44,42 @@ His research interests are primarily focused on several cutting-edge areas, incl
 			<em>xc</em>DOT<em>xu</em>AT<em>uestc</em>DOT<em>edu</em>DOT<em>cn</em> | <em>neard</em>DOT<em>ws</em>AT<em>gmail</em>DOT<em>com</em> 
 		</td>
 		<td>
-			<iframe width="450" height="220" src="https://www.openstreetmap.org/export/embed.html?bbox=114.02656316757204%2C22.723049810086813%2C114.05134677886964%2C22.735963602484535&amp;layer=mapnik" style="border: 0"></iframe>
+			<!-- <iframe width="450" height="220" src="https://www.openstreetmap.org/export/embed.html?bbox=114.02656316757204%2C22.723049810086813%2C114.05134677886964%2C22.735963602484535&amp;layer=mapnik" style="border: 0"></iframe> -->
+		<!DOCTYPE html>
+        <html>
+        <head>
+        <meta charset="utf-8">
+        <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
+        <style>
+        #map {
+            width: 450px;
+            height: 220px;
+        }
+        </style>
+        </head>
+        <body>
+        <div id="map"></div>
+        <script>
+        mapkit.init({
+            authorizationCallback: function(done) {
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "/services/jwt");
+                xhr.addEventListener("load", function() {
+                    done(this.responseText);
+                });
+                xhr.send();
+            }
+        });
+        
+        var Cupertino = new mapkit.CoordinateRegion(
+            new mapkit.Coordinate(114.026563167, 114.051346778),
+            new mapkit.CoordinateSpan(22.723049810, 0.354985255 22.735963602)
+        );
+        var map = new mapkit.Map("map");
+        map.region = Cupertino;
+        </script>
+        </body>
+        </html>
 		</td>
 	</tr>
 </table>
