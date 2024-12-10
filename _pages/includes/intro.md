@@ -40,7 +40,7 @@ His research interests are primarily focused on several cutting-edge areas, incl
         <td>
             Contact Information: <br> 
             Office Address: <br>     
-            Room 810, Building 3, YESUN Intelligent Community II, <br>
+            Room 408, Building 3, YESUN Intelligent Community II, <br>
             Guanlan Street, Longhua District, <br>
             Shenzhen 518110, China <br>     
             Phone: 
