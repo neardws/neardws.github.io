@@ -221,7 +221,7 @@ His interest in digital gadgets extends to a wide range of applications and tool
   </tr>
   <tr>
     <td>📖 E-Reader</td>
-    <td><a href="https://www.amazon.com/Kindle-Paperwhite-Signature-32-auto-adjusting/dp/B08N2ZL7PS#tech" class="no-underline">Kindle Paperwhite Signature Edition</a> | <a href="https://www.amazon.com/Kindle-Paperwhite-Signature-32-auto-adjusting/dp/B08N2ZL7PS#tech" class="no-underline">Kindle Paperwhite Signature Edition</a></td>
+    <td><a href="https://remarkable.com/store/remarkable-paper/pro/details/features" class="no-underline">reMarkable Paper Pro</a> | <a href="https://www.amazon.com/Kindle-Paperwhite-Signature-32-auto-adjusting/dp/B08N2ZL7PS#tech" class="no-underline">Kindle Paperwhite Signature Edition</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
