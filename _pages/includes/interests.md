@@ -206,7 +206,7 @@ His interest in digital gadgets extends to a wide range of applications and tool
   </tr>
   <tr>
     <td>📱 Phone</td>
-    <td><a href="https://www.apple.com/iphone-15-pro/specs/" class="no-underline">iPhone 15 Pro Max</a> </td>
+    <td><a href="https://www.apple.com/iphone-15-pro/specs/" class="no-underline">iPhone 15 Pro Max</a> ｜ <a href="https://store.google.com/us/product/pixel_9_pro_specs?hl=en-US" class="no-underline">Google Pixel 9 Pro XL</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
@@ -221,21 +221,36 @@ His interest in digital gadgets extends to a wide range of applications and tool
   </tr>
   <tr>
     <td>📖 E-Reader</td>
-    <td><a href="https://www.amazon.com/Kindle-Paperwhite-Signature-32-auto-adjusting/dp/B08N2ZL7PS#tech" class="no-underline">Kindle Paperwhite Signature Edition</a></td>
+    <td><a href="https://www.amazon.com/Kindle-Paperwhite-Signature-32-auto-adjusting/dp/B08N2ZL7PS#tech" class="no-underline">Kindle Paperwhite Signature Edition</a> | <a href="https://www.amazon.com/Kindle-Paperwhite-Signature-32-auto-adjusting/dp/B08N2ZL7PS#tech" class="no-underline">Kindle Paperwhite Signature Edition</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
-    <td>🎧 Headphone</td>
+    <td>🎧 In-Ear</td>
+    <td><a href="https://www.sennheiser-hearing.com/en-US/p/ie-600/" class="no-underline">Sennheiser IE 600</a></td>
+    <td style="width: 250px;"></td>
+  </tr>
+  <tr>
+    <td>🎧 Over-Ear</td>
     <td><a href="https://www.akg.com/Headphones/Professional%20Headphones/K701.html" class="no-underline">AKG K701</a> | <a href="https://electronics.sony.com/audio/headphones/headband/p/wh1000xm4-s" class="no-underline">Sony WH-1000XM4</a> | <a href="https://www.audio-technica.com/ath-esw990h" class="no-underline">Audio Technica ESW990H</a></td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
-    <td>🎧 Earphone</td>
-    <td><a href="https://support.apple.com/kb/SP880" class="no-underline">Apple AirPods Pro 2</a> | <a href="https://www.apple.com/airpods-4/specs/" class="no-underline">Apple AirPods 4</a> | <a href="https://www.shokz.com.cn/OpenSwimPro" class="no-underline">SHOKZ OpenSwim Pro</a></td>
+    <td>🎧 TWS</td>
+    <td><a href="https://support.apple.com/kb/SP880" class="no-underline">Apple AirPods Pro 2</a> | <a href="https://www.apple.com/airpods-4/specs/" class="no-underline">Apple AirPods 4</a> </td>
     <td style="width: 250px;"></td>
   </tr>
   <tr>
-    <td>🎵 DAC</td>
+    <td>🎧 Bone Conduction</td>
+    <td><a href="https://www.shokz.com.cn/OpenSwimPro" class="no-underline">SHOKZ OpenSwim Pro</a></td>
+    <td style="width: 250px;"></td>
+  </tr>
+  <tr>
+    <td>🎵 Player</td>
+    <td><a href="https://www.astellnkern.com/product/product_detail.jsp?productNo=146" class="no-underline">A&Futura SE300 Platinum Silver</a></td>
+    <td style="width: 250px;"></td>
+  </tr>
+  <tr>
+    <td>🎵 DAC/Amplifier</td>
     <td><a href="https://www.fiio.com/q3" class="no-underline">FiiO Q3</a></td>
     <td style="width: 250px;"></td>
   </tr>
