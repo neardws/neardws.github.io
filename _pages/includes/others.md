@@ -14,11 +14,11 @@
       <p>Your user agent does not support the HTML5 Video element.</p>
 </video>
 
-## 📢 Call for Papers
+<!-- ## 📢 Call for Papers
 
-**\***: Estimated Date
+**\***: Estimated Date -->
 
-<table class="no-horizontal-lines">
+<!-- <table class="no-horizontal-lines">
   <tr>
     <th style="width: 110px;">Deadline</th>
     <th>Conference Name</th>
@@ -175,4 +175,4 @@
     <td>TBD</td>
     <td>B</td>
   </tr>
-</table>
+</table> -->
