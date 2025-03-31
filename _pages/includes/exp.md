@@ -27,23 +27,23 @@
 
 #### Journal
 
-- IEEE Transactions on Wireless Communications (TWC) IF: 8.9 (2023) \[JCR Q1 | SCI Q1 | CCF B\] ｜ 2025
-- IEEE Transactions on Intelligent Transportation Systems (T-ITS) IF: 7.9 (2023) \[ JCR Q1 | SCI Q2 | CCF B \] | 2023
-- IEEE Transactions on Consumer Electronics (TCE) IF: 4.3 (2023) \[ JCR Q1 | SCI Q2 \] ｜ 2024
-- IEEE Transactions on Vehicular Technology (TVT) IF: 6.1 (2023) \[ JCR Q1 | SCI Q2 \] ｜ 2022, 2024-2025
-- Journal of Systems Architecture (JSA) IF: 3.8 (2023) \[ JCR Q1 | SCI Q3 | CCF B \] ｜ 2023
-- Neural Computing and Applications (NCA) IF: 4.5 (2023) \[ JCR Q2 | SCI Q3 \] ｜ 2022
-- The Journal of Supercomputing (TJSC) IF: 2.5 (2023) \[ JCR Q2 | SCI Q4 \] ｜ 2022
-- Journal of Computer Research and Development \[CCF A\] ｜ 2023
-- Tien Tzu Hsueh Pao/Acta Electronica Sinica \[CCF A\] ｜ 2022-2023
+- IEEE Transactions on Wireless Communications (TWC) IF: 8.9 (2023) \[JCR Q1 \| SCI Q1 \| CCF B\] \| 2025
+- IEEE Transactions on Intelligent Transportation Systems (T-ITS) IF: 7.9 (2023) \[ JCR Q1 \| SCI Q2 \| CCF B \] \| 2023
+- IEEE Transactions on Consumer Electronics (TCE) IF: 4.3 (2023) \[ JCR Q1 \| SCI Q2 \] \| 2024
+- IEEE Transactions on Vehicular Technology (TVT) IF: 6.1 (2023) \[ JCR Q1 \| SCI Q2 \] \| 2022, 2024-2025
+- Journal of Systems Architecture (JSA) IF: 3.8 (2023) \[ JCR Q1 \| SCI Q3 \| CCF B \] \| 2023
+- Neural Computing and Applications (NCA) IF: 4.5 (2023) \[ JCR Q2 \| SCI Q3 \] \| 2022
+- The Journal of Supercomputing (TJSC) IF: 2.5 (2023) \[ JCR Q2 \| SCI Q4 \] \| 2022
+- Journal of Computer Research and Development \[CCF A\] \| 2023
+- Tien Tzu Hsueh Pao/Acta Electronica Sinica \[CCF A\] \| 2022-2023
 
 #### Conference
 
-- IEEE Vehicular Technology Conference (IEEE VTC-Fall) | 2023
-- International Conference on Artificial Intelligence of Things and Systems (AIoTSys) | 2023
-- IEEE International Conference on Intelligent Transportation Systems (IEEE ITSC) | 2022-2023
-- IEEE Global Communications Conference (IEEE GLOBECOM) | 2021, 2023
-- International Conference on Algorithms and Architectures for Parallel Processing (ICA3PP) | 2021
-- China Conference on Internet of Things (Wireless Sensor Network) (CWSN) | 2021
-- IEEE International Conference on Trust, Security and Privacy in Computing and Communications (IEEE TrustCom) | 2020
-- IEEE International Symposium on Product Compliance Engineering-Asia (IEEE ISPCE-AS) | 2020
+- IEEE Vehicular Technology Conference (IEEE VTC-Fall) \| 2023
+- International Conference on Artificial Intelligence of Things and Systems (AIoTSys) \| 2023
+- IEEE International Conference on Intelligent Transportation Systems (IEEE ITSC) \| 2022-2023
+- IEEE Global Communications Conference (IEEE GLOBECOM) \| 2021, 2023
+- International Conference on Algorithms and Architectures for Parallel Processing (ICA3PP) \| 2021
+- China Conference on Internet of Things (Wireless Sensor Network) (CWSN) \| 2021
+- IEEE International Conference on Trust, Security and Privacy in Computing and Communications (IEEE TrustCom) \| 2020
+- IEEE International Symposium on Product Compliance Engineering-Asia (IEEE ISPCE-AS) \| 2020
