@@ -33,7 +33,7 @@
 - IEEE Transactions on Vehicular Technology (TVT) IF: 6.1 (2023) \[ JCR Q1 | SCI Q2 \] ｜ 2022, 2024-2025
 - Journal of Systems Architecture (JSA) IF: 3.8 (2023) \[ JCR Q1 | SCI Q3 | CCF B \] ｜ 2023
 - Neural Computing and Applications (NCA) IF: 4.5 (2023) \[ JCR Q2 | SCI Q3 \] ｜ 2022
-- Journal of Supercomputing (TJSC) IF: 2.5 (2023) \[ JCR Q2 | SCI Q4 \] ｜ 2022
+- The Journal of Supercomputing (TJSC) IF: 2.5 (2023) \[ JCR Q2 | SCI Q4 \] ｜ 2022
 - Journal of Computer Research and Development \[CCF A\] ｜ 2023
 - Tien Tzu Hsueh Pao/Acta Electronica Sinica \[CCF A\] ｜ 2022-2023
 
