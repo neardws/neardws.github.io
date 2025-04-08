@@ -68,4 +68,19 @@
     <td>TBD, China 🇨🇳</td>
     <td>/</td>
   </tr>
+    <tr>
+    <td>/</td>
+    <td>/</td>
+    <td><a href="" class="no-underline">MobiCom</a>: 32nd ACM Annual International Conference on Mobile Computing and Networking</td>
+    <td>TBD</td>
+    <td>/</td>
+  </tr>
+  </tr>
+    <tr>
+    <td>/</td>
+    <td>/</td>
+    <td><a href="" class="no-underline">SIGCOMM</a>: 40th ACM Special Interest Group on Data Communication</td>
+    <td>TBD</td>
+    <td>/</td>
+  </tr>
 </table>
