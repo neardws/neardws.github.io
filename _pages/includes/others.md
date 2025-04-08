@@ -32,7 +32,7 @@
     <td>A</td>
   </tr>
   <tr>
-    <td>July 24, 2025 **\*** </td>
+    <td>July 24, 2025*</td>
     <td><a href="" class="no-underline">INFOCOM'44</a>: 44rd IEEE Conference on Computer Communications</td>
     <td>Tokyo, Japan 🇯🇵</td>
     <td>A</td>
