@@ -12,6 +12,7 @@
 
 ## 😎 Membership
 
+- **Apr 2025 - now**: Member #E190183334M, Chinese Institute of Electronics  (CIE).
 - **Sep 2023 - now**: Member #G0818M, China Computer Federation (CCF).
 - **Oct 2023 - now**: Member #3120145, Association for Computing Machinery (ACM).
 - **Sep 2023 - now**: Member #99619216, Institute of Electrical and Electronics Engineers (IEEE).
