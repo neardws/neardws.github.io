@@ -32,6 +32,7 @@
 - IEEE Transactions on Intelligent Transportation Systems (T-ITS) IF: 7.9 (2023) \[ JCR Q1 \| SCI Q2 \| CCF B \] \| 2023
 - IEEE Transactions on Consumer Electronics (TCE) IF: 4.3 (2023) \[ JCR Q1 \| SCI Q2 \] \| 2024
 - IEEE Transactions on Vehicular Technology (TVT) IF: 6.1 (2023) \[ JCR Q1 \| SCI Q2 \] \| 2022, 2024-2025
+- Computer Networks (CN) IF: 4.4 (2024) \[ JCR Q1 \| SCI Q3 \| CCF B \] \| 2025
 - Journal of Systems Architecture (JSA) IF: 3.8 (2023) \[ JCR Q1 \| SCI Q3 \| CCF B \] \| 2023
 - Neural Computing and Applications (NCA) IF: 4.5 (2023) \[ JCR Q2 \| SCI Q3 \] \| 2022
 - The Journal of Supercomputing (TJSC) IF: 2.5 (2023) \[ JCR Q2 \| SCI Q4 \] \| 2022

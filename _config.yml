@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Xincao Xu"
-description              : "Research Interests: IoVs, VEC, VCPS, DRL, etc."
+description              : "Research Interests: Edge AI, MEC, VDTs, DRL, etc."
 repository               : "neardws/neardws.github.io"
 google_scholar_stats_use_cdn : true
 
