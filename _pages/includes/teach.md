@@ -15,6 +15,6 @@
 
 1. Junyuan Wu (吴峻源), M.S. in Computer Science, 2025
 	- Dissertation Title: "Research on Key Technologies for Resource Scheduling and Model Deployment in Vehicular Digital Twins"
-	- Professional Start: Development Engineer in Autonomous Driving Simulation at [Zelostech (Suzhou) Co., Ltd.](https://zelostech.ai/)
+	- Professional Start: Development Engineer in Autonomous Driving Simulation at <a href="https://zelostech.ai/" class="no-underline">Zelostech (Suzhou) Co., Ltd.</a>
 	- Co-Advisor: Prof. Kai Liu, Chongqing University
 	- Contact Information: [![](https://img.shields.io/github/followers/hitmachineWu)](https://github.com/hitmachineWu) \| E-mail: *1024038920*AT*qq*DOT*com*
