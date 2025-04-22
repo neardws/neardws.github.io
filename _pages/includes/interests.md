@@ -179,7 +179,7 @@ His world of gaming spans across various consoles, offering endless adventures a
 
 ## 📱 Tech
 
-His interest in digital gadgets extends to a wide range of applications and tools.
+His interest in digital gadgets extends to a wide range of hardwares and softwares.
 
 ### Hardware
 
