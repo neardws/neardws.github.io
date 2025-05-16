@@ -13,10 +13,10 @@
 
 #### Participation
 
-1. <img src="images/grants_nsfc.webp" alt="NSFC"> **NSFC**, General Project, "Computing Model Deployment and Collaborative Cross Domain Optimization for Edge Intelligence of Internet of Vehicles", Jan 2022 - Dec 2025.
-2. <img src="images/grants_nsfc.webp" alt="NSFC"> **NSFC**, General Project, "Research on High Performance Data Transmission and Reception Mechanism of Wireless Energy-capable Communication Network Based on Successive Interference Cancellation", Jan 2021 - Dec 2024.
-3. <img src="images/grants_nsfc.webp" alt="NSFC"> **NSFC**, General Project, "Research on Continuous Authentication Method and Key Technologies for Mobile Users Based on Behavioral Characteristics", Jan 2021 - Dec 2024.
-4. <img src="images/grants_nsfc.webp" alt="NSFC"> **NSFC**, General Project, "Research on Intelligent Multitask High-Performance Optimization Algorithms Based on Transfer Learning", Jan 2019 – Dec 2022.
-5. <img src="images/grants_nsfc.webp" alt="NSFC"> **NSFC**, General Project, "Research on Architecture and Protocols for Large-scale Data Services in Converged Heterogeneous Internet of Vehicles", Jan 2019 – Dec 2022.
-6. <img src="images/grants_sz.webp" alt="SSTP"> **SSTP**, Science and Technology Major Project, "Research and Development of Key Technologies for PCIe Gen6 SSD Chips Targeting Enterprise-Level Applications", Jan 2025 - Dec 2027.
-7. <img src="images/grants_sz.webp" alt="SSTP"> **SSTP**, General Project, "Research on Efficient Training and Inference Methods for Cloud-Edge-Device Collaborative Deep Learning Models", Jan 2025 - Dec 2027.
+1. <img src="images/grants_nsfc.webp" alt="NSFC"> **NSFC**, General Project, "Computing Model Deployment and Collaborative Cross Domain Optimization for Edge Intelligence of Internet of Vehicles", 62172064, 590,000 CNY, Jan 2022 - Dec 2025.
+2. <img src="images/grants_nsfc.webp" alt="NSFC"> **NSFC**, General Project, "Research on High Performance Data Transmission and Reception Mechanism of Wireless Energy-capable Communication Network Based on Successive Interference Cancellation", 62072064, 580,000 CNY, Jan 2021 - Dec 2024.
+3. <img src="images/grants_nsfc.webp" alt="NSFC"> **NSFC**, General Project, "Research on Continuous Authentication Method and Key Technologies for Mobile Users Based on Behavioral Characteristics", 62072061, 580,000 CNY, Jan 2021 - Dec 2024.
+4. <img src="images/grants_nsfc.webp" alt="NSFC"> **NSFC**, General Project, "Research on Intelligent Multitask High-Performance Optimization Algorithms Based on Transfer Learning", 61876025, 620,000 CNY, Jan 2019 – Dec 2022.
+5. <img src="images/grants_nsfc.webp" alt="NSFC"> **NSFC**, General Project, "Research on Architecture and Protocols for Large-scale Data Services in Converged Heterogeneous Internet of Vehicles", 61872049, 640,000 CNY, Jan 2019 – Dec 2022.
+6. <img src="images/grants_sz.webp" alt="SSTP"> **SSTP**, Science and Technology Major Project, "Research and Development of Key Technologies for PCIe Gen6 SSD Chips Towards Enterprise-Level Applications", KIZD20240903095401003, 5,000,000 CNY, Jan 2025 - Dec 2027.
+7. <img src="images/grants_sz.webp" alt="SSTP"> **SSTP**, General Project, "Research on Efficient Training and Inference Methods for Cloud-Edge-Device Collaborative Deep Learning Models", JCYJ20240813114223031, 300,000 CNY, Jan 2025 - Dec 2027.
