@@ -22,7 +22,7 @@
 
 ### 🎤 Talks
  
-- Asia-Pacific Association of Congnitive Intelligence, Featured Doctoral Forum Series, "Key Technologies for Dynamic Modeling and Collaborative Optimization of Vehicular Digital Twins", May 28, 2025.
+- Asia-Pacific Association of Congnitive Intelligence, Featured Doctoral Forum Series, "Key Technologies for Dynamic Modeling and Collaborative Optimization of Vehicular Digital Twins", May 28, 2025.（in Chinese）[![](https://img.shields.io/youtube/views/sXbliySZDqU?style=social)](https://youtu.be/sXbliySZDqU) [![](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1L6jBztE8h)](https://www.bilibili.com/video/BV1L6jBztE8h) 
 
 ### 📑 Program Committee Member
  
