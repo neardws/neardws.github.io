@@ -2,7 +2,7 @@
 
 ## 🧑‍🏫 Homeroom Teacher
 
-1. Homeroom Teacher for STEM Education, Shenzhen Longhua S \& T Experimental High School, May 2025 - May 2028.
+1. Homeroom Teacher for STEM Education, Shenzhen Longhua S&T Experimental High School, May 2025 - May 2028.
 
 ## 📚 Students
 
