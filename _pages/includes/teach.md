@@ -1,5 +1,9 @@
 # 🏫 Teaching 
 
+## 🧑‍🏫 Homeroom Teacher
+
+1. Homeroom Teacher for STEM Education, Shenzhen Longhua S \& T Experimental High School, May 2025 - May 2028.
+
 ## 📚 Students
 
 1. Chun He (何春), M.S. student in Computer Scinece, co-advised with Prof. Penglin Dai in Southwest Jiaotong University, [![](https://img.shields.io/github/followers/ConorHe)](https://github.com/ConorHe) \| E-mail: *hechunconor*AT*my*DOT*swjtu*DOT*edu*DOT*cn*
