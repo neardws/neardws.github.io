@@ -20,6 +20,10 @@
 
 ## 🤝 Services
 
+### 🎤 Talks
+ 
+- Asia-Pacific Association of Congnitive Intelligence, Featured Doctoral Forum Series, "Key Technologies for Dynamic Modeling and Collaborative Optimization of Vehicular Digital Twins", May 28, 2025.
+
 ### 📑 Program Committee Member
  
 - CCF Intelligent Vehicles Symposium (CIVS) 2025
