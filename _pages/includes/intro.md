@@ -42,9 +42,7 @@ His research interests are primarily focused on several cutting-edge areas, incl
             Office Address: <br>     
             Room 408, Building 3, YESUN Intelligent Community II, <br>
             Guanlan Street, Longhua District, <br>
-            Shenzhen 518110, China <br>     
-            Phone: 
-            <a href="tel:+1-6015648240" class="no-underline">click to call</a> <br>   
+            Shenzhen 518110, China <br>       
             E-mail:   
             <em>xc</em>DOT<em>xu</em>AT<em>uestc</em>DOT<em>edu</em>DOT<em>cn</em> | <em>neard</em>DOT<em>ws</em>AT<em>gmail</em>DOT<em>com</em> 
         </td>
