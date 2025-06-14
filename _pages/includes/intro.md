@@ -44,7 +44,7 @@ His research interests are primarily focused on several cutting-edge areas, incl
             Guanlan Street, Longhua District, <br>
             Shenzhen 518110, China <br>       
             E-mail:   
-            <em>xc</em>DOT<em>xu</em>AT<em>uestc</em>DOT<em>edu</em>DOT<em>cn</em> | <em>neard</em>DOT<em>ws</em>AT<em>gmail</em>DOT<em>com</em> 
+            <em>xc</em>DOT<em>xu</em>AT<em>uestc</em>DOT<em>edu</em>DOT<em>cn</em> 
         </td>
         <td>
             <iframe width="450" height="220" src="https://www.openstreetmap.org/export/embed.html?bbox=114.02656316757204%2C22.723049810086813%2C114.05134677886964%2C22.735963602484535&amp;layer=mapnik" style="border: 0"></iframe>
