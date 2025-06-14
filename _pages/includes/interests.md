@@ -94,7 +94,9 @@
 
 ## 🏃 Sports
 
-Passionate about fitness, he has earned a series of accolades in his active lifestyle. Take a glimpse at his <a href="https://www.apple.com/apple-fitness-plus/" class="no-underline">Apple Fitness</a> achievements:
+Passionate about fitness, he has earned a series of accolades in his active lifestyle.      
+
+- 🍎 <a href="https://www.apple.com/apple-fitness-plus/" class="no-underline">Apple Fitness</a> achievements
 
 <table class="no-horizontal-lines">
   <tr>
@@ -129,7 +131,7 @@ Passionate about fitness, he has earned a series of accolades in his active life
   </tr>
 </table>
 
-- Events (**PB**: Personal Best)
+- 🆚 Events (**PB**: Personal Best)
 
 <table class="no-horizontal-lines">
   <tr>
@@ -147,6 +149,36 @@ Passionate about fitness, he has earned a series of accolades in his active life
     <td>Nov 3, 2024</td>
   </tr>
 </table>
+
+- 🏅 Medal
+
+<table class="no-horizontal-lines">
+  <tr>
+    <td style="text-align: center;"><img src="images/medal_Summit_of_Wutong_Mountain.webp" alt="Summit of Wutong Mountain"></td>
+    <td style="text-align: center;"><img src="images/medal_Find_Your_Way.webp" alt="Find Your Way">
+    </td><td style="text-align: center;"><img src="images/medal_Decathlon_SAKURA_Cycling.webp" alt="Decathlon SAKURA Cycling"></td>
+    <td style="text-align: center;"><img src="images/medal_Chongqing_Orienteering_Challenge.webp" alt="Chongqing Mountain City Street & Alley Orienteering Challenge"></td>
+    <td style="text-align: center;"><img src="images/medal_Chongqing_Half_Marathon.webp" alt="Chongqing (Changjiahui) Half Marathon"></td>
+    <td style="text-align: center;"><img src="images/medal_Campus_Fun_Games.webp" alt="Campus Fun Games"></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Summit of Wutong Mountain</td>
+    <td style="text-align: center;">Find Your Way given by BFF</td>
+    <td style="text-align: center;">Decathlon SAKURA Cycling</td>
+    <td style="text-align: center;">Chongqing Mountain City Street & Alley Orienteering Challenge</td>
+    <td style="text-align: center;">Chongqing (Changjiahui) Half Marathon</td>
+    <td style="text-align: center;">Campus Fun Games</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Jan 20, 2024</td>
+    <td style="text-align: center;">Mar 11, 2024</td>
+    <td style="text-align: center;">Mar 22, 2024</td>
+    <td style="text-align: center;">May 26, 2024</td>
+    <td style="text-align: center;">Nov 3, 2024</td>
+    <td style="text-align: center;">May 16, 2025</td>
+  </tr>
+</table>
+
 
 ## 🎮 Gaming
 
@@ -435,5 +467,5 @@ His interest in digital gadgets extends to a wide range of hardwares and softwar
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=600&t=tt&d=aFmh3d7Xe0XBtDzpWJTkAIBPYWnWgzsZn29nw_9T_34&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
 </div>
 <div style="clear: both; text-align: left;">
-<p>Please use Safari for the best experience. © 2023-2025 Neardws.com All Rights Reserved.</p>
+<p>Please use Safari for the best experience. © 2025-2034 Neardws.com All Rights Reserved.</p>
 </div>
