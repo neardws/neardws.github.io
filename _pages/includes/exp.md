@@ -12,14 +12,15 @@
 
 ## 😎 Membership
 
+- **Jun 2025 - now**: Member, China Society of Image and Graphics (CSIG).
 - **Jun 2025 - now**: Member, China Society of Automotive Engineers (China SAE).
 - **Jun 2025 - now**: Member, Chinese Association of Automation (CAA).
 - **Jun 2025 - now**: Member, Chinese Association for Artificial Intelligence (CAAI).
 - **May 2025 - now**: Member, Asia-Pacific Association of Congnitive Intelligence (AACI).
 - **Apr 2025 - now**: Member, Chinese Institute of Electronics (CIE).
-- **Sep 2023 - now**: Committee Member, Intelligent Vehicle Professional Committee, CCF.
-- **Sep 2023 - now**: Committee Member, Network and Data Communication Professional Committee, CCF.
-- **Sep 2023 - now**: Committee Member, Internet of Things Professional Committee, CCF.
+- **Sep 2023 - now**: Member, CCF Technical Committee of Intelligent Vehicle (CCF TCIV).
+- **Sep 2023 - now**: Member, CCF Technical Committee of Network and Data Communication (CCF TCCOMM).
+- **Sep 2023 - now**: Member, CCF Technical Committee of Internet of Things (CCF TCIoT).
 - **Sep 2023 - now**: Member, China Computer Federation (CCF).
 - **Oct 2023 - now**: Member, Association for Computing Machinery (ACM).
 - **Sep 2023 - now**: Member, Institute of Electrical and Electronics Engineers (IEEE).
