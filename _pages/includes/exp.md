@@ -12,6 +12,7 @@
 
 ## 😎 Membership
 
+- **Jun 2025 - now**: Member, China Intelligent Transportation Systems Association (ITS China).
 - **Jun 2025 - now**: Member, China Society of Image and Graphics (CSIG).
 - **Jun 2025 - now**: Member, China Society of Automotive Engineers (China SAE).
 - **Jun 2025 - now**: Member, Chinese Association of Automation (CAA).
