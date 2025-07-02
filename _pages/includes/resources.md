@@ -1,5 +1,9 @@
 # 📦 Resources
 
+#### Opinions and Experiences
+
+- Why We Block Our Path by Prof. Hui Xiong (in Chinese) [![](https://img.shields.io/badge/-PDF-blue?logo=onlyoffice&logoColor=EC1C24&labelColor=white&color=F5F5F5&style=flat)](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/Why%20We%20Block%20Our%20Path.pdf)
+
 #### Shareable Materials
 
 - Conference Proceedings and Journals Related to Internet of Vehicles [![](https://img.shields.io/badge/-PDF-blue?logo=onlyoffice&logoColor=EC1C24&labelColor=white&color=F5F5F5&style=flat)](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/Conference%20Proceedings%20and%20Journals%20Related%20to%20Internet%20of%20Vehicles.pdf)
