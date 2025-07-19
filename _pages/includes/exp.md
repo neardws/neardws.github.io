@@ -62,3 +62,10 @@
 - China Conference on Internet of Things (Wireless Sensor Network) (CWSN) \| 2021
 - IEEE International Conference on Trust, Security and Privacy in Computing and Communications (IEEE TrustCom) \| 2020
 - IEEE International Symposium on Product Compliance Engineering-Asia (IEEE ISPCE-AS) \| 2020
+
+## 🏆 Awards
+
+- Asia-Pacific Association of Cognitive Intelligence (AACI) \| Outstanding PhD Dissertation Award \| 2025
+- International Conference on Neural Computing for Advanced Applications (NCAA'20) \| Best Paper Award Finalist \| 2020
+- China Conference on Internet of Things (Wireless Sensor Network) (CWSN'20) \| Best Paper Award Finalist \| 2020
+- IEEE International Symposium on Product Compliance Engineering-Asia (IEEE ISPCE-AS'18) \| Best Paper Award \| 2018
