@@ -8,7 +8,7 @@
 #### Principal Investigator
 
 1. <img src="images/grants_gd.webp" alt="GBABRF"> **GBABRF**, General Project, "Research on Key Techniques for Generative Model-based Vehicular Digital Twins", 2025A1515012825, 100,000 CNY, Jan 2025 - Dec 2027. (top 18.8%) 
-2. <img src="images/grants_cpsf.webp" alt="CPSF"> **CPSF**, National Postdoctoral Research Fellowship Program (Tier C), "Research on Integrated Sensing and Communications based Vehicle-Infrastructure Cooperation System for Vehicular Digital Twin Networks", GZC20230384, 240,000 CNY, Jan 2024 - Jun 2025. (only 58 candidates were selected in Information and Communication Engineering in 2023) 
+2. <img src="images/grants_cpsf.webp" alt="CPSF"> **CPSF**, Postdoctoral Fellowship Program, "Research on Integrated Sensing and Communications based Vehicle-Infrastructure Cooperation System for Vehicular Digital Twin Networks", GZC20230384, 240,000 CNY, Jan 2024 - Jun 2025. (only 58 candidates were selected in Information and Communication Engineering in 2023) 
 3. <img src="images/grants_cpsf.webp" alt="CPSF"> **CPSF**, General Fund, "Modeling and Optimization of Cyber-Physical System for Vehicular Edge Computing", 2023M740515, 80,000 CNY, Jan 2024 - Jun 2025. (top 15.9%)
 
 #### Participation
