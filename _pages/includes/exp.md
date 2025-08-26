@@ -41,6 +41,7 @@
 
 #### Journal
 
+- IEEE Transactions on Mobile Computing (TMC) IF: 9.2 (2024) \[JCR Q1 \| SCI Q1 \| CCF A\] \| 2025
 - IEEE Transactions on Wireless Communications (TWC) IF: 8.9 (2023) \[JCR Q1 \| SCI Q1 \| CCF B\] \| 2025
 - IEEE Transactions on Intelligent Transportation Systems (T-ITS) IF: 7.9 (2023) \[ JCR Q1 \| SCI Q2 \| CCF B \] \| 2023
 - IEEE Transactions on Consumer Electronics (TCE) IF: 4.3 (2023) \[ JCR Q1 \| SCI Q2 \] \| 2024
