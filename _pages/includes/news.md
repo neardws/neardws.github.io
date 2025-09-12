@@ -1,6 +1,32 @@
 # 🔥 News
 
-### December 2023
+## 🔈 Call for Students
+
+Dr. Xu is now recruiting highly motivated Master’s students to join our research group starting in 2026. If you are passionate about cutting-edge technologies in edge intelligence, mobile computing, digital twins, and artificial intelligence, we encourage you to apply!
+
+### 🎯 We Offer:
+
+- Opportunities to work on national and industry-funded research projects.
+- A collaborative research environment with strong academic and industrial networks.
+- Guidance for publishing in top-tier conferences and journals.
+- Full support for personal academic growth and career development.
+
+### ✅ We Are Looking For Students Who:
+
+- Have a background in Computer Science, Telecommunications, Automation, or related fields.
+- Are proficient in programming (e.g., Python, C++).
+- Possess good mathematical foundation (optimization, linear algebra, probability).
+- Have prior experience or strong interest in edge computing, AI, or reinforcement learning.
+
+### 📧 How to Apply：
+
+Interested candidates are welcome to contact Dr. Xu via email with your CV, academic transcripts, and a brief self-introduction. Please use the subject line: “Master Application 2025 – [Your Name]”.
+
+We look forward to hearing from future researchers and innovators!
+
+<!-- ## 🔥 Latest News -->
+
+<!-- ### December 2023
 - **Grant Award** 💰: Delighted to announce my selection for the 2023 National Postdoctoral Research Fellowship Program (Tier C). Celebrating this momentous occasion! 🌟🎉
 
 ### November 2023
@@ -21,4 +47,4 @@
 - **Patent Approval** : Received official approval for an invention patent from the China National Intellectual Property Administration. A proud moment that highlights our innovative contributions. 
 
 ### June 2022
-- **Conference Acceptance** : Excited to have a conference paper titled "Age of View: A New Metric for Evaluating Heterogeneous Information Fusion in Vehicular Cyber-Physical Systems" accepted at the 2022 IEEE International Conference on Intelligent Transportation Systems (*ITSC*). 
+- **Conference Acceptance** : Excited to have a conference paper titled "Age of View: A New Metric for Evaluating Heterogeneous Information Fusion in Vehicular Cyber-Physical Systems" accepted at the 2022 IEEE International Conference on Intelligent Transportation Systems (*ITSC*).  -->
