@@ -2,7 +2,7 @@
 
 # 🔈 Call for Students
 
-Dr. Xu is now recruiting highly motivated Master’s students to join our research group starting in 2026. If you are passionate about cutting-edge technologies in edge intelligence, mobile computing, digital twins, and artificial intelligence, we encourage you to apply!
+Dr. Xu is now recruiting highly motivated Master’s students to join our research group starting in 2026. If you are passionate about cutting-edge technologies in edge intelligence, mobile edge computing, digital twins, and artificial intelligence, we encourage you to apply!
 
 ### 🎯 We Offer
 
