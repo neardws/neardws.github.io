@@ -2,7 +2,8 @@
 
 ## 💼 Work 
 
-- **Jul 2023 - Jun 2025 (now)**: Postdoctoral Research Fellow, Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China, Shenzhen, China. In cooperation with Prof. <a href="https://scholar.google.com/citations?user=IhjhNEEAAAAJ" class="no-underline">Shaohua Wan</a>.
+- **Sep 2025 - Dec 2028 (now)**: Associate Researcher, Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China, Shenzhen, China.
+- **Jul 2023 - Aug 2025**: Postdoctoral Research Fellow, Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China, Shenzhen, China. In cooperation with Prof. <a href="https://scholar.google.com/citations?user=IhjhNEEAAAAJ" class="no-underline">Shaohua Wan</a>.
 
 ## 🎓 Education
 
@@ -17,7 +18,7 @@
 - **Jun 2025 - now**: Member, China Society of Automotive Engineers (China SAE).
 - **Jun 2025 - now**: Member, Chinese Association of Automation (CAA).
 - **Jun 2025 - now**: Member, Chinese Association for Artificial Intelligence (CAAI).
-- **May 2025 - now**: Member, Asia-Pacific Association of Congnitive Intelligence (AACI).
+- **May 2025 - now**: Member, Asia-Pacific Association of Cognitive Intelligence (AACI).
 - **Apr 2025 - now**: Member, Chinese Institute of Electronics (CIE).
 - **Sep 2023 - now**: Member, CCF Technical Committee of Intelligent Vehicle (CCF TCIV).
 - **Sep 2023 - now**: Member, CCF Technical Committee of Network and Data Communication (CCF TCCOMM).
@@ -31,7 +32,7 @@
 
 ### 🎤 Talks
  
-- Asia-Pacific Association of Congnitive Intelligence, Featured Doctoral Forum Series, "Key Technologies for Dynamic Modeling and Collaborative Optimization of Vehicular Digital Twins", May 28, 2025.（in Chinese）[![](https://img.shields.io/youtube/views/sXbliySZDqU?style=social)](https://youtu.be/sXbliySZDqU) [![](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1L6jBztE8h)](https://www.bilibili.com/video/BV1L6jBztE8h) 
+- Asia-Pacific Association of Cognitive Intelligence, Featured Doctoral Forum Series, "Key Technologies for Dynamic Modeling and Collaborative Optimization of Vehicular Digital Twins", May 28, 2025.（in Chinese）[![](https://img.shields.io/youtube/views/sXbliySZDqU?style=social)](https://youtu.be/sXbliySZDqU) [![](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1L6jBztE8h)](https://www.bilibili.com/video/BV1L6jBztE8h) 
 
 ### 📑 Program Committee Member
  
