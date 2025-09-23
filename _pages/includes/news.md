@@ -2,27 +2,27 @@
 
 # 🔈 Call for Students
 
-Dr. Xu is now recruiting highly motivated Master’s students to join our research group starting in 2026. If you are passionate about cutting-edge technologies in edge intelligence, mobile edge computing, digital twins, and artificial intelligence, we encourage you to apply!
+Dr. Xu is now recruiting highly motivated undergraduate and Master’s students to join our research group. If you are passionate about cutting-edge technologies in edge intelligence, agent artificial intelligence, and agentic reinforcement learning, we encourage you to apply!
 
 ### 🎯 We Offer
 
-- Opportunities to work on national and industry-funded research projects.
-- A collaborative research environment with strong academic and industrial networks.
-- Guidance for publishing in top-tier conferences and journals.
-- Full support for personal academic growth and career development.
+1. Respect for students’ interests in determining research directions, with full support provided to the greatest extent possible.
+2. Weekly group meetings to ensure steady progress and effective collaboration.
+3. Guidance for publishing in top-tier conferences and journals.
+4. Full support for personal academic growth and career development.
 
 ### ✅ We Are Looking For Students Who
 
-- Have a background in Computer Science, Telecommunications, Automation, or related fields.
-- Are proficient in programming (e.g., Python, C++).
-- Possess good mathematical foundation (optimization, linear algebra, probability).
-- Have prior experience or strong interest in edge computing, AI, or reinforcement learning.
+* Have a background in Computer Science, Telecommunications, Automation, or related fields.
+* Are proficient in programming (e.g., Python, C++).
+* Possess a solid mathematical foundation (optimization, linear algebra, probability).
+* Have prior experience or strong interest in edge intelligence, LLM agents, and reinforcement learning.
 
 ### 📧 How to Apply
 
-Interested candidates are welcome to contact Dr. Xu via email with your CV, academic transcripts, and a brief self-introduction. Please use the subject line: “Master Application 2025 – [Your Name]”.
+Interested candidates are welcome to contact Dr. Xu via email with your CV, academic transcripts, and a brief self-introduction. 
 
-We look forward to hearing from future researchers and innovators!
+We look forward to hearing from you!
 
 <!-- ## 🔥 Latest News -->
 
