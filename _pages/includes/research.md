@@ -1,6 +1,8 @@
 # 🔬 Research 
 
-<div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">VCPS</div><img src='images/research-vcps.webp' alt="VCPS" width="100%"><div class="badge">System Model</div><img src='images/research-sensing-model.webp' alt="System Model" width="100%"></div></div>
+<img src='images/research.webp' alt="Research Direction" width="100%">
+
+<!-- <div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">VCPS</div><img src='images/research-vcps.webp' alt="VCPS" width="100%"><div class="badge">System Model</div><img src='images/research-sensing-model.webp' alt="System Model" width="100%"></div></div>
 
 <div class='paper-box-text' markdown="1">
 
@@ -43,4 +45,4 @@ Kai Liu<sup>**\***</sup>, **Xincao Xu**<sup>**\***</sup>, Penglin Dai, and Biwen
 - Accepted by **Journal of Systems Architecture** [JCR Q1\|SCI Q2\|CCF B]
 
 </div>
-</div>
+</div> -->
