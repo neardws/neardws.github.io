@@ -28,7 +28,7 @@ table.no-horizontal-lines th {
 Xincao (Neil) Xu (Chinese character 许新操 or 許新操) is currently an Associate Researcher in computer science with the Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China (<a href="https://www.uestc.edu.cn" class="no-underline">UESTC</a>), Shenzhen, China. 
 He received the Ph.D. degree in computer science from the College of Computer Science, Chongqing University (<a href="https://www.cqu.edu.cn" class="no-underline">CQU</a>), Chongqing, China, in 2023. 
 From 2023 to 2025, he was a Postdoctoral Research Fellow with the Shenzhen Institute for Advanced Study, UESTC.
-His research interests include edge intelligence, agent AI, and agentic RL.
+His research interests include edge intelligence, agentic AI, and agentic RL.
 He has authored and co-authored more than 15 papers with total google scholar <a href='https://scholar.google.com/citations?user=DK5avZUAAAAJ'><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FNeardws%2Fneardws.github.io@google-scholar-stats%2Fgs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=Citations"></a>.
 He received the Outstanding Ph.D. Dissertation Award from the Asia-Pacific Association of Cognitive Intelligence in 2025, the Best Paper Award from the IEEE International Symposium on Product Compliance Engineering-Asia in 2018, and multiple Best Paper Finalist honors.
 He is a member of IEEE, ACM, CCF, CIE, CAAI, CAA, and several other professional societies.
