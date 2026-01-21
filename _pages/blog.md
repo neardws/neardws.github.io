@@ -21,7 +21,7 @@ author_profile: true
 }
 
 .blog-item:hover {
-  border-color: #c00;
+  border-color: #8e8e93;
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
   transform: translateY(-2px);
 }
@@ -37,7 +37,7 @@ author_profile: true
 }
 
 .blog-item h2 a:hover {
-  color: #c00;
+  color: #636366;
 }
 
 .blog-item .post-meta {
@@ -77,12 +77,13 @@ author_profile: true
   border: 1px solid #ddd;
   border-radius: 4px;
   transition: all 0.2s ease;
+  margin-right: 8px;
 }
 
 .blog-item .post-lang-link a:hover {
-  color: #c00;
-  border-color: #c00;
-  background: #fff5f5;
+  color: #636366;
+  border-color: #8e8e93;
+  background: #f5f5f7;
 }
 </style>
 
@@ -101,6 +102,7 @@ author_profile: true
     </p>
     <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
     <p class="post-lang-link">
+      <a href="{{ post.url }}">🇺🇸 English</a>
       <a href="{{ post.url | replace: '-en/', '/' }}">🇨🇳 中文版</a>
     </p>
   </article>
