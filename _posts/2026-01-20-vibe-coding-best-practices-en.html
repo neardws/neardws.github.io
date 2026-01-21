@@ -1,0 +1,3506 @@
+---
+layout: post
+title: "Vibe Coding Best Practices"
+date: 2026-01-20
+categories: [AI, Programming]
+author_profile: true
+custom_css: blog-post
+lang: en
+---
+
+<p style="text-align: right; margin-bottom: 1em;">
+<a href="/ai/programming/vibe-coding-best-practices/" style="font-size: 90%;">🌐 中文版</a>
+</p>
+
+<h1>Vibe Coding Best Practices</h1>
+
+<blockquote>
+<p>This article will guide you step-by-step to set up a complete Vibe Coding environment from scratch, including terminal configuration, Shell customization, AI programming tools, and advanced techniques.</p>
+</blockquote>
+
+<h2>Table of Contents</h2>
+
+<ol start="0">
+	<li><a href="#0-introduction" title="0. Introduction">Introduction</a></li>
+	<li><a href="#1-terminal-configuration" title="1. Terminal Configuration">Terminal Configuration</a></li>
+	<li><a href="#2-oh-my-zsh-configuration" title="2. Oh-My-Zsh Configuration">Oh-My-Zsh Configuration</a></li>
+	<li><a href="#3-vibe-coding-cli-tools" title="3. Vibe Coding CLI Tools">Vibe Coding CLI Tools</a></li>
+	<li><a href="#4-byok---model-selection-guide" title="4. BYOK - Model Selection Guide">BYOK - Model Selection Guide</a></li>
+	<li><a href="#5-agent-skills" title="5. Agent Skills">Agent Skills</a></li>
+	<li><a href="#6-mcp-model-context-protocol" title="6. MCP (Model Context Protocol)">MCP (Model Context Protocol)</a></li>
+	<li><a href="#7-advanced-customization" title="7. Advanced Customization">Advanced Customization</a></li>
+	<li><a href="#8-workflow-examples" title="8. Workflow Examples">Workflow Examples</a></li>
+	<li><a href="#9-summary-and-resources" title="9. Summary and Resources">Summary and Resources</a></li>
+</ol>
+
+<hr />
+
+<h2 id="0-introduction">0. Introduction</h2>
+
+<h3>What is Vibe Coding</h3>
+
+<p>The concept of <strong>Vibe Coding</strong> was first introduced by AI legend <strong><a href="https://x.com/karpathy">Andrej Karpathy</a></strong> (former Tesla AI Director, OpenAI founding member) on X (Twitter) in February 2025.</p>
+
+<figure><img src="/images/posts/vibe-coding/Generated Image January 20, 2026 - 1_20PM.jpeg" alt="The X Post about Vibe Coding "/><figcaption>The X Post about Vibe Coding </figcaption></figure>
+
+<p>Simply put, Vibe Coding is a "vibe-driven" programming approach:</p>
+
+<ul>
+	<li>🗣️ <strong>Describe what you want</strong> in natural language</li>
+	<li>🤖 <strong>AI generates the code</strong>, you verify the results</li>
+	<li>🔄 <strong>Rapid iteration</strong>, without obsessing over code details</li>
+	<li>✨ <strong>Focus on creativity and the problem itself</strong>, not syntax and debugging</li>
+</ul>
+
+<p>The term quickly went viral after its introduction and was even included in the <strong>Merriam-Webster Dictionary</strong> as a trending word of 2025.</p>
+
+<blockquote>
+<p>📚 <strong>Further Reading</strong>:</p>
+
+<ul>
+	<li><a href="https://en.wikipedia.org/wiki/Vibe_coding">Vibe Coding - Wikipedia</a></li>
+	<li><a href="https://simonwillison.net/2025/Mar/19/vibe-coding/">Simon Willison: Not all AI-assisted programming is vibe coding</a></li>
+</ul>
+</blockquote>
+
+<h3>Why This Toolchain</h3>
+
+<ul>
+	<li><strong>Modern terminal experience</strong>: Kitty and Warp provide a smooth, beautiful terminal interface</li>
+	<li><strong>Efficient Shell environment</strong>: Oh-My-Zsh + Powerlevel10k brings powerful command-line enhancements</li>
+	<li><strong>Intelligent AI programming</strong>: Factory Droid provides professional-grade AI programming assistance</li>
+	<li><strong>Flexible model selection</strong>: BYOK lets you use any LLM model</li>
+	<li><strong>Extensible skill system</strong>: Skills and Custom Droids make AI better understand your workflow</li>
+</ul>
+
+<h3>Target Audience</h3>
+
+<p>This tutorial is for all developers interested in AI programming, whether you're a beginner or an experienced veteran. Each step has detailed instructions - just follow along to complete the setup.</p>
+
+<h3>Quick Start</h3>
+
+<p>Choose any of the following configuration methods based on your preference:</p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Method</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>🤖 AI Agent Setup</td>
+			<td>Download the <a href="/scripts/vibe-coding-llm-guide.md">LLM Configuration Guide</a>, paste it to Warp AI or Factory Droid, and let AI complete the setup automatically</td>
+		</tr>
+		<tr>
+			<td>⚡ One-click Script</td>
+			<td>Run <code>curl -fsSL https://neardws.com/scripts/vibe-setup.sh | bash</code></td>
+		</tr>
+		<tr>
+			<td>📖 Manual Setup</td>
+			<td>Continue reading below and manually configure each component step by step</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr />
+
+<h2 id="1-terminal-configuration">1. Terminal Configuration</h2>
+
+<p>A good terminal is the foundation of Vibe Coding. Here we introduce two excellent modern terminals.</p>
+
+<h3>1.1 Kitty Terminal</h3>
+
+<p><a href="https://sw.kovidgoyal.net/kitty/">Kitty</a> is a GPU-accelerated terminal emulator that is highly customizable and performs excellently.</p>
+
+<figure><img src="/images/posts/vibe-coding/CleanShot 2026-01-20 at 13.37.37@2x.png" alt="Kitty Terminal: https://sw.kovidgoyal.net/kitty/"/><figcaption>Kitty Terminal: <a href="https://sw.kovidgoyal.net/kitty/">https://sw.kovidgoyal.net/kitty/</a></figcaption></figure>
+
+<h4>Features</h4>
+
+<ul>
+	<li>🖥️ GPU rendering, super fast</li>
+	<li>⚙️ Highly configurable</li>
+	<li>🖼️ Image display support</li>
+	<li>📑 Built-in tabs and splits</li>
+</ul>
+
+<h4>Installation</h4>
+
+<p><strong>Linux / macOS (Recommended):</strong></p>
+
+<pre><code class="code-highlighted code-bash">curl -L https://sw.kovidgoyal.net/kitty/installer.sh <span class="syntax-all syntax-keyword">|</span> sh /dev/stdin</code></pre>
+
+<p><strong>macOS (Homebrew):</strong></p>
+
+<pre><code class="code-highlighted code-bash">brew install --cask kitty</code></pre>
+
+<p>Installation location:</p>
+
+<ul>
+	<li>macOS: /Applications/kitty.app</li>
+	<li>Linux: ~/.local/kitty.app</li>
+</ul>
+
+<blockquote>
+<p> ⚠️ <strong>Note</strong>: Kitty does not support native Windows, but can be used in WSL2 + WSLg environment.</p>
+
+<p>💡 Update Kitty: Simply re-run the installation script.</p>
+</blockquote>
+
+<p><strong>Linux Desktop Integration (Optional, if you want Kitty icon in desktop menu and taskbar):</strong></p>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Create symbolic links (ensure \~/.local/bin is in PATH)
+</span>ln -sf <span class="syntax-all syntax-constant">\~</span>/.local/kitty.app/bin/kitty <span class="syntax-all syntax-constant">\~</span>/.local/kitty.app/bin/kitten <span class="syntax-all syntax-constant">\~</span>/.local/bin/</code></pre>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Copy desktop files
+</span>cp <span class="syntax-all syntax-constant">\~</span>/.local/kitty.app/share/applications/kitty.desktop <span class="syntax-all syntax-constant">\~</span>/.local/share/applications/</code></pre>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Update icon and path
+</span>sed -i <span class="syntax-all syntax-string">&quot;s|Icon=kitty|Icon=$(readlink -f </span><span class="syntax-all syntax-escape">\~</span><span class="syntax-all syntax-string">)/.local/kitty.app/share/icons/hicolor/256x256/apps/kitty.png|g&quot;</span>
+<span class="syntax-all syntax-constant">\~</span>/.local/share/applications/kitty<span class="syntax-all syntax-constant">\*</span>.desktop
+sed -i <span class="syntax-all syntax-string">&quot;s|Exec=kitty|Exec=$(readlink -f </span><span class="syntax-all syntax-escape">\~</span><span class="syntax-all syntax-string">)/.local/kitty.app/bin/kitty|g&quot;</span> <span class="syntax-all syntax-constant">\~</span>/.local/share/applications/kitty<span class="syntax-all syntax-constant">\*</span>.desktop</code></pre>
+
+<hr />
+
+<h4>Basic Configuration</h4>
+
+<p>Create or edit the configuration file <code>~/.config/kitty/kitty.conf</code>:</p>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># ===== Theme Include =====
+</span>include ./theme.conf
+
+<span class="syntax-all syntax-comment"># ===== Remote Control (for live theme preview) =====
+</span>allow_remote_control yes
+
+<span class="syntax-all syntax-comment"># ===== Font Settings =====
+</span><span class="syntax-all syntax-comment"># Main font - English
+</span>font_family      Berkeley Mono
+bold_font        Berkeley Mono Bold
+italic_font      Berkeley Mono Italic
+font_size 14.0
+
+<span class="syntax-all syntax-comment"># Chinese font fallback - CJK character range
+</span>symbol_map U+4E00-U+9FFF,U+3400-U+4DBF Maple Mono CN
+
+<span class="syntax-all syntax-comment"># Nerd Font icons - Private Use Area
+</span>symbol_map U+E000-U+F8FF,U+F0000-U+FFFFF Hack Nerd Font
+
+<span class="syntax-all syntax-comment"># ===== Window Settings =====
+</span>window_padding_width 4
+hide_window_decorations no
+mouse_hide_wait 3.0
+term xterm-kitty
+
+<span class="syntax-all syntax-comment"># ===== Layout =====
+</span>enabled_layouts splits,stack
+
+<span class="syntax-all syntax-comment"># ===== Tab Bar Settings =====
+</span>tab_bar_edge bottom
+tab_bar_style custom
+tab_bar_min_tabs 1
+tab_bar_margin_height 5.0 0.0
+tab_bar_background <span class="syntax-all syntax-comment">#1e1e2e
+</span>
+<span class="syntax-all syntax-comment"># Tab Colors (Soft Pastel style)
+</span>active_tab_foreground   <span class="syntax-all syntax-comment">#1e1e2e
+</span>active_tab_background   <span class="syntax-all syntax-comment">#cdd6f4
+</span>active_tab_font_style   bold
+inactive_tab_foreground <span class="syntax-all syntax-comment">#cdd6f4
+</span>inactive_tab_background <span class="syntax-all syntax-comment">#313244
+</span>
+<span class="syntax-all syntax-comment"># ===== Shortcuts (macOS) =====
+</span><span class="syntax-all syntax-comment"># Split
+</span>map cmd+d launch --location=hsplit    <span class="syntax-all syntax-comment"># Horizontal split
+</span>map cmd+r launch --location=vsplit    <span class="syntax-all syntax-comment"># Vertical split
+</span>
+<span class="syntax-all syntax-comment"># Tab management
+</span>map cmd+t new_tab
+map cmd+w close_window
+map cmd+shift+w close_tab
+map cmd+1 goto_tab 1
+map cmd+2 goto_tab 2
+<span class="syntax-all syntax-comment"># ... cmd+3-9 similar
+</span>
+<span class="syntax-all syntax-comment"># Focus switching
+</span>map cmd+j neighboring_window left
+map cmd+k neighboring_window right
+map cmd+i neighboring_window up
+map cmd+m neighboring_window down
+
+<span class="syntax-all syntax-comment"># Others
+</span>map cmd+c copy_to_clipboard
+map cmd+v paste_from_clipboard
+map cmd+equal change_font_size all +1.0
+map cmd+minus change_font_size all -1.0
+map cmd+enter toggle_fullscreen</code></pre>
+
+<h4>Install Themes</h4>
+
+<figure><img src="/images/posts/vibe-coding/CleanShot 2026-01-20 at 14.36.59@2x.png" alt="Kitty Themes：https://github.com/dexpota/kitty-themes"/><figcaption>Kitty Themes：<a href="https://github.com/dexpota/kitty-themes">https://github.com/dexpota/kitty-themes</a></figcaption></figure>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Clone theme repository
+</span>git clone --depth 1 https://github.com/dexpota/kitty-themes.git <span class="syntax-all syntax-constant">\~</span>/.config/kitty/kitty-themes</code></pre>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Select theme (Dracula as example)
+</span>ln -sf ./kitty-themes/themes/Dracula.conf <span class="syntax-all syntax-constant">\~</span>/.config/kitty/theme.conf</code></pre>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Or use built-in theme switcher
+</span>kitty +kitten themes</code></pre>
+
+<h4>Custom Tab Bar</h4>
+
+<p>Get the complete configuration from <a href="https://github.com/neardws/kitty-config">neardws/kitty-config</a>:</p>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Clone config repository
+</span>git clone https://github.com/neardws/kitty-config.git <span class="syntax-all syntax-constant">\~</span>/kitty-config</code></pre>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Copy configuration files
+</span>cp <span class="syntax-all syntax-constant">\~</span>/kitty-config/kitty.conf <span class="syntax-all syntax-constant">\~</span>/.config/kitty/
+cp <span class="syntax-all syntax-constant">\~</span>/kitty-config/tab<span class="syntax-all syntax-constant">\_</span>bar.py <span class="syntax-all syntax-constant">\~</span>/.config/kitty/</code></pre>
+
+<p>Features:</p>
+
+<ul>
+	<li>10-color cycling palette (Catppuccin style)</li>
+	<li>Left side: username, current directory, Git branch</li>
+	<li>Middle: Tab list (number + program name)</li>
+	<li>Right side: Session name, time (15-second refresh)</li>
+	<li>SSH mode automatically shows server info</li>
+</ul>
+
+<p>Tab Bar layout:</p>
+
+<figure><img src="/images/posts/vibe-coding/CleanShot 2026-01-20 at 14.49.26@2x.png" alt="Kitty Custom Tab Bar"/><figcaption>Kitty Custom Tab Bar</figcaption></figure>
+
+<p>[👤 User] [📁 Directory] [Git] [1 zsh] [2 vim] [3 python] [💻 Session] [🕐 Time]</p>
+
+<blockquote>
+<p> ⚠️ <strong>Note</strong>: Custom Tab Bar requires Nerd Font, see <a href="#install-nerd-font-required-for-icons" title="Install Nerd Font (Required for Icons)">Install Nerd Font</a>.</p>
+</blockquote>
+
+<h4>Zsh Configuration</h4>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># ===== Kitty SSH + Tmux Configuration =====
+</span><span class="syntax-all syntax-comment"># kitten ssh basic alias
+</span><span class="syntax-all syntax-constant">alias</span> s=<span class="syntax-all syntax-string">&quot;kitten ssh&quot;</span></code></pre>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Server 1 - local (LAN)
+</span><span class="syntax-all syntax-constant">alias</span> ssh-local=<span class="syntax-all syntax-string">&quot;kitten ssh user@local-server&quot;</span>
+<span class="syntax-all syntax-constant">alias</span> st-local=<span class="syntax-all syntax-string">&quot;kitten ssh user@local-server -t &#39;tmux new -As main&#39;&quot;</span> 
+
+<span class="syntax-all syntax-comment"># Server 2 - remote
+</span><span class="syntax-all syntax-constant">alias</span> ssh-remote=<span class="syntax-all syntax-string">&quot;kitten ssh user@remote-server&quot;</span>
+<span class="syntax-all syntax-constant">alias</span> st-remote=<span class="syntax-all syntax-string">&quot;kitten ssh user@remote-server -t &#39;tmux new -As main&#39;&quot;</span> </code></pre>
+
+<blockquote>
+<p> ⚠️ <strong>Note</strong>: Replace user with actual username, local-server/remote-server with actual LAN or remote server IP addresses.</p>
+</blockquote>
+
+<p>Add the following function to <code>~/.zshrc</code> to automatically set Tab title when connecting to servers:</p>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># ===== Kitty Tab Auto-naming =====
+</span><span class="syntax-all syntax-comment"># Check if running in Kitty terminal
+</span><span class="syntax-all syntax-keyword">if</span> [[ <span class="syntax-all syntax-string">&quot;</span><span class="syntax-all syntax-constant">$TERM</span><span class="syntax-all syntax-string">&quot;</span> <span class="syntax-all syntax-keyword">==</span> <span class="syntax-all syntax-string">&quot;xterm-kitty&quot;</span> ]]<span class="syntax-all syntax-keyword">;</span> <span class="syntax-all syntax-keyword">then</span>
+   <span class="syntax-all syntax-comment"># Set tab name to current directory name
+</span>   <span class="syntax-all syntax-keyword">function</span> <span class="syntax-all syntax-entity">_kitty_set_tab_title</span>() {
+        <span class="syntax-all syntax-constant">printf</span> <span class="syntax-all syntax-string">&quot;\033]1;%s\007&quot;</span> <span class="syntax-all syntax-string">&quot;</span><span class="syntax-all syntax-constant">${PWD</span><span class="syntax-all syntax-keyword">##*/</span><span class="syntax-all syntax-constant">}</span><span class="syntax-all syntax-string">&quot;</span>
+   }
+ 
+   <span class="syntax-all syntax-comment"># Trigger on directory change
+</span>   autoload -Uz add-zsh-hook
+   add-zsh-hook chpwd _kitty_set_tab_title
+ 
+   <span class="syntax-all syntax-comment"># Set once on initialization
+</span>   _kitty_set_tab_title
+<span class="syntax-all syntax-keyword">fi</span>
+
+<span class="syntax-all syntax-comment"># SSH + tmux with auto Tab title
+</span><span class="syntax-all syntax-entity">st-server-s</span>() {
+   <span class="syntax-all syntax-keyword">local</span> session=<span class="syntax-all syntax-string">&quot;$\{1:-main}&quot;</span>
+   kitty @ set-tab-title <span class="syntax-all syntax-string">&quot;#server:</span><span class="syntax-all syntax-constant">$session</span><span class="syntax-all syntax-string">&quot;</span> <span class="syntax-all syntax-comment"># # prefix triggers custom title
+</span>   kitten ssh user@your-server -t <span class="syntax-all syntax-string">&quot;tmux new -As </span><span class="syntax-all syntax-constant">$session</span><span class="syntax-all syntax-string">&quot;</span>
+}
+
+<span class="syntax-all syntax-comment"># Example: multi-server configuration
+</span><span class="syntax-all syntax-entity">st-dev-s</span>() {
+   <span class="syntax-all syntax-keyword">local</span> session=<span class="syntax-all syntax-string">&quot;</span><span class="syntax-all syntax-constant">${1</span><span class="syntax-all syntax-keyword">:-</span><span class="syntax-all syntax-constant">main}</span><span class="syntax-all syntax-string">&quot;</span>
+   kitty @ set-tab-title <span class="syntax-all syntax-string">&quot;#dev:</span><span class="syntax-all syntax-constant">$session</span><span class="syntax-all syntax-string">&quot;</span>
+   kitten ssh user@dev-server -t <span class="syntax-all syntax-string">&quot;tmux new -As </span><span class="syntax-all syntax-constant">$session</span><span class="syntax-all syntax-string">&quot;</span>
+}
+
+<span class="syntax-all syntax-entity">st-prod-s</span>() {
+   <span class="syntax-all syntax-keyword">local</span> session=<span class="syntax-all syntax-string">&quot;</span><span class="syntax-all syntax-constant">${1</span><span class="syntax-all syntax-keyword">:-</span><span class="syntax-all syntax-constant">main}</span><span class="syntax-all syntax-string">&quot;</span>
+   kitty @ set-tab-title <span class="syntax-all syntax-string">&quot;#prod:</span><span class="syntax-all syntax-constant">$session</span><span class="syntax-all syntax-string">&quot;</span>
+   kitten ssh user@prod-server -t <span class="syntax-all syntax-string">&quot;tmux new -As </span><span class="syntax-all syntax-constant">$session</span><span class="syntax-all syntax-string">&quot;</span>
+}</code></pre>
+
+<p>Usage:</p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Command</th>
+			<th>Effect</th>
+			<th>Tab Title</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>st-dev-s</code></td>
+			<td>Connect to dev + main session</td>
+			<td><code>dev:main</code></td>
+		</tr>
+		<tr>
+			<td><code>st-dev-s work</code></td>
+			<td>Connect to dev + work session</td>
+			<td><code>dev:work</code></td>
+		</tr>
+		<tr>
+			<td><code>st-prod-s train</code></td>
+			<td>Connect to prod + train session</td>
+			<td><code>prod:train</code></td>
+		</tr>
+	</tbody>
+</table>
+
+<blockquote>
+<p>📚 <strong>Complete Configuration Reference</strong>: <a href="https://github.com/neardws/kitty-config">neardws/kitty-config</a></p>
+</blockquote>
+
+<hr />
+
+<h4>Recommended Fonts</h4>
+
+<p>Terminal fonts need to meet three requirements: English display, Chinese display, and icon support. Here are my recommended three fonts:</p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Font</th>
+			<th>Purpose</th>
+			<th>Features</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><a href="https://berkeleygraphics.com/typefaces/berkeley-mono/">Berkeley Mono</a></td>
+			<td>English monospace</td>
+			<td>Elegant, clear, designed for programming</td>
+		</tr>
+		<tr>
+			<td><a href="https://github.com/subframe7536/maple-font">Maple Mono CN</a></td>
+			<td>Chinese display</td>
+			<td>Open source, beautiful, Chinese-English monospace alignment</td>
+		</tr>
+		<tr>
+			<td><a href="https://www.nerdfonts.com/">Hack Nerd Font</a></td>
+			<td>Icon support</td>
+			<td>Required for Tab Bar, includes 3000+ icons</td>
+		</tr>
+	</tbody>
+</table>
+
+<figure><img src="/images/posts/vibe-coding/CleanShot 2026-01-20 at 14.23.33@2x.png" alt="Berkeley Mono Font: https://usgraphics.com/products/berkeley-mono"/><figcaption>Berkeley Mono Font: <a href="https://usgraphics.com/products/berkeley-mono">https://usgraphics.com/products/berkeley-mono</a></figcaption></figure>
+
+<h4 id="install-nerd-font-required-for-icons">Install Nerd Font (Required for Icons)</h4>
+
+<p><strong>macOS:</strong></p>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># macOS
+</span>brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font</code></pre>
+
+<p><strong>Linux:</strong></p>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Linux
+</span>mkdir -p <span class="syntax-all syntax-keyword">~</span>/.local/share/fonts
+<span class="syntax-all syntax-constant">cd</span> <span class="syntax-all syntax-keyword">~</span>/.local/share/fonts
+curl -fLO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip
+unzip Hack.zip <span class="syntax-all syntax-keyword">&amp;&amp;</span> rm Hack.zip
+fc-cache -fv</code></pre>
+
+<blockquote>
+<p>💡 Berkeley Mono is a paid font, available from the <a href="https://berkeleygraphics.com/typefaces/berkeley-mono/">official website</a>.</p>
+
+<p>Maple Mono CN is open source and free, download from <a href="https://github.com/subframe7536/maple-font/releases">GitHub</a>.</p>
+
+<p>Of course, you can also choose fonts you prefer.</p>
+</blockquote>
+
+<hr />
+
+<h3>1.2 Warp Terminal</h3>
+
+<p><a href="https://app.warp.dev/referral/28JVZ3">Warp</a> is a modern terminal with built-in AI capabilities, designed for developers.</p>
+
+<figure><img src="/images/posts/vibe-coding/CleanShot 2026-01-20 at 16.29.10@2x.png" alt="Warp Terminal: https://www.warp.dev/"/><figcaption>Warp Terminal: <a href="https://app.warp.dev/referral/28JVZ3">https://www.warp.dev/</a></figcaption></figure>
+
+<h4>Features</h4>
+
+<ul>
+	<li>🚀 Built-in AI command suggestions</li>
+	<li>📝 Block-style command output for easy copying and sharing</li>
+	<li>🎨 Modern UI design</li>
+	<li>⚡ Ultra-fast startup and response</li>
+</ul>
+
+<h4>Installation</h4>
+
+<blockquote>
+<p>📌 <strong>Platform Support</strong>: macOS (Intel/Apple Silicon), Windows (x64/ARM64), Linux (x64/ARM64)</p>
+</blockquote>
+
+<p><strong>macOS:</strong></p>
+
+<pre><code class="code-highlighted code-bash">brew install --cask warp</code></pre>
+
+<p><strong>Windows:</strong></p>
+
+<pre><code class="code-highlighted code-bash">winget install Warp.Warp</code></pre>
+
+<p><strong>Linux (Debian/Ubuntu):</strong></p>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Download .deb package (recommended)
+</span><span class="syntax-all syntax-comment"># After downloading from https://www.warp.dev/download:
+</span>sudo apt install ./<span class="syntax-all syntax-keyword">&lt;</span>file<span class="syntax-all syntax-keyword">&gt;</span>.deb</code></pre>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Or use apt repository
+</span>sudo apt-get install wget gpg
+wget -qO- https://releases.warp.dev/linux/keys/warp.asc <span class="syntax-all syntax-keyword">|</span> gpg --dearmor <span class="syntax-all syntax-keyword">&gt;</span> warpdotdev.gpg
+sudo install -D -o root -g root -m 644 warpdotdev.gpg /etc/apt/keyrings/warpdotdev.gpg
+sudo sh -c <span class="syntax-all syntax-string">&#39;echo &quot;deb \[arch=amd64 signed-by=/etc/apt/keyrings/warpdotdev.gpg] https://releases.warp.dev/linux/deb stable main&quot; &gt; /etc/apt/sources.list.d/warpdotdev.list&#39;</span>
+rm warpdotdev.gpg
+sudo apt update <span class="syntax-all syntax-keyword">&amp;&amp;</span> sudo apt install warp-terminal</code></pre>
+
+<figure><img src="/images/posts/vibe-coding/CleanShot 2026-01-20 at 16.43.06@2x.png" alt="Warp Main Interface"/><figcaption>Warp Main Interface</figcaption></figure>
+
+<hr />
+
+<h2 id="2-oh-my-zsh-configuration">2. Oh-My-Zsh Configuration</h2>
+
+<p>Oh-My-Zsh is an open-source Zsh configuration management framework that provides numerous themes and plugins.</p>
+
+<h3>What is Zsh</h3>
+
+<p>Zsh (Z Shell) is a powerful Unix shell and an enhanced replacement for Bash. Compared to Bash, Zsh offers:</p>
+
+<ul>
+	<li><strong>More powerful auto-completion</strong>: Intelligent completion for commands, parameters, file paths, and even Git branch completion</li>
+	<li><strong>Better history management</strong>: Cross-session history sharing, supports substring search</li>
+	<li><strong>Rich themes and prompt customization</strong>: Highly customizable prompt display</li>
+	<li><strong>Spelling correction</strong>: Automatically corrects misspelled commands</li>
+	<li><strong>Enhanced wildcard expansion</strong>: More powerful file matching patterns</li>
+</ul>
+
+<p>macOS Catalina (10.15) and later versions have set Zsh as the default shell.</p>
+
+<h3>What is Oh-My-Zsh</h3>
+
+<p><a href="https://ohmyz.sh/">Oh-My-Zsh</a> is a community-driven Zsh configuration management framework that makes Zsh configuration and usage simple:</p>
+
+<ul>
+	<li><strong>300+ plugins</strong>: Enhanced support for common tools like Git, Docker, npm, kubectl</li>
+	<li><strong>150+ themes</strong>: Beautiful prompt themes ready to use out of the box</li>
+	<li><strong>Simple plugin management</strong>: Just add the plugin name to the config file to enable</li>
+	<li><strong>Active community</strong>: Continuously updated and maintained</li>
+</ul>
+
+<p>In short: <strong>Zsh is the shell itself, Oh-My-Zsh is the configuration framework that makes Zsh easier and more powerful.</strong></p>
+
+<figure><img src="/images/posts/vibe-coding/CleanShot 2026-01-20 at 16.52.33@2x.png" alt="Oh My Zsh: https://ohmyz.sh/"/><figcaption>Oh My Zsh: <a href="https://ohmyz.sh/">https://ohmyz.sh/</a></figcaption></figure>
+
+<hr />
+
+<h3>2.1 Install Zsh</h3>
+
+<p><strong>First check and install Zsh:</strong></p>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># First check if installed
+</span>zsh --version</code></pre>
+
+<p>If not installed, choose the installation command for your operating system:</p>
+
+<p><br/><strong>macOS:</strong></p>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># macOS 10.15+ comes with Zsh pre-installed, use Homebrew to update if needed
+</span>brew install zsh</code></pre>
+
+<p><strong>Ubuntu/Debian:</strong></p>
+
+<pre><code class="code-highlighted code-bash">sudo apt install zsh</code></pre>
+
+<p><strong>Windows:</strong></p>
+
+<p>Windows users can use Zsh through the following methods:</p>
+
+<p><em>Method 1: WSL (Recommended)</em></p>
+
+<ul>
+	<li>Step 1: Install WSL</li>
+</ul>
+
+<pre><code class="code-highlighted code-powershell">wsl <span class="syntax-all syntax-keyword">--</span>install</code></pre>
+
+<ul>
+	<li>Step 2: After restarting, install Zsh in WSL's Ubuntu</li>
+</ul>
+
+<pre><code class="code-highlighted code-bash">sudo apt install zsh</code></pre>
+
+<p><em>Method 2: Git Bash + Zsh</em></p>
+
+<ul>
+	<li>Step 1: First install <a href="https://git-scm.com/download/win">Git for Windows</a></li>
+	<li>Step 2: Download <a href="https://packages.msys2.org/package/zsh">Zsh for Windows</a></li>
+	<li>Step 3: Extract to Git installation directory (e.g., C:\Program Files\Git)</li>
+	<li>Step 4: Add the following to /.bashrc to auto-start Zsh</li>
+</ul>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-keyword">if</span> <span class="syntax-all syntax-constant">\[</span> -t 1 ]<span class="syntax-all syntax-keyword">;</span> <span class="syntax-all syntax-keyword">then</span>
+ <span class="syntax-all syntax-constant">exec</span> zsh
+<span class="syntax-all syntax-keyword">fi</span></code></pre>
+
+<p><strong>Finally, after installation, set Zsh as the default Shell:</strong></p>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Set Zsh as default Shell
+</span>chsh -s <span class="syntax-all syntax-string">$(which zsh)</span></code></pre>
+
+<h3>2.2 Install Oh-My-Zsh</h3>
+
+<pre><code class="code-highlighted code-bash">sh -c <span class="syntax-all syntax-string">&quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;</span></code></pre>
+
+<figure><img src="/images/posts/vibe-coding/CleanShot 2026-01-20 at 17.40.27@2x.png" alt="Oh-My-Zsh Installation Process"/><figcaption>Oh-My-Zsh Installation Process</figcaption></figure>
+
+<hr />
+
+<h3>2.3 Powerlevel10k Theme</h3>
+
+<p><a href="https://github.com/romkatv/powerlevel10k">Powerlevel10k</a> is one of the most popular Zsh themes, offering rich information display and extremely fast rendering speed.</p>
+
+<h4>Install Nerd Font</h4>
+
+<p>First you need to <a href="#install-nerd-font-required-for-icons" title="Install Nerd Font (Required for Icons)">install Nerd Font</a> to display icons correctly.</p>
+
+<h4>Install Powerlevel10k</h4>
+
+<pre><code class="code-highlighted code-bash">git clone --depth=1 https://github.com/romkatv/powerlevel10k.git <span class="syntax-all syntax-constant">\
+</span>  <span class="syntax-all syntax-parameter">${ZSH_CUSTOM</span><span class="syntax-all syntax-keyword">:-</span><span class="syntax-all syntax-parameter">$HOME</span><span class="syntax-all syntax-keyword">/</span><span class="syntax-all syntax-parameter">.oh-my-zsh</span><span class="syntax-all syntax-keyword">/</span><span class="syntax-all syntax-parameter">custom}</span>/themes/powerlevel10k</code></pre>
+
+<p>Edit <code>~/.zshrc</code> and set the theme:</p>
+
+<pre><code class="code-highlighted code-bash">ZSH_THEME=<span class="syntax-all syntax-string">&quot;powerlevel10k/powerlevel10k&quot;</span></code></pre>
+
+<p>After reopening the terminal, the configuration wizard will start automatically:</p>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Manually start configuration wizard
+</span>p10k configure</code></pre>
+
+<figure><img src="/images/posts/vibe-coding/CleanShot 2026-01-20 at 17.50.11@2x.png" alt="Powerlevel10k Theme Setup"/><figcaption>Powerlevel10k Theme Setup</figcaption></figure>
+
+<figure><img src="/images/posts/vibe-coding/CleanShot 2026-01-20 at 17.53.00@2x.png" alt="Powerlevel10k Theme Final Result"/><figcaption>Powerlevel10k Theme Final Result</figcaption></figure>
+
+<h3>2.3 Plugin Configuration</h3>
+
+<p>Here are my recommended plugin configurations, each plugin can significantly enhance your command-line experience.</p>
+
+<h4>Install Third-party Plugins</h4>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># zsh-autosuggestions - command auto-completion suggestions
+</span>git clone https://github.com/zsh-users/zsh-autosuggestions <span class="syntax-all syntax-constant">\
+</span>  <span class="syntax-all syntax-parameter">${ZSH_CUSTOM</span><span class="syntax-all syntax-keyword">:-</span><span class="syntax-all syntax-parameter">~</span><span class="syntax-all syntax-keyword">/</span><span class="syntax-all syntax-parameter">.oh-my-zsh</span><span class="syntax-all syntax-keyword">/</span><span class="syntax-all syntax-parameter">custom}</span>/plugins/zsh-autosuggestions
+
+<span class="syntax-all syntax-comment"># zsh-syntax-highlighting - command syntax highlighting
+</span>git clone https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="syntax-all syntax-constant">\
+</span>  <span class="syntax-all syntax-parameter">${ZSH_CUSTOM</span><span class="syntax-all syntax-keyword">:-</span><span class="syntax-all syntax-parameter">~</span><span class="syntax-all syntax-keyword">/</span><span class="syntax-all syntax-parameter">.oh-my-zsh</span><span class="syntax-all syntax-keyword">/</span><span class="syntax-all syntax-parameter">custom}</span>/plugins/zsh-syntax-highlighting
+
+<span class="syntax-all syntax-comment"># zsh-completions - additional command completions
+</span>git clone https://github.com/zsh-users/zsh-completions <span class="syntax-all syntax-constant">\
+</span>  <span class="syntax-all syntax-parameter">${ZSH_CUSTOM</span><span class="syntax-all syntax-keyword">:-</span><span class="syntax-all syntax-parameter">~</span><span class="syntax-all syntax-keyword">/</span><span class="syntax-all syntax-parameter">.oh-my-zsh</span><span class="syntax-all syntax-keyword">/</span><span class="syntax-all syntax-parameter">custom}</span>/plugins/zsh-completions</code></pre>
+
+<h4>Configure Plugins</h4>
+
+<p>Edit <code>~/.zshrc</code> and configure the plugin list:</p>
+
+<pre><code class="code-highlighted code-bash">plugins=(
+    git                      <span class="syntax-all syntax-comment"># Git command aliases and status prompts
+</span>    sudo                     <span class="syntax-all syntax-comment"># Double-tap ESC to add sudo before command
+</span>    <span class="syntax-all syntax-constant">history</span>                  <span class="syntax-all syntax-comment"># Enhanced history command search
+</span>    extract                  <span class="syntax-all syntax-comment"># Universal extraction command, supports various formats
+</span>    z                        <span class="syntax-all syntax-comment"># Smart directory jumping
+</span>    zsh-autosuggestions      <span class="syntax-all syntax-comment"># Auto-suggest based on history
+</span>    zsh-syntax-highlighting  <span class="syntax-all syntax-comment"># Command syntax highlighting
+</span>    zsh-completions          <span class="syntax-all syntax-comment"># Additional command completions
+</span>)</code></pre>
+
+<p>Apply configuration:</p>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-constant">source</span> <span class="syntax-all syntax-keyword">~</span>/.zshrc</code></pre>
+
+<h4>Plugin Feature Description</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Plugin</th>
+			<th>Function</th>
+			<th>Usage Example</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>git</code></td>
+			<td>Git command aliases</td>
+			<td><code>gst</code> = <code>git status</code>, <code>gco</code> = <code>git checkout</code></td>
+		</tr>
+		<tr>
+			<td><code>sudo</code></td>
+			<td>Quick add sudo</td>
+			<td>Double-tap <code>ESC</code> to add sudo before current command</td>
+		</tr>
+		<tr>
+			<td><code>history</code></td>
+			<td>History search</td>
+			<td><code>Ctrl+R</code> to search history commands</td>
+		</tr>
+		<tr>
+			<td><code>extract</code></td>
+			<td>Universal extraction</td>
+			<td><code>extract file.tar.gz</code> auto-detects format</td>
+		</tr>
+		<tr>
+			<td><code>z</code></td>
+			<td>Smart jump</td>
+			<td><code>z project</code> jumps to frequently used directory containing "project"</td>
+		</tr>
+		<tr>
+			<td><code>zsh-autosuggestions</code></td>
+			<td>Command suggestions</td>
+			<td>Shows gray suggestions while typing, press <code>→</code> to accept</td>
+		</tr>
+		<tr>
+			<td><code>zsh-syntax-highlighting</code></td>
+			<td>Syntax highlighting</td>
+			<td>Valid commands green, invalid commands red</td>
+		</tr>
+		<tr>
+			<td><code>zsh-completions</code></td>
+			<td>Extra completions</td>
+			<td>More Tab completion support for commands</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr />
+
+<h2 id="3-vibe-coding-cli-tools">3. Vibe Coding CLI Tools</h2>
+
+<h3>Why Choose CLI over IDE</h3>
+
+<p>Honestly, IDE tools like Cursor are indeed user-friendly, with out-of-the-box experience, friendly interface, and inline completion with visual diff that creates a great flow experience. But after extended use or with complex projects, you'll notice several issues.</p>
+
+<ul>
+	<li><strong>Context is a black box</strong>. Cursor claims 200K token context, but in practice it's often only 70K-120K, and it won't tell you why. Someone tested: building the same Next.js project, Claude Code CLI used 33K tokens with zero errors, while Cursor used 188K tokens and still had bugs, because you don't know what it stuffed into the context.</li>
+	<li><strong>Resource usage is significant</strong>. Cursor takes 15-30 seconds to start, with 2-4 GB memory usage. CLI tools start instantly, under 100MB. For terminal users, opening an IDE just to have AI edit a few lines of code feels heavy.</li>
+	<li><strong>Can't automate</strong>. Running AI code review in CI/CD, batch processing multiple repositories - CLI can do these with a single command, IDE can't.</li>
+	<li><strong>Tied to editor</strong>. Using Cursor means accepting the VS Code stack. If you're used to Neovim, Emacs or other editors, CLI tools don't care - they work as long as the terminal is open.</li>
+</ul>
+
+<p>Of course, for beginners or those who prefer graphical interfaces for small features, IDE is perfectly fine. But if you're a terminal user, or need to handle complex tasks, want transparency and control, or have automation needs, CLI is more suitable.</p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Dimension</th>
+			<th>CLI Tools</th>
+			<th>IDE Tools</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Resource Usage</td>
+			<td>Lightweight, terminal only</td>
+			<td>Heavy, requires full IDE</td>
+		</tr>
+		<tr>
+			<td>Flexibility</td>
+			<td>Works with any editor</td>
+			<td>Tied to specific IDE</td>
+		</tr>
+		<tr>
+			<td>Automation</td>
+			<td>Easy scripting, CI/CD integration</td>
+			<td>Difficult to automate</td>
+		</tr>
+		<tr>
+			<td>Transparency</td>
+			<td>All operations visible and controllable</td>
+			<td>Some operations in background</td>
+		</tr>
+		<tr>
+			<td>Context Control</td>
+			<td>Precise control over input</td>
+			<td>IDE auto-collects (sometimes too much)</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr />
+
+<h3>3.1 Popular Vibe Coding CLI Tools</h3>
+
+<table>
+	<thead>
+		<tr>
+			<th>Tool</th>
+			<th>Open Source</th>
+			<th>Features</th>
+			<th>Use Case</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><a href="https://claude.com/product/claude-code">Claude Code</a></td>
+			<td>No</td>
+			<td>Anthropic official, 200K context, strong deep reasoning</td>
+			<td>Claude users, complex tasks</td>
+		</tr>
+		<tr>
+			<td><a href="https://developers.openai.com/codex/cli/">Codex CLI</a></td>
+			<td><a href="https://github.com/openai/codex">Yes</a></td>
+			<td>OpenAI official, lightweight, supports ChatGPT Pro/Plus</td>
+			<td>OpenAI ecosystem users</td>
+		</tr>
+		<tr>
+			<td><a href="https://geminicli.com">Gemini CLI</a></td>
+			<td><a href="https://github.com/google-gemini/gemini-cli">Yes</a></td>
+			<td>Google official, free Gemini 2.5 Pro</td>
+			<td>Budget-limited, Google ecosystem</td>
+		</tr>
+		<tr>
+			<td><a href="https://opencode.ai">OpenCode</a></td>
+			<td><a href="https://github.com/anomalyco/opencode">Yes</a></td>
+			<td>Supports 75+ models, can switch Claude/GPT/Gemini</td>
+			<td>Multi-model switching users</td>
+		</tr>
+		<tr>
+			<td><a href="https://factory.ai">Factory Droid</a></td>
+			<td>No</td>
+			<td>Seamless cross-platform switching, CI/CD large-scale parallelism, enterprise-grade security</td>
+			<td>Professional developers ⭐Recommended</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>3.2 Factory Droid Installation</h3>
+
+<h4>What is Factory Droid?</h4>
+
+<p>Factory Droid is a command-line AI programming tool from Factory AI with the following features:</p>
+
+<ul>
+	<li>🤖 Powerful code understanding and generation capabilities</li>
+	<li>📁 Direct file system read/write</li>
+	<li>🔧 Execute Shell commands</li>
+	<li>🌐 Supports multiple LLM models</li>
+	<li>🎯 Extensible Skills system</li>
+	<li>🔗 MCP protocol support</li>
+</ul>
+
+<figure><img src="/images/posts/vibe-coding/CleanShot 2026-01-20 at 18.44.50@2x.png" alt="Factory Droid: https://factory.ai/"/><figcaption>Factory Droid: <a href="https://factory.ai/">https://factory.ai/</a></figcaption></figure>
+
+<h4>Install Factory Droid</h4>
+
+<p><strong>macOS/Linux:</strong></p>
+
+<pre><code class="code-highlighted code-bash">curl -fsSL https://app.factory.ai/cli <span class="syntax-all syntax-keyword">|</span> sh</code></pre>
+
+<p><strong>Windows:</strong></p>
+
+<pre><code class="code-highlighted code-bash">irm https://app.factory.ai/cli/windows <span class="syntax-all syntax-keyword">|</span> iex</code></pre>
+
+<blockquote>
+<p> ⚠️ <strong>Linux Users Note</strong>: Ensure <code>xdg-utils</code> is installed for full functionality: <code>sudo apt-get install xdg-utils</code></p>
+</blockquote>
+
+<h4>Start Factory Droid</h4>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Enter project directory
+</span><span class="syntax-all syntax-constant">cd</span> /path/to/your/project
+
+<span class="syntax-all syntax-comment"># Start interactive session
+</span>droid</code></pre>
+
+<p>First run will guide you to log in to your Factory account through the browser.</p>
+
+<h4>Configuration File</h4>
+
+<p>Configuration file is located at <code>~/.factory/settings.json</code>, can be modified interactively via <code>/settings</code> command.</p>
+
+<h4>Session Default Settings</h4>
+
+<p>Configure default behavior in <code>settings.json</code>:</p>
+
+<pre><code class="code-highlighted code-json">{
+  <span class="syntax-all syntax-string">&quot;sessionDefaultSettings&quot;</span>: {
+    <span class="syntax-all syntax-string">&quot;model&quot;</span>: <span class="syntax-all syntax-string">&quot;claude-opus-4-5-20251101&quot;</span>,
+    <span class="syntax-all syntax-string">&quot;reasoningEffort&quot;</span>: <span class="syntax-all syntax-string">&quot;high&quot;</span>,
+    <span class="syntax-all syntax-string">&quot;autonomyMode&quot;</span>: <span class="syntax-all syntax-string">&quot;spec&quot;</span>,
+    <span class="syntax-all syntax-string">&quot;specModeReasoningEffort&quot;</span>: <span class="syntax-all syntax-string">&quot;off&quot;</span>
+  }
+}</code></pre>
+
+<table>
+	<thead>
+		<tr>
+			<th>Config Item</th>
+			<th>Options</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>model</code></td>
+			<td>opus, sonnet, gpt-5.1, gpt-5.2, haiku, etc.</td>
+			<td>Default AI model</td>
+		</tr>
+		<tr>
+			<td><code>reasoningEffort</code></td>
+			<td>off, none, low, medium, high</td>
+			<td>Reasoning depth</td>
+		</tr>
+		<tr>
+			<td><code>autonomyMode</code></td>
+			<td>normal, spec, auto-low, auto-medium, auto-high</td>
+			<td>Autonomy mode</td>
+		</tr>
+		<tr>
+			<td><code>specModeReasoningEffort</code></td>
+			<td>off, none, low, medium, high</td>
+			<td>Spec mode reasoning</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>3.3 Hooks Configuration</h3>
+
+<blockquote>
+<p>Hooks allow you to automatically execute actions when specific events occur, greatly enhancing your workflow.</p>
+</blockquote>
+
+<p>Edit <code>~/.factory/settings.json</code>, current Hooks configuration is related to the <a href="#planning-with-files---complex-task-planning" title="planning-with-files - Complex Task Planning">planning-with-files</a> Skill:</p>
+
+<pre><code class="code-highlighted code-json">{
+  <span class="syntax-all syntax-string">&quot;hooks&quot;</span>: {
+    <span class="syntax-all syntax-string">&quot;SessionStart&quot;</span>: [
+      {
+        <span class="syntax-all syntax-string">&quot;matcher&quot;</span>: <span class="syntax-all syntax-string">&quot;startup|resume&quot;</span>,
+        <span class="syntax-all syntax-string">&quot;hooks&quot;</span>: [
+          {
+            <span class="syntax-all syntax-string">&quot;type&quot;</span>: <span class="syntax-all syntax-string">&quot;command&quot;</span>,
+            <span class="syntax-all syntax-string">&quot;command&quot;</span>: <span class="syntax-all syntax-string">&quot;echo &#39;[planning-with-files] Ready. For complex tasks, create task_plan.md, findings.md, and progress.md in your project directory.&#39;&quot;</span>
+          }
+        ]
+      }
+    ],
+    <span class="syntax-all syntax-string">&quot;PreToolUse&quot;</span>: [
+      {
+        <span class="syntax-all syntax-string">&quot;matcher&quot;</span>: <span class="syntax-all syntax-string">&quot;Write|Edit|Bash&quot;</span>,
+        <span class="syntax-all syntax-string">&quot;hooks&quot;</span>: [
+          {
+            <span class="syntax-all syntax-string">&quot;type&quot;</span>: <span class="syntax-all syntax-string">&quot;command&quot;</span>,
+            <span class="syntax-all syntax-string">&quot;command&quot;</span>: <span class="syntax-all syntax-string">&quot;if [ -f </span><span class="syntax-all syntax-escape">\&quot;</span><span class="syntax-all syntax-string">$FACTORY_PROJECT_DIR/task_plan.md</span><span class="syntax-all syntax-escape">\&quot;</span><span class="syntax-all syntax-string"> ]; then head -30 </span><span class="syntax-all syntax-escape">\&quot;</span><span class="syntax-all syntax-string">$FACTORY_PROJECT_DIR/task_plan.md</span><span class="syntax-all syntax-escape">\&quot;</span><span class="syntax-all syntax-string">; fi&quot;</span>
+          }
+        ]
+      }
+    ],
+    <span class="syntax-all syntax-string">&quot;PostToolUse&quot;</span>: [
+      {
+        <span class="syntax-all syntax-string">&quot;matcher&quot;</span>: <span class="syntax-all syntax-string">&quot;Write|Edit&quot;</span>,
+        <span class="syntax-all syntax-string">&quot;hooks&quot;</span>: [
+          {
+            <span class="syntax-all syntax-string">&quot;type&quot;</span>: <span class="syntax-all syntax-string">&quot;command&quot;</span>,
+            <span class="syntax-all syntax-string">&quot;command&quot;</span>: <span class="syntax-all syntax-string">&quot;echo &#39;[planning-with-files] File updated. If this completes a phase, update task_plan.md status.&#39;&quot;</span>
+          },
+          {
+            <span class="syntax-all syntax-string">&quot;type&quot;</span>: <span class="syntax-all syntax-string">&quot;command&quot;</span>,
+            <span class="syntax-all syntax-string">&quot;command&quot;</span>: <span class="syntax-all syntax-string">&quot;~/.factory/skills/md-table-formatter/scripts/format-tables.py&quot;</span>,
+            <span class="syntax-all syntax-string">&quot;timeout&quot;</span>: <span class="syntax-all syntax-constant">10</span>
+          }
+        ]
+      }
+    ],
+    <span class="syntax-all syntax-string">&quot;Stop&quot;</span>: [
+      {
+        <span class="syntax-all syntax-string">&quot;hooks&quot;</span>: [
+          {
+            <span class="syntax-all syntax-string">&quot;type&quot;</span>: <span class="syntax-all syntax-string">&quot;command&quot;</span>,
+            <span class="syntax-all syntax-string">&quot;command&quot;</span>: <span class="syntax-all syntax-string">&quot;~/.factory/skills/planning-with-files/scripts/check-complete.sh 2&gt;/dev/null || true&quot;</span>
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+
+<h4>Hook Types Description</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Hook Type</th>
+			<th>Trigger Time</th>
+			<th>Purpose</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>SessionStart</code></td>
+			<td>When session starts</td>
+			<td>Initialize prompts, load context</td>
+		</tr>
+		<tr>
+			<td><code>PreToolUse</code></td>
+			<td>Before using a tool</td>
+			<td>Check status, read plans</td>
+		</tr>
+		<tr>
+			<td><code>PostToolUse</code></td>
+			<td>After using a tool</td>
+			<td>Update status, format files</td>
+		</tr>
+		<tr>
+			<td><code>Stop</code></td>
+			<td>When session ends</td>
+			<td>Cleanup, summarize</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr />
+
+<h3>3.4 Factory Droid Usage Guide</h3>
+
+<h4>Basic Operations</h4>
+
+<p><strong>Keyboard Shortcuts</strong></p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Shortcut</th>
+			<th>Function</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>Enter</code></td>
+			<td>Send message</td>
+		</tr>
+		<tr>
+			<td><code>Shift+Enter</code></td>
+			<td>New line (multi-line input)</td>
+		</tr>
+		<tr>
+			<td><code>Shift+Tab</code></td>
+			<td>Switch mode (Normal/Spec/Auto)</td>
+		</tr>
+		<tr>
+			<td><code>!</code></td>
+			<td>Toggle Bash mode (when input box is empty)</td>
+		</tr>
+		<tr>
+			<td><code>Esc</code></td>
+			<td>Exit Bash mode / Interrupt operation</td>
+		</tr>
+		<tr>
+			<td><code>?</code></td>
+			<td>View all shortcuts</td>
+		</tr>
+		<tr>
+			<td><code>Ctrl+C</code></td>
+			<td>Exit Droid</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>Basic Interaction Flow (see <a href="#8-workflow-examples" title="8. Workflow Examples">Workflow Examples</a> for detailed version)</strong></p>
+
+<ol>
+	<li>Enter your task description</li>
+	<li>Droid analyzes the codebase and creates a plan</li>
+	<li>Review the changes proposed by Droid</li>
+	<li>Accept or reject modifications</li>
+	<li>Continue iterating until task is complete</li>
+</ol>
+
+<h4>Slash Commands</h4>
+
+<p>Enter commands starting with <code>/</code> in Droid to perform specific operations:</p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Command</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>/settings</code></td>
+			<td>Configure Droid settings</td>
+		</tr>
+		<tr>
+			<td><code>/model</code></td>
+			<td>Switch AI model</td>
+		</tr>
+		<tr>
+			<td><code>/review</code></td>
+			<td>Start AI code review workflow</td>
+		</tr>
+		<tr>
+			<td><code>/mcp</code></td>
+			<td>Manage MCP servers</td>
+		</tr>
+		<tr>
+			<td><code>/sessions</code></td>
+			<td>List and select history sessions</td>
+		</tr>
+		<tr>
+			<td><code>/droids</code></td>
+			<td>Manage custom Droids</td>
+		</tr>
+		<tr>
+			<td><code>/skills</code></td>
+			<td>Manage and invoke Skills</td>
+		</tr>
+		<tr>
+			<td><code>/hooks</code></td>
+			<td>Manage lifecycle Hooks</td>
+		</tr>
+		<tr>
+			<td><code>/cost</code></td>
+			<td>View Token usage statistics</td>
+		</tr>
+		<tr>
+			<td><code>/new</code></td>
+			<td>Start new session</td>
+		</tr>
+		<tr>
+			<td><code>/help</code></td>
+			<td>View all available commands</td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>Specification Mode</h4>
+
+<p>Specification Mode is one of Droid's core features, following the "plan first, execute later" principle.</p>
+
+<ul>
+	<li>Activation Method</li>
+</ul>
+
+<p>Press <strong>Shift+Tab</strong> to switch to Spec mode.</p>
+
+<ul>
+	<li>Workflow
+
+		<ol>
+			<li><strong>Describe the feature</strong> - Describe what you want to implement in 4-6 sentences</li>
+			<li><strong>Droid generates spec</strong> - Automatically analyzes codebase and generates detailed implementation plan</li>
+			<li><strong>Review and approve</strong> - You can modify or approve the plan</li>
+			<li><strong>Implementation</strong> - After approval, Droid begins execution, each change is shown for your review</li>
+		</ol></li>
+	<li>Safety Guarantees
+
+		<ul>
+			<li>Analysis phase is read-only, no files modified</li>
+			<li>All changes execute only after approval</li>
+			<li>Complete visibility of implementation plan</li>
+		</ul></li>
+	<li>Approval Options</li>
+</ul>
+
+<table>
+	<thead>
+		<tr>
+			<th>Option</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Proceed (Manual)</td>
+			<td>Approve plan, keep manual confirmation for each operation</td>
+		</tr>
+		<tr>
+			<td>Proceed + Auto (Low)</td>
+			<td>Approve plan, auto-execute file edits and read-only commands</td>
+		</tr>
+		<tr>
+			<td>Proceed + Auto (Medium)</td>
+			<td>+ Auto-execute reversible commands (npm install, etc.)</td>
+		</tr>
+		<tr>
+			<td>Proceed + Auto (High)</td>
+			<td>+ Auto-execute high-risk commands (git push, etc.)</td>
+		</tr>
+		<tr>
+			<td>Keep iterating</td>
+			<td>Continue modifying the spec</td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>Auto-Run Mode</h4>
+
+<p>Auto-Run Mode lets you control Droid's autonomous execution level.</p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Level</th>
+			<th>Auto-executed Operations</th>
+			<th>Examples</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Auto (Low)</td>
+			<td>File edits, read-only commands</td>
+			<td>ls, git status, rg</td>
+		</tr>
+		<tr>
+			<td>Auto (Medium)</td>
+			<td>+ Reversible workspace modifications</td>
+			<td>npm install, git commit, mv, cp</td>
+		</tr>
+		<tr>
+			<td>Auto (High)</td>
+			<td>+ High-risk commands (not explicitly forbidden)</td>
+			<td>git push, docker, database migrations</td>
+		</tr>
+	</tbody>
+</table>
+
+<ul>
+	<li>Switch Method
+
+		<ul>
+			<li>Press <strong>Shift+Tab</strong> to cycle: Normal → Spec → Auto (Low) → Auto (Medium) → Auto (High)</li>
+			<li>Or set default level in <code>/settings</code></li>
+		</ul></li>
+	<li>Safety Mechanisms (even in Auto (High) mode, these still require confirmation):
+
+		<ul>
+			<li>Dangerous commands (e.g., <code>rm -rf /</code>)</li>
+			<li>Command substitution (<code>$(...)</code> or backticks)</li>
+			<li>Operations flagged by CLI security checks</li>
+		</ul></li>
+</ul>
+
+<h4>Bash Mode</h4>
+
+<p>Bash Mode lets you execute Shell commands directly in Droid without AI interpretation.</p>
+
+<ul>
+	<li>Usage
+
+		<ol>
+			<li>Press <code>!</code> when input box is empty to enter Bash mode</li>
+			<li>Prompt changes from <code>&gt;</code> to <code>$</code></li>
+			<li>Enter any Shell command and press Enter to execute</li>
+			<li>Press <code>Esc</code> to return to AI conversation mode</li>
+		</ol></li>
+	<li>Use Cases
+
+		<ul>
+			<li>Quick check <code>git status</code></li>
+			<li>Run <code>npm test</code> or <code>make build</code></li>
+			<li>View file contents or directory structure</li>
+		</ul></li>
+</ul>
+
+<h4>Pricing Plans</h4>
+
+<p>Factory measures usage through Standard Tokens. Cached Tokens are billed at 1/10 rate (10 cached Tokens = 1 Standard Token).</p>
+
+<ul>
+	<li>Subscription Plans</li>
+</ul>
+
+<table>
+	<thead>
+		<tr>
+			<th>Plan</th>
+			<th>Standard Tokens / Month</th>
+			<th>Price / Month</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong>Free</strong></td>
+			<td>BYOK (Bring Your Own Key)</td>
+			<td>$0</td>
+		</tr>
+		<tr>
+			<td><strong>Pro</strong></td>
+			<td>10 million (+10 million bonus Tokens)</td>
+			<td>$20</td>
+		</tr>
+		<tr>
+			<td><strong>Max</strong></td>
+			<td>100 million (+100 million bonus Tokens)</td>
+			<td>$200</td>
+		</tr>
+		<tr>
+			<td><strong>Ultra</strong></td>
+			<td>1 billion (+1 billion bonus Tokens)</td>
+			<td>$2,000</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Overage is billed at <strong>$2.70 / million Standard Tokens</strong>.</p>
+
+<ul>
+	<li>Model Billing Multipliers</li>
+</ul>
+
+<p>Different models have different multipliers for calculating Standard Token usage:</p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Model</th>
+			<th>Model ID</th>
+			<th>Multiplier</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Gemini 3 Flash</td>
+			<td><code>gemini-3-flash-preview</code></td>
+			<td>0.2×</td>
+		</tr>
+		<tr>
+			<td>Droid Core</td>
+			<td><code>glm-4.6</code></td>
+			<td>0.25×</td>
+		</tr>
+		<tr>
+			<td>Claude Haiku 4.5</td>
+			<td><code>claude-haiku-4-5-20251001</code></td>
+			<td>0.4×</td>
+		</tr>
+		<tr>
+			<td>GPT-5.1</td>
+			<td><code>gpt-5.1</code></td>
+			<td>0.5×</td>
+		</tr>
+		<tr>
+			<td>GPT-5.1-Codex</td>
+			<td><code>gpt-5.1-codex</code></td>
+			<td>0.5×</td>
+		</tr>
+		<tr>
+			<td>GPT-5.1-Codex-Max</td>
+			<td><code>gpt-5.1-codex-max</code></td>
+			<td>0.5×</td>
+		</tr>
+		<tr>
+			<td>GPT-5.2</td>
+			<td><code>gpt-5.2</code></td>
+			<td>0.7×</td>
+		</tr>
+		<tr>
+			<td>Gemini 3 Pro</td>
+			<td><code>gemini-3-pro-preview</code></td>
+			<td>0.8×</td>
+		</tr>
+		<tr>
+			<td>Claude Sonnet 4.5</td>
+			<td><code>claude-sonnet-4-5-20250929</code></td>
+			<td>1.2×</td>
+		</tr>
+		<tr>
+			<td>Claude Opus 4.5</td>
+			<td><code>claude-opus-4-5-20251101</code></td>
+			<td>2×</td>
+		</tr>
+	</tbody>
+</table>
+
+<ul>
+	<li>Usage Recommendations</li>
+	<li><strong>Free Plan</strong>: Suitable for users who already have API Keys, no monthly fee</li>
+	<li><strong>Pro Plan</strong>: Suitable for individual developers' daily use, good value</li>
+	<li><strong>Caching Advantage</strong>: Factory's caching mechanism significantly reduces actual Token consumption, typically with 4-8x cache hit rate</li>
+</ul>
+
+<blockquote>
+<p>📚 <strong>Further Reading</strong>:</p>
+
+<ul>
+	<li><a href="https://docs.factory.ai/welcome">Factory Droid - Docs</a></li>
+</ul>
+</blockquote>
+
+<hr />
+
+<h2 id="4-byok---model-selection-guide">4. BYOK - Model Selection Guide</h2>
+
+<blockquote>
+<p>BYOK (Bring Your Own Key) lets you use your own API Key to access various LLM models.</p>
+</blockquote>
+
+<p>BYOK allows you to:</p>
+
+<ul>
+	<li>Use your own API Key to access models</li>
+	<li>Choose the model that best fits your needs</li>
+	<li>Control costs and usage</li>
+	<li>Use locally deployed models</li>
+</ul>
+
+<h3>4.1 How to Choose a Model</h3>
+
+<p><a href="https://swe-rebench.com/">SWE-Rebench</a> is a continuously updated software engineering LLM benchmark leaderboard that helps you understand how each model performs on real programming tasks.</p>
+
+<figure><img src="/images/posts/vibe-coding/CleanShot 2026-01-20 at 20.18.22@2x.png" alt="SWE-reBench: https://swe-rebench.com/"/><figcaption>SWE-reBench: <a href="https://swe-rebench.com/">https://swe-rebench.com/</a></figcaption></figure>
+
+<h4>Key Metrics Explained</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Metric</th>
+			<th>Meaning</th>
+			<th>Importance</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong>Resolved Rate</strong></td>
+			<td>Percentage of problems successfully solved</td>
+			<td>Most important, reflects model capability</td>
+		</tr>
+		<tr>
+			<td><strong>Pass@5</strong></td>
+			<td>Percentage of at least 1 success in 5 attempts</td>
+			<td>Reflects model stability</td>
+		</tr>
+		<tr>
+			<td><strong>Cost per Problem</strong></td>
+			<td>Average cost per problem</td>
+			<td>Affects usage cost</td>
+		</tr>
+		<tr>
+			<td><strong>Tokens per Problem</strong></td>
+			<td>Tokens consumed per problem</td>
+			<td>Reflects efficiency</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>4.2 Recommended Models (January 2026 Data)</h3>
+
+<p>Based on the latest SWE-Rebench data, here are model recommendations for different scenarios:</p>
+
+<h4>Top Performance</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Model</th>
+			<th>Resolved Rate</th>
+			<th>Pass@5</th>
+			<th>Cost/Problem</th>
+			<th>Features</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong><a href="https://www.anthropic.com/news/claude-opus-4-5">Claude Opus 4.5</a></strong></td>
+			<td>63.3%</td>
+			<td>79.2%</td>
+			<td>$1.22</td>
+			<td>Highest performance, first choice for complex tasks</td>
+		</tr>
+		<tr>
+			<td><strong><a href="https://openai.com/index/introducing-gpt-5-2/">GPT-5.2 xhigh</a></strong></td>
+			<td>61.5%</td>
+			<td>70.8%</td>
+			<td>$1.46</td>
+			<td>OpenAI strongest, powerful reasoning</td>
+		</tr>
+		<tr>
+			<td><strong><a href="https://blog.google/products-and-platforms/products/gemini/gemini-3-flash/">Gemini 3 Flash Preview</a></strong></td>
+			<td>60.0%</td>
+			<td>72.9%</td>
+			<td>$0.29</td>
+			<td>Excellent value</td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>Best Value</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Model</th>
+			<th>Resolved Rate</th>
+			<th>Pass@5</th>
+			<th>Cost/Problem</th>
+			<th>Features</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong><a href="https://blog.google/products-and-platforms/products/gemini/gemini-3-flash/">Gemini 3 Flash Preview</a></strong></td>
+			<td>60.0%</td>
+			<td>72.9%</td>
+			<td>$0.29</td>
+			<td>🏆 Best value king</td>
+		</tr>
+		<tr>
+			<td><strong><a href="https://openai.com/index/introducing-gpt-5-2/">GPT-5.2 medium</a></strong></td>
+			<td>59.4%</td>
+			<td>70.8%</td>
+			<td>$0.86</td>
+			<td>Balances performance and cost</td>
+		</tr>
+		<tr>
+			<td><strong><a href="https://www.anthropic.com/news/claude-sonnet-4-5">Claude Sonnet 4.5</a></strong></td>
+			<td>57.5%</td>
+			<td>75.0%</td>
+			<td>$0.98</td>
+			<td>First choice for daily tasks</td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>Open Source Models</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Model</th>
+			<th>Resolved Rate</th>
+			<th>Pass@5</th>
+			<th>Cost/Problem</th>
+			<th>Features</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong><a href="https://docs.z.ai/guides/llm/glm-4.7">GLM-4.7</a></strong></td>
+			<td>51.3%</td>
+			<td>66.7%</td>
+			<td>$0.40</td>
+			<td>🏆 Best open source</td>
+		</tr>
+		<tr>
+			<td><strong><a href="https://api-docs.deepseek.com/news/news251201">DeepSeek-V3.2</a></strong></td>
+			<td>48.5%</td>
+			<td>68.8%</td>
+			<td>$0.25</td>
+			<td>Can be locally deployed</td>
+		</tr>
+		<tr>
+			<td><strong><a href="https://moonshotai.github.io/Kimi-K2/thinking.html">Kimi K2 Thinking</a></strong></td>
+			<td>40.5%</td>
+			<td>60.4%</td>
+			<td>$0.48</td>
+			<td>Excellent Chinese domestic option</td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>Budget Friendly</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Model</th>
+			<th>Resolved Rate</th>
+			<th>Pass@5</th>
+			<th>Cost/Problem</th>
+			<th>Features</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong><a href="https://x.ai/news/grok-code-fast-1">Grok Code Fast 1</a></strong></td>
+			<td>35.9%</td>
+			<td>54.2%</td>
+			<td>$0.08</td>
+			<td>Cheapest</td>
+		</tr>
+		<tr>
+			<td><strong><a href="https://mistral.ai/news/devstral-2-vibe-cli">Devstral-2-123B</a></strong></td>
+			<td>36.6%</td>
+			<td>59.6%</td>
+			<td>$0.09</td>
+			<td>Open source, self-hostable</td>
+		</tr>
+		<tr>
+			<td><strong><a href="https://www.minimax.io/news/minimax-m21">MiniMax M2.1</a></strong></td>
+			<td>37.3%</td>
+			<td>58.3%</td>
+			<td>$0.10</td>
+			<td>Cache friendly</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr />
+
+<h3>4.3 BYOK Configuration</h3>
+
+<h4>Configure Custom Models</h4>
+
+<p>Configure custom models in <code>~/.factory/settings.json</code>:</p>
+
+<pre><code class="code-highlighted code-json">{
+  <span class="syntax-all syntax-string">&quot;customModels&quot;</span>: [
+    {
+      <span class="syntax-all syntax-string">&quot;model&quot;</span>: <span class="syntax-all syntax-string">&quot;gpt-5.2&quot;</span>,
+      <span class="syntax-all syntax-string">&quot;id&quot;</span>: <span class="syntax-all syntax-string">&quot;custom:my-gpt-5.2&quot;</span>,
+      <span class="syntax-all syntax-string">&quot;displayName&quot;</span>: <span class="syntax-all syntax-string">&quot;My GPT-5.2&quot;</span>,
+      <span class="syntax-all syntax-string">&quot;baseUrl&quot;</span>: <span class="syntax-all syntax-string">&quot;https://api.openai.com/v1&quot;</span>,
+      <span class="syntax-all syntax-string">&quot;apiKey&quot;</span>: <span class="syntax-all syntax-string">&quot;sk-your-api-key-here&quot;</span>,
+      <span class="syntax-all syntax-string">&quot;provider&quot;</span>: <span class="syntax-all syntax-string">&quot;openai&quot;</span>
+    },
+    {
+      <span class="syntax-all syntax-string">&quot;model&quot;</span>: <span class="syntax-all syntax-string">&quot;claude-opus-4-5&quot;</span>,
+      <span class="syntax-all syntax-string">&quot;id&quot;</span>: <span class="syntax-all syntax-string">&quot;custom:my-opus&quot;</span>,
+      <span class="syntax-all syntax-string">&quot;displayName&quot;</span>: <span class="syntax-all syntax-string">&quot;My Claude Opus&quot;</span>,
+      <span class="syntax-all syntax-string">&quot;baseUrl&quot;</span>: <span class="syntax-all syntax-string">&quot;https://api.anthropic.com/v1&quot;</span>,
+      <span class="syntax-all syntax-string">&quot;apiKey&quot;</span>: <span class="syntax-all syntax-string">&quot;sk-ant-your-key-here&quot;</span>,
+      <span class="syntax-all syntax-string">&quot;provider&quot;</span>: <span class="syntax-all syntax-string">&quot;anthropic&quot;</span>
+    },
+    {
+      <span class="syntax-all syntax-string">&quot;model&quot;</span>: <span class="syntax-all syntax-string">&quot;deepseek-v3.2&quot;</span>,
+      <span class="syntax-all syntax-string">&quot;id&quot;</span>: <span class="syntax-all syntax-string">&quot;custom:local-deepseek&quot;</span>,
+      <span class="syntax-all syntax-string">&quot;displayName&quot;</span>: <span class="syntax-all syntax-string">&quot;Local DeepSeek&quot;</span>,
+      <span class="syntax-all syntax-string">&quot;baseUrl&quot;</span>: <span class="syntax-all syntax-string">&quot;http://localhost:8080/v1&quot;</span>,
+      <span class="syntax-all syntax-string">&quot;apiKey&quot;</span>: <span class="syntax-all syntax-string">&quot;not-needed&quot;</span>,
+      <span class="syntax-all syntax-string">&quot;provider&quot;</span>: <span class="syntax-all syntax-string">&quot;openai&quot;</span>
+    }
+  ],
+  <span class="syntax-all syntax-string">&quot;sessionDefaultSettings&quot;</span>: {
+    <span class="syntax-all syntax-string">&quot;model&quot;</span>: <span class="syntax-all syntax-string">&quot;custom:my-gpt-5.2&quot;</span>
+  }
+}</code></pre>
+
+<h4>Configuration Parameter Description</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Parameter</th>
+			<th>Required</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>model</code></td>
+			<td>Yes</td>
+			<td>Model name, the model parameter sent to API</td>
+		</tr>
+		<tr>
+			<td><code>id</code></td>
+			<td>No</td>
+			<td>Unique identifier, format <code>custom:name</code>, used to select model in Droid</td>
+		</tr>
+		<tr>
+			<td><code>displayName</code></td>
+			<td>No</td>
+			<td>Name displayed in UI for easy identification</td>
+		</tr>
+		<tr>
+			<td><code>baseUrl</code></td>
+			<td>Yes</td>
+			<td>API endpoint address, different for each service</td>
+		</tr>
+		<tr>
+			<td><code>apiKey</code></td>
+			<td>Yes</td>
+			<td>API key, for local services use <code>not-needed</code></td>
+		</tr>
+		<tr>
+			<td><code>provider</code></td>
+			<td>Yes</td>
+			<td>Provider type: <code>openai</code>, <code>anthropic</code>, <code>generic-chat-completion-api</code></td>
+		</tr>
+		<tr>
+			<td><code>noImageSupport</code></td>
+			<td>No</td>
+			<td>Disable image support, default <code>false</code></td>
+		</tr>
+		<tr>
+			<td><code>maxOutputTokens</code></td>
+			<td>No</td>
+			<td>Maximum output tokens, recommended for local models</td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>Common baseUrl Reference</h4>
+
+<p><strong>International Services:</strong></p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Service</th>
+			<th>baseUrl</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>OpenAI</td>
+			<td><code>https://api.openai.com/v1</code></td>
+			<td>OpenAI official API</td>
+		</tr>
+		<tr>
+			<td>Anthropic</td>
+			<td><code>https://api.anthropic.com/v1</code></td>
+			<td>Anthropic official API</td>
+		</tr>
+		<tr>
+			<td>Google Gemini</td>
+			<td><code>https://generativelanguage.googleapis.com/v1beta/</code></td>
+			<td>Google AI Studio</td>
+		</tr>
+		<tr>
+			<td>OpenRouter</td>
+			<td><code>https://openrouter.ai/api/v1</code></td>
+			<td>Multi-model aggregation platform</td>
+		</tr>
+		<tr>
+			<td>Hugging Face</td>
+			<td><code>https://router.huggingface.co/v1</code></td>
+			<td>HF inference router</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>Chinese Services:</strong></p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Service</th>
+			<th>baseUrl</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>DeepSeek</td>
+			<td><code>https://api.deepseek.com/v1</code></td>
+			<td>DeepSeek official API</td>
+		</tr>
+		<tr>
+			<td>Zhipu AI (GLM)</td>
+			<td><code>https://open.bigmodel.cn/api/paas/v4</code></td>
+			<td>GLM series models</td>
+		</tr>
+		<tr>
+			<td>Alibaba Tongyi Qianwen</td>
+			<td><code>https://dashscope.aliyuncs.com/compatible-mode/v1</code></td>
+			<td>Qwen series models</td>
+		</tr>
+		<tr>
+			<td>Moonshot (Kimi)</td>
+			<td><code>https://api.moonshot.cn/v1</code></td>
+			<td>Kimi series models</td>
+		</tr>
+		<tr>
+			<td>Baidu Qianfan</td>
+			<td><code>https://aip.baidubce.com</code></td>
+			<td>Wenxin Yiyan</td>
+		</tr>
+		<tr>
+			<td>ByteDance Doubao</td>
+			<td><code>https://ark.cn-beijing.volces.com/api/v3</code></td>
+			<td>Doubao model</td>
+		</tr>
+		<tr>
+			<td>SiliconFlow</td>
+			<td><code>https://api.siliconflow.cn/v1</code></td>
+			<td>Chinese model aggregation platform</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>Local Deployment:</strong></p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Service</th>
+			<th>baseUrl</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Ollama Local</td>
+			<td><code>http://localhost:11434/v1</code></td>
+			<td>Local model deployment</td>
+		</tr>
+		<tr>
+			<td>vLLM</td>
+			<td><code>http://localhost:8000/v1</code></td>
+			<td>High-performance local inference</td>
+		</tr>
+		<tr>
+			<td>LM Studio</td>
+			<td><code>http://localhost:1234/v1</code></td>
+			<td>Desktop local model</td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>Using Local Deployed LLM</h4>
+
+<p><strong>Ollama (Recommended)</strong></p>
+
+<pre><code class="code-highlighted code-json">{
+ <span class="syntax-all syntax-string">&quot;customModels&quot;</span>: [
+   {
+     <span class="syntax-all syntax-string">&quot;model&quot;</span>: <span class="syntax-all syntax-string">&quot;qwen2.5-coder:32b&quot;</span>,
+     <span class="syntax-all syntax-string">&quot;displayName&quot;</span>: <span class="syntax-all syntax-string">&quot;Qwen 2.5 Coder 32B [Local]&quot;</span>,
+     <span class="syntax-all syntax-string">&quot;baseUrl&quot;</span>: <span class="syntax-all syntax-string">&quot;http://localhost:11434/v1&quot;</span>,
+     <span class="syntax-all syntax-string">&quot;apiKey&quot;</span>: <span class="syntax-all syntax-string">&quot;not-needed&quot;</span>,
+     <span class="syntax-all syntax-string">&quot;provider&quot;</span>: <span class="syntax-all syntax-string">&quot;generic-chat-completion-api&quot;</span>,
+     <span class="syntax-all syntax-string">&quot;maxOutputTokens&quot;</span>: <span class="syntax-all syntax-constant">16000</span>
+   }
+ ]
+}</code></pre>
+
+<p><strong>vLLM</strong></p>
+
+<pre><code class="code-highlighted code-json">{
+ <span class="syntax-all syntax-string">&quot;customModels&quot;</span>: [
+   {
+     <span class="syntax-all syntax-string">&quot;model&quot;</span>: <span class="syntax-all syntax-string">&quot;your-model&quot;</span>,
+     <span class="syntax-all syntax-string">&quot;displayName&quot;</span>: <span class="syntax-all syntax-string">&quot;vLLM Model&quot;</span>,
+     <span class="syntax-all syntax-string">&quot;baseUrl&quot;</span>: <span class="syntax-all syntax-string">&quot;http://localhost:8000/v1&quot;</span>,
+     <span class="syntax-all syntax-string">&quot;apiKey&quot;</span>: <span class="syntax-all syntax-string">&quot;not-needed&quot;</span>,
+     <span class="syntax-all syntax-string">&quot;provider&quot;</span>: <span class="syntax-all syntax-string">&quot;openai&quot;</span>
+   }
+ ]
+}</code></pre>
+
+<p><strong>LM Studio</strong></p>
+
+<pre><code>{
+ &quot;customModels&quot;: [
+   {
+     &quot;model&quot;: &quot;local-model&quot;,
+     &quot;displayName&quot;: &quot;LM Studio Model&quot;,
+     &quot;baseUrl&quot;: &quot;http://localhost:1234/v1&quot;,
+     &quot;apiKey&quot;: &quot;lm-studio&quot;,
+     &quot;provider&quot;: &quot;openai&quot;
+   }
+ ]
+}</code></pre>
+
+<blockquote>
+<p> ⚠️ <strong>Note</strong>: Use actual model name, baseUrl and apiKey when configuring.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="5-agent-skills">5. Agent Skills</h2>
+
+<p>Skills is the Claude Agent Skills system introduced by Anthropic in October 2025, fully supported by Factory Droid. Skills are composable, portable instruction sets that provide AI with domain-specific expertise and workflows.</p>
+
+<h3>What are Skills</h3>
+
+<p>Skills is an extensible capability system designed by Anthropic for Claude. Essentially, a Skill is a folder containing instructions, scripts, and resources that Claude can automatically load and use when executing related tasks.</p>
+
+<figure><img src="/images/posts/vibe-coding/CleanShot 2026-01-20 at 21.25.25@2x.png" alt="Agent Skills: https://agentskills.io/home"/><figcaption>Agent Skills: <a href="https://agentskills.io/home">https://agentskills.io/home</a></figcaption></figure>
+
+<h4>Core Features</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Feature</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Composable</td>
+			<td>Multiple Skills can be stacked together, Claude automatically identifies and coordinates</td>
+		</tr>
+		<tr>
+			<td>Portable</td>
+			<td>Build once, use across Claude Code, Factory Droid, API, and more</td>
+		</tr>
+		<tr>
+			<td>Efficient</td>
+			<td>Claude only loads information needed for current task, maintaining response speed</td>
+		</tr>
+		<tr>
+			<td>Powerful</td>
+			<td>Skills can include executable code for tasks requiring high reliability</td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>What Skills Do</h4>
+
+<ul>
+	<li>📋 Provide domain-specific best practices</li>
+	<li>🔄 Define standardized workflows</li>
+	<li>📝 Include templates and checklists</li>
+	<li>🎯 Ensure output quality and consistency</li>
+</ul>
+
+<h3>5.1 Recommended Skills</h3>
+
+<h4 id="planning-with-files---complex-task-planning">planning-with-files - Complex Task Planning</h4>
+
+<blockquote>
+<p>Suitable for complex tasks requiring multiple steps, using Manus-style file-based planning.</p>
+</blockquote>
+
+<ul>
+	<li><strong>Core Philosophy:</strong></li>
+</ul>
+
+<p>Context window = Memory (volatile, limited)</p>
+
+<p>File system = Disk (persistent, unlimited)</p>
+
+<p>→ Write important things to files</p>
+
+<ul>
+	<li><strong>Usage:</strong></li>
+</ul>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Create three planning files in project directory
+</span>task_plan.md   <span class="syntax-all syntax-comment"># Task plan and progress
+</span>findings.md    <span class="syntax-all syntax-comment"># Research findings
+</span>progress.md    <span class="syntax-all syntax-comment"># Session log
+</span></code></pre>
+
+<ul>
+	<li><strong>task_plan.md Example:</strong></li>
+</ul>
+
+<pre><code class="code-highlighted code-markdown"><span class="syntax-all syntax-heading"># Task Plan: Implement User Authentication</span>
+
+<span class="syntax-all syntax-heading">## Goal</span>
+Implement complete user authentication system including registration, login, logout.
+
+<span class="syntax-all syntax-heading">## Phases</span>
+<span class="syntax-all syntax-list">- [x] </span>Phase 1: Database model design
+<span class="syntax-all syntax-list">- [ ] </span>Phase 2: API endpoint implementation
+<span class="syntax-all syntax-list">- [ ] </span>Phase 3: Frontend forms
+<span class="syntax-all syntax-list">- [ ] </span>Phase 4: Testing
+
+<span class="syntax-all syntax-heading">## Current Status</span>
+Working on Phase 2
+
+<span class="syntax-all syntax-heading">## Issues Encountered</span>
+| Issue | Attempts | Solution |
+|-------|----------|----------|
+| JWT expiration handling | 1 | Add refresh token |</code></pre>
+
+<h4>brainstorming - Creative Brainstorming</h4>
+
+<blockquote>
+<p>Use before starting any creative work to help clarify requirements and design.</p>
+</blockquote>
+
+<ul>
+	<li><strong>Workflow:</strong>
+
+		<ol>
+			<li>Understand current project context</li>
+			<li>Ask one question at a time to refine ideas</li>
+			<li>Propose 2-3 different options with trade-offs</li>
+			<li>Present design in segments, confirm each before continuing</li>
+		</ol></li>
+</ul>
+
+<h4>test-driven-development - TDD Development</h4>
+
+<blockquote>
+<p>Enforces test-driven development workflow.</p>
+</blockquote>
+
+<ul>
+	<li><strong>Core Principle:</strong></li>
+</ul>
+
+<p>No failing test, no production code</p>
+
+<ul>
+	<li><strong>Red-Green-Refactor Cycle:</strong>
+
+		<ol>
+			<li><strong>RED</strong> - Write a failing test</li>
+			<li><strong>Verify RED</strong> - Confirm test fails for the right reason</li>
+			<li><strong>GREEN</strong> - Write minimal code to make test pass</li>
+			<li><strong>Verify GREEN</strong> - Confirm test passes</li>
+			<li><strong>REFACTOR</strong> - Refactor code while keeping tests passing</li>
+		</ol></li>
+</ul>
+
+<h4>verification-before-completion - Pre-completion Verification</h4>
+
+<blockquote>
+<p>Prevents claiming work is complete without verification.</p>
+</blockquote>
+
+<ul>
+	<li><strong>Core Principle:</strong></li>
+</ul>
+
+<p>No completion claims without verification evidence.</p>
+
+<ul>
+	<li><strong>Verification Checklist:</strong>
+
+		<ul>
+			<li><a href="">&nbsp;</a> Run test command, confirm 0 failures</li>
+			<li><a href="">&nbsp;</a> Run lint command, confirm 0 errors</li>
+			<li><a href="">&nbsp;</a> Run build command, confirm success</li>
+			<li><a href="">&nbsp;</a> Check each requirement is satisfied</li>
+		</ul></li>
+</ul>
+
+<h4>code-simplifier - Code Simplification</h4>
+
+<blockquote>
+<p>Automatically applied after writing or modifying code to simplify and optimize.</p>
+</blockquote>
+
+<ul>
+	<li><strong>Optimization Directions:</strong>
+
+		<ul>
+			<li>Reduce unnecessary complexity and nesting</li>
+			<li>Eliminate redundant code</li>
+			<li>Improve naming</li>
+			<li>Follow project coding conventions</li>
+		</ul></li>
+</ul>
+
+<h3>6.3 Skills Installation and Configuration</h3>
+
+<h4>Installation Locations</h4>
+
+<p>Skills can be installed in two locations:</p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Location</th>
+			<th>Scope</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>~/.factory/skills/</code></td>
+			<td>Personal Skills</td>
+			<td>Cross-project use, only visible to you</td>
+		</tr>
+		<tr>
+			<td><code>&lt;project&gt;/.factory/skills/</code></td>
+			<td>Project Skills</td>
+			<td>Shared with team, follows project repository</td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>Install from droid-skills Repository</h4>
+
+<p>Recommended to install pre-configured Skills from <a href="https://github.com/neardws/droid-skills">droid-skills</a> repository:</p>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Clone repository
+</span>git clone https://github.com/neardws/droid-skills.git
+<span class="syntax-all syntax-constant">cd</span> droid-skills
+
+<span class="syntax-all syntax-comment"># Install as personal Skill (cross-project use)
+</span>cp -r skills/planning-with-files <span class="syntax-all syntax-keyword">~</span>/.factory/skills/
+cp -r skills/md-table-formatter <span class="syntax-all syntax-keyword">~</span>/.factory/skills/
+
+<span class="syntax-all syntax-comment"># Install superpowers suite (14 Skills)
+</span>cp -r skills/superpowers/<span class="syntax-all syntax-keyword">*</span> <span class="syntax-all syntax-keyword">~</span>/.factory/skills/
+
+<span class="syntax-all syntax-comment"># Or install as project Skill (share with team)
+</span>cp -r skills/planning-with-files <span class="syntax-all syntax-keyword">&lt;</span>your-project<span class="syntax-all syntax-keyword">&gt;</span>/.factory/skills/</code></pre>
+
+<p>Restart <code>droid</code> to load newly installed Skills.</p>
+
+<h4>Available Skills List</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Skill</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>planning-with-files</td>
+			<td>Manus-style file-based task planning</td>
+		</tr>
+		<tr>
+			<td>md-table-formatter</td>
+			<td>Auto-format Markdown tables</td>
+		</tr>
+		<tr>
+			<td>superpowers (14 total)</td>
+			<td>Complete development workflow suite</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>superpowers suite includes:</strong></p>
+
+<ul>
+	<li>brainstorming - Interactive design brainstorming</li>
+	<li>writing-plans - Detailed implementation plan writing</li>
+	<li>executing-plans - Batch execution with checkpoints</li>
+	<li>test-driven-development - RED-GREEN-REFACTOR cycle</li>
+	<li>systematic-debugging - Four-phase root cause analysis</li>
+	<li>verification-before-completion - Pre-completion verification</li>
+	<li>requesting-code-review - Code review requests</li>
+	<li>receiving-code-review - Responding to review feedback</li>
+	<li>And more...</li>
+</ul>
+
+<h4>Create Custom Skill</h4>
+
+<p>Create <code>~/.factory/skills/my-skill/SKILL.md</code>:</p>
+
+<pre><code class="code-highlighted code-markdown">---
+name: my-skill
+description: This is my custom skill description
+---
+
+<span class="syntax-all syntax-heading"># My Skill</span>
+
+<span class="syntax-all syntax-heading">## Overview</span>
+Describe what this skill does...
+
+<span class="syntax-all syntax-heading">## When to Use</span>
+When to use this skill...
+
+<span class="syntax-all syntax-heading">## Process</span>
+Specific workflow...</code></pre>
+
+<h4>Skills Related Resources</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Resource</th>
+			<th>Description</th>
+			<th>Link</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Skills Manager Client</td>
+			<td>Skills management client tool</td>
+			<td><a href="https://github.com/buzhangsan/skills-manager-client">https://github.com/buzhangsan/skills-manager-client</a></td>
+		</tr>
+		<tr>
+			<td>Superpowers</td>
+			<td>Complete development workflow Skills suite</td>
+			<td><a href="https://github.com/obra/superpowers">https://github.com/obra/superpowers</a></td>
+		</tr>
+		<tr>
+			<td>Planning With Files</td>
+			<td>Manus-style file-based planning Skill</td>
+			<td><a href="https://github.com/OthmanAdi/planning-with-files">https://github.com/OthmanAdi/planning-with-files</a></td>
+		</tr>
+		<tr>
+			<td>Agent Skills</td>
+			<td>Community Skills collection</td>
+			<td><a href="https://github.com/agentskills/agentskills">https://github.com/agentskills/agentskills</a></td>
+		</tr>
+		<tr>
+			<td>Awesome Claude Skills</td>
+			<td>Curated Claude Skills list</td>
+			<td><a href="https://github.com/travisvn/awesome-claude-skills">https://github.com/travisvn/awesome-claude-skills</a></td>
+		</tr>
+		<tr>
+			<td>Claude Plugins Official</td>
+			<td>Anthropic official plugins/Skills</td>
+			<td><a href="https://github.com/anthropics/claude-plugins-official">https://github.com/anthropics/claude-plugins-official</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<hr />
+
+<h2 id="6-mcp-model-context-protocol">6. MCP (Model Context Protocol)</h2>
+
+<p>MCP (Model Context Protocol) is an open-source standard protocol by Anthropic for connecting AI applications with external systems. Think of MCP as the USB-C port for AI applications - just as USB-C provides standardized connectivity for electronic devices, MCP provides standardized connectivity for AI applications to external systems.</p>
+
+<figure><img src="/images/posts/vibe-coding/CleanShot 2026-01-20 at 21.29.08@2x.png" alt="MCP: https://modelcontextprotocol.io/docs/getting-started/intro"/><figcaption>MCP: <a href="https://modelcontextprotocol.io/docs/getting-started/intro">https://modelcontextprotocol.io/docs/getting-started/intro</a></figcaption></figure>
+
+<h3>6.1 MCP Concepts</h3>
+
+<h4>What MCP Can Do</h4>
+
+<ul>
+	<li>🗓️ AI assistant can access your Google Calendar and Notion to provide more personalized services</li>
+	<li>🎨 Claude Code can generate complete Web applications based on Figma design specs</li>
+	<li>🏢 Enterprise chatbots can connect to multiple databases, letting users analyze data through conversation</li>
+	<li>🖨️ AI models can create 3D designs in Blender and print them with 3D printers</li>
+</ul>
+
+<h4>MCP Core Components</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Component</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Tools</td>
+			<td>Executable functions like search, compute, API calls</td>
+		</tr>
+		<tr>
+			<td>Resources</td>
+			<td>Data sources like files, database records</td>
+		</tr>
+		<tr>
+			<td>Prompts</td>
+			<td>Predefined prompt templates for specific workflows</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>6.2 MCP Configuration</h3>
+
+<p>Configuration file is located at <code>~/.factory/mcp.json</code>:</p>
+
+<pre><code class="code-highlighted code-json">{
+  <span class="syntax-all syntax-string">&quot;mcpServers&quot;</span>: {
+    <span class="syntax-all syntax-string">&quot;filesystem&quot;</span>: {
+      <span class="syntax-all syntax-string">&quot;command&quot;</span>: <span class="syntax-all syntax-string">&quot;npx&quot;</span>,
+      <span class="syntax-all syntax-string">&quot;args&quot;</span>: [<span class="syntax-all syntax-string">&quot;-y&quot;</span>, <span class="syntax-all syntax-string">&quot;@modelcontextprotocol/server-filesystem&quot;</span>, <span class="syntax-all syntax-string">&quot;/path/to/allowed/directory&quot;</span>]
+    },
+    <span class="syntax-all syntax-string">&quot;github&quot;</span>: {
+      <span class="syntax-all syntax-string">&quot;command&quot;</span>: <span class="syntax-all syntax-string">&quot;npx&quot;</span>,
+      <span class="syntax-all syntax-string">&quot;args&quot;</span>: [<span class="syntax-all syntax-string">&quot;-y&quot;</span>, <span class="syntax-all syntax-string">&quot;@modelcontextprotocol/server-github&quot;</span>],
+      <span class="syntax-all syntax-string">&quot;env&quot;</span>: {
+        <span class="syntax-all syntax-string">&quot;GITHUB_PERSONAL_ACCESS_TOKEN&quot;</span>: <span class="syntax-all syntax-string">&quot;your-token-here&quot;</span>
+      }
+    },
+    <span class="syntax-all syntax-string">&quot;postgres&quot;</span>: {
+      <span class="syntax-all syntax-string">&quot;command&quot;</span>: <span class="syntax-all syntax-string">&quot;npx&quot;</span>,
+      <span class="syntax-all syntax-string">&quot;args&quot;</span>: [<span class="syntax-all syntax-string">&quot;-y&quot;</span>, <span class="syntax-all syntax-string">&quot;@modelcontextprotocol/server-postgres&quot;</span>],
+      <span class="syntax-all syntax-string">&quot;env&quot;</span>: {
+        <span class="syntax-all syntax-string">&quot;DATABASE_URL&quot;</span>: <span class="syntax-all syntax-string">&quot;postgresql://user:password@localhost:5432/mydb&quot;</span>
+      }
+    }
+  }
+}</code></pre>
+
+<h3>6.3 Using Smithery to Install MCP Servers</h3>
+
+<p><a href="https://smithery.ai/">Smithery</a> is currently the largest MCP Server marketplace, offering 3700+ MCP applications. Recommended to use Smithery for discovering and installing MCP Servers.</p>
+
+<h4>Smithery Advantages</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Feature</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Authentication</td>
+			<td>Built-in OAuth, no need to implement auth flow yourself</td>
+		</tr>
+		<tr>
+			<td>Observability</td>
+			<td>View tool usage to optimize AI experience</td>
+		</tr>
+		<tr>
+			<td>Distribution</td>
+			<td>Publish to Smithery, connect from any AI client</td>
+		</tr>
+		<tr>
+			<td>Protocol Gateway</td>
+			<td>Smithery stays in sync with MCP spec, no maintenance needed</td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>Popular MCP Servers</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Server</th>
+			<th>Purpose</th>
+			<th>Connections</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Gmail</td>
+			<td>Email management</td>
+			<td>10.13k</td>
+		</tr>
+		<tr>
+			<td>Linkup</td>
+			<td>Web search</td>
+			<td>9.53k</td>
+		</tr>
+		<tr>
+			<td>Google Super</td>
+			<td>Google suite</td>
+			<td>6.73k</td>
+		</tr>
+		<tr>
+			<td>GitHub</td>
+			<td>Code repository management</td>
+			<td>5.98k</td>
+		</tr>
+		<tr>
+			<td>Google Calendar</td>
+			<td>Schedule management</td>
+			<td>5.63k</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>6.4 Common MCP Servers</h3>
+
+<h4>Official Servers</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Server</th>
+			<th>Purpose</th>
+			<th>Installation</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>server-filesystem</code></td>
+			<td>File system access</td>
+			<td><code>@modelcontextprotocol/server-filesystem</code></td>
+		</tr>
+		<tr>
+			<td><code>server-github</code></td>
+			<td>GitHub operations</td>
+			<td><code>@modelcontextprotocol/server-github</code></td>
+		</tr>
+		<tr>
+			<td><code>server-postgres</code></td>
+			<td>PostgreSQL database</td>
+			<td><code>@modelcontextprotocol/server-postgres</code></td>
+		</tr>
+		<tr>
+			<td><code>server-sqlite</code></td>
+			<td>SQLite database</td>
+			<td><code>@modelcontextprotocol/server-sqlite</code></td>
+		</tr>
+		<tr>
+			<td><code>server-fetch</code></td>
+			<td>HTTP requests</td>
+			<td><code>@modelcontextprotocol/server-fetch</code></td>
+		</tr>
+		<tr>
+			<td><code>server-puppeteer</code></td>
+			<td>Browser automation</td>
+			<td><code>@modelcontextprotocol/server-puppeteer</code></td>
+		</tr>
+		<tr>
+			<td><code>server-brave-search</code></td>
+			<td>Brave search</td>
+			<td><code>@modelcontextprotocol/server-brave-search</code></td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>Community Servers</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Server</th>
+			<th>Purpose</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Notion</td>
+			<td>Knowledge base management</td>
+			<td>Smithery</td>
+		</tr>
+		<tr>
+			<td>Slack</td>
+			<td>Team communication</td>
+			<td>Smithery</td>
+		</tr>
+		<tr>
+			<td>Linear</td>
+			<td>Project management</td>
+			<td>Smithery</td>
+		</tr>
+		<tr>
+			<td>Figma</td>
+			<td>Design collaboration</td>
+			<td>Smithery</td>
+		</tr>
+		<tr>
+			<td>MongoDB</td>
+			<td>NoSQL database</td>
+			<td>Smithery</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>6.5 MCP Related Resources</h3>
+
+<table>
+	<thead>
+		<tr>
+			<th>Resource</th>
+			<th>Description</th>
+			<th>Link</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>MCP Official Docs</td>
+			<td>Protocol spec and development guide</td>
+			<td>https://modelcontextprotocol.io/</td>
+		</tr>
+		<tr>
+			<td>Smithery</td>
+			<td>MCP Server marketplace (recommended)</td>
+			<td>https://smithery.ai/</td>
+		</tr>
+		<tr>
+			<td>MCP Official Registry</td>
+			<td>Official MCP Server registry</td>
+			<td>https://registry.modelcontextprotocol.io/</td>
+		</tr>
+		<tr>
+			<td>Awesome MCP Servers</td>
+			<td>Curated MCP Servers list</td>
+			<td>https://github.com/punkpeye/awesome-mcp-servers</td>
+		</tr>
+		<tr>
+			<td>MCP Servers Official Repo</td>
+			<td>Anthropic official Servers</td>
+			<td>https://github.com/modelcontextprotocol/servers</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr />
+
+<h2 id="7-advanced-customization">7. Advanced Customization</h2>
+
+<p>Factory Droid provides various customization features to extend AI capabilities according to your team and project needs.</p>
+
+<h3>7.1 AGENTS.md - AI Agent's Instruction Manual</h3>
+
+<p>AGENTS.md is a Markdown file that serves as a "briefing package" for AI programming agents, telling AI how to build, test, and run your project.</p>
+
+<h4>Why AGENTS.md is Needed</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>File</th>
+			<th>Purpose</th>
+			<th>Audience</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>README.md</td>
+			<td>Quick start, project description</td>
+			<td>Human developers</td>
+		</tr>
+		<tr>
+			<td>AGENTS.md</td>
+			<td>Build steps, testing, conventions</td>
+			<td>AI programming agents</td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>File Location and Discovery</h4>
+
+<p>Agents look for AGENTS.md in this order (first match wins):</p>
+
+<ol>
+	<li><code>./AGENTS.md</code> in current working directory</li>
+	<li>Search upward to repository root</li>
+	<li><code>AGENTS.md</code> in subfolders</li>
+	<li>Personal override: <code>~/.factory/AGENTS.md</code></li>
+</ol>
+
+<h4>Common Sections</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Section</th>
+			<th>Content</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Build &amp; Test</td>
+			<td>Exact commands to compile and run test suite</td>
+		</tr>
+		<tr>
+			<td>Architecture</td>
+			<td>One-paragraph summary of main modules and data flow</td>
+		</tr>
+		<tr>
+			<td>Security</td>
+			<td>API keys, endpoints, auth flows, sensitive data</td>
+		</tr>
+		<tr>
+			<td>Git Workflows</td>
+			<td>Branch strategy, commit conventions, PR requirements</td>
+		</tr>
+		<tr>
+			<td>Conventions</td>
+			<td>Folder structure, naming patterns, code style</td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>Example</h4>
+
+<pre><code class="code-highlighted code-markdown"><span class="syntax-all syntax-heading"># MyProject</span>
+
+<span class="syntax-all syntax-heading">## Core Commands</span>
+
+• Type-check and lint: `pnpm check`
+• Run full test suite: `pnpm test --run --no-color`
+• Start dev servers: `pnpm dev`
+• Build for production: `pnpm build`
+
+<span class="syntax-all syntax-heading">## Project Layout</span>
+
+├─ client/ → React + Vite frontend
+├─ server/ → Express backend
+
+<span class="syntax-all syntax-heading">## Development Patterns</span>
+
+• TypeScript strict mode, single quotes, trailing commas
+• Tests first when fixing logic bugs
+• Never introduce new runtime deps without PR description
+
+<span class="syntax-all syntax-heading">## Git Workflow</span>
+
+<span class="syntax-all syntax-list">1. </span>Branch from `main`: `feature/&lt;slug&gt;` or `bugfix/&lt;slug&gt;`
+<span class="syntax-all syntax-list">2. </span>Run `pnpm check` locally before committing
+<span class="syntax-all syntax-list">3. </span>Keep commits atomic: `feat: …`, `test: …`</code></pre>
+
+<h4>Best Practices</h4>
+
+<ul>
+	<li><strong>Keep it short</strong> - Target ≤150 lines, too long slows down the agent</li>
+	<li><strong>Use concrete commands</strong> - Wrap commands in backticks, agents can copy directly</li>
+	<li><strong>Update with code</strong> - Sync AGENTS.md when build steps change</li>
+	<li><strong>Single source of truth</strong> - Link to README or design docs, don't copy-paste</li>
+</ul>
+
+<h4>Cross-Agent Compatibility</h4>
+
+<p>AGENTS.md is compatible with multiple AI programming tools:</p>
+
+<ul>
+	<li>Factory Droid</li>
+	<li>Cursor</li>
+	<li>Aider</li>
+	<li>Gemini CLI</li>
+	<li>Codex</li>
+	<li>Zed</li>
+	<li>And more...</li>
+</ul>
+
+<hr />
+
+<h3>7.2 Custom Slash Commands</h3>
+
+<p>Custom Slash Commands convert repeatable prompts or setup steps into <code>/shortcuts</code>. Droid scans the <code>.factory/commands</code> folder and converts each file into a command.</p>
+
+<h4>Command Discovery and Naming</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Scope</th>
+			<th>Location</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Workspace</td>
+			<td><code>&lt;project&gt;/.factory/commands</code></td>
+			<td>Project-specific commands, shared with team</td>
+		</tr>
+		<tr>
+			<td>Personal</td>
+			<td><code>~/.factory/commands</code></td>
+			<td>Private or cross-project shortcuts</td>
+		</tr>
+	</tbody>
+</table>
+
+<ul>
+	<li>Only Markdown (<code>*.md</code>) files and files with shebang (<code>#!</code>) are registered</li>
+	<li>Filename auto-converts to slug: <code>Code Review.md</code> → <code>/code-review</code></li>
+	<li>Use <code>/commands</code> to open command management UI</li>
+</ul>
+
+<h4>Markdown Commands</h4>
+
+<p>Markdown files render as system notifications, seeding Droid's next conversation turn.</p>
+
+<pre><code class="code-highlighted code-markdown">---
+description: Request code review
+argument-hint: &lt;branch-name<span class="syntax-all syntax-constant">&gt;</span>
+---
+
+Please review `$ARGUMENTS` and summarize any merge blockers, test gaps, and risk areas.
+
+<span class="syntax-all syntax-list">- </span>Highlight security or performance issues
+<span class="syntax-all syntax-list">- </span>Suggest follow-up tasks and owners
+<span class="syntax-all syntax-list">- </span>List files needing attention</code></pre>
+
+<table>
+	<thead>
+		<tr>
+			<th>Front Matter</th>
+			<th>Purpose</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>description</code></td>
+			<td>Overrides summary shown in slash suggestions</td>
+		</tr>
+		<tr>
+			<td><code>argument-hint</code></td>
+			<td>Adds inline usage hint like <code>/review &lt;branch-name&gt;</code></td>
+		</tr>
+	</tbody>
+</table>
+
+<p><code>$ARGUMENTS</code> expands to everything typed after the command name.</p>
+
+<h4>Executable Commands</h4>
+
+<p>Executable files must start with a valid shebang:</p>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment">#!/usr/bin/env bash
+</span><span class="syntax-all syntax-constant">set</span> -euo pipefail
+
+<span class="syntax-all syntax-constant">echo</span> <span class="syntax-all syntax-string">&quot;Preparing </span><span class="syntax-all syntax-constant">$1</span><span class="syntax-all syntax-string">&quot;</span>
+npm install
+npm run lint
+<span class="syntax-all syntax-constant">echo</span> <span class="syntax-all syntax-string">&quot;Ready to deploy </span><span class="syntax-all syntax-constant">$1</span><span class="syntax-all syntax-string">&quot;</span></code></pre>
+
+<p>Saved as <code>deploy.sh</code>, appears as <code>/deploy</code>. Use <code>/deploy feature/login</code> to pass arguments.</p>
+
+<h4>Example Commands</h4>
+
+<p><strong>Daily Standup Helper:</strong></p>
+
+<pre><code class="code-highlighted code-markdown">---
+description: Summarize progress for standup
+---
+
+Draft a standup update using this format:
+
+<span class="syntax-all syntax-list">- </span><span class="syntax-all syntax-bold">**Yesterday:**</span> Key achievements, merged PRs, blockers cleared
+<span class="syntax-all syntax-list">- </span><span class="syntax-all syntax-bold">**Today:**</span> Planned work items and goals
+<span class="syntax-all syntax-list">- </span><span class="syntax-all syntax-bold">**Risks:**</span> Anything that might cause delays, support needed, cross-team dependencies
+
+Keep it to three short bullet sections.</code></pre>
+
+<p><strong>Regression Smoke Test:</strong></p>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment">#!/usr/bin/env bash
+</span><span class="syntax-all syntax-constant">set</span> -euo pipefail
+
+target=<span class="syntax-all syntax-parameter">${1</span><span class="syntax-all syntax-keyword">:-</span><span class="syntax-all syntax-string">&quot;src&quot;</span><span class="syntax-all syntax-parameter">}</span>
+
+<span class="syntax-all syntax-constant">echo</span> <span class="syntax-all syntax-string">&quot;Running lint + unit tests for </span><span class="syntax-all syntax-constant">$target</span><span class="syntax-all syntax-string">&quot;</span>
+npm run lint -- <span class="syntax-all syntax-string">&quot;</span><span class="syntax-all syntax-constant">$target</span><span class="syntax-all syntax-string">&quot;</span>
+npm <span class="syntax-all syntax-constant">test</span> -- --runTestsByPath <span class="syntax-all syntax-string">&quot;</span><span class="syntax-all syntax-constant">$target</span><span class="syntax-all syntax-string">&quot;</span>
+
+<span class="syntax-all syntax-constant">echo</span> <span class="syntax-all syntax-string">&quot;Done&quot;</span></code></pre>
+
+<hr />
+
+<h3>7.3 Custom Droids - Custom Subagents</h3>
+
+<p>Custom Droids are reusable subagents, each Droid carries its own system prompt, model preferences, and tool strategies, and can handle specific tasks like code review, security checks, or research without repeating instructions.</p>
+
+<h4>What are Custom Droids</h4>
+
+<p>Custom Droids are stored as <code>.md</code> files in <code>.factory/droids/</code> or <code>~/.factory/droids/</code>. The CLI scans these folders, validates each definition, and exposes them as <strong>Task</strong> tool <code>subagent_type</code> targets, letting the main assistant launch specialized helpers during a session.</p>
+
+<h4>Difference Between Custom Droids and Skills</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Feature</th>
+			<th>Skills</th>
+			<th>Custom Droids</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Nature</td>
+			<td>Knowledge and guidance</td>
+			<td>Independent specialized AI agents</td>
+		</tr>
+		<tr>
+			<td>Execution</td>
+			<td>Enhances main AI capabilities</td>
+			<td>Runs independently as subagent</td>
+		</tr>
+		<tr>
+			<td>Context</td>
+			<td>Shares main session context</td>
+			<td>Independent context window</td>
+		</tr>
+		<tr>
+			<td>Tool Access</td>
+			<td>Uses main AI's tools</td>
+			<td>Can be limited to specific toolset</td>
+		</tr>
+		<tr>
+			<td>Model Selection</td>
+			<td>Uses main AI's model</td>
+			<td>Can specify different model</td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>Storage Locations</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Location</th>
+			<th>Scope</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>&lt;project&gt;/.factory/droids/</code></td>
+			<td>Project Droids</td>
+			<td>Shared with team, version controllable</td>
+		</tr>
+		<tr>
+			<td><code>~/.factory/droids/</code></td>
+			<td>Personal Droids</td>
+			<td>Cross-workspace use, only visible to you</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>Note</strong>: When names are the same, project definitions override personal definitions.</p>
+
+<h4>Why Use Custom Droids</h4>
+
+<ul>
+	<li><strong>Faster task delegation</strong> - Encode complex checklists once, reuse via single tool call</li>
+	<li><strong>Stricter security</strong> - Restrict agents to read-only, edit-only, or specific toolsets</li>
+	<li><strong>Context isolation</strong> - Each subagent uses a new context window, avoiding prompt bloat</li>
+	<li><strong>Repeatable processes</strong> - Encode team-specific review, test, or release checks as version-controlled code</li>
+</ul>
+
+<h4>Create Custom Droid</h4>
+
+<p><strong>Method 1: Using UI Wizard</strong></p>
+
+<ol>
+	<li>Run <code>/droids</code> to open Droids menu</li>
+	<li>Select <strong>Create a new Droid</strong></li>
+	<li>Choose storage location (project or personal)</li>
+	<li>Describe what the Droid should do</li>
+	<li>Generate or manually edit system prompt</li>
+	<li>Confirm identifier, model, and tools</li>
+</ol>
+
+<p><strong>Method 2: Create File Manually</strong></p>
+
+<p>Create <code>~/.factory/droids/code-reviewer.md</code>:</p>
+
+<pre><code class="code-highlighted code-markdown">---
+name: code-reviewer
+description: Focused reviewer checking diff for correctness risks
+model: inherit
+tools: [<span class="syntax-all syntax-entity">&quot;Read&quot;, &quot;LS&quot;, &quot;Grep&quot;, &quot;Glob&quot;</span>]
+---
+
+You are the team's senior reviewer. Check the diff shared by parent agent:
+
+<span class="syntax-all syntax-list">- </span>Flag correctness, security, and migration risks
+<span class="syntax-all syntax-list">- </span>If changes needed, list targeted follow-up tasks
+<span class="syntax-all syntax-list">- </span>Confirm tests or manual verification needed before merge
+
+Reply format:
+Summary: &lt;one-line summary<span class="syntax-all syntax-constant">&gt;</span>
+Findings:
+<span class="syntax-all syntax-list">- </span>&lt;bullet<span class="syntax-all syntax-constant">&gt;</span>
+<span class="syntax-all syntax-list">- </span>&lt;bullet<span class="syntax-all syntax-constant">&gt;</span></code></pre>
+
+<h4>Configuration Field Description</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Field</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>name</code></td>
+			<td>Required. Lowercase letters, numbers, <code>-</code>, <code>_</code>. Determines <code>subagent_type</code> value and filename</td>
+		</tr>
+		<tr>
+			<td><code>description</code></td>
+			<td>Optional. Shown in UI list, ≤500 chars</td>
+		</tr>
+		<tr>
+			<td><code>model</code></td>
+			<td><code>inherit</code> (use parent session model) or specific model ID like <code>claude-sonnet-4-5-20250929</code></td>
+		</tr>
+		<tr>
+			<td><code>reasoningEffort</code></td>
+			<td>Optional. Set reasoning depth: <code>low</code>, <code>medium</code>, <code>high</code></td>
+		</tr>
+		<tr>
+			<td><code>tools</code></td>
+			<td>Omit for all tools; use category strings or tool ID arrays</td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>Tool Categories</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Category</th>
+			<th>Tool IDs</th>
+			<th>Purpose</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>read-only</code></td>
+			<td><code>Read</code>, <code>LS</code>, <code>Grep</code>, <code>Glob</code></td>
+			<td>Safe analysis and file exploration</td>
+		</tr>
+		<tr>
+			<td><code>edit</code></td>
+			<td><code>Create</code>, <code>Edit</code>, <code>ApplyPatch</code></td>
+			<td>Code generation and modification</td>
+		</tr>
+		<tr>
+			<td><code>execute</code></td>
+			<td><code>Execute</code></td>
+			<td>Shell command execution</td>
+		</tr>
+		<tr>
+			<td><code>web</code></td>
+			<td><code>WebSearch</code>, <code>FetchUrl</code></td>
+			<td>Web research and content</td>
+		</tr>
+		<tr>
+			<td><code>mcp</code></td>
+			<td>Dynamically populated</td>
+			<td>MCP tools</td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>Using Custom Droids</h4>
+
+<p><strong>Via Natural Language:</strong></p>
+
+<pre><code>Please use code-reviewer subagent to review this diff</code></pre>
+
+<pre><code>Run security-sweeper droid to check recently edited files</code></pre>
+
+<p><strong>Via Task Tool:</strong></p>
+
+<p>Droid can autonomously invoke custom Droids, or you can request directly.</p>
+
+<h4>Import Agents from Claude Code</h4>
+
+<p>If you've already created agents in Claude Code, you can import them directly:</p>
+
+<ol>
+	<li>Run <code>/droids</code> to open Droids menu</li>
+	<li>Press <strong>I</strong> to start import flow</li>
+	<li>CLI scans Claude Code agent directories:</li>
+	<li>Project scope: <code>&lt;project&gt;/.claude/agents/</code></li>
+	<li>Personal scope: <code>~/.claude/agents/</code></li>
+	<li>Use <strong>Space</strong> to toggle selection, <strong>A</strong> to select all</li>
+	<li>Press <strong>Enter</strong> to import</li>
+</ol>
+
+<p>Model mapping during import:</p>
+
+<ul>
+	<li><code>sonnet</code> → First available Sonnet model</li>
+	<li><code>haiku</code> → First available Haiku model</li>
+	<li><code>opus</code> → First available Opus model</li>
+</ul>
+
+<h4>Example Droids</h4>
+
+<p><strong>Security Sweeper:</strong></p>
+
+<pre><code class="code-highlighted code-markdown">---
+name: security-sweeper
+description: Find insecure patterns in recently edited files
+model: inherit
+tools: [<span class="syntax-all syntax-entity">&quot;Read&quot;, &quot;Grep&quot;, &quot;WebSearch&quot;</span>]
+---
+
+Investigate files referenced in prompt for security issues:
+
+<span class="syntax-all syntax-list">- </span>Identify injection, insecure transport, privilege escalation, or secret exposure
+<span class="syntax-all syntax-list">- </span>Suggest specific mitigations
+<span class="syntax-all syntax-list">- </span>Link to relevant CWE or internal standards when helpful
+
+Reply format:
+Summary: &lt;headline<span class="syntax-all syntax-constant">&gt;</span>
+Findings:
+<span class="syntax-all syntax-list">- </span>&lt;file<span class="syntax-all syntax-constant">&gt;: &lt;issue&gt;</span>
+Mitigations:
+<span class="syntax-all syntax-list">- </span>&lt;suggestion<span class="syntax-all syntax-constant">&gt;</span></code></pre>
+
+<p><strong>Task Coordinator:</strong></p>
+
+<pre><code class="code-highlighted code-markdown">---
+name: task-coordinator
+description: Coordinate multi-step tasks and update progress in real-time
+model: inherit
+tools: [<span class="syntax-all syntax-entity">&quot;Read&quot;, &quot;Edit&quot;, &quot;Execute&quot;</span>]
+---
+
+You are a task coordinator. Break down goals into actionable steps:
+
+<span class="syntax-all syntax-list">1. </span>Use TodoWrite to create and update task lists
+<span class="syntax-all syntax-list">2. </span>For each task, read relevant files and execute commands as needed
+<span class="syntax-all syntax-list">3. </span>Report progress in real-time using TodoWrite
+
+Keep task list status updated (pending, in_progress, completed).</code></pre>
+
+<h4>Best Practices</h4>
+
+<table>
+	<thead>
+		<tr>
+			<th>Practice</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Choose models strategically</td>
+			<td>Use smaller models for simple tasks to reduce cost, larger models for complex reasoning</td>
+		</tr>
+		<tr>
+			<td>Limit tool access</td>
+			<td>Use explicit tool lists to prevent accidental shell commands or dangerous operations</td>
+		</tr>
+		<tr>
+			<td>Structured output</td>
+			<td>Organize prompts to output sections like <code>Summary:</code> and <code>Findings:</code></td>
+		</tr>
+		<tr>
+			<td>Version control sharing</td>
+			<td>Commit <code>.factory/droids/*.md</code> to repository, share with team</td>
+		</tr>
+		<tr>
+			<td>Leverage real-time updates</td>
+			<td>Task tool now streams live progress, showing tool calls and results</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr />
+
+<h2 id="8-workflow-examples">8. Workflow Examples</h2>
+
+<p>Let's demonstrate the complete Vibe Coding workflow through a comprehensive example - implementing a CartPole reinforcement learning game with complete frontend and backend.</p>
+
+<h3>Scenario: CartPole Reinforcement Learning Game</h3>
+
+<p>CartPole is a classic reinforcement learning problem: keep a pole balanced by moving a cart left and right. We'll use Vibe Coding to complete:</p>
+
+<ul>
+	<li><strong>Backend</strong>: Python + FastAPI, implementing environment simulation and DQN algorithm</li>
+	<li><strong>Frontend</strong>: React + Canvas, real-time visualization of training process</li>
+</ul>
+
+<figure><img src="/images/posts/vibe-coding/CleanShot 2026-01-20 at 22.32.54@2x.png" alt="CartPole Game Interface"/><figcaption>CartPole Game Interface</figcaption></figure>
+
+<h3>Step 1: Create Project and Start Droid</h3>
+
+<pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Create project directory
+</span>mkdir cartpole-rl <span class="syntax-all syntax-keyword">&amp;&amp;</span> <span class="syntax-all syntax-constant">cd</span> cartpole-rl
+
+<span class="syntax-all syntax-comment"># Start Droid, enter Spec Mode
+</span>droid
+<span class="syntax-all syntax-comment"># Press Shift+Tab to switch to Spec mode
+</span></code></pre>
+
+<h3>Step 2: Describe Requirements (Spec Mode)</h3>
+
+<p>Enter detailed requirements in Spec mode:</p>
+
+<pre><code class="code-highlighted code-bash">I want to create a CartPole reinforcement learning visualization project:
+
+<span class="syntax-all syntax-comment">## Backend (Python + FastAPI)
+</span>1. CartPole environment simulation
+   - Physics parameters: cart mass, pole length, gravity, etc.
+   - State: [position, velocity, angle, angular velocity]
+   - Actions: left(0) or right(1)
+   
+2. DQN algorithm implementation
+   - Neural network: 2 fully connected layers, input 4D state, output 2 action Q-values
+   - Experience replay buffer
+   - Target network soft update
+   
+3. API endpoints
+   - POST /train/start - Start training
+   - POST /train/stop - Stop training  
+   - GET /train/status - Get training status
+   - WebSocket /ws/game - Real-time game state push
+
+<span class="syntax-all syntax-comment">## Frontend (React + Vite)
+</span>1. Canvas visualization
+   - Draw cart, pole, track
+   - Real-time position and angle updates
+   
+2. Control panel
+   - Start/Pause/Reset buttons
+   - Training episode count display
+   - Current reward display
+   
+3. Training curve chart
+   - Display total reward per episode
+   - Use Chart.js or Recharts
+
+Please give me an implementation plan first.</code></pre>
+
+<h3>Step 3: Review and Approve Plan</h3>
+
+<p>Droid will generate a detailed implementation plan including:</p>
+
+<pre><code class="code-highlighted code-markdown"> Specification for approval
+
+ Project Structure
+
+ cartpole-rl/
+ ├── backend/
+ │   ├── main.py<span class="syntax-all syntax-constant">              # FastAPI entry</span>
+ │   ├── cartpole_env.py<span class="syntax-all syntax-constant">      # CartPole environment implementation</span>
+ │   ├── dqn_agent.py<span class="syntax-all syntax-constant">         # DQN algorithm</span>
+ │   ├── training_manager.py  # Training state management
+ │   └── requirements.txt
+ ├── frontend/
+ │   ├── src/
+ │   │   ├── App.tsx
+ │   │   ├── components/
+ │   │   │   ├── CartPoleCanvas.tsx   # Canvas visualization
+ │   │   │   ├── ControlPanel.tsx<span class="syntax-all syntax-constant">     # Control panel</span>
+ │   │   │   └── TrainingChart.tsx<span class="syntax-all syntax-constant">    # Training curve</span>
+ │   │   ├── hooks/
+ │   │   │   └── useWebSocket.ts<span class="syntax-all syntax-constant">      # WebSocket hook</span>
+ │   │   └── api/
+ │   │<span class="syntax-all syntax-constant">       └── training.ts          # API calls</span>
+ │   ├── package.json
+ │   └── vite.config.ts
+ └── README.md
+
+Backend Implementation Steps
+
+<span class="syntax-all syntax-list">1. </span>CartPole Environment (`cartpole_env.py`)
+•  Custom implementation (no Gym dependency) for control and debugging
+•  Configurable physics: gravity 9.8, cart mass 1.0, pole mass 0.1, pole length 0.5
+•  step(action) returns (state, reward, done)
+•  reset() resets environment
+
+<span class="syntax-all syntax-list">2. </span>DQN Agent (`dqn_agent.py`)
+•  Neural network with PyTorch: 4 → 128 → 128 → 2
+•  Experience replay: deque buffer, capacity 10000
+•  Target network: soft update τ=0.005
+•  ε-greedy policy: ε decays from 1.0 to 0.01
+
+<span class="syntax-all syntax-list">3. </span>Training Manager (`training_manager.py`)
+•  Background thread runs training loop
+•  Maintains training state: episode, reward, running flag
+•  Sends state to WebSocket via queue each step
+
+<span class="syntax-all syntax-list">4. </span>FastAPI Endpoints (`main.py`)
+
+python
+ POST /train/start<span class="syntax-all syntax-constant">    # Start training thread</span>
+ POST /train/stop<span class="syntax-all syntax-constant">     # Stop training</span>
+ GET  /train/status   # Return {episode, total_reward, epsilon}
+ WS   /ws/game<span class="syntax-all syntax-constant">        # Push {cart_x, pole_angle, reward, done}</span>
+
+Frontend Implementation Steps
+
+<span class="syntax-all syntax-list">1. </span>Project Initialization
+•  npm create vite@latest frontend -- --template react-ts
+•  Install dependencies: recharts (charts)
+
+<span class="syntax-all syntax-list">2. </span>CartPoleCanvas Component
+•  Canvas size 600x400
+•  Draw: track (bottom line), cart (rectangle), pole (rotating line)
+•  Use requestAnimationFrame for smooth animation
+
+<span class="syntax-all syntax-list">3. </span>ControlPanel Component
+•  Buttons: Start Training, Stop Training, Reset
+•  Display: Current episode, cumulative reward, ε value
+
+<span class="syntax-all syntax-list">4. </span>TrainingChart Component
+•  Use Recharts LineChart
+•  X-axis: episode number, Y-axis: total reward
+•  Real-time data updates
+
+<span class="syntax-all syntax-list">5. </span>WebSocket Connection
+•  Custom useWebSocket hook
+•  Auto-reconnect mechanism
+•  Parse messages to update Canvas state
+
+Dependencies
+
+Backend:
+•  fastapi, uvicorn, websockets
+•  torch (PyTorch)
+•  numpy
+
+Frontend:
+•  react, typescript
+•  recharts
+•  vite
+
+How to Run
+
+bash
+<span class="syntax-all syntax-heading"> # Backend</span>
+ cd backend <span class="syntax-all syntax-error">&amp;&amp;</span> pip install -r requirements.txt <span class="syntax-all syntax-error">&amp;&amp;</span> uvicorn main:app --reload
+
+<span class="syntax-all syntax-heading"> # Frontend</span>
+ cd frontend <span class="syntax-all syntax-error">&amp;&amp;</span> npm install <span class="syntax-all syntax-error">&amp;&amp;</span> npm run dev
+
+Estimated total code ~800-1000 lines, completable in 1-2 hours.</code></pre>
+
+<p>Select <strong>Proceed + Auto (Medium)</strong> to let Droid execute automatically.</p>
+
+<figure><img src="/images/posts/vibe-coding/CleanShot 2026-01-20 at 22.25.44@2x.png" alt="Review and Approve Plan"/><figcaption>Review and Approve Plan</figcaption></figure>
+
+<h3>Step 4: Watch AI Code</h3>
+
+<p>Droid will automatically create files, and you can watch in real-time:</p>
+
+<p><strong>Backend Core Code Example (AI Generated):</strong></p>
+
+<pre><code class="code-highlighted code-python"><span class="syntax-all syntax-comment"># backend/env/cartpole.py
+</span><span class="syntax-all syntax-keyword">import</span> numpy <span class="syntax-all syntax-keyword">as</span> np
+
+<span class="syntax-all syntax-keyword">class</span> <span class="syntax-all syntax-entity">CartPoleEnv</span>:
+    <span class="syntax-all syntax-keyword">def</span> <span class="syntax-all syntax-constant">__init__</span>(<span class="syntax-all syntax-parameter">self</span>):
+        <span class="syntax-all syntax-constant">self</span>.gravity <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">9.8</span>
+        <span class="syntax-all syntax-constant">self</span>.cart_mass <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">1.0</span>
+        <span class="syntax-all syntax-constant">self</span>.pole_mass <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">0.1</span>
+        <span class="syntax-all syntax-constant">self</span>.pole_length <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">0.5</span>
+        <span class="syntax-all syntax-constant">self</span>.force_mag <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">10.0</span>
+        <span class="syntax-all syntax-constant">self</span>.tau <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">0.02</span>  <span class="syntax-all syntax-comment"># Time step
+</span>        
+        <span class="syntax-all syntax-constant">self</span>.state <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">None</span>
+        <span class="syntax-all syntax-constant">self</span>.reset()
+    
+    <span class="syntax-all syntax-keyword">def</span> <span class="syntax-all syntax-entity">reset</span>(<span class="syntax-all syntax-parameter">self</span>):
+        <span class="syntax-all syntax-comment"># Random initial state [x, x_dot, theta, theta_dot]
+</span>        <span class="syntax-all syntax-constant">self</span>.state <span class="syntax-all syntax-keyword">=</span> np.random.uniform(<span class="syntax-all syntax-keyword">-</span><span class="syntax-all syntax-constant">0.05</span>, <span class="syntax-all syntax-constant">0.05</span>, <span class="syntax-all syntax-parameter">size</span><span class="syntax-all syntax-keyword">=</span>(<span class="syntax-all syntax-constant">4</span>,))
+        <span class="syntax-all syntax-keyword">return</span> <span class="syntax-all syntax-constant">self</span>.state.copy()
+    
+    <span class="syntax-all syntax-keyword">def</span> <span class="syntax-all syntax-entity">step</span>(<span class="syntax-all syntax-parameter">self</span>, <span class="syntax-all syntax-parameter">action</span>):
+        x, x_dot, theta, theta_dot <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">self</span>.state
+        force <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">self</span>.force_mag <span class="syntax-all syntax-keyword">if</span> action <span class="syntax-all syntax-keyword">==</span> <span class="syntax-all syntax-constant">1</span> <span class="syntax-all syntax-keyword">else</span> <span class="syntax-all syntax-keyword">-</span><span class="syntax-all syntax-constant">self</span>.force_mag
+        
+        <span class="syntax-all syntax-comment"># Physics simulation (simplified Euler method)
+</span>        cos_theta, sin_theta <span class="syntax-all syntax-keyword">=</span> np.cos(theta), np.sin(theta)
+        total_mass <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">self</span>.cart_mass <span class="syntax-all syntax-keyword">+</span> <span class="syntax-all syntax-constant">self</span>.pole_mass
+        
+        temp <span class="syntax-all syntax-keyword">=</span> (force <span class="syntax-all syntax-keyword">+</span> <span class="syntax-all syntax-constant">self</span>.pole_mass <span class="syntax-all syntax-keyword">*</span> <span class="syntax-all syntax-constant">self</span>.pole_length <span class="syntax-all syntax-keyword">*</span> theta_dot<span class="syntax-all syntax-keyword">**</span><span class="syntax-all syntax-constant">2</span> <span class="syntax-all syntax-keyword">*</span> sin_theta) <span class="syntax-all syntax-keyword">/</span> total_mass
+        theta_acc <span class="syntax-all syntax-keyword">=</span> (<span class="syntax-all syntax-constant">self</span>.gravity <span class="syntax-all syntax-keyword">*</span> sin_theta <span class="syntax-all syntax-keyword">-</span> cos_theta <span class="syntax-all syntax-keyword">*</span> temp) <span class="syntax-all syntax-keyword">/</span> (
+            <span class="syntax-all syntax-constant">self</span>.pole_length <span class="syntax-all syntax-keyword">*</span> (<span class="syntax-all syntax-constant">4</span><span class="syntax-all syntax-keyword">/</span><span class="syntax-all syntax-constant">3</span> <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-constant">self</span>.pole_mass <span class="syntax-all syntax-keyword">*</span> cos_theta<span class="syntax-all syntax-keyword">**</span><span class="syntax-all syntax-constant">2</span> <span class="syntax-all syntax-keyword">/</span> total_mass)
+        )
+        x_acc <span class="syntax-all syntax-keyword">=</span> temp <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-constant">self</span>.pole_mass <span class="syntax-all syntax-keyword">*</span> <span class="syntax-all syntax-constant">self</span>.pole_length <span class="syntax-all syntax-keyword">*</span> theta_acc <span class="syntax-all syntax-keyword">*</span> cos_theta <span class="syntax-all syntax-keyword">/</span> total_mass
+        
+        <span class="syntax-all syntax-comment"># Update state
+</span>        x <span class="syntax-all syntax-keyword">+=</span> <span class="syntax-all syntax-constant">self</span>.tau <span class="syntax-all syntax-keyword">*</span> x_dot
+        x_dot <span class="syntax-all syntax-keyword">+=</span> <span class="syntax-all syntax-constant">self</span>.tau <span class="syntax-all syntax-keyword">*</span> x_acc
+        theta <span class="syntax-all syntax-keyword">+=</span> <span class="syntax-all syntax-constant">self</span>.tau <span class="syntax-all syntax-keyword">*</span> theta_dot
+        theta_dot <span class="syntax-all syntax-keyword">+=</span> <span class="syntax-all syntax-constant">self</span>.tau <span class="syntax-all syntax-keyword">*</span> theta_acc
+        
+        <span class="syntax-all syntax-constant">self</span>.state <span class="syntax-all syntax-keyword">=</span> np.array([x, x_dot, theta, theta_dot])
+        
+        <span class="syntax-all syntax-comment"># Check if done
+</span>        done <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">abs</span>(x) <span class="syntax-all syntax-keyword">&gt;</span> <span class="syntax-all syntax-constant">2.4</span> <span class="syntax-all syntax-keyword">or</span> <span class="syntax-all syntax-constant">abs</span>(theta) <span class="syntax-all syntax-keyword">&gt;</span> <span class="syntax-all syntax-constant">0.21</span>  <span class="syntax-all syntax-comment"># About 12 degrees
+</span>        reward <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">1.0</span> <span class="syntax-all syntax-keyword">if</span> <span class="syntax-all syntax-keyword">not</span> done <span class="syntax-all syntax-keyword">else</span> <span class="syntax-all syntax-constant">0.0</span>
+        
+        <span class="syntax-all syntax-keyword">return</span> <span class="syntax-all syntax-constant">self</span>.state.copy(), reward, done</code></pre>
+
+<p><strong>Frontend Visualization Example (AI Generated):</strong></p>
+
+<pre><code class="code-highlighted code-tsx"><span class="syntax-all syntax-comment">// frontend/src/components/CartPoleCanvas.tsx
+</span><span class="syntax-all syntax-keyword">import</span> { <span class="syntax-all syntax-parameter">useEffect</span>, <span class="syntax-all syntax-parameter">useRef</span> } <span class="syntax-all syntax-keyword">from</span> <span class="syntax-all syntax-string">&#39;react&#39;</span>;
+
+<span class="syntax-all syntax-keyword">interface</span> <span class="syntax-all syntax-entity">GameState</span> {
+  x<span class="syntax-all syntax-keyword">:</span> <span class="syntax-all syntax-constant">number</span>;
+  theta<span class="syntax-all syntax-keyword">:</span> <span class="syntax-all syntax-constant">number</span>;
+  reward<span class="syntax-all syntax-keyword">:</span> <span class="syntax-all syntax-constant">number</span>;
+  episode<span class="syntax-all syntax-keyword">:</span> <span class="syntax-all syntax-constant">number</span>;
+}
+
+<span class="syntax-all syntax-keyword">export</span> <span class="syntax-all syntax-keyword">function</span> CartPoleCanvas({ <span class="syntax-all syntax-variable">state</span> }<span class="syntax-all syntax-keyword">:</span> { state<span class="syntax-all syntax-keyword">:</span> <span class="syntax-all syntax-entity">GameState</span> }) {
+  <span class="syntax-all syntax-keyword">const</span> canvasRef <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-entity">useRef</span>&lt;<span class="syntax-all syntax-entity">HTMLCanvasElement</span>&gt;(<span class="syntax-all syntax-constant">null</span>);
+  
+  <span class="syntax-all syntax-entity">useEffect</span>(() <span class="syntax-all syntax-keyword">=&gt;</span> {
+    <span class="syntax-all syntax-keyword">const</span> canvas <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">canvasRef</span>.<span class="syntax-all syntax-constant">current</span>;
+    <span class="syntax-all syntax-keyword">if</span> (<span class="syntax-all syntax-keyword">!</span><span class="syntax-all syntax-parameter">canvas</span>) <span class="syntax-all syntax-keyword">return</span>;
+    
+    <span class="syntax-all syntax-keyword">const</span> ctx <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">canvas</span>.<span class="syntax-all syntax-constant">getContext</span>(<span class="syntax-all syntax-string">&#39;2d&#39;</span>)<span class="syntax-all syntax-keyword">!</span>;
+    <span class="syntax-all syntax-keyword">const</span> width <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">canvas</span>.<span class="syntax-all syntax-constant">width</span>;
+    <span class="syntax-all syntax-keyword">const</span> height <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">canvas</span>.<span class="syntax-all syntax-constant">height</span>;
+    
+    <span class="syntax-all syntax-comment">// Clear canvas
+</span>    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">fillStyle</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;#1a1a2e&#39;</span>;
+    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">fillRect</span>(<span class="syntax-all syntax-constant">0</span>, <span class="syntax-all syntax-constant">0</span>, <span class="syntax-all syntax-parameter">width</span>, <span class="syntax-all syntax-parameter">height</span>);
+    
+    <span class="syntax-all syntax-comment">// Coordinate transformation
+</span>    <span class="syntax-all syntax-keyword">const</span> scale <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">100</span>;
+    <span class="syntax-all syntax-keyword">const</span> cartX <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">width</span> <span class="syntax-all syntax-keyword">/</span> <span class="syntax-all syntax-constant">2</span> <span class="syntax-all syntax-keyword">+</span> <span class="syntax-all syntax-parameter">state</span>.<span class="syntax-all syntax-constant">x</span> <span class="syntax-all syntax-keyword">*</span> <span class="syntax-all syntax-parameter">scale</span>;
+    <span class="syntax-all syntax-keyword">const</span> cartY <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">height</span> <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-constant">50</span>;
+    <span class="syntax-all syntax-keyword">const</span> cartWidth <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">60</span>;
+    <span class="syntax-all syntax-keyword">const</span> cartHeight <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">30</span>;
+    <span class="syntax-all syntax-keyword">const</span> poleLength <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">100</span>;
+    
+    <span class="syntax-all syntax-comment">// Draw track
+</span>    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">strokeStyle</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;#4a4a6a&#39;</span>;
+    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">lineWidth</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">3</span>;
+    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">beginPath</span>();
+    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-constant">moveTo</span>(<span class="syntax-all syntax-constant">0</span>, <span class="syntax-all syntax-parameter">cartY</span> <span class="syntax-all syntax-keyword">+</span> <span class="syntax-all syntax-parameter">cartHeight</span> <span class="syntax-all syntax-keyword">/</span> <span class="syntax-all syntax-constant">2</span>);
+    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">lineTo</span>(<span class="syntax-all syntax-parameter">width</span>, <span class="syntax-all syntax-parameter">cartY</span> <span class="syntax-all syntax-keyword">+</span> <span class="syntax-all syntax-parameter">cartHeight</span> <span class="syntax-all syntax-keyword">/</span> <span class="syntax-all syntax-constant">2</span>);
+    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">stroke</span>();
+    
+    <span class="syntax-all syntax-comment">// Draw cart
+</span>    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">fillStyle</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;#00d4ff&#39;</span>;
+    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">fillRect</span>(<span class="syntax-all syntax-parameter">cartX</span> <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-parameter">cartWidth</span> <span class="syntax-all syntax-keyword">/</span> <span class="syntax-all syntax-constant">2</span>, <span class="syntax-all syntax-parameter">cartY</span> <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-parameter">cartHeight</span> <span class="syntax-all syntax-keyword">/</span> <span class="syntax-all syntax-constant">2</span>, <span class="syntax-all syntax-parameter">cartWidth</span>, <span class="syntax-all syntax-parameter">cartHeight</span>);
+    
+    <span class="syntax-all syntax-comment">// Draw pole
+</span>    <span class="syntax-all syntax-keyword">const</span> poleEndX <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">cartX</span> <span class="syntax-all syntax-keyword">+</span> <span class="syntax-all syntax-constant">Math</span>.<span class="syntax-all syntax-constant">sin</span>(<span class="syntax-all syntax-parameter">state</span>.<span class="syntax-all syntax-parameter">theta</span>) <span class="syntax-all syntax-keyword">*</span> <span class="syntax-all syntax-parameter">poleLength</span>;
+    <span class="syntax-all syntax-keyword">const</span> poleEndY <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">cartY</span> <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-constant">Math</span>.<span class="syntax-all syntax-constant">cos</span>(<span class="syntax-all syntax-parameter">state</span>.<span class="syntax-all syntax-parameter">theta</span>) <span class="syntax-all syntax-keyword">*</span> <span class="syntax-all syntax-parameter">poleLength</span>;
+    
+    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">strokeStyle</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;#ff6b6b&#39;</span>;
+    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">lineWidth</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">8</span>;
+    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">lineCap</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;round&#39;</span>;
+    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">beginPath</span>();
+    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-constant">moveTo</span>(<span class="syntax-all syntax-parameter">cartX</span>, <span class="syntax-all syntax-parameter">cartY</span> <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-parameter">cartHeight</span> <span class="syntax-all syntax-keyword">/</span> <span class="syntax-all syntax-constant">2</span>);
+    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">lineTo</span>(<span class="syntax-all syntax-parameter">poleEndX</span>, <span class="syntax-all syntax-parameter">poleEndY</span>);
+    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">stroke</span>();
+    
+    <span class="syntax-all syntax-comment">// Draw info
+</span>    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">fillStyle</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;#ffffff&#39;</span>;
+    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">font</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;16px monospace&#39;</span>;
+    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">fillText</span>(<span class="syntax-all syntax-string">`Episode: ${</span><span class="syntax-all syntax-constant">state</span><span class="syntax-all syntax-string">.</span><span class="syntax-all syntax-constant">episode</span><span class="syntax-all syntax-string">}`</span>, <span class="syntax-all syntax-constant">10</span>, <span class="syntax-all syntax-constant">25</span>);
+    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">fillText</span>(<span class="syntax-all syntax-string">`Reward: ${</span><span class="syntax-all syntax-constant">state</span><span class="syntax-all syntax-string">.</span><span class="syntax-all syntax-constant">reward</span><span class="syntax-all syntax-string">.</span><span class="syntax-all syntax-entity">toFixed</span><span class="syntax-all syntax-string">(</span><span class="syntax-all syntax-constant">1</span><span class="syntax-all syntax-string">)}`</span>, <span class="syntax-all syntax-constant">10</span>, <span class="syntax-all syntax-constant">50</span>);
+    
+  }, [<span class="syntax-all syntax-parameter">state</span>]);
+  
+  <span class="syntax-all syntax-keyword">return</span> &lt;<span class="syntax-all syntax-tag">canvas</span> <span class="syntax-all syntax-entity">ref</span><span class="syntax-all syntax-keyword">=</span>{<span class="syntax-all syntax-parameter">canvasRef</span>} <span class="syntax-all syntax-entity">width</span><span class="syntax-all syntax-keyword">=</span>{<span class="syntax-all syntax-constant">600</span>} <span class="syntax-all syntax-entity">height</span><span class="syntax-all syntax-keyword">=</span>{<span class="syntax-all syntax-constant">400</span>} /&gt;;
+}</code></pre>
+
+<h3>Step 5: Iterative Optimization</h3>
+
+<p>Training not working well? Continue the conversation with Droid:</p>
+
+<pre><code>Trained for 100 episodes but the pole still falls quickly, please help me:
+1. Check if the reward function design is reasonable
+2. Adjust neural network structure or hyperparameters
+3. Add moving average to the reward curve for easier trend observation</code></pre>
+
+<p>Droid will analyze the problem and propose improvements:</p>
+
+<pre><code>Analysis found several issues:
+
+1. **Sparse reward** - Only giving +1 for survival, change to:
+   - Base survival reward +1
+   - Extra reward for angle close to vertical
+   - Extra reward for position close to center
+
+2. **Learning rate too high** - Reduce from 0.001 to 0.0005
+
+3. **Insufficient exploration** - epsilon decays too fast, adjust to decay over 500 episodes
+
+Applying modifications...</code></pre>
+
+<h3>Step 6: Run and Verify</h3>
+
+<pre><code class="code-highlighted code-bash">Project complete! Structure as follows:
+
+ cartpole-rl/
+ ├── backend/
+ │   ├── main.py              <span class="syntax-all syntax-comment"># FastAPI entry + WebSocket
+</span> │   ├── cartpole_env.py      <span class="syntax-all syntax-comment"># CartPole physics simulation
+</span> │   ├── dqn_agent.py         <span class="syntax-all syntax-comment"># DQN neural network + experience replay
+</span> │   ├── training_manager.py  <span class="syntax-all syntax-comment"># Background training thread management
+</span> │   └── requirements.txt
+ └── frontend/
+     └── src/
+         ├── App.tsx
+         ├── components/       <span class="syntax-all syntax-comment"># Canvas, control panel, charts
+</span>         ├── hooks/            <span class="syntax-all syntax-comment"># WebSocket hook
+</span>         └── api/              <span class="syntax-all syntax-comment"># REST API calls
+</span>
+How to run:
+
+bash
+ <span class="syntax-all syntax-comment"># Terminal 1 - Backend
+</span> <span class="syntax-all syntax-constant">cd</span> backend
+ pip install -r requirements.txt
+ python main.py
+
+ <span class="syntax-all syntax-comment"># Terminal 2 - Frontend
+</span> <span class="syntax-all syntax-constant">cd</span> frontend
+ npm run dev
+
+Then visit http://localhost:5173, click <span class="syntax-all syntax-string">&quot;Start Training&quot;</span> to begin DQN training, visualization will show the cart pole balancing state and training curve in real-time.</code></pre>
+
+<p>Open browser and visit <code>http://localhost:5173</code> to watch AI learn to keep the pole balanced!</p>
+
+<figure><img src="/images/posts/vibe-coding/CleanShot 2026-01-20 at 22.35.01.gif" alt="CartPole DQN Training"/><figcaption>CartPole DQN Training</figcaption></figure>
+
+<h3>Complete Project Structure</h3>
+
+<pre><code>cartpole-rl/
+├── backend/
+│   ├── main.py              # FastAPI entry
+│   ├── requirements.txt
+│   ├── env/
+│   │   └── cartpole.py      # Environment simulation
+│   └── agent/
+│       ├── dqn.py           # DQN algorithm
+│       └── replay_buffer.py # Experience replay
+├── frontend/
+│   ├── package.json
+│   ├── src/
+│   │   ├── App.tsx
+│   │   ├── components/
+│   │   │   ├── CartPoleCanvas.tsx
+│   │   │   ├── ControlPanel.tsx
+│   │   │   └── RewardChart.tsx
+│   │   └── hooks/
+│   │       └── useWebSocket.ts
+│   └── vite.config.ts
+└── README.md</code></pre>
+
+<h3>Key Takeaways</h3>
+
+<p>Through this example, you experienced the complete Vibe Coding workflow:</p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Phase</th>
+			<th>Traditional Development</th>
+			<th>Vibe Coding</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Requirements Analysis</td>
+			<td>Manually write documentation</td>
+			<td>Natural language description, AI generates plan</td>
+		</tr>
+		<tr>
+			<td>Architecture Design</td>
+			<td>Manually draw diagrams</td>
+			<td>Spec Mode iterative confirmation</td>
+		</tr>
+		<tr>
+			<td>Coding Implementation</td>
+			<td>Write code line by line</td>
+			<td>AI generates, human reviews</td>
+		</tr>
+		<tr>
+			<td>Debugging Optimization</td>
+			<td>Manually analyze issues</td>
+			<td>Describe problem, AI locates and fixes</td>
+		</tr>
+		<tr>
+			<td>Test Verification</td>
+			<td>Manually write tests</td>
+			<td>AI generates test cases</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>From zero to a running full-stack RL project, the entire process may only take 30 minutes!</strong></p>
+
+<hr />
+
+<h2 id="9-summary-and-resources">9. Summary and Resources</h2>
+
+<h3>Summary</h3>
+
+<p>Through this tutorial, you have learned:</p>
+
+<ol>
+	<li>✅ Configure modern terminals (Kitty/Warp)</li>
+	<li>✅ Beautify Shell environment (Oh-My-Zsh + Powerlevel10k)</li>
+	<li>✅ Install and configure Factory Droid</li>
+	<li>✅ Choose the right LLM model (BYOK)</li>
+	<li>✅ Use Skills to enhance AI capabilities</li>
+	<li>✅ Configure MCP for extended functionality</li>
+	<li>✅ Create Custom Droids</li>
+</ol>
+
+<h3>Related Resources</h3>
+
+<p><strong>Terminal Tools</strong></p>
+<ul>
+	<li><a href="https://sw.kovidgoyal.net/kitty/">Kitty Terminal</a> - GPU-accelerated modern terminal</li>
+	<li><a href="https://www.warp.dev/">Warp Terminal</a> - Modern terminal with built-in AI</li>
+	<li><a href="https://github.com/dexpota/kitty-themes">Kitty Themes</a> - Kitty theme collection</li>
+	<li><a href="https://github.com/neardws/kitty-config">Kitty Config</a> - Custom Kitty configuration</li>
+</ul>
+
+<p><strong>Shell Configuration</strong></p>
+<ul>
+	<li><a href="https://ohmyz.sh/">Oh-My-Zsh</a> - Zsh configuration management framework</li>
+	<li><a href="https://github.com/romkatv/powerlevel10k">Powerlevel10k</a> - Zsh theme</li>
+	<li><a href="https://www.nerdfonts.com/">Nerd Fonts</a> - Programming font icons</li>
+</ul>
+
+<p><strong>AI Programming Tools</strong></p>
+<ul>
+	<li><a href="https://factory.ai/">Factory Droid</a> - AI programming CLI tool</li>
+	<li><a href="https://docs.factory.ai/welcome">Factory Droid Docs</a></li>
+	<li><a href="https://claude.com/product/claude-code">Claude Code</a> - Anthropic official CLI</li>
+	<li><a href="https://developers.openai.com/codex/cli/">OpenAI Codex CLI</a></li>
+	<li><a href="https://geminicli.com/">Gemini CLI</a> - Google official CLI</li>
+	<li><a href="https://opencode.ai/">OpenCode</a> - Multi-model support CLI</li>
+</ul>
+
+<p><strong>LLM Models</strong></p>
+<ul>
+	<li><a href="https://www.anthropic.com/news/claude-opus-4-5">Claude Opus 4.5</a></li>
+	<li><a href="https://www.anthropic.com/news/claude-sonnet-4-5">Claude Sonnet 4.5</a></li>
+	<li><a href="https://openai.com/index/introducing-gpt-5-2/">GPT-5.2</a></li>
+	<li><a href="https://blog.google/products-and-platforms/products/gemini/gemini-3-flash/">Gemini 3 Flash</a></li>
+	<li><a href="https://api-docs.deepseek.com/news/news251201">DeepSeek-V3.2</a></li>
+	<li><a href="https://swe-rebench.com/">SWE-Rebench</a> - LLM programming capability leaderboard</li>
+</ul>
+
+<p><strong>Skills and Extensions</strong></p>
+<ul>
+	<li><a href="https://agentskills.io/home">Agent Skills</a> - Community Skills platform</li>
+	<li><a href="https://github.com/obra/superpowers">Superpowers</a> - Skills suite</li>
+	<li><a href="https://github.com/OthmanAdi/planning-with-files">Planning With Files</a> - File-based planning Skill</li>
+	<li><a href="https://github.com/travisvn/awesome-claude-skills">Awesome Claude Skills</a></li>
+	<li><a href="https://github.com/neardws/droid-skills">Droid Skills</a> - Pre-configured Skills collection</li>
+</ul>
+
+<p><strong>MCP Protocol</strong></p>
+<ul>
+	<li><a href="https://modelcontextprotocol.io/">MCP Official Docs</a></li>
+	<li><a href="https://smithery.ai/">Smithery</a> - MCP Server marketplace</li>
+</ul>
+
+<p><strong>Fonts</strong></p>
+<ul>
+	<li><a href="https://berkeleygraphics.com/typefaces/berkeley-mono/">Berkeley Mono</a> - Programming font</li>
+	<li><a href="https://github.com/subframe7536/maple-font">Maple Mono CN</a> - Chinese monospace font</li>
+</ul>
+
+<p><strong>Further Reading</strong></p>
+<ul>
+	<li><a href="https://en.wikipedia.org/wiki/Vibe_coding">Vibe Coding - Wikipedia</a></li>
+	<li><a href="https://simonwillison.net/2025/Mar/19/vibe-coding/">Simon Willison: Not all AI-assisted programming is vibe coding</a></li>
+	<li><a href="https://x.com/karpathy">Andrej Karpathy (X/Twitter)</a></li>
+</ul>
+
+<h3>Next Steps</h3>
+
+<ul>
+	<li>Explore more Skills and Custom Droids</li>
+	<li>Try different models based on SWE-Rebench data</li>
+	<li>Create custom configurations for your specific workflow</li>
+</ul>
+
+<hr />
+
+<blockquote>
+<p>🎉 Congratulations on completing the Vibe Coding environment setup! Start enjoying the fun of AI-assisted programming!</p>
+</blockquote>
+
+<p style="text-align: center; color: #666; font-size: 90%;">
+✍️ Powered by <a href="https://ulysses.app/" style="color: #666;">Ulysses</a> & <a href="https://factory.ai/" style="color: #666;">Factory Droid</a>
+</p>
+
+<p><em>Last Updated: January 21, 2025</em></p>
+
+<hr />
+
+<div style="float: left; margin-bottom: 1em;">
+<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=080808&amp;w=600&amp;t=tt&amp;d=aFmh3d7Xe0XBtDzpWJTkAIBPYWnWgzsZn29nw_9T_34&amp;co=ffffff&amp;cmo=3acc3a&amp;cmn=ff5353&amp;ct=808080"></script>
+</div>
+<div style="clear: both; text-align: left; margin-bottom: 0; padding-bottom: 0;">
+<p style="margin-bottom: 0;">Please use Safari for the best experience. © 2025-2034 Neardws.com All Rights Reserved.</p>
+</div>
