@@ -7,6 +7,9 @@ from datetime import datetime
 
 ERR_RE = re.compile(r"\b(error|exception|traceback|fatal)\b", re.I)
 DONE_RE = re.compile(r"\b(done|completed|success|finished)\b", re.I)
+# Factory droid/TUI hints
+NEEDS_INPUT_RE = re.compile(r"\b(enter to send|press\s+enter|login|authorize|auth|open\s+browser|device\s+code)\b", re.I)
+PROMPT_RE = re.compile(r"^\s*>\s+", re.M)
 
 
 def sh(cmd):
@@ -75,6 +78,9 @@ def main():
             state = "DONE"
         elif pane_dead == "1":
             state = "EXITED"
+        elif NEEDS_INPUT_RE.search(out) or PROMPT_RE.search(out):
+            # TUI is up and waiting for user input
+            state = "NEEDS_INPUT"
 
         print(f"- {s}  [{state}]\n  last: {last}")
 
