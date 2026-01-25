@@ -8,6 +8,11 @@ from datetime import datetime
 ERR_RE = re.compile(r"\b(error|exception|traceback|fatal)\b", re.I)
 # 注意：droid 的 hooks/脚本里经常出现 "Completed"，那只是某个子步骤完成，不代表整体结束。
 DONE_RE = re.compile(r"\b(done|success|finished)\b", re.I)
+
+# droid exec (json output) signals
+DROID_JSON_DONE_RE = re.compile(r'"type"\s*:\s*"result"')
+DROID_JSON_ERROR_RE = re.compile(r'"is_error"\s*:\s*true|"subtype"\s*:\s*"error"')
+
 # Factory droid/TUI hints
 NEEDS_INPUT_RE = re.compile(r"\b(enter to send|press\s+enter|login|authorize|auth|open\s+browser|device\s+code)\b", re.I)
 PROMPT_RE = re.compile(r"^\s*>\s+", re.M)
@@ -75,13 +80,20 @@ def main():
         # 优先判定：是否在等输入（对 droid 这种常驻 TUI，比 DONE 更有意义）
         state = "RUNNING"
         if pane_dead == "1":
-            state = "EXITED"
-        elif ERR_RE.search(out):
+            # 对 exec 场景，pane 退出后更可能是真的完成/失败
+            exit_status = safe_tmux(args.socket, "display-message", "-p", "-t", pane, "#{pane_exit_status}").strip()
+            if exit_status == "0":
+                state = "DONE"
+            elif exit_status:
+                state = f"ERROR({exit_status})"
+            else:
+                state = "EXITED"
+        elif DROID_JSON_ERROR_RE.search(out) or ERR_RE.search(out):
             state = "ERROR"
         elif NEEDS_INPUT_RE.search(out) or PROMPT_RE.search(out):
             # TUI is up and waiting for user input
             state = "NEEDS_INPUT"
-        elif DONE_RE.search(out):
+        elif DROID_JSON_DONE_RE.search(out) or DONE_RE.search(out):
             state = "DONE"
 
         print(f"- {s}  [{state}]\n  last: {last}")

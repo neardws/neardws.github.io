@@ -32,7 +32,8 @@
 export TMUXD_ENV_FILE=~/.config/factory/env
 
 # 启动一个实例（name=foo），运行你的 droid 命令
-./tmuxd/bin/tmuxctl start foo -- <你的droid命令>
+# 说明：如果你要自动化/可抓取结果，推荐用 droid exec + json 输出（text 输出可能会走 TUI/清屏）
+./tmuxd/bin/tmuxctl start foo -- droid exec "say hello" --cwd "$PWD" --output-format json --auto low
 
 # 查看实例状态（抓取最后 200 行并解析）
 ./tmuxd/bin/tmuxctl status
