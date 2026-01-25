@@ -72,10 +72,15 @@ cmd_start() {
   fi
 
   # 让 tmux 里执行的命令用 exec 覆盖 shell，便于 pane_exit 判定
-  # 通过 bash -lc 确保 source 生效、并且处理参数/空格更稳
-  local quoted_cmd
-  quoted_cmd="${env_prefix}exec $*"
-  tmuxS send-keys -t "$pane" -l -- "bash -lc $(printf %q "$quoted_cmd")"
+  # 通过 bash -lc 确保 source 生效
+  local cmd_str
+  cmd_str="${env_prefix}exec $*"
+
+  # 单引号安全包裹（把 ' 转义成 '\''）
+  local sq
+  sq="'${cmd_str//"'"/"'\\''"}'"
+
+  tmuxS send-keys -t "$pane" -l -- "bash -lc $sq"
   tmuxS send-keys -t "$pane" Enter
 
   echo "Started: $sess"
