@@ -2,10 +2,10 @@
 
 #===============================================================================
 # Vibe Coding 环境一键配置脚本
-# 
+#
 # 功能：自动安装和配置 Vibe Coding 所需的全部工具
 # 支持：macOS, Ubuntu/Debian, Arch Linux
-# 
+#
 # 使用方法：
 #   curl -fsSL https://neardws.com/scripts/vibe-setup.sh | bash
 #
@@ -79,16 +79,16 @@ command_exists() {
 ask_continue() {
     local prompt="$1"
     local default="${2:-y}"
-    
+
     if [[ "$default" == "y" ]]; then
         prompt="$prompt [Y/n] "
     else
         prompt="$prompt [y/N] "
     fi
-    
+
     read -p "$prompt" response
     response=${response:-$default}
-    
+
     [[ "$response" =~ ^[Yy]$ ]]
 }
 
@@ -101,32 +101,32 @@ install_homebrew() {
     if [[ "$OS" != "macos" ]]; then
         return
     fi
-    
+
     if command_exists brew; then
         print_success "Homebrew 已安装"
         return
     fi
-    
+
     print_step "安装 Homebrew..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    
+
     # 添加到 PATH
     if [[ -f /opt/homebrew/bin/brew ]]; then
         eval "$(/opt/homebrew/bin/brew shellenv)"
     fi
-    
+
     print_success "Homebrew 安装完成"
 }
 
 # 安装 Kitty 终端
 install_kitty() {
     print_step "安装 Kitty 终端..."
-    
+
     if command_exists kitty; then
         print_success "Kitty 已安装: $(kitty --version)"
         return
     fi
-    
+
     case $OS in
         macos)
             brew install --cask kitty
@@ -141,16 +141,16 @@ install_kitty() {
             sudo pacman -S --noconfirm kitty
             ;;
     esac
-    
+
     print_success "Kitty 安装完成"
 }
 
 # 配置 Kitty
 configure_kitty() {
     print_step "配置 Kitty..."
-    
+
     mkdir -p ~/.config/kitty
-    
+
     cat > ~/.config/kitty/kitty.conf << 'EOF'
 # Vibe Coding Kitty 配置
 
@@ -199,14 +199,14 @@ color13 #ff92df
 color14 #a4ffff
 color15 #ffffff
 EOF
-    
+
     print_success "Kitty 配置完成"
 }
 
 # 安装 Zsh
 install_zsh() {
     print_step "安装 Zsh..."
-    
+
     if command_exists zsh; then
         print_success "Zsh 已安装: $(zsh --version)"
     else
@@ -223,7 +223,7 @@ install_zsh() {
         esac
         print_success "Zsh 安装完成"
     fi
-    
+
     # 设置为默认 Shell
     if [[ "$SHELL" != *"zsh"* ]]; then
         print_step "设置 Zsh 为默认 Shell..."
@@ -235,39 +235,39 @@ install_zsh() {
 # 安装 Oh-My-Zsh
 install_ohmyzsh() {
     print_step "安装 Oh-My-Zsh..."
-    
+
     if [[ -d "$HOME/.oh-my-zsh" ]]; then
         print_success "Oh-My-Zsh 已安装"
         return
     fi
-    
+
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-    
+
     print_success "Oh-My-Zsh 安装完成"
 }
 
 # 安装 Powerlevel10k
 install_powerlevel10k() {
     print_step "安装 Powerlevel10k 主题..."
-    
+
     local P10K_DIR="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
-    
+
     if [[ -d "$P10K_DIR" ]]; then
         print_success "Powerlevel10k 已安装"
         return
     fi
-    
+
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$P10K_DIR"
-    
+
     print_success "Powerlevel10k 安装完成"
 }
 
 # 安装 Zsh 插件
 install_zsh_plugins() {
     print_step "安装 Zsh 插件..."
-    
+
     local ZSH_CUSTOM="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"
-    
+
     # zsh-autosuggestions
     if [[ ! -d "$ZSH_CUSTOM/plugins/zsh-autosuggestions" ]]; then
         git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
@@ -275,7 +275,7 @@ install_zsh_plugins() {
     else
         print_success "zsh-autosuggestions 已安装"
     fi
-    
+
     # zsh-syntax-highlighting
     if [[ ! -d "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting" ]]; then
         git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting"
@@ -288,7 +288,7 @@ install_zsh_plugins() {
 # 安装 Nerd Font
 install_nerd_font() {
     print_step "安装 Nerd Font (MesloLGS NF)..."
-    
+
     case $OS in
         macos)
             brew tap homebrew/cask-fonts 2>/dev/null || true
@@ -297,39 +297,39 @@ install_nerd_font() {
         *)
             mkdir -p ~/.local/share/fonts
             cd ~/.local/share/fonts
-            
+
             local FONTS=(
                 "MesloLGS%20NF%20Regular.ttf"
                 "MesloLGS%20NF%20Bold.ttf"
                 "MesloLGS%20NF%20Italic.ttf"
                 "MesloLGS%20NF%20Bold%20Italic.ttf"
             )
-            
+
             for font in "${FONTS[@]}"; do
                 local filename=$(echo "$font" | sed 's/%20/ /g')
                 if [[ ! -f "$filename" ]]; then
                     curl -fLo "$filename" "https://github.com/romkatv/powerlevel10k-media/raw/master/$font"
                 fi
             done
-            
+
             fc-cache -fv
             cd - > /dev/null
             ;;
     esac
-    
+
     print_success "Nerd Font 安装完成"
 }
 
 # 配置 .zshrc
 configure_zshrc() {
     print_step "配置 .zshrc..."
-    
+
     # 备份现有配置
     if [[ -f ~/.zshrc ]]; then
         cp ~/.zshrc ~/.zshrc.backup.$(date +%Y%m%d%H%M%S)
         print_info "已备份现有 .zshrc"
     fi
-    
+
     cat > ~/.zshrc << 'EOF'
 # Vibe Coding Zsh 配置
 
@@ -374,48 +374,48 @@ export PATH="$HOME/.local/bin:$PATH"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 EOF
-    
+
     print_success ".zshrc 配置完成"
 }
 
 # 安装 Node.js
 install_nodejs() {
     print_step "安装 Node.js..."
-    
+
     if command_exists node; then
         print_success "Node.js 已安装: $(node --version)"
         return
     fi
-    
+
     # 使用 nvm 安装
     if [[ ! -d "$HOME/.nvm" ]]; then
         curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
     fi
-    
+
     export NVM_DIR="$HOME/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-    
+
     nvm install --lts
     nvm use --lts
-    
+
     print_success "Node.js 安装完成: $(node --version)"
 }
 
 # 安装 Factory Droid
 install_factory_droid() {
     print_step "安装 Factory Droid..."
-    
+
     if command_exists droid; then
         print_success "Factory Droid 已安装: $(droid --version 2>/dev/null || echo 'version unknown')"
         return
     fi
-    
+
     # 确保 npm 可用
     export NVM_DIR="$HOME/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-    
+
     npm install -g @anthropic-ai/droid
-    
+
     print_success "Factory Droid 安装完成"
     print_info "请运行 'droid login' 完成登录"
 }
@@ -423,22 +423,22 @@ install_factory_droid() {
 # 创建 Factory 目录结构
 setup_factory_dirs() {
     print_step "创建 Factory 目录结构..."
-    
+
     mkdir -p ~/.factory/skills
     mkdir -p ~/.factory/droids
-    
+
     print_success "Factory 目录结构创建完成"
 }
 
 # 创建 MCP 配置模板
 setup_mcp_config() {
     print_step "创建 MCP 配置模板..."
-    
+
     if [[ -f ~/.factory/mcp.json ]]; then
         print_warning "MCP 配置已存在，跳过"
         return
     fi
-    
+
     cat > ~/.factory/mcp.json << 'EOF'
 {
   "mcpServers": {
@@ -457,7 +457,7 @@ setup_mcp_config() {
   }
 }
 EOF
-    
+
     print_success "MCP 配置模板创建完成"
     print_info "请根据需要编辑 ~/.factory/mcp.json"
 }
@@ -465,35 +465,35 @@ EOF
 # 安装推荐 Skills
 install_skills() {
     print_step "安装推荐 Skills..."
-    
+
     local SKILLS_DIR="$HOME/.factory/skills"
-    
+
     # superpowers
     if [[ ! -d "$SKILLS_DIR/superpowers" ]]; then
         git clone --depth=1 https://github.com/obra/superpowers "$SKILLS_DIR/superpowers" 2>/dev/null || print_warning "superpowers 安装失败"
     fi
-    
+
     # planning-with-files
     if [[ ! -d "$SKILLS_DIR/planning-with-files" ]]; then
         git clone --depth=1 https://github.com/OthmanAdi/planning-with-files "$SKILLS_DIR/planning-with-files" 2>/dev/null || print_warning "planning-with-files 安装失败"
     fi
-    
+
     print_success "推荐 Skills 安装完成"
 }
 
 # 创建示例 Custom Droid
 create_sample_droid() {
     print_step "创建示例 Custom Droid..."
-    
+
     local DROID_DIR="$HOME/.factory/droids/code-reviewer"
-    
+
     if [[ -d "$DROID_DIR" ]]; then
         print_warning "示例 Droid 已存在，跳过"
         return
     fi
-    
+
     mkdir -p "$DROID_DIR"
-    
+
     cat > "$DROID_DIR/DROID.md" << 'EOF'
 ---
 name: code-reviewer
@@ -520,7 +520,7 @@ model: claude-sonnet-4-5-20250514
 - 建议的修复方案
 - 代码示例
 EOF
-    
+
     print_success "示例 Custom Droid 创建完成"
 }
 
@@ -530,7 +530,7 @@ EOF
 
 main() {
     print_header "🚀 Vibe Coding 环境一键配置"
-    
+
     echo -e "本脚本将安装和配置以下组件:\n"
     echo "  1. Kitty 终端"
     echo "  2. Zsh + Oh-My-Zsh + Powerlevel10k"
@@ -540,23 +540,23 @@ main() {
     echo "  6. Factory Droid"
     echo "  7. Skills 和 MCP 配置"
     echo ""
-    
+
     if ! ask_continue "是否继续安装?"; then
         echo "安装已取消"
         exit 0
     fi
-    
+
     # 检测操作系统
     detect_os
-    
+
     if [[ "$OS" == "unknown" ]]; then
         print_error "不支持的操作系统"
         exit 1
     fi
-    
+
     # 安装 Homebrew (macOS)
     install_homebrew
-    
+
     # 安装组件
     print_header "📦 安装终端和 Shell"
     install_kitty
@@ -567,19 +567,19 @@ main() {
     install_zsh_plugins
     install_nerd_font
     configure_zshrc
-    
+
     print_header "📦 安装开发工具"
     install_nodejs
     install_factory_droid
-    
+
     print_header "⚙️ 配置 Factory Droid"
     setup_factory_dirs
     setup_mcp_config
     install_skills
     create_sample_droid
-    
+
     print_header "✅ 安装完成!"
-    
+
     echo -e "\n${GREEN}Vibe Coding 环境配置完成!${NC}\n"
     echo "后续步骤:"
     echo "  1. 重启终端或运行: source ~/.zshrc"

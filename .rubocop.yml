@@ -1,0 +1,34 @@
+# RuboCop configuration for Jekyll site
+# https://docs.rubocop.org/rubocop/
+
+AllCops:
+  TargetRubyVersion: 3.1
+  NewCops: enable
+  Exclude:
+    - '_site/**/*'
+    - 'vendor/**/*'
+    - 'node_modules/**/*'
+    - '.jekyll-cache/**/*'
+    - 'tmp/**/*'
+
+# Disable metrics for config files
+Metrics/BlockLength:
+  Exclude:
+    - 'Gemfile'
+    - '*.gemspec'
+
+# Allow longer lines in config files
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - 'Gemfile'
+
+# Style preferences
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false

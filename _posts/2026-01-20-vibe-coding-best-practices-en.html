@@ -289,7 +289,7 @@ cp <span class="syntax-all syntax-constant">\~</span>/kitty-config/tab<span clas
 
 <pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># Server 1 - local (LAN)
 </span><span class="syntax-all syntax-constant">alias</span> ssh-local=<span class="syntax-all syntax-string">&quot;kitten ssh user@local-server&quot;</span>
-<span class="syntax-all syntax-constant">alias</span> st-local=<span class="syntax-all syntax-string">&quot;kitten ssh user@local-server -t &#39;tmux new -As main&#39;&quot;</span> 
+<span class="syntax-all syntax-constant">alias</span> st-local=<span class="syntax-all syntax-string">&quot;kitten ssh user@local-server -t &#39;tmux new -As main&#39;&quot;</span>
 
 <span class="syntax-all syntax-comment"># Server 2 - remote
 </span><span class="syntax-all syntax-constant">alias</span> ssh-remote=<span class="syntax-all syntax-string">&quot;kitten ssh user@remote-server&quot;</span>
@@ -308,11 +308,11 @@ cp <span class="syntax-all syntax-constant">\~</span>/kitty-config/tab<span clas
 </span>   <span class="syntax-all syntax-keyword">function</span> <span class="syntax-all syntax-entity">_kitty_set_tab_title</span>() {
         <span class="syntax-all syntax-constant">printf</span> <span class="syntax-all syntax-string">&quot;\033]1;%s\007&quot;</span> <span class="syntax-all syntax-string">&quot;</span><span class="syntax-all syntax-constant">${PWD</span><span class="syntax-all syntax-keyword">##*/</span><span class="syntax-all syntax-constant">}</span><span class="syntax-all syntax-string">&quot;</span>
    }
- 
+
    <span class="syntax-all syntax-comment"># Trigger on directory change
 </span>   autoload -Uz add-zsh-hook
    add-zsh-hook chpwd _kitty_set_tab_title
- 
+
    <span class="syntax-all syntax-comment"># Set once on initialization
 </span>   _kitty_set_tab_title
 <span class="syntax-all syntax-keyword">fi</span>
@@ -3007,15 +3007,15 @@ Keep task list status updated (pending, in_progress, completed).</code></pre>
    - Physics parameters: cart mass, pole length, gravity, etc.
    - State: [position, velocity, angle, angular velocity]
    - Actions: left(0) or right(1)
-   
+
 2. DQN algorithm implementation
    - Neural network: 2 fully connected layers, input 4D state, output 2 action Q-values
    - Experience replay buffer
    - Target network soft update
-   
+
 3. API endpoints
    - POST /train/start - Start training
-   - POST /train/stop - Stop training  
+   - POST /train/stop - Stop training
    - GET /train/status - Get training status
    - WebSocket /ws/game - Real-time game state push
 
@@ -3023,12 +3023,12 @@ Keep task list status updated (pending, in_progress, completed).</code></pre>
 </span>1. Canvas visualization
    - Draw cart, pole, track
    - Real-time position and angle updates
-   
+
 2. Control panel
    - Start/Pause/Reset buttons
    - Training episode count display
    - Current reward display
-   
+
 3. Training curve chart
    - Display total reward per episode
    - Use Chart.js or Recharts
@@ -3161,41 +3161,41 @@ Estimated total code ~800-1000 lines, completable in 1-2 hours.</code></pre>
         <span class="syntax-all syntax-constant">self</span>.pole_length <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">0.5</span>
         <span class="syntax-all syntax-constant">self</span>.force_mag <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">10.0</span>
         <span class="syntax-all syntax-constant">self</span>.tau <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">0.02</span>  <span class="syntax-all syntax-comment"># Time step
-</span>        
+</span>
         <span class="syntax-all syntax-constant">self</span>.state <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">None</span>
         <span class="syntax-all syntax-constant">self</span>.reset()
-    
+
     <span class="syntax-all syntax-keyword">def</span> <span class="syntax-all syntax-entity">reset</span>(<span class="syntax-all syntax-parameter">self</span>):
         <span class="syntax-all syntax-comment"># Random initial state [x, x_dot, theta, theta_dot]
 </span>        <span class="syntax-all syntax-constant">self</span>.state <span class="syntax-all syntax-keyword">=</span> np.random.uniform(<span class="syntax-all syntax-keyword">-</span><span class="syntax-all syntax-constant">0.05</span>, <span class="syntax-all syntax-constant">0.05</span>, <span class="syntax-all syntax-parameter">size</span><span class="syntax-all syntax-keyword">=</span>(<span class="syntax-all syntax-constant">4</span>,))
         <span class="syntax-all syntax-keyword">return</span> <span class="syntax-all syntax-constant">self</span>.state.copy()
-    
+
     <span class="syntax-all syntax-keyword">def</span> <span class="syntax-all syntax-entity">step</span>(<span class="syntax-all syntax-parameter">self</span>, <span class="syntax-all syntax-parameter">action</span>):
         x, x_dot, theta, theta_dot <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">self</span>.state
         force <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">self</span>.force_mag <span class="syntax-all syntax-keyword">if</span> action <span class="syntax-all syntax-keyword">==</span> <span class="syntax-all syntax-constant">1</span> <span class="syntax-all syntax-keyword">else</span> <span class="syntax-all syntax-keyword">-</span><span class="syntax-all syntax-constant">self</span>.force_mag
-        
+
         <span class="syntax-all syntax-comment"># Physics simulation (simplified Euler method)
 </span>        cos_theta, sin_theta <span class="syntax-all syntax-keyword">=</span> np.cos(theta), np.sin(theta)
         total_mass <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">self</span>.cart_mass <span class="syntax-all syntax-keyword">+</span> <span class="syntax-all syntax-constant">self</span>.pole_mass
-        
+
         temp <span class="syntax-all syntax-keyword">=</span> (force <span class="syntax-all syntax-keyword">+</span> <span class="syntax-all syntax-constant">self</span>.pole_mass <span class="syntax-all syntax-keyword">*</span> <span class="syntax-all syntax-constant">self</span>.pole_length <span class="syntax-all syntax-keyword">*</span> theta_dot<span class="syntax-all syntax-keyword">**</span><span class="syntax-all syntax-constant">2</span> <span class="syntax-all syntax-keyword">*</span> sin_theta) <span class="syntax-all syntax-keyword">/</span> total_mass
         theta_acc <span class="syntax-all syntax-keyword">=</span> (<span class="syntax-all syntax-constant">self</span>.gravity <span class="syntax-all syntax-keyword">*</span> sin_theta <span class="syntax-all syntax-keyword">-</span> cos_theta <span class="syntax-all syntax-keyword">*</span> temp) <span class="syntax-all syntax-keyword">/</span> (
             <span class="syntax-all syntax-constant">self</span>.pole_length <span class="syntax-all syntax-keyword">*</span> (<span class="syntax-all syntax-constant">4</span><span class="syntax-all syntax-keyword">/</span><span class="syntax-all syntax-constant">3</span> <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-constant">self</span>.pole_mass <span class="syntax-all syntax-keyword">*</span> cos_theta<span class="syntax-all syntax-keyword">**</span><span class="syntax-all syntax-constant">2</span> <span class="syntax-all syntax-keyword">/</span> total_mass)
         )
         x_acc <span class="syntax-all syntax-keyword">=</span> temp <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-constant">self</span>.pole_mass <span class="syntax-all syntax-keyword">*</span> <span class="syntax-all syntax-constant">self</span>.pole_length <span class="syntax-all syntax-keyword">*</span> theta_acc <span class="syntax-all syntax-keyword">*</span> cos_theta <span class="syntax-all syntax-keyword">/</span> total_mass
-        
+
         <span class="syntax-all syntax-comment"># Update state
 </span>        x <span class="syntax-all syntax-keyword">+=</span> <span class="syntax-all syntax-constant">self</span>.tau <span class="syntax-all syntax-keyword">*</span> x_dot
         x_dot <span class="syntax-all syntax-keyword">+=</span> <span class="syntax-all syntax-constant">self</span>.tau <span class="syntax-all syntax-keyword">*</span> x_acc
         theta <span class="syntax-all syntax-keyword">+=</span> <span class="syntax-all syntax-constant">self</span>.tau <span class="syntax-all syntax-keyword">*</span> theta_dot
         theta_dot <span class="syntax-all syntax-keyword">+=</span> <span class="syntax-all syntax-constant">self</span>.tau <span class="syntax-all syntax-keyword">*</span> theta_acc
-        
+
         <span class="syntax-all syntax-constant">self</span>.state <span class="syntax-all syntax-keyword">=</span> np.array([x, x_dot, theta, theta_dot])
-        
+
         <span class="syntax-all syntax-comment"># Check if done
 </span>        done <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">abs</span>(x) <span class="syntax-all syntax-keyword">&gt;</span> <span class="syntax-all syntax-constant">2.4</span> <span class="syntax-all syntax-keyword">or</span> <span class="syntax-all syntax-constant">abs</span>(theta) <span class="syntax-all syntax-keyword">&gt;</span> <span class="syntax-all syntax-constant">0.21</span>  <span class="syntax-all syntax-comment"># About 12 degrees
 </span>        reward <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">1.0</span> <span class="syntax-all syntax-keyword">if</span> <span class="syntax-all syntax-keyword">not</span> done <span class="syntax-all syntax-keyword">else</span> <span class="syntax-all syntax-constant">0.0</span>
-        
+
         <span class="syntax-all syntax-keyword">return</span> <span class="syntax-all syntax-constant">self</span>.state.copy(), reward, done</code></pre>
 
 <p><strong>Frontend Visualization Example (AI Generated):</strong></p>
@@ -3212,19 +3212,19 @@ Estimated total code ~800-1000 lines, completable in 1-2 hours.</code></pre>
 
 <span class="syntax-all syntax-keyword">export</span> <span class="syntax-all syntax-keyword">function</span> CartPoleCanvas({ <span class="syntax-all syntax-variable">state</span> }<span class="syntax-all syntax-keyword">:</span> { state<span class="syntax-all syntax-keyword">:</span> <span class="syntax-all syntax-entity">GameState</span> }) {
   <span class="syntax-all syntax-keyword">const</span> canvasRef <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-entity">useRef</span>&lt;<span class="syntax-all syntax-entity">HTMLCanvasElement</span>&gt;(<span class="syntax-all syntax-constant">null</span>);
-  
+
   <span class="syntax-all syntax-entity">useEffect</span>(() <span class="syntax-all syntax-keyword">=&gt;</span> {
     <span class="syntax-all syntax-keyword">const</span> canvas <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">canvasRef</span>.<span class="syntax-all syntax-constant">current</span>;
     <span class="syntax-all syntax-keyword">if</span> (<span class="syntax-all syntax-keyword">!</span><span class="syntax-all syntax-parameter">canvas</span>) <span class="syntax-all syntax-keyword">return</span>;
-    
+
     <span class="syntax-all syntax-keyword">const</span> ctx <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">canvas</span>.<span class="syntax-all syntax-constant">getContext</span>(<span class="syntax-all syntax-string">&#39;2d&#39;</span>)<span class="syntax-all syntax-keyword">!</span>;
     <span class="syntax-all syntax-keyword">const</span> width <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">canvas</span>.<span class="syntax-all syntax-constant">width</span>;
     <span class="syntax-all syntax-keyword">const</span> height <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">canvas</span>.<span class="syntax-all syntax-constant">height</span>;
-    
+
     <span class="syntax-all syntax-comment">// Clear canvas
 </span>    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">fillStyle</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;#1a1a2e&#39;</span>;
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">fillRect</span>(<span class="syntax-all syntax-constant">0</span>, <span class="syntax-all syntax-constant">0</span>, <span class="syntax-all syntax-parameter">width</span>, <span class="syntax-all syntax-parameter">height</span>);
-    
+
     <span class="syntax-all syntax-comment">// Coordinate transformation
 </span>    <span class="syntax-all syntax-keyword">const</span> scale <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">100</span>;
     <span class="syntax-all syntax-keyword">const</span> cartX <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">width</span> <span class="syntax-all syntax-keyword">/</span> <span class="syntax-all syntax-constant">2</span> <span class="syntax-all syntax-keyword">+</span> <span class="syntax-all syntax-parameter">state</span>.<span class="syntax-all syntax-constant">x</span> <span class="syntax-all syntax-keyword">*</span> <span class="syntax-all syntax-parameter">scale</span>;
@@ -3232,7 +3232,7 @@ Estimated total code ~800-1000 lines, completable in 1-2 hours.</code></pre>
     <span class="syntax-all syntax-keyword">const</span> cartWidth <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">60</span>;
     <span class="syntax-all syntax-keyword">const</span> cartHeight <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">30</span>;
     <span class="syntax-all syntax-keyword">const</span> poleLength <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">100</span>;
-    
+
     <span class="syntax-all syntax-comment">// Draw track
 </span>    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">strokeStyle</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;#4a4a6a&#39;</span>;
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">lineWidth</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">3</span>;
@@ -3240,15 +3240,15 @@ Estimated total code ~800-1000 lines, completable in 1-2 hours.</code></pre>
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-constant">moveTo</span>(<span class="syntax-all syntax-constant">0</span>, <span class="syntax-all syntax-parameter">cartY</span> <span class="syntax-all syntax-keyword">+</span> <span class="syntax-all syntax-parameter">cartHeight</span> <span class="syntax-all syntax-keyword">/</span> <span class="syntax-all syntax-constant">2</span>);
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">lineTo</span>(<span class="syntax-all syntax-parameter">width</span>, <span class="syntax-all syntax-parameter">cartY</span> <span class="syntax-all syntax-keyword">+</span> <span class="syntax-all syntax-parameter">cartHeight</span> <span class="syntax-all syntax-keyword">/</span> <span class="syntax-all syntax-constant">2</span>);
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">stroke</span>();
-    
+
     <span class="syntax-all syntax-comment">// Draw cart
 </span>    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">fillStyle</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;#00d4ff&#39;</span>;
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">fillRect</span>(<span class="syntax-all syntax-parameter">cartX</span> <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-parameter">cartWidth</span> <span class="syntax-all syntax-keyword">/</span> <span class="syntax-all syntax-constant">2</span>, <span class="syntax-all syntax-parameter">cartY</span> <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-parameter">cartHeight</span> <span class="syntax-all syntax-keyword">/</span> <span class="syntax-all syntax-constant">2</span>, <span class="syntax-all syntax-parameter">cartWidth</span>, <span class="syntax-all syntax-parameter">cartHeight</span>);
-    
+
     <span class="syntax-all syntax-comment">// Draw pole
 </span>    <span class="syntax-all syntax-keyword">const</span> poleEndX <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">cartX</span> <span class="syntax-all syntax-keyword">+</span> <span class="syntax-all syntax-constant">Math</span>.<span class="syntax-all syntax-constant">sin</span>(<span class="syntax-all syntax-parameter">state</span>.<span class="syntax-all syntax-parameter">theta</span>) <span class="syntax-all syntax-keyword">*</span> <span class="syntax-all syntax-parameter">poleLength</span>;
     <span class="syntax-all syntax-keyword">const</span> poleEndY <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">cartY</span> <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-constant">Math</span>.<span class="syntax-all syntax-constant">cos</span>(<span class="syntax-all syntax-parameter">state</span>.<span class="syntax-all syntax-parameter">theta</span>) <span class="syntax-all syntax-keyword">*</span> <span class="syntax-all syntax-parameter">poleLength</span>;
-    
+
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">strokeStyle</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;#ff6b6b&#39;</span>;
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">lineWidth</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">8</span>;
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">lineCap</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;round&#39;</span>;
@@ -3256,15 +3256,15 @@ Estimated total code ~800-1000 lines, completable in 1-2 hours.</code></pre>
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-constant">moveTo</span>(<span class="syntax-all syntax-parameter">cartX</span>, <span class="syntax-all syntax-parameter">cartY</span> <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-parameter">cartHeight</span> <span class="syntax-all syntax-keyword">/</span> <span class="syntax-all syntax-constant">2</span>);
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">lineTo</span>(<span class="syntax-all syntax-parameter">poleEndX</span>, <span class="syntax-all syntax-parameter">poleEndY</span>);
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">stroke</span>();
-    
+
     <span class="syntax-all syntax-comment">// Draw info
 </span>    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">fillStyle</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;#ffffff&#39;</span>;
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">font</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;16px monospace&#39;</span>;
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">fillText</span>(<span class="syntax-all syntax-string">`Episode: ${</span><span class="syntax-all syntax-constant">state</span><span class="syntax-all syntax-string">.</span><span class="syntax-all syntax-constant">episode</span><span class="syntax-all syntax-string">}`</span>, <span class="syntax-all syntax-constant">10</span>, <span class="syntax-all syntax-constant">25</span>);
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">fillText</span>(<span class="syntax-all syntax-string">`Reward: ${</span><span class="syntax-all syntax-constant">state</span><span class="syntax-all syntax-string">.</span><span class="syntax-all syntax-constant">reward</span><span class="syntax-all syntax-string">.</span><span class="syntax-all syntax-entity">toFixed</span><span class="syntax-all syntax-string">(</span><span class="syntax-all syntax-constant">1</span><span class="syntax-all syntax-string">)}`</span>, <span class="syntax-all syntax-constant">10</span>, <span class="syntax-all syntax-constant">50</span>);
-    
+
   }, [<span class="syntax-all syntax-parameter">state</span>]);
-  
+
   <span class="syntax-all syntax-keyword">return</span> &lt;<span class="syntax-all syntax-tag">canvas</span> <span class="syntax-all syntax-entity">ref</span><span class="syntax-all syntax-keyword">=</span>{<span class="syntax-all syntax-parameter">canvasRef</span>} <span class="syntax-all syntax-entity">width</span><span class="syntax-all syntax-keyword">=</span>{<span class="syntax-all syntax-constant">600</span>} <span class="syntax-all syntax-entity">height</span><span class="syntax-all syntax-keyword">=</span>{<span class="syntax-all syntax-constant">400</span>} /&gt;;
 }</code></pre>
 

@@ -1,4 +1,4 @@
-# 🏫 Teaching 
+# 🏫 Teaching
 
 ## 🧑‍🏫 Homeroom Teacher
 

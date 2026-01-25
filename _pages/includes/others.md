@@ -27,7 +27,7 @@
 <table class="no-horizontal-lines">
   <tr>
     <th style="width: 110px;">Deadline</th>
-    <th style="width: 110px;">Date</th> 
+    <th style="width: 110px;">Date</th>
     <th>Conference Name</th>
     <th style="width: 160px;">Location</th>
     <th>CCF</th>

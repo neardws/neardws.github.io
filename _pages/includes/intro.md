@@ -12,7 +12,7 @@ a.no-underline:hover {
 table.no-horizontal-lines {
     border-collapse: collapse;
 }
-table.no-horizontal-lines td, 
+table.no-horizontal-lines td,
 table.no-horizontal-lines th {
     border: none;
 }
@@ -25,8 +25,8 @@ table.no-horizontal-lines th {
     height: 220px;
 }*/
 </style>
-Xincao (Neil) Xu (Chinese character 许新操 or 許新操) is currently an Associate Researcher in computer science with the Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China (<a href="https://www.uestc.edu.cn" class="no-underline">UESTC</a>), Shenzhen, China. 
-He received the Ph.D. degree in computer science from the College of Computer Science, Chongqing University (<a href="https://www.cqu.edu.cn" class="no-underline">CQU</a>), Chongqing, China, in 2023. 
+Xincao (Neil) Xu (Chinese character 许新操 or 許新操) is currently an Associate Researcher in computer science with the Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China (<a href="https://www.uestc.edu.cn" class="no-underline">UESTC</a>), Shenzhen, China.
+He received the Ph.D. degree in computer science from the College of Computer Science, Chongqing University (<a href="https://www.cqu.edu.cn" class="no-underline">CQU</a>), Chongqing, China, in 2023.
 From 2023 to 2025, he was a Postdoctoral Research Fellow with the Shenzhen Institute for Advanced Study, UESTC.
 His research interests include edge intelligence, agentic AI, and agentic RL.
 He has authored and co-authored more than 15 papers with total google scholar <a href='https://scholar.google.com/citations?user=DK5avZUAAAAJ'><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FNeardws%2Fneardws.github.io@google-scholar-stats%2Fgs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=Citations"></a>.
@@ -38,13 +38,13 @@ His full academic CV can be found here: \[<a href="https://neardws-1257861591.co
 <table class="no-horizontal-lines" style="margin-left: auto; margin-right: auto;">
     <tr>
         <td>
-            Contact Information: <br> 
-            Office Address: <br>     
+            Contact Information: <br>
+            Office Address: <br>
             Room 408, Building 3, YESUN Intelligent Community II, <br>
             Guanlan Street, Longhua District, <br>
-            Shenzhen 518110, China <br>       
-            E-mail:   
-            <em>xc</em>DOT<em>xu</em>AT<em>uestc</em>DOT<em>edu</em>DOT<em>cn</em> 
+            Shenzhen 518110, China <br>
+            E-mail:
+            <em>xc</em>DOT<em>xu</em>AT<em>uestc</em>DOT<em>edu</em>DOT<em>cn</em>
         </td>
         <td>
             <iframe width="450" height="220" src="https://www.openstreetmap.org/export/embed.html?bbox=114.02656316757204%2C22.723049810086813%2C114.05134677886964%2C22.735963602484535&amp;layer=mapnik" style="border: 0"></iframe>

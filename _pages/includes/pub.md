@@ -1,8 +1,8 @@
 # 📖 Publication
 
-**JCR**: <a href="https://jcr.clarivate.com/jcr/home" class="no-underline">Journal Citation Reports by Clarivate Com.</a>    
-**SCI**: <a href="https://www.fenqubiao.com" class="no-underline">Journal Partition List by National Science Library, Chinese Academy of Sciences</a>    
-**CCF**: <a href="https://www.ccf.org.cn/Academic_Evaluation/By_category/" class="no-underline">Recommended Publications by China Computer Federation</a>    
+**JCR**: <a href="https://jcr.clarivate.com/jcr/home" class="no-underline">Journal Citation Reports by Clarivate Com.</a>
+**SCI**: <a href="https://www.fenqubiao.com" class="no-underline">Journal Partition List by National Science Library, Chinese Academy of Sciences</a>
+**CCF**: <a href="https://www.ccf.org.cn/Academic_Evaluation/By_category/" class="no-underline">Recommended Publications by China Computer Federation</a>
 **\***: Corresponding Author
 
 <!-- #### Preprint -->
@@ -35,4 +35,4 @@
 
 #### Dissertation
 
-- **Xincao Xu**, <a href="https://link.cnki.net/doi/10.27670/d.cnki.gcqdu.2023.002626" class="no-underline">Research on Key Techniques for Modeling and Optimization of Vehicular Cyber-Physical Systems</a>, Chongqing University, Doctoral Dissertation, June 2023. [![](https://img.shields.io/badge/-BibTeX-blue?labelColor=white&color=F5F5F5&logo=latex&logoColor=008080)](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xu2023research.bib) [![](https://img.shields.io/github/stars/neardws/My-Doctoral-Dissertation?style=social)](https://github.com/neardws/My-Doctoral-Dissertation) 
+- **Xincao Xu**, <a href="https://link.cnki.net/doi/10.27670/d.cnki.gcqdu.2023.002626" class="no-underline">Research on Key Techniques for Modeling and Optimization of Vehicular Cyber-Physical Systems</a>, Chongqing University, Doctoral Dissertation, June 2023. [![](https://img.shields.io/badge/-BibTeX-blue?labelColor=white&color=F5F5F5&logo=latex&logoColor=008080)](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xu2023research.bib) [![](https://img.shields.io/github/stars/neardws/My-Doctoral-Dissertation?style=social)](https://github.com/neardws/My-Doctoral-Dissertation)

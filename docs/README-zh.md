@@ -8,7 +8,7 @@ AcadHomepage
 [![](https://img.shields.io/github/stars/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
 [![](https://img.shields.io/github/forks/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
 [![](https://img.shields.io/github/issues/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/license/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io/blob/main/LICENSE)  | [English README](../README.md) 
+[![](https://img.shields.io/github/license/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io/blob/main/LICENSE)  | [English README](../README.md)
 
 </div>
 
@@ -43,7 +43,7 @@ AcadHomepage
 1. 修改主页配置文件[_config.yml](../_config.yml):
     1. `title`: 主页标题
     1. `description`: 主页的描述
-    1. `repository`: USER_NAME/REPO_NAME  
+    1. `repository`: USER_NAME/REPO_NAME
     1. `google_analytics_id` (可选的): 谷歌Analytics ID
     1. SEO相关的键值 (可选的): 从搜索引擎的控制台里获得对应的ID (例如：Google, Bing and Baidu)，然后粘贴到这里。
     1. `author`: 主页作者信息，包括其他网页、Email、所在城市、大学等。

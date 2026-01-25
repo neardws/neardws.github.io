@@ -10,7 +10,7 @@ layout: default
         {{ page.date | date: "%B %d, %Y" }}
       </time>
       {% if page.categories.size > 0 %}
-        | Categories: 
+        | Categories:
         {% for category in page.categories %}
           <span>{{ category }}</span>{% unless forloop.last %}, {% endunless %}
         {% endfor %}

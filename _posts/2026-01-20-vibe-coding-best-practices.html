@@ -288,7 +288,7 @@ cp <span class="syntax-all syntax-constant">\~</span>/kitty-config/tab<span clas
 
 <pre><code class="code-highlighted code-bash"><span class="syntax-all syntax-comment"># 服务器 1 - local (局域网)
 </span><span class="syntax-all syntax-constant">alias</span> ssh-local=<span class="syntax-all syntax-string">&quot;kitten ssh user@local-server&quot;</span>
-<span class="syntax-all syntax-constant">alias</span> st-local=<span class="syntax-all syntax-string">&quot;kitten ssh user@local-server -t &#39;tmux new -As main&#39;&quot;</span> 
+<span class="syntax-all syntax-constant">alias</span> st-local=<span class="syntax-all syntax-string">&quot;kitten ssh user@local-server -t &#39;tmux new -As main&#39;&quot;</span>
 
 <span class="syntax-all syntax-comment"># 服务器 2 - remote （远程)
 </span><span class="syntax-all syntax-constant">alias</span> ssh-remote=<span class="syntax-all syntax-string">&quot;kitten ssh user@remote-server&quot;</span>
@@ -307,11 +307,11 @@ cp <span class="syntax-all syntax-constant">\~</span>/kitty-config/tab<span clas
 </span>   <span class="syntax-all syntax-keyword">function</span> <span class="syntax-all syntax-entity">_kitty_set_tab_title</span>() {
         <span class="syntax-all syntax-constant">printf</span> <span class="syntax-all syntax-string">&quot;\033]1;%s\007&quot;</span> <span class="syntax-all syntax-string">&quot;</span><span class="syntax-all syntax-constant">${PWD</span><span class="syntax-all syntax-keyword">##*/</span><span class="syntax-all syntax-constant">}</span><span class="syntax-all syntax-string">&quot;</span>
    }
- 
+
    <span class="syntax-all syntax-comment"># 目录切换时触发
 </span>   autoload -Uz add-zsh-hook
    add-zsh-hook chpwd _kitty_set_tab_title
- 
+
    <span class="syntax-all syntax-comment"># 初始化时也设置一次
 </span>   _kitty_set_tab_title
 <span class="syntax-all syntax-keyword">fi</span>
@@ -342,7 +342,7 @@ cp <span class="syntax-all syntax-constant">\~</span>/kitty-config/tab<span clas
 	<thead>
 		<tr>
 			<th>
-				命令 
+				命令
 			</th>
 			<th>
 				效果
@@ -361,7 +361,7 @@ cp <span class="syntax-all syntax-constant">\~</span>/kitty-config/tab<span clas
 				连接 dev + main 会话
 			</td>
 			<td>
-				<code>dev:main</code> 
+				<code>dev:main</code>
 			</td>
 		</tr>
 		<tr>
@@ -409,17 +409,17 @@ cp <span class="syntax-all syntax-constant">\~</span>/kitty-config/tab<span clas
 				用途
 			</th>
 			<th>
-				特点 
+				特点
 			</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>
-				<a href="https://berkeleygraphics.com/typefaces/berkeley-mono/">Berkeley Mono</a> 
+				<a href="https://berkeleygraphics.com/typefaces/berkeley-mono/">Berkeley Mono</a>
 			</td>
 			<td>
-				英文等宽 
+				英文等宽
 			</td>
 			<td>
 				优雅、清晰，专为编程设计
@@ -427,10 +427,10 @@ cp <span class="syntax-all syntax-constant">\~</span>/kitty-config/tab<span clas
 		</tr>
 		<tr>
 			<td>
-				<a href="https://github.com/subframe7536/maple-font">Maple Mono CN</a> 
+				<a href="https://github.com/subframe7536/maple-font">Maple Mono CN</a>
 			</td>
 			<td>
-				中文显示 
+				中文显示
 			</td>
 			<td>
 				开源、美观，中英文等宽对齐
@@ -438,7 +438,7 @@ cp <span class="syntax-all syntax-constant">\~</span>/kitty-config/tab<span clas
 		</tr>
 		<tr>
 			<td>
-				<a href="https://www.nerdfonts.com/">Hack Nerd Font</a> 
+				<a href="https://www.nerdfonts.com/">Hack Nerd Font</a>
 			</td>
 			<td>
 				图标支持
@@ -842,7 +842,7 @@ sudo apt update <span class="syntax-all syntax-keyword">&amp;&amp;</span> sudo a
 				灵活性
 			</td>
 			<td>
-				可与任何编辑器配合 
+				可与任何编辑器配合
 			</td>
 			<td>
 				绑定特定 IDE
@@ -853,7 +853,7 @@ sudo apt update <span class="syntax-all syntax-keyword">&amp;&amp;</span> sudo a
 				自动化
 			</td>
 			<td>
-				易于脚本化、CI/CD 集成 
+				易于脚本化、CI/CD 集成
 			</td>
 			<td>
 				难以自动化
@@ -928,7 +928,7 @@ sudo apt update <span class="syntax-all syntax-keyword">&amp;&amp;</span> sudo a
 				<a href="https://github.com/openai/codex">是</a>
 			</td>
 			<td>
-				OpenAI 官方，轻量级，支持 ChatGPT Pro/Plus 
+				OpenAI 官方，轻量级，支持 ChatGPT Pro/Plus
 			</td>
 			<td>
 				OpenAI 生态用户
@@ -956,7 +956,7 @@ sudo apt update <span class="syntax-all syntax-keyword">&amp;&amp;</span> sudo a
 				<a href="https://github.com/anomalyco/opencode">是</a>
 			</td>
 			<td>
-				支持 75+ 模型，可切换 Claude/GPT/Gemini 
+				支持 75+ 模型，可切换 Claude/GPT/Gemini
 			</td>
 			<td>
 				多模型切换用户
@@ -4326,15 +4326,15 @@ tools: [<span class="syntax-all syntax-entity">&quot;Read&quot;, &quot;Edit&quot
    - 物理参数：小车质量、杆子长度、重力等
    - 状态：[位置, 速度, 角度, 角速度]
    - 动作：向左(0) 或 向右(1)
-   
+
 2. DQN 算法实现
    - 神经网络：2层全连接，输入4维状态，输出2个动作Q值
    - 经验回放缓冲区
    - 目标网络软更新
-   
+
 3. API 端点
    - POST /train/start - 开始训练
-   - POST /train/stop - 停止训练  
+   - POST /train/stop - 停止训练
    - GET /train/status - 获取训练状态
    - WebSocket /ws/game - 实时推送游戏状态
 
@@ -4342,12 +4342,12 @@ tools: [<span class="syntax-all syntax-entity">&quot;Read&quot;, &quot;Edit&quot
 </span>1. Canvas 可视化
    - 绘制小车、杆子、轨道
    - 实时更新位置和角度
-   
+
 2. 控制面板
    - 开始/暂停/重置按钮
    - 训练回合数显示
    - 当前奖励显示
-   
+
 3. 训练曲线图
    - 显示每回合的总奖励
    - 使用 Chart.js 或 Recharts
@@ -4480,41 +4480,41 @@ bash
         <span class="syntax-all syntax-constant">self</span>.pole_length <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">0.5</span>
         <span class="syntax-all syntax-constant">self</span>.force_mag <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">10.0</span>
         <span class="syntax-all syntax-constant">self</span>.tau <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">0.02</span>  <span class="syntax-all syntax-comment"># 时间步长
-</span>        
+</span>
         <span class="syntax-all syntax-constant">self</span>.state <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">None</span>
         <span class="syntax-all syntax-constant">self</span>.reset()
-    
+
     <span class="syntax-all syntax-keyword">def</span> <span class="syntax-all syntax-entity">reset</span>(<span class="syntax-all syntax-parameter">self</span>):
         <span class="syntax-all syntax-comment"># 随机初始化状态 [x, x_dot, theta, theta_dot]
 </span>        <span class="syntax-all syntax-constant">self</span>.state <span class="syntax-all syntax-keyword">=</span> np.random.uniform(<span class="syntax-all syntax-keyword">-</span><span class="syntax-all syntax-constant">0.05</span>, <span class="syntax-all syntax-constant">0.05</span>, <span class="syntax-all syntax-parameter">size</span><span class="syntax-all syntax-keyword">=</span>(<span class="syntax-all syntax-constant">4</span>,))
         <span class="syntax-all syntax-keyword">return</span> <span class="syntax-all syntax-constant">self</span>.state.copy()
-    
+
     <span class="syntax-all syntax-keyword">def</span> <span class="syntax-all syntax-entity">step</span>(<span class="syntax-all syntax-parameter">self</span>, <span class="syntax-all syntax-parameter">action</span>):
         x, x_dot, theta, theta_dot <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">self</span>.state
         force <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">self</span>.force_mag <span class="syntax-all syntax-keyword">if</span> action <span class="syntax-all syntax-keyword">==</span> <span class="syntax-all syntax-constant">1</span> <span class="syntax-all syntax-keyword">else</span> <span class="syntax-all syntax-keyword">-</span><span class="syntax-all syntax-constant">self</span>.force_mag
-        
+
         <span class="syntax-all syntax-comment"># 物理模拟（简化欧拉法）
 </span>        cos_theta, sin_theta <span class="syntax-all syntax-keyword">=</span> np.cos(theta), np.sin(theta)
         total_mass <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">self</span>.cart_mass <span class="syntax-all syntax-keyword">+</span> <span class="syntax-all syntax-constant">self</span>.pole_mass
-        
+
         temp <span class="syntax-all syntax-keyword">=</span> (force <span class="syntax-all syntax-keyword">+</span> <span class="syntax-all syntax-constant">self</span>.pole_mass <span class="syntax-all syntax-keyword">*</span> <span class="syntax-all syntax-constant">self</span>.pole_length <span class="syntax-all syntax-keyword">*</span> theta_dot<span class="syntax-all syntax-keyword">**</span><span class="syntax-all syntax-constant">2</span> <span class="syntax-all syntax-keyword">*</span> sin_theta) <span class="syntax-all syntax-keyword">/</span> total_mass
         theta_acc <span class="syntax-all syntax-keyword">=</span> (<span class="syntax-all syntax-constant">self</span>.gravity <span class="syntax-all syntax-keyword">*</span> sin_theta <span class="syntax-all syntax-keyword">-</span> cos_theta <span class="syntax-all syntax-keyword">*</span> temp) <span class="syntax-all syntax-keyword">/</span> (
             <span class="syntax-all syntax-constant">self</span>.pole_length <span class="syntax-all syntax-keyword">*</span> (<span class="syntax-all syntax-constant">4</span><span class="syntax-all syntax-keyword">/</span><span class="syntax-all syntax-constant">3</span> <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-constant">self</span>.pole_mass <span class="syntax-all syntax-keyword">*</span> cos_theta<span class="syntax-all syntax-keyword">**</span><span class="syntax-all syntax-constant">2</span> <span class="syntax-all syntax-keyword">/</span> total_mass)
         )
         x_acc <span class="syntax-all syntax-keyword">=</span> temp <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-constant">self</span>.pole_mass <span class="syntax-all syntax-keyword">*</span> <span class="syntax-all syntax-constant">self</span>.pole_length <span class="syntax-all syntax-keyword">*</span> theta_acc <span class="syntax-all syntax-keyword">*</span> cos_theta <span class="syntax-all syntax-keyword">/</span> total_mass
-        
+
         <span class="syntax-all syntax-comment"># 更新状态
 </span>        x <span class="syntax-all syntax-keyword">+=</span> <span class="syntax-all syntax-constant">self</span>.tau <span class="syntax-all syntax-keyword">*</span> x_dot
         x_dot <span class="syntax-all syntax-keyword">+=</span> <span class="syntax-all syntax-constant">self</span>.tau <span class="syntax-all syntax-keyword">*</span> x_acc
         theta <span class="syntax-all syntax-keyword">+=</span> <span class="syntax-all syntax-constant">self</span>.tau <span class="syntax-all syntax-keyword">*</span> theta_dot
         theta_dot <span class="syntax-all syntax-keyword">+=</span> <span class="syntax-all syntax-constant">self</span>.tau <span class="syntax-all syntax-keyword">*</span> theta_acc
-        
+
         <span class="syntax-all syntax-constant">self</span>.state <span class="syntax-all syntax-keyword">=</span> np.array([x, x_dot, theta, theta_dot])
-        
+
         <span class="syntax-all syntax-comment"># 判断是否结束
 </span>        done <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">abs</span>(x) <span class="syntax-all syntax-keyword">&gt;</span> <span class="syntax-all syntax-constant">2.4</span> <span class="syntax-all syntax-keyword">or</span> <span class="syntax-all syntax-constant">abs</span>(theta) <span class="syntax-all syntax-keyword">&gt;</span> <span class="syntax-all syntax-constant">0.21</span>  <span class="syntax-all syntax-comment"># 约12度
 </span>        reward <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">1.0</span> <span class="syntax-all syntax-keyword">if</span> <span class="syntax-all syntax-keyword">not</span> done <span class="syntax-all syntax-keyword">else</span> <span class="syntax-all syntax-constant">0.0</span>
-        
+
         <span class="syntax-all syntax-keyword">return</span> <span class="syntax-all syntax-constant">self</span>.state.copy(), reward, done</code></pre>
 
 <p><strong>前端可视化示例（AI 生成）：</strong></p>
@@ -4531,19 +4531,19 @@ bash
 
 <span class="syntax-all syntax-keyword">export</span> <span class="syntax-all syntax-keyword">function</span> CartPoleCanvas({ <span class="syntax-all syntax-variable">state</span> }<span class="syntax-all syntax-keyword">:</span> { state<span class="syntax-all syntax-keyword">:</span> <span class="syntax-all syntax-entity">GameState</span> }) {
   <span class="syntax-all syntax-keyword">const</span> canvasRef <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-entity">useRef</span>&lt;<span class="syntax-all syntax-entity">HTMLCanvasElement</span>&gt;(<span class="syntax-all syntax-constant">null</span>);
-  
+
   <span class="syntax-all syntax-entity">useEffect</span>(() <span class="syntax-all syntax-keyword">=&gt;</span> {
     <span class="syntax-all syntax-keyword">const</span> canvas <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">canvasRef</span>.<span class="syntax-all syntax-constant">current</span>;
     <span class="syntax-all syntax-keyword">if</span> (<span class="syntax-all syntax-keyword">!</span><span class="syntax-all syntax-parameter">canvas</span>) <span class="syntax-all syntax-keyword">return</span>;
-    
+
     <span class="syntax-all syntax-keyword">const</span> ctx <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">canvas</span>.<span class="syntax-all syntax-constant">getContext</span>(<span class="syntax-all syntax-string">&#39;2d&#39;</span>)<span class="syntax-all syntax-keyword">!</span>;
     <span class="syntax-all syntax-keyword">const</span> width <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">canvas</span>.<span class="syntax-all syntax-constant">width</span>;
     <span class="syntax-all syntax-keyword">const</span> height <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">canvas</span>.<span class="syntax-all syntax-constant">height</span>;
-    
+
     <span class="syntax-all syntax-comment">// 清空画布
 </span>    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">fillStyle</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;#1a1a2e&#39;</span>;
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">fillRect</span>(<span class="syntax-all syntax-constant">0</span>, <span class="syntax-all syntax-constant">0</span>, <span class="syntax-all syntax-parameter">width</span>, <span class="syntax-all syntax-parameter">height</span>);
-    
+
     <span class="syntax-all syntax-comment">// 坐标转换
 </span>    <span class="syntax-all syntax-keyword">const</span> scale <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">100</span>;
     <span class="syntax-all syntax-keyword">const</span> cartX <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">width</span> <span class="syntax-all syntax-keyword">/</span> <span class="syntax-all syntax-constant">2</span> <span class="syntax-all syntax-keyword">+</span> <span class="syntax-all syntax-parameter">state</span>.<span class="syntax-all syntax-constant">x</span> <span class="syntax-all syntax-keyword">*</span> <span class="syntax-all syntax-parameter">scale</span>;
@@ -4551,7 +4551,7 @@ bash
     <span class="syntax-all syntax-keyword">const</span> cartWidth <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">60</span>;
     <span class="syntax-all syntax-keyword">const</span> cartHeight <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">30</span>;
     <span class="syntax-all syntax-keyword">const</span> poleLength <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">100</span>;
-    
+
     <span class="syntax-all syntax-comment">// 绘制轨道
 </span>    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">strokeStyle</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;#4a4a6a&#39;</span>;
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">lineWidth</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">3</span>;
@@ -4559,15 +4559,15 @@ bash
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-constant">moveTo</span>(<span class="syntax-all syntax-constant">0</span>, <span class="syntax-all syntax-parameter">cartY</span> <span class="syntax-all syntax-keyword">+</span> <span class="syntax-all syntax-parameter">cartHeight</span> <span class="syntax-all syntax-keyword">/</span> <span class="syntax-all syntax-constant">2</span>);
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">lineTo</span>(<span class="syntax-all syntax-parameter">width</span>, <span class="syntax-all syntax-parameter">cartY</span> <span class="syntax-all syntax-keyword">+</span> <span class="syntax-all syntax-parameter">cartHeight</span> <span class="syntax-all syntax-keyword">/</span> <span class="syntax-all syntax-constant">2</span>);
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">stroke</span>();
-    
+
     <span class="syntax-all syntax-comment">// 绘制小车
 </span>    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">fillStyle</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;#00d4ff&#39;</span>;
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">fillRect</span>(<span class="syntax-all syntax-parameter">cartX</span> <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-parameter">cartWidth</span> <span class="syntax-all syntax-keyword">/</span> <span class="syntax-all syntax-constant">2</span>, <span class="syntax-all syntax-parameter">cartY</span> <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-parameter">cartHeight</span> <span class="syntax-all syntax-keyword">/</span> <span class="syntax-all syntax-constant">2</span>, <span class="syntax-all syntax-parameter">cartWidth</span>, <span class="syntax-all syntax-parameter">cartHeight</span>);
-    
+
     <span class="syntax-all syntax-comment">// 绘制杆子
 </span>    <span class="syntax-all syntax-keyword">const</span> poleEndX <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">cartX</span> <span class="syntax-all syntax-keyword">+</span> <span class="syntax-all syntax-constant">Math</span>.<span class="syntax-all syntax-constant">sin</span>(<span class="syntax-all syntax-parameter">state</span>.<span class="syntax-all syntax-parameter">theta</span>) <span class="syntax-all syntax-keyword">*</span> <span class="syntax-all syntax-parameter">poleLength</span>;
     <span class="syntax-all syntax-keyword">const</span> poleEndY <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-parameter">cartY</span> <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-constant">Math</span>.<span class="syntax-all syntax-constant">cos</span>(<span class="syntax-all syntax-parameter">state</span>.<span class="syntax-all syntax-parameter">theta</span>) <span class="syntax-all syntax-keyword">*</span> <span class="syntax-all syntax-parameter">poleLength</span>;
-    
+
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">strokeStyle</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;#ff6b6b&#39;</span>;
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">lineWidth</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">8</span>;
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">lineCap</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;round&#39;</span>;
@@ -4575,15 +4575,15 @@ bash
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-constant">moveTo</span>(<span class="syntax-all syntax-parameter">cartX</span>, <span class="syntax-all syntax-parameter">cartY</span> <span class="syntax-all syntax-keyword">-</span> <span class="syntax-all syntax-parameter">cartHeight</span> <span class="syntax-all syntax-keyword">/</span> <span class="syntax-all syntax-constant">2</span>);
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">lineTo</span>(<span class="syntax-all syntax-parameter">poleEndX</span>, <span class="syntax-all syntax-parameter">poleEndY</span>);
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">stroke</span>();
-    
+
     <span class="syntax-all syntax-comment">// 绘制信息
 </span>    <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">fillStyle</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;#ffffff&#39;</span>;
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-parameter">font</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-string">&#39;16px monospace&#39;</span>;
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">fillText</span>(<span class="syntax-all syntax-string">`Episode: ${</span><span class="syntax-all syntax-constant">state</span><span class="syntax-all syntax-string">.</span><span class="syntax-all syntax-constant">episode</span><span class="syntax-all syntax-string">}`</span>, <span class="syntax-all syntax-constant">10</span>, <span class="syntax-all syntax-constant">25</span>);
     <span class="syntax-all syntax-parameter">ctx</span>.<span class="syntax-all syntax-entity">fillText</span>(<span class="syntax-all syntax-string">`Reward: ${</span><span class="syntax-all syntax-constant">state</span><span class="syntax-all syntax-string">.</span><span class="syntax-all syntax-constant">reward</span><span class="syntax-all syntax-string">.</span><span class="syntax-all syntax-entity">toFixed</span><span class="syntax-all syntax-string">(</span><span class="syntax-all syntax-constant">1</span><span class="syntax-all syntax-string">)}`</span>, <span class="syntax-all syntax-constant">10</span>, <span class="syntax-all syntax-constant">50</span>);
-    
+
   }, [<span class="syntax-all syntax-parameter">state</span>]);
-  
+
   <span class="syntax-all syntax-keyword">return</span> &lt;<span class="syntax-all syntax-tag">canvas</span> <span class="syntax-all syntax-entity">ref</span><span class="syntax-all syntax-keyword">=</span>{<span class="syntax-all syntax-parameter">canvasRef</span>} <span class="syntax-all syntax-entity">width</span><span class="syntax-all syntax-keyword">=</span>{<span class="syntax-all syntax-constant">600</span>} <span class="syntax-all syntax-entity">height</span><span class="syntax-all syntax-keyword">=</span>{<span class="syntax-all syntax-constant">400</span>} /&gt;;
 }</code></pre>
 
@@ -4861,4 +4861,3 @@ bash
 <div style="clear: both; text-align: left; margin-bottom: 0; padding-bottom: 0;">
 <p style="margin-bottom: 0;">Please use Safari for the best experience. © 2025-2034 Neardws.com All Rights Reserved.</p>
 </div>
-

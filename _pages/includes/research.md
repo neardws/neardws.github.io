@@ -1,4 +1,4 @@
-# 🔬 Research 
+# 🔬 Research
 
 <img src='images/research.webp' alt="Research Direction" width="85%">
 
@@ -6,7 +6,7 @@
 
 <div class='paper-box-text' markdown="1">
 
-<a href="https://ieeexplore.ieee.org/document/10367825" class="no-underline">Cooperative Sensing and Heterogeneous Information Fusion in VCPS: A Multi-agent Deep Reinforcement Learning Approach</a>     
+<a href="https://ieeexplore.ieee.org/document/10367825" class="no-underline">Cooperative Sensing and Heterogeneous Information Fusion in VCPS: A Multi-agent Deep Reinforcement Learning Approach</a>
 **Xincao Xu**, Kai Liu<sup>**\***</sup>, Penglin Dai, Ruitao Xie, Jingjing Cao, and Jiangtao Luo
 
 - A novel problem is investigated to maximize the quality of VCPS by integrating the sensing, uploading, modeling and evaluation of heterogeneous information in VCPS. In particular, a cooperative sensing model is derived based on the multi-class M/G/1 priority queue and the Shannon theory. On this basis, a new metric called Age of View (AoV) is designed to quantitatively measure the quality of information fusion by evaluating the timeliness, completeness, and consistency of heterogeneous information in VCPS. To the best of our knowledge, this is the first work on quantitatively evaluating the quality of VCPS with the consideration of unique characteristics captured by the newly designed metic AoV.
@@ -21,11 +21,11 @@
 
 <div class='paper-box-text' markdown="1">
 
-<a href="https://ieeexplore.ieee.org/document/10261503" class="no-underline">Cooperative Sensing and Uploading for Quality-Cost Tradeoff of Digital Twins in VEC</a>       
+<a href="https://ieeexplore.ieee.org/document/10261503" class="no-underline">Cooperative Sensing and Uploading for Quality-Cost Tradeoff of Digital Twins in VEC</a>
 Kai Liu<sup>**\***</sup>, **Xincao Xu**<sup>**\***</sup>, Penglin Dai, and Biwen Chen
 
 - We formulate a bi-objective problem for enabling Digital Twins in Vehicular Edge Computing (DT-VEC), where a cooperative sensing model and a V2I uploading model are derived, and novel metrics for quantitatively evaluating system quality and cost are designed.
-- We propose a multi-agent multi-objective (MAMO) deep reinforcement learning model, which determines the sensing objects, sensing frequency, uploading priority, and transmission power of vehicles, as well as the V2I bandwidth allocation of edge nodes. The model includes distributed actors interacting with the environment and storing their interaction experiences in the replay buffer, a learner with a dueling critic network for evaluating actions of vehicles and edge nodes. 
+- We propose a multi-agent multi-objective (MAMO) deep reinforcement learning model, which determines the sensing objects, sensing frequency, uploading priority, and transmission power of vehicles, as well as the V2I bandwidth allocation of edge nodes. The model includes distributed actors interacting with the environment and storing their interaction experiences in the replay buffer, a learner with a dueling critic network for evaluating actions of vehicles and edge nodes.
 - We give comprehensive performance evaluation by implementing three representative algorithms, including random allocation (RA), distributed distributional deep deterministic policy gradient (D4PG) and multi-agent D4PG (MAD4PG), and the simulation results demonstrate that the proposed MAMO significantly outperforms existing solutions under different scenarios with respect to both maximizing system quality and saving system cost.
 - Accepted by **IEEE Transactions on Consumer Electronics** [JCR Q2\|SCI Q2]
 
@@ -36,7 +36,7 @@ Kai Liu<sup>**\***</sup>, **Xincao Xu**<sup>**\***</sup>, Penglin Dai, and Biwen
 
 <div class='paper-box-text' markdown="1">
 
-<a href="https://www.sciencedirect.com/science/article/pii/S138376212200265X" class="no-underline">Joint Task Offloading and Resource Optimization in NOMA-based Vehicular Edge Computing: A Game-Theoretic DRL Approach</a>    
+<a href="https://www.sciencedirect.com/science/article/pii/S138376212200265X" class="no-underline">Joint Task Offloading and Resource Optimization in NOMA-based Vehicular Edge Computing: A Game-Theoretic DRL Approach</a>
 **Xincao Xu**, Kai Liu<sup>**\***</sup>, Penglin Dai, Feiyu Jin, Hualing Ren, Choujun Zhan, and Songtao Guo
 
 - We present a NOMA-based VEC architecture, where the vehicles share the same frequency of bandwidth resources and communicate with the edge node with the allocated transmission power. The tasks arrive stochastically at vehicles and are heterogeneous regarding computation resource requirements and deadlines, which are uploaded by vehicles via V2I communications. Then, the edge nodes with heterogeneous computation capabilities, i.e., CPU clock speed, can either execute the tasks locally with allocated computation resources or offload the tasks to neighboring edge nodes through a wired network.

@@ -51,7 +51,7 @@
   </tr>
 </table>
 
-- Step into his world of melodious favorites and discover a carefully curated music collection.     
+- Step into his world of melodious favorites and discover a carefully curated music collection.
 <img src="https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/music.gif" width="369" height="50" alt="Songs" />
 - Explore his Replay 2023 playlist, a journey through his most played tracks on [![](https://img.shields.io/badge/-Apple_Music-blue?logo=applemusic&logoColor=white&labelColor=FA243C&color=FA243C&style=flat)](https://music.apple.com/us/playlist/replay-2023/pl.rp-6xxbi6BevJx4)
 
@@ -94,7 +94,7 @@
 
 ## 🏃 Sports
 
-Passionate about fitness, he has earned a series of accolades in his active lifestyle.      
+Passionate about fitness, he has earned a series of accolades in his active lifestyle.
 
 - 🍎 <a href="https://www.apple.com/apple-fitness-plus/" class="no-underline">Apple Fitness</a> achievements
 
@@ -182,7 +182,7 @@ Passionate about fitness, he has earned a series of accolades in his active life
 
 ## 🎮 Gaming
 
-His world of gaming spans across various consoles, offering endless adventures and excitement.      
+His world of gaming spans across various consoles, offering endless adventures and excitement.
 
 - Connect with him on [![](https://img.shields.io/badge/-Nintendo_Switch-blue?logo=nintendoswitch&logoColor=white&labelColor=E60012&color=E60012&style=flat)](https://www.nintendo.com/) by adding his Friend Code: SW-2057-0942-7707
   - The Legend of Zelda: Breath of the Wild

@@ -77,7 +77,7 @@
 
 #### Research
 
-- <a href="https://scholar.google.com" class="no-underline">Google Scholar</a>: Largest Search Engine for Academic Publishing 
+- <a href="https://scholar.google.com" class="no-underline">Google Scholar</a>: Largest Search Engine for Academic Publishing
 - <a href="https://dblp.org" class="no-underline">dblp</a>: Computer Science Bibliography
 - <a href="https://www.myhuiban.com" class="no-underline">Conference Partner</a>: Information about Academic Conferences
 - <a href="https://sites.cs.ucsb.edu/~almeroth/conf/stats/" class="no-underline">Networking Conferences Statistics</a>: Year-over-year Statistics for Networking Conferences
