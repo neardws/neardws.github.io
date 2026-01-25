@@ -1,0 +1,106 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SOCKET_DIR="${CLAWDBOT_TMUX_SOCKET_DIR:-${TMPDIR:-/tmp}/clawdbot-tmux-sockets}"
+TMUXD_SOCKET="${TMUXD_SOCKET:-$SOCKET_DIR/clawdbot.sock}"
+TMUXD_PREFIX="${TMUXD_PREFIX:-droid-}"
+
+mkdir -p "$SOCKET_DIR"
+
+usage() {
+  cat <<EOF
+Usage:
+  tmuxctl list
+  tmuxctl start <name> -- <command...>
+  tmuxctl stop <name>
+  tmuxctl attach <name>
+  tmuxctl log <name> [-n N]
+  tmuxctl status
+
+Env:
+  TMUXD_SOCKET=$TMUXD_SOCKET
+  TMUXD_PREFIX=$TMUXD_PREFIX
+EOF
+}
+
+tmuxS() { tmux -S "$TMUXD_SOCKET" "$@"; }
+
+sess_for() {
+  local name="$1"
+  echo "${TMUXD_PREFIX}${name}"
+}
+
+cmd_list() {
+  tmuxS list-sessions -F '#{session_name}' 2>/dev/null | grep -E "^${TMUXD_PREFIX}" || true
+}
+
+cmd_start() {
+  local name="$1"; shift
+  if [[ "${1:-}" != "--" ]]; then
+    echo "Missing -- before command" >&2
+    usage
+    exit 2
+  fi
+  shift
+  if [[ $# -lt 1 ]]; then
+    echo "Missing command" >&2
+    exit 2
+  fi
+
+  local sess; sess="$(sess_for "$name")"
+
+  if tmuxS has-session -t "$sess" 2>/dev/null; then
+    echo "Session already exists: $sess" >&2
+    exit 1
+  fi
+
+  tmuxS new-session -d -s "$sess" -n main
+  # 让 tmux 里执行的命令用 exec 覆盖 shell，便于 pane_exit 判定
+  tmuxS send-keys -t "$sess":0.0 -l -- "exec $*"; tmuxS send-keys -t "$sess":0.0 Enter
+
+  echo "Started: $sess"
+  echo "Monitor: tmux -S \"$TMUXD_SOCKET\" attach -t \"$sess\""
+}
+
+cmd_stop() {
+  local name="$1"
+  local sess; sess="$(sess_for "$name")"
+  tmuxS kill-session -t "$sess"
+  echo "Stopped: $sess"
+}
+
+cmd_attach() {
+  local name="$1"
+  local sess; sess="$(sess_for "$name")"
+  tmuxS attach -t "$sess"
+}
+
+cmd_log() {
+  local name="$1"; shift
+  local n=200
+  if [[ "${1:-}" == "-n" ]]; then
+    n="$2"; shift 2
+  fi
+  local sess; sess="$(sess_for "$name")"
+  tmuxS capture-pane -p -J -t "$sess":0.0 -S "-$n"
+}
+
+cmd_status() {
+  python3 "$(dirname "$0")/../monitor.py" --socket "$TMUXD_SOCKET" --prefix "$TMUXD_PREFIX"
+}
+
+main() {
+  local sub="${1:-}"; shift || true
+  case "$sub" in
+    list) cmd_list "$@" ;;
+    start) cmd_start "$@" ;;
+    stop) cmd_stop "$@" ;;
+    attach) cmd_attach "$@" ;;
+    log) cmd_log "$@" ;;
+    status) cmd_status "$@" ;;
+    -h|--help|help|"") usage; exit 0 ;;
+    *) echo "Unknown subcommand: $sub" >&2; usage; exit 2 ;;
+  esac
+}
+
+main "$@"
