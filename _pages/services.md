@@ -120,4 +120,11 @@ author_profile: true
   <span class="service-tag internal">Internal</span>
 </div>
 
+<div class="service-item">
+  <h3><a href="https://clawdbot.neardws.com" target="_blank">ClawdBot</a></h3>
+  <span class="service-url">clawdbot.neardws.com</span>
+  <p class="service-desc">Self-hosted <a href="https://clawd.bot" target="_blank">clawd.bot</a> - AI chatbot interface.</p>
+  <span class="service-tag internal">Internal</span>
+</div>
+
 </div>
