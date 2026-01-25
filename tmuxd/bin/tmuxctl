@@ -17,6 +17,11 @@ Usage:
   tmuxctl log <name> [-n N]
   tmuxctl status
 
+  # Droid helpers (recommended)
+  tmuxctl droid-exec <name> -- "<prompt>" [--cwd <path>] [--auto <low|medium|high>]
+  tmuxctl droid-continue <name> -- "<prompt>" [--cwd <path>] [--auto <low|medium|high>]
+  tmuxctl session-id <name>
+
 Env:
   TMUXD_SOCKET=$TMUXD_SOCKET
   TMUXD_PREFIX=$TMUXD_PREFIX
@@ -32,6 +37,151 @@ sess_for() {
 
 cmd_list() {
   tmuxS list-sessions -F '#{session_name}' 2>/dev/null | grep -E "^${TMUXD_PREFIX}" || true
+}
+
+state_dir() {
+  local d="${TMUXD_STATE_DIR:-$HOME/.clawdbot/tmuxd}"
+  mkdir -p "$d"
+  chmod 700 "$d" 2>/dev/null || true
+  echo "$d"
+}
+
+first_pane() {
+  local sess="$1"
+  tmuxS list-panes -t "$sess" -F '#{pane_id}' | head -n1
+}
+
+ensure_session() {
+  local name="$1"
+  local sess; sess="$(sess_for "$name")"
+  if ! tmuxS has-session -t "$sess" 2>/dev/null; then
+    tmuxS new-session -d -s "$sess" -n main
+  fi
+  echo "$sess"
+}
+
+droid_send() {
+  local name="$1"; shift
+  local sess; sess="$(ensure_session "$name")"
+  local pane; pane="$(first_pane "$sess")"
+  if [[ -z "$pane" ]]; then
+    echo "Failed to find pane for session: $sess" >&2
+    exit 1
+  fi
+  tmuxS send-keys -t "$pane" -l -- "$*"
+  tmuxS send-keys -t "$pane" Enter
+}
+
+droid_last_session_id() {
+  local name="$1"
+  local sess; sess="$(sess_for "$name")"
+  local pane; pane="$(first_pane "$sess")"
+  if [[ -z "$pane" ]]; then
+    return 1
+  fi
+  # 搜索最近输出中的 session_id（json 输出）
+  tmuxS capture-pane -p -J -t "$pane" -S -800 \
+    | grep -oE '"session_id"\s*:\s*"[^"]+"' \
+    | tail -n1 \
+    | sed -E 's/.*"session_id"\s*:\s*"([^"]+)".*/\1/'
+}
+
+cmd_session_id() {
+  local name="$1"
+  local id
+  id="$(droid_last_session_id "$name" || true)"
+  if [[ -z "$id" ]]; then
+    echo "<none>" >&2
+    exit 1
+  fi
+  echo "$id"
+}
+
+cmd_droid_exec() {
+  local name="$1"; shift
+  if [[ "${1:-}" != "--" ]]; then
+    echo "Missing -- before prompt" >&2
+    usage
+    exit 2
+  fi
+  shift
+  local prompt="${1:-}"
+  if [[ -z "$prompt" ]]; then
+    echo "Missing prompt string" >&2
+    exit 2
+  fi
+
+  local cwd="${PWD}"
+  local auto="low"
+  shift || true
+  while [[ $# -gt 0 ]]; do
+    case "$1" in
+      --cwd) cwd="$2"; shift 2;;
+      --auto) auto="$2"; shift 2;;
+      *) shift;;
+    esac
+  done
+
+  local sd; sd="$(state_dir)"
+  local pf="$sd/${name}.prompt.$(date +%s).txt"
+  printf "%s" "$prompt" > "$pf"
+  chmod 600 "$pf" 2>/dev/null || true
+
+  local env_prefix=""
+  if [[ -n "${TMUXD_ENV_FILE:-}" ]]; then
+    env_prefix="source \"${TMUXD_ENV_FILE}\" && "
+  fi
+
+  droid_send "$name" "bash -lc '"${env_prefix}"droid exec -f \"$pf\" --cwd \"$cwd\" --output-format json --auto $auto'"
+  echo "Queued droid exec in session: $(sess_for "$name")"
+  echo "Prompt file: $pf"
+}
+
+cmd_droid_continue() {
+  local name="$1"; shift
+  if [[ "${1:-}" != "--" ]]; then
+    echo "Missing -- before prompt" >&2
+    usage
+    exit 2
+  fi
+  shift
+  local prompt="${1:-}"
+  if [[ -z "$prompt" ]]; then
+    echo "Missing prompt string" >&2
+    exit 2
+  fi
+
+  local sid
+  sid="$(droid_last_session_id "$name" || true)"
+  if [[ -z "$sid" ]]; then
+    echo "No session_id found for $name. Run droid-exec first." >&2
+    exit 1
+  fi
+
+  local cwd="${PWD}"
+  local auto="low"
+  shift || true
+  while [[ $# -gt 0 ]]; do
+    case "$1" in
+      --cwd) cwd="$2"; shift 2;;
+      --auto) auto="$2"; shift 2;;
+      *) shift;;
+    esac
+  done
+
+  local sd; sd="$(state_dir)"
+  local pf="$sd/${name}.prompt.$(date +%s).txt"
+  printf "%s" "$prompt" > "$pf"
+  chmod 600 "$pf" 2>/dev/null || true
+
+  local env_prefix=""
+  if [[ -n "${TMUXD_ENV_FILE:-}" ]]; then
+    env_prefix="source \"${TMUXD_ENV_FILE}\" && "
+  fi
+
+  droid_send "$name" "bash -lc '"${env_prefix}"droid exec -f \"$pf\" --session-id \"$sid\" --cwd \"$cwd\" --output-format json --auto $auto'"
+  echo "Queued droid continue (session_id=$sid) in session: $(sess_for "$name")"
+  echo "Prompt file: $pf"
 }
 
 cmd_start() {
@@ -125,6 +275,11 @@ main() {
     attach) cmd_attach "$@" ;;
     log) cmd_log "$@" ;;
     status) cmd_status "$@" ;;
+
+    droid-exec) cmd_droid_exec "$@" ;;
+    droid-continue) cmd_droid_continue "$@" ;;
+    session-id) cmd_session_id "$@" ;;
+
     -h|--help|help|"") usage; exit 0 ;;
     *) echo "Unknown subcommand: $sub" >&2; usage; exit 2 ;;
   esac

@@ -35,6 +35,11 @@ export TMUXD_ENV_FILE=~/.config/factory/env
 # 说明：如果你要自动化/可抓取结果，推荐用 droid exec + json 输出（text 输出可能会走 TUI/清屏）
 ./tmuxd/bin/tmuxctl start foo -- droid exec "say hello" --cwd "$PWD" --output-format json --auto low
 
+# 更推荐：用 tmuxctl 封装好的 droid-exec / droid-continue（多轮 session-id 推进）
+./tmuxd/bin/tmuxctl droid-exec arch -- "analyze this codebase and explain the overall architecture" --cwd "$PWD" --auto low
+./tmuxd/bin/tmuxctl session-id arch
+./tmuxd/bin/tmuxctl droid-continue arch -- "继续：给出更细的模块划分和主要入口文件" --cwd "$PWD" --auto low
+
 # 查看实例状态（抓取最后 200 行并解析）
 ./tmuxd/bin/tmuxctl status
 

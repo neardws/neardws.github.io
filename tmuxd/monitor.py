@@ -88,13 +88,20 @@ def main():
                 state = f"ERROR({exit_status})"
             else:
                 state = "EXITED"
-        elif DROID_JSON_ERROR_RE.search(out) or ERR_RE.search(out):
-            state = "ERROR"
-        elif NEEDS_INPUT_RE.search(out) or PROMPT_RE.search(out):
-            # TUI is up and waiting for user input
-            state = "NEEDS_INPUT"
-        elif DROID_JSON_DONE_RE.search(out) or DONE_RE.search(out):
-            state = "DONE"
+        else:
+            # 如果已经拿到 droid exec 的 JSON result，就用 JSON 判定，避免 "is_error" 字段里的 error 误触发 ERR_RE
+            if DROID_JSON_DONE_RE.search(out):
+                if DROID_JSON_ERROR_RE.search(out):
+                    state = "ERROR"
+                else:
+                    state = "DONE"
+            elif ERR_RE.search(out):
+                state = "ERROR"
+            elif NEEDS_INPUT_RE.search(out) or PROMPT_RE.search(out):
+                # TUI is up and waiting for user input
+                state = "NEEDS_INPUT"
+            elif DONE_RE.search(out):
+                state = "DONE"
 
         print(f"- {s}  [{state}]\n  last: {last}")
 
