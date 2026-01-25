@@ -84,7 +84,7 @@ Self-hosted services running via Cloudflare Tunnel.
   <h3><a href="https://fish.neardws.com" target="_blank">BettaFish</a></h3>
   <span class="service-url">fish.neardws.com</span>
   <p class="service-desc">Personal media and content management service.</p>
-  <span class="service-tag public">Public</span>
+  <span class="service-tag internal">Internal</span>
 </div>
 
 <div class="service-item">
