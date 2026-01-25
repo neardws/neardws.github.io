@@ -79,6 +79,13 @@ author_profile: true
 <div class="services-list">
 
 <div class="service-item">
+  <h3><a href="https://1panel.neardws.com" target="_blank">1Panel</a></h3>
+  <span class="service-url">1panel.neardws.com</span>
+  <p class="service-desc">Modern Linux server management panel with web UI.</p>
+  <span class="service-tag internal">Internal</span>
+</div>
+
+<div class="service-item">
   <h3><a href="https://fish.neardws.com" target="_blank">BettaFish</a></h3>
   <span class="service-url">fish.neardws.com</span>
   <p class="service-desc">Personal media and content management service.</p>
@@ -86,9 +93,23 @@ author_profile: true
 </div>
 
 <div class="service-item">
-  <h3><a href="https://1panel.neardws.com" target="_blank">1Panel</a></h3>
-  <span class="service-url">1panel.neardws.com</span>
-  <p class="service-desc">Modern Linux server management panel with web UI.</p>
+  <h3><a href="https://clawdbot.neardws.com" target="_blank">ClawdBot</a></h3>
+  <span class="service-url">clawdbot.neardws.com</span>
+  <p class="service-desc">Self-hosted <a href="https://clawd.bot" target="_blank">clawd.bot</a> - AI chatbot interface.</p>
+  <span class="service-tag internal">Internal</span>
+</div>
+
+<div class="service-item">
+  <h3><a href="https://cliproxy.neardws.com" target="_blank">CLI Proxy API</a></h3>
+  <span class="service-url">cliproxy.neardws.com</span>
+  <p class="service-desc">Command-line interface proxy service for remote access.</p>
+  <span class="service-tag internal">Internal</span>
+</div>
+
+<div class="service-item">
+  <h3><a href="https://embedding.neardws.com" target="_blank">Embedding Service</a></h3>
+  <span class="service-url">embedding.neardws.com</span>
+  <p class="service-desc">Vector embedding API for semantic search and AI applications.</p>
   <span class="service-tag internal">Internal</span>
 </div>
 
@@ -103,27 +124,6 @@ author_profile: true
   <h3><a href="https://mcp.neardws.com" target="_blank">MetaMCP</a></h3>
   <span class="service-url">mcp.neardws.com</span>
   <p class="service-desc">Model Context Protocol management service.</p>
-  <span class="service-tag internal">Internal</span>
-</div>
-
-<div class="service-item">
-  <h3><a href="https://embedding.neardws.com" target="_blank">Embedding Service</a></h3>
-  <span class="service-url">embedding.neardws.com</span>
-  <p class="service-desc">Vector embedding API for semantic search and AI applications.</p>
-  <span class="service-tag internal">Internal</span>
-</div>
-
-<div class="service-item">
-  <h3><a href="https://cliproxy.neardws.com" target="_blank">CLI Proxy API</a></h3>
-  <span class="service-url">cliproxy.neardws.com</span>
-  <p class="service-desc">Command-line interface proxy service for remote access.</p>
-  <span class="service-tag internal">Internal</span>
-</div>
-
-<div class="service-item">
-  <h3><a href="https://clawdbot.neardws.com" target="_blank">ClawdBot</a></h3>
-  <span class="service-url">clawdbot.neardws.com</span>
-  <p class="service-desc">Self-hosted <a href="https://clawd.bot" target="_blank">clawd.bot</a> - AI chatbot interface.</p>
   <span class="service-tag internal">Internal</span>
 </div>
 
