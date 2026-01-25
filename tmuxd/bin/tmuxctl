@@ -64,8 +64,18 @@ cmd_start() {
     exit 1
   fi
 
+  # 可选：自动注入环境变量文件（方案 1）
+  # 用法：TMUXD_ENV_FILE=~/.config/factory/env ./tmuxd/bin/tmuxctl start job1 -- droid exec ...
+  local env_prefix=""
+  if [[ -n "${TMUXD_ENV_FILE:-}" ]]; then
+    env_prefix="source \"${TMUXD_ENV_FILE}\" && "
+  fi
+
   # 让 tmux 里执行的命令用 exec 覆盖 shell，便于 pane_exit 判定
-  tmuxS send-keys -t "$pane" -l -- "exec $*"
+  # 通过 bash -lc 确保 source 生效、并且处理参数/空格更稳
+  local quoted_cmd
+  quoted_cmd="${env_prefix}exec $*"
+  tmuxS send-keys -t "$pane" -l -- "bash -lc $(printf %q "$quoted_cmd")"
   tmuxS send-keys -t "$pane" Enter
 
   echo "Started: $sess"

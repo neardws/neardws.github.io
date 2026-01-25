@@ -15,6 +15,7 @@
 ## 1) 环境变量（可选）
 - `TMUXD_SOCKET`：tmux socket 路径
 - `TMUXD_PREFIX`：实例 session 名前缀（默认 `droid-`）
+- `TMUXD_ENV_FILE`：启动时自动 `source` 的环境文件（推荐用来注入 `FACTORY_API_KEY`）
 
 默认：
 - socket: `/tmp/clawdbot-tmux-sockets/clawdbot.sock`
@@ -26,6 +27,9 @@
 ```bash
 # 列出所有实例
 ./tmuxd/bin/tmuxctl list
+
+# （推荐）注入 Factory API key 文件
+export TMUXD_ENV_FILE=~/.config/factory/env
 
 # 启动一个实例（name=foo），运行你的 droid 命令
 ./tmuxd/bin/tmuxctl start foo -- <你的droid命令>
