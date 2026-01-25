@@ -10,14 +10,14 @@
 
 <table class="no-horizontal-lines">
   <tr>
-    <td style="text-align: center;"><a href="https://music.apple.com/us/album/%E8%82%86%E7%99%BE%E6%93%8A-single/1524780292" class="no-underline"><img src="images/album-the-400-blows.webp" alt="The 400 Blows"></a></td>
-    <td style="text-align: center;"><a href="https://music.apple.com/us/album/%E9%AD%9A%E7%BC%B8%E6%97%85%E9%A4%A8-single/1541075748" class="no-underline"><img src="images/album-aqua-hotel.webp" alt="Aqua Hotel"></a></td>
-    <td style="text-align: center;"><a href="https://music.apple.com/us/album/%E5%A4%8F%E9%87%8E%E4%BA%86-ep/1584652713" class="no-underline"><img src="images/album-summer-time.webp" alt="Summer Time"></a></td>
-    <td style="text-align: center;"><a href="https://music.apple.com/us/album/%E5%AE%A2%E5%8E%85%E7%8B%82%E6%AC%A2/1666164587" class="no-underline"><img src="images/album-bedazzling.webp" alt="Bedazzling"></a></td>
-    <td style="text-align: center;"><a href="https://music.apple.com/us/album/real-love-is/1535521287" class="no-underline"><img src="images/album-real-love.webp" alt="Real Love Is..."></a></td>
-    <td style="text-align: center;"><a href="https://music.apple.com/us/album/%E9%99%B6%E5%96%86%E5%90%8C%E5%90%8D%E5%B0%88%E8%BC%AF/1416149926" class="no-underline"><img src="images/album-david-tao.webp" alt="David Tao"></a></td>
-    <td style="text-align: center;"><a href="https://music.apple.com/us/album/%E6%84%9F/1599406521" class="no-underline"><img src="images/album-sense.webp" alt="Sense+"></a></td>
-    <td style="text-align: center;"><a href="https://music.apple.com/us/album/bye-bye-thats-all/1556615542" class="no-underline"><img src="images/album-bye-bye-that-is-all.webp" alt="Bye Bye That's All"></a></td>
+    <td style="text-align: center;"><a href="https://music.apple.com/us/album/%E8%82%86%E7%99%BE%E6%93%8A-single/1524780292" class="no-underline"><img src="images/album-the-400-blows.webp" alt="The 400 Blows" width="100" height="100"></a></td>
+    <td style="text-align: center;"><a href="https://music.apple.com/us/album/%E9%AD%9A%E7%BC%B8%E6%97%85%E9%A4%A8-single/1541075748" class="no-underline"><img src="images/album-aqua-hotel.webp" alt="Aqua Hotel" width="100" height="100"></a></td>
+    <td style="text-align: center;"><a href="https://music.apple.com/us/album/%E5%A4%8F%E9%87%8E%E4%BA%86-ep/1584652713" class="no-underline"><img src="images/album-summer-time.webp" alt="Summer Time" width="100" height="100"></a></td>
+    <td style="text-align: center;"><a href="https://music.apple.com/us/album/%E5%AE%A2%E5%8E%85%E7%8B%82%E6%AC%A2/1666164587" class="no-underline"><img src="images/album-bedazzling.webp" alt="Bedazzling" width="100" height="100"></a></td>
+    <td style="text-align: center;"><a href="https://music.apple.com/us/album/real-love-is/1535521287" class="no-underline"><img src="images/album-real-love.webp" alt="Real Love Is..." width="100" height="100"></a></td>
+    <td style="text-align: center;"><a href="https://music.apple.com/us/album/%E9%99%B6%E5%96%86%E5%90%8C%E5%90%8D%E5%B0%88%E8%BC%AF/1416149926" class="no-underline"><img src="images/album-david-tao.webp" alt="David Tao" width="100" height="100"></a></td>
+    <td style="text-align: center;"><a href="https://music.apple.com/us/album/%E6%84%9F/1599406521" class="no-underline"><img src="images/album-sense.webp" alt="Sense+" width="100" height="100"></a></td>
+    <td style="text-align: center;"><a href="https://music.apple.com/us/album/bye-bye-thats-all/1556615542" class="no-underline"><img src="images/album-bye-bye-that-is-all.webp" alt="Bye Bye That's All" width="100" height="100"></a></td>
   </tr>
   <tr>
     <td style="text-align: center;">The 400 Blows<br>Sigle</td>
@@ -59,11 +59,11 @@
 
 <table class="no-horizontal-lines">
   <tr>
-    <td style="text-align: center;"><a href="https://www.imdb.com/title/tt0359950/" class="no-underline"><img src="images/movie-mitty.webp" alt="The Secret Life of Walter Mitty"></a></td>
-    <td style="text-align: center;"><a href="https://www.imdb.com/title/tt0117509/" class="no-underline"><img src="images/movie-romeo-juliet.webp" alt="Romeo + Juliet"></a></td>
-    <td style="text-align: center;"><a href="https://www.imdb.com/title/tt0203009/" class="no-underline"><img src="images/movie-moulin-rouge.webp" alt="Moulin Rouge!"></a></td>
-    <td style="text-align: center;"><a href="https://www.imdb.com/title/tt5726616/" class="no-underline"><img src="images/movie-call-me-by-your-name.webp" alt="Call Me by Your Name"></a></td>
-    <td style="text-align: center;"><a href="https://www.imdb.com/title/tt0066921/" class="no-underline"><img src="images/movie-clockwork-orange.webp" alt="A Clockwork Orange"></a></td>
+    <td style="text-align: center;"><a href="https://www.imdb.com/title/tt0359950/" class="no-underline"><img src="images/movie-mitty.webp" alt="The Secret Life of Walter Mitty" width="90" height="133"></a></td>
+    <td style="text-align: center;"><a href="https://www.imdb.com/title/tt0117509/" class="no-underline"><img src="images/movie-romeo-juliet.webp" alt="Romeo + Juliet" width="90" height="133"></a></td>
+    <td style="text-align: center;"><a href="https://www.imdb.com/title/tt0203009/" class="no-underline"><img src="images/movie-moulin-rouge.webp" alt="Moulin Rouge!" width="90" height="133"></a></td>
+    <td style="text-align: center;"><a href="https://www.imdb.com/title/tt5726616/" class="no-underline"><img src="images/movie-call-me-by-your-name.webp" alt="Call Me by Your Name" width="90" height="133"></a></td>
+    <td style="text-align: center;"><a href="https://www.imdb.com/title/tt0066921/" class="no-underline"><img src="images/movie-clockwork-orange.webp" alt="A Clockwork Orange" width="90" height="133"></a></td>
     <td style="text-align: center;" style="width: 350px;"></td>
   </tr>
   <tr>
@@ -100,14 +100,14 @@ Passionate about fitness, he has earned a series of accolades in his active life
 
 <table class="no-horizontal-lines">
   <tr>
-    <td style="text-align: center;"><img src="images/sports-weekly.webp" alt="Fitness+ Weekly Workout Streak"></td>
-    <td style="text-align: center;"><img src="images/sports-move.webp" alt="100 Move Goals"></td>
-    <td style="text-align: center;"><img src="images/sports-treadmill.webp" alt="50 Fitness+ Treadmill Workouts"></td>
-    <td style="text-align: center;"><img src="images/sports-7-workout.webp" alt="7-Workout Week"></td>
-    <td style="text-align: center;"><img src="images/sports-cycling.webp" alt="Cycling Workout Record"></td>
-    <td style="text-align: center;"><img src="images/sports-elliptical.webp" alt="Elliptical Workout Record"></td>
-    <td style="text-align: center;"><img src="images/sports-running.webp" alt="Running Workout Record"></td>
-    <td style="text-align: center;"><img src="images/sports-swimming.webp" alt="Swimming Workout Record"></td>
+    <td style="text-align: center;"><img src="images/sports-weekly.webp" alt="Fitness+ Weekly Workout Streak" width="80" height="80"></td>
+    <td style="text-align: center;"><img src="images/sports-move.webp" alt="100 Move Goals" width="80" height="80"></td>
+    <td style="text-align: center;"><img src="images/sports-treadmill.webp" alt="50 Fitness+ Treadmill Workouts" width="80" height="80"></td>
+    <td style="text-align: center;"><img src="images/sports-7-workout.webp" alt="7-Workout Week" width="80" height="80"></td>
+    <td style="text-align: center;"><img src="images/sports-cycling.webp" alt="Cycling Workout Record" width="80" height="80"></td>
+    <td style="text-align: center;"><img src="images/sports-elliptical.webp" alt="Elliptical Workout Record" width="80" height="80"></td>
+    <td style="text-align: center;"><img src="images/sports-running.webp" alt="Running Workout Record" width="80" height="80"></td>
+    <td style="text-align: center;"><img src="images/sports-swimming.webp" alt="Swimming Workout Record" width="80" height="80"></td>
   </tr>
   <tr>
     <td style="text-align: center;">Four-week continuous Fitness+ workout streak award</td>
@@ -154,12 +154,12 @@ Passionate about fitness, he has earned a series of accolades in his active life
 
 <table class="no-horizontal-lines">
   <tr>
-    <td style="text-align: center;"><img src="images/medal_Summit_of_Wutong_Mountain.webp" alt="Summit of Wutong Mountain"></td>
-    <td style="text-align: center;"><img src="images/medal_Find_Your_Way.webp" alt="Find Your Way">
-    </td><td style="text-align: center;"><img src="images/medal_Decathlon_SAKURA_Cycling.webp" alt="Decathlon SAKURA Cycling"></td>
-    <td style="text-align: center;"><img src="images/medal_Chongqing_Orienteering_Challenge.webp" alt="Chongqing Mountain City Street & Alley Orienteering Challenge"></td>
-    <td style="text-align: center;"><img src="images/medal_Chongqing_Half_Marathon.webp" alt="Chongqing (Changjiahui) Half Marathon"></td>
-    <td style="text-align: center;"><img src="images/medal_Campus_Fun_Games.webp" alt="Campus Fun Games"></td>
+    <td style="text-align: center;"><img src="images/medal_Summit_of_Wutong_Mountain.webp" alt="Summit of Wutong Mountain" height="120"></td>
+    <td style="text-align: center;"><img src="images/medal_Find_Your_Way.webp" alt="Find Your Way" height="120"></td>
+    <td style="text-align: center;"><img src="images/medal_Decathlon_SAKURA_Cycling.webp" alt="Decathlon SAKURA Cycling" height="120"></td>
+    <td style="text-align: center;"><img src="images/medal_Chongqing_Orienteering_Challenge.webp" alt="Chongqing Mountain City Street & Alley Orienteering Challenge" height="120"></td>
+    <td style="text-align: center;"><img src="images/medal_Chongqing_Half_Marathon.webp" alt="Chongqing (Changjiahui) Half Marathon" height="120"></td>
+    <td style="text-align: center;"><img src="images/medal_Campus_Fun_Games.webp" alt="Campus Fun Games" height="120"></td>
   </tr>
   <tr>
     <td style="text-align: center;">Summit of Wutong Mountain</td>
