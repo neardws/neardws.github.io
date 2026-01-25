@@ -25,6 +25,7 @@ import time
 from dataclasses import dataclass
 
 DEFAULT_SOCKET_DIR = os.environ.get("CLAWDBOT_TMUX_SOCKET_DIR") or f"{os.environ.get('TMPDIR') or '/tmp'}/clawdbot-tmux-sockets"
+# Default to tmuxd isolated socket; pass --socket default to monitor the system tmux server.
 DEFAULT_SOCKET = os.environ.get("TMUXD_SOCKET") or f"{DEFAULT_SOCKET_DIR}/clawdbot.sock"
 DEFAULT_PREFIX = os.environ.get("TMUXD_PREFIX") or "droid-"
 STATE_DIR = os.path.expanduser(os.environ.get("TMUXD_STATE_DIR") or "~/.clawdbot/tmuxd")
@@ -49,8 +50,14 @@ def safe_sh(cmd: list[str]) -> str:
         return ""
 
 
+def _tmux_cmd(socket: str, *args: str) -> list[str]:
+    if socket in ("", "default", None):
+        return ["tmux", *args]
+    return ["tmux", "-S", socket, *args]
+
+
 def tmux(socket: str, *args: str) -> str:
-    return sh(["tmux", "-S", socket, *args])
+    return sh(_tmux_cmd(socket, *args))
 
 
 def safe_tmux(socket: str, *args: str) -> str:
@@ -133,9 +140,12 @@ def classify(out: str, pane_dead: str, exit_status: str) -> str:
     return "RUNNING"
 
 
-def get_snapshots(socket: str, prefix: str, lines: int) -> list[Snapshot]:
+def get_snapshots(socket: str, prefix: str, lines: int, all_sessions: bool) -> list[Snapshot]:
     sessions = safe_tmux(socket, "list-sessions", "-F", "#{session_name}")
-    sess = [s.strip() for s in sessions.splitlines() if s.strip().startswith(prefix)]
+    if all_sessions:
+        sess = [s.strip() for s in sessions.splitlines() if s.strip()]
+    else:
+        sess = [s.strip() for s in sessions.splitlines() if s.strip().startswith(prefix)]
     snaps: list[Snapshot] = []
     for s in sess:
         pane = safe_tmux(socket, "list-panes", "-t", s, "-F", "#{pane_id}").splitlines()
@@ -162,8 +172,9 @@ def get_snapshots(socket: str, prefix: str, lines: int) -> list[Snapshot]:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--socket", default=DEFAULT_SOCKET)
+    ap.add_argument("--socket", default=DEFAULT_SOCKET, help="tmux socket path; use 'default' to monitor the system tmux server")
     ap.add_argument("--prefix", default=DEFAULT_PREFIX)
+    ap.add_argument("--all", action="store_true", help="monitor all tmux sessions (ignore --prefix)")
     ap.add_argument("--lines", type=int, default=800)
     ap.add_argument("--quiet-seconds", type=int, default=600, help="alert if output hash unchanged for this long while RUNNING")
     ap.add_argument("--now", type=int, default=0)
@@ -173,7 +184,7 @@ def main() -> int:
     state = load_state()
     inst_state: dict = state.setdefault("instances", {})
 
-    snaps = get_snapshots(args.socket, args.prefix, args.lines)
+    snaps = get_snapshots(args.socket, args.prefix, args.lines, args.all)
     current_names = set()
     notes: list[str] = []
 
@@ -222,7 +233,8 @@ def main() -> int:
 
     # detect disappeared sessions
     for name in list(inst_state.keys()):
-        if name.startswith(args.prefix) and name not in current_names:
+        # When monitoring all sessions, remove any that disappeared; otherwise restrict to prefix.
+        if (args.all or name.startswith(args.prefix)) and name not in current_names:
             prev = inst_state[name]
             notes.append(f"[tmuxd] {name} disappeared (was {prev.get('lastState')})")
             del inst_state[name]
