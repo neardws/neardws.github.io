@@ -1,0 +1,4 @@
+# local/private
+remote-mac/.env
+remote-mac/*.key
+remote-mac/*.pem
