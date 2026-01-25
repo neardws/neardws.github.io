@@ -76,8 +76,6 @@ author_profile: true
 
 # Services
 
-Self-hosted services running via Cloudflare Tunnel.
-
 <div class="services-list">
 
 <div class="service-item">
