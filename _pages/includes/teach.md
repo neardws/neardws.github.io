@@ -12,8 +12,7 @@
 4. Fulian Li (李富连), M.S. student in Computer Scinece, co-advised with Prof. Penglin Dai in Southwest Jiaotong University, [![](https://img.shields.io/github/followers/97php)](https://github.com/97php) \| E-mail: *fulianli*AT*my*DOT*swjtu*DOT*edu*DOT*cn*
 5. Jie Li (李杰), M.S. student in Computer Scinece, co-advised with Prof. Penglin Dai in Southwest Jiaotong University, [![](https://img.shields.io/github/followers/ligenshuo)](https://github.com/ligenshuo) \| E-mail: *li2839213997*AT*my*DOT*swjtu*DOT*edu*DOT*cn*
 6. Ziqiang Ren (任自强), M.S. student in Computer Scinece, co-advised with Prof. Penglin Dai in Southwest Jiaotong University, [![](https://img.shields.io/github/followers/kkluv)](https://github.com/kkluv) \| E-mail: *1667949917*AT*my*DOT*swjtu*DOT*edu*DOT*cn*
-7. Yanqi Ma (马妍淇), Undergraduate student in Architecture, co-advised with Prof. Penglin Dai in Southwest Jiaotong University, [![](https://img.shields.io/github/followers/Lorain-M)](https://github.com/Lorain-M) \| E-mail: *mayanqi*AT*my*DOT*swjtu*DOT*edu*DOT*cn*
-8. Pengju Zhang (张鹏举), Undergraduate student in Materials Science, co-advised with Prof. Penglin Dai in Southwest Jiaotong University, [![](https://img.shields.io/github/followers/KiteAB98)](https://github.com/KiteAB98) \| E-mail: *2959876685*AT*qq*DOT*com*
+7. Pengju Zhang (张鹏举), Undergraduate student in Materials Science, co-advised with Prof. Penglin Dai in Southwest Jiaotong University, [![](https://img.shields.io/github/followers/KiteAB98)](https://github.com/KiteAB98) \| E-mail: *2959876685*AT*qq*DOT*com*
 
 ## 🎓 Alumnus
 
