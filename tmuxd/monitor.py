@@ -20,7 +20,7 @@ def tmux(socket, *args):
 def safe_tmux(socket, *args):
     try:
         return tmux(socket, *args)
-    except subprocess.CalledProcessError as e:
+    except subprocess.CalledProcessError:
         return ""
 
 
@@ -29,6 +29,15 @@ def last_nonempty_line(text: str) -> str:
         s = line.strip("\r")
         if s.strip():
             return s
+    return ""
+
+
+def first_pane_id(socket: str, session: str) -> str:
+    out = safe_tmux(socket, "list-panes", "-t", session, "-F", "#{pane_id}")
+    for line in out.splitlines():
+        line = line.strip()
+        if line:
+            return line
     return ""
 
 
@@ -50,9 +59,13 @@ def main():
     print(f"[{now}] {len(sess)} instance(s)")
 
     for s in sess:
-        target = f"{s}:0.0"
-        pane_dead = safe_tmux(args.socket, "list-panes", "-t", s, "-F", "#{pane_dead}").strip()
-        out = safe_tmux(args.socket, "capture-pane", "-p", "-J", "-t", target, "-S", f"-{args.lines}")
+        pane = first_pane_id(args.socket, s)
+        if not pane:
+            print(f"- {s}  [UNKNOWN]\n  last: <no pane>")
+            continue
+
+        pane_dead = safe_tmux(args.socket, "display-message", "-p", "-t", pane, "#{pane_dead}").strip()
+        out = safe_tmux(args.socket, "capture-pane", "-p", "-J", "-t", pane, "-S", f"-{args.lines}")
         last = last_nonempty_line(out)
 
         state = "RUNNING"
