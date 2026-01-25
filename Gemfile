@@ -9,7 +9,3 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-sitemap"
 end
-
-group :development do
-  gem "rubocop", "~> 1.60", require: false
-end
