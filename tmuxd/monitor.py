@@ -6,7 +6,8 @@ import re
 from datetime import datetime
 
 ERR_RE = re.compile(r"\b(error|exception|traceback|fatal)\b", re.I)
-DONE_RE = re.compile(r"\b(done|completed|success|finished)\b", re.I)
+# 注意：droid 的 hooks/脚本里经常出现 "Completed"，那只是某个子步骤完成，不代表整体结束。
+DONE_RE = re.compile(r"\b(done|success|finished)\b", re.I)
 # Factory droid/TUI hints
 NEEDS_INPUT_RE = re.compile(r"\b(enter to send|press\s+enter|login|authorize|auth|open\s+browser|device\s+code)\b", re.I)
 PROMPT_RE = re.compile(r"^\s*>\s+", re.M)
@@ -71,16 +72,17 @@ def main():
         out = safe_tmux(args.socket, "capture-pane", "-p", "-J", "-t", pane, "-S", f"-{args.lines}")
         last = last_nonempty_line(out)
 
+        # 优先判定：是否在等输入（对 droid 这种常驻 TUI，比 DONE 更有意义）
         state = "RUNNING"
-        if ERR_RE.search(out):
-            state = "ERROR"
-        elif DONE_RE.search(out):
-            state = "DONE"
-        elif pane_dead == "1":
+        if pane_dead == "1":
             state = "EXITED"
+        elif ERR_RE.search(out):
+            state = "ERROR"
         elif NEEDS_INPUT_RE.search(out) or PROMPT_RE.search(out):
             # TUI is up and waiting for user input
             state = "NEEDS_INPUT"
+        elif DONE_RE.search(out):
+            state = "DONE"
 
         print(f"- {s}  [{state}]\n  last: {last}")
 
