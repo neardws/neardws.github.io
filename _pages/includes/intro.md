@@ -20,6 +20,36 @@ table.no-horizontal-lines th {
     padding-right: 10px;
     padding-left: 10px;
 }
+/* Uniform image sizes for gallery tables */
+table.no-horizontal-lines td img {
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+/* Album covers - square */
+table.no-horizontal-lines td a[href*="music.apple.com"] img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+/* Movie posters - portrait */
+table.no-horizontal-lines td a[href*="imdb.com"] img {
+    width: 90px;
+    height: 133px;
+    object-fit: cover;
+}
+/* Sports achievements - square icons */
+table.no-horizontal-lines td img[src*="sports-"] {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+/* Medal images - uniform height */
+table.no-horizontal-lines td img[src*="medal_"] {
+    width: auto;
+    height: 120px;
+    object-fit: contain;
+}
 /*#map {
     width: 450px;
     height: 220px;
