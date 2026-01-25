@@ -1,0 +1,36 @@
+# Service registry for Neil's local services
+# Used by Clawdbot (Telegram commands + cron monitoring)
+#
+# NOTE: keep secrets in env files, not here.
+
+services:
+  ubuntu-server-monitor:
+    kind: python
+    cwd: /home/neardws/User_Services/ubuntu-server-monitor
+    venvPython: /home/neardws/User_Services/ubuntu-server-monitor/venv/bin/python3
+    entry: main.py
+    config: config.yaml
+    notes: "Telegram-based server monitor; overlaps with Clawdbot monitoring."
+
+  email-automation:
+    kind: python
+    cwd: /home/neardws/User_Services/email-automation
+    venvPython: /home/neardws/User_Services/email-automation/venv/bin/python3
+    entry: "-c"
+    checkCmd: "import sys; print('ok')"
+    config: config/config.yaml
+    notes: "Email automation scripts (Gmail + Coremail)."
+
+  local-llm-deploy:
+    kind: python
+    cwd: /home/neardws/User_Services/local-llm-deploy
+    venvPython: /home/neardws/User_Services/local-llm-deploy/venv/bin/python3
+    notes: "Local LLM tools (vLLM launcher, model search/download, TUI)."
+
+  services-logs:
+    kind: python
+    cwd: /home/neardws/User_Services/services-logs
+    venvPython: /home/neardws/User_Services/services-logs/venv/bin/python3
+    entry: main.py
+    report: reports/latest.md
+    notes: "System service scanner; can be used as a baseline inventory + diff."
