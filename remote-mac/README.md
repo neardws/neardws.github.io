@@ -27,6 +27,31 @@ remote-mac/remote-mac.sh notify "Clawdbot" "Remote Mac is connected"
 remote-mac/remote-mac.sh brew-install ffmpeg gifgrep openai-whisper
 ```
 
+## Auto-fallback (missing local bin → run on Mac)
+
+If a command is missing on this machine, but exists on the Mac, you can use the proxy:
+
+```bash
+chmod +x remote-mac/bin-proxy.sh
+
+# Runs locally if present; otherwise runs on Mac via SSH
+remote-mac/bin-proxy.sh ffmpeg -version
+remote-mac/bin-proxy.sh memo --help
+remote-mac/bin-proxy.sh remindctl --help
+```
+
+Tip: add an alias in your shell:
+
+```bash
+alias macbin='/home/neardws/clawd/remote-mac/bin-proxy.sh'
+```
+
+Then:
+
+```bash
+macbin ffmpeg -i input.mp4 -vf fps=1 out-%03d.png
+```
+
 ## Convenience commands
 
 - Reminders:
