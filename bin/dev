@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# dev — interactive coding agent entrypoint
+# Default: Factory droid (interactive TUI).
+# Override:
+#   DEV_AGENT=codex|claude|opencode|droid
+# Usage:
+#   dev
+
+AGENT="${DEV_AGENT:-droid}"
+
+case "$AGENT" in
+  droid)
+    exec droid
+    ;;
+  codex)
+    exec codex
+    ;;
+  claude)
+    exec claude
+    ;;
+  opencode)
+    exec opencode
+    ;;
+  *)
+    echo "Unknown DEV_AGENT: $AGENT (expected droid|codex|claude|opencode)" >&2
+    exit 2
+    ;;
+esac

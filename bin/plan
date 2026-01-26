@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# plan — one-shot planning via Factory Droid Exec (read-only by default)
+# Default model: claude-opus-4-5-20251101
+# Usage:
+#   plan "your planning prompt"
+#   plan -f prompt.md
+
+MODEL_DEFAULT="claude-opus-4-5-20251101"
+MODEL="${DROID_PLAN_MODEL:-$MODEL_DEFAULT}"
+CWD="${DROID_CWD:-$(pwd)}"
+
+if ! command -v droid >/dev/null 2>&1; then
+  echo "Error: droid not found on PATH" >&2
+  exit 127
+fi
+
+# Pass through all args to droid exec.
+# Important: no --auto here (read-only).
+exec droid exec --cwd "$CWD" -m "$MODEL" "$@"
