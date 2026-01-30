@@ -72,8 +72,8 @@ case "$AGENT" in
     tmux send-keys -t "$SESSION_NAME" "codex --auto-edit --full-auto \"$TASK\"" Enter
     ;;
   gemini)
-    # Google Gemini CLI (cloud)
-    tmux send-keys -t "$SESSION_NAME" "gemini \"$TASK\"" Enter
+    # Google Gemini CLI (cloud) - requires Node v20+
+    tmux send-keys -t "$SESSION_NAME" "source ~/.nvm/nvm.sh && nvm use 22 && gemini \"$TASK\"" Enter
     ;;
   opencode)
     # OpenCode with MiniMax API (paid key)
