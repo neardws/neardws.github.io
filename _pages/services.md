@@ -72,6 +72,29 @@ author_profile: true
   background: #d4edda;
   color: #155724;
 }
+
+.service-item .github-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.85em;
+}
+
+.service-item .github-link a {
+  color: #666;
+  text-decoration: none;
+}
+
+.service-item .github-link a:hover {
+  color: #333;
+}
+
+.service-item .github-link svg {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 4px;
+  fill: currentColor;
+}
 </style>
 
 # Services
@@ -83,6 +106,12 @@ author_profile: true
   <span class="service-url">1panel.neardws.com</span>
   <p class="service-desc">Modern Linux server management panel with web UI.</p>
   <span class="service-tag internal">Internal</span>
+  <div class="github-link">
+    <a href="https://github.com/1Panel-dev/1Panel" target="_blank">
+      <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      1Panel-dev/1Panel
+    </a>
+  </div>
 </div>
 
 <div class="service-item">
@@ -90,34 +119,12 @@ author_profile: true
   <span class="service-url">fish.neardws.com</span>
   <p class="service-desc">Personal media and content management service.</p>
   <span class="service-tag internal">Internal</span>
-</div>
-
-<div class="service-item">
-  <h3><a href="https://clawdbot.neardws.com" target="_blank">ClawdBot</a></h3>
-  <span class="service-url">clawdbot.neardws.com</span>
-  <p class="service-desc">Self-hosted <a href="https://clawd.bot" target="_blank">clawd.bot</a> - AI chatbot interface.</p>
-  <span class="service-tag internal">Internal</span>
-</div>
-
-<div class="service-item">
-  <h3><a href="https://cliproxy.neardws.com" target="_blank">CLI Proxy API</a></h3>
-  <span class="service-url">cliproxy.neardws.com</span>
-  <p class="service-desc">Command-line interface proxy service for remote access.</p>
-  <span class="service-tag internal">Internal</span>
-</div>
-
-<div class="service-item">
-  <h3><a href="https://embedding.neardws.com" target="_blank">Embedding Service</a></h3>
-  <span class="service-url">embedding.neardws.com</span>
-  <p class="service-desc">Vector embedding API for semantic search and AI applications.</p>
-  <span class="service-tag internal">Internal</span>
-</div>
-
-<div class="service-item">
-  <h3><a href="https://kanban.neardws.com" target="_blank">Kanban</a></h3>
-  <span class="service-url">kanban.neardws.com</span>
-  <p class="service-desc">Project management and task tracking board.</p>
-  <span class="service-tag internal">Internal</span>
+  <div class="github-link">
+    <a href="https://github.com/666ghj/BettaFish" target="_blank">
+      <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      666ghj/BettaFish
+    </a>
+  </div>
 </div>
 
 <div class="service-item">
@@ -125,6 +132,38 @@ author_profile: true
   <span class="service-url">mcp.neardws.com</span>
   <p class="service-desc">Model Context Protocol management service.</p>
   <span class="service-tag internal">Internal</span>
+  <div class="github-link">
+    <a href="https://github.com/metatool-ai/metamcp" target="_blank">
+      <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      metatool-ai/metamcp
+    </a>
+  </div>
+</div>
+
+<div class="service-item">
+  <h3><a href="https://latex.neardws.com" target="_blank">OpenPrism</a></h3>
+  <span class="service-url">latex.neardws.com</span>
+  <p class="service-desc">Open-source AI LaTeX writing workspace.</p>
+  <span class="service-tag internal">Internal</span>
+  <div class="github-link">
+    <a href="https://github.com/assistant-ui/open-prism" target="_blank">
+      <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      assistant-ui/open-prism
+    </a>
+  </div>
+</div>
+
+<div class="service-item">
+  <h3><a href="https://openclaw.neardws.com" target="_blank">OpenClaw</a></h3>
+  <span class="service-url">openclaw.neardws.com</span>
+  <p class="service-desc">Self-hosted personal AI assistant.</p>
+  <span class="service-tag internal">Internal</span>
+  <div class="github-link">
+    <a href="https://github.com/openclaw/openclaw" target="_blank">
+      <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      openclaw/openclaw
+    </a>
+  </div>
 </div>
 
 </div>
