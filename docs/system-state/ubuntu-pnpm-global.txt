@@ -1,6 +1,0 @@
-Legend: production dependency, optional only, dev only
-
-/home/neardws/.local/share/pnpm/global/5
-
-dependencies:
-clawdbot link:../../../../../clawdbot

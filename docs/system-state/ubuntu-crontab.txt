@@ -7,3 +7,4 @@
 0 3 * * * /home/neardws/.openclaw/scripts/security-scan.sh >> /home/neardws/.openclaw/logs/security-scan.log 2>&1
 */5 * * * * /home/neardws/server-scripts/monitor/healthchecks-ping.sh >> /home/neardws/User_Services/services-logs/healthchecks.log 2>&1
 0 4 * * 0 /home/neardws/server-scripts/backup/secrets-backup.sh >> /home/neardws/User_Services/services-logs/secrets-backup.log 2>&1
+30 3 * * * /home/neardws/server-scripts/backup/system-snapshot.sh >> /home/neardws/User_Services/services-logs/system-snapshot.log 2>&1
