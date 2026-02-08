@@ -1,0 +1,6 @@
+Hostname: neardwsdeMac-mini.local
+macOS: 26.2
+Chip: Apple M4 Pro
+Memory: 64 GB
+Node: 
+pnpm: 

@@ -1,0 +1,34 @@
+tunnel: ebf58727-7b01-4c8b-bc53-98558eb0de80
+credentials-file: [REDACTED]
+
+ingress:
+  - hostname: fish.neardws.com
+    service: http://192.168.31.211:5000
+    originRequest:
+      noTLSVerify: true
+      connectTimeout: 30s
+      tcpKeepAlive: 30s
+      keepAliveConnections: 100
+  - hostname: 1panel.neardws.com
+    service: http://192.168.31.211:8888
+  - hostname: kanban.neardws.com
+    service: http://192.168.31.211:3002
+  - hostname: mcp.neardws.com
+    service: http://192.168.31.211:12010
+    originRequest:
+      noTLSVerify: true
+      connectTimeout: 120s
+      tcpKeepAlive: 30s
+      keepAliveConnections: 100
+      httpHostHeader: mcp.neardws.com
+  - hostname: embedding.neardws.com
+    service: http://localhost:8001
+  - hostname: cliproxy.neardws.com
+    service: http://localhost:8317
+  - hostname: clawdbot.neardws.com
+    service: http://127.0.0.1:18789
+  - hostname: voice.neardws.com
+    service: http://localhost:8766
+  - hostname: voicews.neardws.com
+    service: http://localhost:8765
+  - service: http_status:404

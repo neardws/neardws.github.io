@@ -1,0 +1,12 @@
+NAMES                                  IMAGE                                                                                                  STATUS                 PORTS
+rsshub                                 diygod/rsshub:chromium-bundled                                                                         Up 5 days              0.0.0.0:1200->1200/tcp, [::]:1200->1200/tcp
+notebooklm-mcp                         notebooklm-mcp:latest                                                                                  Up 2 weeks (healthy)   127.0.0.1:6080->6080/tcp, 127.0.0.1:3005->3000/tcp
+metamcp-nginx                          nginx:alpine                                                                                           Up 13 days             0.0.0.0:12010->80/tcp, [::]:12010->80/tcp
+metamcp                                metamcp-with-admin-api:latest                                                                          Up 13 days (healthy)   0.0.0.0:12008-12009->12008-12009/tcp, [::]:12008-12009->12008-12009/tcp
+metamcp-pg                             postgres:16-alpine                                                                                     Up 13 days (healthy)   0.0.0.0:9433->5432/tcp, [::]:9433->5432/tcp
+autodl-container-5fd14992da-8cc6c7fb   ccr.ccs.tencentyun.com/autodl-private-cloud/torch:cuda11.8-cudnn8-devel-ubuntu22.04-py310-torch2.1.2   Up 3 hours             
+autodl-container-5fd14992da-38b5eba0   ccr.ccs.tencentyun.com/autodl-private-cloud/tensorflow:cuda11.x-py38-tf1.15.5                          Up 37 hours            
+autodl-container-5fd14992da-06a64c0b   ccr.ccs.tencentyun.com/autodl-private-cloud/torch:cuda11.8-cudnn8-devel-ubuntu22.04-py310-torch2.1.2   Up 6 hours             
+dongguatv                              dongguatv-dongguatv                                                                                    Up 2 weeks             0.0.0.0:8080->3000/tcp, [::]:8080->3000/tcp
+1Panel-frpc-OiKq                       snowdreamtech/frpc:0.65.0                                                                              Up 37 hours            
+natfrp-service                         natfrp.com/launcher                                                                                    Up 2 weeks             
