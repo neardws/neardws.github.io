@@ -59,18 +59,27 @@ def rate_discovery(discovery_id, rating=None, reaction=None):
 
 def update_learning_stats(feedback):
     """更新学习统计"""
-    ratings = [r["neil_rating"] for r in feedback["ratings"].values() if r["neil_rating"]]
-    reactions = [r["neil_reaction"] for r in feedback["ratings"].values() if r["neil_reaction"]]
+    # 综合评分和反应
+    all_scores = []
+    for r in feedback["ratings"].values():
+        if r["neil_rating"]:
+            all_scores.append(r["neil_rating"])
+        elif r["neil_reaction"]:
+            all_scores.append(reaction_to_score(r["neil_reaction"]))
     
-    if ratings:
-        feedback["learning"]["avg_rating"] = sum(ratings) / len(ratings)
-        feedback["learning"]["total_rated"] = len(ratings)
+    if all_scores:
+        feedback["learning"]["avg_rating"] = sum(all_scores) / len(all_scores)
+        feedback["learning"]["total_rated"] = len(all_scores)
     
     # 分析高分和低分模式
-    high_rated = [rid for rid, r in feedback["ratings"].items() 
-                  if r["neil_rating"] and r["neil_rating"] >= 4]
-    low_rated = [rid for rid, r in feedback["ratings"].items() 
-                 if r["neil_rating"] and r["neil_rating"] <= 2]
+    high_rated = []
+    low_rated = []
+    for rid, r in feedback["ratings"].items():
+        score = r["neil_rating"] if r["neil_rating"] else (reaction_to_score(r["neil_reaction"]) if r["neil_reaction"] else None)
+        if score and score >= 4:
+            high_rated.append(rid)
+        elif score and score <= 2:
+            low_rated.append(rid)
     
     feedback["learning"]["high_value_patterns"] = high_rated
     feedback["learning"]["low_value_patterns"] = low_rated

@@ -9,15 +9,17 @@
     },
     "#002": {
       "neil_rating": null,
-      "neil_reaction": null,
+      "neil_reaction": "👍",
       "auto_score": 0.8,
-      "rated_at": null
+      "rated_at": "2026-02-10T00:14:03.431027"
     }
   },
   "learning": {
-    "high_value_patterns": [],
+    "high_value_patterns": [
+      "#002"
+    ],
     "low_value_patterns": [],
-    "avg_rating": null,
-    "total_rated": 0
+    "avg_rating": 4.0,
+    "total_rated": 1
   }
 }
