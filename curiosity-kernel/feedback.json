@@ -12,12 +12,16 @@
       "neil_reaction": "👍",
       "auto_score": 0.8,
       "rated_at": "2026-02-10T00:14:03.431027"
+    },
+    "#003": {
+      "neil_rating": null,
+      "neil_reaction": null,
+      "auto_score": 0.75,
+      "rated_at": null
     }
   },
   "learning": {
-    "high_value_patterns": [
-      "#002"
-    ],
+    "high_value_patterns": ["#002"],
     "low_value_patterns": [],
     "avg_rating": 4.0,
     "total_rated": 1

@@ -1,20 +1,20 @@
 {
   "version": "0.1.0",
-  "last_updated": "2026-02-09T23:12:00+08:00",
+  "last_updated": "2026-02-10T01:05:00+08:00",
   "tension": {
-    "index": 0.55,
+    "index": 0.50,
     "threshold": 0.5,
     "base_threshold": 0.5
   },
   "emotion": {
-    "interest": 0.8,
-    "frustration": 0.2,
-    "satisfaction": 0.5,
-    "boredom": 0.05
+    "interest": 0.85,
+    "frustration": 0.15,
+    "satisfaction": 0.6,
+    "boredom": 0.0
   },
   "stats": {
-    "total_explorations": 1,
-    "total_discoveries": 1,
+    "total_explorations": 2,
+    "total_discoveries": 3,
     "total_predictions": 5,
     "predictions_verified": 0,
     "predictions_correct": 0,
@@ -64,9 +64,10 @@
       "domain": "self_evolution",
       "question": "AgentEvolver 论文中的 self-questioning 机制具体怎么实现的？能借鉴吗？",
       "importance": 0.85,
-      "uncertainty": 0.9,
+      "uncertainty": 0.6,
       "created": "2026-02-09T00:40:00+08:00",
-      "last_touched": null
+      "last_touched": "2026-02-10T01:02:00+08:00",
+      "note": "2026-02-10: 找到论文 arXiv 2511.10395，三个机制：self-questioning, self-navigating, self-attributing。可借鉴：经验轨迹记录、问题生成+环境反馈、信用分配。"
     },
     {
       "id": "gap-b7c46fa1",

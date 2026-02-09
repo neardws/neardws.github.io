@@ -1,0 +1,15 @@
+# Git-crypt configuration
+# These files will be automatically encrypted/decrypted
+
+# Shipkey keys
+shipkey-local/keys.json filter=git-crypt diff=git-crypt
+
+# Environment files
+.env filter=git-crypt diff=git-crypt
+.env.local filter=git-crypt diff=git-crypt
+.env.prod filter=git-crypt diff=git-crypt
+.env.*.local filter=git-crypt diff=git-crypt
+
+# Key exports
+*.key filter=git-crypt diff=git-crypt
+secrets/ export-ignore

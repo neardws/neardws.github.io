@@ -1,0 +1,25 @@
+{
+  "version": "0.1.0",
+  "budgets": {
+    "per_heartbeat": {
+      "max_tokens": 500,
+      "max_tools": 2
+    },
+    "daily": {
+      "max_tokens": 5000,
+      "max_tools": 20,
+      "max_daydreams": 3
+    }
+  },
+  "current_usage": {
+    "date": "2026-02-10",
+    "tokens_used": 0,
+    "tools_called": 0,
+    "daydreams_triggered": 0
+  },
+  "rules": {
+    "skip_if_budget_exceeded": true,
+    "prioritize_high_tension": true,
+    "defer_low_value": true
+  }
+}
