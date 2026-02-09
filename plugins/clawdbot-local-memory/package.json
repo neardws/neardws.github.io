@@ -1,0 +1,25 @@
+{
+  "name": "clawdbot-local-memory",
+  "version": "0.1.0",
+  "description": "Local Supermemory-style memory system for Clawdbot",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.32.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "clawdbot": "latest"
+  },
+  "peerDependencies": {
+    "clawdbot": ">=0.30.0"
+  },
+  "openclaw": {
+    "extensions": ["dist/index.js"]
+  }
+}

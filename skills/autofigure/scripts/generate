@@ -1,0 +1,6 @@
+#!/bin/bash
+# AutoFigure Skill - 论文插图生成
+# Usage: /autofigure/generate "method text" [output_name] [--reference path]
+
+cd /home/neardws/clawd/skills/autofigure
+python3 scripts/generate.py "$@"

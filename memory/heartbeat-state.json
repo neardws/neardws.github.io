@@ -1,0 +1,10 @@
+{
+  "last_heartbeat": "2026-02-09T23:12:00+08:00",
+  "last_curiosity_loop": "2026-02-09T23:12:00+08:00",
+  "curiosity_loop_count": 1,
+  "checks": {
+    "email": null,
+    "calendar": null,
+    "notifications": null
+  }
+}

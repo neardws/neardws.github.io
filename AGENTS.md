@@ -207,3 +207,11 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 这份文档只是起点。随着你对复杂问题的处理积累了更多经验，随时修改本文件以优化执行逻辑。
 
 Add your own conventions, style, and rules as you figure out what works.
+
+
+## 🧠 Learned Rules
+- **api_error**: 定期检查 Token 有效性，过期前主动提醒用户重新授权
+- **curiosity_kernel**: 每次心跳运行好奇心循环（见 HEARTBEAT.md），读取 curiosity-kernel/ 下的状态文件，验证预测、计算张力、决定是否探索。发现有价值的东西时主动分享。
+
+*Auto-generated from error patterns.*
+

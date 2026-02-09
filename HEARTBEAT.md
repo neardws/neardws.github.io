@@ -1,4 +1,58 @@
 # HEARTBEAT.md
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
-# Add tasks below when you want the agent to check something periodically.
+## ⚡ 心跳执行清单（必须按顺序执行）
+
+### 1️⃣ 读取状态文件
+```
+memory/heartbeat-state.json   ← 追踪上次执行时间
+curiosity-kernel/state.json   ← 张力指数、情感状态
+```
+
+### 2️⃣ 紧急检查（轮询，每次做 1-2 项）
+- [ ] 邮件：`python3 ~/.clawdbot/scripts/check-emails.py`（有重要邮件立即通知）
+- [ ] 日历：未来 24h 日程（待配置）
+- [ ] 通知：X/Twitter mentions（待配置）
+
+### 3️⃣ 🧠 好奇心循环（每次心跳必须执行一次）
+
+**如果 `curiosity_loop_count` 距上次心跳增加了，跳过此步骤**
+
+1. 读 `curiosity-kernel/state.json`，获取 tension 和 knowledge_gaps
+2. **如果 tension > threshold**：
+   - 选最高 importance × uncertainty 的 gap
+   - **执行 1-2 次工具调用**（搜索/读文件/查 git）
+   - 有发现 → 追加到 `discoveries.md`，更新情感
+   - 无发现 → boredom↑0.05
+3. 写回 `state.json`，更新 `heartbeat-state.json` 的 `curiosity_loop_count`
+
+### 4️⃣ 验证预测
+检查 `predictions.json` 中已到 `verify_after` 的预测，更新结果。
+
+### 5️⃣ 更新 heartbeat-state.json
+```json
+{
+  "last_heartbeat": "<当前时间>",
+  "last_curiosity_loop": "<如果执行了探索>",
+  "curiosity_loop_count": <+1>,
+  "checks": { "email": "<时间戳>", ... }
+}
+```
+
+---
+
+## 🎯 什么时候主动汇报？
+
+- 发现有趣的东西 → 非深夜时段主动分享
+- 深夜（23:00-08:00）→ 沉默，除非非常有趣
+
+## 📌 关键原则
+
+1. **好奇心循环不是可选的** — 每次心跳必须检查 tension
+2. **探索要轻量** — 最多 1-2 次工具调用，不要烧 token
+3. **连续 3 次无进展的 gap → 降低 importance**，避免死循环
+
+---
+
+## 📁 详细文档
+
+完整的情感更新规则、白日梦机制等见 `curiosity-kernel/DESIGN.md`

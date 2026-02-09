@@ -1,87 +1,55 @@
 ---
 name: remote-macos-apple-notes
-description: Remote Apple Notes management via the `memo` CLI on macOS through SSH. Create, view, edit, delete, search, move, and export notes. Use when a user asks Clawdbot to add a note, list notes, search notes, or manage note folders on the remote macOS.
+description: Remote Apple Notes management via Clawdbot node. Create, view, edit, delete, search, move, and export notes on Mac Mini M4.
 homepage: https://github.com/antoniorodr/memo
-metadata: {"clawdbot":{"emoji":"📝","os":["linux"],"requires":{"bins":["ssh"]}}}
+metadata: {"clawdbot":{"emoji":"📝","os":["linux"]}}
 ---
 
-# Remote Apple Notes CLI (memo)
+# Remote macOS Apple Notes (memo)
 
-Use `memo notes` commands on a remote macOS machine via SSH to manage Apple Notes directly from the terminal. Create, view, edit, delete, search, move notes between folders, and export to HTML/Markdown.
+Use `memo` commands on Mac Mini M4 node to manage Apple Notes.
 
 ## Requirements
-- SSH access to the macOS host (key-based auth recommended)
-- On macOS: `memo` installed, Automation access granted to Notes.app
-
-## Configuration
-Environment variables (optional):
-- `SSH_HOST` - Remote macOS host (default: 192.168.31.171)
-- `SSH_USER` - Remote macOS user (default: neardws)
-- `SSH_OPTIONS` - Additional SSH options
-
-## Usage
-
-All commands are executed via the wrapper script:
-
-```bash
-# List all notes
-{baseDir}/scripts/memo.sh notes
-
-# Filter by folder
-{baseDir}/scripts/memo.sh notes -f "Folder Name"
-
-# Search notes (fuzzy)
-{baseDir}/scripts/memo.sh notes -s "query"
-
-# Add a new note (interactive)
-{baseDir}/scripts/memo.sh notes -a
-
-# Quick add with title
-{baseDir}/scripts/memo.sh notes -a "Note Title"
-
-# Edit existing note (interactive)
-{baseDir}/scripts/memo.sh notes -e
-
-# Delete a note (interactive)
-{baseDir}/scripts/memo.sh notes -d
-
-# Move note to folder (interactive)
-{baseDir}/scripts/memo.sh notes -m
-
-# Export to HTML/Markdown
-{baseDir}/scripts/memo.sh notes -ex
-```
+- Mac Mini M4 node connected
+- On macOS: `memo` installed, Notes.app configured
 
 ## Common Commands
 
-### View Notes
-```bash
-{baseDir}/scripts/memo.sh notes
-{baseDir}/scripts/memo.sh notes -f "Work"
-{baseDir}/scripts/memo.sh notes -s "meeting"
+### List notes
+```json
+{
+  "action": "run",
+  "node": "Mac Mini M4",
+  "command": ["memo", "list", "--limit", "10", "--json"]
+}
 ```
 
-### Create Notes
-```bash
-{baseDir}/scripts/memo.sh notes -a "Shopping List"
+### Search notes
+```json
+{
+  "action": "run",
+  "node": "Mac Mini M4",
+  "command": ["memo", "search", "query", "--json"]
+}
 ```
 
-### Edit/Delete Notes
-```bash
-{baseDir}/scripts/memo.sh notes -e
-{baseDir}/scripts/memo.sh notes -d
+### Create note
+```json
+{
+  "action": "run",
+  "node": "Mac Mini M4",
+  "command": ["memo", "create", "--title", "Note Title", "--body", "Content here"]
+}
 ```
 
-### Move/Export Notes
-```bash
-{baseDir}/scripts/memo.sh notes -m
-{baseDir}/scripts/memo.sh notes -ex
+### View note
+```json
+{
+  "action": "run",
+  "node": "Mac Mini M4",
+  "command": ["memo", "show", "note-id", "--json"]
+}
 ```
-
-## Limitations
-- Cannot edit notes containing images or attachments
-- Interactive prompts may require terminal access
 
 ## Notes
-- Remote macOS must have `memo` installed: `brew tap antoniorodr/memo && brew install antoniorodr/memo/memo`
-- Requires Apple Notes.app to be accessible on the macOS host
+- Install: `brew tap antoniorodr/memo && brew install antoniorodr/memo/memo`

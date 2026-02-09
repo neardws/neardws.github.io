@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "skills": {
+    "arxiv-watcher": {
+      "version": "1.0.0",
+      "installedAt": 1769735314061
+    },
+    "literature-review": {
+      "version": "1.2.0",
+      "installedAt": 1769735323738
+    },
+    "cloudflare": {
+      "version": "1.0.0",
+      "installedAt": 1769735342474
+    },
+    "linux-service-triage": {
+      "version": "1.0.0",
+      "installedAt": 1769735353396
+    },
+    "domain-dns-ops": {
+      "version": "1.0.0",
+      "installedAt": 1769735362292
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1769735371884
+    },
+    "conventional-commits": {
+      "version": "1.0.1",
+      "installedAt": 1769735380030
+    },
+    "uptime-kuma": {
+      "version": "1.0.0",
+      "installedAt": 1769735388917
+    },
+    "pm2": {
+      "version": "1.0.0",
+      "installedAt": 1769735398002
+    },
+    "tmux-agents": {
+      "version": "1.0.0",
+      "installedAt": 1769735407317
+    },
+    "youtube-summarizer": {
+      "version": "1.0.0",
+      "installedAt": 1769735428094
+    },
+    "perplexity": {
+      "version": "1.0.0",
+      "installedAt": 1769735438028
+    },
+    "apple-contacts": {
+      "version": "1.2.0",
+      "installedAt": 1769735447047
+    },
+    "apple-photos": {
+      "version": "1.0.0",
+      "installedAt": 1769735456245
+    },
+    "icloud-findmy": {
+      "version": "1.0.0",
+      "installedAt": 1769735465726
+    },
+    "homebrew": {
+      "version": "1.0.1",
+      "installedAt": 1769735474842
+    },
+    "browse": {
+      "version": "1.0.1",
+      "installedAt": 1770304503776
+    },
+    "webapp-testing": {
+      "version": "0.1.0",
+      "installedAt": 1770304506071
+    },
+    "kesslerio-stealth-browser": {
+      "version": "1.0.0",
+      "installedAt": 1770304509609
+    },
+    "browser-cash": {
+      "version": "1.0.0",
+      "installedAt": 1770304511842
+    },
+    "agent-browser": {
+      "version": "0.2.0",
+      "installedAt": 1770304513802
+    },
+    "task-status": {
+      "version": "1.0.0",
+      "installedAt": 1770304631395
+    },
+    "deepwork-tracker": {
+      "version": "0.1.1",
+      "installedAt": 1770304633544
+    },
+    "exa-web-search-free": {
+      "version": "1.0.1",
+      "installedAt": 1770304758150
+    },
+    "technews": {
+      "version": "1.0.0",
+      "installedAt": 1770304760528
+    },
+    "deepwiki": {
+      "version": "1.0.0",
+      "installedAt": 1770304762313
+    },
+    "get-tldr": {
+      "version": "1.0.0",
+      "installedAt": 1770304764240
+    },
+    "git-crypt-backup": {
+      "version": "1.0.0",
+      "installedAt": 1770304953749
+    },
+    "agentguard": {
+      "version": "1.0.0",
+      "installedAt": 1770304956416
+    },
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1770304958377
+    }
+  }
+}

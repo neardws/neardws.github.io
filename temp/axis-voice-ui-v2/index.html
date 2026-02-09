@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #030305;
+            width: 1280px;
+            height: 720px;
+            overflow: hidden;
+            margin: 0 auto;
+            cursor: default;
+            user-select: none;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* Game of Life background */
+        #lifeCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.15;
+        }
+
+        /* Vignette overlay */
+        .vignette {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at 50% 50%, transparent 30%, rgba(0,0,0,0.8) 100%);
+            pointer-events: none;
+        }
+
+        /* Main waveform area */
+        .waveform-container {
+            position: relative;
+            width: 700px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        #waveCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* Core glow */
+        .core {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #00d4ff;
+            border-radius: 50%;
+            box-shadow: 
+                0 0 20px #00d4ff,
+                0 0 40px rgba(0, 212, 255, 0.5),
+                0 0 80px rgba(0, 212, 255, 0.3);
+            animation: corePulse 2s ease-in-out infinite;
+        }
+
+        .core.active {
+            animation: coreActive 0.5s ease-in-out infinite;
+        }
+
+        @keyframes corePulse {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.2); opacity: 1; }
+        }
+
+        @keyframes coreActive {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.5); }
+        }
+
+        /* Ambient glow */
+        .ambient {
+            position: absolute;
+            width: 300px;
+            height: 100px;
+            background: radial-gradient(ellipse, rgba(0, 180, 255, 0.1) 0%, transparent 70%);
+            filter: blur(40px);
+            pointer-events: none;
+            transition: all 0.5s ease;
+        }
+
+        .ambient.active {
+            width: 450px;
+            height: 150px;
+            background: radial-gradient(ellipse, rgba(0, 220, 255, 0.2) 0%, transparent 70%);
+        }
+
+        /* Name */
+        .name {
+            position: absolute;
+            top: 50px;
+            font-size: 13px;
+            font-weight: 500;
+            color: rgba(0, 200, 255, 0.4);
+            letter-spacing: 0.5em;
+            text-transform: uppercase;
+            z-index: 10;
+        }
+
+        /* Status */
+        .status {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .status-dot {
+            width: 6px;
+            height: 6px;
+            background: #00d4ff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #00d4ff;
+            animation: statusBlink 2s ease-in-out infinite;
+        }
+
+        .status-dot.error {
+            background: #ff4444;
+            box-shadow: 0 0 10px #ff4444;
+        }
+
+        @keyframes statusBlink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        .status-text {
+            font-size: 10px;
+            color: rgba(0, 200, 255, 0.5);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-family: monospace;
+        }
+
+        /* Metrics */
+        .metrics {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            font-family: monospace;
+            font-size: 10px;
+            color: rgba(0, 200, 255, 0.25);
+            line-height: 1.8;
+            z-index: 10;
+        }
+
+        .metrics span {
+            color: rgba(0, 200, 255, 0.5);
+        }
+
+        /* Generation counter */
+        .generation {
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+            font-family: monospace;
+            font-size: 10px;
+            color: rgba(0, 200, 255, 0.2);
+            z-index: 10;
+        }
+
+        /* Transcript */
+        .transcript {
+            position: absolute;
+            bottom: 130px;
+            text-align: center;
+            max-width: 700px;
+            z-index: 10;
+        }
+
+        .transcript-text {
+            font-size: 20px;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+            letter-spacing: 0.03em;
+            opacity: 0;
+            transform: translateY(15px);
+            transition: all 0.5s ease;
+        }
+
+        .transcript-text.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .transcript-text.listening {
+            color: rgba(0, 200, 255, 0.5);
+            font-size: 14px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+
+        .transcript-text.user-text {
+            color: rgba(150, 200, 255, 0.7);
+            font-size: 18px;
+        }
+
+        /* Hint */
+        .hint {
+            position: absolute;
+            bottom: 50px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.2);
+            letter-spacing: 0.1em;
+            transition: opacity 0.3s;
+            z-index: 10;
+        }
+
+        .hint.hidden {
+            opacity: 0;
+        }
+
+        /* Corner decorations */
+        .corner {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border: 1px solid rgba(0, 200, 255, 0.15);
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        .corner.tl { top: 30px; left: 30px; border-right: none; border-bottom: none; }
+        .corner.tr { top: 30px; right: 30px; border-left: none; border-bottom: none; }
+        .corner.bl { bottom: 30px; left: 30px; border-right: none; border-top: none; }
+        .corner.br { bottom: 30px; right: 30px; border-left: none; border-top: none; }
+
+        /* Hidden audio element */
+        #ttsAudio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Game of Life Background -->
+        <canvas id="lifeCanvas"></canvas>
+        <div class="vignette"></div>
+        
+        <div class="corner tl"></div>
+        <div class="corner tr"></div>
+        <div class="corner bl"></div>
+        <div class="corner br"></div>
+
+        <div class="name">Axis</div>
+        
+        <div class="status">
+            <div class="status-dot" id="statusDot"></div>
+            <span class="status-text" id="statusText">Online</span>
+        </div>
+
+        <div class="metrics">
+            ASR: <span id="asrStatus">Ready</span><br>
+            TTS: <span id="ttsStatus">Ready</span><br>
+            Voice: <span id="voiceId">wangyuan</span>
+        </div>
+
+        <div class="generation">
+            Gen: <span id="genCount">0</span>
+        </div>
+
+        <div class="waveform-container" id="waveContainer">
+            <div class="ambient" id="ambient"></div>
+            <canvas id="waveCanvas" width="700" height="250"></canvas>
+            <div class="core" id="core"></div>
+        </div>
+
+        <div class="transcript">
+            <p class="transcript-text" id="transcript"></p>
+        </div>
+
+        <p class="hint" id="hint">点击或按住空格键开始对话</p>
+
+        <audio id="ttsAudio"></audio>
+    </div>
+
+    <script>
+        // ============ Configuration ============
+        const CONFIG = {
+            ASR_URL: '/api/asr',
+            TTS_URL: '/api/tts',
+            VOICE_ID: 'wangyuan'
+        };
+
+        // ============ Game of Life ============
+        const lifeCanvas = document.getElementById('lifeCanvas');
+        const lifeCtx = lifeCanvas.getContext('2d');
+        
+        const cellSize = 8;
+        lifeCanvas.width = 1280;
+        lifeCanvas.height = 720;
+        
+        const cols = Math.floor(lifeCanvas.width / cellSize);
+        const rows = Math.floor(lifeCanvas.height / cellSize);
+        
+        let grid = createGrid();
+        let generation = 0;
+        const genCountEl = document.getElementById('genCount');
+
+        function createGrid() {
+            const arr = new Array(cols);
+            for (let i = 0; i < cols; i++) {
+                arr[i] = new Array(rows);
+                for (let j = 0; j < rows; j++) {
+                    arr[i][j] = Math.random() < 0.08 ? 1 : 0;
+                }
+            }
+            return arr;
+        }
+
+        function countNeighbors(g, x, y) {
+            let sum = 0;
+            for (let i = -1; i <= 1; i++) {
+                for (let j = -1; j <= 1; j++) {
+                    if (i === 0 && j === 0) continue;
+                    const col = (x + i + cols) % cols;
+                    const row = (y + j + rows) % rows;
+                    sum += g[col][row];
+                }
+            }
+            return sum;
+        }
+
+        function nextGeneration() {
+            const next = new Array(cols);
+            for (let i = 0; i < cols; i++) {
+                next[i] = new Array(rows);
+                for (let j = 0; j < rows; j++) {
+                    const neighbors = countNeighbors(grid, i, j);
+                    const state = grid[i][j];
+                    
+                    if (state === 0 && neighbors === 3) {
+                        next[i][j] = 1;
+                    } else if (state === 1 && (neighbors < 2 || neighbors > 3)) {
+                        next[i][j] = 0;
+                    } else {
+                        next[i][j] = state;
+                    }
+                }
+            }
+            grid = next;
+            generation++;
+            genCountEl.textContent = generation;
+
+            if (generation % 100 === 0) {
+                for (let i = 0; i < 20; i++) {
+                    const x = Math.floor(Math.random() * cols);
+                    const y = Math.floor(Math.random() * rows);
+                    grid[x][y] = 1;
+                }
+            }
+        }
+
+        function drawLife() {
+            lifeCtx.clearRect(0, 0, lifeCanvas.width, lifeCanvas.height);
+            
+            for (let i = 0; i < cols; i++) {
+                for (let j = 0; j < rows; j++) {
+                    if (grid[i][j] === 1) {
+                        const x = i * cellSize;
+                        const y = j * cellSize;
+                        
+                        const dx = (i - cols/2) / (cols/2);
+                        const dy = (j - rows/2) / (rows/2);
+                        const dist = Math.sqrt(dx*dx + dy*dy);
+                        
+                        const hue = 180 + dist * 40;
+                        lifeCtx.fillStyle = `hsla(${hue}, 100%, 60%, 0.8)`;
+                        lifeCtx.fillRect(x, y, cellSize - 1, cellSize - 1);
+                    }
+                }
+            }
+        }
+
+        setInterval(() => {
+            nextGeneration();
+            drawLife();
+        }, 150);
+
+        drawLife();
+
+        // ============ Audio Recording ============
+        let mediaRecorder = null;
+        let audioChunks = [];
+        let audioContext = null;
+        let analyser = null;
+        let dataArray = null;
+
+        // Convert audio blob to WAV format
+        async function convertToWav(blob) {
+            const arrayBuffer = await blob.arrayBuffer();
+            const audioCtx = new AudioContext();
+            const audioBuffer = await audioCtx.decodeAudioData(arrayBuffer);
+            
+            const numChannels = 1;
+            const sampleRate = 16000;
+            const bitsPerSample = 16;
+            
+            // Resample to 16kHz mono
+            const offlineCtx = new OfflineAudioContext(numChannels, audioBuffer.duration * sampleRate, sampleRate);
+            const source = offlineCtx.createBufferSource();
+            source.buffer = audioBuffer;
+            source.connect(offlineCtx.destination);
+            source.start();
+            
+            const resampledBuffer = await offlineCtx.startRendering();
+            const samples = resampledBuffer.getChannelData(0);
+            
+            // Create WAV file
+            const wavBuffer = new ArrayBuffer(44 + samples.length * 2);
+            const view = new DataView(wavBuffer);
+            
+            // WAV header
+            const writeString = (offset, string) => {
+                for (let i = 0; i < string.length; i++) {
+                    view.setUint8(offset + i, string.charCodeAt(i));
+                }
+            };
+            
+            writeString(0, 'RIFF');
+            view.setUint32(4, 36 + samples.length * 2, true);
+            writeString(8, 'WAVE');
+            writeString(12, 'fmt ');
+            view.setUint32(16, 16, true);
+            view.setUint16(20, 1, true);
+            view.setUint16(22, numChannels, true);
+            view.setUint32(24, sampleRate, true);
+            view.setUint32(28, sampleRate * numChannels * bitsPerSample / 8, true);
+            view.setUint16(32, numChannels * bitsPerSample / 8, true);
+            view.setUint16(34, bitsPerSample, true);
+            writeString(36, 'data');
+            view.setUint32(40, samples.length * 2, true);
+            
+            // Write samples
+            let offset = 44;
+            for (let i = 0; i < samples.length; i++) {
+                const s = Math.max(-1, Math.min(1, samples[i]));
+                view.setInt16(offset, s < 0 ? s * 0x8000 : s * 0x7FFF, true);
+                offset += 2;
+            }
+            
+            return new Blob([wavBuffer], { type: 'audio/wav' });
+        }
+
+        async function initAudio() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                
+                // Setup analyser for visualization
+                audioContext = new AudioContext();
+                analyser = audioContext.createAnalyser();
+                const source = audioContext.createMediaStreamSource(stream);
+                source.connect(analyser);
+                analyser.fftSize = 256;
+                dataArray = new Uint8Array(analyser.frequencyBinCount);
+                
+                // Setup recorder
+                mediaRecorder = new MediaRecorder(stream);
+                
+                mediaRecorder.ondataavailable = (e) => {
+                    audioChunks.push(e.data);
+                };
+                
+                mediaRecorder.onstop = async () => {
+                    const audioBlob = new Blob(audioChunks, { type: mediaRecorder.mimeType });
+                    audioChunks = [];
+                    
+                    // Convert to WAV for better ASR compatibility
+                    const wavBlob = await convertToWav(audioBlob);
+                    await processAudio(wavBlob);
+                };
+                
+                console.log('Audio initialized');
+                return true;
+            } catch (err) {
+                console.error('Audio init failed:', err);
+                showTranscript('麦克风访问被拒绝', 'listening');
+                return false;
+            }
+        }
+
+        function startRecording() {
+            if (!mediaRecorder) return false;
+            audioChunks = [];
+            mediaRecorder.start();
+            return true;
+        }
+
+        function stopRecording() {
+            if (mediaRecorder && mediaRecorder.state === 'recording') {
+                mediaRecorder.stop();
+            }
+        }
+
+        function getAudioLevel() {
+            if (!analyser || !dataArray) return 0;
+            analyser.getByteFrequencyData(dataArray);
+            let sum = 0;
+            for (let i = 0; i < dataArray.length; i++) {
+                sum += dataArray[i];
+            }
+            return sum / dataArray.length / 255;
+        }
+
+        // ============ ASR ============
+        async function processAudio(audioBlob) {
+            setState('thinking');
+            document.getElementById('asrStatus').textContent = 'Processing...';
+            
+            try {
+                const formData = new FormData();
+                formData.append('file', audioBlob, 'audio.wav');
+                
+                const response = await fetch(CONFIG.ASR_URL, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (!response.ok) throw new Error('ASR request failed');
+                
+                const result = await response.json();
+                const text = result.text || result.transcription || '';
+                
+                document.getElementById('asrStatus').textContent = 'Ready';
+                
+                if (text.trim()) {
+                    showTranscript(text, 'user-text');
+                    
+                    // Simulate AI response (replace with actual API call)
+                    setTimeout(() => {
+                        const responses = [
+                            '我听到了。有什么需要我帮忙的吗？',
+                            '明白了。让我来处理这个。',
+                            '好的，我在这里。',
+                            '收到。还有什么其他问题吗？'
+                        ];
+                        const response = responses[Math.floor(Math.random() * responses.length)];
+                        speakText(response);
+                    }, 500);
+                } else {
+                    showTranscript('没有检测到语音', 'listening');
+                    setTimeout(() => setState('idle'), 1500);
+                }
+            } catch (err) {
+                console.error('ASR error:', err);
+                document.getElementById('asrStatus').textContent = 'Error';
+                showTranscript('语音识别失败', 'listening');
+                setTimeout(() => setState('idle'), 1500);
+            }
+        }
+
+        // ============ TTS ============
+        const ttsAudio = document.getElementById('ttsAudio');
+
+        async function speakText(text) {
+            setState('speaking');
+            document.getElementById('ttsStatus').textContent = 'Generating...';
+            
+            try {
+                const formData = new FormData();
+                formData.append('text', text);
+                formData.append('voice_id', CONFIG.VOICE_ID);
+                
+                const response = await fetch(CONFIG.TTS_URL, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (!response.ok) throw new Error('TTS request failed');
+                
+                const audioBlob = await response.blob();
+                const audioUrl = URL.createObjectURL(audioBlob);
+                
+                document.getElementById('ttsStatus').textContent = 'Playing';
+                showTranscript(text, 'normal');
+                
+                ttsAudio.src = audioUrl;
+                ttsAudio.play();
+                
+                ttsAudio.onended = () => {
+                    document.getElementById('ttsStatus').textContent = 'Ready';
+                    URL.revokeObjectURL(audioUrl);
+                    setState('idle');
+                    setTimeout(hideTranscript, 2000);
+                };
+                
+                ttsAudio.onerror = () => {
+                    document.getElementById('ttsStatus').textContent = 'Error';
+                    setState('idle');
+                };
+            } catch (err) {
+                console.error('TTS error:', err);
+                document.getElementById('ttsStatus').textContent = 'Error';
+                showTranscript(text, 'normal');
+                setTimeout(() => {
+                    setState('idle');
+                    setTimeout(hideTranscript, 2000);
+                }, 2000);
+            }
+        }
+
+        // ============ Waveform ============
+        const waveCanvas = document.getElementById('waveCanvas');
+        const ctx = waveCanvas.getContext('2d');
+        const waveContainer = document.getElementById('waveContainer');
+        const ambient = document.getElementById('ambient');
+        const core = document.getElementById('core');
+        const transcript = document.getElementById('transcript');
+        const hint = document.getElementById('hint');
+        const statusText = document.getElementById('statusText');
+        const statusDot = document.getElementById('statusDot');
+
+        const width = waveCanvas.width;
+        const height = waveCanvas.height;
+        const centerY = height / 2;
+
+        let state = 'idle';
+        let time = 0;
+        let audioLevel = 0;
+        let targetAudioLevel = 0;
+
+        const layers = 3;
+        const points = 120;
+        const waveData = Array.from({ length: layers }, () => new Array(points).fill(0));
+
+        function drawWave() {
+            ctx.clearRect(0, 0, width, height);
+            
+            // Get real audio level when listening
+            if (state === 'listening' && analyser) {
+                targetAudioLevel = getAudioLevel() * 1.5;
+            } else if (state === 'speaking') {
+                // Simulate speaking animation
+                targetAudioLevel = 0.5 + Math.sin(time * 0.12) * 0.35;
+            } else {
+                targetAudioLevel = 0;
+            }
+            
+            audioLevel += (targetAudioLevel - audioLevel) * 0.12;
+
+            for (let layer = 0; layer < layers; layer++) {
+                const layerOffset = layer * 0.3;
+                const layerAmp = 1 - layer * 0.25;
+                
+                for (let i = 0; i < points; i++) {
+                    const x = i / points;
+                    const distFromCenter = Math.abs(x - 0.5) * 2;
+                    const envelope = Math.pow(1 - distFromCenter, 1.5);
+                    
+                    let targetHeight;
+                    
+                    if (state === 'idle') {
+                        const breath = Math.sin(time * 0.015 + layerOffset) * 4;
+                        const micro = Math.sin(x * Math.PI * 6 + time * 0.03 + layer) * 2;
+                        targetHeight = (breath + micro) * envelope * layerAmp;
+                    } else if (state === 'listening') {
+                        const wave1 = Math.sin(x * Math.PI * 5 + time * 0.1 + layerOffset) * audioLevel * 45;
+                        const wave2 = Math.sin(x * Math.PI * 8 - time * 0.07 + layer) * audioLevel * 25;
+                        const wave3 = Math.sin(x * Math.PI * 13 + time * 0.15) * audioLevel * 12;
+                        const noise = (Math.random() - 0.5) * audioLevel * 8;
+                        targetHeight = (wave1 + wave2 + wave3 + noise) * envelope * layerAmp;
+                    } else if (state === 'thinking') {
+                        const pulse = Math.sin(time * 0.08) * 0.5 + 0.5;
+                        const wave = Math.sin(x * Math.PI * 4 + time * 0.05 + layerOffset) * 12;
+                        targetHeight = wave * pulse * envelope * layerAmp;
+                    } else if (state === 'speaking') {
+                        const wave1 = Math.sin(x * Math.PI * 4 + time * 0.08 + layerOffset) * audioLevel * 50;
+                        const wave2 = Math.sin(x * Math.PI * 7 - time * 0.06 + layer) * audioLevel * 20;
+                        targetHeight = (wave1 + wave2) * envelope * layerAmp;
+                    }
+                    
+                    waveData[layer][i] += (targetHeight - waveData[layer][i]) * 0.18;
+                }
+            }
+
+            for (let layer = layers - 1; layer >= 0; layer--) {
+                const alpha = 0.3 + (layers - layer) * 0.25;
+                
+                ctx.beginPath();
+                
+                for (let i = 0; i < points; i++) {
+                    const x = (i / (points - 1)) * width;
+                    const y = centerY + waveData[layer][i];
+                    
+                    if (i === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        const prevX = ((i - 1) / (points - 1)) * width;
+                        const prevY = centerY + waveData[layer][i - 1];
+                        const cpX = (prevX + x) / 2;
+                        const cpY = (prevY + y) / 2;
+                        ctx.quadraticCurveTo(prevX, prevY, cpX, cpY);
+                    }
+                }
+
+                let gradient = ctx.createLinearGradient(0, 0, width, 0);
+                
+                if (state === 'idle') {
+                    gradient.addColorStop(0, `rgba(0, 180, 255, 0)`);
+                    gradient.addColorStop(0.2, `rgba(0, 180, 255, ${alpha * 0.4})`);
+                    gradient.addColorStop(0.5, `rgba(0, 220, 255, ${alpha})`);
+                    gradient.addColorStop(0.8, `rgba(0, 180, 255, ${alpha * 0.4})`);
+                    gradient.addColorStop(1, `rgba(0, 180, 255, 0)`);
+                } else if (state === 'listening') {
+                    gradient.addColorStop(0, `rgba(0, 255, 200, 0)`);
+                    gradient.addColorStop(0.2, `rgba(0, 255, 220, ${alpha * 0.5})`);
+                    gradient.addColorStop(0.5, `rgba(0, 255, 255, ${alpha})`);
+                    gradient.addColorStop(0.8, `rgba(0, 255, 220, ${alpha * 0.5})`);
+                    gradient.addColorStop(1, `rgba(0, 255, 200, 0)`);
+                } else if (state === 'thinking') {
+                    gradient.addColorStop(0, `rgba(180, 100, 255, 0)`);
+                    gradient.addColorStop(0.2, `rgba(180, 100, 255, ${alpha * 0.4})`);
+                    gradient.addColorStop(0.5, `rgba(200, 120, 255, ${alpha})`);
+                    gradient.addColorStop(0.8, `rgba(180, 100, 255, ${alpha * 0.4})`);
+                    gradient.addColorStop(1, `rgba(180, 100, 255, 0)`);
+                } else if (state === 'speaking') {
+                    gradient.addColorStop(0, `rgba(0, 255, 180, 0)`);
+                    gradient.addColorStop(0.2, `rgba(0, 255, 200, ${alpha * 0.5})`);
+                    gradient.addColorStop(0.5, `rgba(100, 255, 220, ${alpha})`);
+                    gradient.addColorStop(0.8, `rgba(0, 255, 200, ${alpha * 0.5})`);
+                    gradient.addColorStop(1, `rgba(0, 255, 180, 0)`);
+                }
+
+                ctx.strokeStyle = gradient;
+                ctx.lineWidth = 2 - layer * 0.3;
+                ctx.lineCap = 'round';
+                ctx.stroke();
+
+                if (layer === 0) {
+                    ctx.shadowColor = state === 'idle' ? '#00d4ff' : 
+                                     state === 'listening' ? '#00ffcc' :
+                                     state === 'thinking' ? '#b060ff' : '#00ffc8';
+                    ctx.shadowBlur = 15;
+                    ctx.stroke();
+                    ctx.shadowBlur = 0;
+                }
+            }
+
+            time++;
+            requestAnimationFrame(drawWave);
+        }
+
+        function setState(newState) {
+            state = newState;
+            
+            if (state === 'idle') {
+                statusText.textContent = 'Online';
+                statusDot.classList.remove('error');
+                hint.classList.remove('hidden');
+                ambient.classList.remove('active');
+                core.classList.remove('active');
+            } else if (state === 'listening') {
+                statusText.textContent = 'Listening';
+                hint.classList.add('hidden');
+                ambient.classList.add('active');
+                core.classList.add('active');
+            } else if (state === 'thinking') {
+                statusText.textContent = 'Processing';
+                ambient.classList.remove('active');
+                core.classList.remove('active');
+            } else if (state === 'speaking') {
+                statusText.textContent = 'Speaking';
+                ambient.classList.add('active');
+                core.classList.add('active');
+            }
+        }
+
+        function showTranscript(text, type = 'normal') {
+            transcript.textContent = text;
+            transcript.className = 'transcript-text ' + type;
+            setTimeout(() => transcript.classList.add('visible'), 50);
+        }
+
+        function hideTranscript() {
+            transcript.classList.remove('visible');
+        }
+
+        // ============ Interactions ============
+        let isRecording = false;
+
+        waveContainer.addEventListener('click', async () => {
+            if (state === 'idle') {
+                if (!mediaRecorder) {
+                    const success = await initAudio();
+                    if (!success) return;
+                }
+                
+                if (startRecording()) {
+                    isRecording = true;
+                    setState('listening');
+                    showTranscript('正在聆听...', 'listening');
+                }
+            } else if (state === 'listening' && isRecording) {
+                isRecording = false;
+                stopRecording();
+            }
+        });
+
+        // Spacebar hold to talk
+        let spaceHeld = false;
+        
+        document.addEventListener('keydown', async (e) => {
+            if (e.code === 'Space' && !e.repeat && !spaceHeld) {
+                e.preventDefault();
+                spaceHeld = true;
+                
+                if (state === 'idle') {
+                    if (!mediaRecorder) {
+                        const success = await initAudio();
+                        if (!success) {
+                            spaceHeld = false;
+                            return;
+                        }
+                    }
+                    
+                    if (startRecording()) {
+                        isRecording = true;
+                        setState('listening');
+                        showTranscript('正在聆听...', 'listening');
+                    }
+                }
+            }
+        });
+
+        document.addEventListener('keyup', (e) => {
+            if (e.code === 'Space' && spaceHeld) {
+                spaceHeld = false;
+                
+                if (state === 'listening' && isRecording) {
+                    isRecording = false;
+                    stopRecording();
+                }
+            }
+        });
+
+        // Start animation
+        drawWave();
+    </script>
+</body>
+</html>

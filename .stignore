@@ -1,0 +1,14 @@
+// Syncthing ignore patterns for clawd workspace
+// Only sync notes, configs, and lightweight files
+
+plugins
+.venv-agentmail
+services
+media
+.git
+temp
+node_modules
+*.tmp
+*.swp
+*~
+.stfolder

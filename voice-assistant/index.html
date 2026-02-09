@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Voice Assistant</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 顶部状态栏 -->
+    <header class="status-bar">
+        <div class="logo">
+            <span class="logo-icon">⚡</span>
+            <span class="logo-text">Axis ⚡ AI Assistant</span>
+        </div>
+        <div class="status-info">
+            <button id="theme-toggle" class="theme-btn" title="切换主题">
+                <span id="theme-icon">🌙</span>
+            </button>
+            <span id="asr-latency" class="latency-badge" title="ASR延迟">--ms</span>
+            <span id="model-badge" class="model-badge">🤖 Kimi</span>
+        </div>
+    </header>
+
+    <!-- 主内容区 -->
+    <main class="main-container">
+        <!-- 粒子波形可视化区域 -->
+        <div class="visualizer-container">
+            <canvas id="particle-canvas"></canvas>
+        </div>
+
+        <!-- 对话区域 -->
+        <div class="dialogue-container">
+            <div id="dialogue-history" class="dialogue-history"></div>
+            <div id="current-dialogue" class="current-dialogue">
+                <div id="user-text" class="user-text"></div>
+                <div id="ai-text" class="ai-text"></div>
+            </div>
+        </div>
+
+        <!-- 状态提示 -->
+        <div id="status-indicator" class="status-indicator">
+            <span id="status-text">点击或说"你好，源宝"开始对话</span>
+        </div>
+    </main>
+
+    <!-- 调试面板 (默认隐藏) -->
+    <div id="debug-panel" class="debug-panel hidden">
+        <div class="debug-header">
+            <span>调试信息</span>
+            <button id="debug-close">✕</button>
+        </div>
+        <div id="debug-content" class="debug-content"></div>
+    </div>
+
+    <!-- 权限提示遮罩 -->
+    <div id="permission-overlay" class="permission-overlay hidden">
+        <div class="permission-dialog">
+            <h3>需要麦克风权限</h3>
+            <p>Axis Voice Assistant 需要访问您的麦克风来进行语音识别。</p>
+            <button id="grant-permission" class="btn-primary">授权使用</button>
+        </div>
+    </div>
+
+    <!-- 错误提示 -->
+    <div id="error-toast" class="error-toast hidden">
+        <span id="error-message"></span>
+    </div>
+
+    <!-- 模块脚本 -->
+    <script src="js/theme-manager.js"></script>
+    <script src="js/particle-wave.js"></script>
+    <script src="js/voice-controller.js"></script>
+    <script src="js/chat-manager.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

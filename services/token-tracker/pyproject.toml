@@ -1,0 +1,20 @@
+[project]
+name = "token-tracker"
+version = "0.1.0"
+description = "Token usage tracking for OpenClaw and coding agents"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.0",
+    "rich>=13.0",
+    "python-dateutil",
+]
+
+[project.scripts]
+tt = "src.cli.main:cli"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]

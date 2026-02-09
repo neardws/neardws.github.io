@@ -1,0 +1,59 @@
+{
+  "predictions": [
+    {
+      "id": "pred-001",
+      "created": "2026-02-09T00:40:00+08:00",
+      "domain": "neil_behavior",
+      "prediction": "Neil 明天会继续讨论好奇心内核的实现细节",
+      "confidence": 0.7,
+      "verify_after": "2026-02-10T00:00:00+08:00",
+      "verified": null,
+      "actual": null,
+      "surprise_score": null
+    },
+    {
+      "id": "pred-002",
+      "created": "2026-02-09T00:40:00+08:00",
+      "domain": "neil_behavior",
+      "prediction": "Neil 这周会开始使用 Obsidian 写自己的笔记",
+      "confidence": 0.3,
+      "verify_after": "2026-02-15T00:00:00+08:00",
+      "verified": null,
+      "actual": null,
+      "surprise_score": null
+    },
+    {
+      "id": "pred-003",
+      "created": "2026-02-09T00:40:00+08:00",
+      "domain": "system_state",
+      "prediction": "Syncthing 双向同步在未来 48 小时内不会出现问题",
+      "confidence": 0.8,
+      "verify_after": "2026-02-11T00:00:00+08:00",
+      "verified": null,
+      "actual": null,
+      "surprise_score": null
+    },
+    {
+      "id": "pred-004",
+      "created": "2026-02-09T00:40:00+08:00",
+      "domain": "world_events",
+      "prediction": "本周 arXiv 上会有跟 self-evolving agents 相关的新论文",
+      "confidence": 0.6,
+      "verify_after": "2026-02-15T00:00:00+08:00",
+      "verified": null,
+      "actual": null,
+      "surprise_score": null
+    },
+    {
+      "id": "pred-005",
+      "created": "2026-02-09T00:40:00+08:00",
+      "domain": "self_state",
+      "prediction": "bird CLI 的认证问题在本周内不会被修复，除非我主动处理",
+      "confidence": 0.9,
+      "verify_after": "2026-02-15T00:00:00+08:00",
+      "verified": null,
+      "actual": null,
+      "surprise_score": null
+    }
+  ]
+}

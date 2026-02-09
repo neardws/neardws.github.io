@@ -5,8 +5,15 @@
 - **Name:** Neil
 - **What to call them:** Neil
 - **Pronouns:** *(optional)*
-- **Timezone:** 
+- **Timezone:** Asia/Shanghai
 - **Notes:** 
+  - Current work location: Shenzhen Longhua (深圳龙华)
+  - Default weather location: 深圳龙华
+  - Google account: personal; 2FA enabled
+  - Server purpose: AI inference + home services
+  - Logging convention: logs unified under ~/User_Services/services-logs
+  - Service doc naming: prefer XXX_SERVICE.md
+  - Automation boundary: OK to directly operate Docker/services (run/rebuild/pause), and write configs/files; ask before destructive deletions or public exposure
 
 ## Context
 
