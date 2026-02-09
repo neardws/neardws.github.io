@@ -73,6 +73,16 @@ author_profile: true
   color: #0066cc;
 }
 
+.service-item .service-tag.private {
+  background: #fce4ec;
+  color: #c2185b;
+}
+
+.service-item .service-tag.public {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
 .service-item .github-link {
   display: inline-block;
   margin-top: 10px;
@@ -105,9 +115,7 @@ author_profile: true
   <h3><a href="https://1panel.neardws.com" target="_blank">1Panel</a></h3>
   <span class="service-url">1panel.neardws.com</span>
   <p class="service-desc">Modern Linux server management panel with web UI.</p>
-  <span class="service-tag internal">Internal</span>
-  <div class="github-link">
-    <a href="https://github.com/1Panel-dev/1Panel" target="_blank">
+  <span class="service-tag private">Private</span>
       <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
       1Panel-dev/1Panel
     </a>
@@ -118,7 +126,7 @@ author_profile: true
   <h3><a href="https://fish.neardws.com" target="_blank">BettaFish</a></h3>
   <span class="service-url">fish.neardws.com</span>
   <p class="service-desc">Personal media and content management service.</p>
-  <span class="service-tag internal">Internal</span>
+  <span class="service-tag private">Private</span>
   <div class="github-link">
     <a href="https://github.com/666ghj/BettaFish" target="_blank">
       <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -131,7 +139,7 @@ author_profile: true
   <h3><a href="https://mcp.neardws.com" target="_blank">MetaMCP</a></h3>
   <span class="service-url">mcp.neardws.com</span>
   <p class="service-desc">Model Context Protocol management service.</p>
-  <span class="service-tag internal">Internal</span>
+  <span class="service-tag private">Private</span>
   <div class="github-link">
     <a href="https://github.com/metatool-ai/metamcp" target="_blank">
       <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -144,7 +152,7 @@ author_profile: true
   <h3><a href="https://latex.neardws.com" target="_blank">OpenPrism</a></h3>
   <span class="service-url">latex.neardws.com</span>
   <p class="service-desc">Open-source AI LaTeX writing workspace.</p>
-  <span class="service-tag internal">Internal</span>
+  <span class="service-tag private">Private</span>
   <div class="github-link">
     <a href="https://github.com/assistant-ui/open-prism" target="_blank">
       <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -157,7 +165,7 @@ author_profile: true
   <h3><a href="https://openclaw.neardws.com" target="_blank">OpenClaw</a></h3>
   <span class="service-url">openclaw.neardws.com</span>
   <p class="service-desc">Self-hosted personal AI assistant.</p>
-  <span class="service-tag internal">Internal</span>
+  <span class="service-tag private">Private</span>
   <div class="github-link">
     <a href="https://github.com/openclaw/openclaw" target="_blank">
       <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -170,7 +178,7 @@ author_profile: true
   <h3><a href="https://autofigure.neardws.com" target="_blank">AutoFigure-Edit</a></h3>
   <span class="service-url">autofigure.neardws.com</span>
   <p class="service-desc">AI-powered academic figure editing and generation tool.</p>
-  <span class="service-tag public">Public</span>
+  <span class="service-tag public">Public (Lab)</span>
   <div class="github-link">
     <a href="https://github.com/ResearAI/AutoFigure-Edit" target="_blank">
       <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -197,11 +205,13 @@ author_profile: true
   <span class="service-url">vpn.neardws.com</span>
   <p class="service-desc">Private VPN gateway for secure remote access.</p>
   <span class="service-tag external">External</span>
+</div>
+
 <div class="service-item">
   <h3><a href="https://pdf2md.neardws.com" target="_blank">PDF2MD</a></h3>
   <span class="service-url">pdf2md.neardws.com</span>
   <p class="service-desc">PDF to Markdown conversion tool powered by MinerU.</p>
-  <span class="service-tag internal">Internal</span>
+  <span class="service-tag public">Public (Lab)</span>
   <div class="github-link">
     <a href="https://github.com/opendatalab/MinerU" target="_blank">
       <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
