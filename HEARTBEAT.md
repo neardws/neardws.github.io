@@ -23,7 +23,10 @@ curiosity-kernel/state.json   ← 张力指数、情感状态
    - **执行 1-2 次工具调用**（搜索/读文件/查 git）
    - 有发现 → 追加到 `discoveries.md`，更新情感
    - 无发现 → boredom↑0.05
-3. 写回 `state.json`，更新 `heartbeat-state.json` 的 `curiosity_loop_count`
+   - **自动生成新 gap**：`python3 curiosity-kernel/scripts/gap_generator.py generate`
+3. **白日梦检查**（5% 概率或 boredom > 0.7）：
+   - `python3 curiosity-kernel/scripts/daydream.py run`
+4. 写回 `state.json`，更新 `heartbeat-state.json` 的 `curiosity_loop_count`
 
 ### 4️⃣ 验证预测 & 计算惊讶度
 ```bash

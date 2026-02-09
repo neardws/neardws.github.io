@@ -67,6 +67,26 @@
       "uncertainty": 0.9,
       "created": "2026-02-09T00:40:00+08:00",
       "last_touched": null
+    },
+    {
+      "id": "gap-b7c46fa1",
+      "domain": "curiosity",
+      "question": "curiosity 和 system design 的结合点在哪里？",
+      "importance": 0.6,
+      "uncertainty": 0.8,
+      "created": "2026-02-10T00:46:03.697415",
+      "source": "discovery_driven",
+      "related_discovery": "#001"
+    },
+    {
+      "id": "gap-1acda2fa",
+      "domain": "curiosity",
+      "question": "curiosity 这个方向还有哪些我没理解的？",
+      "importance": 0.6,
+      "uncertainty": 0.8,
+      "created": "2026-02-10T00:46:03.697450",
+      "source": "discovery_driven",
+      "related_discovery": "#002"
     }
   ]
 }
