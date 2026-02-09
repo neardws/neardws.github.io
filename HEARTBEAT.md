@@ -25,8 +25,16 @@ curiosity-kernel/state.json   ← 张力指数、情感状态
    - 无发现 → boredom↑0.05
 3. 写回 `state.json`，更新 `heartbeat-state.json` 的 `curiosity_loop_count`
 
-### 4️⃣ 验证预测
-检查 `predictions.json` 中已到 `verify_after` 的预测，更新结果。
+### 4️⃣ 验证预测 & 计算惊讶度
+```bash
+python3 curiosity-kernel/scripts/surprise.py due
+```
+
+对于已到验证时间的预测：
+1. 判断预测是否成真（基于实际发生的事）
+2. 运行 `python3 curiosity-kernel/scripts/surprise.py verify <id> <0|1> [notes]`
+3. **如果惊讶度 > 0.5**：自动生成新 gap "为什么我的预测错了？"
+4. 更新 stats.predictions_correct
 
 ### 5️⃣ 更新 heartbeat-state.json
 ```json

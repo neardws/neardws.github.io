@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "ratings": {
+    "#001": {
+      "neil_rating": null,
+      "neil_reaction": null,
+      "auto_score": 0.6,
+      "rated_at": null
+    },
+    "#002": {
+      "neil_rating": null,
+      "neil_reaction": null,
+      "auto_score": 0.8,
+      "rated_at": null
+    }
+  },
+  "learning": {
+    "high_value_patterns": [],
+    "low_value_patterns": [],
+    "avg_rating": null,
+    "total_rated": 0
+  }
+}
