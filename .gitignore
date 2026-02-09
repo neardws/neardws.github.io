@@ -2,3 +2,6 @@
 remote-mac/.env
 remote-mac/*.key
 remote-mac/*.pem
+
+# Shipkey local keys
+/home/neardws/.config/shipkey-local/

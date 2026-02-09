@@ -10,7 +10,7 @@ import random
 from datetime import datetime, timedelta
 from pathlib import Path
 
-BASE_DIR = Path(__file__).parent.parent.parent / "curiosity-kernel"
+BASE_DIR = Path(__file__).parent.parent.parent / "memory/curiosity"
 PREDICTIONS_FILE = BASE_DIR / "predictions.json"
 STATE_FILE = BASE_DIR / "state.json"
 DISCOVERIES_FILE = BASE_DIR / "discoveries.md"
@@ -51,7 +51,7 @@ CURRENT_TOPICS = {
     "edge_intelligence", "HARL", "AgentEvolver"
 }
 
-PROJECTS = ["HARL", "clawd", "curiosity-kernel", "ObsidianVault"]
+PROJECTS = ["HARL", "clawd", "memory/curiosity", "ObsidianVault"]
 DOMAINS = ["Edge AI", "LLM Agents", "Reinforcement Learning", "Curiosity-driven Learning"]
 
 

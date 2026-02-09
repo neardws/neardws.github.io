@@ -12,7 +12,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-BASE_DIR = Path(__file__).parent.parent.parent / "curiosity-kernel"
+BASE_DIR = Path(__file__).parent.parent.parent / "memory/curiosity"
 PREDICTIONS_FILE = BASE_DIR / "predictions.json"
 STATE_FILE = BASE_DIR / "state.json"
 SURPRISE_THRESHOLD = 0.5  # 惊讶度超过此值生成新 gap

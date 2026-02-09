@@ -19,9 +19,9 @@ import re
 from datetime import datetime
 from pathlib import Path
 
-BASE_DIR = Path(__file__).parent.parent.parent / "curiosity-kernel"
+BASE_DIR = Path(__file__).parent.parent
 STATE_FILE = BASE_DIR / "state.json"
-MEMORY_FILE = BASE_DIR.parent / "MEMORY.md"
+MEMORY_FILE = BASE_DIR.parent.parent / "MEMORY.md"
 DISCOVERIES_FILE = BASE_DIR / "discoveries.md"
 
 # 白日梦触发概率

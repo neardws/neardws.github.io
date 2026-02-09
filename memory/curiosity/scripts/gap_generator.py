@@ -14,7 +14,7 @@ from datetime import datetime
 from pathlib import Path
 import uuid
 
-BASE_DIR = Path(__file__).parent.parent.parent / "curiosity-kernel"
+BASE_DIR = Path(__file__).parent.parent.parent / "memory/curiosity"
 STATE_FILE = BASE_DIR / "state.json"
 DISCOVERIES_FILE = BASE_DIR / "discoveries.md"
 

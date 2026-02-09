@@ -12,7 +12,7 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-BASE_DIR = Path(__file__).parent.parent.parent / "curiosity-kernel"
+BASE_DIR = Path(__file__).parent.parent.parent / "memory/curiosity"
 FEEDBACK_FILE = BASE_DIR / "feedback.json"
 QUEUE_FILE = BASE_DIR / "share_queue.json"
 

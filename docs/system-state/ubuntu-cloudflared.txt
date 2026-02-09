@@ -3,32 +3,28 @@ credentials-file: [REDACTED]
 
 ingress:
   - hostname: fish.neardws.com
-    service: http://192.168.31.211:5000
+    service: http://localhost:5000
     originRequest:
       noTLSVerify: true
       connectTimeout: 30s
       tcpKeepAlive: 30s
       keepAliveConnections: 100
   - hostname: 1panel.neardws.com
-    service: http://192.168.31.211:8888
-  - hostname: kanban.neardws.com
-    service: http://192.168.31.211:3002
+    service: http://localhost:8888
   - hostname: mcp.neardws.com
-    service: http://192.168.31.211:12010
+    service: http://localhost:12010
     originRequest:
       noTLSVerify: true
       connectTimeout: 120s
       tcpKeepAlive: 30s
       keepAliveConnections: 100
       httpHostHeader: mcp.neardws.com
-  - hostname: embedding.neardws.com
-    service: http://localhost:8001
-  - hostname: cliproxy.neardws.com
-    service: http://localhost:8317
-  - hostname: clawdbot.neardws.com
-    service: http://127.0.0.1:18789
-  - hostname: voice.neardws.com
-    service: http://localhost:8766
-  - hostname: voicews.neardws.com
-    service: http://localhost:8765
+  - hostname: openclaw.neardws.com
+    service: http://localhost:18789
+  - hostname: latex.neardws.com
+    service: http://localhost:5173
+  - hostname: autofigure.neardws.com
+    service: http://localhost:8002
+  - hostname: pdf2md.neardws.com
+    service: http://192.168.31.211:7860
   - service: http_status:404

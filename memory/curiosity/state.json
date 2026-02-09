@@ -1,6 +1,8 @@
 {
-  "version": "0.1.0",
-  "last_updated": "2026-02-10T01:05:00+08:00",
+  "version": "0.2.0",
+  "last_updated": "2026-02-10T01:15:00+08:00",
+  "integrated": true,
+  "location": "memory/curiosity/",
   "tension": {
     "index": 0.50,
     "threshold": 0.5,

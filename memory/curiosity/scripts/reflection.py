@@ -9,7 +9,7 @@ import json
 from datetime import datetime, timedelta
 from pathlib import Path
 
-BASE_DIR = Path(__file__).parent.parent.parent / "curiosity-kernel"
+BASE_DIR = Path(__file__).parent.parent.parent / "memory/curiosity"
 STATE_FILE = BASE_DIR / "state.json"
 DISCOVERIES_FILE = BASE_DIR / "discoveries.md"
 FEEDBACK_FILE = BASE_DIR / "feedback.json"

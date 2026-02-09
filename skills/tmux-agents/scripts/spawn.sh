@@ -76,8 +76,14 @@ case "$AGENT" in
     tmux send-keys -t "$SESSION_NAME" "source ~/.nvm/nvm.sh && nvm use 22 && gemini \"$TASK\"" Enter
     ;;
   opencode)
-    # OpenCode with MiniMax API (paid key)
-    tmux send-keys -t "$SESSION_NAME" "ANTHROPIC_API_KEY='sk-cp-kqO98wO1Vu2yl9rDGj63JNLaAVZYN6Ru2xKWnsdU6OLdDX5sRNw2yzwqicx5Bz6QFBQjqMW3aPoILeDql0UsK3WUxi7kaLEUzt_nwv-ebdk7wtgJf5o1TZk' ANTHROPIC_BASE_URL='https://api.minimaxi.com/anthropic' opencode -m anthropic/MiniMax-M2.1 \"$TASK\"" Enter
+    # OpenCode with MiniMax API (from shipkey-local store)
+    MINIMAX_API_KEY=$(jq -r '.MINIMAX_API_KEY.value // empty' ~/clawd/shipkey-local/keys.json 2>/dev/null)
+    if [ -z "$MINIMAX_API_KEY" ] || [ "$MINIMAX_API_KEY" = "null" ]; then
+      echo "⚠️  MINIMAX_API_KEY not found in shipkey-local/keys.json"
+      echo "   Run: shipkey-local scan"
+      exit 1
+    fi
+    tmux send-keys -t "$SESSION_NAME" "ANTHROPIC_API_KEY='$MINIMAX_API_KEY' ANTHROPIC_BASE_URL='https://api.minimaxi.com/anthropic' opencode -m anthropic/MiniMax-M2.1 \"$TASK\"" Enter
     ;;
   ollama-claude)
     # Claude Code with local Ollama model (free!)

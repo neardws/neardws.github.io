@@ -1,0 +1,84 @@
+{
+  "project": "clawdbot",
+  "vault": "clawdbot-keys",
+  "providers": {
+    "xai": {
+      "fields": ["XAI_API_KEY"],
+      "description": "xAI API for Grok models"
+    },
+    "minimax": {
+      "fields": ["MINIMAX_API_KEY"],
+      "description": "MiniMax API for M2.1 models"
+    },
+    "kimi": {
+      "fields": ["KIMI_API_KEY"],
+      "description": "Moonshot Kimi API"
+    },
+    "aicodemirror": {
+      "fields": ["AICODEMIRROR_API_KEY"],
+      "description": "AI CodeMirror Claude access"
+    },
+    "aicodemirror-codex": {
+      "fields": ["AICODEMIRROR_CODEX_API_KEY"],
+      "description": "AI CodeMirror Codex access"
+    },
+    "newcli": {
+      "fields": ["NEWCLI_API_KEY"],
+      "description": "NewCLI Droid access"
+    },
+    "quotio": {
+      "fields": ["QUOTIO_API_KEY"],
+      "description": "Local Quotio LLM proxy"
+    },
+    "zenmux": {
+      "fields": ["ZENMUX_API_KEY"],
+      "description": "ZenMux Claude access"
+    },
+    "voyage": {
+      "fields": ["VOYAGE_API_KEY"],
+      "description": "Voyage AI embeddings"
+    },
+    "openrouter": {
+      "fields": ["OPENROUTER_API_KEY"],
+      "description": "OpenRouter API access"
+    },
+    "brave": {
+      "fields": ["BRAVE_API_KEY"],
+      "description": "Brave Search API"
+    },
+    "gemini": {
+      "fields": ["GEMINI_API_KEY"],
+      "description": "Google Gemini API for image generation"
+    },
+    "discord": {
+      "fields": ["DISCORD_BOT_TOKEN"],
+      "description": "Discord bot token"
+    },
+    "telegram": {
+      "fields": ["TELEGRAM_BOT_TOKEN"],
+      "description": "Telegram bot token"
+    },
+    "feishu": {
+      "fields": ["FEISHU_APP_ID", "FEISHU_APP_SECRET"],
+      "description": "Feishu/Lark app credentials"
+    },
+    "openclaw": {
+      "fields": ["OPENCLAW_GATEWAY_TOKEN"],
+      "description": "OpenClaw gateway auth token"
+    }
+  },
+  "targets": {
+    "github": {
+      "neardws/clawdbot": [
+        "XAI_API_KEY",
+        "MINIMAX_API_KEY",
+        "DISCORD_BOT_TOKEN",
+        "TELEGRAM_BOT_TOKEN"
+      ]
+    }
+  },
+  "env_files": [
+    ".env.local",
+    ".env"
+  ]
+}

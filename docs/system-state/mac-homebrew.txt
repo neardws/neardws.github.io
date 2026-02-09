@@ -6,6 +6,7 @@ brotli
 c-ares
 ca-certificates
 certifi
+cliclick
 dav1d
 eigen
 ffmpeg

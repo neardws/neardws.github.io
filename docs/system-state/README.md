@@ -1,13 +1,13 @@
 # System State Snapshot
-Generated: 2026-02-09T03:30:03+08:00
+Generated: 2026-02-10T03:30:04+08:00
 
 ## Ubuntu Server
 - Services: 37 running
-- Docker: 11 containers
-- Cron: 10 jobs
-- Ports: 59 listening
+- Docker: 9 containers
+- Cron: 11 jobs
+- Ports: 53 listening
 
 ## Mac Mini M4
 - Cron: 4 jobs
-- Homebrew: 72 packages
-- Launchd: 9 services
+- Homebrew: 73 packages
+- Launchd: 8 services
