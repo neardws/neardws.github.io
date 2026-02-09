@@ -114,7 +114,7 @@ author_profile: true
 <div class="service-item">
   <h3><a href="https://pdf2md.neardws.com" target="_blank">PDF2MD</a></h3>
   <span class="service-url">pdf2md.neardws.com</span>
-  <p class="service-desc">PDF to Markdown conversion tool powered by MinerU.</p>
+  <p class="service-desc">PDF to Markdown conversion tool powered by MinerU. GitHub authentication required (<a href="https://github.com/EdgeAI-2000" target="_blank">@EdgeAI-2000</a> org members only).</p>
   <span class="service-tag public">Public (Lab)</span>
   <div class="github-link">
     <a href="https://github.com/opendatalab/MinerU" target="_blank">
@@ -127,7 +127,7 @@ author_profile: true
 <div class="service-item">
   <h3><a href="https://autofigure.neardws.com" target="_blank">AutoFigure-Edit</a></h3>
   <span class="service-url">autofigure.neardws.com</span>
-  <p class="service-desc">AI-powered academic figure editing and generation tool.</p>
+  <p class="service-desc">AI-powered academic figure editing and generation tool. GitHub authentication required (<a href="https://github.com/EdgeAI-2000" target="_blank">@EdgeAI-2000</a> org members only).</p>
   <span class="service-tag public">Public (Lab)</span>
   <div class="github-link">
     <a href="https://github.com/ResearAI/AutoFigure-Edit" target="_blank">
