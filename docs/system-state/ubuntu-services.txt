@@ -2,8 +2,10 @@ UNIT                           LOAD   ACTIVE SUB     DESCRIPTION
 avahi-daemon.service           loaded active running Avahi mDNS/DNS-SD Stack
 axis-voice-http.service        loaded active running Axis Voice Assistant HTTP Server
 bluetooth.service              loaded active running Bluetooth service
+clash.service                  loaded active running Clash Proxy Service
 clawd-voice.service            loaded active running 小黑语音助手 WebSocket Server
 cliproxyapi.service            loaded active running CLIProxyAPI Service
+cloudflared-vpn.service        loaded active running Cloudflare Tunnel for VPN Manager
 cloudflared.service            loaded active running cloudflared
 colord.service                 loaded active running Manage, Install and Generate Color Profiles
 containerd.service             loaded active running containerd container runtime
@@ -18,6 +20,7 @@ gnome-remote-desktop.service   loaded active running GNOME Remote Desktop
 kerneloops.service             loaded active running Tool to automatically collect and submit kernel crash signatures
 ModemManager.service           loaded active running Modem Manager
 NetworkManager.service         loaded active running Network Manager
+nginx.service                  loaded active running A high performance web server and a reverse proxy server
 power-profiles-daemon.service  loaded active running Power Profiles daemon
 proxy-agent.service            loaded active running Proxy Agent
 rtkit-daemon.service           loaded active running RealtimeKit Scheduling Policy Service
@@ -34,4 +37,4 @@ Legend: LOAD   → Reflects whether the unit definition was properly loaded.
         ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
         SUB    → The low-level unit activation state, values depend on unit type.
 
-48 loaded units listed.
+51 loaded units listed.

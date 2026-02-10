@@ -1,3 +1,4 @@
+android-platform-tools
 birdfont
 font-whisper
 obsidian

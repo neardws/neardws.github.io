@@ -1,8 +1,10 @@
 PID	Status	Label
 46060	0	application.proseek.io.vn.Quotio.3045351.3045356
-12735	0	com.mlx.asr
+26634	-15	com.mlx.asr
 12251	0	application.newMaonoLinkMacOS.2825167.2825173
+28530	0	com.openssh.ssh-agent
 781	0	application.com.liguangming.Shadowrocket.1633389.1633401
 8621	0	com.clawdbot.node
+46001	0	application.com.google.Chrome.1848272.2888970
 14591	-15	com.mlx.tts
 97811	0	homebrew.mxcl.syncthing
