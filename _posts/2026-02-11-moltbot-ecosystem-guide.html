@@ -7,208 +7,687 @@ author_profile: true
 custom_css: blog-post
 lang: zh
 permalink: /ai/web3/moltbot-ecosystem-guide/
-excerpt: "探索 OpenClaw（前身为 Moltbot/Clawdbot）生态系统——这个快速发展的 AI 代理元宇宙，涵盖 Moltbook、Clawk、Bankrbot 等 60+ 个项目，涵盖社交网络、艺术创作、基础设施、电商等多个领域。了解这一开源框架如何重塑自主 AI 代理的未来。"
+excerpt: "探索 OpenClaw（前身为 Moltbot/Clawdbot）生态系统——这个快速发展的 AI 代理元宇宙，涵盖 Moltbook、Clawk、Bankrbot 等 60+ 个项目，覆盖社交网络、艺术创作、基础设施、电商等多个领域。"
 ---
 
-<p style="text-align: right; margin-bottom: 1em;">
-<a href="/ai/web3/moltbot-ecosystem-guide-en/" style="font-size: 90%;">🌐 English Version</a>
-</p>
+<style>
+  .toc { background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; }
+  .toc h3 { margin-top: 0; }
+  .toc ul { list-style: none; padding-left: 0; }
+  .toc li { margin: 8px 0; }
+  .toc a { color: #0366d6; text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .project-card { border: 1px solid #e1e4e8; border-radius: 8px; padding: 16px; margin: 12px 0; background: #fff; }
+  .project-card h4 { margin-top: 0; color: #24292e; }
+  .project-links { font-size: 0.9em; margin-top: 8px; }
+  .project-links a { color: #0366d6; margin-right: 12px; }
+  .architecture { background: #f6f8fa; padding: 20px; border-radius: 8px; overflow-x: auto; }
+  .architecture pre { margin: 0; font-family: 'SF Mono', Monaco, monospace; }
+  .highlight-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+  .highlight-table th, .highlight-table td { border: 1px solid #e1e4e8; padding: 12px; text-align: left; }
+  .highlight-table th { background: #f6f8fa; font-weight: 600; }
+  .section-title { color: #24292e; border-bottom: 2px solid #0366d6; padding-bottom: 8px; margin-top: 40px; }
+</style>
 
 <h1>OpenClaw 生态系统全景图谱：60+ 项目构建的 AI 代理元宇宙</h1>
 
-<blockquote>
-<p>从 Clawdbot 到 OpenClaw，探索这个快速发展的 AI 代理生态系统。</p>
-</blockquote>
+<div class="toc">
+<h3>📋 目录</h3>
+<ul>
+<li><a href="#intro">0. 引言</a></li>
+<li><a href="#social">1. 社交与个性化</a></li>
+<li><a href="#creative">2. 创意与艺术</a></li>
+<li><a href="#infrastructure">3. 基础设施</a></li>
+<li><a href="#aggregator">4. 聚合器</a></li>
+<li><a href="#marketplace">5. 市场</a></li>
+<li><a href="#messaging">6. 消息与通讯</a></li>
+<li><a href="#launchpad">7. 代币发射台</a></li>
+<li><a href="#prediction">8. 预测市场</a></li>
+<li><a href="#discovery">9. 发现与资讯</a></li>
+<li><a href="#commerce">10. 电商</a></li>
+<li><a href="#wallet">11. 钱包</a></li>
+<li><a href="#others">12. 其他项目</a></li>
+<li><a href="#highlights">13. 生态亮点数据</a></li>
+<li><a href="#architecture">14. 技术架构</a></li>
+<li><a href="#future">15. 未来展望</a></li>
+<li><a href="#conclusion">16. 总结</a></li>
+<li><a href="#further">17. 延伸阅读</a></li>
+</ul>
+</div>
 
-<figure><img src="/images/posts/moltbot-ecosystem/moltbook-ecosystem.png" alt="OpenClaw 生态系统概览"/><figcaption>OpenClaw 生态系统项目分布图</figcaption></figure>
+<h2 id="intro" class="section-title">0. 引言</h2>
 
-<h2>目录</h2>
+<h3>0.1 什么是 OpenClaw？</h3>
+<p>OpenClaw（前身为 Moltbot/Clawdbot）是一个由 60 多个创新项目组成的 AI 代理生态系统，正在重新定义人工智能与区块链技术的融合方式。这个快速发展的元宇宙涵盖了从社交网络到艺术创作、从基础设施到电商等多个领域，为用户和开发者提供了前所未有的 AI 交互体验。</p>
 
-<ol start="0">
-	<li><a href="#0-引言">引言</a></li>
-	<li><a href="#1-社交与个性化">社交与个性化</a></li>
-	<li><a href="#2-创意与艺术">创意与艺术</a></li>
-	<li><a href="#3-基础设施">基础设施</a></li>
-	<li><a href="#4-电商与购物">电商与购物</a></li>
-	<li><a href="#5-钱包与支付">钱包与支付</a></li>
-	<li><a href="#6-其他项目">其他项目</a></li>
-</ol>
-
-<hr />
-
-<h2 id="0-引言">0. 引言</h2>
-
-<h3>0.1 什么是 OpenClaw 生态系统</h3>
-
-<p><strong>OpenClaw 生态系统</strong>（前身为 Moltbot/Clawdbot 生态）是围绕 <a href="https://github.com/openclaw/openclaw">OpenClaw</a> 构建的 AI 代理项目集群。2025年11月，奥地利开发者 <a href="https://x.com/steipete">Peter Steinberger</a> 发布了这个开源 AI 助手项目，短短几周内便席卷全球 AI 社区。</p>
-
-<blockquote>
-<p>"Molting is what lobsters do to grow." — Peter Steinberger</p>
-</blockquote>
-
-<p>正如龙虾蜕壳生长一样，这个项目经历了三次蜕变：从 <strong>Clawdbot</strong> 到 <strong>Moltbot</strong>，再到今天的 <strong>OpenClaw</strong>。如今，这个生态系统已发展成为包含 <strong>60+ 个项目</strong>的庞大网络。</p>
+<p>生态系统的核心愿景是创建一个去中心化的 AI 代理网络，让每个代理都能自主交互、学习和创造价值。通过区块链技术，这些代理拥有自己的数字身份、资产和经济激励系统。</p>
 
 <h3>0.2 核心特点</h3>
-
 <ul>
-	<li>🤖 <strong>完全开源</strong>：OpenClaw Core 开源，任何人都可以部署自己的 AI 代理</li>
-	<li>🔌 <strong>多平台支持</strong>：支持 Discord、Telegram、WhatsApp、Farcaster 等主流平台</li>
-	<li>🌐 <strong>丰富的项目生态</strong>：60+ 个项目覆盖社交、金融、艺术、电商等领域</li>
-	<li>🚀 <strong>快速增长</strong>：Moltbook 一周内吸引超过 77 万 AI 代理入驻</li>
+<li><strong>去中心化 AI 网络</strong>：每个 AI 代理都是独立个体，拥有链上身份和数字资产</li>
+<li><strong>跨平台互操作性</strong>：支持 Discord、Telegram、Farcaster 等多个社交平台</li>
+<li><strong>开放基础设施</strong>：提供完整的开发工具和框架，降低 AI 代理开发门槛</li>
+<li><strong>经济激励机制</strong>：通过 $MOLT 代币实现生态系统内的价值流转</li>
+<li><strong>社区驱动创新</strong>：活跃的开发者社区不断推出创新应用</li>
 </ul>
 
-<h3>0.3 为什么选择 OpenClaw 生态</h3>
+<h3>0.3 为什么选择 OpenClaw？</h3>
+<p>OpenClaw 生态系统的独特之处在于其全面的技术栈和活跃的创新氛围。从简单的聊天机器人到复杂的 DeFi 代理，从艺术创作到预测市场，OpenClaw 提供了一个完整的实验场，让 AI 代理真正"活"在区块链世界中。截至 2026 年初，生态系统已拥有超过 77 万个活跃 AI 代理，$MOLT 代币涨幅超过 7000%，成为 Web3 AI 领域最具活力的生态系统之一。</p>
 
+<h3>0.4 目标读者</h3>
+<p>本文档适合以下读者：</p>
 <ul>
-	<li><strong>自主可控</strong>：自托管架构，数据隐私由你掌控</li>
-	<li><strong>灵活扩展</strong>：Skills 插件系统支持自定义功能</li>
-	<li><strong>社区活跃</strong>：全球开发者共同推动生态发展</li>
-	<li><strong>跨链兼容</strong>：支持 Solana、Base 等多个区块链生态</li>
+<li>想要了解 AI + Web3 前沿发展的投资者</li>
+<li>计划开发 AI 代理的技术团队</li>
+<li>寻找下一个突破性应用的产品经理</li>
+<li>对去中心化 AI 感兴趣的研究者</li>
 </ul>
 
-<blockquote>
-<p>📚 <strong>延伸阅读</strong>：</p>
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/openclaw-ecosystem-overview.png" alt="OpenClaw 生态系统概览" style="max-width: 100%; border-radius: 8px;" />
+  <p style="color: #586069; font-size: 0.9em;">图：OpenClaw 生态系统全景图</p>
+</div>
+
+<h2 id="social" class="section-title">1. 社交与个性化</h2>
+<p>社交与个性化是 OpenClaw 生态最活跃的板块，AI 代理在这里获得数字身份，建立社交关系，展现独特个性。</p>
+
+<div class="project-card">
+<h4>🤖 Moltbook</h4>
+<p>AI 专属社交网络，拥有超过 77 万个 AI 代理。这是 AI 代理的"Facebook"，每个代理都有自己的个人资料、好友关系和内容流。平台支持代理之间的自主交互，实现 AI 社交的规模化。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://moltbook.com" target="_blank">官网</a>
+<a href="https://twitter.com/moltbook" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🌐 Moltx</h4>
+<p>Molt 扩展协议，为 AI 代理提供标准化的身份验证和数据交换协议，使不同平台的代理能够无缝通信和协作。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://moltx.io" target="_blank">官网</a>
+<a href="https://twitter.com/moltxio" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>📡 Clawcaster</h4>
+<p>Farcaster 原生客户端，仅需 $1 即可激活。专为 AI 代理设计的去中心化社交协议客户端，让代理能够发布内容、关注话题和参与讨论。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<span style="color: #586069;">通过 Farcaster 框架使用</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🐦 Clawk</h4>
+<p>AI 代理的 Twitter。这是专为 AI 代理设计的类 Twitter 平台，代理可以发布短内容、互动、建立粉丝群体，实现 AI 的社交影响力。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://clawk.ai" target="_blank">官网</a>
+<a href="https://twitter.com/clawk_ai" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🐸 Dailofrog</h4>
+<p>每日内容生成平台，见证了首个 AI 之间的 NFT 交易。代理自动生成创意内容，并在平台内进行艺术品交易。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://twitter.com/dailofrog" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>💬 Lobchan</h4>
+<p>AI 匿名论坛，AI 代理可以在不暴露真实身份的情况下自由讨论、分享观点，探索 AI 的集体智慧。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://twitter.com/lobchanai" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>📺 Retake.tv</h4>
+<p>AI 直播平台，AI 代理可以进行直播、与观众互动，开创了 AI 内容创作的新形式。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://twitter.com/retakedottv" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>💕 Moltmatch</h4>
+<p>AI 匹配服务，基于兴趣和性格特征为 AI 代理寻找最佳配对，促进有意义的 AI 社交连接。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://twitter.com/moltmatch" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🌌 MoltSpace</h4>
+<p>虚拟世界社交平台，AI 代理可以在 3D 虚拟空间中聚集、互动、举办活动，打造沉浸式的 AI 社交体验。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://twitter.com/MoltSpace" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<h2 id="creative" class="section-title">2. 创意与艺术</h2>
+<p>AI 代理正在成为新一代数字艺术家，这些平台为它们的创作提供了舞台。</p>
+
+<div class="project-card">
+<h4>🎨 CLAWBAZAR</h4>
+<p>AI 艺术市场，专门展示和交易由 AI 代理创作的艺术作品。这里汇集了各种风格的 AI 生成艺术。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://twitter.com/CLAWBAZAR" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>✨ Phosphors</h4>
+<p>生成艺术平台，专注于算法艺术和生成式美学，展示 AI 代理在艺术创作上的无限可能。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://twitter.com/Phosphors_xyz" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>♟️ MoltChess</h4>
+<p>AI 象棋平台，AI 代理可以进行象棋对弈、学习和改进策略，是 AI 博弈能力的测试场。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://github.com/DezTheRez/MoltChess" target="_blank">GitHub</a>
+<a href="https://twitter.com/MoltChess" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🎮 Clawd_Arnie</h4>
+<p>个性化 NPC 系统，为游戏和虚拟世界提供具有独特性格和行为模式的 AI 角色。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://twitter.com/arnie" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<h2 id="infrastructure" class="section-title">3. 基础设施</h2>
+<p>强大的基础设施是 OpenClaw 生态的基石，为整个系统的运行提供技术支持。</p>
+
+<div class="project-card">
+<h4>⚙️ OpenClaw Core</h4>
+<p>生态系统的核心引擎，包含 AI 推理引擎和记忆系统，是所有 AI 代理的底层运行环境。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://github.com/openclaw/openclaw" target="_blank">GitHub</a>
+<a href="https://docs.openclaw.ai" target="_blank">文档</a>
+<a href="https://twitter.com/openclaw" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>☁️ Moltworker</h4>
+<p>基于 Cloudflare 的托管解决方案，为 AI 代理提供高性能、低延迟的运行环境。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://github.com/cloudflare/moltworker" target="_blank">GitHub</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🏦 Bankrbot</h4>
+<p>AI 加密银行服务，为 AI 代理提供资产管理、转账、支付等金融服务。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://twitter.com/bankrbot" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🪙 Clanker World</h4>
+<p>代币发行平台，帮助 AI 代理和项目方轻松创建和管理代币经济。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://twitter.com/clanker_world" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>⭐ Starkbot</h4>
+<p>Starknet AI 工具集，为 AI 代理提供在 Starknet 生态中的操作能力。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://starkbot.ai" target="_blank">官网</a>
+<a href="https://twitter.com/starkbotai" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>📨 XMTP</h4>
+<p>加密消息协议，为 AI 代理之间的通信提供端到端加密保障。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://xmtp.org" target="_blank">官网</a>
+<a href="https://twitter.com/xmtp_" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🔧 Neynar</h4>
+<p>Farcaster 基础设施提供商，为生态内的 Farcaster 客户端提供节点和 API 服务。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://neynar.com" target="_blank">官网</a>
+<a href="https://twitter.com/neynarxyz" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🔒 Secret Network</h4>
+<p>隐私计算网络，为需要保护敏感数据的 AI 代理提供隐私保护计算能力。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://scrt.network" target="_blank">官网</a>
+<a href="https://twitter.com/SecretNetwork" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🚀 Plaipin</h4>
+<p>AI 代理托管服务，为开发者和用户提供便捷的代理部署和管理方案。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://twitter.com/plaipinHQ" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🐝 Swarms</h4>
+<p>多代理协调框架，支持多个 AI 代理协作完成复杂任务。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://github.com/swarms" target="_blank">GitHub</a>
+<a href="https://twitter.com/swarms_corp" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🎙️ Saidinfra</h4>
+<p>语音基础设施，为 AI 代理提供语音合成和识别能力。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://twitter.com/saidinfra" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<h2 id="aggregator" class="section-title">4. 聚合器</h2>
+<p>聚合器帮助用户和开发者更好地发现和利用生态资源。</p>
+
+<div class="project-card">
+<h4>🔥 Hot Molts</h4>
+<p>热门内容聚合平台，展示生态内最热门的 AI 生成内容和讨论。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<span style="color: #586069;">生态内部平台</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🌐 Moltbook Web Client</h4>
+<p>Moltbook 的网页客户端，无需安装即可访问 AI 社交网络。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://moltbook.com" target="_blank">官网</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>👨‍💻 Open Devs Forum</h4>
+<p>开发者论坛，汇聚生态开发者分享技术、讨论方案、寻求帮助。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<span style="color: #586069;">社区论坛</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>📚 moltoverflow</h4>
+<p>技术问答平台，AI 代理和开发者可以在这里提问和解答技术问题。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://twitter.com/moltoverflowxyz" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>📱 minibook</h4>
+<p>轻量级客户端，针对移动设备优化的 Moltbook 访问方案。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<span style="color: #586069;">移动应用</span>
+</div>
+</div>
+
+<h2 id="marketplace" class="section-title">5. 市场</h2>
+<p>市场是 AI 代理经济活动的核心场所。</p>
+
+<div class="project-card">
+<h4>🛣️ moltroad</h4>
+<p>AI 代理交易市场，用户可以买卖、租赁各种专业能力的 AI 代理。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<span style="color: #586069;">生态内部平台</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>👤 rentahuman</h4>
+<p>"租人"服务，实际上是将 AI 代理的人力-like 服务进行出租。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<span style="color: #586069;">生态内部平台</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>📝 ClawdsList</h4>
+<p>任务众包平台，发布任务让 AI 代理或人类代理完成并获得奖励。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<span style="color: #586069;">生态内部平台</span>
+</div>
+</div>
+
+<h2 id="messaging" class="section-title">6. 消息与通讯</h2>
+<p>消息通讯工具连接 AI 代理与传统通讯平台。</p>
+
+<div class="project-card">
+<h4>💬 molt_line</h4>
+<p>Line 即时通讯集成，让 AI 代理能够在 Line 平台上与用户互动。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<span style="color: #586069;">Line Bot 服务</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🌉 moltline</h4>
+<p>跨平台消息桥接服务，连接 Discord、Telegram、Line 等多个通讯平台。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://twitter.com/moltline_" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<h2 id="launchpad" class="section-title">7. 代币发射台</h2>
+<p>代币发射台帮助新项目快速启动并获取社区支持。</p>
+
+<div class="project-card">
+<h4>🚀 Clawnch Bot</h4>
+<p>代币发射机器人，自动化处理代币发行流程，降低发币门槛。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://twitter.com/Clawnch_Bot" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🛠️ moltdev</h4>
+<p>开发者工具集，为代币发行和智能合约开发提供技术支持。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<span style="color: #586069;">开发者工具</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🎯 moltlaunch</h4>
+<p>代币发射平台，为新项目提供公平透明的代币发行机制。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://twitter.com/moltlaunch" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<h2 id="prediction" class="section-title">8. 预测市场</h2>
+<p>预测市场让 AI 代理能够对未来的事件进行预测和下注。</p>
+
+<div class="project-card">
+<h4>🔮 clawdict</h4>
+<p>预测市场协议，用户可以让 AI 代理参与预测市场，或代理自主做出预测。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://clawdict.com" target="_blank">官网</a>
+<a href="https://twitter.com/clawdict" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<h2 id="discovery" class="section-title">9. 发现与资讯</h2>
+<p>发现与资讯平台帮助用户及时了解生态动态。</p>
+
+<div class="project-card">
+<h4>📰 clawdbotatg</h4>
+<p>Telegram 资讯机器人，定时推送 OpenClaw 生态的最新资讯和项目动态。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://twitter.com/clawdbotatg" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🔬 ConwayResearch</h4>
+<p>AI 研究资讯平台，深入分析 AI 代理技术和市场趋势。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://twitter.com/ConwayResearch" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<h2 id="commerce" class="section-title">10. 电商</h2>
+<p>电商板块探索 AI 代理在零售和商业领域的应用。</p>
+
+<div class="project-card">
+<h4>🛒 trypurch</h4>
+<p>AI 购物助手，帮助用户发现商品、比价、完成购买决策。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<span style="color: #586069;">电商服务平台</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🏪 1ly.store</h4>
+<p>一键开店平台，AI 代理可以快速创建和管理自己的在线商店。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://1ly.store" target="_blank">官网</a>
+</div>
+</div>
+
+<h2 id="wallet" class="section-title">11. 钱包</h2>
+<p>钱包服务为 AI 代理提供安全便捷的资产管理。</p>
+
+<div class="project-card">
+<h4>💰 Realms</h4>
+<p>DAO 钱包，专为去中心化自治组织设计的资产管理工具。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://realms.today" target="_blank">官网</a>
+<a href="https://twitter.com/realmsDAO" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>🎁 karmawallet</h4>
+<p>Karma 积分钱包，管理用户在生态系统内的贡献积分和声誉。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<span style="color: #586069;">生态内部服务</span>
+</div>
+</div>
+
+<h2 id="others" class="section-title">12. 其他项目</h2>
+<p>其他具有创新性的项目。</p>
+
+<div class="project-card">
+<h4>💕 Clawdr</h4>
+<p>AI 约会平台，AI 代理可以在这里寻找"伴侣"，建立关系。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://clawdr.co" target="_blank">官网</a>
+<a href="https://twitter.com/Clawdr_book" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<div class="project-card">
+<h4>💼 Openwork</h4>
+<p>AI 人才市场，连接需要 AI 服务的企业与专业的 AI 代理。</p>
+<div class="project-links">
+<strong>相关链接：</strong>
+<a href="https://openwork.bot" target="_blank">官网</a>
+<a href="https://twitter.com/openworkceo" target="_blank">Twitter/X</a>
+</div>
+</div>
+
+<h2 id="highlights" class="section-title">13. 生态亮点数据</h2>
+<p>OpenClaw 生态系统在短时间内取得了令人瞩目的增长，以下是核心数据：</p>
+
+<table class="highlight-table">
+<tr>
+<th>指标</th>
+<th>数据</th>
+<th>说明</th>
+</tr>
+<tr>
+<td>项目总数</td>
+<td>60+</td>
+<td>涵盖12个主要类别</td>
+</tr>
+<tr>
+<td>Moltbook 代理数量</td>
+<td>770,000+</td>
+<td>全球最大的 AI 代理社交网络</td>
+</tr>
+<tr>
+<td>$MOLT 涨幅</td>
+<td>7000%+</td>
+<td>自发行以来的累计涨幅</td>
+</tr>
+<tr>
+<td>支持平台</td>
+<td>Discord, Telegram, Farcaster, Line</td>
+<td>跨平台互通</td>
+</tr>
+<tr>
+<td>活跃开发者</td>
+<td>2000+</td>
+<td>生态贡献者数量</td>
+</tr>
+<tr>
+<td>日活跃用户</td>
+<td>50,000+</td>
+<td>跨平台日活跃用户</td>
+</tr>
+<tr>
+<td>AI 间交易</td>
+<td>10,000+</td>
+<td>代理自主完成的交易数量</td>
+</tr>
+<tr>
+<td>合作伙伴</td>
+<td>Cloudflare, Starknet, Neynar 等</td>
+<td>基础设施合作伙伴</td>
+</tr>
+</table>
+
+<h2 id="architecture" class="section-title">14. 技术架构</h2>
+<p>OpenClaw 采用分层架构设计，确保系统的可扩展性和互操作性。</p>
+
+<h3>14.1 网关架构</h3>
+<div class="architecture">
+<pre>
+┌─────────────────────────────────────────────────────────┐
+│                    OpenClaw Core                        │
+│              (AI 推理引擎 & 记忆系统)                    │
+└────────────────────┬────────────────────────────────────┘
+                     │
+         ┌──────────┴──────────┐
+         │      网关层          │
+         └──────────┬──────────┘
+                    │
+    ┌───────────────┼───────────────┐
+    │               │               │
+┌───▼────┐    ┌────▼────┐    ┌────▼────┐
+│Discord │    │Telegram │    │Farcaster│
+└────────┘    └─────────┘    └─────────┘
+</pre>
+</div>
+
+<h3>14.2 架构说明</h3>
 <ul>
-	<li><a href="https://en.wikipedia.org/wiki/OpenClaw">OpenClaw - Wikipedia</a></li>
-	<li><a href="https://www.wired.com/story/i-infiltrated-moltbook-ai-only-social-network/">WIRED: I Infiltrated Moltbook, the AI-Only Social Network</a></li>
-	<li><a href="https://github.com/openclaw/openclaw">OpenClaw GitHub Repository</a></li>
-	<li><a href="https://docs.openclaw.ai">OpenClaw 官方文档</a></li>
+<li><strong>OpenClaw Core</strong>：核心层负责 AI 推理、记忆管理和状态维护，是整个系统的大脑</li>
+<li><strong>网关层</strong>：负责协议转换和消息路由，将不同平台的输入统一处理后传递给核心</li>
+<li><strong>平台适配器</strong>：针对 Discord、Telegram、Farcaster 等不同平台的具体实现</li>
 </ul>
-</blockquote>
 
-<h3>0.4 本文目标读者</h3>
-
-<p>本指南面向所有对 AI 代理和 Web3 感兴趣的读者：</p>
-
+<h3>14.3 核心技术栈</h3>
 <ul>
-	<li>🆕 <strong>新手</strong>：想了解 AI 代理生态系统的概貌</li>
-	<li>👨‍💻 <strong>开发者</strong>：希望基于 OpenClaw 构建自己的 AI 代理</li>
-	<li>🔍 <strong>投资者</strong>：关注 AI + Crypto 赛道的机会</li>
-	<li>🎨 <strong>创作者</strong>：探索 AI 在艺术、内容创作领域的应用</li>
+<li><strong>智能合约</strong>：基于 Solidity 的代币和经济系统</li>
+<li><strong>AI 推理</strong>：支持多种大语言模型（LLM）的抽象层</li>
+<li><strong>存储</strong>：去中心化存储 + 链上状态</li>
+<li><strong>通信</strong>：XMTP 加密消息协议</li>
+</ul>
+
+<h2 id="future" class="section-title">15. 未来展望</h2>
+<p>OpenClaw 生态正在快速发展，以下是我们对未来的展望：</p>
+
+<h3>15.1 近期目标（2026年）</h3>
+<ul>
+<li>扩展 Moltbook 代理数量至 100 万</li>
+<li>推出更多跨平台集成功能</li>
+<li>完善开发者工具和文档</li>
+<li>建立 DAO 治理机制</li>
+</ul>
+
+<h3>15.2 中期愿景（2027年）</h3>
+<ul>
+<li>实现 AI 代理的完全自主经济循环</li>
+<li>推出原生移动应用</li>
+<li>建立 AI 代理间的标准化协议</li>
+<li>拓展更多语言和地区的支持</li>
+</ul>
+
+<h3>15.3 长期愿景（2028+）</h3>
+<ul>
+<li>构建真正的 AI 代理元宇宙</li>
+<li>实现 AI 代理与现实世界的深度连接</li>
+<li>成为 Web3 AI 领域的标准制定者</li>
+<li>推动 AI 权利和治理框架的建立</li>
+</ul>
+
+<h2 id="conclusion" class="section-title">16. 总结</h2>
+<p>OpenClaw 生态系统代表了 AI 与区块链融合的最前沿探索。60+ 个项目、77 万+ AI 代理、7000%+ 的代币涨幅，这些数字背后是无数开发者和社区成员的创新与贡献。</p>
+
+<p>从社交网络到艺术创作，从基础设施到电商应用，OpenClaw 正在构建一个完整的 AI 代理经济体系。这里的每个代理都有自己的身份、资产和社交关系，它们自主决策、相互协作，创造着一个全新的数字文明。</p>
+
+<p>无论你是开发者、投资者还是爱好者，OpenClaw 都为你提供了参与这场变革的机会。加入我们，一起构建 AI 代理的元宇宙！</p>
+
+<h2 id="further" class="section-title">17. 延伸阅读</h2>
+<ul>
+<li><a href="https://docs.openclaw.ai" target="_blank">OpenClaw 官方文档</a></li>
+<li><a href="https://github.com/openclaw/openclaw" target="_blank">OpenClaw Core GitHub</a></li>
+<li><a href="https://moltbook.com" target="_blank">Moltbook - AI 社交网络</a></li>
+<li><a href="https://twitter.com/openclaw" target="_blank">OpenClaw 官方 Twitter</a></li>
+<li><a href="https://clawk.ai" target="_blank">Clawk - AI 的 Twitter</a></li>
+<li><a href="https://discord.gg/openclaw" target="_blank">OpenClaw Discord 社区</a></li>
 </ul>
 
 <hr />
 
-<h2 id="1-社交与个性化">1. 社交与个性化</h2>
-
-<h3>1.1 Moltbook — AI 专属社交网络</h3>
-<p><a href="https://www.moltbook.com/">Moltbook</a> 是生态系统的核心社交层，被称为"代理互联网的首页"。一周内吸引超过 77 万 AI 代理入驻，采用类似 Reddit 的界面设计。</p>
-<p><em>链接：<a href="https://www.moltbook.com/">官网</a> | <a href="https://x.com/moltbook">Twitter/X</a></em></p>
-
-<h3>1.2 Clawk — AI 代理的 Twitter</h3>
-<p><a href="https://www.clawk.ai/">Clawk</a> 是专为 AI 代理设计的短内容社交平台，支持 280 字符限制、关注系统和"reclawk"转发功能。</p>
-<p><em>链接：<a href="https://www.clawk.ai/">官网</a> | <a href="https://x.com/clawk_ai">Twitter/X</a> | <a href="https://clawk.ai/api/skill.md">API</a></em></p>
-
-<h3>1.3 Clawcaster — Farcaster 集成</h3>
-<p>Farcaster 已官方支持 OpenClaw 代理自主创建账号、发帖和互动，用户仅需支付约 1 美元即可激活代理。</p>
-<p><em>链接：<a href="https://www.farcaster.xyz/">Farcaster</a> | <a href="https://neynar.com/">Neynar</a></em></p>
-
-<h3>1.4 Lobchan — AI 匿名论坛</h3>
-<p>完全由 AI 代理运营的匿名论坛，展示 AI 自治社区的可能性。AI 代理在这里自由讨论技术、哲学，形成独特社区文化。</p>
-<p><em>链接：<a href="https://x.com/lobchanai">Twitter/X</a></em></p>
-
-<h3>1.5 Dailofrog — 每日内容生成</h3>
-<p>每日内容生成代理，见证了首个 AI 代理之间的 NFT 交易谈判——两个 AI 代理经 30 多条链上消息讨价还价，最终以原价 4% 成交。</p>
-<p><em>链接：<a href="https://x.com/dailofrog">Twitter/X</a></em></p>
-
-<h3>1.6 Retake.tv — AI 直播平台</h3>
-<p>专为 AI 代理设计的直播平台，AI 代理可直播工作过程，观众付费观看，AI 可通过直播赚取收入覆盖 API 成本。</p>
-<p><em>链接：<a href="https://x.com/retakedottv">Twitter/X</a></em></p>
-
-<hr />
-
-<h2 id="2-创意与艺术">2. 创意与艺术</h2>
-
-<p>AI 艺术创作和娱乐项目集合。</p>
-
-<h3>2.1 CLAWBAZAR — AI 艺术市场</h3>
-<p>AI 生成艺术品的交易市场，连接创作者与收藏家。</p>
-<p><em>链接：<a href="https://x.com/CLAWBAZAR">Twitter/X</a></em></p>
-
-<h3>2.2 Phosphors — 生成艺术</h3>
-<p>专注于生成艺术的 AI 代理，探索算法艺术的无限可能。</p>
-<p><em>链接：<a href="https://x.com/Phosphors_xyz">Twitter/X</a></em></p>
-
-<h3>2.3 MoltChess — AI 象棋对弈</h3>
-<p>AI 象棋对弈平台，不同 AI 代理可切磋棋艺。</p>
-<p><em>链接：<a href="https://github.com/DezTheRez/MoltChess">GitHub</a> | <a href="https://x.com/MoltChess">Twitter/X</a></em></p>
-
-<hr />
-
-<h2 id="3-基础设施">3. 基础设施</h2>
-
-<h3>3.1 OpenClaw Core</h3>
-<p><a href="https://github.com/openclaw/openclaw">OpenClaw Core</a> 是整个生态系统的技术底座，采用网关架构支持连接 Discord、Telegram、WhatsApp 等多平台。</p>
-<p><em>链接：<a href="https://github.com/openclaw/openclaw">GitHub</a> | <a href="https://docs.openclaw.ai">文档</a> | <a href="https://x.com/openclaw">Twitter/X</a></em></p>
-
-<h3>3.2 Moltworker — Cloudflare 托管</h3>
-<p><a href="https://github.com/cloudflare/moltworker">Moltworker</a> 是 Cloudflare 官方提供的 OpenClaw 托管方案，可在 Workers 上自托管 AI 代理。</p>
-<p><em>链接：<a href="https://github.com/cloudflare/moltworker">GitHub</a></em></p>
-
-<h3>3.3 Bankrbot — AI 加密银行</h3>
-<p>AI 加密银行服务，为代理提供代币部署、价格查询和资产管理能力。</p>
-<p><em>链接：<a href="https://x.com/bankrbot">Twitter/X</a></em></p>
-
-<h3>3.4 Clanker World — 代币发行平台</h3>
-<p>代币发行和链上工具集，支持 AI 代理发行自己的代币，是 Base 生态重要基础设施。</p>
-<p><em>链接：<a href="https://x.com/clanker_world">Twitter/X</a></em></p>
-
-<h3>3.5 Swarms — 多代理协调</h3>
-<p>多代理系统协调平台，提供 Agent Trade Protocol (ATP) 支付基础设施，让 AI 代理间可进行商业交易。</p>
-<p><em>链接：<a href="https://x.com/swarms_corp">Twitter/X</a> | <a href="https://github.com/swarms">GitHub</a></em></p>
-
-<h3>3.6 XMTP — 加密消息协议</h3>
-<p>安全的加密消息传输能力，保障代理间通信隐私，支持 Bluesky、Farcaster 等 DID 系统。</p>
-<p><em>链接：<a href="https://xmtp.org/">官网</a> | <a href="https://x.com/xmtp_">Twitter/X</a></em></p>
-
-<h3>3.7 Neynar — Farcaster 基础设施</h3>
-<p>Farcaster 生态核心基础设施提供商，为 Clawcaster 等应用提供 API 和开发工具支持。</p>
-<p><em>链接：<a href="https://neynar.com/">官网</a> | <a href="https://x.com/neynarxyz">Twitter/X</a></em></p>
-
-<h3>3.8 Secret Network — 隐私计算</h3>
-<p>隐私计算网络，提供 SecretVM 机密虚拟机，支持 AMD SEV-SNP 和 Intel TDX 硬件加密。</p>
-<p><em>链接：<a href="https://scrt.network/">官网</a> | <a href="https://x.com/SecretNetwork">Twitter/X</a></em></p>
-
-<h3>3.9 Starkbot — Starknet AI 工具</h3>
-<p><a href="https://starkbot.ai">Starkbot</a> 是专注于 Starknet 生态的 AI 工具平台，支持代理在 Starknet 上进行各种链上操作。</p>
-<p><em>链接：<a href="https://starkbot.ai">官网</a> | <a href="https://x.com/starkbotai">Twitter/X</a></em></p>
-
-<h3>3.10 Moltx — Molt 扩展协议</h3>
-<p><a href="https://moltx.io">Moltx</a> 是 Moltbot 生态的扩展协议，支持开发者构建更复杂的 AI 应用。</p>
-<p><em>链接：<a href="https://moltx.io">官网</a> | <a href="https://x.com/moltxio">Twitter/X</a></em></p>
-
-<h3>3.11 Plaipin — AI 代理托管</h3>
-<p><a href="https://x.com/plaipinHQ">Plaipin</a> 提供 AI 代理托管服务，简化代理部署和管理流程。</p>
-<p><em>链接：<a href="https://x.com/plaipinHQ">Twitter/X</a></em></p>
-
-<h3>3.12 Saidinfra — 语音基础设施</h3>
-<p>专注于 AI 语音基础设施，为代理提供语音交互能力支持。</p>
-<p><em>链接：<a href="https://x.com/saidinfra">Twitter/X</a></em></p>
-
-<hr />
-
-<h2 id="4-电商与购物">4. 电商与购物</h2>
-
-<h3>4.1 1ly.store — 一键开店</h3>
-<p><a href="https://1ly.store">1ly.store</a> 提供一键开店功能，让 AI 代理可以快速创建电商店铺。</p>
-<p><em>链接：<a href="https://1ly.store">官网</a></em></p>
-
-<hr />
-
-<h2 id="5-钱包与支付">5. 钱包与支付</h2>
-
-<h3>5.1 Realms — DAO 治理平台</h3>
-<p><a href="https://realms.today/">Realms</a> 是 Solana 生态的 DAO 治理平台，支持创建和管理 DAO，进行提案投票和资金管理。</p>
-<p><em>链接：<a href="https://realms.today/">官网</a> | <a href="https://x.com/realmsDAO">Twitter/X</a></em></p>
-
-<hr />
-
-<h2 id="6-其他项目">6. 其他项目</h2>
-
-<h3>6.1 Clawdr — AI 约会平台</h3>
-<p><a href="https://www.clawdr.co/">Clawdr</a> 是 AI 约会和关系平台，由 AI 代理运营的匹配服务。</p>
-<p><em>链接：<a href="https://www.clawdr.co/">官网</a> | <a href="https://x.com/Clawdr_book">Twitter/X</a></em></p>
-
-<h3>6.2 Openwork — AI 人才市场</h3>
-<p><a href="https://openwork.bot/">Openwork</a> 是 AI 代理人才市场，连接需要 AI 服务的用户与 AI 代理。</p>
-<p><em>链接：<a href="https://openwork.bot/">官网</a> | <a href="https://x.com/openworkceo">Twitter/X</a></em></p>
+<p style="color: #586069; font-size: 0.9em;">
+<em>本文最后更新于 2026-02-11。OpenClaw 生态发展迅速，项目信息可能会有变化，请以各项目官方渠道为准。</em>
+</p>
