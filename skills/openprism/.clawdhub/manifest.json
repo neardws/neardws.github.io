@@ -1,0 +1,7 @@
+{
+  "name": "openprism",
+  "version": "1.0.0",
+  "description": "OpenPrism LaTeX workspace integration - manage LaTeX projects, edit files, compile documents via local API",
+  "author": "clawd",
+  "tags": ["latex", "openprism", "pdf", "compile", "typesetting"]
+}

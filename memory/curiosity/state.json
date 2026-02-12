@@ -1,10 +1,10 @@
 {
   "version": "0.2.0",
-  "last_updated": "2026-02-10T01:15:00+08:00",
+  "last_updated": "2026-02-12T09:44:02.863871",
   "integrated": true,
   "location": "memory/curiosity/",
   "tension": {
-    "index": 0.50,
+    "index": 0.5,
     "threshold": 0.5,
     "base_threshold": 0.5
   },
@@ -15,7 +15,7 @@
     "boredom": 0.0
   },
   "stats": {
-    "total_explorations": 2,
+    "total_explorations": 129,
     "total_discoveries": 3,
     "total_predictions": 5,
     "predictions_verified": 0,
@@ -31,7 +31,7 @@
       "importance": 0.8,
       "uncertainty": 0.9,
       "created": "2026-02-09T00:40:00+08:00",
-      "last_touched": null
+      "last_touched": "2026-02-12T09:44:02.863858"
     },
     {
       "id": "gap-002",
@@ -40,7 +40,7 @@
       "importance": 0.7,
       "uncertainty": 0.95,
       "created": "2026-02-09T00:40:00+08:00",
-      "last_touched": null
+      "last_touched": "2026-02-10T09:14:39.698711"
     },
     {
       "id": "gap-003",
@@ -59,7 +59,7 @@
       "importance": 0.9,
       "uncertainty": 0.8,
       "created": "2026-02-09T00:40:00+08:00",
-      "last_touched": null
+      "last_touched": "2026-02-10T09:14:05.459497"
     },
     {
       "id": "gap-005",

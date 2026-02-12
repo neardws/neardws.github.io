@@ -1,0 +1,63 @@
+#!/bin/bash
+# Polymarket Skill Wrapper
+# Usage: polymarket [trending|search <query>|event <slug>|category <name>]
+
+SCRIPT_DIR="/home/neardws/clawd/skills/polymarket-mvanhorn/scripts"
+
+show_help() {
+    echo "Polymarket Prediction Markets"
+    echo ""
+    echo "Usage:"
+    echo "  polymarket trending [limit]      - 热门市场"
+    echo "  polymarket search <关键词>        - 搜索市场"
+    echo "  polymarket event <slug>          - 特定市场详情"
+    echo "  polymarket category <分类>        - 按分类浏览"
+    echo ""
+    echo "Examples:"
+    echo "  polymarket trending"
+    echo "  polymarket search AI"
+    echo "  polymarket search Trump"
+    echo "  polymarket category politics"
+}
+
+case "$1" in
+    trending)
+        limit=${2:-10}
+        python3 "$SCRIPT_DIR/polymarket.py" --limit "$limit" trending
+        ;;
+    search)
+        if [ -z "$2" ]; then
+            echo "Usage: polymarket search <query>"
+            exit 1
+        fi
+        limit=${3:-10}
+        python3 "$SCRIPT_DIR/polymarket.py" --limit "$limit" search "$2"
+        ;;
+    event)
+        if [ -z "$2" ]; then
+            echo "Usage: polymarket event <slug>"
+            exit 1
+        fi
+        python3 "$SCRIPT_DIR/polymarket.py" event "$2"
+        ;;
+    category)
+        if [ -z "$2" ]; then
+            echo "Usage: polymarket category <name>"
+            echo "Available: politics, crypto, sports, tech, entertainment, business"
+            exit 1
+        fi
+        limit=${3:-10}
+        python3 "$SCRIPT_DIR/polymarket.py" --limit "$limit" category "$2"
+        ;;
+    ai|markets)
+        # 快捷命令：查看 AI 相关市场
+        echo "🔍 AI 相关预测市场:"
+        echo ""
+        python3 "$SCRIPT_DIR/polymarket.py" --limit 5 search "OpenAI"
+        echo ""
+        python3 "$SCRIPT_DIR/polymarket.py" --limit 5 search "Claude"
+        ;;
+    *)
+        show_help
+        ;;
+esac

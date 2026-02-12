@@ -1,0 +1,16 @@
+[2026-02-10 07:52:31] 开始检查 OpenClaw 源码更新...
+[2026-02-10 07:52:33] 本地: bc475f01
+[2026-02-10 07:52:33] 远程: 661279cb
+[2026-02-10 07:52:33] 检查失败: Command failed: ['git', 'log', 'None..661279cbfaa8752aa019e5b56cb17d2f6b305971', '--oneline']
+fatal: ambiguous argument 'None..661279cbfaa8752aa019e5b56cb17d2f6b305971': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+[2026-02-10 07:52:43] 开始检查 OpenClaw 源码更新...
+[2026-02-10 07:52:43] 本地: bc475f01
+[2026-02-10 07:52:43] 远程: 661279cb
+[2026-02-10 07:52:44] 发现 106 个新提交
+[2026-02-10 08:52:34] 开始检查 OpenClaw 源码更新...
+[2026-02-10 08:52:36] 本地: 9cc70188
+[2026-02-10 08:52:36] 远程: 8c73dbe7
+[2026-02-10 08:52:36] 发现 1 个新提交
