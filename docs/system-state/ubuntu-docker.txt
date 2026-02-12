@@ -1,12 +1,12 @@
-NAMES                                  IMAGE                                                                           STATUS                   PORTS
-litellm-gateway                        ghcr.io/berriai/litellm:main-stable                                             Up 2 hours (unhealthy)   0.0.0.0:4000->4000/tcp, [::]:4000->4000/tcp
-litellm-postgres                       postgres:16-alpine                                                              Up 2 hours (healthy)     5432/tcp
-rsshub                                 diygod/rsshub:chromium-bundled                                                  Up 8 days                0.0.0.0:1200->1200/tcp, [::]:1200->1200/tcp
-notebooklm-mcp                         notebooklm-mcp:latest                                                           Up 2 weeks (healthy)     127.0.0.1:6080->6080/tcp, 127.0.0.1:3005->3000/tcp
-metamcp-nginx                          nginx:alpine                                                                    Up 2 weeks               0.0.0.0:12010->80/tcp, [::]:12010->80/tcp
-metamcp                                metamcp-with-admin-api:latest                                                   Up 2 weeks (healthy)     0.0.0.0:12008-12009->12008-12009/tcp, [::]:12008-12009->12008-12009/tcp
-metamcp-pg                             postgres:16-alpine                                                              Up 2 weeks (healthy)     0.0.0.0:9433->5432/tcp, [::]:9433->5432/tcp
-autodl-container-5fd14992da-38b5eba0   ccr.ccs.tencentyun.com/autodl-private-cloud/tensorflow:cuda11.x-py38-tf1.15.5   Up 4 days                
-dongguatv                              dongguatv-dongguatv                                                             Up 3 weeks               0.0.0.0:8080->3000/tcp, [::]:8080->3000/tcp
-1Panel-frpc-OiKq                       snowdreamtech/frpc:0.65.0                                                       Up 4 days                
-natfrp-service                         natfrp.com/launcher                                                             Up 3 weeks               
+NAMES                                  IMAGE                                                                           STATUS                    PORTS
+litellm-gateway                        ghcr.io/berriai/litellm:main-stable                                             Up 26 hours (unhealthy)   0.0.0.0:4000->4000/tcp, [::]:4000->4000/tcp
+litellm-postgres                       postgres:16-alpine                                                              Up 26 hours (healthy)     5432/tcp
+rsshub                                 diygod/rsshub:chromium-bundled                                                  Up 9 days                 0.0.0.0:1200->1200/tcp, [::]:1200->1200/tcp
+notebooklm-mcp                         notebooklm-mcp:latest                                                           Up 2 weeks (healthy)      127.0.0.1:6080->6080/tcp, 127.0.0.1:3005->3000/tcp
+metamcp-nginx                          nginx:alpine                                                                    Up 2 weeks                0.0.0.0:12010->80/tcp, [::]:12010->80/tcp
+metamcp                                metamcp-with-admin-api:latest                                                   Up 2 weeks (healthy)      0.0.0.0:12008-12009->12008-12009/tcp, [::]:12008-12009->12008-12009/tcp
+metamcp-pg                             postgres:16-alpine                                                              Up 2 weeks (healthy)      0.0.0.0:9433->5432/tcp, [::]:9433->5432/tcp
+autodl-container-5fd14992da-38b5eba0   ccr.ccs.tencentyun.com/autodl-private-cloud/tensorflow:cuda11.x-py38-tf1.15.5   Up 5 days                 
+dongguatv                              dongguatv-dongguatv                                                             Up 3 weeks                0.0.0.0:8080->3000/tcp, [::]:8080->3000/tcp
+1Panel-frpc-OiKq                       snowdreamtech/frpc:0.65.0                                                       Up 5 days                 
+natfrp-service                         natfrp.com/launcher                                                             Up 3 weeks                
