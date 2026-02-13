@@ -1,1 +1,1 @@
-/dev/disk3s1s1   460Gi    11Gi   344Gi     4%    453k  3.6G    0%   /
+/dev/disk3s1s1   460Gi    11Gi   335Gi     4%    453k  3.5G    0%   /

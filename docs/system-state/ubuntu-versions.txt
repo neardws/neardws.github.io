@@ -1,4 +1,4 @@
-Snapshot: 2026-02-13T03:30:01+08:00
+Snapshot: 2026-02-14T03:30:01+08:00
 Hostname: ubun
 OS: Ubuntu 24.04.3 LTS
 Kernel: 6.14.0-37-generic
@@ -6,7 +6,7 @@ Node: v22.22.0
 pnpm: 
 Git: git version 2.43.0
 Docker: Docker version 29.1.3, build f52814d
-OpenClaw: v2026.2.9-35-g9cc70188a
+OpenClaw: v2026.2.9-321-g57d0f65e7
 Python: Python 3.12.3
 Rust: 
 Bun: 
