@@ -1,0 +1,30 @@
+tunnel: ebf58727-7b01-4c8b-bc53-98558eb0de80
+credentials-file: [REDACTED]
+
+ingress:
+  - hostname: fish.neardws.com
+    service: http://localhost:5000
+    originRequest:
+      noTLSVerify: true
+      connectTimeout: 30s
+      tcpKeepAlive: 30s
+      keepAliveConnections: 100
+  - hostname: 1panel.neardws.com
+    service: http://localhost:8888
+  - hostname: mcp.neardws.com
+    service: http://localhost:12010
+    originRequest:
+      noTLSVerify: true
+      connectTimeout: 120s
+      tcpKeepAlive: 30s
+      keepAliveConnections: 100
+      httpHostHeader: mcp.neardws.com
+  - hostname: openclaw.neardws.com
+    service: http://localhost:18789
+  - hostname: latex.neardws.com
+    service: http://localhost:5173
+  - hostname: autofigure.neardws.com
+    service: http://localhost:8002
+  - hostname: pdf2md.neardws.com
+    service: http://192.168.31.211:7860
+  - service: http_status:404

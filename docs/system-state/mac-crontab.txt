@@ -1,0 +1,5 @@
+*/5 * * * * ~/.clawdbot/health-check.sh
+*/5 * * * * ~/.clawdbot-backup/health-monitor.sh >> ~/.clawdbot-backup/monitor.log 2>&1
+*/2 * * * * ~/.clawdbot/gateway-failover.sh >> ~/.clawdbot/failover.log 2>&1
+*/5 * * * * ~/.clawdbot/healthchecks-ping.sh >> ~/.clawdbot/healthchecks.log 2>&1
+0 * * * * /Users/neardws/clawphone/x_smart_digest.sh >> /Users/neardws/clawphone/logs/smart_cron.log 2>&1

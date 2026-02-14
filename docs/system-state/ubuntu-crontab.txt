@@ -1,0 +1,11 @@
+*/2 * * * * cd /home/neardws/User_Services/email-automation && venv/bin/python src/forward_coremail.py >> /tmp/forward_coremail.log 2>&1
+*/2 * * * * cd /home/neardws/User_Services/email-automation && venv/bin/python src/auto_label_gmail.py --limit 30 >> /tmp/auto_label.log 2>&1
+*/2 * * * * cd /home/neardws/User_Services/email-automation && venv/bin/python src/forward_qq.py >> /tmp/forward_qq.log 2>&1
+*/30 * * * * python3 /home/neardws/.clawdbot/scripts/self-heal.py --fix >> /home/neardws/.clawdbot/self-heal.log 2>&1
+0 * * * * cd /home/neardws/clawdbot/info-monitor && /home/neardws/clawdbot/info-monitor/.venv/bin/python /home/neardws/clawdbot/info-monitor/main.py --run >> /home/neardws/clawdbot/info-monitor/logs/cron.log 2>&1
+*/5 * * * * /home/neardws/AutoDL/autodl-private-cloud-diagnose/autodl-heartbeat.sh >> /home/neardws/AutoDL/autodl-private-cloud-diagnose/heartbeat.log 2>&1
+0 3 * * * /home/neardws/.openclaw/scripts/security-scan.sh >> /home/neardws/.openclaw/logs/security-scan.log 2>&1
+*/5 * * * * /home/neardws/server-scripts/monitor/healthchecks-ping.sh >> /home/neardws/User_Services/services-logs/healthchecks.log 2>&1
+0 4 * * 0 /home/neardws/server-scripts/backup/secrets-backup.sh >> /home/neardws/User_Services/services-logs/secrets-backup.log 2>&1
+30 3 * * * /home/neardws/server-scripts/backup/system-snapshot.sh >> /home/neardws/User_Services/services-logs/system-snapshot.log 2>&1
+0 */2 * * * /home/neardws/.openclaw/scripts/session-gc.sh --max-age-hours 6 >> /home/neardws/.openclaw/logs/session-gc.log 2>&1
