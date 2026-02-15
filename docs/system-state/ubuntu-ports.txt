@@ -2,7 +2,7 @@
 0.0.0.0:12008 
 0.0.0.0:12009 
 0.0.0.0:12010 
-0.0.0.0:18789 users:(("openclaw-gatewa",pid=16437,fd=23))
+0.0.0.0:18789 users:(("openclaw-gatewa",pid=1388956,fd=22))
 0.0.0.0:22 
 0.0.0.0:7860 users:(("python3",pid=3030770,fd=21))
 0.0.0.0:8001 users:(("python",pid=2162452,fd=21))
@@ -19,7 +19,7 @@
 [::]:12008 
 [::]:12009 
 [::]:12010 
-127.0.0.1:18792 users:(("openclaw-gatewa",pid=16437,fd=29))
+127.0.0.1:18792 users:(("openclaw-gatewa",pid=1388956,fd=28))
 127.0.0.1:20241 
 127.0.0.1:20242 users:(("cloudflared",pid=2935918,fd=3))
 127.0.0.1:3000 users:(("python",pid=2830371,fd=3))
@@ -37,8 +37,6 @@
 *:22000 users:(("syncthing",pid=1872470,fd=9))
 *:3002 users:(("node",pid=2161777,fd=23))
 *:5173 users:(("node
-*:54621 users:(("droid",pid=2282694,fd=32))
-*:54622 users:(("droid",pid=3528913,fd=28))
 *:7007 
 *:7102 
 *:7400 
