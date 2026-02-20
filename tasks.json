@@ -1,0 +1,41 @@
+{
+  "updated": "2026-02-20T20:50:00+08:00",
+  "tasks": [
+    {
+      "id": "T001",
+      "title": "JOME 论文修改",
+      "project": "tmao-jome",
+      "assignee": "both",
+      "status": "in-progress",
+      "priority": "high",
+      "notes": "实验部分修改中，查看 #tmao-jome"
+    },
+    {
+      "id": "T002",
+      "title": "HARL-MARL 审稿回复",
+      "project": "harl-marl",
+      "assignee": "both",
+      "status": "in-progress",
+      "priority": "high",
+      "notes": "查看 #harl-marl"
+    },
+    {
+      "id": "T003",
+      "title": "个人主页更新 publication 列表",
+      "project": "homepage",
+      "assignee": "ai",
+      "status": "todo",
+      "priority": "medium",
+      "notes": ""
+    },
+    {
+      "id": "T004",
+      "title": "修复 sub-agent spawn（上游 bug）",
+      "project": "openclaw",
+      "assignee": "ai",
+      "status": "blocked",
+      "priority": "low",
+      "notes": "GitHub Issue #12210，等上游修复"
+    }
+  ]
+}
