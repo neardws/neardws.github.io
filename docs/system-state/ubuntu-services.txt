@@ -12,6 +12,8 @@ containerd.service             loaded active running containerd container runtim
 cups-browsed.service           loaded active running Make remote CUPS printers available locally
 cups.service                   loaded active running CUPS Scheduler
 docker.service                 loaded active running Docker Application Container Engine
+edge-vla-slides.service        loaded active running Edge VLA Slides HTTP Server (port 8766)
+edge-vla-tunnel.service        loaded active running Cloudflare Tunnel for edge-vla.neardws.com
 embedding.service              loaded active running Embedding Service (Gemini + Chroma)
 ft-agent.service               loaded active running FT Agent
 fwupd.service                  loaded active running Firmware update daemon
@@ -37,4 +39,4 @@ Legend: LOAD   → Reflects whether the unit definition was properly loaded.
         ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
         SUB    → The low-level unit activation state, values depend on unit type.
 
-52 loaded units listed.
+54 loaded units listed.

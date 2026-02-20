@@ -1,2 +1,2 @@
-/dev/nvme0n1p2  1.8T  743G  996G  43% /
-/dev/nvme0n1p2  1.8T  743G  996G  43% /
+/dev/nvme0n1p2  1.8T  744G  995G  43% /
+/dev/nvme0n1p2  1.8T  744G  995G  43% /
