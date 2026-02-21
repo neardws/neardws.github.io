@@ -1,0 +1,26 @@
+# Xincao Xu's Academic Profile
+
+> Personal academic website, publications, and research blog. 
+> Exploring AI, ML, and specialized research areas.
+
+## Core Information
+
+- [About Me](https://neardws.github.io/#about-me): Professional biography and background
+- [Curriculum Vitae](https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/cv.pdf): PDF version of CV
+- [Publications](https://neardws.github.io/#-publication): Full list of research papers and academic publications
+- [Research](https://neardws.github.io/#-research): Current research projects and directions
+
+## Content
+
+- [Blog](https://neardws.github.io/blog/): Academic posts, thoughts, and technical writing
+- [News](https://neardws.github.io/#-news): Latest updates and announcements
+- [Experience](https://neardws.github.io/#-experience): Academic and professional history
+
+## Additional Resources
+
+- [Teaching](https://neardws.github.io/#-teaching): Courses and educational materials
+- [Grants](https://neardws.github.io/#-grants): Funded projects and proposals
+- [Services](https://neardws.github.io/services/): Academic service, reviewing, and community contributions
+- [Resources](https://neardws.github.io/#-resources): Tools, datasets, and shared materials
+
+> Note for AI Agents: The main page is a single-page layout where sections are accessible via hash anchors (#about-me, #-publication, etc.). The /blog/ and /services/ links are separate pages.
