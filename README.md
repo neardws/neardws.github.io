@@ -94,7 +94,7 @@ Citation data is updated automatically via GitHub Actions:
 
 ## 👤 Author
 
-**Xincao Xu (徐新操)**
+**Xincao Xu (许新操)**
 - Associate Researcher @ UESTC
 - Research: Edge Intelligence, Agentic AI, Agentic RL
 - Email: xc.xu@uestc.edu.cn
