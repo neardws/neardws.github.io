@@ -95,7 +95,7 @@
     "type": "journal",
     "title": "Vehicular Fog Computing Enabled Real-time Collision Warning via Trajectory Calibration",
     "authors": ["Xincao Xu*", "Kai Liu*", "Ke Xiao", "Liang Feng", "Zhou Wu", "Songtao Guo"],
-    " "venue": "MONET",
+    "venue": "MONET",
     "year": 2020,
     "tags": ["JCR Q2", "CCF C"],
     "if": 3.8,
