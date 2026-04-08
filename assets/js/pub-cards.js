@@ -1,10 +1,12 @@
-// Publication Cards - Dynamic v2
-// Loads publications from JSON data and renders interactive cards with filtering
+// Publication Cards - Dynamic v3
+// Full citation info: venue_full, volume, issue, pages, month, scholar citations
 
 (function() {
   'use strict';
 
   const DATA_FILE = '/assets/data/publications.json';
+  const SCHOLAR_USER = 'DK5avZUAAAAJ';
+  const SCHOLAR_STATS_URL = 'https://cdn.jsdelivr.net/gh/Neardws/neardws.github.io@google-scholar-stats/gs_data.json';
 
   class PublicationCards {
     constructor() {
@@ -12,19 +14,28 @@
       this.filteredData = [];
       this.currentFilter = 'all';
       this.searchQuery = '';
+      this.scholarStats = {};
 
       this.init();
     }
 
     async init() {
       try {
-        const res = await fetch(DATA_FILE);
-        this.data = await res.json();
+        const [pubRes, scholarRes] = await Promise.allSettled([
+          fetch(DATA_FILE).then(r => r.json()),
+          fetch(SCHOLAR_STATS_URL).then(r => r.json())
+        ]);
+
+        this.data = pubRes.status === 'fulfilled' ? pubRes.value : [];
+        if (scholarRes.status === 'fulfilled' && scholarRes.value.publications) {
+          this.scholarStats = scholarRes.value.publications;
+        }
+
         this.filteredData = [...this.data];
         this.render();
       } catch (e) {
-          console.warn('Failed to load publications:', e);
-          document.getElementById('pub-container').innerHTML = '<p>Failed to load publications.</p>';
+        console.warn('Failed to load publications:', e);
+        document.getElementById('pub-container').innerHTML = '<p>Failed to load publications.</p>';
       }
     }
 
@@ -41,7 +52,7 @@
           <div class="pub-filters" id="pub-filters"></div>
           <input type="text" class="pub-search" id="pub-search" placeholder="Search title, author, venue..." />
         </div>
-        <div class="pub-grid" id="pub-grid"></div>
+        <div class="pub-list" id="pub-grid"></div>
       `;
 
       this.renderFilters(counts);
@@ -60,11 +71,11 @@
     getStats() {
       const journals = this.data.filter(p => p.type === 'journal').length;
       const conferences = this.data.filter(p => p.type === 'conference').length;
-      const highlights = this.data.filter(p => p.highlight).length;
       const firstAuthors = this.data.filter(p => {
-        const firstAuthor = p.authors[0];
-        return firstAuthor.includes('Xincao') || firstAuthor.includes('Xu');
+        const first = p.authors[0];
+        return first.includes('Xincao') || first.includes('Xu*');
       }).length;
+      const highlights = this.data.filter(p => p.highlight).length;
 
       return `
         <div class="pub-stats">
@@ -78,7 +89,7 @@
           </div>
           <div class="pub-stat">
             <span class="pub-stat-value">${firstAuthors}</span>
-            <span class="pub-stat-label">1st Author</span>
+            <span class="pub-stat-label">1st/Corr. Author</span>
           </div>
           <div class="pub-stat">
             <span class="pub-stat-value">${highlights}</span>
@@ -94,8 +105,8 @@
         { key: 'all', label: 'All' },
         { key: 'journal', label: 'Journal' },
         { key: 'conference', label: 'Conference' },
-        { key: 'dissertation', label: 'Dissertation' },
-        { key: 'chinese', label: '中文论文' }
+        { key: 'chinese', label: '中文论文' },
+        { key: 'dissertation', label: 'Dissertation' }
       ];
 
       filtersEl.innerHTML = types.map(t =>
@@ -106,6 +117,70 @@
       ).join('');
     }
 
+    buildCitation(pub) {
+      // Build the full citation string like the old Markdown version
+      const authors = this.formatAuthorsText(pub.authors);
+      const titleLink = pub.doi
+        ? `<a href="${pub.doi}" target="_blank" class="pub-title-link">${this.escapeHtml(pub.title)}</a>`
+        : `<span>${this.escapeHtml(pub.title)}</span>`;
+
+      let venue = '';
+      if (pub.type === 'journal') {
+        const venuePart = pub.venue_full
+          ? `<em>${this.escapeHtml(pub.venue_full)}</em> (<em>${this.escapeHtml(pub.venue)}</em>)`
+          : `<em>${this.escapeHtml(pub.venue)}</em>`;
+        const vol = pub.volume ? `, vol. ${pub.volume}` : '';
+        const iss = pub.issue ? `, no. ${pub.issue}` : '';
+        const pages = pub.pages ? `, pp. ${pub.pages}` : '';
+        const date = pub.month ? `, ${pub.month} ${pub.year}` : `, ${pub.year}`;
+        venue = `${venuePart}${vol}${iss}${pages}${date}.`;
+      } else if (pub.type === 'conference' || pub.type === 'chinese') {
+        if (pub.volume) {
+          // Chinese journal with volume/issue
+          const venuePart = pub.venue_full
+            ? `<em>${this.escapeHtml(pub.venue_full)}</em> (<em>${this.escapeHtml(pub.venue)}</em>)`
+            : `<em>${this.escapeHtml(pub.venue)}</em>`;
+          const vol = pub.volume ? `, vol. ${pub.volume}` : '';
+          const iss = pub.issue ? `, no. ${pub.issue}` : '';
+          const pages = pub.pages ? `, pp. ${pub.pages}` : '';
+          const date = pub.month ? `, ${pub.month} ${pub.year}` : `, ${pub.year}`;
+          venue = `${venuePart}${vol}${iss}${pages}${date}.`;
+        } else {
+          // Conference
+          const venuePart = pub.venue_full
+            ? `<em>${this.escapeHtml(pub.venue_full)}</em> (<em>${this.escapeHtml(pub.venue)}</em>)`
+            : `<em>${this.escapeHtml(pub.venue)}</em>`;
+          const loc = pub.location ? `, ${pub.location}` : '';
+          const date = pub.conf_date ? `, ${pub.conf_date}` : `, ${pub.year}`;
+          venue = `${venuePart}${loc}${date}.`;
+        }
+      } else if (pub.type === 'dissertation') {
+        venue = `<em>${this.escapeHtml(pub.venue_full || pub.venue)}</em>, Doctoral Dissertation, ${pub.month || ''} ${pub.year}.`;
+      }
+
+      return `${authors}, ${titleLink}, ${venue}`;
+    }
+
+    formatAuthorsText(authors) {
+      return authors.map(author => {
+        const isCorr = author.includes('*');
+        const isMe = author.replace(/\*/g, '').trim().includes('Xincao') ||
+                     author.replace(/\*/g, '').trim().startsWith('Xu');
+        const cleanName = author.replace(/\*/g, '').trim();
+        const corrMark = isCorr ? '<sup>*</sup>' : '';
+
+        if (isMe) {
+          return `<strong>${this.escapeHtml(cleanName)}${corrMark}</strong>`;
+        }
+        return `${this.escapeHtml(cleanName)}${corrMark}`;
+      }).join(', ');
+    }
+
+    getCitations(pub) {
+      if (!pub.scholar_id || !this.scholarStats[pub.scholar_id]) return null;
+      return this.scholarStats[pub.scholar_id].num_citations;
+    }
+
     renderCards() {
       const grid = document.getElementById('pub-grid');
 
@@ -114,81 +189,83 @@
         return;
       }
 
-      grid.innerHTML = this.filteredData.map(pub => `
-        <div class="pub-card entering ${pub.highlight ? 'highlight' : ''}" data-id="${pub.id}">
-          <div class="pub-card-header">
-            <span class="pub-venue ${pub.type}">${this.getTypeLabel(pub.type)}</span>
-            <span class="pub-year">${pub.year}</span>
-          </div>
-          <div class="pub-title">
-            ${pub.doi ? `<a href="${pub.doi}" target="_blank">${this.escapeHtml(pub.title)}</a>` : this.escapeHtml(pub.title)}
-          </div>
-          <div class="pub-authors">${this.formatAuthors(pub.authors)}</div>
-          <div class="pub-tags">
-            ${pub.tags.map(t => `<span class="pub-tag">${t}</span>`).join('')}
-            ${pub.highlight ? '<span class="pub-tag best-paper">★ Featured</span>' : ''}
-          </div>
-          <div class="pub-links">
-            ${pub.doi ? `<a class="pub-link" href="${pub.doi}" target="_blank"><span class="icon">📄</span> Paper</a>` : ''}
-            ${pub.bib ? `<a class="pub-link" href="${pub.bib}" target="_blank"><span class="icon">📋</span> BibTeX</a>` : ''}
-            ${pub.github ? `<a class="pub-link" href="${pub.github}" target="_blank"><span class="icon">💻</span> Code</a>` : ''}
-            ${pub.youtube ? `<a class="pub-link" href="${pub.youtube}" target="_blank"><span class="icon">▶️</span> Video</a>` : ''}
-          </div>
-        </div>
-      `).join('');
+      grid.innerHTML = this.filteredData.map((pub, idx) => {
+        const citation = this.buildCitation(pub);
+        const citations = this.getCitations(pub);
+        const scholarUrl = pub.scholar_id
+          ? `https://scholar.google.com/citations?view_op=view_citation&hl=en&user=${SCHOLAR_USER}&citation_for_view=${pub.scholar_id}`
+          : null;
 
-      // Animate cards in
-      requestAnimationFrame(() => {
-        const cards = grid.querySelectorAll('.pub-card');
-        cards.forEach((card, i) => {
-          setTimeout(() => {
-            card.classList.remove('entering');
-            card.classList.add('visible');
-          }, i * 80);
-        });
-      });
-    }
+        const ifBadge = pub.if ? `<span class="pub-if">IF: ${pub.if}</span>` : '';
+        const citeBadge = citations != null
+          ? `<a class="pub-cite-count" href="${scholarUrl}" target="_blank">📊 Cited: ${citations}</a>`
+          : '';
 
-    formatAuthors(authors) {
-      return authors.map(author => {
-        const isCorr = author.includes('*');
-        const isMe = author.includes('Xincao') || author.includes('Xu');
-        let cleanName = author.replace(/\*|\^/g, '');
-        if (isMe) {
-          return `<strong class="${isCorr ? 'corresponding' : ''}">${cleanName}</strong>`;
-        }
-        return cleanName;
-      }).join(', ');
+        const tags = [
+          ...pub.tags.map(t => {
+            const cls = t.includes('Best Paper') || t.includes('Best Paper Candidate') ? 'best-paper' : '';
+            return `<span class="pub-tag ${cls}">${t}</span>`;
+          }),
+          pub.highlight && !pub.tags.some(t => t.includes('Best')) ? '<span class="pub-tag featured">★ Featured</span>' : ''
+        ].filter(Boolean).join('');
+
+        const links = [
+          pub.doi ? `<a class="pub-link" href="${pub.doi}" target="_blank">📄 Paper</a>` : '',
+          pub.bib ? `<a class="pub-link" href="${pub.bib}" target="_blank">📋 BibTeX</a>` : '',
+          pub.pdf ? `<a class="pub-link" href="${pub.pdf}" target="_blank">📑 PDF</a>` : '',
+          pub.github ? `<a class="pub-link" href="${pub.github}" target="_blank">💻 Code</a>` : '',
+          pub.youtube ? `<a class="pub-link" href="${pub.youtube}" target="_blank">▶️ Video</a>` : '',
+          pub.bilibili ? `<a class="pub-link" href="${pub.bilibili}" target="_blank">📺 Bilibili</a>` : '',
+          scholarUrl ? `<a class="pub-link" href="${scholarUrl}" target="_blank">🎓 Scholar</a>` : ''
+        ].filter(Boolean).join('');
+
+        return `
+          <div class="pub-item ${pub.highlight ? 'highlight' : ''}" data-id="${pub.id}">
+            <div class="pub-item-left">
+              <span class="pub-type-badge ${pub.type}">${this.getTypeLabel(pub.type)}</span>
+              <span class="pub-year-badge">${pub.year}</span>
+            </div>
+            <div class="pub-item-body">
+              <div class="pub-citation">${citation}</div>
+              <div class="pub-meta-row">
+                ${ifBadge}
+                ${citeBadge}
+                ${tags}
+              </div>
+              <div class="pub-links">${links}</div>
+            </div>
+          </div>
+        `;
+      }).join('');
     }
 
     getTypeLabel(type) {
       const labels = {
         journal: 'Journal',
         conference: 'Conference',
-        chinese: '中文论文',
+        chinese: '中文',
         dissertation: 'Dissertation'
       };
       return labels[type] || type;
     }
 
     escapeHtml(text) {
+      if (!text) return '';
       const div = document.createElement('div');
       div.textContent = text;
       return div.innerHTML;
     }
 
     bindEvents() {
-      // Filter buttons
       document.getElementById('pub-filters').addEventListener('click', (e) => {
-        if (e.target.classList.contains('pub-filter-btn')) {
-          this.currentFilter = e.target.dataset.filter;
-          document.querySelectorAll('.pub-filter-btn').forEach(btn => btn.classList.remove('active'));
-          e.target.classList.add('active');
-          this.applyFilters();
-        }
+        const btn = e.target.closest('.pub-filter-btn');
+        if (!btn) return;
+        this.currentFilter = btn.dataset.filter;
+        document.querySelectorAll('.pub-filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        this.applyFilters();
       });
 
-      // Search
       const searchInput = document.getElementById('pub-search');
       let searchTimeout;
       searchInput.addEventListener('input', (e) => {
@@ -202,34 +279,21 @@
 
     applyFilters() {
       this.filteredData = this.data.filter(pub => {
-        // Type filter
-        if (this.currentFilter !== 'all') {
-          if (this.currentFilter === 'chinese') {
-            if (pub.type !== 'chinese') return false;
-          } else if (pub.type !== this.currentFilter) {
-            return false;
-          }
-        }
-
-        // Search filter
+        if (this.currentFilter !== 'all' && pub.type !== this.currentFilter) return false;
         if (this.searchQuery) {
           const searchIn = [
-            pub.title,
-            pub.venue,
-            ...pub.authors,
-            ...(pub.tags || [])
+            pub.title, pub.venue, pub.venue_full || '',
+            ...pub.authors, ...(pub.tags || []),
+            pub.location || '', pub.pages || ''
           ].join(' ').toLowerCase();
           return searchIn.includes(this.searchQuery);
         }
-
         return true;
       });
-
       this.renderCards();
     }
   }
 
-  // Initialize when DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => new PublicationCards());
   } else {
