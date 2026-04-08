@@ -143,18 +143,14 @@
   border-left-color: var(--pub-accent);
 }
 
-.pub-item.highlight {
-  border-left-color: var(--pub-highlight-border);
-}
-
 /* Type-specific left border colors on hover */
 .pub-item[data-type="journal"]:hover { border-left-color: #4a90d9; }
 .pub-item[data-type="conference"]:hover { border-left-color: #e67e22; }
 .pub-item[data-type="chinese"]:hover { border-left-color: #9b59b6; }
 .pub-item[data-type="dissertation"]:hover { border-left-color: #1abc9c; }
 
-/* Highlight keeps its color even without hover */
-.pub-item.highlight { border-left-color: var(--pub-highlight-border); }
+/* Highlight papers show orange on hover */
+.pub-item.highlight:hover { border-left-color: var(--pub-highlight-border); }
 
 /* ── Left Column: type + year badges ──────────────────── */
 .pub-item-left {
