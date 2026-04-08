@@ -13,7 +13,13 @@
     return `https://img.shields.io/badge/dynamic/json?logo=Google%20Scholar&url=${url}&query=${query}&labelColor=f6f6f6&color=9cf&style=flat&label=Citations`;
   };
   const SHIELDS_BIBTEX = 'https://img.shields.io/badge/-BibTeX-blue?labelColor=white&color=F5F5F5&logo=latex&logoColor=008080';
+  const SHIELDS_PDF = 'https://img.shields.io/badge/-PDF-blue?logo=onlyoffice&logoColor=B7472A&labelColor=white&color=F5F5F5&style=flat';
   const SHIELDS_STARS = (repo) => `https://img.shields.io/github/stars/${repo}?style=social`;
+  const SHIELDS_YOUTUBE = (videoId) => `https://img.shields.io/youtube/views/${videoId}?style=social`;
+  const SHIELDS_BILIBILI = (bvid) => {
+    const url = encodeURIComponent(`https://api.bilibili.com/x/web-interface/view?bvid=${bvid}`);
+    return `https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=${url}`;
+  };
 
   class PublicationCards {
     constructor() {
@@ -204,6 +210,9 @@
         const bibBadge = pub.bib
           ? `<a href="${pub.bib}" target="_blank" class="pub-badge-link"><img src="${SHIELDS_BIBTEX}" alt="BibTeX" loading="lazy"></a>`
           : '';
+        const pdfBadge = pub.pdf
+          ? `<a href="${pub.pdf}" target="_blank" class="pub-badge-link"><img src="${SHIELDS_PDF}" alt="PDF" loading="lazy"></a>`
+          : '';
         const scholarBadge = pub.scholar_id && scholarUrl
           ? `<a href="${scholarUrl}" target="_blank" class="pub-badge-link"><img src="${SHIELDS_SCHOLAR(pub.scholar_id)}" alt="Citations" loading="lazy"></a>`
           : '';
@@ -211,13 +220,14 @@
         const starsBadge = githubRepo
           ? `<a href="${pub.github}" target="_blank" class="pub-badge-link"><img src="${SHIELDS_STARS(githubRepo)}" alt="GitHub Stars" loading="lazy"></a>`
           : '';
-
-        // extra links: PDF, Video, Bilibili (BibTeX/Scholar/Code already covered by badges, Paper via title link)
-        const links = [
-          pub.pdf ? `<a class="pub-link" href="${pub.pdf}" target="_blank">📑 PDF</a>` : '',
-          pub.youtube ? `<a class="pub-link" href="${pub.youtube}" target="_blank">▶️ Video</a>` : '',
-          pub.bilibili ? `<a class="pub-link" href="${pub.bilibili}" target="_blank">📺 Bilibili</a>` : ''
-        ].filter(Boolean).join('');
+        const ytVideoId = pub.youtube ? pub.youtube.replace('https://youtu.be/', '').replace('https://www.youtube.com/watch?v=', '').split('&')[0] : null;
+        const youtubeBadge = ytVideoId
+          ? `<a href="${pub.youtube}" target="_blank" class="pub-badge-link"><img src="${SHIELDS_YOUTUBE(ytVideoId)}" alt="YouTube Views" loading="lazy"></a>`
+          : '';
+        const bvid = pub.bilibili ? pub.bilibili.replace('https://www.bilibili.com/video/', '') : null;
+        const bilibiliBadge = bvid
+          ? `<a href="${pub.bilibili}" target="_blank" class="pub-badge-link"><img src="${SHIELDS_BILIBILI(bvid)}" alt="Bilibili Views" loading="lazy"></a>`
+          : '';
 
         return `
           <div class="pub-item ${pub.highlight ? 'highlight' : ''}" data-id="${pub.id}" data-type="${pub.type}">
@@ -231,10 +241,12 @@
                 ${ifBadge}
                 ${tags}
                 ${bibBadge}
+                ${pdfBadge}
                 ${scholarBadge}
                 ${starsBadge}
+                ${youtubeBadge}
+                ${bilibiliBadge}
               </div>
-              ${links ? `<div class="pub-links">${links}</div>` : ''}
             </div>
           </div>
         `;
