@@ -149,9 +149,6 @@
 .pub-item[data-type="chinese"]:hover { border-left-color: #9b59b6; }
 .pub-item[data-type="dissertation"]:hover { border-left-color: #1abc9c; }
 
-/* Highlight papers show orange on hover */
-.pub-item.highlight:hover { border-left-color: var(--pub-highlight-border); }
-
 /* ── Left Column: type + year badges ──────────────────── */
 .pub-item-left {
   display: flex;

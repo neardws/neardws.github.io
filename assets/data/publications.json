@@ -16,8 +16,7 @@
     "doi": "https://ieeexplore.ieee.org/abstract/document/10675335",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/dai2025joint.bib",
     "scholar_id": "DK5avZUAAAAJ:VL0QpB8kHFEC",
-    "github": null,
-    "highlight": true
+    "github": null
   },
   {
     "id": "xu2024cooperative",
@@ -36,8 +35,7 @@
     "doi": "https://ieeexplore.ieee.org/document/10367825",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xu2023cooperative.bib",
     "scholar_id": "DK5avZUAAAAJ:N5tVd3kTz84C",
-    "github": "https://github.com/neardws/Multi-Agent-Deep-Reinforcement-Learning",
-    "highlight": true
+    "github": "https://github.com/neardws/Multi-Agent-Deep-Reinforcement-Learning"
   },
   {
     "id": "liu2024cooperative",
@@ -56,8 +54,7 @@
     "doi": "https://ieeexplore.ieee.org/document/10261503",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/liu2023cooperative.bib",
     "scholar_id": "DK5avZUAAAAJ:SdhP9T11ey4C",
-    "github": "https://github.com/neardws/MAMO-Deep-Reinforcement-Learning",
-    "highlight": false
+    "github": "https://github.com/neardws/MAMO-Deep-Reinforcement-Learning"
   },
   {
     "id": "xu2023joint",
@@ -76,8 +73,7 @@
     "doi": "https://www.sciencedirect.com/science/article/pii/S138376212200265X",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xu2023joint.bib",
     "scholar_id": "DK5avZUAAAAJ:Y5dfb0dijaUC",
-    "github": "https://github.com/neardws/Game-Theoretic-Deep-Reinforcement-Learning",
-    "highlight": false
+    "github": "https://github.com/neardws/Game-Theoretic-Deep-Reinforcement-Learning"
   },
   {
     "id": "liu2021rtds",
@@ -96,8 +92,7 @@
     "doi": "https://link.springer.com/article/10.1007/s00521-021-05766-5",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/liu2021rtds.bib",
     "scholar_id": "DK5avZUAAAAJ:4fKUyHm3Qg0C",
-    "github": null,
-    "highlight": false
+    "github": null
   },
   {
     "id": "xiao2021cooperative",
@@ -116,8 +111,7 @@
     "doi": "https://link.springer.com/article/10.1007/s00521-020-04978-5",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xiao2021cooperative.bib",
     "scholar_id": "DK5avZUAAAAJ:l7t_Zn2s7bgC",
-    "github": null,
-    "highlight": false
+    "github": null
   },
   {
     "id": "xiao2021efficient",
@@ -136,8 +130,7 @@
     "doi": "https://link.springer.com/article/10.1007/s12652-019-01507-8",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xiao2021efficient.bib",
     "scholar_id": "DK5avZUAAAAJ:CHSYGLWDkRkC",
-    "github": null,
-    "highlight": false
+    "github": null
   },
   {
     "id": "xu2020vehicular",
@@ -156,8 +149,7 @@
     "doi": "https://link.springer.com/article/10.1007/s11036-020-01591-7",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xu2020vehicular.bib",
     "scholar_id": "DK5avZUAAAAJ:tOudhMTPpwUC",
-    "github": "https://github.com/neardws/fog-computing-based-collision-warning-system",
-    "highlight": false
+    "github": "https://github.com/neardws/fog-computing-based-collision-warning-system"
   },
   {
     "id": "liu2019hierarchical",
@@ -176,8 +168,7 @@
     "doi": "https://ieeexplore.ieee.org/document/8767077",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/liu2019hierarchical.bib",
     "scholar_id": "DK5avZUAAAAJ:1sJd4Hv_s6UC",
-    "github": null,
-    "highlight": false
+    "github": null
   },
   {
     "id": "wu2023quality",
@@ -193,8 +184,7 @@
     "doi": "https://ieeexplore.ieee.org/document/10365900",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/wu2023quality.bib",
     "scholar_id": "DK5avZUAAAAJ:ye4kPcJQO24C",
-    "github": null,
-    "highlight": true
+    "github": null
   },
   {
     "id": "xu2022age",
@@ -213,8 +203,7 @@
     "scholar_id": "DK5avZUAAAAJ:_B80troHkn4C",
     "github": "https://github.com/neardws/Age-of-View",
     "youtube": "https://youtu.be/iayUfkFCMcs",
-    "bilibili": "https://www.bilibili.com/video/BV1UR4y197sT",
-    "highlight": true
+    "bilibili": "https://www.bilibili.com/video/BV1UR4y197sT"
   },
   {
     "id": "liu2020real",
@@ -230,8 +219,7 @@
     "doi": "https://ieeexplore.ieee.org/abstract/document/9394299",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/liu2020real.bib",
     "scholar_id": "DK5avZUAAAAJ:sSrBHYA8nusC",
-    "github": null,
-    "highlight": false
+    "github": null
   },
   {
     "id": "zhou2020multi",
@@ -247,8 +235,7 @@
     "doi": "https://link.springer.com/chapter/10.1007/978-981-15-7670-6_38",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/zhou2020multi.bib",
     "scholar_id": "DK5avZUAAAAJ:vRqMK49ujn8C",
-    "github": null,
-    "highlight": false
+    "github": null
   },
   {
     "id": "zhou2020distributed",
@@ -264,8 +251,7 @@
     "doi": "https://ieeexplore.ieee.org/document/9045579",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/zhou2020distributed.bib",
     "scholar_id": "DK5avZUAAAAJ:K3LRdlH-MEoC",
-    "github": null,
-    "highlight": false
+    "github": null
   },
   {
     "id": "xu2018design",
@@ -281,8 +267,7 @@
     "doi": "https://ieeexplore.ieee.org/document/8805783",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xu2018design.bib",
     "scholar_id": "DK5avZUAAAAJ:xtRiw3GOFMkC",
-    "github": "https://github.com/cqu-bdsc/Collision-Warning-System",
-    "highlight": true
+    "github": "https://github.com/cqu-bdsc/Collision-Warning-System"
   },
   {
     "id": "xu2021potential",
@@ -301,8 +286,7 @@
     "doi": "https://www.ejournal.org.cn/CN/10.12263/DZXB.20200994",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xu2021potential.bib",
     "scholar_id": "DK5avZUAAAAJ:fQNAKQ3IYiAC",
-    "github": "https://github.com/neardws/Incentive-based-Probability-Update-and-Strategy-Selection",
-    "highlight": false
+    "github": "https://github.com/neardws/Incentive-based-Probability-Update-and-Strategy-Selection"
   },
   {
     "id": "xu2020cwsn",
@@ -319,8 +303,7 @@
     "doi": null,
     "bib": null,
     "scholar_id": null,
-    "github": null,
-    "highlight": false
+    "github": null
   },
   {
     "id": "xu2023research",
@@ -335,7 +318,6 @@
     "doi": "https://link.cnki.net/doi/10.27670/d.cnki.gcqdu.2023.002626",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xu2023research.bib",
     "scholar_id": null,
-    "github": "https://github.com/neardws/My-Doctoral-Dissertation",
-    "highlight": true
+    "github": "https://github.com/neardws/My-Doctoral-Dissertation"
   }
 ]
