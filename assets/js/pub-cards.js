@@ -112,7 +112,7 @@
         { key: 'all', label: 'All' },
         { key: 'journal', label: 'Journal' },
         { key: 'conference', label: 'Conference' },
-        { key: 'chinese', label: '中文论文' },
+        { key: 'chinese', label: 'Chinese' },
         { key: 'dissertation', label: 'Dissertation' }
       ];
 
@@ -132,35 +132,25 @@
         : `<span>${this.escapeHtml(pub.title)}</span>`;
 
       let venue = '';
-      if (pub.type === 'journal') {
-        const venuePart = pub.venue_full
-          ? `<em>${this.escapeHtml(pub.venue_full)}</em> (<em>${this.escapeHtml(pub.venue)}</em>)`
-          : `<em>${this.escapeHtml(pub.venue)}</em>`;
+      if (pub.type === 'journal' || pub.type === 'chinese') {
+        // Use venue_full (English) as primary, venue (Chinese) in parentheses if available
+        const venueFull = pub.venue_full || pub.venue;
+        const venueShort = pub.venue_full && pub.venue ? pub.venue : null;
+        const venuePart = venueShort
+          ? `<em>${this.escapeHtml(venueFull)}</em> (<em>${this.escapeHtml(venueShort)}</em>)`
+          : `<em>${this.escapeHtml(venueFull)}</em>`;
         const vol = pub.volume ? `, vol. ${pub.volume}` : '';
         const iss = pub.issue ? `, no. ${pub.issue}` : '';
         const pages = pub.pages ? `, pp. ${pub.pages}` : '';
         const date = pub.month ? `, ${pub.month} ${pub.year}` : `, ${pub.year}`;
         venue = `${venuePart}${vol}${iss}${pages}${date}.`;
-      } else if (pub.type === 'conference' || pub.type === 'chinese') {
-        if (pub.volume) {
-          // Chinese journal with volume/issue
-          const venuePart = pub.venue_full
-            ? `<em>${this.escapeHtml(pub.venue_full)}</em> (<em>${this.escapeHtml(pub.venue)}</em>)`
-            : `<em>${this.escapeHtml(pub.venue)}</em>`;
-          const vol = pub.volume ? `, vol. ${pub.volume}` : '';
-          const iss = pub.issue ? `, no. ${pub.issue}` : '';
-          const pages = pub.pages ? `, pp. ${pub.pages}` : '';
-          const date = pub.month ? `, ${pub.month} ${pub.year}` : `, ${pub.year}`;
-          venue = `${venuePart}${vol}${iss}${pages}${date}.`;
-        } else {
-          // Conference
-          const venuePart = pub.venue_full
-            ? `<em>${this.escapeHtml(pub.venue_full)}</em> (<em>${this.escapeHtml(pub.venue)}</em>)`
-            : `<em>${this.escapeHtml(pub.venue)}</em>`;
-          const loc = pub.location ? `, ${pub.location}` : '';
-          const date = pub.conf_date ? `, ${pub.conf_date}` : `, ${pub.year}`;
-          venue = `${venuePart}${loc}${date}.`;
-        }
+      } else if (pub.type === 'conference') {
+        const venuePart = pub.venue_full
+          ? `<em>${this.escapeHtml(pub.venue_full)}</em> (<em>${this.escapeHtml(pub.venue)}</em>)`
+          : `<em>${this.escapeHtml(pub.venue)}</em>`;
+        const loc = pub.location ? `, ${pub.location}` : '';
+        const date = pub.conf_date ? `, ${pub.conf_date}` : `, ${pub.year}`;
+        venue = `${venuePart}${loc}${date}.`;
       } else if (pub.type === 'dissertation') {
         venue = `<em>${this.escapeHtml(pub.venue_full || pub.venue)}</em>, Doctoral Dissertation, ${pub.month || ''} ${pub.year}.`;
       }
@@ -222,9 +212,8 @@
           ? `<a href="${pub.github}" target="_blank" class="pub-badge-link"><img src="${SHIELDS_STARS(githubRepo)}" alt="GitHub Stars" loading="lazy"></a>`
           : '';
 
-        // extra links: Paper, PDF, Video, Bilibili (BibTeX/Scholar/Code already covered by badges)
+        // extra links: PDF, Video, Bilibili (BibTeX/Scholar/Code already covered by badges, Paper via title link)
         const links = [
-          pub.doi ? `<a class="pub-link" href="${pub.doi}" target="_blank">📄 Paper</a>` : '',
           pub.pdf ? `<a class="pub-link" href="${pub.pdf}" target="_blank">📑 PDF</a>` : '',
           pub.youtube ? `<a class="pub-link" href="${pub.youtube}" target="_blank">▶️ Video</a>` : '',
           pub.bilibili ? `<a class="pub-link" href="${pub.bilibili}" target="_blank">📺 Bilibili</a>` : ''
@@ -256,7 +245,7 @@
       const labels = {
         journal: 'Journal',
         conference: 'Conference',
-        chinese: '中文',
+        chinese: 'Chinese',
         dissertation: 'Dissertation'
       };
       return labels[type] || type;

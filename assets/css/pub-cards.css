@@ -160,9 +160,9 @@
 
 .pub-type-badge {
   display: inline-block;
-  font-size: 0.7em;
+  font-size: 0.75em;
   font-weight: 700;
-  padding: 3px 7px;
+  padding: 4px 8px;
   border-radius: 4px;
   color: #fff;
   white-space: nowrap;
@@ -177,7 +177,7 @@
 .pub-type-badge.dissertation { background: #1abc9c; }
 
 .pub-year-badge {
-  font-size: 0.78em;
+  font-size: 0.85em;
   font-weight: 600;
   color: var(--pub-text-muted);
 }
@@ -190,10 +190,10 @@
 
 /* Full citation line */
 .pub-citation {
-  font-size: 0.88em;
-  line-height: 1.6;
+  font-size: 0.95em;
+  line-height: 1.7;
   color: inherit;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .pub-title-link {
@@ -221,9 +221,9 @@
 }
 
 .pub-if {
-  font-size: 0.72em;
+  font-size: 0.75em;
   font-weight: 600;
-  padding: 2px 8px;
+  padding: 3px 10px;
   border-radius: 3px;
   background: #e8f4fd;
   color: #2471a3;
@@ -251,8 +251,8 @@
 }
 
 .pub-tag {
-  font-size: 0.7em;
-  padding: 2px 8px;
+  font-size: 0.75em;
+  padding: 3px 10px;
   border-radius: 3px;
   background: var(--pub-tag-bg);
   color: var(--pub-tag-text);
@@ -312,7 +312,7 @@
 
 .pub-badge-link img {
   display: block;
-  height: 18px;
+  height: 20px;
   width: auto;
   transition: opacity 0.15s ease;
 }
