@@ -300,6 +300,21 @@
   text-decoration: none;
 }
 
+/* shields.io badges in meta row */
+.pub-meta-row img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+}
+
+.pub-meta-row a > img {
+  transition: opacity 0.15s ease;
+}
+
+.pub-meta-row a:hover > img {
+  opacity: 0.8;
+}
+
 /* No results */
 .pub-no-results {
   text-align: center;

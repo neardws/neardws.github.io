@@ -7,6 +7,13 @@
   const DATA_FILE = '/assets/data/publications.json';
   const SCHOLAR_USER = 'DK5avZUAAAAJ';
   const SCHOLAR_STATS_URL = 'https://cdn.jsdelivr.net/gh/Neardws/neardws.github.io@google-scholar-stats/gs_data.json';
+  const SHIELDS_SCHOLAR = (scholarId) => {
+    const url = encodeURIComponent('https://cdn.jsdelivr.net/gh/Neardws/neardws.github.io@google-scholar-stats/gs_data.json');
+    const query = encodeURIComponent(`$['publications']['${scholarId}']['num_citations']`);
+    return `https://img.shields.io/badge/dynamic/json?logo=Google%20Scholar&url=${url}&query=${query}&labelColor=f6f6f6&color=9cf&style=flat&label=Citations`;
+  };
+  const SHIELDS_BIBTEX = 'https://img.shields.io/badge/-BibTeX-blue?labelColor=white&color=F5F5F5&logo=latex&logoColor=008080';
+  const SHIELDS_STARS = (repo) => `https://img.shields.io/github/stars/${repo}?style=social`;
 
   class PublicationCards {
     constructor() {
@@ -197,26 +204,30 @@
           : null;
 
         const ifBadge = pub.if ? `<span class="pub-if">IF: ${pub.if}</span>` : '';
-        const citeBadge = citations != null
-          ? `<a class="pub-cite-count" href="${scholarUrl}" target="_blank">📊 Cited: ${citations}</a>`
-          : '';
 
-        const tags = [
-          ...pub.tags.map(t => {
-            const cls = t.includes('Best Paper') || t.includes('Best Paper Candidate') ? 'best-paper' : '';
-            return `<span class="pub-tag ${cls}">${t}</span>`;
-          }),
-          pub.highlight && !pub.tags.some(t => t.includes('Best')) ? '<span class="pub-tag featured">★ Featured</span>' : ''
-        ].filter(Boolean).join('');
+        const tags = pub.tags.map(t => {
+          const cls = t.includes('Best Paper') || t.includes('Best Paper Candidate') ? 'best-paper' : '';
+          return `<span class="pub-tag ${cls}">${t}</span>`;
+        }).join('');
+
+        // shields.io badges
+        const bibBadge = pub.bib
+          ? `<a href="${pub.bib}" target="_blank"><img src="${SHIELDS_BIBTEX}" alt="BibTeX" loading="lazy"></a>`
+          : '';
+        const scholarBadge = pub.scholar_id && scholarUrl
+          ? `<a href="${scholarUrl}" target="_blank"><img src="${SHIELDS_SCHOLAR(pub.scholar_id)}" alt="Citations" loading="lazy"></a>`
+          : '';
+        const githubRepo = pub.github ? pub.github.replace('https://github.com/', '') : null;
+        const starsBadge = githubRepo
+          ? `<a href="${pub.github}" target="_blank"><img src="${SHIELDS_STARS(githubRepo)}" alt="GitHub Stars" loading="lazy"></a>`
+          : '';
 
         const links = [
           pub.doi ? `<a class="pub-link" href="${pub.doi}" target="_blank">📄 Paper</a>` : '',
-          pub.bib ? `<a class="pub-link" href="${pub.bib}" target="_blank">📋 BibTeX</a>` : '',
           pub.pdf ? `<a class="pub-link" href="${pub.pdf}" target="_blank">📑 PDF</a>` : '',
           pub.github ? `<a class="pub-link" href="${pub.github}" target="_blank">💻 Code</a>` : '',
           pub.youtube ? `<a class="pub-link" href="${pub.youtube}" target="_blank">▶️ Video</a>` : '',
-          pub.bilibili ? `<a class="pub-link" href="${pub.bilibili}" target="_blank">📺 Bilibili</a>` : '',
-          scholarUrl ? `<a class="pub-link" href="${scholarUrl}" target="_blank">🎓 Scholar</a>` : ''
+          pub.bilibili ? `<a class="pub-link" href="${pub.bilibili}" target="_blank">📺 Bilibili</a>` : ''
         ].filter(Boolean).join('');
 
         return `
@@ -229,8 +240,10 @@
               <div class="pub-citation">${citation}</div>
               <div class="pub-meta-row">
                 ${ifBadge}
-                ${citeBadge}
                 ${tags}
+                ${bibBadge}
+                ${scholarBadge}
+                ${starsBadge}
               </div>
               <div class="pub-links">${links}</div>
             </div>
