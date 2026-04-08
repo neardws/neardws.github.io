@@ -210,22 +210,22 @@
           return `<span class="pub-tag ${cls}">${t}</span>`;
         }).join('');
 
-        // shields.io badges
+        // shields.io badges — same row as IF + tags
         const bibBadge = pub.bib
-          ? `<a href="${pub.bib}" target="_blank"><img src="${SHIELDS_BIBTEX}" alt="BibTeX" loading="lazy"></a>`
+          ? `<a href="${pub.bib}" target="_blank" class="pub-badge-link"><img src="${SHIELDS_BIBTEX}" alt="BibTeX" loading="lazy"></a>`
           : '';
         const scholarBadge = pub.scholar_id && scholarUrl
-          ? `<a href="${scholarUrl}" target="_blank"><img src="${SHIELDS_SCHOLAR(pub.scholar_id)}" alt="Citations" loading="lazy"></a>`
+          ? `<a href="${scholarUrl}" target="_blank" class="pub-badge-link"><img src="${SHIELDS_SCHOLAR(pub.scholar_id)}" alt="Citations" loading="lazy"></a>`
           : '';
         const githubRepo = pub.github ? pub.github.replace('https://github.com/', '') : null;
         const starsBadge = githubRepo
-          ? `<a href="${pub.github}" target="_blank"><img src="${SHIELDS_STARS(githubRepo)}" alt="GitHub Stars" loading="lazy"></a>`
+          ? `<a href="${pub.github}" target="_blank" class="pub-badge-link"><img src="${SHIELDS_STARS(githubRepo)}" alt="GitHub Stars" loading="lazy"></a>`
           : '';
 
+        // extra links: Paper, PDF, Video, Bilibili (BibTeX/Scholar/Code already covered by badges)
         const links = [
           pub.doi ? `<a class="pub-link" href="${pub.doi}" target="_blank">📄 Paper</a>` : '',
           pub.pdf ? `<a class="pub-link" href="${pub.pdf}" target="_blank">📑 PDF</a>` : '',
-          pub.github ? `<a class="pub-link" href="${pub.github}" target="_blank">💻 Code</a>` : '',
           pub.youtube ? `<a class="pub-link" href="${pub.youtube}" target="_blank">▶️ Video</a>` : '',
           pub.bilibili ? `<a class="pub-link" href="${pub.bilibili}" target="_blank">📺 Bilibili</a>` : ''
         ].filter(Boolean).join('');
@@ -245,7 +245,7 @@
                 ${scholarBadge}
                 ${starsBadge}
               </div>
-              <div class="pub-links">${links}</div>
+              ${links ? `<div class="pub-links">${links}</div>` : ''}
             </div>
           </div>
         `;

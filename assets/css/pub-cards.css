@@ -210,13 +210,14 @@
   font-style: italic;
 }
 
-/* Meta row: IF + citations + tags */
+/* Meta row: IF + tags + shields.io badges — all one line */
 .pub-meta-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 6px;
   margin-bottom: 8px;
+  line-height: 1;
 }
 
 .pub-if {
@@ -300,18 +301,23 @@
   text-decoration: none;
 }
 
-/* shields.io badges in meta row */
-.pub-meta-row img {
-  display: inline-block;
+/* shields.io badge links — inline in meta row */
+.pub-badge-link {
+  display: inline-flex;
+  align-items: center;
   vertical-align: middle;
-  height: 18px;
+  line-height: 1;
+  flex-shrink: 0;
 }
 
-.pub-meta-row a > img {
+.pub-badge-link img {
+  display: block;
+  height: 18px;
+  width: auto;
   transition: opacity 0.15s ease;
 }
 
-.pub-meta-row a:hover > img {
+.pub-badge-link:hover img {
   opacity: 0.8;
 }
 
