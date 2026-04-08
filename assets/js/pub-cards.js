@@ -220,7 +220,7 @@
         ].filter(Boolean).join('');
 
         return `
-          <div class="pub-item ${pub.highlight ? 'highlight' : ''}" data-id="${pub.id}">
+          <div class="pub-item ${pub.highlight ? 'highlight' : ''}" data-id="${pub.id}" data-type="${pub.type}">
             <div class="pub-item-left">
               <span class="pub-type-badge ${pub.type}">${this.getTypeLabel(pub.type)}</span>
               <span class="pub-year-badge">${pub.year}</span>
