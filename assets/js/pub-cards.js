@@ -88,7 +88,6 @@
         const first = p.authors[0];
         return first.includes('Xincao') || first.includes('Xu*');
       }).length;
-      const highlights = this.data.filter(p => p.highlight).length;
 
       return `
         <div class="pub-stats">
@@ -103,10 +102,6 @@
           <div class="pub-stat">
             <span class="pub-stat-value">${firstAuthors}</span>
             <span class="pub-stat-label">1st/Corr. Author</span>
-          </div>
-          <div class="pub-stat">
-            <span class="pub-stat-value">${highlights}</span>
-            <span class="pub-stat-label">Featured</span>
           </div>
         </div>
       `;
