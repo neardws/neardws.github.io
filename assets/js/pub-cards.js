@@ -44,8 +44,17 @@
           this.scholarStats = scholarRes.value.publications;
         }
 
-        // Sort all publications by year descending (newest first)
-        this.data.sort((a, b) => b.year - a.year);
+        // Sort all publications by year descending, then by month descending
+        const monthOrder = {
+          'January': 1, 'February': 2, 'March': 3, 'April': 4, 'May': 5, 'June': 6,
+          'July': 7, 'August': 8, 'September': 9, 'October': 10, 'November': 11, 'December': 12
+        };
+        const getMonthNum = (m) => monthOrder[m] || 0;
+        
+        this.data.sort((a, b) => {
+          if (b.year !== a.year) return b.year - a.year;
+          return getMonthNum(b.month) - getMonthNum(a.month);
+        });
 
         this.filteredData = [...this.data];
         this.render();
