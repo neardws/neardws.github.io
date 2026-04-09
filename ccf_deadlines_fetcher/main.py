@@ -19,7 +19,23 @@ CATEGORY_NAMES = {
     'HI': 'Computer-Human Interaction',
 }
 BASE_API = 'https://api.github.com/repos/ccfddl/ccf-deadlines/contents/conference'
-HEADERS = {'Accept': 'application/vnd.github.v3+json'}
+_token = os.environ.get('GITHUB_TOKEN', '')
+HEADERS = {
+    'Accept': 'application/vnd.github.v3+json',
+    **({'Authorization': f'Bearer {_token}'} if _token else {}),
+}
+
+
+def _get_with_retry(url, headers=None, retries=3, **kwargs):
+    """GET request with simple retry on connection errors."""
+    for attempt in range(retries):
+        try:
+            return requests.get(url, headers=headers, **kwargs)
+        except requests.exceptions.ConnectionError as e:
+            if attempt == retries - 1:
+                raise
+            print(f'  Retry {attempt + 1}/{retries} for {url}: {e}')
+    return None  # unreachable
 
 
 def parse_timezone(tz_str):
@@ -100,7 +116,7 @@ def get_best_conf_entry(confs, now_utc):
 def fetch_category_files(category):
     """Return list of file objects for YAML files in a category directory."""
     url = f'{BASE_API}/{category}'
-    resp = requests.get(url, headers=HEADERS, timeout=30)
+    resp = _get_with_retry(url, headers=HEADERS, timeout=30)
     if resp.status_code != 200:
         print(f'  Warning: Could not fetch {url} (HTTP {resp.status_code})')
         return []
@@ -112,7 +128,7 @@ def fetch_category_files(category):
 
 def fetch_yaml(download_url):
     """Download and parse a YAML file; returns list of conference dicts."""
-    resp = requests.get(download_url, timeout=30)
+    resp = _get_with_retry(download_url, timeout=30)
     if resp.status_code != 200:
         return []
     try:
