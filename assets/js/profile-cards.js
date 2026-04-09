@@ -315,9 +315,7 @@ class ProfileCards {
       ? '<span class="profile-status-tag profile-status-tag--alumni">Alumni</span>'
       : '<span class="profile-status-tag profile-status-tag--current">Current</span>';
 
-    const yearDisplay = isAlumni
-      ? student.graduation_year
-      : student.start_year;
+    const yearDisplay = student.start_year;
 
     const githubBadge = student.github
       ? `<a href="https://github.com/${student.github}" target="_blank" rel="noopener" class="profile-github-badge">
