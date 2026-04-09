@@ -47,13 +47,28 @@
         // Sort all publications by year descending, then by month descending
         const monthOrder = {
           'January': 1, 'February': 2, 'March': 3, 'April': 4, 'May': 5, 'June': 6,
-          'July': 7, 'August': 8, 'September': 9, 'October': 10, 'November': 11, 'December': 12
+          'July': 7, 'August': 8, 'September': 9, 'October': 10, 'November': 11, 'December': 12,
+          'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'Jun': 6, 'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12
         };
-        const getMonthNum = (m) => monthOrder[m] || 0;
+        
+        const getMonthNum = (pub) => {
+          // First try the month field
+          if (pub.month && monthOrder[pub.month]) {
+            return monthOrder[pub.month];
+          }
+          // Then try to extract from conf_date (e.g., "October 25-30, 2025")
+          if (pub.conf_date) {
+            const monthMatch = pub.conf_date.match(/(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec)/i);
+            if (monthMatch && monthOrder[monthMatch[1]]) {
+              return monthOrder[monthMatch[1]];
+            }
+          }
+          return 0;
+        };
         
         this.data.sort((a, b) => {
           if (b.year !== a.year) return b.year - a.year;
-          return getMonthNum(b.month) - getMonthNum(a.month);
+          return getMonthNum(b) - getMonthNum(a);
         });
 
         this.filteredData = [...this.data];
