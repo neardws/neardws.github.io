@@ -1,7 +1,7 @@
 /**
  * Grant Cards Renderer
  * Dynamically renders grant cards from JSON data
- * With filtering and search functionality (similar to publications)
+ * With filtering and search functionality (style matches publications)
  */
 
 class GrantCards {
@@ -18,7 +18,7 @@ class GrantCards {
     if (!this.container) return;
 
     try {
-      const res = await fetch('assets/data/grants.json');
+      const res = await fetch('/assets/data/grants.json');
       this.data = await res.json();
 
       // Sort by start year (newest first)
@@ -50,27 +50,39 @@ class GrantCards {
   }
 
   render() {
+    const counts = this.getCounts();
     const stats = this.getStats();
-    const filters = this.getFilters();
+    const legend = this.renderLegend();
 
     this.container.innerHTML = `
+      ${legend}
       ${stats}
       <div class="grant-controls">
-        <div class="grant-filters" id="grant-filters">${filters}</div>
-        <input type="text" class="grant-search" id="grant-search" placeholder="Search title, number, source..." value="${this.searchQuery}">
+        <div class="grant-filters" id="grant-filters"></div>
+        <input type="text" class="grant-search" id="grant-search" placeholder="Search title, number, source...">
       </div>
       <div class="grant-list" id="grant-list">
         ${this.filteredData.map(g => this.renderCard(g)).join('')}
       </div>
     `;
 
+    this.renderFilters(counts);
     this.bindEvents();
+  }
+
+  getCounts() {
+    const counts = { all: this.data.length };
+    this.data.forEach(g => {
+      counts[g.source.name] = (counts[g.source.name] || 0) + 1;
+    });
+    return counts;
   }
 
   getStats() {
     const piCount = this.data.filter(p => p.role === 'PI').length;
     const participantCount = this.data.filter(p => p.role !== 'PI').length;
-    const totalAmount = this.data.reduce((sum, p) => {
+    // Only count PI project amounts
+    const piAmount = this.data.filter(p => p.role === 'PI').reduce((sum, p) => {
       const match = p.amount.match(/[\d,]+/);
       return sum + (match ? parseInt(match[0].replace(/,/g, '')) : 0);
     }, 0);
@@ -86,45 +98,48 @@ class GrantCards {
           <span class="grant-stat-label">Participated</span>
         </div>
         <div class="grant-stat">
-          <span class="grant-stat-value">${this.formatAmount(totalAmount)}</span>
-          <span class="grant-stat-label">Total (CNY)</span>
+          <span class="grant-stat-value">${this.formatAmount(piAmount)}</span>
+          <span class="grant-stat-label">PI Amount (CNY)</span>
         </div>
       </div>
-      <div class="grant-sources">${this.renderSources()}</div>
     `;
   }
 
-  renderSources() {
-    const sources = [...new Set(this.data.map(p => p.source.name))];
-    return sources.map(name => {
-      const src = this.data.find(p => p.source.name === name)?.source;
-      if (!src) return '';
-      const iconHtml = src.icon
-        ? `<img src="${src.icon}" alt="${src.name}" class="grant-source-icon">`
-        : `<span class="grant-source-icon-text">${src.name}</span>`;
-      const linkHtml = src.url
-        ? `<a href="${src.url}" target="_blank" class="grant-source-link no-underline">${iconHtml}<span class="grant-source-name-text"><strong>${src.name}</strong>: ${src.full_name}</span></a>`
-        : `<span class="grant-source-link">${iconHtml}<span class="grant-source-name-text"><strong>${src.name}</strong>: ${src.full_name}</span></span>`;
-      return `<div class="grant-source-item">${linkHtml}</div>`;
-    }).join('');
+  renderLegend() {
+    // Compact inline legend like "JCR: ... SCI: ... CCF: ..."
+    const sources = [
+      { name: 'NSFC', full: 'National Natural Science Foundation of China' },
+      { name: 'GBABRF', full: 'Guangdong Basic and Applied Basic Research Foundation' },
+      { name: 'CPSF', full: 'China Postdoctoral Science Foundation' },
+      { name: 'SSTP', full: 'Shenzhen Science and Technology Program' },
+      { name: 'ERC', full: 'Engineering Research Center of Sustainable Urban Intelligent Transportation' }
+    ];
+
+    return `
+      <div class="grant-legend">
+        ${sources.map(s => `<span class="grant-legend-item"><strong>${s.name}</strong>: ${s.full}</span>`).join('')}
+      </div>
+    `;
   }
 
-  getFilters() {
-    const sources = ['all', ...new Set(this.data.map(p => p.source.name))];
-    const sourceLabels = {
-      'all': 'All',
-      'NSFC': 'NSFC',
-      'GBABRF': 'GBABRF',
-      'SSTP': 'SSTP',
-      'CPSF': 'CPSF',
-      'ERC': 'ERC'
-    };
+  renderFilters(counts) {
+    const filtersEl = document.getElementById('grant-filters');
+    // Order by importance: NSFC > GBABRF > CPSF > SSTP > ERC
+    const types = [
+      { key: 'all', label: 'All' },
+      { key: 'NSFC', label: 'NSFC' },
+      { key: 'GBABRF', label: 'GBABRF' },
+      { key: 'CPSF', label: 'CPSF' },
+      { key: 'SSTP', label: 'SSTP' },
+      { key: 'ERC', label: 'ERC' }
+    ];
 
-    return sources.map(source => {
-      const label = sourceLabels[source] || source;
-      const active = this.activeFilter === source ? 'grant-filter--active' : '';
-      return `<button class="grant-filter ${active}" data-filter="${source}">${label}</button>`;
-    }).join('');
+    filtersEl.innerHTML = types.map(t =>
+      `<button class="grant-filter-btn ${t.key === this.activeFilter ? 'active' : ''}"
+        data-filter="${t.key}">
+        ${t.label}<span class="count">${counts[t.key] || 0}</span>
+      </button>`
+    ).join('');
   }
 
   renderCard(grant) {
@@ -144,8 +159,11 @@ class GrantCards {
       ? `<div class="grant-note">${grant.note}</div>`
       : '';
 
+    // Source type for hover color
+    const sourceType = this.getSourceType(grant.source.name);
+
     return `
-      <div class="grant-card" data-source="${grant.source.name}">
+      <div class="grant-card grant-card--${sourceType}" data-source="${grant.source.name}">
         <div class="grant-card-left">
           ${iconHtml}
           ${yearHtml}
@@ -168,9 +186,20 @@ class GrantCards {
     `;
   }
 
+  getSourceType(sourceName) {
+    const typeMap = {
+      'NSFC': 'nsfc',
+      'GBABRF': 'gbabrf',
+      'CPSF': 'cpsf',
+      'SSTP': 'sstp',
+      'ERC': 'erc'
+    };
+    return typeMap[sourceName] || 'other';
+  }
+
   bindEvents() {
     // Filter buttons
-    document.querySelectorAll('.grant-filter').forEach(btn => {
+    document.querySelectorAll('.grant-filter-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         this.activeFilter = btn.dataset.filter;
         this.applyFilters();
@@ -208,8 +237,8 @@ class GrantCards {
   }
 
   updateFiltersUI() {
-    document.querySelectorAll('.grant-filter').forEach(btn => {
-      btn.classList.toggle('grant-filter--active', btn.dataset.filter === this.activeFilter);
+    document.querySelectorAll('.grant-filter-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.filter === this.activeFilter);
     });
   }
 
