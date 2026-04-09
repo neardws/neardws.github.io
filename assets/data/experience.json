@@ -197,6 +197,13 @@
       "type": "dissertation"
     },
     {
+      "id": "ispce-2025",
+      "name": "Best Paper Award",
+      "issuer": "IEEE International Symposium on Product Compliance Engineering-Asia (IEEE ISPCE-ASIA'25)",
+      "year": 2025,
+      "type": "paper"
+    },
+    {
       "id": "ncaa-2020",
       "name": "Best Paper Award Finalist",
       "issuer": "International Conference on Neural Computing for Advanced Applications (NCAA'20)",
