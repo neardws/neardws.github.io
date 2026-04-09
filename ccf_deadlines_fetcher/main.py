@@ -11,12 +11,13 @@ import requests
 import yaml
 from datetime import datetime, timezone, timedelta
 
-CATEGORIES = ['DS', 'NW', 'AI', 'HI']
+CATEGORIES = ['DS', 'NW', 'AI', 'HI', 'MX']
 CATEGORY_NAMES = {
     'DS': 'Computer Architecture',
     'NW': 'Network System',
     'AI': 'Artificial Intelligence',
     'HI': 'Computer-Human Interaction',
+    'MX': 'Interdiscipline',
 }
 BASE_API = 'https://api.github.com/repos/ccfddl/ccf-deadlines/contents/conference'
 _token = os.environ.get('GITHUB_TOKEN', '')

@@ -88,6 +88,7 @@ class CFPCards {
       { key: 'NW', label: 'Network System' },
       { key: 'AI', label: 'Artificial Intelligence' },
       { key: 'HI', label: 'Human-Computer Interaction' },
+      { key: 'MX', label: 'Interdiscipline' },
     ];
 
     const allBtn = `<button class="cfp-filter-btn ${this.activeFilter === 'all' ? 'active' : ''}" data-filter="all">All<span class="count">${counts.all || 0}</span></button>`;

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-09T08:00:11Z",
+  "updated_at": "2026-04-09T08:20:57Z",
   "conferences": [
     {
       "title": "SC",
@@ -89,6 +89,21 @@
       "date": "April 19-24, 2027",
       "place": "Rabat, Morocco",
       "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "RTSS",
+      "description": "The IEEE Real-Time Systems Symposium",
+      "sub": "MX",
+      "sub_name": "Interdiscipline",
+      "ccf_rank": "A",
+      "link": "http://2026.rtss.org/",
+      "abstract_deadline": null,
+      "deadline": "2026-05-21 23:59:59",
+      "timezone": "AoE",
+      "date": "December 9-11, 2026",
+      "place": "Yokohama, Japan",
+      "year": 2026,
       "is_future": true
     },
     {
@@ -268,6 +283,21 @@
       "timezone": "UTC-12",
       "date": "June 3-7, 2026",
       "place": "Denver, Colorado, United States",
+      "year": 2026,
+      "is_future": false
+    },
+    {
+      "title": "WWW",
+      "description": "International World Wide Web Conferences",
+      "sub": "MX",
+      "sub_name": "Interdiscipline",
+      "ccf_rank": "A",
+      "link": "https://www2026.thewebconf.org/",
+      "abstract_deadline": "2025-09-30 23:59:59",
+      "deadline": "2025-10-07 23:59:59",
+      "timezone": "AoE",
+      "date": "April 13 - 17, 2026",
+      "place": "Duba\u00ef, UAE",
       "year": 2026,
       "is_future": false
     },

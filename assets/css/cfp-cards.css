@@ -70,17 +70,20 @@
 .cfp-cat-btn--nw.active  { background: var(--cfp-nw, #059669); border-color: var(--cfp-nw, #059669); }
 .cfp-cat-btn--ai.active  { background: var(--cfp-ai, #d97706); border-color: var(--cfp-ai, #d97706); }
 .cfp-cat-btn--hi.active  { background: var(--cfp-hi, #7c3aed); border-color: var(--cfp-hi, #7c3aed); }
+.cfp-cat-btn--mx.active  { background: var(--cfp-mx, #0891b2); border-color: var(--cfp-mx, #0891b2); }
 
 .cfp-cat-btn--ds:hover { border-color: var(--cfp-ds, #2563eb); color: var(--cfp-ds, #2563eb); }
 .cfp-cat-btn--nw:hover { border-color: var(--cfp-nw, #059669); color: var(--cfp-nw, #059669); }
 .cfp-cat-btn--ai:hover { border-color: var(--cfp-ai, #d97706); color: var(--cfp-ai, #d97706); }
 .cfp-cat-btn--hi:hover { border-color: var(--cfp-hi, #7c3aed); color: var(--cfp-hi, #7c3aed); }
+.cfp-cat-btn--mx:hover { border-color: var(--cfp-mx, #0891b2); color: var(--cfp-mx, #0891b2); }
 
 /* Override hover color on active buttons */
 .cfp-cat-btn--ds.active:hover { color: #ffffff; }
 .cfp-cat-btn--nw.active:hover { color: #ffffff; }
 .cfp-cat-btn--ai.active:hover { color: #ffffff; }
 .cfp-cat-btn--hi.active:hover { color: #ffffff; }
+.cfp-cat-btn--mx.active:hover { color: #ffffff; }
 
 /* Table wrapper */
 .cfp-table-wrapper {
@@ -223,6 +226,7 @@
 .cfp-cat-badge--nw { background: var(--cfp-nw, #059669); }
 .cfp-cat-badge--ai { background: var(--cfp-ai, #d97706); }
 .cfp-cat-badge--hi { background: var(--cfp-hi, #7c3aed); }
+.cfp-cat-badge--mx { background: var(--cfp-mx, #0891b2); }
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
@@ -239,6 +243,7 @@
     --cfp-nw: #10b981;
     --cfp-ai: #f59e0b;
     --cfp-hi: #a78bfa;
+    --cfp-mx: #22d3ee;
     --cfp-th-text: #9ca3af;
     --cfp-table-border: #374151;
     --cfp-row-hover: #1f2937;
