@@ -162,9 +162,9 @@
     formatAuthorsText(authors) {
       return authors.map(author => {
         const isCorr = author.includes('*');
-        const isMe = author.replace(/\*/g, '').trim().includes('Xincao') ||
-                     author.replace(/\*/g, '').trim().startsWith('Xu');
         const cleanName = author.replace(/\*/g, '').trim();
+        // Only match if name contains "Xincao" (avoids matching "Xuqi Cai" etc.)
+        const isMe = cleanName.includes('Xincao');
         const corrMark = isCorr ? '<sup>*</sup>' : '';
 
         if (isMe) {
