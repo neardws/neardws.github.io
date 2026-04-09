@@ -74,10 +74,14 @@ class ProfileCards {
       ? '<span class="profile-status-tag profile-status-tag--current">Current</span>'
       : '';
 
+    const iconHtml = work.logo
+      ? `<img src="/${work.logo}" alt="" class="profile-logo">`
+      : '<div class="profile-card-icon">💼</div>';
+
     return `
       <div class="profile-card profile-card--work">
         <div class="profile-card-left">
-          <div class="profile-card-icon">💼</div>
+          ${iconHtml}
           <div class="profile-card-year">${startYear}</div>
         </div>
         <div class="profile-card-content">
@@ -119,10 +123,14 @@ class ProfileCards {
       ? `<div class="profile-note">${edu.note}</div>`
       : '';
 
+    const iconHtml = edu.logo
+      ? `<img src="/${edu.logo}" alt="" class="profile-logo">`
+      : '<div class="profile-card-icon">🎓</div>';
+
     return `
       <div class="profile-card profile-card--education">
         <div class="profile-card-left">
-          <div class="profile-card-icon">🎓</div>
+          ${iconHtml}
           <div class="profile-card-year">${startYear}</div>
         </div>
         <div class="profile-card-content">

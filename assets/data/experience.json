@@ -7,7 +7,8 @@
       "location": "Shenzhen, China",
       "start_date": "Sep 2025",
       "end_date": "Dec 2028",
-      "current": true
+      "current": true,
+      "logo": "images/logo_uestc.webp"
     },
     {
       "id": "uestc-postdoc",
@@ -16,7 +17,8 @@
       "location": "Shenzhen, China",
       "start_date": "Jul 2023",
       "end_date": "Aug 2025",
-      "current": false
+      "current": false,
+      "logo": "images/logo_uestc.webp"
     }
   ],
   "education": [
@@ -32,7 +34,8 @@
         "name": "Kai Liu",
         "title": "Prof.",
         "url": "https://scholar.google.com/citations?user=6YkCbT8AAAAJ"
-      }
+      },
+      "logo": "images/logo_cqu.webp"
     },
     {
       "id": "cqu-ms",
@@ -42,7 +45,8 @@
       "location": "Chongqing, China",
       "start_date": "Sep 2017",
       "end_date": "Jun 2019",
-      "note": "Joined the successive postgraduate-doctor program in 2019"
+      "note": "Joined the successive postgraduate-doctor program in 2019",
+      "logo": "images/logo_cqu.webp"
     },
     {
       "id": "nuc-bs",
@@ -51,7 +55,8 @@
       "institution": "College of Computer and Control Engineering, North University of China",
       "location": "Taiyuan, China",
       "start_date": "Sep 2013",
-      "end_date": "Jun 2017"
+      "end_date": "Jun 2017",
+      "logo": "images/logo_nuc.webp"
     }
   ],
   "membership": [
