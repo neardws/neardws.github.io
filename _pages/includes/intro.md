@@ -56,6 +56,7 @@ table.no-horizontal-lines td img[src*="medal_"] {
 }*/
 </style>
 Xincao (Neil) Xu (Chinese character 许新操 or 許新操) is currently an Associate Researcher in computer science with the Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China (<a href="https://www.uestc.edu.cn" class="no-underline">UESTC</a>), Shenzhen, China.
+He is also a supervisor of Master's students at UESTC.
 He received the Ph.D. degree in computer science from the College of Computer Science, Chongqing University (<a href="https://www.cqu.edu.cn" class="no-underline">CQU</a>), Chongqing, China, in 2023.
 From 2023 to 2025, he was a Postdoctoral Research Fellow with the Shenzhen Institute for Advanced Study, UESTC.
 His research interests include edge intelligence, agentic AI, and agentic RL.
