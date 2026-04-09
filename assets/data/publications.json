@@ -8,8 +8,7 @@
       "Xin Ma",
       "Xuqi Cai",
       "Lixin Duan",
-      "Xincao Xu",
-      "Shaohua Wan"
+      "Xincao Xu"
     ],
     "venue": "ICASSP'26",
     "venue_full": "IEEE International Conference on Acoustics, Speech and Signal Processing",
@@ -35,8 +34,7 @@
       "Xin Ma",
       "Yuansheng Song",
       "Lixin Duan",
-      "Xincao Xu",
-      "Shaohua Wan"
+      "Xincao Xu"
     ],
     "venue": "ICASSP'26",
     "venue_full": "IEEE International Conference on Acoustics, Speech and Signal Processing",
@@ -536,7 +534,7 @@
     "id": "xu2021potential",
     "type": "chinese",
     "title": "Potential Game Based Channel Allocation for Vehicular Edge Computing",
-    "title_zh": "基于势博弈的车辆边缘计算信道分配",
+    "title_zh": "\u57fa\u4e8e\u52bf\u535a\u5f08\u7684\u8f66\u8f86\u8fb9\u7f18\u8ba1\u7b97\u4fe1\u9053\u5206\u914d",
     "authors": [
       "Xincao Xu*",
       "Kai Liu*",
@@ -545,7 +543,7 @@
       "Songtao Guo",
       "Weiwei Wu"
     ],
-    "venue": "电子学报",
+    "venue": "\u7535\u5b50\u5b66\u62a5",
     "venue_full": "Tien Tzu Hsueh Pao/Acta Electronica Sinica",
     "year": 2021,
     "month": "July",
@@ -564,7 +562,7 @@
     "id": "xu2020cwsn",
     "type": "chinese",
     "title": "Potential Game based Distributed Channel Allocation in Vehicular Fog Computing Environments",
-    "title_zh": "基于势博弈的车辆雾计算分布式信道分配",
+    "title_zh": "\u57fa\u4e8e\u52bf\u535a\u5f08\u7684\u8f66\u8f86\u96fe\u8ba1\u7b97\u5206\u5e03\u5f0f\u4fe1\u9053\u5206\u914d",
     "authors": [
       "Xincao Xu*",
       "Yi Zhou",

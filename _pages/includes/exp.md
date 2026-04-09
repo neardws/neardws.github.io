@@ -3,7 +3,7 @@
 ## 💼 Work
 
 - **Sep 2025 - Dec 2028 (now)**: Associate Researcher, Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China, Shenzhen, China.
-- **Jul 2023 - Aug 2025**: Postdoctoral Research Fellow, Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China, Shenzhen, China. In cooperation with Prof. <a href="https://scholar.google.com/citations?user=IhjhNEEAAAAJ" class="no-underline">Shaohua Wan</a>.
+- **Jul 2023 - Aug 2025**: Postdoctoral Research Fellow, Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China, Shenzhen, China.
 
 ## 🎓 Education
 
