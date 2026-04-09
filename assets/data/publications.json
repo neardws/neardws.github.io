@@ -187,6 +187,23 @@
     "github": null
   },
   {
+    "id": "wang2025personalized",
+    "type": "conference",
+    "title": "Towards Personalized QoE: A Multi-Agent Reinforcement Learning Approach for Vehicular Video Streaming",
+    "authors": ["Yu Wang", "Penglin Dai", "Ke Xiao", "Xincao Xu"],
+    "venue": "IEEE ISPCE-ASIA'25",
+    "venue_full": "IEEE International Symposium on Product Compliance Engineering-Asia",
+    "location": null,
+    "conf_date": "November 28, 2025",
+    "year": 2025,
+    "month": "November",
+    "tags": [],
+    "doi": "https://ieeexplore.ieee.org/document/11312146",
+    "bib": null,
+    "scholar_id": "DK5avZUAAAAJ:ZuybSZzF8UAC",
+    "github": null
+  },
+  {
     "id": "wu2023quality",
     "type": "conference",
     "title": "Quality-Cost Trade-off on Constructing Logical Views for Vehicular Cyber-Physical Systems: A Deep Reinforcement Learning Approach",
