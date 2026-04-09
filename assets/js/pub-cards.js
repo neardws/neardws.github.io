@@ -88,8 +88,11 @@
       const journals = this.data.filter(p => p.type === 'journal').length;
       const conferences = this.data.filter(p => p.type === 'conference').length;
       const firstAuthors = this.data.filter(p => {
-        const first = p.authors[0];
-        return first.includes('Xincao') || first.includes('Xu*');
+        // First author: Xincao Xu is the first author
+        const isFirst = p.authors[0].includes('Xincao');
+        // Corresponding author: any author with "Xincao" AND "*"
+        const isCorr = p.authors.some(a => a.includes('Xincao') && a.includes('*'));
+        return isFirst || isCorr;
       }).length;
 
       return `
