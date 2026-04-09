@@ -14,12 +14,15 @@
     "venue_full": "IEEE Transactions on Network Science and Engineering",
     "year": 2026,
     "tags": [
-      "Early Access"
+      "Early Access",
+      "JCR Q1",
+      "SCI Q2"
     ],
     "doi": "https://ieeexplore.ieee.org/document/11455352",
     "bib": null,
     "scholar_id": null,
-    "github": null
+    "github": null,
+    "if": 7.9
   },
   {
     "id": "dai2025joint",
