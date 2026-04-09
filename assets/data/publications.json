@@ -396,7 +396,9 @@
     "location": "Shenzhen, China",
     "conf_date": "July 3-6, 2020",
     "year": 2020,
-    "tags": [],
+    "tags": [
+      "Best Paper Candidate"
+    ],
     "doi": "https://link.springer.com/chapter/10.1007/978-981-15-7670-6_38",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/zhou2020multi.bib",
     "scholar_id": "DK5avZUAAAAJ:vRqMK49ujn8C",
