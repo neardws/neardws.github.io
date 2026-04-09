@@ -1,0 +1,277 @@
+/**
+ * CFP Cards Styles
+ * Table-based layout for CCF Class A conference deadlines.
+ * Style matches grant-cards / publication-cards.
+ */
+
+/* Container */
+#cfp-container {
+  margin-top: 1rem;
+}
+
+/* Updated timestamp */
+.cfp-updated {
+  font-size: 0.78em;
+  color: var(--cfp-muted, #9ca3af);
+  margin-bottom: 0.8em;
+}
+
+/* Controls */
+.cfp-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1.2em;
+  align-items: center;
+}
+
+.cfp-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* Filter buttons — matches grant-filter-btn */
+.cfp-filter-btn {
+  padding: 5px 14px;
+  border: 1px solid var(--cfp-filter-border, #d1d5db);
+  border-radius: 20px;
+  background: var(--cfp-filter-bg, #f9fafb);
+  color: inherit;
+  font-size: 0.82em;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  user-select: none;
+}
+
+.cfp-filter-btn .count {
+  margin-left: 4px;
+  font-size: 0.85em;
+  opacity: 0.7;
+}
+
+.cfp-filter-btn:hover {
+  border-color: var(--cfp-filter-hover-border, #2563eb);
+  color: var(--cfp-filter-hover-text, #2563eb);
+}
+
+.cfp-filter-btn.active {
+  background: var(--cfp-filter-active-bg, #2563eb);
+  color: var(--cfp-filter-active-text, #ffffff);
+  border-color: var(--cfp-filter-active-border, #2563eb);
+}
+
+.cfp-filter-btn.active .count {
+  opacity: 1;
+}
+
+/* Category filter button active colors */
+.cfp-cat-btn--ds.active  { background: var(--cfp-ds, #2563eb); border-color: var(--cfp-ds, #2563eb); }
+.cfp-cat-btn--nw.active  { background: var(--cfp-nw, #059669); border-color: var(--cfp-nw, #059669); }
+.cfp-cat-btn--ai.active  { background: var(--cfp-ai, #d97706); border-color: var(--cfp-ai, #d97706); }
+.cfp-cat-btn--hi.active  { background: var(--cfp-hi, #7c3aed); border-color: var(--cfp-hi, #7c3aed); }
+
+.cfp-cat-btn--ds:hover { border-color: var(--cfp-ds, #2563eb); color: var(--cfp-ds, #2563eb); }
+.cfp-cat-btn--nw:hover { border-color: var(--cfp-nw, #059669); color: var(--cfp-nw, #059669); }
+.cfp-cat-btn--ai:hover { border-color: var(--cfp-ai, #d97706); color: var(--cfp-ai, #d97706); }
+.cfp-cat-btn--hi:hover { border-color: var(--cfp-hi, #7c3aed); color: var(--cfp-hi, #7c3aed); }
+
+/* Override hover color on active buttons */
+.cfp-cat-btn--ds.active:hover { color: #ffffff; }
+.cfp-cat-btn--nw.active:hover { color: #ffffff; }
+.cfp-cat-btn--ai.active:hover { color: #ffffff; }
+.cfp-cat-btn--hi.active:hover { color: #ffffff; }
+
+/* Table wrapper */
+.cfp-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Table */
+.cfp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88em;
+  table-layout: auto;
+}
+
+.cfp-table thead th {
+  text-align: left;
+  padding: 8px 12px;
+  font-size: 0.82em;
+  font-weight: 600;
+  color: var(--cfp-th-text, #6b7280);
+  border-bottom: 2px solid var(--cfp-table-border, #e5e7eb);
+  white-space: nowrap;
+}
+
+.cfp-table tbody tr {
+  border-bottom: 1px solid var(--cfp-table-border, #e5e7eb);
+  transition: background 0.15s ease;
+}
+
+.cfp-table tbody tr:hover {
+  background: var(--cfp-row-hover, #f9fafb);
+}
+
+.cfp-table tbody td {
+  padding: 10px 12px;
+  vertical-align: top;
+  color: var(--cfp-text, #374151);
+}
+
+/* Past deadline rows — muted styling */
+.cfp-row--past {
+  opacity: 0.55;
+}
+
+.cfp-row--past:hover {
+  opacity: 0.75;
+}
+
+/* Column widths */
+.cfp-th-deadline,
+.cfp-td-deadline {
+  min-width: 110px;
+  white-space: nowrap;
+}
+
+.cfp-th-date,
+.cfp-td-date {
+  min-width: 110px;
+  white-space: nowrap;
+  color: var(--cfp-muted, #6b7280);
+  font-size: 0.9em;
+}
+
+.cfp-th-conf,
+.cfp-td-conf {
+  min-width: 220px;
+}
+
+.cfp-th-venue,
+.cfp-td-venue {
+  min-width: 140px;
+  font-size: 0.9em;
+  color: var(--cfp-muted, #6b7280);
+}
+
+.cfp-th-cat,
+.cfp-td-cat {
+  min-width: 60px;
+  text-align: center;
+}
+
+/* Deadline text */
+.cfp-deadline {
+  font-weight: 600;
+  color: var(--cfp-deadline-text, #dc2626);
+  font-size: 0.95em;
+}
+
+.cfp-deadline--past {
+  color: var(--cfp-deadline-past, #9ca3af);
+  text-decoration: line-through;
+}
+
+.cfp-abs-deadline {
+  font-size: 0.82em;
+  color: var(--cfp-muted, #6b7280);
+}
+
+.cfp-tz {
+  font-size: 0.75em;
+  color: var(--cfp-muted, #9ca3af);
+}
+
+.cfp-na {
+  color: var(--cfp-muted, #9ca3af);
+}
+
+/* Conference link */
+.cfp-conf-link {
+  color: var(--cfp-link, #2563eb);
+  text-decoration: none;
+}
+
+.cfp-conf-link:hover {
+  text-decoration: underline;
+}
+
+/* Conference description */
+.cfp-conf-desc {
+  display: block;
+  font-size: 0.82em;
+  color: var(--cfp-muted, #6b7280);
+  margin-top: 2px;
+  line-height: 1.3;
+}
+
+/* Category badges */
+.cfp-cat-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.cfp-cat-badge--ds { background: var(--cfp-ds, #2563eb); }
+.cfp-cat-badge--nw { background: var(--cfp-nw, #059669); }
+.cfp-cat-badge--ai { background: var(--cfp-ai, #d97706); }
+.cfp-cat-badge--hi { background: var(--cfp-hi, #7c3aed); }
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cfp-muted: #6b7280;
+    --cfp-filter-border: #4b5563;
+    --cfp-filter-bg: #374151;
+    --cfp-filter-hover-border: #60a5fa;
+    --cfp-filter-hover-text: #60a5fa;
+    --cfp-filter-active-bg: #2563eb;
+    --cfp-filter-active-text: #ffffff;
+    --cfp-filter-active-border: #2563eb;
+    --cfp-ds: #3b82f6;
+    --cfp-nw: #10b981;
+    --cfp-ai: #f59e0b;
+    --cfp-hi: #a78bfa;
+    --cfp-th-text: #9ca3af;
+    --cfp-table-border: #374151;
+    --cfp-row-hover: #1f2937;
+    --cfp-text: #d1d5db;
+    --cfp-deadline-text: #f87171;
+    --cfp-deadline-past: #6b7280;
+    --cfp-link: #60a5fa;
+  }
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .cfp-filters {
+    gap: 4px;
+  }
+
+  .cfp-filter-btn {
+    padding: 4px 10px;
+    font-size: 0.78em;
+  }
+
+  .cfp-table {
+    font-size: 0.82em;
+  }
+
+  .cfp-table thead th,
+  .cfp-table tbody td {
+    padding: 8px 8px;
+  }
+
+  /* Hide venue column on small screens */
+  .cfp-th-venue,
+  .cfp-td-venue {
+    display: none;
+  }
+}
