@@ -3,7 +3,14 @@
     "id": "dai2025joint",
     "type": "journal",
     "title": "Joint Optimization of Device Placement and Model Partitioning for Cooperative DNN Inference in Heterogeneous Edge Computing",
-    "authors": ["Penglin Dai*", "Biao Han", "Ke Li", "Xincao Xu", "Huanlai Xing", "Kai Liu"],
+    "authors": [
+      "Penglin Dai*",
+      "Biao Han",
+      "Ke Li",
+      "Xincao Xu",
+      "Huanlai Xing",
+      "Kai Liu"
+    ],
     "venue": "IEEE TMC",
     "venue_full": "IEEE Transactions on Mobile Computing",
     "year": 2025,
@@ -11,7 +18,11 @@
     "volume": "24",
     "issue": "1",
     "pages": "210-226",
-    "tags": ["JCR Q1", "SCI Q2", "CCF A"],
+    "tags": [
+      "JCR Q1",
+      "SCI Q2",
+      "CCF A"
+    ],
     "if": 7.7,
     "doi": "https://ieeexplore.ieee.org/abstract/document/10675335",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/dai2025joint.bib",
@@ -22,7 +33,14 @@
     "id": "xu2024cooperative",
     "type": "journal",
     "title": "Cooperative Sensing and Heterogeneous Information Fusion in VCPS: A Multi-agent Deep Reinforcement Learning Approach",
-    "authors": ["Xincao Xu*", "Kai Liu*", "Penglin Dai", "Ruitao Xie", "Jingjing Cao", "Jiangtao Luo"],
+    "authors": [
+      "Xincao Xu*",
+      "Kai Liu*",
+      "Penglin Dai",
+      "Ruitao Xie",
+      "Jingjing Cao",
+      "Jiangtao Luo"
+    ],
     "venue": "IEEE T-ITS",
     "venue_full": "IEEE Transactions on Intelligent Transportation Systems",
     "year": 2024,
@@ -30,7 +48,11 @@
     "volume": "25",
     "issue": "6",
     "pages": "4876-4891",
-    "tags": ["JCR Q1", "SCI Q1", "CCF B"],
+    "tags": [
+      "JCR Q1",
+      "SCI Q1",
+      "CCF B"
+    ],
     "if": 8.5,
     "doi": "https://ieeexplore.ieee.org/document/10367825",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xu2023cooperative.bib",
@@ -41,7 +63,12 @@
     "id": "liu2024cooperative",
     "type": "journal",
     "title": "Cooperative Sensing and Uploading for Quality-Cost Tradeoff of Digital Twins in VEC",
-    "authors": ["Kai Liu*", "Xincao Xu*", "Penglin Dai", "Biwen Chen"],
+    "authors": [
+      "Kai Liu*",
+      "Xincao Xu*",
+      "Penglin Dai",
+      "Biwen Chen"
+    ],
     "venue": "IEEE TCE",
     "venue_full": "IEEE Transactions on Consumer Electronics",
     "year": 2024,
@@ -49,7 +76,10 @@
     "volume": "70",
     "issue": "1",
     "pages": "3414-3625",
-    "tags": ["JCR Q2", "SCI Q2"],
+    "tags": [
+      "JCR Q2",
+      "SCI Q2"
+    ],
     "if": 4.3,
     "doi": "https://ieeexplore.ieee.org/document/10261503",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/liu2023cooperative.bib",
@@ -60,7 +90,15 @@
     "id": "xu2023joint",
     "type": "journal",
     "title": "Joint Task Offloading and Resource Optimization in NOMA-Based Vehicular Edge Computing: A Game-Theoretic DRL Approach",
-    "authors": ["Xincao Xu*", "Kai Liu*", "Penglin Dai", "Feiyu Jin", "Hualing Ren", "Choujun Zhan", "Songtao Guo"],
+    "authors": [
+      "Xincao Xu*",
+      "Kai Liu*",
+      "Penglin Dai",
+      "Feiyu Jin",
+      "Hualing Ren",
+      "Choujun Zhan",
+      "Songtao Guo"
+    ],
     "venue": "JSA",
     "venue_full": "Journal of Systems Architecture",
     "year": 2023,
@@ -68,7 +106,11 @@
     "volume": "134",
     "issue": null,
     "pages": "102780",
-    "tags": ["JCR Q1", "SCI Q2", "CCF B"],
+    "tags": [
+      "JCR Q1",
+      "SCI Q2",
+      "CCF B"
+    ],
     "if": 4.5,
     "doi": "https://www.sciencedirect.com/science/article/pii/S138376212200265X",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xu2023joint.bib",
@@ -79,7 +121,14 @@
     "id": "liu2021rtds",
     "type": "journal",
     "title": "RtDS: Real-time Distributed Strategy for Multi-period Task Offloading in Vehicular Edge Computing Environment",
-    "authors": ["Chunhui Liu", "Kai Liu*", "Hualing Ren", "Xincao Xu", "Ruitao Xie", "Jingjing Cao"],
+    "authors": [
+      "Chunhui Liu",
+      "Kai Liu*",
+      "Hualing Ren",
+      "Xincao Xu",
+      "Ruitao Xie",
+      "Jingjing Cao"
+    ],
     "venue": "NCA",
     "venue_full": "Neural Computing and Applications",
     "year": 2021,
@@ -87,7 +136,10 @@
     "volume": "35",
     "issue": null,
     "pages": "12373-12387",
-    "tags": ["JCR Q1", "SCI Q2"],
+    "tags": [
+      "JCR Q1",
+      "SCI Q2"
+    ],
     "if": 6.0,
     "doi": "https://link.springer.com/article/10.1007/s00521-021-05766-5",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/liu2021rtds.bib",
@@ -98,7 +150,14 @@
     "id": "xiao2021cooperative",
     "type": "journal",
     "title": "Cooperative Coding and Caching Scheduling via Binary Particle Swarm Optimization in Software Defined Vehicular Networks",
-    "authors": ["Ke Xiao", "Kai Liu*", "Xincao Xu", "Liang Feng", "Zhou Wu", "Qiangwei Zhao"],
+    "authors": [
+      "Ke Xiao",
+      "Kai Liu*",
+      "Xincao Xu",
+      "Liang Feng",
+      "Zhou Wu",
+      "Qiangwei Zhao"
+    ],
     "venue": "NCA",
     "venue_full": "Neural Computing and Applications",
     "year": 2021,
@@ -106,7 +165,10 @@
     "volume": "33",
     "issue": null,
     "pages": "1467-1478",
-    "tags": ["JCR Q1", "SCI Q2"],
+    "tags": [
+      "JCR Q1",
+      "SCI Q2"
+    ],
     "if": 6.0,
     "doi": "https://link.springer.com/article/10.1007/s00521-020-04978-5",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xiao2021cooperative.bib",
@@ -117,7 +179,13 @@
     "id": "xiao2021efficient",
     "type": "journal",
     "title": "Efficient Fog-assisted Heterogeneous Data Services in Software Defined VANETs",
-    "authors": ["Ke Xiao", "Kai Liu*", "Xincao Xu", "Yi Zhou", "Liang Feng"],
+    "authors": [
+      "Ke Xiao",
+      "Kai Liu*",
+      "Xincao Xu",
+      "Yi Zhou",
+      "Liang Feng"
+    ],
     "venue": "JAIHC",
     "venue_full": "Journal of Ambient Intelligence and Humanized Computing",
     "year": 2021,
@@ -125,7 +193,9 @@
     "volume": "12",
     "issue": "1",
     "pages": "261-273",
-    "tags": ["SCI Q3"],
+    "tags": [
+      "SCI Q3"
+    ],
     "if": 3.8,
     "doi": "https://link.springer.com/article/10.1007/s12652-019-01507-8",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xiao2021efficient.bib",
@@ -136,7 +206,14 @@
     "id": "xu2020vehicular",
     "type": "journal",
     "title": "Vehicular Fog Computing Enabled Real-time Collision Warning via Trajectory Calibration",
-    "authors": ["Xincao Xu*", "Kai Liu*", "Ke Xiao", "Liang Feng", "Zhou Wu", "Songtao Guo"],
+    "authors": [
+      "Xincao Xu*",
+      "Kai Liu*",
+      "Ke Xiao",
+      "Liang Feng",
+      "Zhou Wu",
+      "Songtao Guo"
+    ],
     "venue": "MONET",
     "venue_full": "Mobile Networks and Applications",
     "year": 2020,
@@ -144,7 +221,10 @@
     "volume": "25",
     "issue": "6",
     "pages": "2482-2494",
-    "tags": ["JCR Q2", "CCF C"],
+    "tags": [
+      "JCR Q2",
+      "CCF C"
+    ],
     "if": 3.8,
     "doi": "https://link.springer.com/article/10.1007/s11036-020-01591-7",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xu2020vehicular.bib",
@@ -155,7 +235,14 @@
     "id": "liu2019hierarchical",
     "type": "journal",
     "title": "A Hierarchical Architecture for the Future Internet of Vehicles",
-    "authors": ["Kai Liu*", "Xincao Xu", "Mengliang Chen", "Bingyi Liu*", "Libing Wu", "Victor Lee"],
+    "authors": [
+      "Kai Liu*",
+      "Xincao Xu",
+      "Mengliang Chen",
+      "Bingyi Liu*",
+      "Libing Wu",
+      "Victor Lee"
+    ],
     "venue": "IEEE ComMag",
     "venue_full": "IEEE Communications Magazine",
     "year": 2019,
@@ -163,7 +250,10 @@
     "volume": "57",
     "issue": "7",
     "pages": "41-47",
-    "tags": ["JCR Q1", "SCI Q1"],
+    "tags": [
+      "JCR Q1",
+      "SCI Q1"
+    ],
     "if": 11.2,
     "doi": "https://ieeexplore.ieee.org/document/8767077",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/liu2019hierarchical.bib",
@@ -174,13 +264,20 @@
     "id": "song2025wdfusion",
     "type": "conference",
     "title": "WDFusion: Multi-Modal Image Fusion via Wavelet-Decoupled Inter-Modal Interaction Learning",
-    "authors": ["Yuansheng Song", "Xin Ma", "Xuqi Cai", "Xincao Xu*"],
+    "authors": [
+      "Yuansheng Song",
+      "Xin Ma",
+      "Xuqi Cai",
+      "Xincao Xu*"
+    ],
     "venue": "ECAI'25",
     "venue_full": "European Conference on Artificial Intelligence",
     "location": "Bologna, Italy",
     "conf_date": "October 25-30, 2025",
     "year": 2025,
-    "tags": ["CCF B"],
+    "tags": [
+      "CCF B"
+    ],
     "doi": "https://ebooks.iospress.nl/doi/10.3233/FAIA250807",
     "bib": null,
     "scholar_id": "DK5avZUAAAAJ:1yQoGdGgb4wC",
@@ -190,14 +287,21 @@
     "id": "wang2025personalized",
     "type": "conference",
     "title": "Towards Personalized QoE: A Multi-Agent Reinforcement Learning Approach for Vehicular Video Streaming",
-    "authors": ["Yu Wang", "Penglin Dai*", "Ke Xiao", "Xincao Xu"],
+    "authors": [
+      "Yu Wang",
+      "Penglin Dai*",
+      "Ke Xiao",
+      "Xincao Xu"
+    ],
     "venue": "IEEE ISPCE-ASIA'25",
     "venue_full": "IEEE International Symposium on Product Compliance Engineering-Asia",
     "location": "Sanya, Hainan, China",
     "conf_date": "November 28, 2025",
     "year": 2025,
     "month": "November",
-    "tags": [],
+    "tags": [
+      "Best Paper Award"
+    ],
     "doi": "https://ieeexplore.ieee.org/document/11312146",
     "bib": null,
     "scholar_id": "DK5avZUAAAAJ:ZuybSZzF8UAC",
@@ -207,7 +311,14 @@
     "id": "wu2023quality",
     "type": "conference",
     "title": "Quality-Cost Trade-off on Constructing Logical Views for Vehicular Cyber-Physical Systems: A Deep Reinforcement Learning Approach",
-    "authors": ["Junyuan Wu", "Xincao Xu*", "Chuzhao Li", "Hao Zhang", "Ke Xiao", "Kai Liu"],
+    "authors": [
+      "Junyuan Wu",
+      "Xincao Xu*",
+      "Chuzhao Li",
+      "Hao Zhang",
+      "Ke Xiao",
+      "Kai Liu"
+    ],
     "venue": "IEEE ISPCE-AS'23",
     "venue_full": "IEEE International Symposium on Product Compliance Engineering-Asia",
     "location": "Shanghai, China",
@@ -223,7 +334,14 @@
     "id": "xu2022age",
     "type": "conference",
     "title": "Age of View: A New Metric for Evaluating Heterogeneous Information Fusion in Vehicular Cyber-Physical Systems",
-    "authors": ["Xincao Xu*", "Kai Liu*", "Qisen Zhang", "Hao Jiang", "Ke Xiao", "Jiangtao Luo"],
+    "authors": [
+      "Xincao Xu*",
+      "Kai Liu*",
+      "Qisen Zhang",
+      "Hao Jiang",
+      "Ke Xiao",
+      "Jiangtao Luo"
+    ],
     "venue": "IEEE ITSC'22",
     "venue_full": "IEEE International Conference on Intelligent Transportation Systems",
     "location": "Macau, China",
@@ -242,7 +360,14 @@
     "id": "liu2020real",
     "type": "conference",
     "title": "Real-time Task Offloading for Data and Computation Intensive Services in Vehicular Fog Computing Environments",
-    "authors": ["Chunhui Liu", "Kai Liu*", "Xincao Xu", "Hualing Ren", "Feiyu Jin", "Songtao Guo"],
+    "authors": [
+      "Chunhui Liu",
+      "Kai Liu*",
+      "Xincao Xu",
+      "Hualing Ren",
+      "Feiyu Jin",
+      "Songtao Guo"
+    ],
     "venue": "IEEE MSN'20",
     "venue_full": "IEEE International Conference on Mobility, Sensing and Networking",
     "location": "Tokyo, Japan",
@@ -258,7 +383,14 @@
     "id": "zhou2020multi",
     "type": "conference",
     "title": "Multi-period Distributed Delay-sensitive Tasks Offloading in a Two-layer Vehicular Fog Computing Architecture",
-    "authors": ["Yi Zhou", "Kai Liu*", "Xincao Xu", "Chunhui Liu", "Liang Feng", "Chao Chen"],
+    "authors": [
+      "Yi Zhou",
+      "Kai Liu*",
+      "Xincao Xu",
+      "Chunhui Liu",
+      "Liang Feng",
+      "Chao Chen"
+    ],
     "venue": "NCAA'20",
     "venue_full": "International Conference on Neural Computing and Applications",
     "location": "Shenzhen, China",
@@ -274,7 +406,15 @@
     "id": "zhou2020distributed",
     "type": "conference",
     "title": "Distributed Scheduling for Time-Critical Tasks in a Two-layer Vehicular Fog Computing Architecture",
-    "authors": ["Yi Zhou", "Kai Liu*", "Xincao Xu", "Songtao Guo", "Zhou Wu", "Victor Lee", "Sang Son"],
+    "authors": [
+      "Yi Zhou",
+      "Kai Liu*",
+      "Xincao Xu",
+      "Songtao Guo",
+      "Zhou Wu",
+      "Victor Lee",
+      "Sang Son"
+    ],
     "venue": "IEEE CCNC'20",
     "venue_full": "IEEE Consumer Communications and Networking Conference",
     "location": "Las Vegas, USA",
@@ -290,13 +430,22 @@
     "id": "xu2018design",
     "type": "conference",
     "title": "Design and Implementation of a Fog Computing Based Collision Warning System in VANETs",
-    "authors": ["Xincao Xu*", "Kai Liu*", "Ke Xiao", "Hualing Ren", "Liang Feng", "Chao Chen"],
+    "authors": [
+      "Xincao Xu*",
+      "Kai Liu*",
+      "Ke Xiao",
+      "Hualing Ren",
+      "Liang Feng",
+      "Chao Chen"
+    ],
     "venue": "IEEE ISPCE-CN'18",
     "venue_full": "IEEE International Symposium on Product Compliance Engineering-Asia",
     "location": "Hong Kong/Shenzhen, China",
     "conf_date": "December 5-7, 2018",
     "year": 2018,
-    "tags": ["Best Paper Award"],
+    "tags": [
+      "Best Paper Award"
+    ],
     "doi": "https://ieeexplore.ieee.org/document/8805783",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xu2018design.bib",
     "scholar_id": "DK5avZUAAAAJ:xtRiw3GOFMkC",
@@ -307,7 +456,14 @@
     "type": "chinese",
     "title": "Potential Game Based Channel Allocation for Vehicular Edge Computing",
     "title_zh": "基于势博弈的车辆边缘计算信道分配",
-    "authors": ["Xincao Xu*", "Kai Liu*", "Chunhui Liu", "Hao Jiang", "Songtao Guo", "Weiwei Wu"],
+    "authors": [
+      "Xincao Xu*",
+      "Kai Liu*",
+      "Chunhui Liu",
+      "Hao Jiang",
+      "Songtao Guo",
+      "Weiwei Wu"
+    ],
     "venue": "电子学报",
     "venue_full": "Tien Tzu Hsueh Pao/Acta Electronica Sinica",
     "year": 2021,
@@ -315,7 +471,9 @@
     "volume": "49",
     "issue": "5",
     "pages": "851-860",
-    "tags": ["CCF T1"],
+    "tags": [
+      "CCF T1"
+    ],
     "doi": "https://www.ejournal.org.cn/CN/10.12263/DZXB.20200994",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xu2021potential.bib",
     "scholar_id": "DK5avZUAAAAJ:fQNAKQ3IYiAC",
@@ -326,13 +484,22 @@
     "type": "chinese",
     "title": "Potential Game based Distributed Channel Allocation in Vehicular Fog Computing Environments",
     "title_zh": "基于势博弈的车辆雾计算分布式信道分配",
-    "authors": ["Xincao Xu*", "Yi Zhou", "Kai Liu*", "Chaocan Xiang", "Yantao Li", "Songtao Guo"],
+    "authors": [
+      "Xincao Xu*",
+      "Yi Zhou",
+      "Kai Liu*",
+      "Chaocan Xiang",
+      "Yantao Li",
+      "Songtao Guo"
+    ],
     "venue": "CWSN'20",
     "venue_full": "14th China Conference on Internet of Things",
     "location": "Dunhuang, China",
     "conf_date": "September 18-21, 2020",
     "year": 2020,
-    "tags": ["Best Paper Candidate"],
+    "tags": [
+      "Best Paper Candidate"
+    ],
     "doi": null,
     "bib": null,
     "scholar_id": null,
@@ -342,12 +509,16 @@
     "id": "xu2023research",
     "type": "dissertation",
     "title": "Research on Key Techniques for Modeling and Optimization of Vehicular Cyber-Physical Systems",
-    "authors": ["Xincao Xu"],
+    "authors": [
+      "Xincao Xu"
+    ],
     "venue": "Chongqing University",
     "venue_full": "Chongqing University",
     "year": 2023,
     "month": "June",
-    "tags": ["Doctoral Dissertation"],
+    "tags": [
+      "Doctoral Dissertation"
+    ],
     "doi": "https://link.cnki.net/doi/10.27670/d.cnki.gcqdu.2023.002626",
     "bib": "https://neardws-1257861591.cos.ap-shanghai.myqcloud.com/neardws/bib/xu2023research.bib",
     "scholar_id": null,
