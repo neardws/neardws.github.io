@@ -136,7 +136,7 @@ class CFPCards {
           ${confNameHtml}
           <span class="cfp-conf-desc">${confDesc}</span>
         </td>
-        <td class="cfp-td-venue">${this.escapeHtml(conf.place) || '<span class="cfp-na">TBD</span>'}</td>
+        <td class="cfp-td-venue">${this.escapeHtml(this.normalizePlace(conf.place)) || '<span class="cfp-na">TBD</span>'}</td>
         <td class="cfp-td-cat"><span class="${badgeClass}" title="${this.escapeHtml(conf.sub_name)}">${this.escapeHtml(conf.sub)}</span></td>
       </tr>
     `;
@@ -184,6 +184,102 @@ class CFPCards {
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;');
+  }
+
+  // Normalize place string to "City, Country [flag]" format
+  normalizePlace(place) {
+    if (!place) return place;
+
+    const US_STATES_FULL = new Set([
+      'Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut',
+      'Delaware','Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa',
+      'Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan',
+      'Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada',
+      'New Hampshire','New Jersey','New Mexico','New York','North Carolina',
+      'North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island',
+      'South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont',
+      'Virginia','Washington','West Virginia','Wisconsin','Wyoming',
+    ]);
+    const US_STATES_ABBREV = new Set([
+      'AL','AK','AZ','AR','CA','CO','CT','DE','FL','GA','HI','ID','IL','IN','IA',
+      'KS','KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV','NH','NJ',
+      'NM','NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT',
+      'VA','WA','WV','WI','WY','DC',
+    ]);
+    const AU_STATES = new Set(['NSW','VIC','QLD','SA','TAS','ACT','NT']);
+
+    // Normalize country aliases
+    let s = place
+      .replace(/\bUnited States of America\b/g, 'USA')
+      .replace(/\bUnited States\b/g, 'USA');
+
+    const parts = s.split(',').map(p => p.trim()).filter(Boolean);
+    if (parts.length === 0) return place;
+
+    // Single part: strip trailing venue keywords (e.g. "Singapore EXPO")
+    if (parts.length === 1) {
+      const cleaned = parts[0].replace(/\s+(EXPO|CENTRE|CENTER|HALL|ARENA|PLAZA)\s*$/i, '').trim();
+      return this.withFlag(cleaned);
+    }
+
+    // Two parts: check if last is a US state (country implied)
+    if (parts.length === 2) {
+      if (US_STATES_FULL.has(parts[1]) || US_STATES_ABBREV.has(parts[1])) {
+        return this.withFlag(`${parts[0]}, USA`);
+      }
+      return this.withFlag(s);
+    }
+
+    // Three or more parts: derive city + country
+    const last = parts[parts.length - 1];
+    const country = (US_STATES_FULL.has(last) || US_STATES_ABBREV.has(last)) ? 'USA' : last;
+
+    const candidates = parts.slice(0, -1).filter(p =>
+      p !== country &&
+      !US_STATES_FULL.has(p) &&
+      !US_STATES_ABBREV.has(p) &&
+      !AU_STATES.has(p) &&
+      !this.isVenuePart(p)
+    );
+
+    const city = candidates.length > 0
+      ? candidates[candidates.length - 1]   // prefer the last non-venue/non-state part
+      : parts[parts.length - 2];
+
+    return this.withFlag(`${city}, ${country}`);
+  }
+
+  isVenuePart(s) {
+    const VENUE_KW = new Set([
+      'hotel','center','centre','convention','expo','arena',
+      'conference','hall','resort','plaza','building','campus',
+    ]);
+    const words = s.toLowerCase().split(/\s+/);
+    return words.length >= 4 || words.some(w => VENUE_KW.has(w));
+  }
+
+  withFlag(cityCountry) {
+    const FLAGS = {
+      'USA': '🇺🇸',
+      'China': '🇨🇳', 'Hong Kong': '🇨🇳', 'Macau': '🇨🇳', 'Taiwan': '🇨🇳',
+      'Japan': '🇯🇵', 'Korea': '🇰🇷', 'South Korea': '🇰🇷',
+      'Singapore': '🇸🇬', 'India': '🇮🇳', 'UAE': '🇦🇪',
+      'Australia': '🇦🇺', 'New Zealand': '🇳🇿',
+      'UK': '🇬🇧', 'United Kingdom': '🇬🇧',
+      'France': '🇫🇷', 'Germany': '🇩🇪', 'Italy': '🇮🇹',
+      'Spain': '🇪🇸', 'Portugal': '🇵🇹', 'Netherlands': '🇳🇱',
+      'Switzerland': '🇨🇭', 'Austria': '🇦🇹', 'Belgium': '🇧🇪',
+      'Sweden': '🇸🇪', 'Norway': '🇳🇴', 'Denmark': '🇩🇰', 'Finland': '🇫🇮',
+      'Poland': '🇵🇱', 'Greece': '🇬🇷', 'Turkey': '🇹🇷',
+      'Canada': '🇨🇦', 'Mexico': '🇲🇽', 'Brazil': '🇧🇷',
+      'Argentina': '🇦🇷', 'Chile': '🇨🇱',
+      'South Africa': '🇿🇦', 'Morocco': '🇲🇦', 'Egypt': '🇪🇬',
+      'Israel': '🇮🇱', 'Saudi Arabia': '🇸🇦',
+    };
+    const parts = cityCountry.split(',').map(p => p.trim());
+    const country = parts[parts.length - 1];
+    const flag = FLAGS[country] || '';
+    return flag ? `${cityCountry} ${flag}` : cityCountry;
   }
 
   // Normalize month names to title case (e.g. "FEBRUARY" → "February")
