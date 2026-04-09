@@ -117,7 +117,7 @@
   opacity: 1;
 }
 
-/* Role filter buttons (主持项目 / 参与项目) — green active color */
+/* Role filter buttons (PI Projects / Participated) — green active color */
 .grant-role-btn.active {
   background: var(--grant-role-active-bg, #059669);
   border-color: var(--grant-role-active-border, #059669);
