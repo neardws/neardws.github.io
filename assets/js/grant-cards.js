@@ -1,11 +1,15 @@
 /**
  * Grant Cards Renderer
  * Dynamically renders grant cards from JSON data
+ * With filtering and search functionality (similar to publications)
  */
 
 class GrantCards {
   constructor() {
     this.data = [];
+    this.filteredData = [];
+    this.activeFilter = 'all';
+    this.searchQuery = '';
     this.container = null;
   }
 
@@ -17,13 +21,8 @@ class GrantCards {
       const res = await fetch('assets/data/grants.json');
       this.data = await res.json();
 
-      // Sort by role (PI first), then by period start date (newest first)
+      // Sort by start year (newest first)
       this.data.sort((a, b) => {
-        // PI projects first
-        if (a.role === 'PI' && b.role !== 'PI') return -1;
-        if (a.role !== 'PI' && b.role === 'PI') return 1;
-
-        // Then by period (extract start year)
         const getStartYear = (period) => {
           const match = period.match(/(\d{4})/);
           return match ? parseInt(match[1]) : 0;
@@ -31,6 +30,13 @@ class GrantCards {
         return getStartYear(b.period) - getStartYear(a.period);
       });
 
+      // Add start_year to each grant for display
+      this.data = this.data.map(g => ({
+        ...g,
+        start_year: this.extractStartYear(g.period)
+      }));
+
+      this.filteredData = [...this.data];
       this.render();
     } catch (e) {
       console.warn('Failed to load grants:', e);
@@ -38,38 +44,45 @@ class GrantCards {
     }
   }
 
+  extractStartYear(period) {
+    const match = period.match(/(\d{4})/);
+    return match ? parseInt(match[1]) : null;
+  }
+
   render() {
-    const piProjects = this.data.filter(p => p.role === 'PI');
-    const participantProjects = this.data.filter(p => p.role !== 'PI');
+    const stats = this.getStats();
+    const filters = this.getFilters();
 
-    // Build sources legend
-    const sources = [...new Set(this.data.map(p => p.source.name))];
-    const sourcesHtml = sources.map(name => {
-      const src = this.data.find(p => p.source.name === name)?.source;
-      if (!src) return '';
-      const iconHtml = src.icon
-        ? `<img src="${src.icon}" alt="${src.name}" class="grant-source-icon">`
-        : `<span class="grant-source-icon-text">${src.name}</span>`;
-      const linkHtml = src.url
-        ? `<a href="${src.url}" target="_blank" class="grant-source-link no-underline">${iconHtml} <strong>${src.name}</strong>: ${src.full_name}</a>`
-        : `<span>${iconHtml} <strong>${src.name}</strong>: ${src.full_name}</span>`;
-      return `<div class="grant-source-item">${linkHtml}</div>`;
-    }).join('');
+    this.container.innerHTML = `
+      ${stats}
+      <div class="grant-controls">
+        <div class="grant-filters" id="grant-filters">${filters}</div>
+        <input type="text" class="grant-search" id="grant-search" placeholder="Search title, number, source..." value="${this.searchQuery}">
+      </div>
+      <div class="grant-list" id="grant-list">
+        ${this.filteredData.map(g => this.renderCard(g)).join('')}
+      </div>
+    `;
 
-    // Build stats
+    this.bindEvents();
+  }
+
+  getStats() {
+    const piCount = this.data.filter(p => p.role === 'PI').length;
+    const participantCount = this.data.filter(p => p.role !== 'PI').length;
     const totalAmount = this.data.reduce((sum, p) => {
       const match = p.amount.match(/[\d,]+/);
       return sum + (match ? parseInt(match[0].replace(/,/g, '')) : 0);
     }, 0);
 
-    const statsHtml = `
+    return `
       <div class="grant-stats">
         <div class="grant-stat">
-          <span class="grant-stat-value">${piProjects.length}</span>
-          <span class="grant-stat-label">PI/Co-PI Projects</span>
+          <span class="grant-stat-value">${piCount}</span>
+          <span class="grant-stat-label">PI/Co-PI</span>
         </div>
         <div class="grant-stat">
-          <span class="grant-stat-value">${participantProjects.length}</span>
+          <span class="grant-stat-value">${participantCount}</span>
           <span class="grant-stat-label">Participated</span>
         </div>
         <div class="grant-stat">
@@ -77,30 +90,41 @@ class GrantCards {
           <span class="grant-stat-label">Total (CNY)</span>
         </div>
       </div>
-      <div class="grant-sources">${sourcesHtml}</div>
+      <div class="grant-sources">${this.renderSources()}</div>
     `;
+  }
 
-    // Build PI projects
-    const piHtml = piProjects.length > 0 ? `
-      <h4 class="grant-section-title">Principal Investigator</h4>
-      <div class="grant-list">
-        ${piProjects.map(p => this.renderCard(p)).join('')}
-      </div>
-    ` : '';
+  renderSources() {
+    const sources = [...new Set(this.data.map(p => p.source.name))];
+    return sources.map(name => {
+      const src = this.data.find(p => p.source.name === name)?.source;
+      if (!src) return '';
+      const iconHtml = src.icon
+        ? `<img src="${src.icon}" alt="${src.name}" class="grant-source-icon">`
+        : `<span class="grant-source-icon-text">${src.name}</span>`;
+      const linkHtml = src.url
+        ? `<a href="${src.url}" target="_blank" class="grant-source-link no-underline">${iconHtml}<span class="grant-source-name-text"><strong>${src.name}</strong>: ${src.full_name}</span></a>`
+        : `<span class="grant-source-link">${iconHtml}<span class="grant-source-name-text"><strong>${src.name}</strong>: ${src.full_name}</span></span>`;
+      return `<div class="grant-source-item">${linkHtml}</div>`;
+    }).join('');
+  }
 
-    // Build Participant projects
-    const participantHtml = participantProjects.length > 0 ? `
-      <h4 class="grant-section-title">Participation</h4>
-      <div class="grant-list">
-        ${participantProjects.map(p => this.renderCard(p)).join('')}
-      </div>
-    ` : '';
+  getFilters() {
+    const sources = ['all', ...new Set(this.data.map(p => p.source.name))];
+    const sourceLabels = {
+      'all': 'All',
+      'NSFC': 'NSFC',
+      'GBABRF': 'GBABRF',
+      'SSTP': 'SSTP',
+      'CPSF': 'CPSF',
+      'ERC': 'ERC'
+    };
 
-    this.container.innerHTML = `
-      ${statsHtml}
-      ${piHtml}
-      ${participantHtml}
-    `;
+    return sources.map(source => {
+      const label = sourceLabels[source] || source;
+      const active = this.activeFilter === source ? 'grant-filter--active' : '';
+      return `<button class="grant-filter ${active}" data-filter="${source}">${label}</button>`;
+    }).join('');
   }
 
   renderCard(grant) {
@@ -108,7 +132,10 @@ class GrantCards {
       ? `<img src="${grant.source.icon}" alt="${grant.source.name}" class="grant-card-icon">`
       : `<div class="grant-card-icon-placeholder">${grant.source.name}</div>`;
 
-    const roleClass = grant.role === 'PI' ? 'grant-card--pi' : 'grant-card--participant';
+    const yearHtml = grant.start_year
+      ? `<div class="grant-card-year">${grant.start_year}</div>`
+      : '';
+
     const roleTag = grant.role === 'PI'
       ? '<span class="grant-role-tag grant-role-tag--pi">PI</span>'
       : '';
@@ -118,9 +145,10 @@ class GrantCards {
       : '';
 
     return `
-      <div class="grant-card ${roleClass}">
+      <div class="grant-card" data-source="${grant.source.name}">
         <div class="grant-card-left">
           ${iconHtml}
+          ${yearHtml}
         </div>
         <div class="grant-card-content">
           <div class="grant-card-header">
@@ -138,6 +166,58 @@ class GrantCards {
         </div>
       </div>
     `;
+  }
+
+  bindEvents() {
+    // Filter buttons
+    document.querySelectorAll('.grant-filter').forEach(btn => {
+      btn.addEventListener('click', () => {
+        this.activeFilter = btn.dataset.filter;
+        this.applyFilters();
+      });
+    });
+
+    // Search input
+    const searchInput = document.getElementById('grant-search');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        this.searchQuery = e.target.value.toLowerCase();
+        this.applyFilters();
+      });
+    }
+  }
+
+  applyFilters() {
+    this.filteredData = this.data.filter(g => {
+      // Filter by source
+      const matchesFilter = this.activeFilter === 'all' || g.source.name === this.activeFilter;
+
+      // Filter by search query
+      const matchesSearch = !this.searchQuery ||
+        g.title.toLowerCase().includes(this.searchQuery) ||
+        g.number.toLowerCase().includes(this.searchQuery) ||
+        g.source.name.toLowerCase().includes(this.searchQuery) ||
+        g.source.full_name.toLowerCase().includes(this.searchQuery);
+
+      return matchesFilter && matchesSearch;
+    });
+
+    // Update UI
+    this.updateFiltersUI();
+    this.updateListUI();
+  }
+
+  updateFiltersUI() {
+    document.querySelectorAll('.grant-filter').forEach(btn => {
+      btn.classList.toggle('grant-filter--active', btn.dataset.filter === this.activeFilter);
+    });
+  }
+
+  updateListUI() {
+    const list = document.getElementById('grant-list');
+    if (list) {
+      list.innerHTML = this.filteredData.map(g => this.renderCard(g)).join('');
+    }
   }
 
   formatAmount(amount) {
