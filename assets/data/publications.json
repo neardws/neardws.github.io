@@ -1,5 +1,57 @@
 [
   {
+    "id": "song2026csfusion",
+    "type": "conference",
+    "title": "CSFusion: Flexible Multi-Modal Image Fusion via Content-Style Cross Modulation",
+    "authors": [
+      "Yuansheng Song",
+      "Xin Ma",
+      "Xuqi Cai",
+      "Lixin Duan",
+      "Xincao Xu",
+      "Shaohua Wan"
+    ],
+    "venue": "ICASSP'26",
+    "venue_full": "IEEE International Conference on Acoustics, Speech and Signal Processing",
+    "location": "Barcelona, Spain",
+    "conf_date": "May 4-8, 2026",
+    "year": 2026,
+    "month": "May",
+    "tags": [
+      "CCF B"
+    ],
+    "doi": null,
+    "bib": null,
+    "scholar_id": null,
+    "github": null
+  },
+  {
+    "id": "cai2026fulltomissing",
+    "type": "conference",
+    "title": "Full-to-Missing Modality Knowledge Distillation for Multimodal 3D Semantic Segmentation",
+    "authors": [
+      "Xuqi Cai",
+      "Xin Ma",
+      "Yuansheng Song",
+      "Lixin Duan",
+      "Xincao Xu",
+      "Shaohua Wan"
+    ],
+    "venue": "ICASSP'26",
+    "venue_full": "IEEE International Conference on Acoustics, Speech and Signal Processing",
+    "location": "Barcelona, Spain",
+    "conf_date": "May 4-8, 2026",
+    "year": 2026,
+    "month": "May",
+    "tags": [
+      "CCF B"
+    ],
+    "doi": null,
+    "bib": null,
+    "scholar_id": null,
+    "github": null
+  },
+  {
     "id": "zhao2026prematching",
     "type": "journal",
     "title": "Pre-Matching Enhanced Hierarchical Double Auction for Collaborative Task Offloading in Vehicle-Edge-Cloud Systems",
