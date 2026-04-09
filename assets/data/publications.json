@@ -171,6 +171,22 @@
     "github": null
   },
   {
+    "id": "song2025wdfusion",
+    "type": "conference",
+    "title": "WDFusion: Multi-Modal Image Fusion via Wavelet-Decoupled Inter-Modal Interaction Learning",
+    "authors": ["Yuansheng Song", "Xin Ma", "Xuqi Cai", "Xincao Xu"],
+    "venue": "ECAI'25",
+    "venue_full": "European Conference on Artificial Intelligence",
+    "location": null,
+    "conf_date": null,
+    "year": 2025,
+    "tags": [],
+    "doi": "https://ebooks.iospress.nl/doi/10.3233/FAIA250807",
+    "bib": null,
+    "scholar_id": null,
+    "github": null
+  },
+  {
     "id": "wu2023quality",
     "type": "conference",
     "title": "Quality-Cost Trade-off on Constructing Logical Views for Vehicular Cyber-Physical Systems: A Deep Reinforcement Learning Approach",
