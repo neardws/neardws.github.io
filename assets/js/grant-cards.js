@@ -140,8 +140,8 @@ class GrantCards {
       Participant: this.data.filter(g => g.role !== 'PI').length
     };
     const roleTypes = [
-      { key: 'PI', label: '主持项目' },
-      { key: 'Participant', label: '参与项目' }
+      { key: 'PI', label: 'PI Projects' },
+      { key: 'Participant', label: 'Participated' }
     ];
     const roleBtns = roleTypes.map(t =>
       `<button class="grant-filter-btn grant-role-btn ${t.key === this.activeRoleFilter ? 'active' : ''}" data-role-filter="${t.key}">
