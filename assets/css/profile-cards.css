@@ -106,6 +106,20 @@
   font-size: 1em;
 }
 
+/* GitHub Avatar */
+.profile-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--profile-avatar-border, #e5e7eb);
+  transition: border-color 0.2s ease;
+}
+
+.profile-card:hover .profile-avatar {
+  border-color: var(--profile-avatar-hover, #0d9488);
+}
+
 /* Card Content */
 .profile-card-content {
   flex: 1;
@@ -384,6 +398,8 @@
     --profile-student: #2dd4bf;
     --profile-alumni: #818cf8;
     --profile-icon-bg: #374151;
+    --profile-avatar-border: #4b5563;
+    --profile-avatar-hover: #2dd4bf;
     --profile-year: #9ca3af;
     --profile-title: #f3f4f6;
     --profile-org: #d1d5db;

@@ -354,10 +354,15 @@ class ProfileCards {
       }
     }
 
+    // GitHub avatar or default icon
+    const avatarHtml = student.github
+      ? `<img src="https://github.com/${student.github}.png?size=64" alt="${student.name_en}" class="profile-avatar">`
+      : '<div class="profile-card-icon">👨‍🎓</div>';
+
     return `
       <div class="profile-card ${cardClass}">
         <div class="profile-card-left">
-          <div class="profile-card-icon">👨‍🎓</div>
+          ${avatarHtml}
           <div class="profile-card-year">${yearDisplay}</div>
         </div>
         <div class="profile-card-content">
