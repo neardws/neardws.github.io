@@ -9,6 +9,7 @@ class GrantCards {
     this.data = [];
     this.filteredData = [];
     this.activeFilter = 'all';
+    this.activeRoleFilter = 'all';
     this.searchQuery = '';
     this.container = null;
   }
@@ -106,40 +107,63 @@ class GrantCards {
   }
 
   renderLegend() {
-    // Compact inline legend like "JCR: ... SCI: ... CCF: ..."
-    const sources = [
-      { name: 'NSFC', full: 'National Natural Science Foundation of China' },
-      { name: 'GBABRF', full: 'Guangdong Basic and Applied Basic Research Foundation' },
-      { name: 'CPSF', full: 'China Postdoctoral Science Foundation' },
-      { name: 'SSTP', full: 'Shenzhen Science and Technology Program' },
-      { name: 'ERC', full: 'Engineering Research Center of Sustainable Urban Intelligent Transportation' }
-    ];
+    // Build legend dynamically from data, with links where available
+    const order = ['NSFC', 'GBABRF', 'CPSF', 'SSTP', 'ERC'];
+    const sourceMap = {};
+    this.data.forEach(g => {
+      if (!sourceMap[g.source.name]) sourceMap[g.source.name] = g.source;
+    });
+    const sources = order.filter(name => sourceMap[name]).map(name => sourceMap[name]);
 
     return `
       <div class="grant-legend">
-        ${sources.map(s => `<span class="grant-legend-item"><strong>${s.name}</strong>: ${s.full}</span>`).join('')}
+        ${sources.map(s => {
+          const abbr = s.url
+            ? `<a href="${s.url}" target="_blank" rel="noopener" class="grant-legend-link"><strong>${s.name}</strong></a>`
+            : `<strong>${s.name}</strong>`;
+          return `<span class="grant-legend-item">${abbr}: ${s.full_name}</span>`;
+        }).join('')}
       </div>
     `;
   }
 
   renderFilters(counts) {
     const filtersEl = document.getElementById('grant-filters');
-    // Order by importance: NSFC > GBABRF > CPSF > SSTP > ERC
-    const types = [
-      { key: 'all', label: 'All' },
+
+    // All button — active only when both source and role filters are cleared
+    const isAllActive = this.activeFilter === 'all' && this.activeRoleFilter === 'all';
+    const allBtn = `<button class="grant-filter-btn ${isAllActive ? 'active' : ''}" data-filter="all">All<span class="count">${counts.all || 0}</span></button>`;
+
+    // Role filter buttons (after All)
+    const roleCounts = {
+      PI: this.data.filter(g => g.role === 'PI').length,
+      Participant: this.data.filter(g => g.role !== 'PI').length
+    };
+    const roleTypes = [
+      { key: 'PI', label: '主持项目' },
+      { key: 'Participant', label: '参与项目' }
+    ];
+    const roleBtns = roleTypes.map(t =>
+      `<button class="grant-filter-btn grant-role-btn ${t.key === this.activeRoleFilter ? 'active' : ''}" data-role-filter="${t.key}">
+        ${t.label}<span class="count">${roleCounts[t.key] || 0}</span>
+      </button>`
+    ).join('');
+
+    // Source filter buttons (NSFC, GBABRF, etc.)
+    const sourceTypes = [
       { key: 'NSFC', label: 'NSFC' },
       { key: 'GBABRF', label: 'GBABRF' },
       { key: 'CPSF', label: 'CPSF' },
       { key: 'SSTP', label: 'SSTP' },
       { key: 'ERC', label: 'ERC' }
     ];
-
-    filtersEl.innerHTML = types.map(t =>
-      `<button class="grant-filter-btn ${t.key === this.activeFilter ? 'active' : ''}"
-        data-filter="${t.key}">
+    const sourceBtns = sourceTypes.map(t =>
+      `<button class="grant-filter-btn ${t.key === this.activeFilter ? 'active' : ''}" data-filter="${t.key}">
         ${t.label}<span class="count">${counts[t.key] || 0}</span>
       </button>`
     ).join('');
+
+    filtersEl.innerHTML = allBtn + roleBtns + `<span class="grant-filter-separator"></span>` + sourceBtns;
   }
 
   renderCard(grant) {
@@ -198,10 +222,19 @@ class GrantCards {
   }
 
   bindEvents() {
-    // Filter buttons
-    document.querySelectorAll('.grant-filter-btn').forEach(btn => {
+    // Source filter buttons (data-filter attribute)
+    document.querySelectorAll('.grant-filter-btn[data-filter]').forEach(btn => {
       btn.addEventListener('click', () => {
         this.activeFilter = btn.dataset.filter;
+        if (btn.dataset.filter === 'all') this.activeRoleFilter = 'all';
+        this.applyFilters();
+      });
+    });
+
+    // Role filter buttons (data-role-filter attribute)
+    document.querySelectorAll('.grant-filter-btn[data-role-filter]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        this.activeRoleFilter = btn.dataset.roleFilter;
         this.applyFilters();
       });
     });
@@ -218,27 +251,32 @@ class GrantCards {
 
   applyFilters() {
     this.filteredData = this.data.filter(g => {
-      // Filter by source
       const matchesFilter = this.activeFilter === 'all' || g.source.name === this.activeFilter;
-
-      // Filter by search query
+      const matchesRole = this.activeRoleFilter === 'all' ||
+        (this.activeRoleFilter === 'PI' ? g.role === 'PI' : g.role !== 'PI');
       const matchesSearch = !this.searchQuery ||
         g.title.toLowerCase().includes(this.searchQuery) ||
         g.number.toLowerCase().includes(this.searchQuery) ||
         g.source.name.toLowerCase().includes(this.searchQuery) ||
         g.source.full_name.toLowerCase().includes(this.searchQuery);
-
-      return matchesFilter && matchesSearch;
+      return matchesFilter && matchesRole && matchesSearch;
     });
 
-    // Update UI
     this.updateFiltersUI();
     this.updateListUI();
   }
 
   updateFiltersUI() {
-    document.querySelectorAll('.grant-filter-btn').forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.filter === this.activeFilter);
+    const isAllActive = this.activeFilter === 'all' && this.activeRoleFilter === 'all';
+    document.querySelectorAll('.grant-filter-btn[data-filter]').forEach(btn => {
+      if (btn.dataset.filter === 'all') {
+        btn.classList.toggle('active', isAllActive);
+      } else {
+        btn.classList.toggle('active', btn.dataset.filter === this.activeFilter);
+      }
+    });
+    document.querySelectorAll('.grant-filter-btn[data-role-filter]').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.roleFilter === this.activeRoleFilter);
     });
   }
 
