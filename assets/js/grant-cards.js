@@ -177,7 +177,7 @@ class GrantCards {
 
     const roleTag = grant.role === 'PI'
       ? '<span class="grant-role-tag grant-role-tag--pi">PI</span>'
-      : '';
+      : '<span class="grant-role-tag grant-role-tag--participant">Participant</span>';
 
     const noteHtml = grant.note
       ? `<div class="grant-note">${grant.note}</div>`
@@ -195,11 +195,11 @@ class GrantCards {
         <div class="grant-card-content">
           <div class="grant-card-header">
             <span class="grant-source-name">${grant.source.name}</span>
-            ${roleTag}
             <span class="grant-type">${grant.type}</span>
           </div>
           <div class="grant-title">${grant.title}</div>
           <div class="grant-meta">
+            ${roleTag}
             <span class="grant-number">${grant.number}</span>
             <span class="grant-amount">${grant.amount}</span>
             <span class="grant-period">${grant.period}</span>

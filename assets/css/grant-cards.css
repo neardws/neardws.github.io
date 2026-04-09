@@ -261,6 +261,11 @@
   color: var(--grant-pi-tag-text, #92400e);
 }
 
+.grant-role-tag--participant {
+  background: var(--grant-participant-tag-bg, #dbeafe);
+  color: var(--grant-participant-tag-text, #1e40af);
+}
+
 .grant-type {
   font-size: 0.9em;
   color: var(--grant-type, #6b7280);
@@ -344,6 +349,8 @@
     --grant-source-name: #d1d5db;
     --grant-pi-tag-bg: #78350f;
     --grant-pi-tag-text: #fef3c7;
+    --grant-participant-tag-bg: #1e3a5f;
+    --grant-participant-tag-text: #bfdbfe;
     --grant-type: #9ca3af;
     --grant-title: #f3f4f6;
     --grant-meta: #9ca3af;
