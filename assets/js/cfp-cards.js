@@ -130,7 +130,7 @@ class CFPCards {
     return `
       <tr class="${rowClass}">
         <td class="cfp-td-deadline">${deadlineHtml}</td>
-        <td class="cfp-td-date">${this.escapeHtml(conf.date) || '<span class="cfp-na">TBD</span>'}</td>
+        <td class="cfp-td-date">${this.escapeHtml(this.normalizeConfDate(conf.date)) || '<span class="cfp-na">TBD</span>'}</td>
         <td class="cfp-td-conf">
           ${confNameHtml}
           <span class="cfp-conf-desc">${confDesc}</span>
@@ -183,6 +183,15 @@ class CFPCards {
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;');
+  }
+
+  // Normalize month names to title case (e.g. "FEBRUARY" → "February")
+  normalizeConfDate(str) {
+    if (!str) return str;
+    return String(str).replace(
+      /\b(JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER|NOVEMBER|DECEMBER)\b/g,
+      m => m[0] + m.slice(1).toLowerCase()
+    );
   }
 
   bindEvents() {
