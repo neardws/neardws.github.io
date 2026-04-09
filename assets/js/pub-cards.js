@@ -44,6 +44,9 @@
           this.scholarStats = scholarRes.value.publications;
         }
 
+        // Sort all publications by year descending (newest first)
+        this.data.sort((a, b) => b.year - a.year);
+
         this.filteredData = [...this.data];
         this.render();
       } catch (e) {
