@@ -3,6 +3,8 @@
 
 # 🏫 Teaching
 
+He is also a supervisor of Master's students at UESTC.
+
 ## 🧑‍🏫 Homeroom Teacher
 
 1. Homeroom Teacher for STEM Education, Shenzhen Longhua S&T Experimental High School, May 2025 - May 2028.
