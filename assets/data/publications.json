@@ -1,5 +1,27 @@
 [
   {
+    "id": "zhao2026prematching",
+    "type": "journal",
+    "title": "Pre-Matching Enhanced Hierarchical Double Auction for Collaborative Task Offloading in Vehicle-Edge-Cloud Systems",
+    "authors": [
+      "Kangli Zhao",
+      "Xincao Xu*",
+      "Penglin Dai",
+      "Huanlai Xing",
+      "Xiao Wu"
+    ],
+    "venue": "IEEE TNSE",
+    "venue_full": "IEEE Transactions on Network Science and Engineering",
+    "year": 2026,
+    "tags": [
+      "Early Access"
+    ],
+    "doi": "https://ieeexplore.ieee.org/document/11455352",
+    "bib": null,
+    "scholar_id": null,
+    "github": null
+  },
+  {
     "id": "dai2025joint",
     "type": "journal",
     "title": "Joint Optimization of Device Placement and Model Partitioning for Cooperative DNN Inference in Heterogeneous Edge Computing",
