@@ -1,0 +1,464 @@
+/**
+ * Profile Cards Styles
+ * Unified styling for experience and students sections
+ * Style matches grant-cards - font sizes aligned
+ */
+
+/* Container */
+.profile-container {
+  margin-top: 1rem;
+  font-size: 0.92em;
+}
+
+/* Stats Bar - matches grant-stats style */
+.profile-stats {
+  display: flex;
+  gap: 1.5em;
+  margin-bottom: 1.2em;
+  padding: 10px 16px;
+  background: var(--profile-stats-bg, #f8f9fa);
+  border-radius: 8px;
+  font-size: 1em;
+  flex-wrap: wrap;
+}
+
+.profile-stat {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile-stat-value {
+  font-weight: 700;
+  font-size: 1.1em;
+  color: var(--profile-stat-value, #2563eb);
+}
+
+.profile-stat-label {
+  color: var(--profile-stat-label, #6b7280);
+}
+
+/* Card List */
+.profile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Compact list for membership */
+.profile-list--compact {
+  gap: 0.5rem;
+}
+
+/* Profile Card - base styling */
+.profile-card {
+  display: flex;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--profile-card-bg, #ffffff);
+  border: 1px solid var(--profile-card-border, #e5e7eb);
+  border-left: 3px solid var(--profile-card-border-left, #d1d5db);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.profile-card:hover {
+  box-shadow: var(--profile-hover-shadow, 0 2px 8px rgba(0, 0, 0, 0.08));
+}
+
+/* Compact card for membership */
+.profile-card--compact {
+  padding: 0.5rem 0.8rem;
+}
+
+/* Hover colors by section type */
+.profile-card--work:hover { border-left-color: var(--profile-work, #2563eb); }
+.profile-card--education:hover { border-left-color: var(--profile-education, #8b5cf6); }
+.profile-card--membership:hover { border-left-color: var(--profile-membership, #10b981); }
+.profile-card--award:hover { border-left-color: var(--profile-award, #f59e0b); }
+.profile-card--student:hover { border-left-color: var(--profile-student, #0d9488); }
+.profile-card--alumni:hover { border-left-color: var(--profile-alumni, #6366f1); }
+
+/* Card Left (Icon/Year) */
+.profile-card-left {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  width: 50px;
+}
+
+.profile-card-year {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--profile-year, #6b7280);
+}
+
+.profile-card-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--profile-icon-bg, #e5e7eb);
+  border-radius: 50%;
+  font-size: 1em;
+}
+
+/* Card Content */
+.profile-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.35rem;
+}
+
+/* Title/Position */
+.profile-title {
+  font-weight: 600;
+  font-size: 1em;
+  color: var(--profile-title, #1f2937);
+}
+
+/* Organization/Institution */
+.profile-org {
+  font-size: 1em;
+  color: var(--profile-org, #374151);
+  margin-bottom: 0.25rem;
+}
+
+.profile-org a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.profile-org a:hover {
+  color: var(--profile-link-hover, #2563eb);
+  text-decoration: underline;
+}
+
+/* Meta info (location, period, etc.) */
+.profile-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 1em;
+  color: var(--profile-meta, #6b7280);
+}
+
+.profile-location {
+  color: var(--profile-location, #6b7280);
+}
+
+.profile-period {
+  color: var(--profile-period, #6b7280);
+}
+
+/* Status tags */
+.profile-status-tag {
+  padding: 0.1rem 0.5rem;
+  font-size: 0.85em;
+  font-weight: 600;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.profile-status-tag--current {
+  background: var(--profile-current-bg, #dcfce7);
+  color: var(--profile-current-text, #166534);
+}
+
+.profile-status-tag--alumni {
+  background: var(--profile-alumni-bg, #e0e7ff);
+  color: var(--profile-alumni-text, #3730a3);
+}
+
+.profile-status-tag--active {
+  background: var(--profile-active-bg, #dcfce7);
+  color: var(--profile-active-text, #166534);
+}
+
+/* Degree tag */
+.profile-degree-tag {
+  padding: 0.1rem 0.4rem;
+  font-size: 0.9em;
+  font-weight: 600;
+  border-radius: 3px;
+  background: var(--profile-degree-bg, #dbeafe);
+  color: var(--profile-degree-text, #1e40af);
+}
+
+/* Award type tag */
+.profile-award-tag {
+  padding: 0.1rem 0.4rem;
+  font-size: 0.85em;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.profile-award-tag--dissertation {
+  background: var(--profile-dissertation-bg, #fef3c7);
+  color: var(--profile-dissertation-text, #92400e);
+}
+
+.profile-award-tag--paper {
+  background: var(--profile-paper-bg, #dbeafe);
+  color: var(--profile-paper-text, #1e40af);
+}
+
+/* Note text */
+.profile-note {
+  margin-top: 0.35rem;
+  font-size: 0.9em;
+  color: var(--profile-note, #6b7280);
+  font-style: italic;
+}
+
+/* Supervisor/Co-advisor info */
+.profile-supervisor {
+  font-size: 0.95em;
+  color: var(--profile-supervisor, #6b7280);
+}
+
+.profile-supervisor a {
+  color: var(--profile-supervisor-link, #2563eb);
+  text-decoration: none;
+}
+
+.profile-supervisor a:hover {
+  text-decoration: underline;
+}
+
+/* Membership specific - abbreviation highlight */
+.profile-abbr {
+  font-weight: 600;
+  color: var(--profile-abbr, #374151);
+}
+
+.profile-level {
+  font-size: 0.9em;
+  color: var(--profile-level, #6b7280);
+}
+
+/* Student specific styles */
+.profile-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.4rem;
+  align-items: center;
+}
+
+.profile-github-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.15rem 0.5rem;
+  background: var(--profile-github-bg, #24292e);
+  color: var(--profile-github-text, #ffffff);
+  border-radius: 4px;
+  font-size: 0.85em;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.profile-github-badge:hover {
+  background: var(--profile-github-hover, #444d56);
+  color: var(--profile-github-text, #ffffff);
+}
+
+.profile-github-badge svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.profile-email {
+  font-size: 0.9em;
+  color: var(--profile-email, #6b7280);
+}
+
+.profile-email a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.profile-email a:hover {
+  color: var(--profile-link-hover, #2563eb);
+  text-decoration: underline;
+}
+
+/* Alumni specific - dissertation and first job */
+.profile-alumni-details {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--profile-border-dashed, #e5e7eb);
+  font-size: 0.92em;
+}
+
+.profile-dissertation {
+  color: var(--profile-dissertation, #374151);
+  margin-bottom: 0.25rem;
+}
+
+.profile-dissertation-label {
+  font-weight: 500;
+  color: var(--profile-label, #6b7280);
+}
+
+.profile-first-job {
+  color: var(--profile-first-job, #374151);
+}
+
+.profile-first-job a {
+  color: var(--profile-link, #2563eb);
+  text-decoration: none;
+}
+
+.profile-first-job a:hover {
+  text-decoration: underline;
+}
+
+/* Filters (for students page) */
+.profile-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 1rem;
+}
+
+.profile-filter-btn {
+  padding: 5px 14px;
+  border: 1px solid var(--profile-filter-border, #d1d5db);
+  border-radius: 20px;
+  background: var(--profile-filter-bg, #f9fafb);
+  color: inherit;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  user-select: none;
+}
+
+.profile-filter-btn .count {
+  margin-left: 4px;
+  font-size: 0.85em;
+  opacity: 0.7;
+}
+
+.profile-filter-btn:hover {
+  border-color: var(--profile-filter-hover-border, #0d9488);
+  color: var(--profile-filter-hover-text, #0d9488);
+}
+
+.profile-filter-btn.active {
+  background: var(--profile-filter-active-bg, #0d9488);
+  color: var(--profile-filter-active-text, #ffffff);
+  border-color: var(--profile-filter-active-border, #0d9488);
+}
+
+.profile-filter-btn.active .count {
+  opacity: 1;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --profile-stats-bg: #1f2937;
+    --profile-stat-value: #60a5fa;
+    --profile-stat-label: #9ca3af;
+    --profile-card-bg: #1f2937;
+    --profile-card-border: #374151;
+    --profile-card-border-left: #4b5563;
+    --profile-hover-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --profile-work: #60a5fa;
+    --profile-education: #a78bfa;
+    --profile-membership: #34d399;
+    --profile-award: #fbbf24;
+    --profile-student: #2dd4bf;
+    --profile-alumni: #818cf8;
+    --profile-icon-bg: #374151;
+    --profile-year: #9ca3af;
+    --profile-title: #f3f4f6;
+    --profile-org: #d1d5db;
+    --profile-meta: #9ca3af;
+    --profile-location: #9ca3af;
+    --profile-period: #9ca3af;
+    --profile-current-bg: #064e3b;
+    --profile-current-text: #a7f3d0;
+    --profile-alumni-bg: #312e81;
+    --profile-alumni-text: #c7d2fe;
+    --profile-active-bg: #064e3b;
+    --profile-active-text: #a7f3d0;
+    --profile-degree-bg: #1e3a5f;
+    --profile-degree-text: #bfdbfe;
+    --profile-dissertation-bg: #78350f;
+    --profile-dissertation-text: #fef3c7;
+    --profile-paper-bg: #1e3a5f;
+    --profile-paper-text: #bfdbfe;
+    --profile-note: #9ca3af;
+    --profile-supervisor: #9ca3af;
+    --profile-supervisor-link: #60a5fa;
+    --profile-abbr: #d1d5db;
+    --profile-level: #9ca3af;
+    --profile-github-bg: #374151;
+    --profile-github-text: #f3f4f6;
+    --profile-github-hover: #4b5563;
+    --profile-email: #9ca3af;
+    --profile-link-hover: #60a5fa;
+    --profile-border-dashed: #4b5563;
+    --profile-dissertation: #d1d5db;
+    --profile-label: #9ca3af;
+    --profile-first-job: #d1d5db;
+    --profile-link: #60a5fa;
+    --profile-filter-border: #4b5563;
+    --profile-filter-bg: #374151;
+    --profile-filter-hover-border: #2dd4bf;
+    --profile-filter-hover-text: #2dd4bf;
+    --profile-filter-active-bg: #0d9488;
+    --profile-filter-active-text: #ffffff;
+    --profile-filter-active-border: #0d9488;
+  }
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .profile-stats {
+    gap: 1em;
+    padding: 8px 12px;
+  }
+
+  .profile-card {
+    padding: 0.6rem 0.8rem;
+    gap: 0.75rem;
+    flex-direction: column;
+  }
+
+  .profile-card--compact {
+    flex-direction: row;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .profile-card-left {
+    width: auto;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .profile-meta {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .profile-contact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+}

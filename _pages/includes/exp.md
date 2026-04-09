@@ -1,32 +1,19 @@
+<link rel="stylesheet" href="/assets/css/profile-cards.css">
+<script src="/assets/js/profile-cards.js" defer></script>
+
 # 👨🏻‍💻 Experience
 
 ## 💼 Work
 
-- **Sep 2025 - Dec 2028 (now)**: Associate Researcher, Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China, Shenzhen, China.
-- **Jul 2023 - Aug 2025**: Postdoctoral Research Fellow, Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China, Shenzhen, China.
+<div id="work-container"><p>Loading...</p></div>
 
 ## 🎓 Education
 
-- **Sep 2019 - Jun 2023**: Ph.D. in Computer Science, College of Computer Science, Chongqing University, Chongqing, China. Supervised by Prof. <a href="https://scholar.google.com/citations?user=6YkCbT8AAAAJ" class="no-underline">Kai Liu</a>.
-- **Sep 2017 - Jun 2019**: Postgraduate student (Joined the successive postgraduate-doctor program in 2019), Computer Science, College of Computer Science, Chongqing University, Chongqing, China.
-- **Sep 2013 - Jun 2017**: Bachelor in Network Engineering, College of Computer and Control Engineering, North University of China, Taiyuan, China.
+<div id="education-container"><p>Loading...</p></div>
 
 ## 😎 Membership
 
-- **Jun 2025 - now**: Member, China Intelligent Transportation Systems Association (ITS China).
-- **Jun 2025 - now**: Member, China Society of Image and Graphics (CSIG).
-- **Jun 2025 - now**: Member, China Society of Automotive Engineers (China SAE).
-- **Jun 2025 - now**: Member, Chinese Association of Automation (CAA).
-- **Jun 2025 - now**: Member, Chinese Association for Artificial Intelligence (CAAI).
-- **May 2025 - now**: Member, Asia-Pacific Association of Cognitive Intelligence (AACI).
-- **Apr 2025 - now**: Member, Chinese Institute of Electronics (CIE).
-- **Sep 2023 - now**: Member, CCF Technical Committee of Intelligent Vehicle (CCF TCIV).
-- **Sep 2023 - now**: Member, CCF Technical Committee of Network and Data Communication (CCF TCCOMM).
-- **Sep 2023 - now**: Member, CCF Technical Committee of Internet of Things (CCF TCIoT).
-- **Sep 2023 - now**: Member, China Computer Federation (CCF).
-- **Oct 2023 - now**: Member, Association for Computing Machinery (ACM).
-- **Sep 2023 - now**: Member, Institute of Electrical and Electronics Engineers (IEEE).
-- **Nov 2020 - Aug 2023**: Student Member, China Computer Federation (CCF).
+<div id="membership-container"><p>Loading...</p></div>
 
 ## 🤝 Services
 
@@ -67,7 +54,4 @@
 
 ## 🏆 Awards
 
-- Asia-Pacific Association of Cognitive Intelligence (AACI) \| Outstanding PhD Dissertation Award \| 2025
-- International Conference on Neural Computing for Advanced Applications (NCAA'20) \| Best Paper Award Finalist \| 2020
-- China Conference on Internet of Things (Wireless Sensor Network) (CWSN'20) \| Best Paper Award Finalist \| 2020
-- IEEE International Symposium on Product Compliance Engineering-Asia (IEEE ISPCE-AS'18) \| Best Paper Award \| 2018
+<div id="awards-container"><p>Loading...</p></div>

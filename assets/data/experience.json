@@ -1,0 +1,216 @@
+{
+  "work": [
+    {
+      "id": "uestc-associate",
+      "title": "Associate Researcher",
+      "organization": "Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China",
+      "location": "Shenzhen, China",
+      "start_date": "Sep 2025",
+      "end_date": "Dec 2028",
+      "current": true
+    },
+    {
+      "id": "uestc-postdoc",
+      "title": "Postdoctoral Research Fellow",
+      "organization": "Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China",
+      "location": "Shenzhen, China",
+      "start_date": "Jul 2023",
+      "end_date": "Aug 2025",
+      "current": false
+    }
+  ],
+  "education": [
+    {
+      "id": "cqu-phd",
+      "degree": "Ph.D.",
+      "field": "Computer Science",
+      "institution": "College of Computer Science, Chongqing University",
+      "location": "Chongqing, China",
+      "start_date": "Sep 2019",
+      "end_date": "Jun 2023",
+      "supervisor": {
+        "name": "Kai Liu",
+        "title": "Prof.",
+        "url": "https://scholar.google.com/citations?user=6YkCbT8AAAAJ"
+      }
+    },
+    {
+      "id": "cqu-ms",
+      "degree": "Postgraduate",
+      "field": "Computer Science",
+      "institution": "College of Computer Science, Chongqing University",
+      "location": "Chongqing, China",
+      "start_date": "Sep 2017",
+      "end_date": "Jun 2019",
+      "note": "Joined the successive postgraduate-doctor program in 2019"
+    },
+    {
+      "id": "nuc-bs",
+      "degree": "Bachelor",
+      "field": "Network Engineering",
+      "institution": "College of Computer and Control Engineering, North University of China",
+      "location": "Taiyuan, China",
+      "start_date": "Sep 2013",
+      "end_date": "Jun 2017"
+    }
+  ],
+  "membership": [
+    {
+      "id": "its-china",
+      "organization": "China Intelligent Transportation Systems Association",
+      "abbreviation": "ITS China",
+      "url": null,
+      "start_date": "Jun 2025",
+      "current": true,
+      "level": "Member"
+    },
+    {
+      "id": "csig",
+      "organization": "China Society of Image and Graphics",
+      "abbreviation": "CSIG",
+      "url": null,
+      "start_date": "Jun 2025",
+      "current": true,
+      "level": "Member"
+    },
+    {
+      "id": "china-sae",
+      "organization": "China Society of Automotive Engineers",
+      "abbreviation": "China SAE",
+      "url": null,
+      "start_date": "Jun 2025",
+      "current": true,
+      "level": "Member"
+    },
+    {
+      "id": "caa",
+      "organization": "Chinese Association of Automation",
+      "abbreviation": "CAA",
+      "url": null,
+      "start_date": "Jun 2025",
+      "current": true,
+      "level": "Member"
+    },
+    {
+      "id": "caai",
+      "organization": "Chinese Association for Artificial Intelligence",
+      "abbreviation": "CAAI",
+      "url": null,
+      "start_date": "Jun 2025",
+      "current": true,
+      "level": "Member"
+    },
+    {
+      "id": "aaci",
+      "organization": "Asia-Pacific Association of Cognitive Intelligence",
+      "abbreviation": "AACI",
+      "url": null,
+      "start_date": "May 2025",
+      "current": true,
+      "level": "Member"
+    },
+    {
+      "id": "cie",
+      "organization": "Chinese Institute of Electronics",
+      "abbreviation": "CIE",
+      "url": null,
+      "start_date": "Apr 2025",
+      "current": true,
+      "level": "Member"
+    },
+    {
+      "id": "ccf-tciv",
+      "organization": "CCF Technical Committee of Intelligent Vehicle",
+      "abbreviation": "CCF TCIV",
+      "url": null,
+      "start_date": "Sep 2023",
+      "current": true,
+      "level": "Member"
+    },
+    {
+      "id": "ccf-tccomm",
+      "organization": "CCF Technical Committee of Network and Data Communication",
+      "abbreviation": "CCF TCCOMM",
+      "url": null,
+      "start_date": "Sep 2023",
+      "current": true,
+      "level": "Member"
+    },
+    {
+      "id": "ccf-tciot",
+      "organization": "CCF Technical Committee of Internet of Things",
+      "abbreviation": "CCF TCIoT",
+      "url": null,
+      "start_date": "Sep 2023",
+      "current": true,
+      "level": "Member"
+    },
+    {
+      "id": "ccf",
+      "organization": "China Computer Federation",
+      "abbreviation": "CCF",
+      "url": null,
+      "start_date": "Sep 2023",
+      "current": true,
+      "level": "Member"
+    },
+    {
+      "id": "acm",
+      "organization": "Association for Computing Machinery",
+      "abbreviation": "ACM",
+      "url": null,
+      "start_date": "Oct 2023",
+      "current": true,
+      "level": "Member"
+    },
+    {
+      "id": "ieee",
+      "organization": "Institute of Electrical and Electronics Engineers",
+      "abbreviation": "IEEE",
+      "url": null,
+      "start_date": "Sep 2023",
+      "current": true,
+      "level": "Member"
+    },
+    {
+      "id": "ccf-student",
+      "organization": "China Computer Federation",
+      "abbreviation": "CCF",
+      "url": null,
+      "start_date": "Nov 2020",
+      "end_date": "Aug 2023",
+      "current": false,
+      "level": "Student Member"
+    }
+  ],
+  "awards": [
+    {
+      "id": "aaci-phd-2025",
+      "name": "Outstanding PhD Dissertation Award",
+      "issuer": "Asia-Pacific Association of Cognitive Intelligence (AACI)",
+      "year": 2025,
+      "type": "dissertation"
+    },
+    {
+      "id": "ncaa-2020",
+      "name": "Best Paper Award Finalist",
+      "issuer": "International Conference on Neural Computing for Advanced Applications (NCAA'20)",
+      "year": 2020,
+      "type": "paper"
+    },
+    {
+      "id": "cwsn-2020",
+      "name": "Best Paper Award Finalist",
+      "issuer": "China Conference on Internet of Things (Wireless Sensor Network) (CWSN'20)",
+      "year": 2020,
+      "type": "paper"
+    },
+    {
+      "id": "ispce-2018",
+      "name": "Best Paper Award",
+      "issuer": "IEEE International Symposium on Product Compliance Engineering-Asia (IEEE ISPCE-AS'18)",
+      "year": 2018,
+      "type": "paper"
+    }
+  ]
+}

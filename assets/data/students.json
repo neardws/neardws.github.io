@@ -1,0 +1,166 @@
+[
+  {
+    "id": "hechun",
+    "name_en": "Chun He",
+    "name_cn": "\u4f55\u6625",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "ConorHe",
+    "email": "hechunconor@my.swjtu.edu.cn",
+    "status": "current",
+    "start_year": 2023,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "zhouzijie",
+    "name_en": "Zijie Zhou",
+    "name_cn": "\u5468\u5b50\u6770",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "Damon-v",
+    "email": "zzj1921@my.swjtu.edu.cn",
+    "status": "current",
+    "start_year": 2023,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "xiaolin",
+    "name_en": "Lin Xiao",
+    "name_cn": "\u8096\u6797",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "xiaolin121386",
+    "email": "xlin@my.swjtu.edu.cn",
+    "status": "current",
+    "start_year": 2024,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "lifulian",
+    "name_en": "Fulian Li",
+    "name_cn": "\u674e\u5bcc\u8fde",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "97php",
+    "email": "fulianli@my.swjtu.edu.cn",
+    "status": "current",
+    "start_year": 2024,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "lijie",
+    "name_en": "Jie Li",
+    "name_cn": "\u674e\u6770",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "ligenshuo",
+    "email": "li2839213997@my.swjtu.edu.cn",
+    "status": "current",
+    "start_year": 2024,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "renziqiang",
+    "name_en": "Ziqiang Ren",
+    "name_cn": "\u4efb\u81ea\u5f3a",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "kkluv",
+    "email": "1667949917@my.swjtu.edu.cn",
+    "status": "current",
+    "start_year": 2024,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "zhangpengju",
+    "name_en": "Pengju Zhang",
+    "name_cn": "\u5f20\u9e4f\u4e3e",
+    "degree": "Undergraduate",
+    "field": "Materials Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "KiteAB98",
+    "email": "2959876685@qq.com",
+    "status": "current",
+    "start_year": 2024,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "wujunyuan",
+    "name_en": "Junyuan Wu",
+    "name_cn": "\u5434\u5cfb\u6e90",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Chongqing University",
+    "co_advisor": {
+      "name": "Kai Liu",
+      "title": "Prof.",
+      "institution": "Chongqing University"
+    },
+    "github": "hitmachineWu",
+    "email": "1024038920@qq.com",
+    "status": "alumni",
+    "start_year": 2022,
+    "graduation_year": 2025,
+    "dissertation_title": "Research on Key Technologies for Resource Scheduling and Model Deployment in Vehicular Digital Twins",
+    "first_job": {
+      "title": "Development Engineer in Autonomous Driving Simulation",
+      "company": "Zelostech (Suzhou) Co., Ltd.",
+      "url": "https://zelostech.ai/"
+    }
+  }
+]
