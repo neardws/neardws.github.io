@@ -1,0 +1,285 @@
+/**
+ * Grant Cards Styles
+ */
+
+/* Container */
+#grant-container {
+  margin-top: 1rem;
+}
+
+/* Stats Bar */
+.grant-stats {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
+  background: var(--grant-stats-bg, #f8f9fa);
+  border-radius: 8px;
+}
+
+.grant-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grant-stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--grant-stat-value, #2563eb);
+}
+
+.grant-stat-label {
+  font-size: 0.85rem;
+  color: var(--grant-stat-label, #6b7280);
+}
+
+/* Sources Legend */
+.grant-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: var(--grant-sources-bg, #f8f9fa);
+  border-radius: 8px;
+}
+
+.grant-source-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.grant-source-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.grant-source-icon-text {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--grant-icon-bg, #e5e7eb);
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--grant-icon-text, #374151);
+}
+
+.grant-source-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: inherit;
+}
+
+.grant-source-link:hover {
+  color: var(--grant-link-hover, #2563eb);
+}
+
+/* Section Title */
+.grant-section-title {
+  margin: 2rem 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--grant-section-title, #374151);
+}
+
+/* Grant List */
+.grant-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Grant Card */
+.grant-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--grant-card-bg, #ffffff);
+  border: 1px solid var(--grant-card-border, #e5e7eb);
+  border-left: 4px solid var(--grant-card-border-left, #d1d5db);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.grant-card:hover {
+  box-shadow: var(--grant-hover-shadow, 0 4px 12px rgba(0, 0, 0, 0.08));
+  border-left-color: var(--grant-accent, #2563eb);
+}
+
+/* PI cards have different left border */
+.grant-card--pi {
+  border-left-color: var(--grant-pi-border, #f59e0b);
+}
+
+.grant-card--pi:hover {
+  border-left-color: var(--grant-pi-accent, #d97706);
+}
+
+/* Card Left (Icon) */
+.grant-card-left {
+  flex-shrink: 0;
+}
+
+.grant-card-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.grant-card-icon-placeholder {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--grant-icon-bg, #e5e7eb);
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--grant-icon-text, #374151);
+}
+
+/* Card Content */
+.grant-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.grant-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.grant-source-name {
+  font-weight: 600;
+  color: var(--grant-source-name, #374151);
+}
+
+.grant-role-tag {
+  padding: 0.15rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.grant-role-tag--pi {
+  background: var(--grant-pi-tag-bg, #fef3c7);
+  color: var(--grant-pi-tag-text, #92400e);
+}
+
+.grant-type {
+  font-size: 0.85rem;
+  color: var(--grant-type, #6b7280);
+}
+
+.grant-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--grant-title, #1f2937);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.grant-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--grant-meta, #6b7280);
+}
+
+.grant-number {
+  font-family: monospace;
+  background: var(--grant-number-bg, #f3f4f6);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+.grant-amount {
+  font-weight: 500;
+  color: var(--grant-amount, #059669);
+}
+
+.grant-period {
+  color: var(--grant-period, #6b7280);
+}
+
+.grant-note {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--grant-note, #6b7280);
+  font-style: italic;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --grant-stats-bg: #1f2937;
+    --grant-stat-value: #60a5fa;
+    --grant-stat-label: #9ca3af;
+    --grant-sources-bg: #1f2937;
+    --grant-icon-bg: #374151;
+    --grant-icon-text: #d1d5db;
+    --grant-link-hover: #60a5fa;
+    --grant-section-title: #d1d5db;
+    --grant-card-bg: #1f2937;
+    --grant-card-border: #374151;
+    --grant-card-border-left: #4b5563;
+    --grant-hover-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    --grant-accent: #60a5fa;
+    --grant-pi-border: #f59e0b;
+    --grant-pi-accent: #fbbf24;
+    --grant-source-name: #d1d5db;
+    --grant-pi-tag-bg: #78350f;
+    --grant-pi-tag-text: #fef3c7;
+    --grant-type: #9ca3af;
+    --grant-title: #f3f4f6;
+    --grant-meta: #9ca3af;
+    --grant-number-bg: #374151;
+    --grant-amount: #34d399;
+    --grant-period: #9ca3af;
+    --grant-note: #9ca3af;
+  }
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .grant-stats {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .grant-stat {
+    flex: 1;
+    min-width: 80px;
+  }
+
+  .grant-card {
+    padding: 0.75rem 1rem;
+  }
+
+  .grant-card-icon,
+  .grant-card-icon-placeholder {
+    width: 32px;
+    height: 32px;
+  }
+
+  .grant-meta {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
