@@ -8,6 +8,7 @@ class ProfileCards {
     this.experienceData = null;
     this.studentsData = null;
     this.activeStudentFilter = 'all';
+    this.activeReviewerFilter = 'all';
   }
 
   async init() {
@@ -15,7 +16,8 @@ class ProfileCards {
     const hasExperience = document.getElementById('work-container') ||
                           document.getElementById('education-container') ||
                           document.getElementById('membership-container') ||
-                          document.getElementById('awards-container');
+                          document.getElementById('awards-container') ||
+                          document.getElementById('reviewer-container');
     const hasStudents = document.getElementById('students-container');
 
     const promises = [];
@@ -38,6 +40,7 @@ class ProfileCards {
       this.renderEducation();
       this.renderMembership();
       this.renderAwards();
+      this.renderReviewers();
     } catch (e) {
       console.warn('Failed to load experience data:', e);
     }
@@ -246,6 +249,154 @@ class ProfileCards {
         </div>
       </div>
     `;
+  }
+
+  // ==================== Reviewers Section ====================
+  renderReviewers() {
+    const container = document.getElementById('reviewer-container');
+    if (!container || !this.experienceData?.reviewers) return;
+
+    const reviewers = this.experienceData.reviewers;
+    const journalCount = reviewers.filter(r => r.type === 'journal').length;
+    const conferenceCount = reviewers.filter(r => r.type === 'conference').length;
+
+    const counts = {
+      all: reviewers.length,
+      journal: journalCount,
+      conference: conferenceCount
+    };
+
+    container.innerHTML = `
+      <div class="profile-container">
+        <div class="profile-stats">
+          <div class="profile-stat">
+            <span class="profile-stat-value">${journalCount}</span>
+            <span class="profile-stat-label">Journal Reviews</span>
+          </div>
+          <div class="profile-stat">
+            <span class="profile-stat-value">${conferenceCount}</span>
+            <span class="profile-stat-label">Conference Reviews</span>
+          </div>
+        </div>
+        <div class="profile-filters" id="reviewer-filters"></div>
+        <div class="profile-list" id="reviewer-list"></div>
+      </div>
+    `;
+
+    this.renderReviewerFilters(counts);
+    this.updateReviewersList();
+    this.bindReviewerEvents();
+  }
+
+  renderReviewerFilters(counts) {
+    const filtersEl = document.getElementById('reviewer-filters');
+    if (!filtersEl) return;
+
+    const filters = [
+      { key: 'all', label: 'All', count: counts.all },
+      { key: 'journal', label: 'Journal', count: counts.journal },
+      { key: 'conference', label: 'Conference', count: counts.conference }
+    ];
+
+    filtersEl.innerHTML = filters.map(f =>
+      `<button class="profile-filter-btn ${f.key === this.activeReviewerFilter ? 'active' : ''}" data-filter="${f.key}">
+        ${f.label}<span class="count">${f.count}</span>
+      </button>`
+    ).join('');
+  }
+
+  updateReviewersList() {
+    const listEl = document.getElementById('reviewer-list');
+    if (!listEl || !this.experienceData?.reviewers) return;
+
+    let filtered = this.experienceData.reviewers;
+    if (this.activeReviewerFilter === 'journal') {
+      filtered = this.experienceData.reviewers.filter(r => r.type === 'journal');
+    } else if (this.activeReviewerFilter === 'conference') {
+      filtered = this.experienceData.reviewers.filter(r => r.type === 'conference');
+    }
+
+    listEl.innerHTML = filtered.map(r => this.renderReviewerCard(r)).join('');
+  }
+
+  renderReviewerCard(reviewer) {
+    const isJournal = reviewer.type === 'journal';
+    const icon = isJournal ? '📄' : '🎤';
+    const firstYear = Math.min(...reviewer.years);
+
+    // Format years display (e.g., "2022, 2024-2025")
+    const yearsDisplay = this.formatYears(reviewer.years);
+
+    // Metrics display (IF for journals)
+    const metricsHtml = reviewer.metrics
+      ? `<span class="profile-metrics">${reviewer.metrics}</span>`
+      : '';
+
+    // Render rank tags
+    const tagsHtml = reviewer.tags && reviewer.tags.length > 0
+      ? `<div class="profile-tags">${reviewer.tags.map(tag => this.renderRankTag(tag)).join('')}</div>`
+      : '';
+
+    return `
+      <div class="profile-card profile-card--reviewer">
+        <div class="profile-card-left">
+          <div class="profile-card-icon">${icon}</div>
+          <div class="profile-card-year">${firstYear}</div>
+        </div>
+        <div class="profile-card-content">
+          <div class="profile-card-header">
+            <span class="profile-abbr">${reviewer.abbreviation}</span>
+            ${metricsHtml}
+            ${tagsHtml}
+          </div>
+          <div class="profile-org">${reviewer.name}</div>
+          <div class="profile-meta">
+            <span class="profile-years">${yearsDisplay}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  renderRankTag(tag) {
+    // Convert tag to CSS class name
+    const tagLower = tag.toLowerCase().replace(/\s+/g, '-');
+    return `<span class="profile-rank-tag profile-rank-tag--${tagLower}">${tag}</span>`;
+  }
+
+  formatYears(years) {
+    if (!years || years.length === 0) return '';
+    const sorted = [...years].sort((a, b) => a - b);
+
+    const ranges = [];
+    let start = sorted[0];
+    let end = sorted[0];
+
+    for (let i = 1; i < sorted.length; i++) {
+      if (sorted[i] === end + 1) {
+        end = sorted[i];
+      } else {
+        ranges.push(start === end ? `${start}` : `${start}-${end}`);
+        start = sorted[i];
+        end = sorted[i];
+      }
+    }
+    ranges.push(start === end ? `${start}` : `${start}-${end}`);
+
+    return ranges.join(', ');
+  }
+
+  bindReviewerEvents() {
+    document.querySelectorAll('#reviewer-filters .profile-filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        this.activeReviewerFilter = btn.dataset.filter;
+        // Update active state
+        document.querySelectorAll('#reviewer-filters .profile-filter-btn').forEach(b => {
+          b.classList.toggle('active', b.dataset.filter === this.activeReviewerFilter);
+        });
+        this.updateReviewersList();
+      });
+    });
   }
 
   // ==================== Students Section ====================

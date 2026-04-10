@@ -78,6 +78,7 @@
 .profile-card--award:hover { border-left-color: var(--profile-award, #f59e0b); }
 .profile-card--student:hover { border-left-color: var(--profile-student, #0d9488); }
 .profile-card--alumni:hover { border-left-color: var(--profile-alumni, #6366f1); }
+.profile-card--reviewer:hover { border-left-color: var(--profile-reviewer, #0ea5e9); }
 
 /* Card Left (Icon/Year) */
 .profile-card-left {
@@ -389,6 +390,78 @@
   opacity: 1;
 }
 
+/* Reviewer specific styles */
+.profile-metrics {
+  font-size: 0.9em;
+  color: var(--profile-metrics, #6b7280);
+  font-weight: 500;
+}
+
+.profile-years {
+  font-size: 0.9em;
+  color: var(--profile-years, #6b7280);
+}
+
+/* Tags container in header */
+.profile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-left: auto;
+}
+
+/* Rank/Quality tags */
+.profile-rank-tag {
+  padding: 0.1rem 0.4rem;
+  font-size: 0.8em;
+  font-weight: 600;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+/* JCR Q1/Q2 tags */
+.profile-rank-tag--jcr-q1 {
+  background: var(--profile-jcr-q1-bg, #dcfce7);
+  color: var(--profile-jcr-q1-text, #166534);
+}
+
+.profile-rank-tag--jcr-q2 {
+  background: var(--profile-jcr-q2-bg, #dbeafe);
+  color: var(--profile-jcr-q2-text, #1e40af);
+}
+
+/* SCI Q1/Q2/Q3/Q4 tags */
+.profile-rank-tag--sci-q1 {
+  background: var(--profile-sci-q1-bg, #d1fae5);
+  color: var(--profile-sci-q1-text, #065f46);
+}
+
+.profile-rank-tag--sci-q2 {
+  background: var(--profile-sci-q2-bg, #e0f2fe);
+  color: var(--profile-sci-q2-text, #0369a1);
+}
+
+.profile-rank-tag--sci-q3 {
+  background: var(--profile-sci-q3-bg, #fef3c7);
+  color: var(--profile-sci-q3-text, #92400e);
+}
+
+.profile-rank-tag--sci-q4 {
+  background: var(--profile-sci-q4-bg, #fee2e2);
+  color: var(--profile-sci-q4-text, #991b1b);
+}
+
+/* CCF A/B tags */
+.profile-rank-tag--ccf-a {
+  background: var(--profile-ccf-a-bg, #fef3c7);
+  color: var(--profile-ccf-a-text, #92400e);
+}
+
+.profile-rank-tag--ccf-b {
+  background: var(--profile-ccf-b-bg, #e0e7ff);
+  color: var(--profile-ccf-b-text, #3730a3);
+}
+
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
   :root {
@@ -448,6 +521,26 @@
     --profile-filter-active-bg: #0d9488;
     --profile-filter-active-text: #ffffff;
     --profile-filter-active-border: #0d9488;
+    /* Reviewer specific dark mode */
+    --profile-reviewer: #38bdf8;
+    --profile-metrics: #9ca3af;
+    --profile-years: #9ca3af;
+    --profile-jcr-q1-bg: #064e3b;
+    --profile-jcr-q1-text: #a7f3d0;
+    --profile-jcr-q2-bg: #1e3a5f;
+    --profile-jcr-q2-text: #bfdbfe;
+    --profile-sci-q1-bg: #064e3b;
+    --profile-sci-q1-text: #a7f3d0;
+    --profile-sci-q2-bg: #0c4a6e;
+    --profile-sci-q2-text: #bae6fd;
+    --profile-sci-q3-bg: #78350f;
+    --profile-sci-q3-text: #fef3c7;
+    --profile-sci-q4-bg: #7f1d1d;
+    --profile-sci-q4-text: #fecaca;
+    --profile-ccf-a-bg: #78350f;
+    --profile-ccf-a-text: #fef3c7;
+    --profile-ccf-b-bg: #312e81;
+    --profile-ccf-b-text: #c7d2fe;
   }
 }
 

@@ -224,5 +224,257 @@
       "year": 2018,
       "type": "paper"
     }
+  ],
+  "reviewers": [
+    {
+      "id": "tmc-2025",
+      "type": "journal",
+      "name": "IEEE Transactions on Mobile Computing",
+      "abbreviation": "TMC",
+      "metrics": "IF: 9.2 (2024)",
+      "tags": [
+        "JCR Q1",
+        "SCI Q1",
+        "CCF A"
+      ],
+      "years": [
+        2025
+      ]
+    },
+    {
+      "id": "twc-2025",
+      "type": "journal",
+      "name": "IEEE Transactions on Wireless Communications",
+      "abbreviation": "TWC",
+      "metrics": "IF: 8.9 (2023)",
+      "tags": [
+        "JCR Q1",
+        "SCI Q1",
+        "CCF B"
+      ],
+      "years": [
+        2025
+      ]
+    },
+    {
+      "id": "tits-2023",
+      "type": "journal",
+      "name": "IEEE Transactions on Intelligent Transportation Systems",
+      "abbreviation": "T-ITS",
+      "metrics": "IF: 7.9 (2023)",
+      "tags": [
+        "JCR Q1",
+        "SCI Q2",
+        "CCF B"
+      ],
+      "years": [
+        2023
+      ]
+    },
+    {
+      "id": "tce-2024",
+      "type": "journal",
+      "name": "IEEE Transactions on Consumer Electronics",
+      "abbreviation": "TCE",
+      "metrics": "IF: 4.3 (2023)",
+      "tags": [
+        "JCR Q1",
+        "SCI Q2"
+      ],
+      "years": [
+        2024
+      ]
+    },
+    {
+      "id": "tvt-2022",
+      "type": "journal",
+      "name": "IEEE Transactions on Vehicular Technology",
+      "abbreviation": "TVT",
+      "metrics": "IF: 6.1 (2023)",
+      "tags": [
+        "JCR Q1",
+        "SCI Q2"
+      ],
+      "years": [
+        2022,
+        2024,
+        2025
+      ]
+    },
+    {
+      "id": "cn-2025",
+      "type": "journal",
+      "name": "Computer Networks",
+      "abbreviation": "CN",
+      "metrics": "IF: 4.4 (2024)",
+      "tags": [
+        "JCR Q1",
+        "SCI Q3",
+        "CCF B"
+      ],
+      "years": [
+        2025
+      ]
+    },
+    {
+      "id": "jsa-2023",
+      "type": "journal",
+      "name": "Journal of Systems Architecture",
+      "abbreviation": "JSA",
+      "metrics": "IF: 3.8 (2023)",
+      "tags": [
+        "JCR Q1",
+        "SCI Q3",
+        "CCF B"
+      ],
+      "years": [
+        2023
+      ]
+    },
+    {
+      "id": "nca-2022",
+      "type": "journal",
+      "name": "Neural Computing and Applications",
+      "abbreviation": "NCA",
+      "metrics": "IF: 4.5 (2023)",
+      "tags": [
+        "JCR Q2",
+        "SCI Q3"
+      ],
+      "years": [
+        2022
+      ]
+    },
+    {
+      "id": "tjsc-2022",
+      "type": "journal",
+      "name": "The Journal of Supercomputing",
+      "abbreviation": "TJSC",
+      "metrics": "IF: 2.5 (2023)",
+      "tags": [
+        "JCR Q2",
+        "SCI Q4"
+      ],
+      "years": [
+        2022
+      ]
+    },
+    {
+      "id": "jcrd-2023",
+      "type": "journal",
+      "name": "Journal of Computer Research and Development",
+      "abbreviation": "JCRD",
+      "metrics": null,
+      "tags": [
+        "CCF A"
+      ],
+      "years": [
+        2023
+      ]
+    },
+    {
+      "id": "aes-2022",
+      "type": "journal",
+      "name": "Tien Tzu Hsueh Pao/Acta Electronica Sinica",
+      "abbreviation": "AES",
+      "metrics": null,
+      "tags": [
+        "CCF A"
+      ],
+      "years": [
+        2022,
+        2023
+      ]
+    },
+    {
+      "id": "vtc-fall-2023",
+      "type": "conference",
+      "name": "IEEE Vehicular Technology Conference",
+      "abbreviation": "IEEE VTC-Fall",
+      "metrics": null,
+      "tags": [],
+      "years": [
+        2023
+      ]
+    },
+    {
+      "id": "aiotsys-2023",
+      "type": "conference",
+      "name": "International Conference on Artificial Intelligence of Things and Systems",
+      "abbreviation": "AIoTSys",
+      "metrics": null,
+      "tags": [],
+      "years": [
+        2023
+      ]
+    },
+    {
+      "id": "itsc-2022",
+      "type": "conference",
+      "name": "IEEE International Conference on Intelligent Transportation Systems",
+      "abbreviation": "IEEE ITSC",
+      "metrics": null,
+      "tags": [],
+      "years": [
+        2022,
+        2023
+      ]
+    },
+    {
+      "id": "globecom-2021",
+      "type": "conference",
+      "name": "IEEE Global Communications Conference",
+      "abbreviation": "IEEE GLOBECOM",
+      "metrics": null,
+      "tags": [],
+      "years": [
+        2021,
+        2023
+      ]
+    },
+    {
+      "id": "ica3pp-2021",
+      "type": "conference",
+      "name": "International Conference on Algorithms and Architectures for Parallel Processing",
+      "abbreviation": "ICA3PP",
+      "metrics": null,
+      "tags": [],
+      "years": [
+        2021
+      ]
+    },
+    {
+      "id": "cwsn-2021",
+      "type": "conference",
+      "name": "China Conference on Internet of Things (Wireless Sensor Network)",
+      "abbreviation": "CWSN",
+      "metrics": null,
+      "tags": [],
+      "years": [
+        2021
+      ]
+    },
+    {
+      "id": "trustcom-2020",
+      "type": "conference",
+      "name": "IEEE International Conference on Trust, Security and Privacy in Computing and Communications",
+      "abbreviation": "IEEE TrustCom",
+      "metrics": null,
+      "tags": [],
+      "years": [
+        2020
+      ]
+    },
+    {
+      "id": "ispce-as-2020",
+      "type": "conference",
+      "name": "IEEE International Symposium on Product Compliance Engineering-Asia",
+      "abbreviation": "IEEE ISPCE-AS",
+      "metrics": null,
+      "tags": [],
+      "years": [
+        2020
+      ]
+    }
   ]
 }
