@@ -350,11 +350,7 @@
     "degree": "M.S.",
     "field": "Computer Science",
     "institution": "Southwest Jiaotong University",
-    "co_advisor": {
-      "name": "Penglin Dai",
-      "title": "Prof.",
-      "institution": "Southwest Jiaotong University"
-    },
+    "co_advisor": null,
     "github": "langIman",
     "email": "hzchbc@outlook.com",
     "status": "current",
