@@ -464,6 +464,15 @@ class ProfileCards {
       filtered = this.studentsData.filter(s => s.status === 'alumni');
     }
 
+    filtered = [...filtered].sort((a, b) => {
+      const yearDiff = (b.start_year || 0) - (a.start_year || 0);
+      if (yearDiff !== 0) return yearDiff;
+      if ((a.status === 'current') !== (b.status === 'current')) {
+        return a.status === 'current' ? -1 : 1;
+      }
+      return (a.name_en || '').localeCompare(b.name_en || '');
+    });
+
     listEl.innerHTML = filtered.map(s => this.renderStudentCard(s)).join('');
   }
 

@@ -2,7 +2,7 @@
   {
     "id": "hechun",
     "name_en": "Chun He",
-    "name_cn": "\u4f55\u6625",
+    "name_cn": "何春",
     "degree": "M.S.",
     "field": "Computer Science",
     "institution": "Southwest Jiaotong University",
@@ -22,7 +22,7 @@
   {
     "id": "zhouzijie",
     "name_en": "Zijie Zhou",
-    "name_cn": "\u5468\u5b50\u6770",
+    "name_cn": "周子杰",
     "degree": "M.S.",
     "field": "Computer Science",
     "institution": "Southwest Jiaotong University",
@@ -42,7 +42,7 @@
   {
     "id": "xiaolin",
     "name_en": "Lin Xiao",
-    "name_cn": "\u8096\u6797",
+    "name_cn": "肖林",
     "degree": "M.S.",
     "field": "Computer Science",
     "institution": "Southwest Jiaotong University",
@@ -62,7 +62,7 @@
   {
     "id": "lifulian",
     "name_en": "Fulian Li",
-    "name_cn": "\u674e\u5bcc\u8fde",
+    "name_cn": "李富连",
     "degree": "M.S.",
     "field": "Computer Science",
     "institution": "Southwest Jiaotong University",
@@ -82,7 +82,7 @@
   {
     "id": "lijie",
     "name_en": "Jie Li",
-    "name_cn": "\u674e\u6770",
+    "name_cn": "李杰",
     "degree": "M.S.",
     "field": "Computer Science",
     "institution": "Southwest Jiaotong University",
@@ -102,7 +102,7 @@
   {
     "id": "renziqiang",
     "name_en": "Ziqiang Ren",
-    "name_cn": "\u4efb\u81ea\u5f3a",
+    "name_cn": "任自强",
     "degree": "M.S.",
     "field": "Computer Science",
     "institution": "Southwest Jiaotong University",
@@ -122,7 +122,7 @@
   {
     "id": "zhangpengju",
     "name_en": "Pengju Zhang",
-    "name_cn": "\u5f20\u9e4f\u4e3e",
+    "name_cn": "张鹏举",
     "degree": "M.S.",
     "field": "Computer Science",
     "institution": "Southwest Jiaotong University",
@@ -142,7 +142,7 @@
   {
     "id": "wujunyuan",
     "name_en": "Junyuan Wu",
-    "name_cn": "\u5434\u5cfb\u6e90",
+    "name_cn": "吴峻源",
     "degree": "M.S.",
     "field": "Computer Science",
     "institution": "Chongqing University",
@@ -162,5 +162,305 @@
       "company": "Zelostech (Suzhou) Co., Ltd.",
       "url": "https://zelostech.ai/"
     }
+  },
+  {
+    "id": "nili",
+    "name_en": "Li Ni",
+    "name_cn": "倪利",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "nililili163",
+    "email": "nl15208399601@my.swjtu.edu.cn",
+    "status": "current",
+    "start_year": 2023,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "zhairuiqin",
+    "name_en": "Ruiqin Zhai",
+    "name_cn": "翟锐钦",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "tanyue25",
+    "email": "tanyue@my.swjtu.edu.cn",
+    "status": "current",
+    "start_year": 2025,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "louchunyang",
+    "name_en": "Chunyang Lou",
+    "name_cn": "娄春阳",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "xiaoyang1233",
+    "email": "lcyang@my.swjtu.edu.cn",
+    "status": "current",
+    "start_year": 2025,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "lvjunfeng",
+    "name_en": "Junfeng Lv",
+    "name_cn": "吕骏峰",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "vaoski",
+    "email": "2021112989@my.swjtu.edu.cn",
+    "status": "current",
+    "start_year": 2025,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "tanhaoran",
+    "name_en": "Haoran Tan",
+    "name_cn": "谭浩然",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "tanhaoran1",
+    "email": "hrtan@my.swjtu.edu.cn",
+    "status": "current",
+    "start_year": 2025,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "wangjun",
+    "name_en": "Jun Wang",
+    "name_cn": "王军",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "JunWGit",
+    "email": "wangjun@my.swjtu.edu.cn",
+    "status": "current",
+    "start_year": 2025,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "wangning",
+    "name_en": "Ning Wang",
+    "name_cn": "王宁",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "wangning1223",
+    "email": "wn@my.swjtu.edu.cn",
+    "status": "current",
+    "start_year": 2025,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "xuwentao",
+    "name_en": "Wentao Xu",
+    "name_cn": "许文涛",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "WTXuGit",
+    "email": "shetotoll@my.swjtu.edu.cn",
+    "status": "current",
+    "start_year": 2025,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "helusheng",
+    "name_en": "Lusheng He",
+    "name_cn": "何鲁生",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "Yu0666",
+    "email": "3180144965@qq.com",
+    "status": "current",
+    "start_year": 2026,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "huzichang",
+    "name_en": "Zichang Hu",
+    "name_cn": "胡子昌",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "langIman",
+    "email": "hzchbc@outlook.com",
+    "status": "current",
+    "start_year": 2026,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "lihongjin",
+    "name_en": "Hongjin Li",
+    "name_cn": "李洪金",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "HJin798",
+    "email": "1302749962@qq.com",
+    "status": "current",
+    "start_year": 2026,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "lishirui",
+    "name_en": "Shirui Li",
+    "name_cn": "李诗睿",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "Aurorananah",
+    "email": "15310682645@163.com",
+    "status": "current",
+    "start_year": 2026,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "longting",
+    "name_en": "Ting Long",
+    "name_cn": "龙婷",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "heihaheihaheihei",
+    "email": "longting@my.swjtu.edu.cn",
+    "status": "current",
+    "start_year": 2026,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "wangzhenxiang",
+    "name_en": "Zhenxiang Wang",
+    "name_cn": "王祯祥",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "misakawu",
+    "email": "1194518341@qq.com",
+    "status": "current",
+    "start_year": 2026,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
+    "id": "fudiwen",
+    "name_en": "Diwen Fu",
+    "name_cn": "付迪文",
+    "degree": "B.S.",
+    "field": "Computer Science",
+    "institution": "Southwest Jiaotong University",
+    "co_advisor": {
+      "name": "Penglin Dai",
+      "title": "Prof.",
+      "institution": "Southwest Jiaotong University"
+    },
+    "github": "funw25",
+    "email": "2556658581@qq.com",
+    "status": "current",
+    "start_year": 2025,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
   }
 ]
