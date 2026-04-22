@@ -29,7 +29,7 @@ author:
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=DK5avZUAAAAJ"
   email            : "xc.xu@uestc.edu.cn"
-  researchgate     : "https://www.researchgate.net/profile/Xincao-Xu"
+  researchgate     :
   uri              :
   bitbucket        :
   codepen          :
@@ -43,8 +43,8 @@ author:
   instagram        : "near.d.ws"
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "xuxincao"
-  dblp             : "https://dblp.org/pid/245/5645.html"
+  linkedin         :
+  dblp             :
   orcid            : "https://orcid.org/0000-0001-5057-5468"
   pinterest        :
   soundcloud       :
