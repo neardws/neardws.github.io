@@ -1,21 +1,6 @@
 {
-  "updated_at": "2026-04-23T06:33:27Z",
+  "updated_at": "2026-04-24T06:34:20Z",
   "conferences": [
-    {
-      "title": "NSDI",
-      "description": "USENIX Symposium on Networked Systems Design and Implementation",
-      "sub": "NW",
-      "sub_name": "Network System",
-      "ccf_rank": "A",
-      "link": "https://www.usenix.org/conference/nsdi27",
-      "abstract_deadline": "2026-04-16 23:59:59",
-      "deadline": "2026-04-23 23:59:59",
-      "timezone": "UTC-4",
-      "date": "May 11-13, 2027",
-      "place": "Providence, RI, USA",
-      "year": 2027,
-      "is_future": true
-    },
     {
       "title": "UbiComp/ISWC",
       "description": "ACM International Joint Conference on Pervasive and Ubiquitous Computing",
@@ -118,6 +103,21 @@
       "timezone": "AoE",
       "date": "FEBRUARY 23-25, 2027",
       "place": "Renton, WA, USA",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "NSDI",
+      "description": "USENIX Symposium on Networked Systems Design and Implementation",
+      "sub": "NW",
+      "sub_name": "Network System",
+      "ccf_rank": "A",
+      "link": "https://www.usenix.org/conference/nsdi27",
+      "abstract_deadline": "2026-09-10 23:59:59",
+      "deadline": "2026-09-17 23:59:59",
+      "timezone": "UTC-4",
+      "date": "May 11-13, 2027",
+      "place": "Providence, RI, USA",
       "year": 2027,
       "is_future": true
     },
