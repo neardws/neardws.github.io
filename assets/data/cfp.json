@@ -1,21 +1,6 @@
 {
-  "updated_at": "2026-05-02T06:34:49Z",
+  "updated_at": "2026-05-03T06:47:24Z",
   "conferences": [
-    {
-      "title": "UbiComp/ISWC",
-      "description": "ACM International Joint Conference on Pervasive and Ubiquitous Computing",
-      "sub": "HI",
-      "sub_name": "Computer-Human Interaction",
-      "ccf_rank": "A",
-      "link": "https://www.ubicomp.org/ubicomp-iswc-2026",
-      "abstract_deadline": null,
-      "deadline": "2026-05-01 23:59:59",
-      "timezone": "AoE",
-      "date": "October 11-15, 2026",
-      "place": "Shanghai, China",
-      "year": 2026,
-      "is_future": true
-    },
     {
       "title": "NeurIPS",
       "description": "Conference on Neural Information Processing Systems",
@@ -73,6 +58,21 @@
       "timezone": "UTC+0",
       "date": "November 15-18, 2026",
       "place": "Hyatt Hotel, Shatin, Hong Kong, China",
+      "year": 2026,
+      "is_future": true
+    },
+    {
+      "title": "UbiComp/ISWC",
+      "description": "ACM International Joint Conference on Pervasive and Ubiquitous Computing",
+      "sub": "HI",
+      "sub_name": "Computer-Human Interaction",
+      "ccf_rank": "A",
+      "link": "https://www.ubicomp.org/ubicomp-iswc-2026",
+      "abstract_deadline": null,
+      "deadline": "2026-08-01 23:59:59",
+      "timezone": "AoE",
+      "date": "October 11-15, 2026",
+      "place": "Shanghai, China",
       "year": 2026,
       "is_future": true
     },
