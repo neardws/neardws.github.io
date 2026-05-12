@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-11T07:03:29Z",
+  "updated_at": "2026-05-12T06:52:28Z",
   "conferences": [
     {
       "title": "EuroSys",
@@ -88,6 +88,21 @@
       "timezone": "AoE",
       "date": "April 11-15, 2027",
       "place": "Crete, Greece",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "CHI",
+      "description": "ACM Conference on Human Factors in Computing Systems",
+      "sub": "HI",
+      "sub_name": "Computer-Human Interaction",
+      "ccf_rank": "A",
+      "link": "https://chi2027.acm.org/",
+      "abstract_deadline": null,
+      "deadline": "2026-09-10 23:59:59",
+      "timezone": "AoE",
+      "date": "May 10 - 14, 2027",
+      "place": "David L. Lawrence Convention Center, Pittsburgh, USA",
       "year": 2027,
       "is_future": true
     },
@@ -328,21 +343,6 @@
       "timezone": "AoE",
       "date": "May 01-05, 2026",
       "place": "Brazil",
-      "year": 2026,
-      "is_future": false
-    },
-    {
-      "title": "CHI",
-      "description": "ACM Conference on Human Factors in Computing Systems",
-      "sub": "HI",
-      "sub_name": "Computer-Human Interaction",
-      "ccf_rank": "A",
-      "link": "https://chi2026.acm.org/",
-      "abstract_deadline": "2025-09-04 23:59:59",
-      "deadline": "2025-09-11 23:59:59",
-      "timezone": "AoE",
-      "date": "April 13 - 17, 2026",
-      "place": "Centre de Convencions Internacional de Barcelona, Barcelona, Spain",
       "year": 2026,
       "is_future": false
     },
