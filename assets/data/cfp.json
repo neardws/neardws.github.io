@@ -1,21 +1,6 @@
 {
-  "updated_at": "2026-05-15T07:00:20Z",
+  "updated_at": "2026-05-16T06:43:03Z",
   "conferences": [
-    {
-      "title": "EuroSys",
-      "description": "European Conference on Computer Systems",
-      "sub": "DS",
-      "sub_name": "Computer Architecture",
-      "ccf_rank": "A",
-      "link": "https://2027.eurosys.org/",
-      "abstract_deadline": "2026-05-07 23:59:59",
-      "deadline": "2026-05-14 23:59:59",
-      "timezone": "AoE",
-      "date": "April 19-24, 2027",
-      "place": "Rabat, Morocco",
-      "year": 2027,
-      "is_future": true
-    },
     {
       "title": "RTSS",
       "description": "The IEEE Real-Time Systems Symposium",
@@ -133,6 +118,21 @@
       "timezone": "UTC-4",
       "date": "May 11-13, 2027",
       "place": "Providence, RI, USA",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "EuroSys",
+      "description": "European Conference on Computer Systems",
+      "sub": "DS",
+      "sub_name": "Computer Architecture",
+      "ccf_rank": "A",
+      "link": "https://2027.eurosys.org/",
+      "abstract_deadline": "2026-09-17 23:59:59",
+      "deadline": "2026-09-24 23:59:59",
+      "timezone": "AoE",
+      "date": "April 19-24, 2027",
+      "place": "Rabat, Morocco",
       "year": 2027,
       "is_future": true
     },
