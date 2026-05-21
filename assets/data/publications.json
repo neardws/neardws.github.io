@@ -1,5 +1,31 @@
 [
   {
+    "id": "dai2026fedcoe",
+    "type": "preprint",
+    "title": "FedCoE: Bridging Generalization and Personalization via Federated Coordinated Dual-level MoEs",
+    "authors": [
+      "Penglin Dai",
+      "Fulian Li",
+      "Xincao Xu*",
+      "Junhua Wang",
+      "Lixin Duan",
+      "Xiao Wu"
+    ],
+    "venue": "arXiv",
+    "venue_full": "arXiv preprint arXiv:2605.21264",
+    "year": 2026,
+    "month": "May",
+    "tags": [
+      "Preprint",
+      "cs.LG"
+    ],
+    "doi": "https://arxiv.org/abs/2605.21264",
+    "pdf": "https://arxiv.org/pdf/2605.21264",
+    "bib": null,
+    "scholar_id": null,
+    "github": null
+  },
+  {
     "id": "song2026csfusion",
     "type": "conference",
     "title": "CSFusion: Flexible Multi-Modal Image Fusion via Content-Style Cross Modulation",

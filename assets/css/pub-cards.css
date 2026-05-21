@@ -150,6 +150,7 @@
 
 /* Type-specific left border colors on hover */
 .pub-item[data-type="journal"]:hover { border-left-color: #4a90d9; }
+.pub-item[data-type="preprint"]:hover { border-left-color: #16a085; }
 .pub-item[data-type="conference"]:hover { border-left-color: #e67e22; }
 .pub-item[data-type="chinese"]:hover { border-left-color: #9b59b6; }
 .pub-item[data-type="dissertation"]:hover { border-left-color: #1abc9c; }
@@ -179,6 +180,7 @@
 }
 
 .pub-type-badge.journal      { background: #4a90d9; }
+.pub-type-badge.preprint     { background: #16a085; }
 .pub-type-badge.conference   { background: #e67e22; }
 .pub-type-badge.chinese      { background: #9b59b6; }
 .pub-type-badge.dissertation { background: #1abc9c; }

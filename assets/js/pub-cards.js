@@ -50,7 +50,7 @@
           'July': 7, 'August': 8, 'September': 9, 'October': 10, 'November': 11, 'December': 12,
           'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'Jun': 6, 'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12
         };
-        
+
         const getMonthNum = (pub) => {
           // First try the month field
           if (pub.month && monthOrder[pub.month]) {
@@ -65,7 +65,7 @@
           }
           return 0;
         };
-        
+
         this.data.sort((a, b) => {
           if (b.year !== a.year) return b.year - a.year;
           return getMonthNum(b) - getMonthNum(a);
@@ -141,6 +141,7 @@
       const filtersEl = document.getElementById('pub-filters');
       const types = [
         { key: 'all', label: 'All' },
+        { key: 'preprint', label: 'Preprint' },
         { key: 'journal', label: 'Journal' },
         { key: 'conference', label: 'Conference' },
         { key: 'chinese', label: 'Chinese' },
@@ -182,6 +183,10 @@
         const loc = pub.location ? `, ${pub.location}` : '';
         const date = pub.conf_date ? `, ${pub.conf_date}` : `, ${pub.year}`;
         venue = `${venuePart}${loc}${date}.`;
+      } else if (pub.type === 'preprint') {
+        const venuePart = pub.venue_full || pub.venue;
+        const date = pub.month ? `, ${pub.month} ${pub.year}` : `, ${pub.year}`;
+        venue = `<em>${this.escapeHtml(venuePart)}</em>${date}.`;
       } else if (pub.type === 'dissertation') {
         venue = `<em>${this.escapeHtml(pub.venue_full || pub.venue)}</em>, Doctoral Dissertation, ${pub.month || ''} ${pub.year}.`;
       }
@@ -280,6 +285,7 @@
 
     getTypeLabel(type) {
       const labels = {
+        preprint: 'Preprint',
         journal: 'Journal',
         conference: 'Conference',
         chinese: 'Chinese',
