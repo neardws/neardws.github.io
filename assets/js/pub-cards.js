@@ -141,7 +141,7 @@
       const filtersEl = document.getElementById('pub-filters');
       const types = [
         { key: 'all', label: 'All' },
-        { key: 'preprint', label: 'Preprint' },
+        { key: 'arxiv', label: 'arXiv' },
         { key: 'journal', label: 'Journal' },
         { key: 'conference', label: 'Conference' },
         { key: 'chinese', label: 'Chinese' },
@@ -183,8 +183,8 @@
         const loc = pub.location ? `, ${pub.location}` : '';
         const date = pub.conf_date ? `, ${pub.conf_date}` : `, ${pub.year}`;
         venue = `${venuePart}${loc}${date}.`;
-      } else if (pub.type === 'preprint') {
-        const venuePart = pub.venue_full || pub.venue;
+      } else if (pub.type === 'arxiv') {
+        const venuePart = pub.arxiv_id ? `arXiv:${pub.arxiv_id}` : (pub.venue_full || pub.venue);
         const date = pub.month ? `, ${pub.month} ${pub.year}` : `, ${pub.year}`;
         venue = `<em>${this.escapeHtml(venuePart)}</em>${date}.`;
       } else if (pub.type === 'dissertation') {
@@ -285,7 +285,7 @@
 
     getTypeLabel(type) {
       const labels = {
-        preprint: 'Preprint',
+        arxiv: 'arXiv',
         journal: 'Journal',
         conference: 'Conference',
         chinese: 'Chinese',
