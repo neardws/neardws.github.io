@@ -123,6 +123,21 @@
     "role": "Participant"
   },
   {
+    "id": "most2026_riding_driving_safety",
+    "source": {
+      "name": "MOST",
+      "full_name": "Ministry of Science and Technology of the People's Republic of China",
+      "url": "https://www.most.gov.cn/",
+      "icon": null
+    },
+    "type": "National Key R&D Program",
+    "title": "Research on Safety and Health Protection Technologies and Equipment for Riding and Driving Occupational Groups",
+    "number": null,
+    "amount": "40,280,000 CNY",
+    "period": "Jun 2026 - Jun 2029",
+    "role": "Participant"
+  },
+  {
     "id": "sstp_major2025",
     "source": {
       "name": "SSTP",

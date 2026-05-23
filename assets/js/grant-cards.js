@@ -12,6 +12,7 @@ class GrantCards {
     this.activeRoleFilter = 'all';
     this.searchQuery = '';
     this.container = null;
+    this.sourceOrder = ['NSFC', 'MOST', 'GBABRF', 'CPSF', 'SSTP', 'ERC'];
   }
 
   async init() {
@@ -22,12 +23,14 @@ class GrantCards {
       const res = await fetch('/assets/data/grants.json');
       this.data = await res.json();
 
-      // Sort by start year (newest first)
+      // Sort by funding-source rank first, then by start year within the source
       this.data.sort((a, b) => {
         const getStartYear = (period) => {
           const match = period.match(/(\d{4})/);
           return match ? parseInt(match[1]) : 0;
         };
+        const sourceDiff = this.getSourceRank(a.source.name) - this.getSourceRank(b.source.name);
+        if (sourceDiff !== 0) return sourceDiff;
         return getStartYear(b.period) - getStartYear(a.period);
       });
 
@@ -48,6 +51,11 @@ class GrantCards {
   extractStartYear(period) {
     const match = period.match(/(\d{4})/);
     return match ? parseInt(match[1]) : null;
+  }
+
+  getSourceRank(sourceName) {
+    const idx = this.sourceOrder.indexOf(sourceName);
+    return idx === -1 ? this.sourceOrder.length : idx;
   }
 
   render() {
@@ -108,12 +116,11 @@ class GrantCards {
 
   renderLegend() {
     // Build legend dynamically from data, with links where available
-    const order = ['NSFC', 'GBABRF', 'CPSF', 'SSTP', 'ERC'];
     const sourceMap = {};
     this.data.forEach(g => {
       if (!sourceMap[g.source.name]) sourceMap[g.source.name] = g.source;
     });
-    const sources = order.filter(name => sourceMap[name]).map(name => sourceMap[name]);
+    const sources = this.sourceOrder.filter(name => sourceMap[name]).map(name => sourceMap[name]);
 
     return `
       <div class="grant-legend">
@@ -152,6 +159,7 @@ class GrantCards {
     // Source filter buttons (NSFC, GBABRF, etc.)
     const sourceTypes = [
       { key: 'NSFC', label: 'NSFC' },
+      { key: 'MOST', label: 'MOST' },
       { key: 'GBABRF', label: 'GBABRF' },
       { key: 'CPSF', label: 'CPSF' },
       { key: 'SSTP', label: 'SSTP' },
@@ -183,6 +191,10 @@ class GrantCards {
       ? `<div class="grant-note">${grant.note}</div>`
       : '';
 
+    const numberHtml = grant.number
+      ? `<span class="grant-number">${grant.number}</span>`
+      : '';
+
     // Source type for hover color
     const sourceType = this.getSourceType(grant.source.name);
 
@@ -200,7 +212,7 @@ class GrantCards {
           <div class="grant-title">${grant.title}</div>
           <div class="grant-meta">
             ${roleTag}
-            <span class="grant-number">${grant.number}</span>
+            ${numberHtml}
             <span class="grant-amount">${grant.amount}</span>
             <span class="grant-period">${grant.period}</span>
           </div>
@@ -213,6 +225,7 @@ class GrantCards {
   getSourceType(sourceName) {
     const typeMap = {
       'NSFC': 'nsfc',
+      'MOST': 'most',
       'GBABRF': 'gbabrf',
       'CPSF': 'cpsf',
       'SSTP': 'sstp',
@@ -256,7 +269,7 @@ class GrantCards {
         (this.activeRoleFilter === 'PI' ? g.role === 'PI' : g.role !== 'PI');
       const matchesSearch = !this.searchQuery ||
         g.title.toLowerCase().includes(this.searchQuery) ||
-        g.number.toLowerCase().includes(this.searchQuery) ||
+        (g.number || '').toLowerCase().includes(this.searchQuery) ||
         g.source.name.toLowerCase().includes(this.searchQuery) ||
         g.source.full_name.toLowerCase().includes(this.searchQuery);
       return matchesFilter && matchesRole && matchesSearch;

@@ -1,5 +1,32 @@
 [
   {
+    "id": "dai2026automcu",
+    "type": "arxiv",
+    "title": "AutoMCU: Feasibility-First MCU Neural Network Customization via LLM-based Multi-Agent Systems",
+    "authors": [
+      "Penglin Dai",
+      "Zijie Zhou",
+      "Xincao Xu",
+      "Junhua Wang",
+      "Xiao Wu",
+      "Lixin Duan"
+    ],
+    "venue": "arXiv",
+    "venue_full": "arXiv preprint arXiv:2605.21560",
+    "arxiv_id": "2605.21560",
+    "year": 2026,
+    "month": "May",
+    "tags": [
+      "arXiv",
+      "cs.LG"
+    ],
+    "doi": "https://arxiv.org/abs/2605.21560",
+    "pdf": "https://arxiv.org/pdf/2605.21560",
+    "bib": null,
+    "scholar_id": null,
+    "github": null
+  },
+  {
     "id": "dai2026fedcoe",
     "type": "arxiv",
     "title": "FedCoE: Bridging Generalization and Personalization via Federated Coordinated Dual-level MoEs",
