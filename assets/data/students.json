@@ -328,7 +328,7 @@
     "name_en": "Lusheng He",
     "name_cn": "何鲁生",
     "degree": "M.S.",
-    "field": "Agentic Artificial Intelligence",
+    "field": "Computer Science",
     "institution": "Southwest Jiaotong University",
     "co_advisor": {
       "name": "Penglin Dai",
@@ -348,7 +348,7 @@
     "name_en": "Zichang Hu",
     "name_cn": "胡子昌",
     "degree": "M.S.",
-    "field": "Agentic Artificial Intelligence",
+    "field": "Computer Science",
     "institution": "University of Electronic Science and Technology of China",
     "co_advisor": null,
     "github": "langIman",
@@ -364,13 +364,9 @@
     "name_en": "Zexi Huangfu",
     "name_cn": "皇甫泽熹",
     "degree": "M.S.",
-    "field": "TBD",
-    "institution": "Southwest Jiaotong University",
-    "co_advisor": {
-      "name": "Penglin Dai",
-      "title": "Prof.",
-      "institution": "Southwest Jiaotong University"
-    },
+    "field": "Computer Science",
+    "institution": "University of Electronic Science and Technology of China",
+    "co_advisor": null,
     "github": "Gemdancer",
     "email": "2869079600@qq.com",
     "status": "current",
@@ -384,7 +380,7 @@
     "name_en": "Hongjin Li",
     "name_cn": "李洪金",
     "degree": "M.S.",
-    "field": "Automated Model Customization",
+    "field": "Computer Science",
     "institution": "Southwest Jiaotong University",
     "co_advisor": {
       "name": "Penglin Dai",
@@ -404,7 +400,7 @@
     "name_en": "Shirui Li",
     "name_cn": "李诗睿",
     "degree": "M.S.",
-    "field": "Collaborative Sensing",
+    "field": "Computer Science",
     "institution": "Southwest Jiaotong University",
     "co_advisor": {
       "name": "Penglin Dai",
@@ -424,7 +420,7 @@
     "name_en": "Zhijiang Li",
     "name_cn": "李治江",
     "degree": "M.S.",
-    "field": "TBD",
+    "field": "Computer Science",
     "institution": "Southwest Jiaotong University",
     "co_advisor": {
       "name": "Penglin Dai",
@@ -444,7 +440,7 @@
     "name_en": "Ting Long",
     "name_cn": "龙婷",
     "degree": "M.S.",
-    "field": "Distributed Inference",
+    "field": "Computer Science",
     "institution": "Southwest Jiaotong University",
     "co_advisor": {
       "name": "Penglin Dai",
@@ -464,7 +460,7 @@
     "name_en": "Zhenxiang Wang",
     "name_cn": "王祯祥",
     "degree": "M.S.",
-    "field": "TBD",
+    "field": "Computer Science",
     "institution": "Southwest Jiaotong University",
     "co_advisor": {
       "name": "Penglin Dai",
@@ -484,13 +480,9 @@
     "name_en": "Jie Yu",
     "name_cn": "俞颉",
     "degree": "M.S.",
-    "field": "TBD",
-    "institution": "Southwest Jiaotong University",
-    "co_advisor": {
-      "name": "Penglin Dai",
-      "title": "Prof.",
-      "institution": "Southwest Jiaotong University"
-    },
+    "field": "Computer Science",
+    "institution": "University of Electronic Science and Technology of China",
+    "co_advisor": null,
     "github": "tiankongbuzhuozhe",
     "email": "2356437109@qq.com",
     "status": "current",
@@ -500,31 +492,11 @@
     "first_job": null
   },
   {
-    "id": "luozhixin",
-    "name_en": "Zhixin Luo",
-    "name_cn": "罗芷忻",
-    "degree": "B.S.",
-    "field": "Agentic Artificial Intelligence",
-    "institution": "Southwest Jiaotong University",
-    "co_advisor": {
-      "name": "Penglin Dai",
-      "title": "Prof.",
-      "institution": "Southwest Jiaotong University"
-    },
-    "github": "zhixinluo",
-    "email": "17264098654@163.com",
-    "status": "current",
-    "start_year": 2023,
-    "graduation_year": null,
-    "dissertation_title": null,
-    "first_job": null
-  },
-  {
     "id": "fudiwen",
     "name_en": "Diwen Fu",
     "name_cn": "付迪文",
     "degree": "B.S.",
-    "field": "TBD",
+    "field": "Computer Science",
     "institution": "Southwest Jiaotong University",
     "co_advisor": {
       "name": "Penglin Dai",
