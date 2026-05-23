@@ -23,7 +23,10 @@ class CFPCards {
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const json = await res.json();
 
-      this.data = json.conferences || [];
+      this.data = (json.conferences || [])
+        .filter(c => this.isUpcoming(c))
+        .sort((a, b) => this.getDeadlineTime(a) - this.getDeadlineTime(b))
+        .map(c => ({ ...c, is_future: true }));
       this.updatedAt = json.updated_at;
       this.filteredData = [...this.data];
       this.render();
@@ -43,7 +46,7 @@ class CFPCards {
 
   render() {
     if (this.data.length === 0) {
-      this.container.innerHTML = '<p>No CCF Class A conferences found. Data will be available after the first scheduled run.</p>';
+      this.container.innerHTML = '<p>No upcoming CCF Class A conference deadlines found.</p>';
       return;
     }
 
@@ -103,7 +106,7 @@ class CFPCards {
   }
 
   renderRow(conf) {
-    const isPast = !conf.is_future;
+    const isPast = !this.isUpcoming(conf);
     const rowClass = isPast ? 'cfp-row cfp-row--past' : 'cfp-row';
 
     // Deadline cell
@@ -158,6 +161,51 @@ class CFPCards {
     } catch {
       return String(dateStr).slice(0, 10);
     }
+  }
+
+  parseTimezoneOffsetMinutes(tz) {
+    if (!tz) return 0;
+    const value = String(tz).trim();
+    if (value === 'AoE') return -12 * 60;
+    if (value === 'UTC') return 0;
+
+    const match = value.match(/^UTC([+-])(\d+(?:\.\d+)?)$/);
+    if (!match) return 0;
+
+    const hours = parseFloat(match[2]);
+    const sign = match[1] === '+' ? 1 : -1;
+    return sign * Math.round(hours * 60);
+  }
+
+  parseDeadlineInstant(conf) {
+    if (!conf.deadline) return null;
+
+    const match = String(conf.deadline).trim().match(
+      /^(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2})(?::(\d{2}))?)?$/
+    );
+    if (!match) return null;
+
+    const [, y, m, d, hh = '23', mm = '59', ss = '59'] = match;
+    const utcMs = Date.UTC(
+      parseInt(y, 10),
+      parseInt(m, 10) - 1,
+      parseInt(d, 10),
+      parseInt(hh, 10),
+      parseInt(mm, 10),
+      parseInt(ss, 10)
+    );
+    return new Date(utcMs - this.parseTimezoneOffsetMinutes(conf.timezone) * 60 * 1000);
+  }
+
+  getDeadlineTime(conf) {
+    const deadline = this.parseDeadlineInstant(conf);
+    return deadline ? deadline.getTime() : Number.MAX_SAFE_INTEGER;
+  }
+
+  isUpcoming(conf) {
+    const deadline = this.parseDeadlineInstant(conf);
+    if (!deadline) return Boolean(conf.is_future);
+    return deadline.getTime() > Date.now();
   }
 
   formatUpdatedAt(isoStr) {

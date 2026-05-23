@@ -201,14 +201,13 @@ def main():
                 else:
                     past_list.append(record)
 
-    # Sort future by nearest deadline first
+    # Sort upcoming deadlines by nearest deadline first.
+    # Past deadlines are intentionally omitted from the public CFP list.
     future_list.sort(key=lambda c: c.get('deadline') or '9999-99-99')
-    # Sort past by most recent deadline first
-    past_list.sort(key=lambda c: c.get('deadline') or '0000-00-00', reverse=True)
 
     result = {
         'updated_at': now_utc.strftime('%Y-%m-%dT%H:%M:%SZ'),
-        'conferences': future_list + past_list,
+        'conferences': future_list,
     }
 
     os.makedirs('assets/data', exist_ok=True)
@@ -216,9 +215,8 @@ def main():
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
-    total = len(future_list) + len(past_list)
-    print(f'\nSaved {total} CCF-A conferences to {output_path}')
-    print(f'  Future: {len(future_list)}, Past: {len(past_list)}')
+    print(f'\nSaved {len(future_list)} upcoming CCF-A conferences to {output_path}')
+    print(f'  Future: {len(future_list)}, Past omitted: {len(past_list)}')
 
 
 if __name__ == '__main__':
