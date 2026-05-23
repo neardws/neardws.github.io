@@ -2,6 +2,7 @@
 
 ## 📄 Patents
 
+- Xin Ma, Shaohua Wan, Xuqi Cai, Lixin Duan, Wen Li, **Xincao Xu**, "A Multimodal Fusion Method, Device, and Storage Medium for Autonomous Driving", *Chinese Invention Patent*, ZL202510951173.X, CN120451728B, 2025.
 - **Xincao Xu**, Kai Liu, Dong Li, "A Control Plane View Construction Method for Software-Defined Vehicular Networks", *Chinese Invention Patent*, ZL202110591822.1, 2022.
 - Liu Kai, Zhang Lang, **Xincao Xu**, Ren Hualing, Zhou Yi, "An Edge Computing Based Collision Warning Method for Vehicles in Blind Areas", *Chinese Invention Patent*, ZL201910418745.2, 2021.
 - Ren Hualing, Liu Kai, Chen Mengliang, Zhou Yi, **Xincao Xu**, "A Fog Computing-based Information Acquisition, Computing, and Transmission Architecture", *Chinese Invention Patent*, ZL201910146357.3, 2021.
