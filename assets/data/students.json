@@ -176,12 +176,16 @@
       "institution": "Southwest Jiaotong University"
     },
     "github": "nililili163",
-    "email": "nl15208399601@my.swjtu.edu.cn",
-    "status": "current",
+    "email": "1796983646@qq.com",
+    "status": "alumni",
     "start_year": 2023,
-    "graduation_year": null,
-    "dissertation_title": null,
-    "first_job": null
+    "graduation_year": 2026,
+    "dissertation_title": "Research on Key Technologies for Cross-Camera Collaborative Inference in Edge Video Analytics",
+    "first_job": {
+      "title": "Algorithm Engineer",
+      "company": "Taobao Instant Commerce (Rajax Network Technology (Shanghai) Co., Ltd.)",
+      "url": "https://www.alibabagroup.com/en-US/about-alibaba-businesses-1894256634985709568"
+    }
   },
   {
     "id": "zhairuiqin",
