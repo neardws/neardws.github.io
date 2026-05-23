@@ -23,15 +23,9 @@ class GrantCards {
       const res = await fetch('/assets/data/grants.json');
       this.data = await res.json();
 
-      // Sort by funding-source rank first, then by start year within the source
+      // Sort by project start month (newest first)
       this.data.sort((a, b) => {
-        const getStartYear = (period) => {
-          const match = period.match(/(\d{4})/);
-          return match ? parseInt(match[1]) : 0;
-        };
-        const sourceDiff = this.getSourceRank(a.source.name) - this.getSourceRank(b.source.name);
-        if (sourceDiff !== 0) return sourceDiff;
-        return getStartYear(b.period) - getStartYear(a.period);
+        return this.extractStartDateValue(b.period) - this.extractStartDateValue(a.period);
       });
 
       // Add start_year to each grant for display
@@ -51,6 +45,29 @@ class GrantCards {
   extractStartYear(period) {
     const match = period.match(/(\d{4})/);
     return match ? parseInt(match[1]) : null;
+  }
+
+  extractStartDateValue(period) {
+    const monthOrder = {
+      jan: 1, january: 1,
+      feb: 2, february: 2,
+      mar: 3, march: 3,
+      apr: 4, april: 4,
+      may: 5,
+      jun: 6, june: 6,
+      jul: 7, july: 7,
+      aug: 8, august: 8,
+      sep: 9, september: 9,
+      oct: 10, october: 10,
+      nov: 11, november: 11,
+      dec: 12, december: 12
+    };
+    const match = period.match(/([A-Za-z]+)\s+(\d{4})|(\d{4})/);
+    if (!match) return 0;
+
+    const year = parseInt(match[2] || match[3], 10);
+    const month = match[1] ? (monthOrder[match[1].toLowerCase()] || 1) : 1;
+    return year * 12 + month;
   }
 
   getSourceRank(sourceName) {
