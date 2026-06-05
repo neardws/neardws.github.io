@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-04T07:30:45Z",
+  "updated_at": "2026-06-05T07:22:27Z",
   "conferences": [
     {
       "title": "SIGOPS ATC",
@@ -28,6 +28,21 @@
       "timezone": "UTC-12",
       "date": "February 16-23, 2027",
       "place": "Montréal, Québec, Canada",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "HPCA",
+      "description": "IEEE International Symposium on High-Performance Computer Architecture",
+      "sub": "DS",
+      "sub_name": "Computer Architecture",
+      "ccf_rank": "A",
+      "link": "https://conf.researchr.org/home/hpca-2027",
+      "abstract_deadline": "2026-07-24 23:59:59",
+      "deadline": "2026-07-31 23:59:59",
+      "timezone": "AoE",
+      "date": "Jan 30-Feb 3, 2027",
+      "place": "Salt Lake City, Utah",
       "year": 2027,
       "is_future": true
     },
