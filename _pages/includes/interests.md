@@ -150,8 +150,22 @@ Passionate about fitness, he has earned a series of accolades in his active life
   </tr>
   <tr>
     <td>Shenzhen Guanlan River Dragon Boat Race</td>
-    <td>Round 1: 02:16.882; Round 2: 02:14.111; Round 3: 02:10.849; Average: 02:13.947</td>
-    <td>350 m, 12-person dragon boat race; role: paddler; crew format: 1 drummer, 1 steersperson, 10 paddlers</td>
+    <td>
+      <div style="display: grid; grid-template-columns: 4.8em max-content; column-gap: 0.75em; row-gap: 0.15em; font-variant-numeric: tabular-nums;">
+        <span>Round 1</span><span>00:02:16.882</span>
+        <span>Round 2</span><span>00:02:14.111</span>
+        <span>Round 3</span><span>00:02:10.849</span>
+        <strong>Average</strong><strong>00:02:13.947</strong>
+      </div>
+    </td>
+    <td>
+      350 m, 12-person dragon boat race<br>
+      Role: paddler
+      <details style="margin-top: 0.15em;">
+        <summary>Crew format</summary>
+        1 drummer, 1 steersperson, 10 paddlers
+      </details>
+    </td>
     <td>Shenzhen 🇨🇳</td>
     <td>Jun 5, 2026</td>
   </tr>
