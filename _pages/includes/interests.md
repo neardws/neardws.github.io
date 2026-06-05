@@ -136,17 +136,24 @@ Passionate about fitness, he has earned a series of accolades in his active life
 <table class="no-horizontal-lines">
   <tr>
     <th style="width: 350px;">Event Name</th>
-    <th>Net Time</th>
-    <th>Average Pace</th>
+    <th>Result</th>
+    <th>Details</th>
     <th>Location</th>
     <th>Date</th>
   </tr>
   <tr>
     <td>Chongqing (Changjiahui) Half Marathon</td>
     <td>03:05:06 (PB)</td>
-    <td>08'46'' (PB)</td>
+    <td>Average pace: 08'46'' (PB)</td>
     <td>Chongqing 🇨🇳</td>
     <td>Nov 3, 2024</td>
+  </tr>
+  <tr>
+    <td>Shenzhen Guanlan River Dragon Boat Race</td>
+    <td>Round 1: 02:16.882; Round 2: 02:14.111; Round 3: 02:10.849; Average: 02:13.947</td>
+    <td>350 m, 12-person dragon boat race; role: paddler; crew format: 1 drummer, 1 steersperson, 10 paddlers</td>
+    <td>Shenzhen 🇨🇳</td>
+    <td>Jun 5, 2026</td>
   </tr>
 </table>
 
