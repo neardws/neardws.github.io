@@ -96,41 +96,6 @@
 
 Passionate about fitness, he has earned a series of accolades in his active lifestyle.
 
-- 🍎 <a href="https://www.apple.com/apple-fitness-plus/" class="no-underline">Apple Fitness</a> achievements
-
-<table class="no-horizontal-lines">
-  <tr>
-    <td style="text-align: center;"><img src="images/sports-weekly.webp" alt="Fitness+ Weekly Workout Streak" width="80" height="80"></td>
-    <td style="text-align: center;"><img src="images/sports-move.webp" alt="100 Move Goals" width="80" height="80"></td>
-    <td style="text-align: center;"><img src="images/sports-treadmill.webp" alt="50 Fitness+ Treadmill Workouts" width="80" height="80"></td>
-    <td style="text-align: center;"><img src="images/sports-7-workout.webp" alt="7-Workout Week" width="80" height="80"></td>
-    <td style="text-align: center;"><img src="images/sports-cycling.webp" alt="Cycling Workout Record" width="80" height="80"></td>
-    <td style="text-align: center;"><img src="images/sports-elliptical.webp" alt="Elliptical Workout Record" width="80" height="80"></td>
-    <td style="text-align: center;"><img src="images/sports-running.webp" alt="Running Workout Record" width="80" height="80"></td>
-    <td style="text-align: center;"><img src="images/sports-swimming.webp" alt="Swimming Workout Record" width="80" height="80"></td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">Four-week continuous Fitness+ workout streak award</td>
-    <td style="text-align: center;">Daily Move goal reached 100 times award</td>
-    <td style="text-align: center;">50th Fitness+ Treadmill workout accomplishment</td>
-    <td style="text-align: center;">50-time winner of the 7-workouts-per-week challenge</td>
-    <td style="text-align: center;">Top cycling calorie burner award (525 Calories)</td>
-    <td style="text-align: center;">Peak calorie burn on the elliptical award (645 Calories)</td>
-    <td style="text-align: center;">Maximum calories burned running award (579 Calories)</td>
-    <td style="text-align: center;">Highest calories burned swimming award (157 Calories)</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">Aug 15, 2023</td>
-    <td style="text-align: center;">Nov 30, 2021</td>
-    <td style="text-align: center;">Aug 7, 2023</td>
-    <td style="text-align: center;">Sep 22, 2023</td>
-    <td style="text-align: center;">May 17, 2023</td>
-    <td style="text-align: center;">Jan 21, 2023</td>
-    <td style="text-align: center;">Aug 16, 2023</td>
-    <td style="text-align: center;">Jun 13, 2023</td>
-  </tr>
-</table>
-
 - 🆚 Events (**PB**: Personal Best)
 
 <table class="no-horizontal-lines">
@@ -197,6 +162,41 @@ Passionate about fitness, he has earned a series of accolades in his active life
     <td style="text-align: center;">May 26, 2024</td>
     <td style="text-align: center;">Nov 3, 2024</td>
     <td style="text-align: center;">May 16, 2025</td>
+  </tr>
+</table>
+
+- 🍎 <a href="https://www.apple.com/apple-fitness-plus/" class="no-underline">Apple Fitness</a> achievements
+
+<table class="no-horizontal-lines">
+  <tr>
+    <td style="text-align: center;"><img src="images/sports-weekly.webp" alt="Fitness+ Weekly Workout Streak" width="80" height="80"></td>
+    <td style="text-align: center;"><img src="images/sports-move.webp" alt="100 Move Goals" width="80" height="80"></td>
+    <td style="text-align: center;"><img src="images/sports-treadmill.webp" alt="50 Fitness+ Treadmill Workouts" width="80" height="80"></td>
+    <td style="text-align: center;"><img src="images/sports-7-workout.webp" alt="7-Workout Week" width="80" height="80"></td>
+    <td style="text-align: center;"><img src="images/sports-cycling.webp" alt="Cycling Workout Record" width="80" height="80"></td>
+    <td style="text-align: center;"><img src="images/sports-elliptical.webp" alt="Elliptical Workout Record" width="80" height="80"></td>
+    <td style="text-align: center;"><img src="images/sports-running.webp" alt="Running Workout Record" width="80" height="80"></td>
+    <td style="text-align: center;"><img src="images/sports-swimming.webp" alt="Swimming Workout Record" width="80" height="80"></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Four-week continuous Fitness+ workout streak award</td>
+    <td style="text-align: center;">Daily Move goal reached 100 times award</td>
+    <td style="text-align: center;">50th Fitness+ Treadmill workout accomplishment</td>
+    <td style="text-align: center;">50-time winner of the 7-workouts-per-week challenge</td>
+    <td style="text-align: center;">Top cycling calorie burner award (525 Calories)</td>
+    <td style="text-align: center;">Peak calorie burn on the elliptical award (645 Calories)</td>
+    <td style="text-align: center;">Maximum calories burned running award (579 Calories)</td>
+    <td style="text-align: center;">Highest calories burned swimming award (157 Calories)</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Aug 15, 2023</td>
+    <td style="text-align: center;">Nov 30, 2021</td>
+    <td style="text-align: center;">Aug 7, 2023</td>
+    <td style="text-align: center;">Sep 22, 2023</td>
+    <td style="text-align: center;">May 17, 2023</td>
+    <td style="text-align: center;">Jan 21, 2023</td>
+    <td style="text-align: center;">Aug 16, 2023</td>
+    <td style="text-align: center;">Jun 13, 2023</td>
   </tr>
 </table>
 
