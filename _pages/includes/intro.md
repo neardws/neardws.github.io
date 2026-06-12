@@ -60,7 +60,7 @@ He received the Ph.D. degree in computer science from the College of Computer Sc
 From 2023 to 2025, he was a Postdoctoral Research Fellow with the Shenzhen Institute for Advanced Study, UESTC.
 His research interests include edge intelligence, agentic AI, and agentic RL.
 He has authored and co-authored more than 20 papers with total google scholar <a href='https://scholar.google.com/citations?user=DK5avZUAAAAJ'><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FNeardws%2Fneardws.github.io@google-scholar-stats%2Fgs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=Citations"></a>.
-He received the Outstanding Ph.D. Dissertation Award from the Asia-Pacific Association of Cognitive Intelligence in 2025, the Best Paper Award from the IEEE International Symposium on Product Compliance Engineering-Asia in 2018, and multiple Best Paper Finalist honors.
+He received the Outstanding Ph.D. Dissertation Award from the Asia-Pacific Association of Cognitive Intelligence in 2025, several Best Paper Awards at IEEE international conferences, and multiple Best Paper Finalist honors.
 He has been recognized as a Shenzhen High-Level Talent since December 2025.
 He is a member of IEEE, ACM, CCF, CIE, CAAI, CAA, and several other professional societies.
 He has served as principal investigator on projects funded by the Guangdong Basic and Applied Basic Research Foundation and the China Postdoctoral Science Foundation, and has also participated in several National Natural Science Foundation of China (NSFC) general projects and Shenzhen Science and Technology Program initiatives.
