@@ -185,8 +185,12 @@ body:hover .visually-hidden button {
   color: #000;
   display: inline-block;
   fill: currentColor;
-  height: 1em;
-  vertical-align: -0.125em;
+  height: 0.875em;
+  vertical-align: -0.08em;
+}
+
+.icon-x-logo.fa-fw {
+  width: 1.25em;
 }
 
 .social-icons {
