@@ -328,6 +328,26 @@
     "first_job": null
   },
   {
+    "id": "fanlining",
+    "name_en": "Lining Fan",
+    "name_cn": "樊丽宁",
+    "degree": "M.S.",
+    "field": "Computer Science",
+    "institution": "University of Electronic Science and Technology of China",
+    "co_advisor": {
+      "name": "Lixin Duan",
+      "title": "Prof.",
+      "institution": "University of Electronic Science and Technology of China"
+    },
+    "github": "mutouff",
+    "email": "fanliningdida@qq.com",
+    "status": "current",
+    "start_year": 2025,
+    "graduation_year": null,
+    "dissertation_title": null,
+    "first_job": null
+  },
+  {
     "id": "helusheng",
     "name_en": "Lusheng He",
     "name_cn": "何鲁生",
