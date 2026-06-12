@@ -1,5 +1,20 @@
 [
   {
+    "id": "shltp2025",
+    "source": {
+      "name": "SHLTP",
+      "full_name": "Shenzhen High-Level Talent Program",
+      "url": null,
+      "icon": "images/grants_sz.webp"
+    },
+    "type": "Research Start-up Fund",
+    "title": "Research Start-up Funding for Shenzhen High-Level Talent",
+    "amount": "3,000,000 CNY",
+    "period": "Dec 2025 - Dec 2028",
+    "note": "Shenzhen Specially Appointed Post",
+    "role": "PI"
+  },
+  {
     "id": "gd2025",
     "source": {
       "name": "GBABRF",

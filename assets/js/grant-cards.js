@@ -12,7 +12,7 @@ class GrantCards {
     this.activeRoleFilter = 'all';
     this.searchQuery = '';
     this.container = null;
-    this.sourceOrder = ['NSFC', 'MOST', 'GBABRF', 'CPSF', 'SSTP', 'ERC'];
+    this.sourceOrder = ['NSFC', 'MOST', 'GBABRF', 'CPSF', 'SSTP', 'SHLTP', 'ERC'];
   }
 
   async init() {
@@ -180,6 +180,7 @@ class GrantCards {
       { key: 'GBABRF', label: 'GBABRF' },
       { key: 'CPSF', label: 'CPSF' },
       { key: 'SSTP', label: 'SSTP' },
+      { key: 'SHLTP', label: 'SHLTP' },
       { key: 'ERC', label: 'ERC' }
     ];
     const sourceBtns = sourceTypes.map(t =>
@@ -246,6 +247,7 @@ class GrantCards {
       'GBABRF': 'gbabrf',
       'CPSF': 'cpsf',
       'SSTP': 'sstp',
+      'SHLTP': 'shltp',
       'ERC': 'erc'
     };
     return typeMap[sourceName] || 'other';

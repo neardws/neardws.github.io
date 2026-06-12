@@ -191,6 +191,7 @@
 .grant-card--gbabrf:hover { border-left-color: var(--grant-gbabrf, #10b981); }
 .grant-card--cpsf:hover { border-left-color: var(--grant-cpsf, #8b5cf6); }
 .grant-card--sstp:hover { border-left-color: var(--grant-sstp, #f59e0b); }
+.grant-card--shltp:hover { border-left-color: var(--grant-shltp, #14b8a6); }
 .grant-card--erc:hover { border-left-color: var(--grant-erc, #ef4444); }
 .grant-card--other:hover { border-left-color: var(--grant-other, #6b7280); }
 
@@ -344,6 +345,7 @@
     --grant-gbabrf: #34d399;
     --grant-cpsf: #a78bfa;
     --grant-sstp: #fbbf24;
+    --grant-shltp: #2dd4bf;
     --grant-erc: #f87171;
     --grant-other: #9ca3af;
     --grant-icon-bg: #374151;
