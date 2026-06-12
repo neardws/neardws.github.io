@@ -1,21 +1,6 @@
 {
-  "updated_at": "2026-06-11T07:32:19Z",
+  "updated_at": "2026-06-12T07:30:25Z",
   "conferences": [
-    {
-      "title": "SIGOPS ATC",
-      "description": "ACM SIGOPS Annual Technical Conference",
-      "sub": "DS",
-      "sub_name": "Computer Architecture",
-      "ccf_rank": "A",
-      "link": "https://sigops.org/s/conferences/atc/2026/index.html",
-      "abstract_deadline": null,
-      "deadline": "2026-06-11 11:59:59",
-      "timezone": "UTC+0",
-      "date": "November 15-18, 2026",
-      "place": "Hyatt Hotel, Shatin, Hong Kong, China",
-      "year": 2026,
-      "is_future": true
-    },
     {
       "title": "AAAI",
       "description": "AAAI Conference on Artificial Intelligence",
