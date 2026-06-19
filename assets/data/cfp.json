@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18T07:33:04Z",
+  "updated_at": "2026-06-19T07:44:30Z",
   "conferences": [
     {
       "title": "AAAI",
@@ -28,6 +28,21 @@
       "timezone": "AoE",
       "date": "Jan 30-Feb 3, 2027",
       "place": "Salt Lake City, Utah",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "INFOCOM",
+      "description": "IEEE International Conference on Computer Communications",
+      "sub": "NW",
+      "sub_name": "Network System",
+      "ccf_rank": "A",
+      "link": "https://infocom2027.ieee-infocom.org/",
+      "abstract_deadline": "2026-07-24 23:59:59",
+      "deadline": "2026-07-31 23:59:59",
+      "timezone": "AoE",
+      "date": "May 24 - 27, 2027",
+      "place": "Honolulu, HI, USA",
       "year": 2027,
       "is_future": true
     },
