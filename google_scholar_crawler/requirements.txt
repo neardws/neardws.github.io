@@ -1,2 +1,5 @@
-jsonpickle==1.4.2
-scholarly==1.5.1
+# Google Scholar crawler dependencies
+# Updated versions with better timeout and error handling
+
+scholarly>=1.7.11    # Latest version with improved anti-detection
+jsonpickle>=3.0.0    # Updated jsonpickle for better compatibility
