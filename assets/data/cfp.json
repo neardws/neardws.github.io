@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06T07:24:43Z",
+  "updated_at": "2026-07-07T07:06:08Z",
   "conferences": [
     {
       "title": "AAAI",
@@ -59,6 +59,21 @@
       "date": "October 11-15, 2026",
       "place": "Shanghai, China",
       "year": 2026,
+      "is_future": true
+    },
+    {
+      "title": "PPoPP",
+      "description": "ACM SIGPLAN Symposium on Principles & Practice of Parallel Programming",
+      "sub": "DS",
+      "sub_name": "Computer Architecture",
+      "ccf_rank": "A",
+      "link": "https://ppopp27.sigplan.org/",
+      "abstract_deadline": null,
+      "deadline": "2026-08-03 23:59:59",
+      "timezone": "AoE",
+      "date": "Mar 20-24, 2027",
+      "place": "Salt Lake City, Utah, USA",
+      "year": 2027,
       "is_future": true
     },
     {
