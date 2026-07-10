@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-09T07:06:40Z",
+  "updated_at": "2026-07-10T07:05:34Z",
   "conferences": [
     {
       "title": "AAAI",
@@ -148,6 +148,21 @@
       "timezone": "AoE",
       "date": "April 19-24, 2027",
       "place": "Rabat, Morocco",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "WWW",
+      "description": "International World Wide Web Conferences",
+      "sub": "MX",
+      "sub_name": "Interdiscipline",
+      "ccf_rank": "A",
+      "link": "https://acmweb2027.org/",
+      "abstract_deadline": "2026-10-11 23:59:59",
+      "deadline": "2026-10-18 23:59:59",
+      "timezone": "AoE",
+      "date": "May 10 - 14, 2027",
+      "place": "Dublin, Ireland",
       "year": 2027,
       "is_future": true
     }
