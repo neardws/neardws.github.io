@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24T06:46:20Z",
+  "updated_at": "2026-07-25T06:42:46Z",
   "conferences": [
     {
       "title": "AAAI",
@@ -73,6 +73,21 @@
       "timezone": "AoE",
       "date": "Mar 20-24, 2027",
       "place": "Salt Lake City, Utah, USA",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "MobiCom",
+      "description": "ACM Annual International Conference On Mobile Computing And Networking",
+      "sub": "NW",
+      "sub_name": "Network System",
+      "ccf_rank": "A",
+      "link": "https://www.sigmobile.org/mobicom/2027/",
+      "abstract_deadline": "2026-08-26 23:59:59",
+      "deadline": "2026-09-02 23:59:59",
+      "timezone": "AoE",
+      "date": "Oct 18-22, 2027",
+      "place": "TBD",
       "year": 2027,
       "is_future": true
     },
