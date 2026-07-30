@@ -1,21 +1,6 @@
 {
-  "updated_at": "2026-07-29T06:49:37Z",
+  "updated_at": "2026-07-30T06:48:32Z",
   "conferences": [
-    {
-      "title": "AAAI",
-      "description": "AAAI Conference on Artificial Intelligence",
-      "sub": "AI",
-      "sub_name": "Artificial Intelligence",
-      "ccf_rank": "A",
-      "link": "https://aaai.org/conference/aaai/aaai-27/",
-      "abstract_deadline": "2026-07-21 23:59:59",
-      "deadline": "2026-07-28 23:59:59",
-      "timezone": "UTC-12",
-      "date": "February 16-23, 2027",
-      "place": "Montréal, Québec, Canada",
-      "year": 2027,
-      "is_future": true
-    },
     {
       "title": "HPCA",
       "description": "IEEE International Symposium on High-Performance Computer Architecture",
@@ -137,21 +122,6 @@
       "is_future": true
     },
     {
-      "title": "ICLR",
-      "description": "International Conference on Learning Representations",
-      "sub": "AI",
-      "sub_name": "Artificial Intelligence",
-      "ccf_rank": "A",
-      "link": "https://iclr.cc/Conferences/2027",
-      "abstract_deadline": "2026-09-11 23:59:59",
-      "deadline": "2026-09-16 23:59:59",
-      "timezone": "AoE",
-      "date": "April 27-30, 2027",
-      "place": "San Francisco, CA, USA",
-      "year": 2027,
-      "is_future": true
-    },
-    {
       "title": "NSDI",
       "description": "USENIX Symposium on Networked Systems Design and Implementation",
       "sub": "NW",
@@ -178,6 +148,21 @@
       "timezone": "AoE",
       "date": "April 19-24, 2027",
       "place": "Rabat, Morocco",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "ICLR",
+      "description": "International Conference on Learning Representations",
+      "sub": "AI",
+      "sub_name": "Artificial Intelligence",
+      "ccf_rank": "A",
+      "link": "https://iclr.cc/Conferences/2027",
+      "abstract_deadline": "2026-09-18 23:59:59",
+      "deadline": "2026-09-25 23:59:59",
+      "timezone": "AoE",
+      "date": "TBD",
+      "place": "San Francisco, CA, USA",
       "year": 2027,
       "is_future": true
     },
