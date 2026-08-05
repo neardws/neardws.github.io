@@ -1,21 +1,6 @@
 {
-  "updated_at": "2026-08-04T06:47:52Z",
+  "updated_at": "2026-08-05T06:48:40Z",
   "conferences": [
-    {
-      "title": "PPoPP",
-      "description": "ACM SIGPLAN Symposium on Principles & Practice of Parallel Programming",
-      "sub": "DS",
-      "sub_name": "Computer Architecture",
-      "ccf_rank": "A",
-      "link": "https://ppopp27.sigplan.org/",
-      "abstract_deadline": null,
-      "deadline": "2026-08-03 23:59:59",
-      "timezone": "AoE",
-      "date": "Mar 20-24, 2027",
-      "place": "Salt Lake City, Utah, USA",
-      "year": 2027,
-      "is_future": true
-    },
     {
       "title": "MobiCom",
       "description": "ACM Annual International Conference On Mobile Computing And Networking",
