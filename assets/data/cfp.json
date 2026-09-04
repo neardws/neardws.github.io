@@ -1,21 +1,6 @@
 {
-  "updated_at": "2026-09-03T10:17:22Z",
+  "updated_at": "2026-09-04T10:05:54Z",
   "conferences": [
-    {
-      "title": "MobiCom",
-      "description": "ACM Annual International Conference On Mobile Computing And Networking",
-      "sub": "NW",
-      "sub_name": "Network System",
-      "ccf_rank": "A",
-      "link": "https://www.sigmobile.org/mobicom/2027/",
-      "abstract_deadline": "2026-08-26 23:59:59",
-      "deadline": "2026-09-02 23:59:59",
-      "timezone": "AoE",
-      "date": "Oct 18-22, 2027",
-      "place": "TBD",
-      "year": 2027,
-      "is_future": true
-    },
     {
       "title": "ASPLOS",
       "description": "International Conference on Architectural Support for Programming Languages and Operating Systems",
@@ -134,6 +119,21 @@
       "date": "October 11-15, 2026",
       "place": "Shanghai, China",
       "year": 2026,
+      "is_future": true
+    },
+    {
+      "title": "CVPR",
+      "description": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+      "sub": "AI",
+      "sub_name": "Artificial Intelligence",
+      "ccf_rank": "A",
+      "link": "https://cvpr.thecvf.com/Conferences/2027",
+      "abstract_deadline": "2026-11-10 23:59:00",
+      "deadline": "2026-11-16 23:59:00",
+      "timezone": "UTC-12",
+      "date": "June 20-24, 2027",
+      "place": "Seattle, WA, United States",
+      "year": 2027,
       "is_future": true
     }
   ]
