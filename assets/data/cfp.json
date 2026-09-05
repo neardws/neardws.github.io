@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T10:05:54Z",
+  "updated_at": "2026-09-05T09:35:30Z",
   "conferences": [
     {
       "title": "ASPLOS",
@@ -97,9 +97,9 @@
       "sub": "MX",
       "sub_name": "Interdiscipline",
       "ccf_rank": "A",
-      "link": "https://acmweb2027.org/",
-      "abstract_deadline": "2026-10-11 23:59:59",
-      "deadline": "2026-10-18 23:59:59",
+      "link": "https://www2027.thewebconf.org/",
+      "abstract_deadline": "2026-10-18 23:59:59",
+      "deadline": "2026-10-25 23:59:59",
       "timezone": "AoE",
       "date": "May 10 - 14, 2027",
       "place": "Dublin, Ireland",
