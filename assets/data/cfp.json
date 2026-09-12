@@ -1,21 +1,6 @@
 {
-  "updated_at": "2026-09-11T10:08:15Z",
+  "updated_at": "2026-09-12T09:43:15Z",
   "conferences": [
-    {
-      "title": "CHI",
-      "description": "ACM Conference on Human Factors in Computing Systems",
-      "sub": "HI",
-      "sub_name": "Computer-Human Interaction",
-      "ccf_rank": "A",
-      "link": "https://chi2027.acm.org/",
-      "abstract_deadline": null,
-      "deadline": "2026-09-10 23:59:59",
-      "timezone": "AoE",
-      "date": "May 10 - 14, 2027",
-      "place": "David L. Lawrence Convention Center, Pittsburgh, USA",
-      "year": 2027,
-      "is_future": true
-    },
     {
       "title": "FAST",
       "description": "USENIX Conference on File and Storage Technologies",
@@ -118,6 +103,21 @@
       "timezone": "UTC-12",
       "date": "June 20-24, 2027",
       "place": "Seattle, WA, United States",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "DAC",
+      "description": "Design Automation Conference",
+      "sub": "DS",
+      "sub_name": "Computer Architecture",
+      "ccf_rank": "A",
+      "link": "https://dac.com/2027/authors/call-for-contributions",
+      "abstract_deadline": null,
+      "deadline": "2026-11-18 17:00:00",
+      "timezone": "UTC-8",
+      "date": "July 11-14, 2027",
+      "place": "San Jose, CA",
       "year": 2027,
       "is_future": true
     }
