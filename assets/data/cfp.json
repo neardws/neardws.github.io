@@ -1,21 +1,6 @@
 {
-  "updated_at": "2026-09-16T10:25:42Z",
+  "updated_at": "2026-09-17T10:34:51Z",
   "conferences": [
-    {
-      "title": "FAST",
-      "description": "USENIX Conference on File and Storage Technologies",
-      "sub": "DS",
-      "sub_name": "Computer Architecture",
-      "ccf_rank": "A",
-      "link": "https://www.usenix.org/conference/fast27",
-      "abstract_deadline": null,
-      "deadline": "2026-09-15 23:59:00",
-      "timezone": "AoE",
-      "date": "FEBRUARY 23-25, 2027",
-      "place": "Renton, WA, USA",
-      "year": 2027,
-      "is_future": true
-    },
     {
       "title": "NSDI",
       "description": "USENIX Symposium on Networked Systems Design and Implementation",
