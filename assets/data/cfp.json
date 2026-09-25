@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T10:40:52Z",
+  "updated_at": "2026-09-25T10:44:28Z",
   "conferences": [
     {
       "title": "EuroSys",
@@ -11,7 +11,7 @@
       "abstract_deadline": "2026-09-17 23:59:59",
       "deadline": "2026-09-24 23:59:59",
       "timezone": "AoE",
-      "date": "April 19-24, 2027",
+      "date": "April 19-23, 2027",
       "place": "Rabat, Morocco",
       "year": 2027,
       "is_future": true
