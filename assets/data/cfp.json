@@ -1,21 +1,6 @@
 {
-  "updated_at": "2026-09-25T10:44:28Z",
+  "updated_at": "2026-09-26T10:27:09Z",
   "conferences": [
-    {
-      "title": "EuroSys",
-      "description": "European Conference on Computer Systems",
-      "sub": "DS",
-      "sub_name": "Computer Architecture",
-      "ccf_rank": "A",
-      "link": "https://2027.eurosys.org/",
-      "abstract_deadline": "2026-09-17 23:59:59",
-      "deadline": "2026-09-24 23:59:59",
-      "timezone": "AoE",
-      "date": "April 19-23, 2027",
-      "place": "Rabat, Morocco",
-      "year": 2027,
-      "is_future": true
-    },
     {
       "title": "ICLR",
       "description": "International Conference on Learning Representations",
