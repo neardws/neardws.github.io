@@ -1,21 +1,6 @@
 {
-  "updated_at": "2026-09-26T10:27:09Z",
+  "updated_at": "2026-09-27T10:57:48Z",
   "conferences": [
-    {
-      "title": "ICLR",
-      "description": "International Conference on Learning Representations",
-      "sub": "AI",
-      "sub_name": "Artificial Intelligence",
-      "ccf_rank": "A",
-      "link": "https://iclr.cc/Conferences/2027",
-      "abstract_deadline": "2026-09-18 23:59:59",
-      "deadline": "2026-09-25 23:59:59",
-      "timezone": "AoE",
-      "date": "April 26-30, 2027",
-      "place": "San Francisco, CA, USA",
-      "year": 2027,
-      "is_future": true
-    },
     {
       "title": "WWW",
       "description": "International World Wide Web Conferences",
@@ -56,7 +41,7 @@
       "abstract_deadline": "2026-11-10 23:59:00",
       "deadline": "2026-11-16 23:59:00",
       "timezone": "UTC-12",
-      "date": "June 20-24, 2027",
+      "date": "June 20-25, 2027",
       "place": "Seattle, WA, United States",
       "year": 2027,
       "is_future": true
@@ -68,7 +53,7 @@
       "sub_name": "Computer Architecture",
       "ccf_rank": "A",
       "link": "https://dac.com/2027/authors/call-for-contributions",
-      "abstract_deadline": null,
+      "abstract_deadline": "2026-11-11 17:00:00",
       "deadline": "2026-11-18 17:00:00",
       "timezone": "UTC-8",
       "date": "July 11-14, 2027",
