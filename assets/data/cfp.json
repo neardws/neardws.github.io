@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T11:30:22Z",
+  "updated_at": "2026-10-01T11:58:57Z",
   "conferences": [
     {
       "title": "WWW",
@@ -14,21 +14,6 @@
       "date": "May 10 - 14, 2027",
       "place": "Dublin, Ireland",
       "year": 2027,
-      "is_future": true
-    },
-    {
-      "title": "UbiComp/ISWC",
-      "description": "ACM International Joint Conference on Pervasive and Ubiquitous Computing",
-      "sub": "HI",
-      "sub_name": "Computer-Human Interaction",
-      "ccf_rank": "A",
-      "link": "https://www.ubicomp.org/ubicomp-iswc-2026",
-      "abstract_deadline": null,
-      "deadline": "2026-11-01 23:59:59",
-      "timezone": "AoE",
-      "date": "October 11-15, 2026",
-      "place": "Shanghai, China",
-      "year": 2026,
       "is_future": true
     },
     {
@@ -58,6 +43,21 @@
       "timezone": "UTC-8",
       "date": "July 11-14, 2027",
       "place": "San Jose, CA",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "ACL",
+      "description": "Annual Meeting of the Association for Computational Linguistics",
+      "sub": "AI",
+      "sub_name": "Artificial Intelligence",
+      "ccf_rank": "A",
+      "link": "https://2027.aclweb.org/",
+      "abstract_deadline": null,
+      "deadline": "2027-01-04 23:59:59",
+      "timezone": "UTC-12",
+      "date": "August 17-22, 2027",
+      "place": "Kyoto, Japan",
       "year": 2027,
       "is_future": true
     }
