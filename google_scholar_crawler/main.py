@@ -27,7 +27,7 @@ from scholarly import ProxyGenerator, scholarly
 SECTIONS = ['basics', 'indices', 'counts', 'publications']
 # (strategy, hard timeout in seconds) for each attempt, in order.
 # Total worst case (~11 min) stays inside the workflow's 15-minute job timeout.
-ATTEMPTS = [('direct', 120), ('direct', 120), ('free_proxy', 180), ('free_proxy', 180)]
+ATTEMPTS = [('direct', 90), ('free_proxy', 180), ('free_proxy', 180), ('free_proxy', 180)]
 RETRY_DELAY = 15
 OUTPUT_FILES = ('gs_data.json', 'gs_data_shieldsio.json')
 
@@ -94,7 +94,10 @@ def _attempt(scholar_id, strategy, output_dir):
     scholarly.set_timeout(30)
     scholarly.set_retries(2)
     if strategy == 'free_proxy':
-        scholarly.use_proxy(_free_proxy_generator())
+        pg = _free_proxy_generator()
+        # Pass it as the secondary too, otherwise scholarly calls the broken
+        # FreeProxies() itself for the secondary generator.
+        scholarly.use_proxy(pg, pg)
     generate_citation_data(scholar_id, output_dir)
 
 
