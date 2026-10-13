@@ -16,6 +16,7 @@ import multiprocessing as mp
 import os
 from datetime import datetime
 from pathlib import Path
+import random
 import shutil
 import sys
 import tempfile
@@ -65,15 +66,35 @@ def generate_citation_data(scholar_id, output_dir='results'):
     })
 
 
+def _free_proxy_generator(max_candidates=15):
+    """Pick a free proxy that can reach Scholar.
+
+    scholarly 1.5.1's ProxyGenerator.FreeProxies() is incompatible with
+    free-proxy 1.3 (get_proxy_list() now needs ``repeat``), so build the
+    candidate list ourselves and let SingleProxy() test each one.
+    """
+    from fp.fp import FreeProxy
+
+    candidates = FreeProxy(https=True, timeout=1).get_proxy_list(repeat=False)
+    random.shuffle(candidates)
+    for address in candidates[:max_candidates]:
+        proxy = address if '://' in address else f'http://{address}'
+        pg = ProxyGenerator()
+        try:
+            if pg.SingleProxy(http=proxy, https=proxy):
+                print(f'  using free proxy {proxy}', flush=True)
+                return pg
+        except Exception as exc:  # broken proxies raise all sorts of errors
+            print(f'  proxy {proxy} failed: {exc}', flush=True)
+    raise RuntimeError('no working free proxy found')
+
+
 def _attempt(scholar_id, strategy, output_dir):
     """Child-process body: configure the connection and fetch once."""
     scholarly.set_timeout(30)
     scholarly.set_retries(2)
     if strategy == 'free_proxy':
-        pg = ProxyGenerator()
-        if not pg.FreeProxies(timeout=5, wait_time=60):
-            raise RuntimeError('no working free proxy found')
-        scholarly.use_proxy(pg, pg)
+        scholarly.use_proxy(_free_proxy_generator())
     generate_citation_data(scholar_id, output_dir)
 
 
