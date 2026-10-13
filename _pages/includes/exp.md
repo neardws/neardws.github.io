@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="/assets/css/profile-cards.css">
-<script src="/assets/js/profile-cards.js" defer></script>
+<!-- profile-cards.css/js are loaded once in teach.md (shared by this section) -->
 
 # 👨🏻‍💻 Experience
 
