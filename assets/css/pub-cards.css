@@ -21,9 +21,9 @@
 /* Dark theme (data-theme, set by time-of-day script) */
   html[data-theme="dark"] {
     --pub-accent: #89b4fa;
-    --pub-border: #313244;
-    --pub-bg: #1e1e2e;
-    --pub-tag-bg: #313244;
+    --pub-border: #36383e;
+    --pub-bg: #222327;
+    --pub-tag-bg: #36383e;
     --pub-tag-text: #bac2de;
     --pub-highlight-border: #f9e2af;
     --pub-shadow: 0 1px 4px rgba(0,0,0,0.3);

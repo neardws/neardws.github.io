@@ -232,8 +232,8 @@
 /* Dark theme (data-theme, set by time-of-day script) */
   html[data-theme="dark"] {
     --cfp-muted: #a3a8b3;
-    --cfp-filter-border: #4b5563;
-    --cfp-filter-bg: #374151;
+    --cfp-filter-border: #44474e;
+    --cfp-filter-bg: #2c2e33;
     --cfp-filter-hover-border: #60a5fa;
     --cfp-filter-hover-text: #60a5fa;
     --cfp-filter-active-bg: #2563eb;
@@ -245,8 +245,8 @@
     --cfp-hi: #a78bfa;
     --cfp-mx: #22d3ee;
     --cfp-th-text: #9ca3af;
-    --cfp-table-border: #374151;
-    --cfp-row-hover: #1f2937;
+    --cfp-table-border: #2c2e33;
+    --cfp-row-hover: #222327;
     --cfp-text: #d1d5db;
     --cfp-deadline-text: #f87171;
     --cfp-deadline-past: #6b7280;

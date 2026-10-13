@@ -319,11 +319,11 @@
   html[data-theme="dark"] {
     --grant-legend-text: #9ca3af;
     --grant-legend-strong: #d1d5db;
-    --grant-stats-bg: #1f2937;
+    --grant-stats-bg: #222327;
     --grant-stat-value: #60a5fa;
     --grant-stat-label: #9ca3af;
-    --grant-filter-border: #4b5563;
-    --grant-filter-bg: #374151;
+    --grant-filter-border: #44474e;
+    --grant-filter-bg: #2c2e33;
     --grant-filter-hover-border: #60a5fa;
     --grant-filter-hover-text: #60a5fa;
     --grant-filter-active-bg: #2563eb;
@@ -333,13 +333,13 @@
     --grant-role-active-border: #059669;
     --grant-role-hover-border: #34d399;
     --grant-role-hover-text: #34d399;
-    --grant-search-border: #4b5563;
-    --grant-search-bg: #1f2937;
+    --grant-search-border: #44474e;
+    --grant-search-bg: #222327;
     --grant-search-text: #d1d5db;
     --grant-search-focus: #60a5fa;
-    --grant-card-bg: #1f2937;
-    --grant-card-border: #374151;
-    --grant-card-border-left: #4b5563;
+    --grant-card-bg: #222327;
+    --grant-card-border: #2c2e33;
+    --grant-card-border-left: #44474e;
     --grant-hover-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     --grant-nsfc: #60a5fa;
     --grant-most: #2dd4bf;
@@ -349,7 +349,7 @@
     --grant-shltp: #2dd4bf;
     --grant-erc: #f87171;
     --grant-other: #9ca3af;
-    --grant-icon-bg: #374151;
+    --grant-icon-bg: #2c2e33;
     --grant-icon-text: #d1d5db;
     --grant-year: #9ca3af;
     --grant-source-name: #d1d5db;
@@ -360,7 +360,7 @@
     --grant-type: #9ca3af;
     --grant-title: #f3f4f6;
     --grant-meta: #9ca3af;
-    --grant-number-bg: #374151;
+    --grant-number-bg: #2c2e33;
     --grant-amount: #34d399;
     --grant-period: #9ca3af;
     --grant-note: #9ca3af;

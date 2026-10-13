@@ -465,12 +465,12 @@
 /* Dark Mode */
 /* Dark theme (data-theme, set by time-of-day script) */
   html[data-theme="dark"] {
-    --profile-stats-bg: #1f2937;
+    --profile-stats-bg: #222327;
     --profile-stat-value: #60a5fa;
     --profile-stat-label: #9ca3af;
-    --profile-card-bg: #1f2937;
-    --profile-card-border: #374151;
-    --profile-card-border-left: #4b5563;
+    --profile-card-bg: #222327;
+    --profile-card-border: #2c2e33;
+    --profile-card-border-left: #44474e;
     --profile-hover-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     --profile-work: #60a5fa;
     --profile-education: #a78bfa;
@@ -478,8 +478,8 @@
     --profile-award: #fbbf24;
     --profile-student: #2dd4bf;
     --profile-alumni: #818cf8;
-    --profile-icon-bg: #374151;
-    --profile-avatar-border: #4b5563;
+    --profile-icon-bg: #2c2e33;
+    --profile-avatar-border: #44474e;
     --profile-avatar-hover: #2dd4bf;
     --profile-year: #9ca3af;
     --profile-title: #f3f4f6;
@@ -504,18 +504,18 @@
     --profile-supervisor-link: #60a5fa;
     --profile-abbr: #d1d5db;
     --profile-level: #9ca3af;
-    --profile-github-bg: #374151;
+    --profile-github-bg: #2c2e33;
     --profile-github-text: #f3f4f6;
-    --profile-github-hover: #4b5563;
+    --profile-github-hover: #44474e;
     --profile-email: #9ca3af;
     --profile-link-hover: #60a5fa;
-    --profile-border-dashed: #4b5563;
+    --profile-border-dashed: #44474e;
     --profile-dissertation: #d1d5db;
     --profile-label: #9ca3af;
     --profile-first-job: #d1d5db;
     --profile-link: #60a5fa;
-    --profile-filter-border: #4b5563;
-    --profile-filter-bg: #374151;
+    --profile-filter-border: #44474e;
+    --profile-filter-bg: #2c2e33;
     --profile-filter-hover-border: #2dd4bf;
     --profile-filter-hover-text: #2dd4bf;
     --profile-filter-active-bg: #0f766e;

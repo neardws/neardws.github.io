@@ -1,16 +1,52 @@
-<!-- Time-based light/dark theme: dark 19:00-07:00 (visitor local time). Runs before CSS to avoid a flash. -->
+<!-- Light/dark theme. Auto: dark 19:00–07:00 in the visitor's local time.
+     A manual choice (toggle in the masthead) is stored in localStorage and
+     holds until the next 07:00/19:00 boundary, then auto mode resumes.
+     Runs before CSS so there is no flash. -->
 <script>
   (function () {
-    var root = document.documentElement;
-    function themeFor(d) { var h = d.getHours(); return (h >= 19 || h < 7) ? 'dark' : 'light'; }
+    var root = document.documentElement, KEY = 'theme-override';
+    function autoTheme(d) { var h = d.getHours(); return (h >= 19 || h < 7) ? 'dark' : 'light'; }
+    function nextBoundary(d) {
+      var n = new Date(d.getTime()), h = d.getHours();
+      if (h < 7) n.setHours(7, 0, 0, 0);
+      else if (h < 19) n.setHours(19, 0, 0, 0);
+      else { n.setDate(n.getDate() + 1); n.setHours(7, 0, 0, 0); }
+      return n.getTime();
+    }
+    function readOverride(now) {
+      try {
+        var o = JSON.parse(localStorage.getItem(KEY) || 'null');
+        if (o && (o.theme === 'dark' || o.theme === 'light') && now.getTime() < o.until) return o.theme;
+        if (o) localStorage.removeItem(KEY);
+      } catch (e) {}
+      return null;
+    }
+    function current() { var now = new Date(); return readOverride(now) || autoTheme(now); }
     function apply() {
-      var t = themeFor(new Date());
+      var t = current();
       if (root.getAttribute('data-theme') !== t) root.setAttribute('data-theme', t);
       var m = document.querySelector('meta[name="theme-color"]');
-      if (m) m.setAttribute('content', t === 'dark' ? '#16181d' : '#ffffff');
+      if (m) m.setAttribute('content', t === 'dark' ? '#1a1b1e' : '#ffffff');
+      var b = document.getElementById('theme-toggle');
+      if (b) {
+        var next = t === 'dark' ? 'light' : 'dark';
+        b.setAttribute('aria-label', 'Switch to ' + next + ' theme');
+        b.setAttribute('title', 'Switch to ' + next + ' theme (auto: dark 19:00–07:00)');
+        b.setAttribute('aria-pressed', t === 'dark' ? 'true' : 'false');
+      }
     }
+    window.toggleTheme = function () {
+      var now = new Date(), next = current() === 'dark' ? 'light' : 'dark';
+      try {
+        if (next === autoTheme(now)) localStorage.removeItem(KEY);
+        else localStorage.setItem(KEY, JSON.stringify({ theme: next, until: nextBoundary(now) }));
+      } catch (e) {}
+      root.setAttribute('data-theme', next);
+      apply();
+    };
     apply();
     window.__applyTimeTheme = apply;
+    document.addEventListener('DOMContentLoaded', apply);
     setInterval(apply, 60000);
     document.addEventListener('visibilitychange', function () { if (!document.hidden) apply(); });
   })();
