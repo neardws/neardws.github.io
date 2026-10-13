@@ -175,3 +175,8 @@ html[data-theme="dark"] {
   .blog-item .post-lang-link a { color: var(--t-muted); border-color: var(--t-border); }
   .blog-item .post-lang-link a:hover { color: var(--t-text-strong); border-color: #4a4d55; background: var(--t-surface-2); }
 }
+
+/* Images with a dedicated dark variant: <img class="theme-img-light"> + <img class="theme-img-dark"> */
+.theme-img-dark { display: none; }
+html[data-theme="dark"] .theme-img-light { display: none; }
+html[data-theme="dark"] .theme-img-dark { display: inline; }

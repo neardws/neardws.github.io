@@ -1,6 +1,6 @@
 # 🔬 Research
 
-<img src='images/research.webp' alt="Research Direction" width="85%">
+<img class="theme-img-light" src='images/research.webp' alt="Research Direction" width="85%"><img class="theme-img-dark" src='images/research-dark.webp' alt="Research Direction" width="85%" loading="lazy">
 
 <!-- <div class='paper-images-box'><div class='paper-box-image'><div><div class="badge">VCPS</div><img src='images/research-vcps.webp' alt="VCPS" width="100%"><div class="badge">System Model</div><img src='images/research-sensing-model.webp' alt="System Model" width="100%"></div></div>
 
