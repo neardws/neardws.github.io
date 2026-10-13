@@ -108,6 +108,69 @@
     "github": null
   },
   {
+    "id": "jin2026latency",
+    "type": "conference",
+    "title": "Latency-Budgeted Terminal–Edge Collaborative Video Analytics with Adaptive Masking and Content-Aware Encoding",
+    "authors": [
+      "Lixin Jin",
+      "Kangli Zhao",
+      "Penglin Dai",
+      "Xincao Xu"
+    ],
+    "venue": "IEEE WCCCT'26",
+    "venue_full": "IEEE World Conference on Computing and Communication Technologies",
+    "year": 2026,
+    "month": "April",
+    "tags": [],
+    "doi": "https://ieeexplore.ieee.org/document/11549875",
+    "bib": null,
+    "scholar_id": "DK5avZUAAAAJ:_Ybze24A_UAC",
+    "github": null
+  },
+  {
+    "id": "ni2026recva",
+    "type": "conference",
+    "title": "RECVA: Real-time Edge-assisted Cross-camera Video Analytics via Spatial-Temporal Redundancy Reduction",
+    "authors": [
+      "Li Ni",
+      "Kangli Zhao",
+      "Penglin Dai",
+      "Xincao Xu"
+    ],
+    "venue": "IEEE WCCCT'26",
+    "venue_full": "IEEE World Conference on Computing and Communication Technologies",
+    "year": 2026,
+    "month": "April",
+    "tags": [],
+    "doi": "https://ieeexplore.ieee.org/document/11549816",
+    "bib": null,
+    "scholar_id": "DK5avZUAAAAJ:uLbwQdceFCQC",
+    "github": null
+  },
+  {
+    "id": "dai2026budget",
+    "type": "journal",
+    "title": "Budget-Constrained Edge-Assisted Video Analytics With Elastic Masking and Content-Aware Encoding",
+    "authors": [
+      "Penglin Dai",
+      "Lixin Jin",
+      "Kangli Zhao",
+      "Junhua Wang",
+      "Xincao Xu",
+      "Hualing Ren"
+    ],
+    "venue": "IEEE TVT",
+    "venue_full": "IEEE Transactions on Vehicular Technology",
+    "year": 2026,
+    "tags": [
+      "SCI Q2"
+    ],
+    "doi": "https://doi.org/10.1109/TVT.2026.3734166",
+    "bib": null,
+    "scholar_id": "DK5avZUAAAAJ:W5xh706n7nkC",
+    "github": null
+  },
+  {
     "id": "zhao2026prematching",
     "type": "journal",
     "title": "Pre-Matching Enhanced Hierarchical Double Auction for Collaborative Task Offloading in Vehicle-Edge-Cloud Systems",

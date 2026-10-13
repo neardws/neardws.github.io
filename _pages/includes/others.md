@@ -1,5 +1,9 @@
 # ✨ Others
 
+## 📚 Books
+
+- 刘凯 (主编), **Xincao Xu** (编委 / Editorial Board Member), 《车联网协同智能技术与应用》, *新工科·智能网联汽车卓越工程师培养系列教材*, 机械工业出版社, ISBN 9787111810780, 2026年8月. [JD](https://item.jd.com/14773703.html)
+
 ## 📄 Patents
 
 - Xin Ma, Shaohua Wan, Xuqi Cai, Lixin Duan, Wen Li, **Xincao Xu**, "A Multimodal Fusion Method, Device, and Storage Medium for Autonomous Driving", *Chinese Invention Patent*, ZL202510951173.X, CN120451728B, 2025.
