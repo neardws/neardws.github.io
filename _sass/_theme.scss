@@ -126,6 +126,16 @@ html[data-theme="dark"] {
   }
   .author__avatar img { border-color: var(--t-border); }
 
+
+  /* Dark brand icons (GitHub, X, generic .fa, Tumblr, XING) would vanish on dark */
+  .icon-x-logo,
+  .social-icons .fa,
+  .fa-github, .fa-github-alt, .fa-github-square,
+  .fa-tumblr, .fa-tumblr-square,
+  .fa-xing, .fa-xing-square {
+    color: var(--t-text-strong);
+  }
+
   /* footer */
   .page__footer { background-color: var(--t-surface); color: var(--t-muted); border-top-color: var(--t-border); }
   .page__footer a { color: var(--t-link); }
