@@ -1,0 +1,176 @@
+/* ==========================================================================
+   Light / dark theme
+   `data-theme` on <html> is set by _includes/theme-switch.html based on the
+   visitor's local time (dark 19:00–07:00). Light values mirror the original
+   design; dark values override component colors that are hard-coded in Sass.
+   ========================================================================== */
+
+:root,
+html[data-theme="light"] {
+  color-scheme: light;
+  --t-bg: #fff;
+  --t-surface: #fff;
+  --t-surface-2: #{$lighter-gray};
+  --t-text: #{$text-color};
+  --t-text-strong: #222;
+  --t-muted: #{mix(#000, $gray, 15%)};
+  --t-border: #{$border-color};
+  --t-link: #{$link-color};
+  --t-link-hover: #{$link-color-hover};
+  --t-code-bg: #{$code-background-color};
+  --t-shadow: rgba(0, 0, 0, 0.08);
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --t-bg: #16181d;
+  --t-surface: #1e2128;
+  --t-surface-2: #262a33;
+  --t-text: #d4d7dd;
+  --t-text-strong: #f1f3f6;
+  --t-muted: #a3a9b4;
+  --t-border: #343944;
+  --t-link: #7fb2ff;
+  --t-link-hover: #a9cbff;
+  --t-code-bg: #1b1e24;
+  --t-shadow: rgba(0, 0, 0, 0.45);
+}
+
+html[data-theme="dark"] {
+  background-color: var(--t-bg);
+
+  body { background-color: var(--t-bg); color: var(--t-text); }
+
+  h1, h2, h3, h4, h5, h6, strong, b, dt { color: var(--t-text-strong); }
+  h1, h2 { border-color: var(--t-border); }
+  hr { border-color: var(--t-border); }
+  small, .small, figcaption, .page__meta, .page__date { color: var(--t-muted); }
+
+  a, a:visited { color: var(--t-link); }
+  a:hover, a:active, a:focus { color: var(--t-link-hover); }
+
+  blockquote { border-left-color: var(--t-muted); color: var(--t-text); }
+
+  /* code */
+  code, pre, kbd, tt, .highlight, .highlighter-rouge, div.highlighter-rouge, figure.highlight {
+    background: var(--t-code-bg);
+    color: #e6e6e6;
+    border-color: var(--t-border);
+  }
+  .highlight {
+    .c, .c1, .cm, .cs, .cp { color: #8b949e; }
+    .k, .kd, .kn, .kr, .kt, .kc, .kp { color: #ff7b72; }
+    .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr { color: #a5d6ff; }
+    .m, .mi, .mf, .mh, .mo, .il { color: #79c0ff; }
+    .na, .nb, .nc, .nf, .nn, .no, .nt, .nv, .vc, .vg, .vi, .bp { color: #d2a8ff; }
+    .o, .ow, .p, .n, .nx, .w, .err, .gp, .go { color: #e6e6e6; background: transparent; }
+  }
+
+  /* tables */
+  table { background: var(--t-surface); color: var(--t-text); border-color: var(--t-border); }
+  thead, th { background-color: var(--t-surface-2); color: var(--t-text-strong); border-color: var(--t-border); }
+  td, tr { border-color: var(--t-border); }
+  tbody tr:nth-child(even), tr:nth-child(even) { background-color: rgba(255, 255, 255, 0.025); }
+
+  /* forms / buttons */
+  input, select, textarea { background: var(--t-surface); color: var(--t-text); border-color: var(--t-border); }
+  .btn, button { background-color: var(--t-surface-2); color: var(--t-text-strong); border-color: var(--t-border); }
+  .btn:hover, button:hover { background-color: #333946; }
+  .btn--success { background-color: #2e7d32; color: #fff; }
+  .btn--warning { background-color: #8a5300; color: #fff; }
+  .btn--danger { background-color: #b3261e; color: #fff; }
+  .btn--info { background-color: #1f4f9b; color: #fff; }
+
+  .notice, .notice--primary, .notice--info, .notice--warning, .notice--success, .notice--danger {
+    background-color: var(--t-surface-2);
+    color: var(--t-text);
+  }
+
+  /* masthead & navigation */
+  .masthead { background-color: var(--t-bg); border-bottom-color: var(--t-border); }
+  .masthead__menu-item a, .site-title, .greedy-nav a { color: var(--t-text); }
+  .greedy-nav { background: var(--t-bg); }
+  .greedy-nav a:hover { color: var(--t-link-hover); }
+  .greedy-nav button { background-color: var(--t-surface-2); color: var(--t-text-strong); }
+  .greedy-nav .visible-links a:before { background: var(--t-link); }
+  .greedy-nav .hidden-links {
+    background: var(--t-surface);
+    border-color: var(--t-border);
+    &:before { border-color: var(--t-border) transparent; }
+    &:after { border-color: var(--t-surface) transparent; }
+    a:hover { background: var(--t-surface-2); color: var(--t-link-hover); }
+    li { border-color: var(--t-border); }
+  }
+  .breadcrumbs, .nav__list, .toc { color: var(--t-text); }
+  .nav__list .nav__items a { color: var(--t-text); }
+  .nav__list .nav__items .active { background: var(--t-surface-2); color: var(--t-text-strong); }
+  .nav__toggle, .toc .nav__title { background: var(--t-surface-2); color: var(--t-text-strong); }
+  .toc { background-color: var(--t-surface); border-color: var(--t-border); }
+  .toc__menu a { color: var(--t-text); border-color: var(--t-border); &:hover { color: var(--t-link-hover); } }
+  .pagination--pager, .pagination li a {
+    color: var(--t-text);
+    background: var(--t-surface);
+    border-color: var(--t-border);
+  }
+
+  /* sidebar / author profile */
+  .sidebar, .author__content, .author__name, .author__bio { color: var(--t-text); }
+  .author__name { color: var(--t-text-strong); }
+  .author__urls-wrapper button { background: var(--t-surface-2); color: var(--t-text-strong); border-color: var(--t-border); }
+  .author__urls {
+    background: var(--t-surface);
+    border-color: var(--t-border);
+    &:before { border-color: var(--t-border) transparent; }
+    &:after { border-color: var(--t-surface) transparent; }
+    a, li { color: var(--t-text); }
+  }
+  .author__avatar img { border-color: var(--t-border); }
+
+  /* footer */
+  .page__footer { background-color: var(--t-surface); color: var(--t-muted); border-top-color: var(--t-border); }
+  .page__footer a { color: var(--t-link); }
+  .page__footer-follow a, .page__footer-copyright { color: var(--t-muted); }
+
+  .page__content, .archive, .page__inner-wrap { color: var(--t-text); }
+  .page__related, .page__share, .page__taxonomy { border-color: var(--t-border); }
+  .page__taxonomy-item, .archive__item-teaser { border-color: var(--t-border); }
+
+  /* Home-page helpers defined in main.scss */
+  .paper-box, .paper-images-box { border-bottom-color: var(--t-border); }
+  .paper-box .paper-box-image img, .paper-images-box .paper-box-image img { box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); }
+  .badge, .badge_right { background-color: #1f4fb8; color: #fff; }
+
+  /* Images: logos / transparent diagrams get a soft light backdrop so dark
+     strokes don't disappear; photos keep their colors with a slight dim. */
+  img:not(.author__avatar img) { filter: brightness(0.92); }
+  img[src$=".png"], img[src$=".svg"], img[src$=".gif"], img[src*="logo"], svg image {
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 4px;
+  }
+  img.emoji, img[src*="shields.io"], img[src*="badge"] { background-color: transparent; filter: none; }
+
+  iframe, video { color-scheme: light; }
+
+  /* Inline-styled pages (services.md, blog.md) */
+  .service-item, .blog-item {
+    background: var(--t-surface);
+    border-color: var(--t-border);
+    box-shadow: 0 2px 8px var(--t-shadow);
+  }
+  .service-item:hover, .blog-item:hover { border-color: #5b6270; }
+  .service-item h3 a, .blog-item h2 a { color: var(--t-text-strong); }
+  .service-item h3 a:hover, .blog-item h2 a:hover { color: var(--t-link-hover); }
+  .service-item .service-url { color: var(--t-link); }
+  .service-item .service-desc, .blog-item .post-excerpt { color: var(--t-text); }
+  .blog-item .post-meta, .service-item .github-link a { color: var(--t-muted); }
+  .service-item .github-link a:hover { color: var(--t-text-strong); }
+  .service-item .service-tag, .blog-item .category-tag { background: var(--t-surface-2); color: var(--t-text); }
+  .service-item .service-tag.internal { background: #3d3109; color: #f5d77a; }
+  .service-item .service-tag.external { background: #10294a; color: #9cc7ff; }
+  .service-item .service-tag.private { background: #45122a; color: #f5a3c7; }
+  .service-item .service-tag.public { background: #12351a; color: #9de0a5; }
+  #status-bar .overall-status.has-offline { color: #ff8a80; }
+  #status-bar { background: var(--t-surface-2); color: var(--t-text); }
+  .blog-item .post-lang-link a { color: var(--t-muted); border-color: var(--t-border); }
+  .blog-item .post-lang-link a:hover { color: var(--t-text-strong); border-color: #5b6270; background: var(--t-surface-2); }
+}

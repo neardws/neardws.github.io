@@ -41,7 +41,7 @@ author_profile: true
 }
 
 .blog-item .post-meta {
-  color: #888;
+  color: #6b6b6b;
   font-size: 0.9em;
   margin-bottom: 12px;
 }
@@ -70,7 +70,7 @@ author_profile: true
 }
 
 .blog-item .post-lang-link a {
-  color: #888;
+  color: #6b6b6b;
   font-size: 0.85em;
   text-decoration: none;
   padding: 4px 10px;

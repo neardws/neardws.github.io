@@ -292,6 +292,7 @@
 
 .grant-number {
   font-family: monospace;
+  color: #4b5563;
   background: var(--grant-number-bg, #f3f4f6);
   padding: 0.1rem 0.35rem;
   border-radius: 3px;
@@ -299,7 +300,7 @@
 
 .grant-amount {
   font-weight: 500;
-  color: var(--grant-amount, #059669);
+  color: var(--grant-amount, #047857);
 }
 
 .grant-period {
@@ -314,8 +315,8 @@
 }
 
 /* Dark Mode */
-@media (prefers-color-scheme: dark) {
-  :root {
+/* Dark theme (data-theme, set by time-of-day script) */
+  html[data-theme="dark"] {
     --grant-legend-text: #9ca3af;
     --grant-legend-strong: #d1d5db;
     --grant-stats-bg: #1f2937;
@@ -364,7 +365,7 @@
     --grant-period: #9ca3af;
     --grant-note: #9ca3af;
   }
-}
+
 
 /* Responsive */
 @media (max-width: 640px) {
@@ -408,3 +409,5 @@
     gap: 0.2rem;
   }
 }
+
+html[data-theme="dark"] .grant-number { color: #e5e7eb; }

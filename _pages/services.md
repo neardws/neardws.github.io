@@ -41,7 +41,7 @@ author_profile: true
 }
 
 .service-item .service-url {
-  color: #007aff;
+  color: #0062cc;
   font-size: 0.9em;
   margin-bottom: 12px;
   display: block;
@@ -137,7 +137,7 @@ author_profile: true
 }
 
 #status-bar .overall-status.has-offline {
-  color: #f44336;
+  color: #c62828;
 }
 
 #status-bar .last-check {

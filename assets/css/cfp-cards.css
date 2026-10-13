@@ -12,7 +12,7 @@
 /* Updated timestamp */
 .cfp-updated {
   font-size: 0.78em;
-  color: var(--cfp-muted, #9ca3af);
+  color: var(--cfp-muted, #6b7280);
   margin-bottom: 0.8em;
 }
 
@@ -47,7 +47,7 @@
 .cfp-filter-btn .count {
   margin-left: 4px;
   font-size: 0.85em;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .cfp-filter-btn:hover {
@@ -68,15 +68,15 @@
 /* Category filter button active colors */
 .cfp-cat-btn--ds.active  { background: var(--cfp-ds, #2563eb); border-color: var(--cfp-ds, #2563eb); }
 .cfp-cat-btn--nw.active  { background: var(--cfp-nw, #059669); border-color: var(--cfp-nw, #059669); }
-.cfp-cat-btn--ai.active  { background: var(--cfp-ai, #d97706); border-color: var(--cfp-ai, #d97706); }
+.cfp-cat-btn--ai.active  { background: var(--cfp-ai, #b45309); border-color: var(--cfp-ai, #b45309); }
 .cfp-cat-btn--hi.active  { background: var(--cfp-hi, #7c3aed); border-color: var(--cfp-hi, #7c3aed); }
-.cfp-cat-btn--mx.active  { background: var(--cfp-mx, #0891b2); border-color: var(--cfp-mx, #0891b2); }
+.cfp-cat-btn--mx.active  { background: var(--cfp-mx, #0e7490); border-color: var(--cfp-mx, #0e7490); }
 
 .cfp-cat-btn--ds:hover { border-color: var(--cfp-ds, #2563eb); color: var(--cfp-ds, #2563eb); }
 .cfp-cat-btn--nw:hover { border-color: var(--cfp-nw, #059669); color: var(--cfp-nw, #059669); }
-.cfp-cat-btn--ai:hover { border-color: var(--cfp-ai, #d97706); color: var(--cfp-ai, #d97706); }
+.cfp-cat-btn--ai:hover { border-color: var(--cfp-ai, #b45309); color: var(--cfp-ai, #b45309); }
 .cfp-cat-btn--hi:hover { border-color: var(--cfp-hi, #7c3aed); color: var(--cfp-hi, #7c3aed); }
-.cfp-cat-btn--mx:hover { border-color: var(--cfp-mx, #0891b2); color: var(--cfp-mx, #0891b2); }
+.cfp-cat-btn--mx:hover { border-color: var(--cfp-mx, #0e7490); color: var(--cfp-mx, #0e7490); }
 
 /* Override hover color on active buttons */
 .cfp-cat-btn--ds.active:hover { color: #ffffff; }
@@ -104,7 +104,7 @@
   padding: 8px 12px;
   font-size: 0.82em;
   font-weight: 600;
-  color: var(--cfp-th-text, #6b7280);
+  color: var(--cfp-th-text, #4b5563);
   border-bottom: 2px solid var(--cfp-table-border, #e5e7eb);
   white-space: nowrap;
 }
@@ -185,11 +185,11 @@
 
 .cfp-tz {
   font-size: 0.75em;
-  color: var(--cfp-muted, #9ca3af);
+  color: var(--cfp-muted, #6b7280);
 }
 
 .cfp-na {
-  color: var(--cfp-muted, #9ca3af);
+  color: var(--cfp-muted, #6b7280);
 }
 
 /* Conference link */
@@ -224,14 +224,14 @@
 
 .cfp-cat-badge--ds { background: var(--cfp-ds, #2563eb); }
 .cfp-cat-badge--nw { background: var(--cfp-nw, #059669); }
-.cfp-cat-badge--ai { background: var(--cfp-ai, #d97706); }
+.cfp-cat-badge--ai { background: var(--cfp-ai, #b45309); }
 .cfp-cat-badge--hi { background: var(--cfp-hi, #7c3aed); }
-.cfp-cat-badge--mx { background: var(--cfp-mx, #0891b2); }
+.cfp-cat-badge--mx { background: var(--cfp-mx, #0e7490); }
 
 /* Dark Mode */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --cfp-muted: #6b7280;
+/* Dark theme (data-theme, set by time-of-day script) */
+  html[data-theme="dark"] {
+    --cfp-muted: #a3a8b3;
     --cfp-filter-border: #4b5563;
     --cfp-filter-bg: #374151;
     --cfp-filter-hover-border: #60a5fa;
@@ -252,7 +252,7 @@
     --cfp-deadline-past: #6b7280;
     --cfp-link: #60a5fa;
   }
-}
+
 
 /* Responsive */
 @media (max-width: 640px) {
@@ -280,3 +280,7 @@
     display: none;
   }
 }
+
+/* Dark theme: category fills are bright, so use dark text on them */
+html[data-theme="dark"] .cfp-cat-badge,
+html[data-theme="dark"] [class*="cfp-cat-btn--"].active { color: #0b0d12; }

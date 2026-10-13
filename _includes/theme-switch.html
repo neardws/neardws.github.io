@@ -1,0 +1,17 @@
+<!-- Time-based light/dark theme: dark 19:00-07:00 (visitor local time). Runs before CSS to avoid a flash. -->
+<script>
+  (function () {
+    var root = document.documentElement;
+    function themeFor(d) { var h = d.getHours(); return (h >= 19 || h < 7) ? 'dark' : 'light'; }
+    function apply() {
+      var t = themeFor(new Date());
+      if (root.getAttribute('data-theme') !== t) root.setAttribute('data-theme', t);
+      var m = document.querySelector('meta[name="theme-color"]');
+      if (m) m.setAttribute('content', t === 'dark' ? '#16181d' : '#ffffff');
+    }
+    apply();
+    window.__applyTimeTheme = apply;
+    setInterval(apply, 60000);
+    document.addEventListener('visibilitychange', function () { if (!document.hidden) apply(); });
+  })();
+</script>

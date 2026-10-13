@@ -372,7 +372,7 @@
 .profile-filter-btn .count {
   margin-left: 4px;
   font-size: 0.85em;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .profile-filter-btn:hover {
@@ -381,9 +381,9 @@
 }
 
 .profile-filter-btn.active {
-  background: var(--profile-filter-active-bg, #0d9488);
+  background: var(--profile-filter-active-bg, #0f766e);
   color: var(--profile-filter-active-text, #ffffff);
-  border-color: var(--profile-filter-active-border, #0d9488);
+  border-color: var(--profile-filter-active-border, #0f766e);
 }
 
 .profile-filter-btn.active .count {
@@ -463,8 +463,8 @@
 }
 
 /* Dark Mode */
-@media (prefers-color-scheme: dark) {
-  :root {
+/* Dark theme (data-theme, set by time-of-day script) */
+  html[data-theme="dark"] {
     --profile-stats-bg: #1f2937;
     --profile-stat-value: #60a5fa;
     --profile-stat-label: #9ca3af;
@@ -518,9 +518,9 @@
     --profile-filter-bg: #374151;
     --profile-filter-hover-border: #2dd4bf;
     --profile-filter-hover-text: #2dd4bf;
-    --profile-filter-active-bg: #0d9488;
+    --profile-filter-active-bg: #0f766e;
     --profile-filter-active-text: #ffffff;
-    --profile-filter-active-border: #0d9488;
+    --profile-filter-active-border: #0f766e;
     /* Reviewer specific dark mode */
     --profile-reviewer: #38bdf8;
     --profile-metrics: #9ca3af;
@@ -542,7 +542,7 @@
     --profile-ccf-b-bg: #312e81;
     --profile-ccf-b-text: #c7d2fe;
   }
-}
+
 
 /* Responsive */
 @media (max-width: 640px) {
