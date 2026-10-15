@@ -1,0 +1,282 @@
+# Devices shown in the "Hardware" table on the homepage (_pages/includes/interests.md).
+#
+# Fields
+#   name      display name (required)
+#   category  table row label; devices with the same category share one row
+#   emoji     icon shown before the category (use the same emoji for every device in a category)
+#   link      product/spec page (optional; omit for no link)
+#   status    in-use | idle | retired   (only "in-use" is rendered)
+#   location  optional, coarse only (e.g. "home office", "work office")
+#   order     sort key; rows appear in order of their first device, devices within a row by order
+#
+# Add a device: append an entry with status: in-use and an order placed where it should appear.
+# Retire a device: change status to idle or retired (keep the entry for history) — it disappears from the table.
+# Do NOT add private details here (serial numbers, prices, purchase dates, exact addresses).
+
+- name: "Apple Vision Pro"
+  category: "XR"
+  emoji: "ᯅ"
+  link: "https://www.apple.com/apple-vision-pro/specs/"
+  status: in-use
+  order: 10
+
+- name: "MacBook Pro 14-inch 2023 M3 Pro 18 GB"
+  category: "Laptop"
+  emoji: "💻"
+  link: "https://support.apple.com/en-us/117736"
+  status: in-use
+  order: 20
+
+- name: "MacBook Pro 14-inch 2021 M1 Pro 16 GB"
+  category: "Laptop"
+  emoji: "💻"
+  link: "https://support.apple.com/kb/SP854"
+  status: in-use
+  order: 30
+
+- name: "Mac mini 2024 M4 Pro 64 GB"
+  category: "Desktop"
+  emoji: "🖥️"
+  link: "https://support.apple.com/en-us/121555"
+  status: in-use
+  location: "home office"
+  order: 40
+
+- name: "Mac mini 2024 M4 24 GB"
+  category: "Desktop"
+  emoji: "🖥️"
+  link: "https://support.apple.com/en-us/121555"
+  status: in-use
+  location: "work office"
+  order: 50
+
+- name: "RichVision RV100 27-inch 5K"
+  category: "Display"
+  emoji: "🖥️"
+  link: "http://www.richvision.com/product/rv100"
+  status: in-use
+  order: 60
+
+- name: "iPhone 15 Pro Max"
+  category: "Phone"
+  emoji: "📱"
+  link: "https://www.apple.com/iphone-15-pro/specs/"
+  status: in-use
+  order: 70
+
+- name: "Google Pixel 9 Pro XL"
+  category: "Phone"
+  emoji: "📱"
+  link: "https://store.google.com/us/product/pixel_9_pro_specs?hl=en-US"
+  status: in-use
+  order: 80
+
+- name: "Apple Watch Ultra 2"
+  category: "Watch"
+  emoji: "⌚"
+  link: "https://www.apple.com/apple-watch-ultra-2/specs/"
+  status: in-use
+  order: 90
+
+- name: "COROS Pace 3"
+  category: "Watch"
+  emoji: "⌚"
+  link: "https://uk.coros.com/pace3#spec-detail"
+  status: in-use
+  order: 100
+
+- name: "iPad Pro 13‑inch 256GB"
+  category: "Tablet"
+  emoji: "📱"
+  link: "https://www.apple.com/ipad-pro/specs/"
+  status: in-use
+  order: 110
+
+- name: "iPad mini A17 Pro"
+  category: "Tablet"
+  emoji: "📱"
+  link: "https://www.apple.com/sg/ipad-mini/specs/"
+  status: in-use
+  order: 120
+
+- name: "reMarkable Paper Pro"
+  category: "E-Reader"
+  emoji: "📖"
+  link: "https://remarkable.com/store/remarkable-paper/pro/details/features"
+  status: in-use
+  order: 130
+
+- name: "Kindle Paperwhite Signature Edition"
+  category: "E-Reader"
+  emoji: "📖"
+  link: "https://www.amazon.com/Kindle-Paperwhite-Signature-32-auto-adjusting/dp/B08N2ZL7PS#tech"
+  status: in-use
+  order: 140
+
+- name: "Sennheiser IE 600"
+  category: "In-Ear"
+  emoji: "🎧"
+  link: "https://www.sennheiser-hearing.com/en-US/p/ie-600/"
+  status: in-use
+  order: 150
+
+- name: "AKG K701"
+  category: "Over-Ear"
+  emoji: "🎧"
+  link: "https://www.akg.com/Headphones/Professional%20Headphones/K701.html"
+  status: in-use
+  order: 160
+
+- name: "Sony WH-1000XM4"
+  category: "Over-Ear"
+  emoji: "🎧"
+  link: "https://electronics.sony.com/audio/headphones/headband/p/wh1000xm4-s"
+  status: in-use
+  order: 170
+
+- name: "Audio Technica ESW990H"
+  category: "Over-Ear"
+  emoji: "🎧"
+  link: "https://www.audio-technica.com/ath-esw990h"
+  status: in-use
+  order: 180
+
+- name: "Apple AirPods Pro 2"
+  category: "TWS"
+  emoji: "🎧"
+  link: "https://support.apple.com/kb/SP880"
+  status: in-use
+  order: 190
+
+- name: "Apple AirPods 4"
+  category: "TWS"
+  emoji: "🎧"
+  link: "https://www.apple.com/airpods-4/specs/"
+  status: in-use
+  order: 200
+
+- name: "SHOKZ OpenSwim Pro"
+  category: "Bone Conduction"
+  emoji: "🎧"
+  link: "https://www.shokz.com.cn/OpenSwimPro"
+  status: in-use
+  order: 210
+
+- name: "A&Futura SE300 Platinum Silver"
+  category: "Player"
+  emoji: "🎵"
+  link: "https://www.astellnkern.com/product/product_detail.jsp?productNo=146"
+  status: in-use
+  order: 220
+
+- name: "FiiO Q3"
+  category: "DAC/Amplifier"
+  emoji: "🎵"
+  link: "https://www.fiio.com/q3"
+  status: in-use
+  order: 230
+
+- name: "Apple TV 4K with Wi‑Fi and Ethernet"
+  category: "Terminal"
+  emoji: "📺"
+  link: "https://www.apple.com/uk/apple-tv-4k/specs/"
+  status: in-use
+  order: 240
+
+- name: "Steam Deck OLED"
+  category: "Console"
+  emoji: "🎮"
+  link: "https://www.steamdeck.com/en/tech/"
+  status: in-use
+  order: 250
+
+- name: "Nintendo Switch OLED"
+  category: "Console"
+  emoji: "🎮"
+  link: "https://www.nintendo.com/us/store/products/nintendo-switch-oled-model-neon-blue-neon-red-set/"
+  status: in-use
+  order: 260
+
+- name: "Sony PlayStation 5"
+  category: "Console"
+  emoji: "🎮"
+  link: "https://www.playstation.com/en-us/ps5"
+  status: in-use
+  order: 270
+
+- name: "DJI Neo"
+  category: "Drone"
+  emoji: "✇"
+  link: "https://www.dji.com/cn/neo/specs"
+  status: in-use
+  order: 280
+
+- name: "Sony DSC-RX100M5"
+  category: "Camera"
+  emoji: "📷"
+  link: "https://www.sony.co.uk/electronics/cyber-shot-compact-cameras/dsc-rx100m5/specifications"
+  status: in-use
+  order: 290
+
+- name: "DJI Osmo Action 3"
+  category: "Camera"
+  emoji: "📷"
+  link: "https://www.dji.com/cn/osmo-action-3/specs"
+  status: in-use
+  order: 300
+
+- name: "Keychron K2"
+  category: "Keyboard"
+  emoji: "⌨️"
+  link: "https://www.keychron.com/products/keychron-k2-wireless-mechanical-keyboard"
+  status: in-use
+  order: 310
+
+- name: "Magic Keyboard with Touch ID"
+  category: "Keyboard"
+  emoji: "⌨️"
+  link: "https://www.apple.com/hk/shop/product/MK293ZA/A/magic-keyboard-with-touch-id-for-mac-models-with-apple-silicon-us-english"
+  status: in-use
+  order: 320
+
+- name: "Magic Trackpad"
+  category: "Trackpad"
+  emoji: "🖱"
+  link: "https://support.apple.com/kb/SP729"
+  status: in-use
+  order: 330
+
+- name: "Logitech MX Master 2S"
+  category: "Mouse"
+  emoji: "🖱"
+  link: "https://origin2.logitech.com/en-za/product/mx-master-2s-business#specification-tabular"
+  status: in-use
+  order: 340
+
+- name: "Mi Wireless All-in-One Inkjet Printer"
+  category: "Printer"
+  emoji: "🖨️"
+  link: "https://www.spanningglobal.com/product/original-xiaomi-mijia-scan-copy-inkjet-printer-all-in-one-9500-pages-long-battery-life-printer/"
+  status: in-use
+  order: 350
+
+- name: "Mi Computer Monitor Light Bar"
+  category: "Lamp"
+  emoji: "💡"
+  link: "https://www.mi.com/uk/product/mi-computer-monitor-light-bar/"
+  status: in-use
+  order: 360
+
+- name: "Triban GRVL 120"
+  category: "Bicycle"
+  emoji: "🚴"
+  link: "https://www.decathlon.com/products/triban-grvl120-gravel-bike"
+  status: in-use
+  order: 370
+
+- name: "Exway X1"
+  category: "Skateboard"
+  emoji: "🛹"
+  link: "https://www.exwayboard.com"
+  status: in-use
+  order: 380
