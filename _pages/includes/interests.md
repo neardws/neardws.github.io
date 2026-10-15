@@ -236,132 +236,22 @@ His interest in digital gadgets extends to a wide range of hardwares and softwar
 
 ### Hardware
 
+{% comment %} Rendered from _data/devices.yml — edit that file to add or retire devices. {% endcomment %}
+{% assign devices_in_use = site.data.devices | where: "status", "in-use" | sort: "order" %}
+{% assign device_groups = devices_in_use | group_by: "category" %}
 <table class="no-horizontal-lines">
   <tr>
     <th style="width: 130px;">Devices</th>
     <th style="width: 350px;">Using</th>
     <th style="width: 250px;"></th>
   </tr>
+{%- for group in device_groups %}
   <tr>
-    <td>ᯅ XR</td>
-    <td><a href="https://www.apple.com/apple-vision-pro/specs/" class="no-underline">Apple Vision Pro</a></td>
+    <td>{{ group.items.first.emoji }} {{ group.name }}</td>
+    <td>{% for d in group.items %}{% if d.link %}<a href="{{ d.link }}" class="no-underline">{{ d.name }}</a>{% else %}{{ d.name }}{% endif %}{% unless forloop.last %} | {% endunless %}{% endfor %}</td>
     <td style="width: 250px;"></td>
   </tr>
-  <tr>
-    <td>💻 Laptop</td>
-    <td><a href="https://support.apple.com/en-us/117736" class="no-underline">MacBook Pro 14-inch 2023 M3 Pro 18 GB</a> | <a href="https://support.apple.com/kb/SP854" class="no-underline">MacBook Pro 14-inch 2021 M1 Pro 16 GB</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>🖥️ Display</td>
-    <td><a href="http://www.richvision.com/product/rv100" class="no-underline">RichVision RV100 27-inch 5K</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>📱 Phone</td>
-    <td><a href="https://www.apple.com/iphone-15-pro/specs/" class="no-underline">iPhone 15 Pro Max</a> ｜ <a href="https://store.google.com/us/product/pixel_9_pro_specs?hl=en-US" class="no-underline">Google Pixel 9 Pro XL</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>⌚ Watch</td>
-    <td><a href="https://www.apple.com/apple-watch-ultra-2/specs/" class="no-underline">Apple Watch Ultra 2</a> | <a href="https://uk.coros.com/pace3#spec-detail" class="no-underline">COROS Pace 3</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>📱 Tablet</td>
-    <td><a href="https://www.apple.com/ipad-pro/specs/" class="no-underline">iPad Pro 13‑inch 256GB</a> | <a href="https://www.apple.com/sg/ipad-mini/specs/" class="no-underline">iPad mini A17 Pro</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>📖 E-Reader</td>
-    <td><a href="https://remarkable.com/store/remarkable-paper/pro/details/features" class="no-underline">reMarkable Paper Pro</a> | <a href="https://www.amazon.com/Kindle-Paperwhite-Signature-32-auto-adjusting/dp/B08N2ZL7PS#tech" class="no-underline">Kindle Paperwhite Signature Edition</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>🎧 In-Ear</td>
-    <td><a href="https://www.sennheiser-hearing.com/en-US/p/ie-600/" class="no-underline">Sennheiser IE 600</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>🎧 Over-Ear</td>
-    <td><a href="https://www.akg.com/Headphones/Professional%20Headphones/K701.html" class="no-underline">AKG K701</a> | <a href="https://electronics.sony.com/audio/headphones/headband/p/wh1000xm4-s" class="no-underline">Sony WH-1000XM4</a> | <a href="https://www.audio-technica.com/ath-esw990h" class="no-underline">Audio Technica ESW990H</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>🎧 TWS</td>
-    <td><a href="https://support.apple.com/kb/SP880" class="no-underline">Apple AirPods Pro 2</a> | <a href="https://www.apple.com/airpods-4/specs/" class="no-underline">Apple AirPods 4</a> </td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>🎧 Bone Conduction</td>
-    <td><a href="https://www.shokz.com.cn/OpenSwimPro" class="no-underline">SHOKZ OpenSwim Pro</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>🎵 Player</td>
-    <td><a href="https://www.astellnkern.com/product/product_detail.jsp?productNo=146" class="no-underline">A&Futura SE300 Platinum Silver</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>🎵 DAC/Amplifier</td>
-    <td><a href="https://www.fiio.com/q3" class="no-underline">FiiO Q3</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>📺 Terminal</td>
-    <td><a href="https://www.apple.com/uk/apple-tv-4k/specs/" class="no-underline">Apple TV 4K with Wi‑Fi and Ethernet</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>🎮 Console</td>
-    <td><a href="https://www.steamdeck.com/en/tech/" class="no-underline">Steam Deck OLED</a> | <a href="https://www.nintendo.com/us/store/products/nintendo-switch-oled-model-neon-blue-neon-red-set/" class="no-underline">Nintendo Switch OLED</a> | <a href="https://www.playstation.com/en-us/ps5" class="no-underline">Sony PlayStation 5</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>✇ Drone</td>
-    <td><a href="https://www.dji.com/cn/neo/specs" class="no-underline">DJI Neo</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>📷 Camera</td>
-    <td><a href="https://www.sony.co.uk/electronics/cyber-shot-compact-cameras/dsc-rx100m5/specifications" class="no-underline">Sony DSC-RX100M5</a> | <a href="https://www.dji.com/cn/osmo-action-3/specs" class="no-underline">DJI Osmo Action 3</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>⌨️ Keyboard</td>
-    <td><a href="https://www.keychron.com/products/keychron-k2-wireless-mechanical-keyboard" class="no-underline">Keychron K2</a> | <a href="https://www.apple.com/hk/shop/product/MK293ZA/A/magic-keyboard-with-touch-id-for-mac-models-with-apple-silicon-us-english" class="no-underline">Magic Keyboard with Touch ID</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>🖱 Trackpad</td>
-    <td><a href="https://support.apple.com/kb/SP729" class="no-underline">Magic Trackpad</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>🖱 Mouse</td>
-    <td><a href="hhttps://origin2.logitech.com/en-za/product/mx-master-2s-business#specification-tabular" class="no-underline">Logitech MX Master 2S</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>🖨️ Printer</td>
-    <td><a href="https://www.spanningglobal.com/product/original-xiaomi-mijia-scan-copy-inkjet-printer-all-in-one-9500-pages-long-battery-life-printer/" class="no-underline">Mi Wireless All-in-One Inkjet Printer</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>💡 Lamp</td>
-    <td><a href="https://www.mi.com/uk/product/mi-computer-monitor-light-bar/" class="no-underline">Mi Computer Monitor Light Bar</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>🚴 Bicycle</td>
-    <td><a href="https://www.decathlon.com/products/triban-grvl120-gravel-bike" class="no-underline">Triban GRVL 120</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
-  <tr>
-    <td>🛹 Skateboard</td>
-    <td><a href="https://www.exwayboard.com" class="no-underline">Exway X1</a></td>
-    <td style="width: 250px;"></td>
-  </tr>
+{%- endfor %}
 </table>
 
 ### Software
