@@ -34,16 +34,18 @@
   status: in-use
   order: 30
 
-- name: "Mac mini"
+- name: "Mac mini 2024 M4 Pro 64 GB"
   category: "Desktop"
   emoji: "🖥️"
+  link: "https://support.apple.com/en-us/121555"
   status: in-use
   location: "home office"
   order: 40
 
-- name: "Mac mini"
+- name: "Mac mini 2024 M4 24 GB"
   category: "Desktop"
   emoji: "🖥️"
+  link: "https://support.apple.com/en-us/121555"
   status: in-use
   location: "work office"
   order: 50
@@ -247,7 +249,7 @@
 - name: "Logitech MX Master 2S"
   category: "Mouse"
   emoji: "🖱"
-  link: "hhttps://origin2.logitech.com/en-za/product/mx-master-2s-business#specification-tabular"
+  link: "https://origin2.logitech.com/en-za/product/mx-master-2s-business#specification-tabular"
   status: in-use
   order: 340
 
