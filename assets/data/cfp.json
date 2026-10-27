@@ -1,21 +1,6 @@
 {
-  "updated_at": "2026-10-26T11:46:18Z",
+  "updated_at": "2026-10-27T11:12:13Z",
   "conferences": [
-    {
-      "title": "WWW",
-      "description": "International World Wide Web Conferences",
-      "sub": "MX",
-      "sub_name": "Interdiscipline",
-      "ccf_rank": "A",
-      "link": "https://www2027.thewebconf.org/",
-      "abstract_deadline": "2026-10-18 23:59:59",
-      "deadline": "2026-10-25 23:59:59",
-      "timezone": "AoE",
-      "date": "May 10 - 14, 2027",
-      "place": "Dublin, Ireland",
-      "year": 2027,
-      "is_future": true
-    },
     {
       "title": "ISCA",
       "description": "International Symposium on Computer Architecture",
