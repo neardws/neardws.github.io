@@ -1,4 +1,80 @@
 {
-  "updated_at": "2026-11-04T13:25:20Z",
-  "conferences": []
+  "updated_at": "2026-11-05T13:39:11Z",
+  "conferences": [
+    {
+      "title": "ISCA",
+      "description": "International Symposium on Computer Architecture",
+      "sub": "DS",
+      "sub_name": "Computer Architecture",
+      "ccf_rank": "A",
+      "link": "https://iscaconf.org/isca2027/",
+      "abstract_deadline": "2026-11-09 23:59:59",
+      "deadline": "2026-11-16 23:59:59",
+      "timezone": "AoE",
+      "date": "June 5-9, 2027",
+      "place": "Atlanta, Georgia, USA",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "CVPR",
+      "description": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+      "sub": "AI",
+      "sub_name": "Artificial Intelligence",
+      "ccf_rank": "A",
+      "link": "https://cvpr.thecvf.com/Conferences/2027",
+      "abstract_deadline": "2026-11-10 23:59:59",
+      "deadline": "2026-11-16 23:59:59",
+      "timezone": "UTC-12",
+      "date": "June 20-25, 2027",
+      "place": "Seattle, WA, United States",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "DAC",
+      "description": "Design Automation Conference",
+      "sub": "DS",
+      "sub_name": "Computer Architecture",
+      "ccf_rank": "A",
+      "link": "https://dac.com/2027/authors/call-for-contributions",
+      "abstract_deadline": "2026-11-11 17:00:00",
+      "deadline": "2026-11-18 17:00:00",
+      "timezone": "UTC-8",
+      "date": "July 11-14, 2027",
+      "place": "San Jose, CA",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "ACL",
+      "description": "Annual Meeting of the Association for Computational Linguistics",
+      "sub": "AI",
+      "sub_name": "Artificial Intelligence",
+      "ccf_rank": "A",
+      "link": "https://2027.aclweb.org/",
+      "abstract_deadline": null,
+      "deadline": "2027-01-04 23:59:59",
+      "timezone": "UTC-12",
+      "date": "August 17-22, 2027",
+      "place": "Kyoto, Japan",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "SIGCOMM",
+      "description": "ACM International Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication",
+      "sub": "NW",
+      "sub_name": "Network System",
+      "ccf_rank": "A",
+      "link": "https://conferences.sigcomm.org/sigcomm/2027/",
+      "abstract_deadline": null,
+      "deadline": "2027-02-02 23:59:59",
+      "timezone": "AoE",
+      "date": "August 8 - 12, 2027",
+      "place": "Bangkok, Thailand",
+      "year": 2027,
+      "is_future": true
+    }
+  ]
 }
