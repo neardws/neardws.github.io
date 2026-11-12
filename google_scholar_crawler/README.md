@@ -37,17 +37,14 @@ Google Scholar using the `GOOGLE_SCHOLAR_ID` repository secret and publish both
 JSON files to `google-scholar-stats`. Only that publishing job has repository
 write permission.
 
-A direct fetch that receives HTTP 403/429, Google's automated-query page, or a
-captcha stops that attempt immediately. Captchas are not solved and no browser
-is launched. The run then tries one more direct fetch and, if Scholar is still
-refusing the runner, free HTTPS proxies. `free-proxy` 1.3 still treats table
-column 6 as the Https flag; the live list's column 6 is "Last Checked", which
-made every candidate look non-HTTPS. The crawler reads the Https column by its
-header instead. Proxy addresses are tested with scholarly's own connectivity
-check. If every attempt fails, the job exits non-zero, prints the block, and
-does not push. `python main.py --publish-results` also refuses files whose
-author, citation count, publication ids, and Shields badge disagree, so a bad
-fetch cannot replace `google-scholar-stats`.
+The live fetch is a single direct request. HTTP 403/429, Google's
+automated-query page, or a captcha/DOS challenge ends the whole run
+immediately. Captchas are not solved, no browser is launched, and the run does
+not send another Scholar request or switch to a proxy. Any other fetch failure
+stops the same way. The job exits non-zero, prints the reason, and does not
+push, so the previous `google-scholar-stats` files stay in place.
+`python main.py --publish-results` also refuses files whose author, citation
+count, publication ids, and Shields badge disagree.
 
 Treat these as separate verification levels:
 
@@ -57,6 +54,6 @@ Treat these as separate verification levels:
    push/PR run skips the live fetch and publishing job by design.
 3. **Live data updates:** a scheduled/page-build/manual run completes the fetch
    and publish steps, and the output branch contains valid JSON with a new
-   `updated` timestamp. An automated-query block, captcha, or proxy-list
-   failure still leaves the previous branch untouched even if both offline
-   checks pass.
+   `updated` timestamp. An automated-query block, captcha, or other fetch
+   failure leaves the previous branch untouched even if both offline checks
+   pass.

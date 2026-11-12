@@ -2,15 +2,16 @@
 
 Google Scholar intermittently blocks GitHub runner IPs. scholarly 1.5.1 then
 either sleeps 60–120s after a second HTTP 403, or opens a browser and waits
-up to a week for a person to solve a captcha. Either way the job's hard
-timeout kills the process and the real status never reaches the log.
+up to a week for a person to solve a captcha. Either way a hard timeout used
+to kill the process before the real status reached the log.
 
 This script therefore:
 
-* fails an attempt immediately on HTTP 403/429, the automated-query block,
+* requests Scholar directly, once,
+* fails that request immediately on HTTP 403/429, the automated-query block,
   or a captcha/DOS challenge, and does not solve captchas or launch a browser,
-* retries a direct fetch once, then tries free proxies whose addresses are
-  parsed from the current proxy-list table headers,
+* ends the whole run on that refusal: no further Scholar request and no
+  change of network route,
 * validates the result and writes the JSON files only after a fully
   successful fetch, so a failed run never replaces good data with empty data.
 """
@@ -20,8 +21,6 @@ import multiprocessing as mp
 import os
 from datetime import datetime
 from pathlib import Path
-import random
-import re
 import shutil
 import subprocess
 import sys
@@ -29,34 +28,29 @@ import tempfile
 import time
 
 import requests
-from lxml import html as lxml_html
-from scholarly import DOSException, ProxyGenerator, scholarly
+from scholarly import DOSException, scholarly
 
 SECTIONS = ['basics', 'indices', 'counts', 'publications']
-# (strategy, hard timeout in seconds) for each attempt, in order.
-# Fail-fast blocks return in about a second; the caps only cover a slow but
-# healthy fetch or a handful of dead proxies. Worst case stays under the
-# workflow's 15-minute job timeout.
-ATTEMPTS = [('direct', 50), ('direct', 50), ('free_proxy', 120), ('free_proxy', 120)]
-RETRY_DELAY = 15
+# One direct fetch. A refusal ends the run; there is no second attempt and
+# no proxy route. The hard cap only bounds a hung socket. A healthy fetch is
+# a few seconds, and a block returns as soon as the HTTP response arrives.
+ATTEMPTS = [('direct', 60)]
 OUTPUT_FILES = ('gs_data.json', 'gs_data_shieldsio.json')
-# sslproxies.org now 301s to the SSL list. free-proxy 1.3 still reads column 6
-# as "Https"; on the live table that column is "Last Checked", so https=True
-# rejects every row. Fetch the pages ourselves and key off the header names.
-PROXY_LIST_URLS = (
-    'https://www.sslproxies.org/',
-    'https://free-proxy-list.net/ssl-proxy.html',
-    'https://free-proxy-list.net/',
-)
-PROXY_LIST_TIMEOUT = 15
-PROXY_TEST_TIMEOUT = 3
-MAX_PROXY_CANDIDATES = 10
-_PROXY_ADDRESS = re.compile(r'^(\d{1,3}(?:\.\d{1,3}){3}):(\d{2,5})$')
-_HTTPS_YES = {'yes', 'true'}
+STATUS_NAME = '.fetch_status'
+SCHOLAR_REQUEST_PAUSE = 1.0
 
 
 class ScholarAccessError(RuntimeError):
-    """Scholar refused or challenged this attempt. The caller does not evade it."""
+    """Scholar did not return a profile page.
+
+    ``blocked`` is true for an access refusal (HTTP 403/429, automated-query
+    page, captcha, or DOS challenge). The fetch run stops either way and does
+    not switch routes.
+    """
+
+    def __init__(self, message, blocked):
+        super().__init__(message)
+        self.blocked = blocked
 
 
 def validate_author(author):
@@ -93,127 +87,18 @@ def generate_citation_data(scholar_id, output_dir='results'):
     })
 
 
-def _normalize_header(text):
-    return ' '.join(text.lower().split())
-
-
-def _header_index(headers, *names):
-    for name in names:
-        if name in headers:
-            return headers.index(name)
-    return None
-
-
-def parse_proxy_list_html(content):
-    """Return ``http://ip:port`` addresses for rows marked HTTPS.
-
-    Header names are read from the table, so a column inserted before Https
-    does not make every row look non-HTTPS. Rows that are not HTTPS, or that
-    do not have an IPv4 address and port, are omitted.
-    """
-    if isinstance(content, str):
-        content = content.encode('utf-8')
-    document = lxml_html.fromstring(content)
-    tables = document.xpath('//*[@id="list"]//table') or document.xpath('//table')
-    if not tables:
-        raise ValueError('proxy list page has no table')
-    rows = tables[0].xpath('.//tr')
-    if len(rows) < 2:
-        raise ValueError('proxy list table has no data rows')
-    headers = [_normalize_header(cell.text_content()) for cell in rows[0].xpath('./th|./td')]
-    combined_index = _header_index(headers, 'ip:port')
-    ip_index = _header_index(headers, 'ip address', 'ip')
-    port_index = _header_index(headers, 'port')
-    https_index = _header_index(headers, 'https', 'ssl')
-    if combined_index is None and (ip_index is None or port_index is None):
-        raise ValueError(f'proxy list headers are not recognized: {headers}')
-
-    addresses = []
-    for row in rows[1:]:
-        cells = [' '.join(cell.text_content().split()) for cell in row.xpath('./td')]
-        if not cells:
-            continue
-        if https_index is not None:
-            if https_index >= len(cells) or cells[https_index].lower() not in _HTTPS_YES:
-                continue
-        candidate = None
-        if combined_index is not None and combined_index < len(cells):
-            if _PROXY_ADDRESS.match(cells[combined_index]):
-                candidate = cells[combined_index]
-        if candidate is None and ip_index is not None and port_index is not None:
-            if ip_index < len(cells) and port_index < len(cells):
-                candidate = f'{cells[ip_index]}:{cells[port_index]}'
-        if candidate and _PROXY_ADDRESS.match(candidate) and f'http://{candidate}' not in addresses:
-            addresses.append(f'http://{candidate}')
-    return addresses
-
-
-def fetch_proxy_candidates(urls=PROXY_LIST_URLS, get=None, timeout=PROXY_LIST_TIMEOUT):
-    """Load HTTPS proxy addresses from the first page that yields any."""
-    getter = requests.get if get is None else get
-    errors = []
-    for url in urls:
-        try:
-            response = getter(url, timeout=timeout)
-        except requests.RequestException as exc:
-            errors.append(f'{url}: {exc.__class__.__name__}')
-            print(f'  proxy list {url} failed: {exc}', flush=True)
-            continue
-        status = getattr(response, 'status_code', None)
-        if status != 200:
-            errors.append(f'{url}: HTTP {status}')
-            print(f'  proxy list {url} returned HTTP {status}', flush=True)
-            continue
-        try:
-            found = parse_proxy_list_html(response.content)
-        except ValueError as exc:
-            errors.append(f'{url}: {exc}')
-            print(f'  proxy list {url} could not be parsed: {exc}', flush=True)
-            continue
-        print(f'  proxy list {url} yielded {len(found)} https candidates', flush=True)
-        if found:
-            return found
-        errors.append(f'{url}: 0 https candidates')
-    detail = '; '.join(errors) if errors else 'no pages configured'
-    raise RuntimeError(f'no https proxy candidates parsed ({detail})')
-
-
-def _free_proxy_generator(max_candidates=MAX_PROXY_CANDIDATES, candidates=None):
-    """Pick a free proxy that scholarly can open a session with.
-
-    Candidates are tested against ProxyGenerator's own check (httpbin), not
-    against a captcha. A proxy that fails the check is skipped.
-    """
-    if candidates is None:
-        candidates = fetch_proxy_candidates()
-    ordered = list(candidates)
-    random.shuffle(ordered)
-    tested = 0
-    for proxy in ordered[:max_candidates]:
-        tested += 1
-        pg = ProxyGenerator()
-        pg._TIMEOUT = PROXY_TEST_TIMEOUT
-        try:
-            if pg.SingleProxy(http=proxy, https=proxy):
-                print(f'  using free proxy {proxy}', flush=True)
-                return pg
-            print(f'  proxy {proxy} rejected', flush=True)
-        except Exception as exc:  # broken proxies raise all sorts of errors
-            print(f'  proxy {proxy} failed: {exc}', flush=True)
-    raise RuntimeError(
-        f'no working free proxy found (tested {tested} of {len(candidates)} candidates)')
-
-
 def _navigator():
     return scholarly._Scholarly__nav
 
 
-def install_fail_fast_scholar_guards(pause_seconds=1.0):
+def install_fail_fast_scholar_guards(pause_seconds=None):
     """Replace scholarly's page fetch so a block is reported, not waited out."""
     nav = _navigator()
+    if pause_seconds is None:
+        pause_seconds = SCHOLAR_REQUEST_PAUSE
 
     def _get_page(pagerequest, premium=False):
-        del premium  # both sessions would only repeat the same blocked IP
+        del premium  # a second session would be another route around the block
         if pause_seconds:
             time.sleep(pause_seconds)
         timeout = nav._TIMEOUT
@@ -221,50 +106,74 @@ def install_fail_fast_scholar_guards(pause_seconds=1.0):
             response = nav._session1.get(pagerequest, timeout=timeout)
         except requests.RequestException as exc:
             raise ScholarAccessError(
-                f'Google Scholar request failed: {exc.__class__.__name__}: {exc}') from exc
+                f'Google Scholar request failed: {exc.__class__.__name__}: {exc}',
+                blocked=False,
+            ) from exc
         text = response.text or ''
         try:
             has_captcha = nav._requests_has_captcha(text)
         except DOSException as exc:
             raise ScholarAccessError(
-                'Google Scholar returned a DOS/captcha challenge; not solving it') from exc
+                'Google Scholar returned a DOS/captcha challenge; not solving it',
+                blocked=True,
+            ) from exc
         if has_captcha:
             raise ScholarAccessError(
-                f'Google Scholar returned a captcha (HTTP {response.status_code}); not solving it')
+                f'Google Scholar returned a captcha (HTTP {response.status_code}); not solving it',
+                blocked=True,
+            )
         automated = 'automated queries' in text.lower()
-        if response.status_code in (403, 429) or automated:
+        if automated or response.status_code in (403, 429):
             reason = 'automated-query block' if automated else 'refused the request'
             raise ScholarAccessError(
-                f'Google Scholar {reason} (HTTP {response.status_code}); not bypassing it')
+                f'Google Scholar {reason} (HTTP {response.status_code}); not bypassing it',
+                blocked=True,
+            )
         if response.status_code != 200:
             raise ScholarAccessError(
-                f'Google Scholar returned HTTP {response.status_code}')
+                f'Google Scholar returned HTTP {response.status_code}',
+                blocked=False,
+            )
         return text
 
     nav._get_page = _get_page
     return nav
 
 
+def execute_attempt(scholar_id, output_dir):
+    """Fetch once, directly. Raises ScholarAccessError when Scholar refuses."""
+    scholarly.set_timeout(20)
+    scholarly.set_retries(1)
+    install_fail_fast_scholar_guards()
+    generate_citation_data(scholar_id, output_dir)
+
+
+def _write_status(output_dir, kind, detail):
+    Path(output_dir, STATUS_NAME).write_text(f'{kind}\n{detail}', encoding='utf-8')
+
+
 def _attempt(scholar_id, strategy, output_dir):
-    """Child-process body: configure the connection and fetch once."""
+    """Child-process body. A non-direct strategy performs no request."""
+    if strategy != 'direct':
+        detail = f'refusing non-direct strategy {strategy!r}'
+        _write_status(output_dir, 'blocked', detail)
+        print(f'  {detail}', flush=True)
+        sys.exit(2)
     try:
-        scholarly.set_timeout(20)
-        scholarly.set_retries(1)
-        if strategy == 'free_proxy':
-            pg = _free_proxy_generator()
-            # Pass it as the secondary too, otherwise scholarly calls the broken
-            # FreeProxies() itself for the secondary generator.
-            scholarly.use_proxy(pg, pg)
-        install_fail_fast_scholar_guards()
-        generate_citation_data(scholar_id, output_dir)
+        execute_attempt(scholar_id, output_dir)
+    except ScholarAccessError as exc:
+        _write_status(output_dir, 'blocked' if exc.blocked else 'failed', str(exc))
+        print(f'  direct failed: {exc}', flush=True)
+        sys.exit(2 if exc.blocked else 1)
     except Exception as exc:
-        # Exit without a traceback so a later successful attempt is not buried
-        # under GitHub's error annotations. The reason is still printed.
-        print(f'  {strategy} failed: {exc}', flush=True)
+        _write_status(output_dir, 'failed', str(exc))
+        print(f'  direct failed: {exc}', flush=True)
         sys.exit(1)
+    _write_status(output_dir, 'success', '')
 
 
 def _run_attempt(scholar_id, strategy, timeout, output_dir):
+    """Return ``(outcome, detail)`` where outcome is success, blocked, or failed."""
     ctx = mp.get_context('fork')
     proc = ctx.Process(target=_attempt, args=(scholar_id, strategy, output_dir))
     proc.start()
@@ -273,8 +182,16 @@ def _run_attempt(scholar_id, strategy, timeout, output_dir):
         proc.kill()
         proc.join()
         print(f'  timed out after {timeout}s', flush=True)
-        return False
-    return proc.exitcode == 0
+        return 'failed', f'timed out after {timeout}s'
+    status_path = Path(output_dir, STATUS_NAME)
+    if not status_path.is_file():
+        return 'failed', f'fetch process exited {proc.exitcode} without a status'
+    kind, _, detail = status_path.read_text(encoding='utf-8').partition('\n')
+    if kind == 'success' and proc.exitcode == 0:
+        return 'success', ''
+    if kind == 'blocked':
+        return 'blocked', detail
+    return 'failed', detail or f'fetch process exited {proc.exitcode}'
 
 
 def set_output(name, value):
@@ -340,6 +257,49 @@ def publish_citation_files(results_dir, remote_url):
         subprocess.run(command, cwd=results_dir, check=True)
 
 
+def run_fetch(scholar_id, runner=None):
+    """Fetch directly. A refusal or any other failure ends the run.
+
+    ``runner`` returns ``(outcome, detail)``. ``outcome`` is ``success``,
+    ``blocked``, or ``failed``. Anything other than success returns before a
+    later attempt, including a configured proxy attempt, can start. The
+    default runner is looked up at call time so tests can replace it.
+    """
+    if runner is None:
+        runner = _run_attempt
+    results = Path('results')
+    for index, (strategy, timeout) in enumerate(ATTEMPTS, 1):
+        if strategy != 'direct':
+            print('::error::Refusing a non-direct citation fetch. '
+                  'Previously published citation data is kept.', flush=True)
+            set_output('updated', 'false')
+            return 'blocked'
+        print(f'Attempt {index}/{len(ATTEMPTS)} (direct, timeout {timeout}s)', flush=True)
+        with tempfile.TemporaryDirectory() as tmp:
+            outcome, detail = runner(scholar_id, strategy, timeout, tmp)
+            if outcome == 'success':
+                results.mkdir(parents=True, exist_ok=True)
+                for name in OUTPUT_FILES:
+                    shutil.move(os.path.join(tmp, name), results / name)
+                print('Citation data fetched successfully.', flush=True)
+                set_output('updated', 'true')
+                return 'success'
+            if outcome == 'blocked':
+                print(f'::error::Google Scholar refused the fetch: {detail} '
+                      'The run stops without another request or a route change. '
+                      'Previously published citation data is kept.', flush=True)
+            else:
+                print(f'::error::Google Scholar fetch failed: {detail} '
+                      'The run stops without another request or a route change. '
+                      'Previously published citation data is kept.', flush=True)
+            set_output('updated', 'false')
+            return outcome if outcome in ('blocked', 'failed') else 'failed'
+    print('::error::Google Scholar fetch did not run. '
+          'Previously published citation data is kept.', flush=True)
+    set_output('updated', 'false')
+    return 'failed'
+
+
 def main(argv=None):
     argv = list(sys.argv[1:] if argv is None else argv)
     if argv[:1] == ['--check-results']:
@@ -373,26 +333,8 @@ def main(argv=None):
         print('ERROR: GOOGLE_SCHOLAR_ID is not set', flush=True)
         sys.exit(1)
 
-    results = Path('results')
-    for i, (strategy, timeout) in enumerate(ATTEMPTS, 1):
-        print(f'Attempt {i}/{len(ATTEMPTS)} ({strategy}, timeout {timeout}s)', flush=True)
-        with tempfile.TemporaryDirectory() as tmp:
-            if _run_attempt(scholar_id, strategy, timeout, tmp):
-                results.mkdir(parents=True, exist_ok=True)
-                for name in OUTPUT_FILES:
-                    shutil.move(os.path.join(tmp, name), results / name)
-                print('Citation data fetched successfully.', flush=True)
-                set_output('updated', 'true')
-                return
-        if i < len(ATTEMPTS):
-            time.sleep(RETRY_DELAY)
-
-    # Exit non-zero so the publish step is skipped and the previously published
-    # gs_data.json on google-scholar-stats is left untouched.
-    print('::error::Google Scholar fetch failed on every attempt (likely blocked); '
-          'previously published citation data is kept.', flush=True)
-    set_output('updated', 'false')
-    sys.exit(1)
+    if run_fetch(scholar_id) != 'success':
+        sys.exit(1)
 
 
 if __name__ == '__main__':

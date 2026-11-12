@@ -131,87 +131,11 @@ class CitationDataTests(unittest.TestCase):
         self.assertEqual(badge, {"schemaVersion": 1, "label": "citations", "message": "0"})
 
 
-CURRENT_PROXY_TABLE = """
-<html><body><section id="list"><table>
-<thead><tr>
-<th>IP:Port</th><th>Protocol</th><th>Code</th><th>Country</th>
-<th>Anonymity</th><th>Https</th><th>Last Checked</th>
-</tr></thead>
-<tbody>
-<tr>
-<td>41.33.245.139<span>:1976</span></td><td>HTTP</td><td>EG</td><td>Egypt</td>
-<td>elite proxy</td><td>yes</td><td>10 secs ago</td>
-</tr>
-<tr>
-<td>10.0.0.8<span>:8080</span></td><td>HTTP</td><td>US</td><td>United States</td>
-<td>anonymous</td><td>no</td><td>10 secs ago</td>
-</tr>
-<tr>
-<td>not-an-ip<span>:80</span></td><td>HTTP</td><td>DE</td><td>Germany</td>
-<td>elite proxy</td><td>yes</td><td>12 secs ago</td>
-</tr>
-</tbody>
-</table></section></body></html>
-"""
-
-LEGACY_PROXY_TABLE = """
-<html><body><table id="proxylisttable">
-<tr><th>IP Address</th><th>Port</th><th>Code</th><th>Country</th>
-<th>Anonymity</th><th>Google</th><th>Https</th></tr>
-<tr><td>203.0.113.9</td><td>3128</td><td>JP</td><td>Japan</td>
-<td>elite proxy</td><td>no</td><td>yes</td></tr>
-<tr><td>203.0.113.10</td><td>3128</td><td>JP</td><td>Japan</td>
-<td>elite proxy</td><td>yes</td><td>no</td></tr>
-</table></body></html>
-"""
-
-
 class _Response:
     def __init__(self, status_code, text="", content=None):
         self.status_code = status_code
         self.text = text
         self.content = text.encode("utf-8") if content is None else content
-
-
-class ProxyListParserTests(unittest.TestCase):
-    def test_current_table_keeps_https_rows_and_free_proxy_keeps_none(self):
-        """free-proxy 1.3 treats column 6 as Https; the live table's column 6 is Last Checked."""
-        from fp.fp import FreeProxy
-
-        addresses = crawler.parse_proxy_list_html(CURRENT_PROXY_TABLE)
-        self.assertEqual(addresses, ["http://41.33.245.139:1976"])
-
-        parsed_by_library = FreeProxy(https=True, timeout=1)._parse_proxy_list(
-            CURRENT_PROXY_TABLE.encode("utf-8")
-        )
-        self.assertEqual(parsed_by_library, [])
-
-    def test_legacy_split_ip_and_port_columns_still_parse(self):
-        addresses = crawler.parse_proxy_list_html(LEGACY_PROXY_TABLE)
-        self.assertEqual(addresses, ["http://203.0.113.9:3128"])
-
-    def test_empty_https_page_is_reported_instead_of_a_working_proxy_miss(self):
-        def fake_get(url, timeout):
-            self.assertEqual(timeout, crawler.PROXY_LIST_TIMEOUT)
-            return _Response(200, text=LEGACY_PROXY_TABLE.replace(">yes<", ">no<"))
-
-        with self.assertRaises(RuntimeError) as raised:
-            crawler.fetch_proxy_candidates(urls=("https://example.test/list",), get=fake_get)
-
-        self.assertIn("no https proxy candidates parsed", str(raised.exception))
-        self.assertIn("0 https candidates", str(raised.exception))
-        self.assertNotIn("no working free proxy found", str(raised.exception))
-
-    def test_generator_reports_how_many_candidates_it_actually_tested(self):
-        candidates = ["http://203.0.113.1:8080", "http://203.0.113.2:8080"]
-        with (
-            patch.object(crawler.ProxyGenerator, "SingleProxy", return_value=False) as single,
-            self.assertRaises(RuntimeError) as raised,
-        ):
-            crawler._free_proxy_generator(candidates=candidates)
-
-        self.assertEqual(single.call_count, 2)
-        self.assertIn("tested 2 of 2 candidates", str(raised.exception))
 
 
 class ScholarBlockGuardTests(unittest.TestCase):
@@ -252,6 +176,7 @@ class ScholarBlockGuardTests(unittest.TestCase):
         self.assertLess(time.monotonic() - started, 2)
         self.assertIn("automated-query block", str(raised.exception))
         self.assertIn("not bypassing it", str(raised.exception))
+        self.assertTrue(raised.exception.blocked)
         self.assertEqual(webdriver_calls, [])
 
     def test_captcha_page_is_not_handed_to_the_solver(self):
@@ -264,6 +189,7 @@ class ScholarBlockGuardTests(unittest.TestCase):
         finally:
             self._restore(nav, saved)
         self.assertIn("not solving it", str(raised.exception))
+        self.assertTrue(raised.exception.blocked)
         self.assertEqual(webdriver_calls, [])
 
     def test_dos_challenge_is_not_retried_inside_scholarly(self):
@@ -277,6 +203,150 @@ class ScholarBlockGuardTests(unittest.TestCase):
             self._restore(nav, saved)
         self.assertIn("not solving it", str(raised.exception))
         self.assertEqual(webdriver_calls, [])
+        self.assertTrue(raised.exception.blocked)
+
+    def test_schedule_is_one_direct_fetch(self):
+        self.assertEqual([strategy for strategy, _timeout in crawler.ATTEMPTS], ["direct"])
+        self.assertFalse(hasattr(crawler, "_free_proxy_generator"))
+        self.assertFalse(hasattr(crawler, "fetch_proxy_candidates"))
+        self.assertFalse(hasattr(crawler, "PROXY_LIST_URLS"))
+
+
+class BlockStopsTheRunTests(unittest.TestCase):
+    """A Scholar refusal must not start another request or a proxy."""
+
+    MULTI_ROUTE_SCHEDULE = (("direct", 30), ("direct", 30), ("free_proxy", 120))
+
+    def setUp(self):
+        self._pause = crawler.SCHOLAR_REQUEST_PAUSE
+        crawler.SCHOLAR_REQUEST_PAUSE = 0
+
+    def tearDown(self):
+        crawler.SCHOLAR_REQUEST_PAUSE = self._pause
+
+    def test_blocked_outcome_does_not_start_a_later_attempt(self):
+        calls = []
+
+        def runner(scholar_id, strategy, timeout, output_dir):
+            calls.append((strategy, timeout))
+            return "blocked", "Google Scholar refused the request (HTTP 403); not bypassing it"
+
+        with patch.object(crawler, "ATTEMPTS", self.MULTI_ROUTE_SCHEDULE):
+            outcome = crawler.run_fetch("example-scholar-id", runner=runner)
+
+        self.assertEqual(outcome, "blocked")
+        self.assertEqual(calls, [("direct", 30)])
+
+    def test_other_failure_does_not_start_a_later_attempt_or_proxy(self):
+        calls = []
+
+        def runner(scholar_id, strategy, timeout, output_dir):
+            calls.append(strategy)
+            return "failed", "timed out after 30s"
+
+        with patch.object(crawler, "ATTEMPTS", self.MULTI_ROUTE_SCHEDULE):
+            outcome = crawler.run_fetch("example-scholar-id", runner=runner)
+
+        self.assertEqual(outcome, "failed")
+        self.assertEqual(calls, ["direct"])
+
+    def test_child_process_body_refuses_a_proxy_strategy_without_requesting(self):
+        nav = crawler.scholarly._Scholarly__nav
+        calls = []
+        original = nav._session1.get
+        nav._session1.get = lambda *args, **kwargs: calls.append(args) or (_ for _ in ()).throw(
+            AssertionError("request")
+        )
+        try:
+            with tempfile.TemporaryDirectory() as directory:
+                with self.assertRaises(SystemExit) as raised:
+                    crawler._attempt("example-scholar-id", "free_proxy", directory)
+                status = (Path(directory) / crawler.STATUS_NAME).read_text(encoding="utf-8")
+        finally:
+            nav._session1.get = original
+        self.assertEqual(raised.exception.code, 2)
+        self.assertTrue(status.startswith("blocked\n"))
+        self.assertIn("free_proxy", status)
+        self.assertEqual(calls, [])
+
+    def test_non_direct_schedule_makes_no_request(self):
+        def runner(scholar_id, strategy, timeout, output_dir):
+            raise AssertionError(f"runner invoked for {strategy}")
+
+        with patch.object(crawler, "ATTEMPTS", (("free_proxy", 120), ("direct", 30))):
+            outcome = crawler.run_fetch("example-scholar-id", runner=runner)
+
+        self.assertEqual(outcome, "blocked")
+
+    def _run_real_attempt_against(self, response):
+        from scholarly import ProxyGenerator
+
+        nav = crawler.scholarly._Scholarly__nav
+        saved = (nav._get_page, nav._session1.get)
+        calls = []
+
+        def record_get(url, timeout=None, **kwargs):
+            calls.append(url)
+            return response
+
+        nav._session1.get = record_get
+
+        def runner(scholar_id, strategy, timeout, output_dir):
+            try:
+                crawler.execute_attempt(scholar_id, output_dir)
+            except crawler.ScholarAccessError as exc:
+                return ("blocked" if exc.blocked else "failed"), str(exc)
+            return "success", ""
+
+        try:
+            with (
+                patch.object(crawler.requests, "get", side_effect=AssertionError("proxy list")),
+                patch.object(
+                    crawler.scholarly,
+                    "use_proxy",
+                    side_effect=AssertionError("route change"),
+                ),
+                patch.object(
+                    ProxyGenerator,
+                    "SingleProxy",
+                    side_effect=AssertionError("single proxy"),
+                ),
+                patch.object(
+                    ProxyGenerator,
+                    "FreeProxies",
+                    side_effect=AssertionError("free proxies"),
+                ),
+                patch.object(crawler, "ATTEMPTS", self.MULTI_ROUTE_SCHEDULE),
+            ):
+                outcome = crawler.run_fetch("example-scholar-id", runner=runner)
+        finally:
+            nav._get_page, nav._session1.get = saved
+        return outcome, calls
+
+    def test_automated_query_403_does_not_send_another_request_or_use_a_proxy(self):
+        sorry = (
+            "<html><title>Sorry...</title><body>"
+            "your computer or network may be sending automated queries"
+            "</body></html>"
+        )
+        outcome, calls = self._run_real_attempt_against(_Response(403, text=sorry))
+        self.assertEqual(outcome, "blocked")
+        self.assertEqual(len(calls), 1)
+        self.assertIn("scholar.google.com", calls[0])
+        self.assertNotIn("free-proxy-list", calls[0])
+        self.assertNotIn("sslproxies", calls[0])
+
+    def test_429_and_captcha_each_stop_after_the_refusing_response(self):
+        for response in (
+            _Response(429, text="slow down"),
+            _Response(200, text='<html><div id="gs_captcha_ccl"></div></html>'),
+            _Response(200, text='<html><div class="rc-doscaptcha-body"></div></html>'),
+        ):
+            with self.subTest(status=response.status_code, body=response.text[:40]):
+                outcome, calls = self._run_real_attempt_against(response)
+                self.assertEqual(outcome, "blocked")
+                self.assertEqual(len(calls), 1)
+                self.assertIn("scholar.google.com", calls[0])
 
 
 class PublicationGuardTests(unittest.TestCase):
@@ -368,14 +438,24 @@ class PublicationGuardTests(unittest.TestCase):
             previous = os.getcwd()
             os.chdir(directory)
             try:
+                calls = []
+
+                def fail(scholar_id, strategy, timeout, output_dir):
+                    calls.append(strategy)
+                    return "blocked", "Google Scholar refused the request (HTTP 403); not bypassing it"
+
                 with (
                     patch.dict(os.environ, {"GOOGLE_SCHOLAR_ID": "example-scholar-id"}),
-                    patch.object(crawler, "_run_attempt", return_value=False),
-                    patch.object(crawler, "RETRY_DELAY", 0),
-                    patch.object(crawler, "ATTEMPTS", [("direct", 1)]),
+                    patch.object(crawler, "_run_attempt", side_effect=fail),
+                    patch.object(
+                        crawler,
+                        "ATTEMPTS",
+                        [("direct", 1), ("direct", 1), ("free_proxy", 1)],
+                    ),
                 ):
                     with self.assertRaises(SystemExit) as raised:
                         crawler.main([])
+                self.assertEqual(calls, ["direct"])
             finally:
                 os.chdir(previous)
             self.assertEqual(raised.exception.code, 1)
@@ -388,7 +468,7 @@ class PublicationGuardTests(unittest.TestCase):
             try:
                 def succeed(scholar_id, strategy, timeout, output_dir):
                     self.write_valid(output_dir, citedby=7)
-                    return True
+                    return "success", ""
 
                 with (
                     patch.dict(os.environ, {"GOOGLE_SCHOLAR_ID": "example-scholar-id"}),
