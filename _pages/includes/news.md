@@ -2,9 +2,7 @@
 
 # 🔈 Call for Students
 
-Prof. Xu is now recruiting highly motivated Master’s students to join our research group. If you are passionate about cutting-edge technologies in edge intelligence, agent artificial intelligence, and agentic reinforcement learning, Master’s applicants are encouraged to apply. I am not currently recruiting international students. Undergraduate research and research internships are evaluated separately. Doctoral applications should be directed to Prof. Penglin Dai (戴朋林老师).
-
-许新操老师目前招收有科研热情的硕士研究生加入课题组。若你关注边缘智能、智能体人工智能与智能体强化学习，欢迎硕士研究生申请。目前不招收国际学生。本科生科研与科研实习另行评估。博士申请请联系课题组同事戴朋林老师（Penglin Dai）。
+Prof. Xu is now recruiting highly motivated Master’s students to join our research group. If you are passionate about cutting-edge technologies in edge intelligence, agent artificial intelligence, and agentic reinforcement learning, Master’s applicants are encouraged to apply. I am not currently recruiting international students. Undergraduate research and research internships are evaluated separately.
 
 ### 🎯 We Offer
 
@@ -22,9 +20,7 @@ Prof. Xu is now recruiting highly motivated Master’s students to join our rese
 
 ### 📧 How to Apply
 
-Master’s applicants, and students inquiring about undergraduate research or a research internship, are welcome to contact Prof. Xu via email with your CV, academic transcripts, and a brief self-introduction. Doctoral applications should be directed to Prof. Penglin Dai (戴朋林老师).
-
-硕士研究生申请者，以及咨询本科生科研或科研实习的同学，欢迎通过电子邮件联系许新操老师，并附上简历、成绩单和简短的自我介绍。博士申请请联系戴朋林老师（Penglin Dai）。
+Master’s applicants, and students inquiring about undergraduate research or a research internship, are welcome to contact Prof. Xu via email with your CV, academic transcripts, and a brief self-introduction.
 
 We look forward to hearing from you.
 
