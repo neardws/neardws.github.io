@@ -2,7 +2,7 @@
 
 # 🔈 Call for Students
 
-Prof. Xu is now recruiting highly motivated undergraduate and Master’s students to join our research group. If you are passionate about cutting-edge technologies in edge intelligence, agent artificial intelligence, and agentic reinforcement learning, we encourage you to apply!
+Prof. Xu is now recruiting highly motivated Master’s students to join our research group. If you are passionate about cutting-edge technologies in edge intelligence, agent artificial intelligence, and agentic reinforcement learning, Master’s applicants are encouraged to apply. I am not currently recruiting international students. Undergraduate research and research internships are evaluated separately.
 
 ### 🎯 We Offer
 
@@ -20,9 +20,9 @@ Prof. Xu is now recruiting highly motivated undergraduate and Master’s student
 
 ### 📧 How to Apply
 
-Interested candidates are welcome to contact Prof. Xu via email with your CV, academic transcripts, and a brief self-introduction.
+Master’s applicants, and students inquiring about undergraduate research or a research internship, are welcome to contact Prof. Xu via email with your CV, academic transcripts, and a brief self-introduction.
 
-We look forward to hearing from you!
+We look forward to hearing from you.
 
 <!-- ## 🔥 Latest News -->
 
