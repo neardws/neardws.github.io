@@ -2,7 +2,9 @@
 
 # 🔈 Call for Students
 
-Prof. Xu is now recruiting highly motivated undergraduate and Master’s students to join our research group. If you are passionate about cutting-edge technologies in edge intelligence, agent artificial intelligence, and agentic reinforcement learning, we encourage you to apply!
+Prof. Xu is now recruiting highly motivated Master’s students to join our research group. Undergraduate research and research internships are evaluated separately. Doctoral applications should be directed to Prof. Penglin Dai (戴朋林老师). If you are passionate about cutting-edge technologies in edge intelligence, agent artificial intelligence, and agentic reinforcement learning, Master’s applicants and students inquiring about undergraduate research or a research internship are encouraged to apply. I am not currently recruiting international students. This applies to Master’s applicants, doctoral applicants, undergraduate research, and research internships.
+
+许新操老师目前招收有科研热情的硕士研究生加入课题组。本科生科研与科研实习另行评估。博士申请请联系课题组同事戴朋林老师（Penglin Dai）。若你关注边缘智能、智能体人工智能与智能体强化学习，欢迎硕士研究生申请，也欢迎同学咨询本科生科研或科研实习。目前不招收国际学生。这适用于硕士研究生、博士申请者、本科生科研与科研实习。
 
 ### 🎯 We Offer
 
@@ -13,6 +15,8 @@ Prof. Xu is now recruiting highly motivated undergraduate and Master’s student
 
 ### ✅ We Are Looking For Students Who
 
+The background below is for Master’s applicants and for undergraduate research or research-internship inquiries.
+
 * Have a background in Computer Science, Telecommunications, Automation, or related fields.
 * Are proficient in programming (e.g., Python, C++).
 * Possess a solid mathematical foundation (optimization, linear algebra, probability).
@@ -20,9 +24,13 @@ Prof. Xu is now recruiting highly motivated undergraduate and Master’s student
 
 ### 📧 How to Apply
 
-Interested candidates are welcome to contact Prof. Xu via email with your CV, academic transcripts, and a brief self-introduction.
+Master’s applicants, and students inquiring about undergraduate research or a research internship, are welcome to contact Prof. Xu via email with your CV, academic transcripts, and a brief self-introduction. Doctoral applications should be directed to Prof. Penglin Dai (戴朋林老师). I am not currently recruiting international students.
 
-We look forward to hearing from you!
+硕士研究生申请者，以及咨询本科生科研或科研实习的同学，欢迎通过电子邮件联系许新操老师，并附上简历、成绩单和简短的自我介绍。博士申请请联系戴朋林老师（Penglin Dai）。目前不招收国际学生。
+
+We look forward to hearing from applicants who are not international students, including Master’s applicants and students inquiring about undergraduate research or a research internship.
+
+期待非国际学生来信，包括硕士研究生申请者，以及咨询本科生科研或科研实习的同学。
 
 <!-- ## 🔥 Latest News -->
 
