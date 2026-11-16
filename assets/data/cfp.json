@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T13:04:49Z",
+  "updated_at": "2026-11-16T14:11:34Z",
   "conferences": [
     {
       "title": "ISCA",
@@ -58,6 +58,21 @@
       "timezone": "UTC-12",
       "date": "August 20-22, 2027",
       "place": "Kyoto, Japan",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "ICML",
+      "description": "International Conference on Machine Learning",
+      "sub": "AI",
+      "sub_name": "Artificial Intelligence",
+      "ccf_rank": "A",
+      "link": "https://icml.cc/Conferences/2027",
+      "abstract_deadline": "2027-01-14 23:59:59",
+      "deadline": "2027-01-22 23:59:59",
+      "timezone": "AoE",
+      "date": "August 2-4, 2027",
+      "place": "Riocentro, Rio de Janeiro, Brazil",
       "year": 2027,
       "is_future": true
     },
