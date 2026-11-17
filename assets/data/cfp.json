@@ -1,36 +1,6 @@
 {
-  "updated_at": "2026-11-16T14:11:34Z",
+  "updated_at": "2026-11-17T15:03:43Z",
   "conferences": [
-    {
-      "title": "ISCA",
-      "description": "International Symposium on Computer Architecture",
-      "sub": "DS",
-      "sub_name": "Computer Architecture",
-      "ccf_rank": "A",
-      "link": "https://iscaconf.org/isca2027/",
-      "abstract_deadline": "2026-11-09 23:59:59",
-      "deadline": "2026-11-16 23:59:59",
-      "timezone": "AoE",
-      "date": "June 5-9, 2027",
-      "place": "Atlanta, Georgia, USA",
-      "year": 2027,
-      "is_future": true
-    },
-    {
-      "title": "CVPR",
-      "description": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
-      "sub": "AI",
-      "sub_name": "Artificial Intelligence",
-      "ccf_rank": "A",
-      "link": "https://cvpr.thecvf.com/Conferences/2027",
-      "abstract_deadline": "2026-11-10 23:59:59",
-      "deadline": "2026-11-16 23:59:59",
-      "timezone": "UTC-12",
-      "date": "June 22-25, 2027",
-      "place": "Seattle, WA, United States",
-      "year": 2027,
-      "is_future": true
-    },
     {
       "title": "DAC",
       "description": "Design Automation Conference",
@@ -43,6 +13,21 @@
       "timezone": "UTC-8",
       "date": "July 11-14, 2027",
       "place": "San Jose, CA",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "ISCA",
+      "description": "International Symposium on Computer Architecture",
+      "sub": "DS",
+      "sub_name": "Computer Architecture",
+      "ccf_rank": "A",
+      "link": "https://iscaconf.org/isca2027/",
+      "abstract_deadline": "2026-12-06 23:59:59",
+      "deadline": "2026-12-13 23:59:59",
+      "timezone": "AoE",
+      "date": "June 5-9, 2027",
+      "place": "Atlanta, Georgia, USA",
       "year": 2027,
       "is_future": true
     },
