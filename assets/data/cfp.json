@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T15:03:43Z",
+  "updated_at": "2026-11-18T14:43:41Z",
   "conferences": [
     {
       "title": "DAC",
@@ -43,6 +43,21 @@
       "timezone": "UTC-12",
       "date": "August 20-22, 2027",
       "place": "Kyoto, Japan",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "SIGOPS ATC",
+      "description": "ACM SIGOPS Annual Technical Conference",
+      "sub": "DS",
+      "sub_name": "Computer Architecture",
+      "ccf_rank": "A",
+      "link": "https://atc.sigops.org/2027/",
+      "abstract_deadline": null,
+      "deadline": "2027-01-19 23:59:59",
+      "timezone": "AoE",
+      "date": "June 28-July 1, 2027",
+      "place": "Rennes, France",
       "year": 2027,
       "is_future": true
     },
