@@ -1,21 +1,6 @@
 {
-  "updated_at": "2026-11-18T14:43:41Z",
+  "updated_at": "2026-11-19T14:50:49Z",
   "conferences": [
-    {
-      "title": "DAC",
-      "description": "Design Automation Conference",
-      "sub": "DS",
-      "sub_name": "Computer Architecture",
-      "ccf_rank": "A",
-      "link": "https://dac.com/2027/authors/call-for-contributions",
-      "abstract_deadline": "2026-11-11 17:00:00",
-      "deadline": "2026-11-18 17:00:00",
-      "timezone": "UTC-8",
-      "date": "July 11-14, 2027",
-      "place": "San Jose, CA",
-      "year": 2027,
-      "is_future": true
-    },
     {
       "title": "ISCA",
       "description": "International Symposium on Computer Architecture",
