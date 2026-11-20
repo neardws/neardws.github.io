@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T14:50:49Z",
+  "updated_at": "2026-11-20T14:31:37Z",
   "conferences": [
     {
       "title": "ISCA",
@@ -28,6 +28,21 @@
       "timezone": "UTC-12",
       "date": "August 20-22, 2027",
       "place": "Kyoto, Japan",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "HPDC",
+      "description": "ACM Symposium on High-Performance Parallel and Distributed Computing",
+      "sub": "DS",
+      "sub_name": "Computer Architecture",
+      "ccf_rank": "A",
+      "link": "https://hpdc.sci.utah.edu/2027/",
+      "abstract_deadline": "2027-01-11 23:59:59",
+      "deadline": "2027-01-18 23:59:59",
+      "timezone": "AoE",
+      "date": "June 7-9, 2027",
+      "place": "Atlanta, GA, USA",
       "year": 2027,
       "is_future": true
     },
@@ -73,6 +88,21 @@
       "timezone": "AoE",
       "date": "August 8 - 12, 2027",
       "place": "Bangkok, Thailand",
+      "year": 2027,
+      "is_future": true
+    },
+    {
+      "title": "UIST",
+      "description": "ACM Symposium on User Interface Software and Technology",
+      "sub": "HI",
+      "sub_name": "Computer-Human Interaction",
+      "ccf_rank": "A",
+      "link": "https://uist.acm.org/2027/",
+      "abstract_deadline": "2027-03-31 23:59:59",
+      "deadline": "2027-04-07 23:59:59",
+      "timezone": "AoE",
+      "date": "October 27-29, 2027",
+      "place": "VIECON - Vienna Congress & Convention Center, Vienna, Austria",
       "year": 2027,
       "is_future": true
     }
