@@ -2,7 +2,7 @@
 
 # 🔈 Call for Students
 
-Prof. Xu is now recruiting highly motivated Master’s students to join our research group. If you are passionate about cutting-edge technologies in edge intelligence, agent artificial intelligence, and agentic reinforcement learning, Master’s applicants are encouraged to apply. I am not currently recruiting international students. Unfortunately, I am currently unable to accept students through the Chinese Government Scholarship (CSC) program. Undergraduate research and research internships are evaluated separately.
+Prof. Xu is now recruiting highly motivated Master’s students to join our research group. If you are passionate about cutting-edge technologies in edge intelligence, agent artificial intelligence, and agentic reinforcement learning, Master’s applicants are encouraged to apply. Unfortunately, I am currently unable to accept international students, including those applying through the Chinese Government Scholarship (CSC) program. Undergraduate research and research internships are evaluated separately.
 
 ### 🎯 We Offer
 
